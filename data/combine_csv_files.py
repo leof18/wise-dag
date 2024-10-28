@@ -26,5 +26,5 @@ def combine_csv_files(folder_path, output_filename):
     combined_df.to_csv(output_filename, index=False)
 
 folder_path = "data/individual_DAGs_csv/"
-output_filename = "data/all_DAGs.csv"
+output_filename = "data/DAGs.csv"
 combine_csv_files(folder_path, output_filename)
