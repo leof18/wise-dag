@@ -1,0 +1,42 @@
+Author,Exposure,Outcome,Direction,Strength
+,NIHSS_stroke,NIHSS_followup,Increase,6.0
+,NIHSS_stroke,mRS_follow_up,Increase,6.84
+,mRS_stroke,mRS_follow_up,Increase,6.84
+,mRS_stroke,NIHSS_followup,Increase,6.84
+,lesion_size,NIHSS_stroke,Increase,6.84
+,lesion_size,mRS_stroke,Increase,6.84
+,lesion_size,mRS_follow_up,Increase,6.84
+,lesion_size,NIHSS_followup,Increase,6.84
+,time_to_therapy,NIHSS_followup,Increase,6.84
+,time_to_therapy,mRS_follow_up,Increase,6.84
+,lesion_size,Barthel_Index_stroke,Decrease,6.0
+eloquent / non-eloquent,lesion_location,Barthel_Index_stroke,Decrease,6.0
+eloquent / non-eloquent,lesion_location,NIHSS_stroke,Increase,6.84
+eloquent / non-eloquent,lesion_location,NIHSS_followup,Increase,6.84
+eloquent / non-eloquent,lesion_location,mRS_follow_up,Increase,6.84
+eloquent / non-eloquent,lesion_location,mRS_stroke,Increase,6.84
+,NIHSS_stroke,Barthel_Index_follow_up,Decrease,6.0
+,mRS_stroke,Barthel_Index_follow_up,Decrease,6.0
+,lesion_size,Barthel_Index_follow_up,Decrease,6.0
+,time_to_therapy,Barthel_Index_follow_up,Decrease,6.0
+,Barthel_Index_stroke,Barthel_Index_follow_up,Increase,6.84
+eloquent/non eloquent,lesion_location,Barthel_Index_follow_up,Decrease,6.0
+,TOAST (etiology),lesion_size,Increase,6.0
+,TOAST (etiology),lesion_location,Increase,6.0
+cardioembolic,present atrial fibrillation,TOAST (etiology),Increase,2.68
+,time_till_diagnosis,time_to_therapy,Increase,2.68
+meaning the general population being aware of typical stroke symptoms,awareness of FAST-Scheme,time_till_diagnosis,Decrease,2.0
+,time_till_diagnosis,rate of thrombolysis,Decrease,6.84
+,time_till_diagnosis,rate of thrombectomy,Decrease,6.84
+,rate of thrombolysis,lesion_size,Decrease,2.93
+,rate of thrombectomy,lesion_size,Decrease,2.93
+cardioembolic,TOAST (etiology),rate of thrombolysis,Increase,2.93
+accesible arteries,TOAST (etiology),rate of thrombectomy,Increase,2.68
+macroangiopathic,arteriosklerosis,TOAST (etiology),Increase,2.68
+,smoking,arteriosklerosis,Increase,6.84
+,Age,arteriosklerosis,Increase,6.84
+,Diabetes mellitus,arteriosklerosis,Increase,6.84
+,Dyslipidemia,arteriosklerosis,Increase,6.84
+,Lipoprotein (a),arteriosklerosis,Increase,6.84
+,Vasculitis,arteriosklerosis,Increase,6.84
+cardioembolic,persistent foramen ovale,TOAST (etiology),Increase,6.84

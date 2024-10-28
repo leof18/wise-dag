@@ -1,0 +1,71 @@
+Author,Exposure,Outcome,Direction,Strength
+,age,first-ever ischemic stroke occurence,Increase,6.84
+,sex (being male),first-ever ischemic stroke occurence,Increase,6.84
+,BMI,first-ever ischemic stroke occurence,Increase,6.84
+Gorelick et al (1997),LDL-cholesterol,first-ever ischemic stroke occurence,Increase,6.0
+MacMahon et al (1990),blood pressure,first-ever ischemic stroke occurence,Increase,6.0
+,BMI,LDL-cholesterol,Increase,6.84
+,BMI,blood pressure,Increase,6.84
+,LDL-cholesterol,atherosclerosis (measured by low ABI),Increase,6.84
+,atrial fibrilation,first-ever ischemic stroke occurence,Increase,6.84
+,occurence of myocardial infarction,first-ever ischemic stroke occurence,Increase,4.17
+Shinton et al (1999),smoking,first-ever ischemic stroke occurence,Increase,6.0
+Wilhelmsson et al (1975),smoking,occurence of myocardial infarction,Increase,6.0
+,smoking,blood pressure,Increase,6.84
+,smoking,atherosclerosis (measured by low ABI),Increase,6.84
+,first-ever ischemic stroke occurence,second ischemic stroke occurence,Increase,6.84
+,LDL-cholesterol,second ischemic stroke occurence,Increase,6.84
+,LDL-cholesterol,second ischemic stroke occurence,Increase,2.58
+,age,second ischemic stroke occurence,Increase,2.68
+,BMI,second ischemic stroke occurence,Increase,2.68
+,atherosclerosis (measured by low ABI),second ischemic stroke occurence,Increase,2.68
+,atrial fibrilation,second ischemic stroke occurence,Increase,2.68
+,occurence of myocardial infarction,second ischemic stroke occurence,Increase,2.68
+,smoking,second ischemic stroke occurence,Increase,2.68
+,,,,
+,anticoagulation medication,first-ever ischemic stroke occurence,Decrease,2.68
+Schneider et al. (2004),first-ever ischemic stroke occurence,cognitive function,Decrease,2.0
+Snowdon et al. (1997),second ischemic stroke occurence,cognitive function,Decrease,2.0
+Schneider et al. (2014),atherosclerosis (measured by low ABI),cognitive function,Decrease,2.0
+Guerchet et al (2011),age,cognitive function,Decrease,2.68
+,diabetes mellitus,first-ever ischemic stroke occurence,Increase,2.0
+Kannell et al (1979),diabetes mellitus,second ischemic stroke occurence,Increase,2.68
+,diabetes mellitus,occurence of myocardial infarction,Increase,2.68
+,diabetes mellitus,atherosclerosis (measured by low ABI),Increase,2.68
+,sex (being male),atherosclerosis (measured by low ABI),Increase,2.68
+,BMI,diabetes mellitus,Increase,2.68
+,age,diabetes mellitus,Increase,2.68
+,exercise,first-ever ischemic stroke occurence,Decrease,2.68
+,exercise,BMI,Decrease,2.68
+,exercise,LDL-cholesterol,Decrease,0.83
+,exercise,blood pressure,Decrease,3.29
+,exercise,atherosclerosis (measured by low ABI),Decrease,0.78
+,exercise,occurence of myocardial infarction,Decrease,3.29
+,exercise,second ischemic stroke occurence,Decrease,3.29
+,exercise,diabetes mellitus,Decrease,3.6
+,infectious endocarditis,first-ever ischemic stroke occurence,Increase,3.6
+,alcohol consumption,first-ever ischemic stroke occurence,Increase,3.6
+,alcohol consumption,second ischemic stroke occurence,Increase,1.46
+,alcohol consumption,blood pressure,Increase,1.46
+,age,alcohol consumption,Increase,0.89
+,sex (being male),alcohol consumption,Increase,1.81
+,stress,first-ever ischemic stroke occurence,Increase,2.58
+,stress,blood pressure,Increase,2.58
+,stress,occurence of myocardial infarction,Increase,2.58
+,stress,smoking,Increase,1.11
+,stress,second ischemic stroke occurence,Increase,1.11
+,stress,alcohol consumption,Increase,1.11
+,stress,atherosclerosis (measured by low ABI),Increase,1.11
+,diabetes mellitus,cognitive function,Decrease,2.0
+Knopman et al (2001),statin use,first-ever ischemic stroke occurence,Decrease,1.0
+Hebert et al (1997),statin use,LDL-cholesterol,Decrease,4.8
+,statin use,atherosclerosis (measured by low ABI),Decrease,1.4
+,statin use,occurence of myocardial infarction,Decrease,2.86
+,Lipoprotein a,first-ever ischemic stroke occurence,Increase,2.0
+Nave et al (2015),Lipoprotein a,atherosclerosis (measured by low ABI),Increase,2.68
+,atherosclerosis (measured by low ABI),first-ever ischemic stroke occurence,Increase,5.0
+Hong et al. (2016),blood pressure,cognitive function,Decrease,2.68
+Knopman et al (2001),antihypertensive medicatio,first-ever ischemic stroke occurence,Decrease,2.68
+Collins et al (1990),antihypertensive medicatio,occurence of myocardial infarction,Decrease,2.68
+Collins et al (1990),BMI,atherosclerosis (measured by low ABI),Increase,2.68
+McGill et al (2002),BMI,occurence of myocardial infarction,Increase,2.68

@@ -1,0 +1,57 @@
+Author,Exposure,Outcome,Direction,Strength
+,Smoking,Stroke,Increase,6.0
+,kidney disease,Stroke,Increase,5.0
+,male sex,Stroke,Increase,1.0
+,exercise,Stroke,Decrease,4.0
+,male sex,Smoking,Increase,1.0
+,BMI,Stroke,Increase,5.0
+,exercise,BMI,Decrease,6.0
+,dyslipidemia,Stroke,Increase,5.2
+,exercise,kidney disease,Decrease,2.0
+,low socioeconomic status,Stroke,Increase,1.75
+,Stroke,Depression,Increase,3.84
+,Stroke,Cognitive dysfunction,Increase,3.84
+,Stroke,Mortality,Increase,6.84
+Broersen et al. 2020,hs cardiac Troponin,Stroke,Increase,0.94
+,cardiac disease,hs cardiac Troponin,Increase,5.1
+,cardiac disease,Stroke,Increase,6.84
+,exercise,cardiac disease,Decrease,6.84
+,Smoking,cardiac disease,Increase,6.26
+,elevated CRP,Stroke,Increase,3.92
+,low socioeconomic status,Depression,Increase,3.92
+,age,Stroke,Increase,6.84
+,age,cardiac disease,Increase,6.84
+,high fat/ high carbonhydrate diet,arterial hypertension,Increase,5.0
+,high fat/ high carbonhydrate diet,cardiac disease,Increase,5.0
+,dyslipidemia,Depression,Increase,3.29
+,dyslipidemia,Cognitive dysfunction,Increase,3.29
+,vascular disease,Stroke,Increase,6.84
+,age,vascular disease,Increase,3.44
+,vascular disease,kidney disease,Increase,6.84
+,diabetes,kidney disease,Increase,6.84
+,diabetes,Stroke,Increase,6.84
+,high fat/ high carbonhydrate diet,dyslipidemia,Increase,6.84
+,high fat/ high carbonhydrate diet,diabetes,Increase,6.84
+,high fat/ high carbonhydrate diet,elevated CRP,Increase,3.68
+,Depression,Mortality,Increase,6.0
+,coping mechnisms,Depression,Decrease,6.84
+,low socioeconomic status,high fat/ high carbonhydrate diet,Increase,2.93
+,habitual alcohol consumption,Stroke,Increase,6.84
+,habitual alcohol consumption,diabetes,Increase,6.84
+,habitual alcohol consumption,coping mechnisms,Decrease,6.13
+,exercise,coping mechnisms,Increase,0.51
+,exercise,arterial hypertension,Decrease,2.72
+,exercise,Stroke,Decrease,6.84
+,exercise,Mortality,Decrease,6.84
+,Inflammation,Mortality,Increase,5.0
+,Inflammation,elevated CRP,Increase,6.84
+,Inflammation,Cognitive dysfunction,Increase,1.63
+,Inflammation,Depression,Increase,0.51
+,habitual alcohol consumption,Inflammation,Increase,3.44
+,low socioeconomic status,habitual alcohol consumption,Increase,3.44
+,arterial hypertension,cardiac disease,Increase,6.84
+,Cognitive dysfunction,coping mechnisms,Decrease,2.45
+,Inflammation,vascular disease,Increase,4.17
+,high fat/ high carbonhydrate diet,Inflammation,Increase,4.17
+,Inflammation,cardiac disease,Increase,4.17
+,arterial hypertension,Stroke,Increase,6.84

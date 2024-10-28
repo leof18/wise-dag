@@ -1,0 +1,44 @@
+Author,Exposure,Outcome,Direction,Strength
+"Asplund et al, Stroke 2009",age,first ischemic stroke,Increase,6.0
+40:2319-2326,male sex,first ischemic stroke,Increase,5.0
+,age,female sex,Increase,6.0
+"Bushnell et al., JCBF2018",hypertension,first ischemic stroke,Increase,5.0
+38: 2179–2191)postmenopausal vs premenopausal,metabolic syndrom,first ischemic stroke,Increase,6.0
+"Cipolla et al., JCBF2018",inflammation,first ischemic stroke,Increase,6.0
+38:2129-2149,inflammation,blood-brain barrier breakdown,Increase,6.0
+"includes diabetes, hyperlipoproteinemia, obesity (Sol M Rodriguez-Colon, stroke 2009",blood-brain barrier breakdown,first ischemic stroke,Increase,6.0
+40:200-205),metabolic syndrom,white matter hyperintensities (MRI),Increase,6.0
+"Bernardo-Castro et al., Front Neurol 2020",white matter hyperintensities (MRI),first ischemic stroke,Increase,6.0
+doi: 10.3389/fneur.2020.594672,exercise,first ischemic stroke,Decrease,0.51
+"Bernardo-Castro et al., Front Neurol 2020",exercise,metabolic syndrom,Decrease,0.51
+doi: 10.3389/fneur.2020.594672,exercise,hypertension,Decrease,0.51
+"Bernardo-Catro et al., 2020",hypertension,white matter hyperintensities (MRI),Increase,4.8
+"Frey et al, Front Neurol 2019",smoking,first ischemic stroke,Increase,5.31
+doi: 10.3389/fneur.2019.00238,smoking,white matter hyperintensities (MRI),Increase,5.0
+"Ryu et al., Brain 2017 doi: 10.1093/brain/aww259",atherosclerosis,white matter hyperintensities (MRI),Increase,6.0
+,metabolic syndrom,atherosclerosis,Increase,6.0
+,atherosclerosis/thrombosis,first ischemic stroke,Increase,6.0
+,cardiac dysfunction,first ischemic stroke,Increase,6.0
+120 versus 135 systolic blood pressure,cardiac dysfunction,white matter hyperintensities (MRI),Increase,6.54
+,atherosclerosis,vessel stenosis/occlusion,Increase,6.0
+"Power et al., Neurology 2015",vessel stenosis/occlusion,white matter hyperintensities (MRI),Increase,6.13
+84:841-848,vessel stenosis/occlusion,first ischemic stroke,Increase,6.0
+,atherosclerosis,vulnerable plaques,Increase,3.0
+"Sun et al., Sci Rep 2016 doi: 10.1038/srep33246",vulnerable plaques,first ischemic stroke,Increase,6.0
+"Famakin et al., Stroke 2009 doi: 10.1161/STROKEAHA.108.546150",vulnerable plaques,white matter hyperintensities (MRI),Increase,6.84
+"myocardial infarction, coronary heart disease, cardiac failure Folsom et al., Stroke 2013",endarterectomy,vulnerable plaques,Decrease,1.0
+44:961-967,endarterectomy,vessel stenosis/occlusion,Decrease,2.0
+"myocardial infarction, coronary heart disease, cardiac failure",kidney function,first ischemic stroke,Increase,3.0
+"Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",kidney function,white matter hyperintensities (MRI),Increase,5.0
+,metabolic syndrom,kidney function,Increase,6.0
+"Adams et al., Stroke 1993",enlarged perivascular spaces,first ischemic stroke,Increase,4.0
+24:35-41,microbleeds,white matter hyperintensities (MRI),Increase,6.0
+,preeclampsia/eclampsia,first ischemic stroke,Increase,6.84
+"Kassem et al., Ann Transl Med 2020 doi: 10.21037/atm-2020-cass-16",race,first ischemic stroke,Increase,6.68
+,preeclampsia/eclampsia,hypertension,Increase,6.0
+"Cochrane Database Syst Rev. 2020, doi: 10.1002/14651858.CD000515.pub",genetic factors,first ischemic stroke,Increase,5.53
+,inflammation,white matter hyperintensities (MRI),Increase,6.13
+"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",infection,first ischemic stroke,Increase,5.2
+"Kim et al., Sci Rep 2019 doi: 10.1038/s41598-019-45109-y",infection,inflammation,Increase,5.42
+,inflammation,coagulopathy,Increase,5.42
+"Ballerini et al., Neuroimage Clin 2020 doi: 10.1016/j.nicl.2019.102120",coagulopathy,first ischemic stroke,Increase,6.84

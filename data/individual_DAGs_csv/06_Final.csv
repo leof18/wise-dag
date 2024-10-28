@@ -1,0 +1,106 @@
+Author,Exposure,Outcome,Direction,Strength
+DeFilippis 2019,not excessive),troponin elevation,Increase,6.0
+,not excessive),mortality,Decrease,6.0
+,not excessive),FIRST ISCHEMIC STROKE,Increase,4.34
+,not excessive),nt-pro-BNP,Increase,3.22
+,not excessive),FIRST ISCHEMIC STROKE,Increase,5.1
+,not excessive),FIRST ISCHEMIC STROKE,Increase,5.0
+,acute heart failure,FIRST ISCHEMIC STROKE,Increase,3.92
+,acute heart failure,mortality,Increase,6.84
+,acute heart failure,chronic heart failure,Decrease,3.92
+,age,atrial fibrillation,Increase,4.34
+,age,BMI,Increase,4.52
+,age,FIRST ISCHEMIC STROKE,Increase,6.84
+,age,cardiac thrombus,Decrease,2.72
+Strohle et al 2015,age,kognitive decline,Decrease,3.0
+Hernán et al. 2002,Alcohol intake,Plasma folate levels,Decrease,2.0
+Hernán et al. 2002,Alcohol intake,Birth defects,Increase,2.0
+,anticoagulation,mortality,Increase,3.22
+Wiktor 2018,anticoagulation,FIRST ISCHEMIC STROKE,Increase,3.0
+,anticoagulation,severe arrrhythmia,Increase,3.76
+Hernán et al. 2002,Antiepileptic drugs,Plasma folate levels,Decrease,2.0
+Hernán et al. 2002,Antiepileptic drugs,Birth defects,Increase,2.0
+,atherosclerosis,myocardial infarction (type 1),Increase,6.84
+"thygesen et al 2018, McAloon 2016",atherosclerosis,mortality,Increase,6.0
+scheitz 2018,atrial fibrillation,acute heart failure,Increase,3.0
+,atrial fibrillation,troponin elevation,Increase,6.0
+scheitz 2014,atrial fibrillation,higher fitness/mobility post,Decrease,3.0
+,atrial fibrillation,FIRST ISCHEMIC STROKE,Increase,6.84
+,BMI,second ischemic stroke,Increase,6.84
+,BMI,atrial fibrillation,Increase,2.52
+,BMI,FIRST ISCHEMIC STROKE,Increase,4.34
+scheitz et al 2018,cardiac autonomic dysbalance,severe arrrhythmia,Increase,6.0
+,cardiac thrombus,higher fitness/mobility post,Decrease,2.68
+"Bishop, Lu, & Yankner, 2010",chronic heart failure,kognitive decline,Increase,4.0
+,chronic heart failure,FIRST ISCHEMIC STROKE,Decrease,4.34
+Krause et al 2017,chronic heart failure,troponin elevation,Increase,6.0
+Diener 2020,chronic heart failure,FIRST ISCHEMIC STROKE,Decrease,3.0
+,depression,cardiac autonomic dysbalance,Increase,2.72
+Scheitz 2018,depression,elevated catecholamines,Increase,2.0
+van der Linden 2017,depression,troponin elevation,Increase,2.0
+Sandoval 2019,diabetes,myocardial infarction (type 2),Increase,4.0
+Faria et al 2020,diabetes,troponin elevation,Increase,4.0
+,diabetes,mortality,Increase,4.52
+,diabetes,mortality,Increase,6.68
+,diabetes,dysphagia,Increase,3.22
+,diabetes,diabetes,Increase,4.52
+,dissection,Takotsubo syndrome,Decrease,2.68
+"Scheitz, Templin 2021 under review",dysphagia,Takotsubo syndrome,Increase,3.0
+Thygesen 2018,exercise (cardiac,cardiac thrombus,Increase,5.0
+,exercise (cardiac,acute heart failure,Increase,5.1
+,exercise (cardiac,myocardial infarction (type 1),Increase,6.0
+McCarthy et al 2018,exercise (cardiac,mortality,Increase,6.0
+Diener 2020,exercise (cardiac,FIRST ISCHEMIC STROKE,Decrease,4.0
+,exercise (cardiac,FIRST ISCHEMIC STROKE,Increase,3.22
+,FIRST ISCHEMIC STROKE,second ischemic stroke,Increase,4.34
+Ghadri et at 2018,FIRST ISCHEMIC STROKE,troponin elevation,Increase,4.0
+,FIRST ISCHEMIC STROKE,infection,Increase,3.22
+,FIRST ISCHEMIC STROKE,mortality,Increase,6.0
+,FIRST ISCHEMIC STROKE,troponin elevation,Increase,6.0
+,FIRST ISCHEMIC STROKE,mortality,Increase,6.54
+Ghadri 2018,FIRST ISCHEMIC STROKE,Takotsubo syndrome,Increase,2.0
+,FIRST ISCHEMIC STROKE,kognitive decline,Increase,4.52
+,FIRST ISCHEMIC STROKE,FIRST ISCHEMIC STROKE,Increase,2.68
+,FIRST ISCHEMIC STROKE,nt-pro-BNP,Increase,6.0
+,FIRST ISCHEMIC STROKE,dissection,Increase,3.92
+,FIRST ISCHEMIC STROKE,cardiac autonomic dysbalance,Increase,4.0
+,FIRST ISCHEMIC STROKE,second ischemic stroke,Increase,6.84
+Diener 2020,higher fitness/mobility post,mortality,Increase,6.0
+,higher fitness/mobility pre,higher fitness/mobility post,Decrease,4.34
+Sandoval 2019,higher fitness/mobility pre,myocardial infarction (type 2),Increase,4.0
+Rizas et al 2017,hyperlipidemia,cardiac autonomic dysbalance,Increase,6.0
+Diener 2020,hyperlipidemia,second ischemic stroke,Decrease,3.0
+,hypertension,nt-pro-BNP,Increase,6.0
+,hypertension,myocardial infarction (type 1),Increase,6.84
+,hypertension,chronic heart failure,Increase,5.1
+Ghadri 2018,hypertension,Takotsubo syndrome,Increase,6.0
+,hypertension,atherosclerosis,Increase,6.84
+,hypertension,depression,Increase,4.61
+Thygesen 2018,infection,acute heart failure,Increase,6.0
+,infection,infection,Increase,3.22
+,myocardial infarction (type 1),hypertension,Decrease,3.92
+thygesen et al 2018,myocardial infarction (type 1),troponin elevation,Increase,6.0
+,myocardial infarction (type 1),myocardial infarction (type 1),Increase,6.84
+,myocardial infarction (type 1),mortality,Increase,2.68
+,myocardial infarction (type 1),myocardial infarction (type 1),Increase,6.84
+,myocardial infarction (type 1),myocardial infarction (type 1),Increase,6.84
+,myocardial infarction (type 1),chronic heart failure,Increase,6.84
+thygesen et al 2018,myocardial infarction (type 1),severe arrrhythmia,Increase,6.0
+Thygesen 2018,myocardial infarction (type 2),myocardial infarction (type 2),Increase,6.0
+McCarthy 2018,myocardial infarction (type 2),myocardial infarction (type 2),Increase,6.0
+,persistent foramen ovale,infection,Increase,3.22
+Hernán et al. 2002,Plasma folate levels,Birth defects,Decrease,2.0
+Scheitz et al 2014,second ischemic stroke,troponin elevation,Increase,6.0
+,seizures,FIRST ISCHEMIC STROKE,Increase,4.52
+broersen et al 2020,seizures,kognitive decline,Increase,4.0
+,severe arrrhythmia,FIRST ISCHEMIC STROKE,Increase,6.68
+"Scheitz et al, Sposato 2020",sex (male),elevated catecholamines,Increase,2.0
+,sex (male),smoking,Increase,3.84
+,sex (male),FIRST ISCHEMIC STROKE,Increase,4.34
+,smoking,myocardial infarction (type 1),Decrease,2.72
+,smoking,FIRST ISCHEMIC STROKE,Increase,6.84
+,stroke lesion affecting central autonomic network,severe arrrhythmia,Increase,6.0
+Scheitz et.al 2018 lancet,stroke lesion affecting central autonomic network,severe arrrhythmia,Increase,6.0
+Rizas et al 2017,Takotsubo syndrome,severe arrrhythmia,Increase,4.0
+,troponin elevation,kognitive decline,Increase,4.52
+,troponin elevation,seizures,Increase,4.17

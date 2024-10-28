@@ -1,0 +1,102 @@
+Author,Exposure,Outcome,Direction,Strength
+Burn et al. (1994),first ischemic stroke,second ischemic stroke,Increase,6.84
+Brønnum-Hansen et al. (2001),first ischemic stroke,mortality,Increase,6.84
+Hankey et al. (2002),first ischemic stroke,disability,Increase,6.84
+Davenport et al. (1996),first ischemic stroke,pneumonia,Increase,6.0
+Johnston et al. (1998),first ischemic stroke,urinary tract infection,Increase,6.0
+Davenport et al. (1996),pneumonia,mortality,Increase,6.0
+Finlayson et al. (2011),second ischemic stroke,mortality,Increase,2.68
+Poisson et al. (2010),second ischemic stroke,disability,Increase,2.68
+Ersoz et al. (2007),urinary catheter placement,urinary tract infection,Increase,6.0
+van der Worp & Kappelle (1998),first ischemic stroke,bladder dysfunction,Increase,6.0
+,first ischemic stroke,urinary catheter placement,Increase,2.0
+Poisson et al. (2010),bladder dysfunction,urinary tract infection,Increase,2.68
+,first ischemic stroke,immunosuppression,Increase,0.51
+Maki & Tambyah (2001),immunosuppression,urinary tract infection,Increase,0.51
+Gould et al. (2010),sex(female),urinary tract infection,Increase,6.0
+Kong & Young (2000),age,urinary tract infection,Increase,6.0
+Poisson et al. (2010),age,first ischemic stroke,Increase,6.0
+,urinary tract infection,mortality,Increase,0.51
+Poisson et al. (2010),urinary tract infection,disability,Increase,0.51
+Poisson et al. (2010),first ischemic stroke,body temperature,Increase,0.51
+Azzimondi et al. (1995),urinary tract infection,body temperature,Increase,6.84
+Boysen & Christensen (2001),pneumonia,body temperature,Increase,6.84
+,body temperature,mortality,Increase,0.51
+,body temperature,disability,Increase,0.51
+Jauch et al. (2013),first ischemic stroke,delirium,Increase,0.51
+Jauch et al. (2013),age,delirium,Increase,6.84
+Oldenbeuving et al. (2007),urinary tract infection,delirium,Increase,0.51
+Oldenbeuving et al. (2007),pneumonia,delirium,Increase,0.51
+Oldenbeuving et al. (2007),delirium,disability,Increase,0.51
+Oldenbeuving et al. (2007),stroke unit care,delirium,Decrease,0.51
+Oldenbeuving et al. (2007),bladder dysfunction,urinary catheter placement,Increase,0.51
+Oldenbeuving et al. (2007),age,pneumonia,Increase,2.68
+,pneumonia,disability,Increase,0.0
+Finlayson et al. (2011),first ischemic stroke,dysphagia,Increase,6.0
+Finlayson et al. (2011),dysphagia,pneumonia,Increase,6.84
+Martino et al. (2005),dysphagia,aspiration,Increase,6.84
+Martino et al. (2005),aspiration,pneumonia,Increase,6.84
+Martino et al. (2005),smoking,first ischemic stroke,Increase,6.84
+Martino et al. (2005),smoking,second ischemic stroke,Increase,6.84
+,sex(male),first ischemic stroke,Increase,6.84
+,atrial fibrillation,first ischemic stroke,Increase,6.84
+,BMI,first ischemic stroke,Increase,6.84
+,atrial fibrillation,second ischemic stroke,Increase,6.84
+,BMI,second ischemic stroke,Increase,6.84
+,blood pressure,first ischemic stroke,Increase,6.84
+,blood pressure,second ischemic stroke,Increase,6.84
+,age,blood pressure,Increase,6.84
+,age,smoking,Decrease,2.93
+,first ischemic stroke,stroke unit care,Increase,6.84
+,blood lipids,first ischemic stroke,Increase,6.84
+Jauch et al. (2013),diabetes,first ischemic stroke,Increase,6.84
+,first ischemic stroke,blood glucose,Increase,6.0
+Khoury et al. (2013),diabetes,blood glucose,Increase,6.0
+Jauch et al. (2013),age,diabetes,Increase,2.68
+,BMI,diabetes,Increase,2.68
+,sex(male),smoking,Increase,2.68
+Langhorne et al. (2020),stroke unit care,mortality,Decrease,4.71
+Langhorne et al. (2020),stroke unit care,disability,Decrease,4.17
+Touzé et al. (2005),first ischemic stroke,myocardial infarction,Increase,1.0
+,myocardial infarction,mortality,Increase,6.0
+Sulter et al. (2000),first ischemic stroke,oxygen saturation,Decrease,5.0
+Rowat et al. (2006),patient positioning,oxygen saturation,Increase,0.51
+Rowat et al. (2001),pneumonia,oxygen saturation,Decrease,6.84
+,age,oxygen saturation,Decrease,0.51
+Sulter et al. (2000),dysphagia,oxygen saturation,Decrease,0.51
+Sulter et al. (2000),oxygen saturation,mortality,Decrease,0.51
+Rowat et al. (2006),first ischemic stroke,dependency,Increase,6.0
+,disability,dependency,Increase,6.0
+,dysphagia,dependency,Increase,2.68
+Martino et al. (2005),first ischemic stroke,urinary incontinence,Increase,2.68
+Nakayama et al. (1997),age,urinary incontinence,Increase,2.68
+Nakayama et al. (1997),urinary incontinence,dependency,Increase,2.68
+Patel et al. (2001),diabetes,urinary incontinence,Increase,0.51
+,urinary incontinence,urinary catheter placement,Increase,0.51
+,first ischemic stroke,paralysis,Increase,6.84
+,paralysis,disability,Increase,6.84
+,paralysis,dependency,Increase,6.84
+,first ischemic stroke,deep vein thrombosis,Increase,6.84
+Kappelle et al. (2011),paralysis,deep vein thrombosis,Increase,6.84
+Kappelle et al. (2011),deep vein thrombosis,pulmonary embolism,Increase,6.84
+,pulmonary embolism,mortality,Increase,6.84
+,pulmonary embolism,oxygen saturation,Decrease,6.84
+,paralysis,pneumonia,Increase,2.0
+,first ischemic stroke,falls,Increase,6.0
+Wei et al. (2019),age,falls,Increase,2.68
+,urinary incontinence,falls,Increase,2.68
+,delirium,falls,Increase,2.68
+,falls,fractures,Increase,2.0
+Melton et al. (2001),first ischemic stroke,fractures,Increase,2.68
+Kanis et al. (2001),fractures,disability,Increase,0.51
+,fractures,dependency,Increase,0.51
+,physical activity,first ischemic stroke,Increase,6.84
+low or very high,alcohol consumption,first ischemic stroke,Increase,3.84
+,atherosclerosis,first ischemic stroke,Increase,6.0
+,blood lipids,second ischemic stroke,Increase,6.0
+,alcohol consumption,second ischemic stroke,Increase,3.0
+,physical activity,second ischemic stroke,Increase,6.0
+,education,first ischemic stroke,Decrease,1.0
+Reshetnyak et al. (2020),income,first ischemic stroke,Decrease,1.0
+Reshetnyak et al. (2020),social isolation,first ischemic stroke,Increase,0.51
+Reshetnyak et al. (2020),TIA,first ischemic stroke,Increase,6.84

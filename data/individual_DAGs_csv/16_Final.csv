@@ -1,0 +1,77 @@
+Author,Exposure,Outcome,Direction,Strength
+"Harrison Internal Med., 2020",Embolism,First Ischemic Stroke,Increase,6.0
+"Harrison Internal Med., 2020",Thrombosis,First Ischemic Stroke,Increase,4.61
+"Harrison Internal Med., 2020",Lacunes,Thrombosis,Increase,4.61
+"Harrison Internal Med., 2020",Atrial Fibrillation,Embolism,Increase,4.61
+"Harrison Internal Med., 2020",Atherosclerosis,Thrombosis,Increase,4.61
+"Harrison Internal Med., 2020",Male Sex,Atherosclerosis,Increase,4.61
+"Harrison Internal Med., 2020",Age,Atherosclerosis,Increase,4.61
+"Harrison Internal Med., 2020",Smoking,Atherosclerosis,Increase,4.61
+"Harrison Internal Med., 2020",Diabetes,Atherosclerosis,Increase,4.61
+"Harrison Internal Med., 2020",Dyslipidemia,Atherosclerosis,Increase,4.0
+"Harrison Internal Med., 2020",Hypertension,Atherosclerosis,Increase,4.61
+"Harrison Internal Med., 2020",Arterial Dissection,First Ischemic Stroke,Increase,4.61
+"Harrison Internal Med., 2020",Hypertension,Lacunes,Increase,4.61
+"Harrison Internal Med., 2020",Age,Lacunes,Increase,4.61
+"Harrison Internal Med., 2020",Hypercoagulopathy,Thrombosis,Increase,4.61
+"Harrison Internal Med., 2020",Vasculitis,First Ischemic Stroke,Increase,4.61
+,Cardiac Remodelling,Atrial Fibrillation,Increase,4.61
+,Age,Cardiac Remodelling,Increase,4.61
+,Hypertension,Cardiac Remodelling,Increase,4.61
+,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61
+,Atherosclerosis,Other Cardiac Pathologies,Increase,4.61
+"Harrison Internal Med., 2020",Atherosclerosis,Myocardial Infarction,Increase,4.61
+,Myocardial Infarction,Cardiac Remodelling,Increase,4.61
+"Harrison Internal Med., 2020",Second-hand Smoking,Atherosclerosis,Increase,4.61
+,Insulin Resistance / Impaired glucose metabolism,Diabetes,Increase,4.0
+"Kernan, 2002",Insulin Resistance / Impaired glucose metabolism,Atherosclerosis,Increase,4.0
+"Kernan, 2002",Age,Insulin Resistance / Impaired glucose metabolism,Increase,4.0
+,Physical Inactivity,Obesity,Increase,4.61
+Kernan et al. 2002,Insulin Resistance / Impaired glucose metabolism,Hypertension,Increase,4.0
+Kernan et al 2002,Insulin Resistance / Impaired glucose metabolism,Dyslipidemia,Increase,2.0
+Kernan et al 2002,Insulin Resistance / Impaired glucose metabolism,Inflammation,Increase,4.0
+"Hansson , 2006",Inflammation,Atherosclerosis,Increase,4.17
+Kahn et. al 2006,Obesity,Insulin Resistance / Impaired glucose metabolism,Increase,4.0
+Kahn et. al 2006,Obesity,Inflammation,Increase,4.17
+"Hering, 2015",Psychogenic Stress,Sympathetic activation,Increase,0.51
+"Hering, 2015",Sympathetic activation,Thrombosis,Increase,0.51
+Redline et al 2011,Sleep disturbances / Obstructive Sleep Apnea,Hypertension,Increase,0.51
+Redline et al 2011,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism,Increase,2.68
+Redline et al 2011,Sleep disturbances / Obstructive Sleep Apnea,Inflammation,Increase,1.4
+,Psychogenic Stress,Smoking,Increase,2.68
+,Insulin Resistance / Impaired glucose metabolism,Prediabetes,Increase,2.68
+Fonville et al. 2014,Prediabetes,Diabetes,Increase,2.68
+,Hypertension,Arterial Dissection,Increase,2.68
+,Smoking,Hypertension,Increase,2.68
+American Heart Association 2014,Antihypertensive Therapy,Hypertension,Decrease,4.61
+American Heart Association 2014,Statin Therapy,Dyslipidemia,Decrease,4.61
+Hansson 2006,Statin Therapy,Inflammation,Decrease,3.44
+Kernan et al 2002,Weight Loss and Aerobic Exercise,Insulin Resistance / Impaired glucose metabolism,Decrease,3.44
+American Heart Association 2014,Dietary salt restriction,Hypertension,Decrease,3.44
+American Heart Association 2014,Weight Loss and Aerobic Exercise,Physical Inactivity,Decrease,2.68
+American Heart Association 2014,Healthy Diet,Obesity,Decrease,2.68
+American Heart Association 2014,Glycemic control,Diabetes,Decrease,2.68
+Kernan et al 2002,Thiazolidindione,Dyslipidemia,Decrease,2.25
+Kernan et al 2002,Thiazolidindione,Hypertension,Decrease,2.25
+Kernan et al 2002,Thiazolidindione,Insulin Resistance / Impaired glucose metabolism,Decrease,2.25
+American Diabetes Association 2020,SGLT2 Inhibitors,Diabetes,Decrease,2.25
+American Diabetes Association 2020,GLP1 Receptor Agonists,Diabetes,Decrease,2.25
+American Heart Association 2014,CPAP Treatment,Sleep disturbances / Obstructive Sleep Apnea,Decrease,2.25
+American Heart Association 2014,Smoking Cessation,Smoking,Decrease,2.25
+American Heart Association 2014,Carotid Endarterectomy / Angioplasty / stenting,Atherosclerosis,Decrease,3.07
+American Heart Association 2014,Mono-/Dual Antiplatelet Therapy,Thrombosis,Decrease,3.0
+American Heart Association 2014,Anticoagulation Therapy,Embolism,Decrease,3.07
+American Heart Association 2014,Mono-/Dual Antiplatelet Therapy,Arterial Dissection,Decrease,2.68
+American Heart Association 2014,Anticoagulation Therapy,Arterial Dissection,Decrease,2.68
+American Heart Association 2014,Anticoagulation Therapy,Hypercoagulopathy,Decrease,2.68
+Harrison internal medicine 2020,Statin Therapy,Thrombosis,Decrease,2.68
+Harrison internal medicine 2020,Statin Therapy,Hypertension,Decrease,2.68
+Sundell 2008 & mostofsky 2016,Low-Moderate Alcohol Consumption,Atherosclerosis,Decrease,2.0
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Hypertension,Increase,2.0
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Other Cardiac Pathologies,Increase,2.0
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Atrial Fibrillation,Increase,2.0
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Thrombosis,Increase,2.0
+American Heart Association 2014,Reducing Alcohol Consumption,Heavy Alcohol Consumption,Decrease,2.0
+,First Ischemic Stroke,Neurological Sequalae,Increase,2.68
+,First Ischemic Stroke,Death,Increase,2.68
+,First Ischemic Stroke,Recurrent Stroke,Increase,2.68
