@@ -176,111 +176,106 @@ Broersen et al. 2020,hs cardiac Troponin,Stroke,Increase,0.94,05,Draft
 ,high fat/ high carbonhydrate diet,Inflammation,Increase,4.17,05,Draft
 ,Inflammation,cardiac disease,Increase,4.17,05,Draft
 ,arterial hypertension,Stroke,Increase,6.84,05,Draft
-DeFilippis 2019,not excessive),troponin elevation,Increase,6.0,06,Final
-,not excessive),mortality,Decrease,6.0,06,Final
-,not excessive),FIRST ISCHEMIC STROKE,Increase,4.34,06,Final
-,not excessive),nt-pro-BNP,Increase,3.22,06,Final
-,not excessive),FIRST ISCHEMIC STROKE,Increase,5.1,06,Final
-,not excessive),FIRST ISCHEMIC STROKE,Increase,5.0,06,Final
-,acute heart failure,FIRST ISCHEMIC STROKE,Increase,3.92,06,Final
+McCarthy 2018,acute heart failure,myocardial infarction (type 2),Increase,6.0,06,Final
 ,acute heart failure,mortality,Increase,6.84,06,Final
-,acute heart failure,chronic heart failure,Decrease,3.92,06,Final
-,age,atrial fibrillation,Increase,4.34,06,Final
-,age,BMI,Increase,4.52,06,Final
+,acute heart failure,nt-pro-BNP,Increase,6.0,06,Final
+,age,diabetes,Increase,4.52,06,Final
 ,age,FIRST ISCHEMIC STROKE,Increase,6.84,06,Final
-,age,cardiac thrombus,Decrease,2.72,06,Final
-Strohle et al 2015,age,kognitive decline,Decrease,3.0,06,Final
-Hernán et al. 2002,Alcohol intake,Plasma folate levels,Decrease,2.0,06,Final
-Hernán et al. 2002,Alcohol intake,Birth defects,Increase,2.0,06,Final
-,anticoagulation,mortality,Increase,3.22,06,Final
-Wiktor 2018,anticoagulation,FIRST ISCHEMIC STROKE,Increase,3.0,06,Final
-,anticoagulation,severe arrrhythmia,Increase,3.76,06,Final
-Hernán et al. 2002,Antiepileptic drugs,Plasma folate levels,Decrease,2.0,06,Final
-Hernán et al. 2002,Antiepileptic drugs,Birth defects,Increase,2.0,06,Final
+,age,atrial fibrillation,Increase,4.34,06,Final
+"Bishop, Lu, & Yankner, 2010",age,kognitive decline,Increase,4.0,06,Final
+,age,atherosclerosis,Increase,6.84,06,Final
+Diener 2020,anticoagulation,second ischemic stroke,Decrease,3.0,06,Final
+Diener 2020,anticoagulation,FIRST ISCHEMIC STROKE,Decrease,3.0,06,Final
+,anticoagulation,cardiac thrombus,Decrease,2.72,06,Final
+,atherosclerosis,FIRST ISCHEMIC STROKE,Increase,6.68,06,Final
 ,atherosclerosis,myocardial infarction (type 1),Increase,6.84,06,Final
-"thygesen et al 2018, McAloon 2016",atherosclerosis,mortality,Increase,6.0,06,Final
-scheitz 2018,atrial fibrillation,acute heart failure,Increase,3.0,06,Final
-,atrial fibrillation,troponin elevation,Increase,6.0,06,Final
-scheitz 2014,atrial fibrillation,higher fitness/mobility post,Decrease,3.0,06,Final
 ,atrial fibrillation,FIRST ISCHEMIC STROKE,Increase,6.84,06,Final
+,atrial fibrillation,troponin elevation,Increase,6.0,06,Final
+,atrial fibrillation,nt-pro-BNP,Increase,6.0,06,Final
+,atrial fibrillation,severe arrrhythmia,Increase,6.0,06,Final
+,BMI,myocardial infarction (type 1),Increase,6.84,06,Final
 ,BMI,second ischemic stroke,Increase,6.84,06,Final
-,BMI,atrial fibrillation,Increase,2.52,06,Final
 ,BMI,FIRST ISCHEMIC STROKE,Increase,4.34,06,Final
-scheitz et al 2018,cardiac autonomic dysbalance,severe arrrhythmia,Increase,6.0,06,Final
-,cardiac thrombus,higher fitness/mobility post,Decrease,2.68,06,Final
-"Bishop, Lu, & Yankner, 2010",chronic heart failure,kognitive decline,Increase,4.0,06,Final
-,chronic heart failure,FIRST ISCHEMIC STROKE,Decrease,4.34,06,Final
-Krause et al 2017,chronic heart failure,troponin elevation,Increase,6.0,06,Final
-Diener 2020,chronic heart failure,FIRST ISCHEMIC STROKE,Decrease,3.0,06,Final
-,depression,cardiac autonomic dysbalance,Increase,2.72,06,Final
-Scheitz 2018,depression,elevated catecholamines,Increase,2.0,06,Final
-van der Linden 2017,depression,troponin elevation,Increase,2.0,06,Final
-Sandoval 2019,diabetes,myocardial infarction (type 2),Increase,4.0,06,Final
-Faria et al 2020,diabetes,troponin elevation,Increase,4.0,06,Final
+Rizas et al 2017,cardiac autonomic dysbalance,severe arrrhythmia,Increase,4.0,06,Final
+,cardiac thrombus,FIRST ISCHEMIC STROKE,Increase,5.1,06,Final
+,chronic heart failure,kognitive decline,Increase,4.52,06,Final
+,chronic heart failure,FIRST ISCHEMIC STROKE,Increase,4.34,06,Final
+,chronic heart failure,nt-pro-BNP,Increase,3.22,06,Final
+,chronic heart failure,troponin elevation,Increase,6.0,06,Final
+,depression,higher fitness/mobility post,Decrease,2.68,06,Final
+,depression,mortality,Increase,2.68,06,Final
+Ghadri 2018,depression,Takotsubo syndrome,Increase,2.0,06,Final
 ,diabetes,mortality,Increase,4.52,06,Final
-,diabetes,mortality,Increase,6.68,06,Final
-,diabetes,dysphagia,Increase,3.22,06,Final
-,diabetes,diabetes,Increase,4.52,06,Final
-,dissection,Takotsubo syndrome,Decrease,2.68,06,Final
-"Scheitz, Templin 2021 under review",dysphagia,Takotsubo syndrome,Increase,3.0,06,Final
-Thygesen 2018,exercise (cardiac,cardiac thrombus,Increase,5.0,06,Final
-,exercise (cardiac,acute heart failure,Increase,5.1,06,Final
-,exercise (cardiac,myocardial infarction (type 1),Increase,6.0,06,Final
-McCarthy et al 2018,exercise (cardiac,mortality,Increase,6.0,06,Final
-Diener 2020,exercise (cardiac,FIRST ISCHEMIC STROKE,Decrease,4.0,06,Final
-,exercise (cardiac,FIRST ISCHEMIC STROKE,Increase,3.22,06,Final
-,FIRST ISCHEMIC STROKE,second ischemic stroke,Increase,4.34,06,Final
-Ghadri et at 2018,FIRST ISCHEMIC STROKE,troponin elevation,Increase,4.0,06,Final
-,FIRST ISCHEMIC STROKE,infection,Increase,3.22,06,Final
-,FIRST ISCHEMIC STROKE,mortality,Increase,6.0,06,Final
-,FIRST ISCHEMIC STROKE,troponin elevation,Increase,6.0,06,Final
-,FIRST ISCHEMIC STROKE,mortality,Increase,6.54,06,Final
-Ghadri 2018,FIRST ISCHEMIC STROKE,Takotsubo syndrome,Increase,2.0,06,Final
-,FIRST ISCHEMIC STROKE,kognitive decline,Increase,4.52,06,Final
-,FIRST ISCHEMIC STROKE,FIRST ISCHEMIC STROKE,Increase,2.68,06,Final
-,FIRST ISCHEMIC STROKE,nt-pro-BNP,Increase,6.0,06,Final
-,FIRST ISCHEMIC STROKE,dissection,Increase,3.92,06,Final
-,FIRST ISCHEMIC STROKE,cardiac autonomic dysbalance,Increase,4.0,06,Final
+,diabetes,infection,Increase,3.22,06,Final
+,diabetes,myocardial infarction (type 1),Increase,6.0,06,Final
+,diabetes,FIRST ISCHEMIC STROKE,Increase,4.52,06,Final
+,diabetes,BMI,Increase,4.52,06,Final
+,diabetes,cardiac autonomic dysbalance,Increase,4.0,06,Final
+,dissection,FIRST ISCHEMIC STROKE,Increase,3.92,06,Final
+,dysphagia,infection,Increase,3.22,06,Final
+,elevated catecholamines,severe arrrhythmia,Increase,3.76,06,Final
+Ghadri 2018,elevated catecholamines,Takotsubo syndrome,Increase,6.0,06,Final
+,exercise (cardiac not excessive),hypertension,Decrease,3.92,06,Final
+Diener 2020,exercise (cardiac not excessive),FIRST ISCHEMIC STROKE,Decrease,4.0,06,Final
+Strohle et al 2015,exercise (cardiac not excessive),kognitive decline,Decrease,3.0,06,Final
+,exercise (cardiac not excessive),atrial fibrillation,Increase,2.52,06,Final
+,exercise (cardiac not excessive),myocardial infarction (type 1),Decrease,2.72,06,Final
+,exercise (cardiac not excessive),chronic heart failure,Decrease,3.92,06,Final
+Scheitz et al 2014,FIRST ISCHEMIC STROKE,troponin elevation,Increase,6.0,06,Final
 ,FIRST ISCHEMIC STROKE,second ischemic stroke,Increase,6.84,06,Final
-Diener 2020,higher fitness/mobility post,mortality,Increase,6.0,06,Final
-,higher fitness/mobility pre,higher fitness/mobility post,Decrease,4.34,06,Final
-Sandoval 2019,higher fitness/mobility pre,myocardial infarction (type 2),Increase,4.0,06,Final
-Rizas et al 2017,hyperlipidemia,cardiac autonomic dysbalance,Increase,6.0,06,Final
-Diener 2020,hyperlipidemia,second ischemic stroke,Decrease,3.0,06,Final
-,hypertension,nt-pro-BNP,Increase,6.0,06,Final
+Diener 2020,FIRST ISCHEMIC STROKE,mortality,Increase,6.0,06,Final
+scheitz 2018,FIRST ISCHEMIC STROKE,acute heart failure,Increase,3.0,06,Final
+,FIRST ISCHEMIC STROKE,higher fitness/mobility post,Decrease,4.34,06,Final
+,FIRST ISCHEMIC STROKE,kognitive decline,Increase,4.52,06,Final
+Thygesen 2018,FIRST ISCHEMIC STROKE,myocardial infarction (type 2),Increase,6.0,06,Final
+,FIRST ISCHEMIC STROKE,depression,Increase,4.61,06,Final
+"Scheitz, Templin 2021 under review",FIRST ISCHEMIC STROKE,Takotsubo syndrome,Increase,3.0,06,Final
+,FIRST ISCHEMIC STROKE,infection,Increase,3.22,06,Final
+"Scheitz et al, Sposato 2020",FIRST ISCHEMIC STROKE,elevated catecholamines,Increase,2.0,06,Final
+,FIRST ISCHEMIC STROKE,seizures,Increase,4.17,06,Final
+,FIRST ISCHEMIC STROKE,dysphagia,Increase,3.22,06,Final
+scheitz et al 2018,FIRST ISCHEMIC STROKE,severe arrrhythmia,Increase,6.0,06,Final
+,higher fitness/mobility post,second ischemic stroke,Increase,4.34,06,Final
+,higher fitness/mobility pre,FIRST ISCHEMIC STROKE,Decrease,4.34,06,Final
+,higher fitness/mobility pre,mortality,Decrease,6.0,06,Final
+,hyperlipidemia,myocardial infarction (type 1),Increase,6.84,06,Final
+,hyperlipidemia,FIRST ISCHEMIC STROKE,Increase,3.22,06,Final
 ,hypertension,myocardial infarction (type 1),Increase,6.84,06,Final
+,hypertension,FIRST ISCHEMIC STROKE,Increase,5.1,06,Final
+,hypertension,dissection,Increase,3.92,06,Final
 ,hypertension,chronic heart failure,Increase,5.1,06,Final
-Ghadri 2018,hypertension,Takotsubo syndrome,Increase,6.0,06,Final
-,hypertension,atherosclerosis,Increase,6.84,06,Final
-,hypertension,depression,Increase,4.61,06,Final
-Thygesen 2018,infection,acute heart failure,Increase,6.0,06,Final
-,infection,infection,Increase,3.22,06,Final
-,myocardial infarction (type 1),hypertension,Decrease,3.92,06,Final
-thygesen et al 2018,myocardial infarction (type 1),troponin elevation,Increase,6.0,06,Final
-,myocardial infarction (type 1),myocardial infarction (type 1),Increase,6.84,06,Final
-,myocardial infarction (type 1),mortality,Increase,2.68,06,Final
-,myocardial infarction (type 1),myocardial infarction (type 1),Increase,6.84,06,Final
-,myocardial infarction (type 1),myocardial infarction (type 1),Increase,6.84,06,Final
-,myocardial infarction (type 1),chronic heart failure,Increase,6.84,06,Final
+Sandoval 2019,hypertension,myocardial infarction (type 2),Increase,4.0,06,Final
+,hypertension,acute heart failure,Increase,5.1,06,Final
+,infection,mortality,Increase,3.22,06,Final
+Sandoval 2019,infection,myocardial infarction (type 2),Increase,4.0,06,Final
+van der Linden 2017,kidney disease,troponin elevation,Increase,2.0,06,Final
+,myocardial infarction (type 1),FIRST ISCHEMIC STROKE,Increase,2.68,06,Final
+Rizas et al 2017,myocardial infarction (type 1),cardiac autonomic dysbalance,Increase,6.0,06,Final
+"thygesen et al 2018, McAloon 2016",myocardial infarction (type 1),mortality,Increase,6.0,06,Final
 thygesen et al 2018,myocardial infarction (type 1),severe arrrhythmia,Increase,6.0,06,Final
-Thygesen 2018,myocardial infarction (type 2),myocardial infarction (type 2),Increase,6.0,06,Final
-McCarthy 2018,myocardial infarction (type 2),myocardial infarction (type 2),Increase,6.0,06,Final
-,persistent foramen ovale,infection,Increase,3.22,06,Final
-Hernán et al. 2002,Plasma folate levels,Birth defects,Decrease,2.0,06,Final
-Scheitz et al 2014,second ischemic stroke,troponin elevation,Increase,6.0,06,Final
-,seizures,FIRST ISCHEMIC STROKE,Increase,4.52,06,Final
-broersen et al 2020,seizures,kognitive decline,Increase,4.0,06,Final
-,severe arrrhythmia,FIRST ISCHEMIC STROKE,Increase,6.68,06,Final
-"Scheitz et al, Sposato 2020",sex (male),elevated catecholamines,Increase,2.0,06,Final
+thygesen et al 2018,myocardial infarction (type 1),troponin elevation,Increase,6.0,06,Final
+Thygesen 2018,myocardial infarction (type 1),acute heart failure,Increase,6.0,06,Final
+Thygesen 2018,myocardial infarction (type 1),cardiac thrombus,Increase,5.0,06,Final
+,myocardial infarction (type 1),chronic heart failure,Increase,6.84,06,Final
+DeFilippis 2019,myocardial infarction (type 2),troponin elevation,Increase,6.0,06,Final
+McCarthy et al 2018,myocardial infarction (type 2),mortality,Increase,6.0,06,Final
+Wiktor 2018,persistent foramen ovale,FIRST ISCHEMIC STROKE,Increase,3.0,06,Final
+,second ischemic stroke,mortality,Increase,6.0,06,Final
+,seizures,mortality,Increase,6.54,06,Final
+Faria et al 2020,seizures,troponin elevation,Increase,4.0,06,Final
+,severe arrrhythmia,mortality,Increase,6.68,06,Final
 ,sex (male),smoking,Increase,3.84,06,Final
 ,sex (male),FIRST ISCHEMIC STROKE,Increase,4.34,06,Final
-,smoking,myocardial infarction (type 1),Decrease,2.72,06,Final
+,sex (male),Takotsubo syndrome,Decrease,2.68,06,Final
 ,smoking,FIRST ISCHEMIC STROKE,Increase,6.84,06,Final
-,stroke lesion affecting central autonomic network,severe arrrhythmia,Increase,6.0,06,Final
+,smoking,myocardial infarction (type 1),Increase,6.84,06,Final
+,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance,Increase,2.72,06,Final
 Scheitz et.al 2018 lancet,stroke lesion affecting central autonomic network,severe arrrhythmia,Increase,6.0,06,Final
-Rizas et al 2017,Takotsubo syndrome,severe arrrhythmia,Increase,4.0,06,Final
-,troponin elevation,kognitive decline,Increase,4.52,06,Final
-,troponin elevation,seizures,Increase,4.17,06,Final
+Krause et al 2017,stroke lesion affecting central autonomic network,troponin elevation,Increase,6.0,06,Final
+Scheitz 2018,stroke lesion affecting central autonomic network,elevated catecholamines,Increase,2.0,06,Final
+Ghadri et at 2018,Takotsubo syndrome,troponin elevation,Increase,4.0,06,Final
+scheitz 2014,troponin elevation,higher fitness/mobility post,Decrease,3.0,06,Final
+broersen et al 2020,troponin elevation,kognitive decline,Increase,4.0,06,Final
 ,age,first-ever ischemic stroke occurence,Increase,6.84,07,Final
 ,sex (being male),first-ever ischemic stroke occurence,Increase,6.84,07,Final
 ,BMI,first-ever ischemic stroke occurence,Increase,6.84,07,Final
@@ -304,7 +299,6 @@ Wilhelmsson et al (1975),smoking,occurence of myocardial infarction,Increase,6.0
 ,atrial fibrilation,second ischemic stroke occurence,Increase,2.68,07,Final
 ,occurence of myocardial infarction,second ischemic stroke occurence,Increase,2.68,07,Final
 ,smoking,second ischemic stroke occurence,Increase,2.68,07,Final
-,,,,,07,Final
 ,anticoagulation medication,first-ever ischemic stroke occurence,Decrease,2.68,07,Final
 Schneider et al. (2004),first-ever ischemic stroke occurence,cognitive function,Decrease,2.0,07,Final
 Snowdon et al. (1997),second ischemic stroke occurence,cognitive function,Decrease,2.0,07,Final
@@ -383,7 +377,7 @@ Oldenbeuving et al. (2007),delirium,disability,Increase,0.51,09,Final
 Oldenbeuving et al. (2007),stroke unit care,delirium,Decrease,0.51,09,Final
 Oldenbeuving et al. (2007),bladder dysfunction,urinary catheter placement,Increase,0.51,09,Final
 Oldenbeuving et al. (2007),age,pneumonia,Increase,2.68,09,Final
-,pneumonia,disability,Increase,0.0,09,Final
+,pneumonia,disability,Increase,0.51,09,Final
 Finlayson et al. (2011),first ischemic stroke,dysphagia,Increase,6.0,09,Final
 Finlayson et al. (2011),dysphagia,pneumonia,Increase,6.84,09,Final
 Martino et al. (2005),dysphagia,aspiration,Increase,6.84,09,Final
@@ -558,7 +552,6 @@ Marshall et al. 2015,cortical involvement or strategical localisation of stroke 
 Lorant et al. 2013,second ischemic stroke,functional outcome (e.g. measured by mRS),Increase,5.0,10,Final
 "Asplund et al, Stroke 2009",age,first ischemic stroke,Increase,6.0,11,Final
 40:2319-2326,male sex,first ischemic stroke,Increase,5.0,11,Final
-,age,female sex,Increase,6.0,11,Final
 "Bushnell et al., JCBF2018",hypertension,first ischemic stroke,Increase,5.0,11,Final
 38: 2179–2191)postmenopausal vs premenopausal,metabolic syndrom,first ischemic stroke,Increase,6.0,11,Final
 "Cipolla et al., JCBF2018",inflammation,first ischemic stroke,Increase,6.0,11,Final
@@ -892,8 +885,8 @@ Christoph,aging,first ischemic stroke,Increase,6.84,20,Draft
 Christoph,aging,second ischemic stroke,Increase,6.84,20,Draft
 Christoph,second ischemic stroke,recovery level,Decrease,6.84,20,Draft
 ,first ischemic stroke,recovery level,Decrease,2.68,20,Draft
-xx,B-cell infiltration,cognition,Decrease,2.68,20,Draft
-xx,aging,cognition,Decrease,13.0,20,Draft
+,B-cell infiltration,cognition,Decrease,2.68,20,Draft
+,aging,cognition,Decrease,6.84,20,Draft
 ,hypertension,cognition,Decrease,4.08,20,Draft
 ,first ischemic stroke,cognition,Decrease,2.06,20,Draft
 ,second ischemic stroke,cognition,Decrease,6.84,20,Draft
@@ -904,7 +897,7 @@ xx,aging,cognition,Decrease,13.0,20,Draft
 ,systemic IL6,first ischemic stroke,Increase,6.84,20,Draft
 ,collateralization,stroke volume,Increase,6.84,20,Draft
 ,first ischemic stroke,hemispheric atrophy,Increase,6.84,20,Draft
-,second ischemic stroke,hemispheric atrophy,Increase,11.0,20,Draft
+,second ischemic stroke,hemispheric atrophy,Increase,6.84,20,Draft
 ,hypertension,hemispheric atrophy,Increase,3.68,20,Draft
 ,aging,hemispheric atrophy,Increase,6.84,20,Draft
 ,endothelial proliferation,recovery level,Increase,6.84,20,Draft
