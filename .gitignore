@@ -1,3 +1,6 @@
+# Folders with too much data
+ohdsi_athena_vocab/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
