@@ -1,0 +1,309 @@
+,term,combined_concept
+65,acute heart failure,Acute heart failure
+182,heart failure,Acute heart failure
+100,infectious endocarditis,Acute infective endocarditis
+143,Statins,Administration of prophylactic statin
+219,Statin Therapy,Administration of prophylactic statin
+103,statin use,Administration of prophylactic statin
+1,age,Age factor
+199,ageing,Age factor
+266,aging,Age factor
+23,Age,Age factor
+101,alcohol consumption,Alcohol consumption unknown
+62,habitual alcohol consumption,Alcohol consumption unknown
+34,high drinking levels,Alcohol intake exceeds recommended daily limit
+233,Heavy Alcohol Consumption,Alcohol intake exceeds recommended daily limit
+232,Low-Moderate Alcohol Consumption,Alcohol intake within recommended daily limit
+253,antibiotics,Antibiotic
+141,antidepressive medication,Antidepressant
+254,antidepressants,Antidepressant
+105,antihypertensive medicatio,Antihypertensive therapy
+218,Antihypertensive Therapy,Antihypertensive therapy
+250,aphasia,Aphasia
+21,arteriosklerosis,Arteriosclerosis
+115,aspiration,Aspiration
+303,recovery level,Assessment for rehabilitation
+18,awareness of FAST-Scheme,Assessment using FAST (Face Arm Speech Test) - Known
+275,astrocytic proliferation,Astrocyte - Proliferation
+211,Second-hand Smoking,At increased risk from passive smoking
+37,Atherosclerosis,Atherosclerosis
+67,atherosclerosis,Atherosclerosis
+156,atherosclerosis/thrombosis,Atherosclerosis
+96,atherosclerosis (measured by low ABI),Atherosclerosis
+198,large artery atherosclerosis,Atherosclerosis
+204,Atrial Fibrillation,Atrial fibrillation
+5,Atrial fibrillation,Atrial fibrillation
+16,present atrial fibrillation,Atrial fibrillation
+36,atrial fibrillation,Atrial fibrillation
+93,atrial fibrilation,Atrial fibrillation
+306,hemispheric atrophy,Atrophy - Hemispheric
+68,cardiac autonomic dysbalance,Autonomic cardiovascular function - Abnormal
+267,B-cell infiltration,B lymphocyte - Infiltration
+280,Barthel_Index_follow_up,Barthel index
+14,Barthel_Index_stroke,Barthel index
+167,coagulopathy,Blood coagulation disorder
+288,blood glucose,Blood glucose level - finding
+223,Glycemic control,Blood glucose management
+183,loss of blood,Blood loss status
+154,blood-brain barrier breakdown,Blood-brain barrier - Disruption
+272,blood brain barrier integrity,Blood-brain barrier - Disruption
+146,obesity,Body mass index
+43,Obesity,Body mass index
+4,BMI,Body mass index
+38,BMI_t1,Body mass index
+30,BMI_t0,Body mass index
+112,body temperature,Body temperature
+57,elevated CRP,C-reactive protein measurement
+190,COVID-19,COVID-19
+249,cachexia,Cachexia
+85,severe arrrhythmia,Cardiac arrhythmia
+262,care giving,Care provision regime
+229,Carotid Endarterectomy / Angioplasty / stenting,Carotid artery structure - Revascularization - action
+74,elevated catecholamines,"Catecholamines, total measurement"
+187,occlusion of a blood vessel,Cerebral artery occlusion
+184,reduction or complete blockage of blood flow,Cerebral artery occlusion
+171,sinus venous thrombosis,Cerebral venous sinus thrombosis
+170,chemotherapy,Chemotherapy
+70,chronic heart failure,Chronic heart failure
+8,CKD,Chronic kidney disease
+264,botolinum toxin,Clostridium botulinum toxin
+64,Cognitive dysfunction,Cognitive function finding
+287,cognitive function,Cognitive function finding
+304,cognition,Cognitive function finding
+265,cognitive training,Cognitive skills training
+159,vulnerable plaques,Complicated atheromatous plaque
+177,malformations,Congenital malformation
+227,CPAP Treatment,Continuous positive airway pressure ventilation treatment
+61,coping mechnisms,Coping behavior
+294,DNA damage,DNA damage
+301,death,Death
+297,Death,Death
+290,death (all causes),Death
+234,Reducing Alcohol Consumption,Decreased alcohol consumption
+221,Dietary salt restriction,Decreased sodium diet
+124,deep vein thrombosis,Deep venous thrombosis
+113,delirium,Delirium
+60,Depression,Depressive disorder
+252,depression before stroke,Depressive disorder
+71,depression,Depressive disorder
+99,diabetes mellitus,Diabetes mellitus
+0,Diabetes,Diabetes mellitus
+24,Diabetes mellitus,Diabetes mellitus
+32,diabetes,Diabetes mellitus
+17,time_till_diagnosis,Diagnosis - Delay time
+121,disability,Disability
+247,severe disability,Disability - severe
+157,cardiac dysfunction,Disorder of cardiac function
+206,Arterial Dissection,Dissection of artery
+189,arterial dissection,Dissection of artery
+136,dissection of cerebral vessel,Dissection of cerebral artery
+72,dissection,Dissection procedure
+108,bladder dysfunction,Dysfunction of urinary bladder
+25,Dyslipidemia,Dyslipidemia
+52,dyslipidemia,Dyslipidemia
+73,dysphagia,Dysphagia
+129,education,Education and/or schooling finding
+201,Embolism,Embolism
+160,endarterectomy,Endarterectomy
+175,endocarditis,Endocarditis
+145,post stroke epilepsy,Epilepsy due to cerebrovascular accident
+3,Hypertension,Essential hypertension
+92,blood pressure,Essential hypertension
+29,hypertension,Essential hypertension
+40,arterial hypertension,Essential hypertension
+128,physical activity,Exercise
+51,exercise,Exercise
+133,moderate physical activity,Exercise
+75,exercise (cardiac not excessive),Exercise
+213,Physical Inactivity,Exercise
+261,physical exercise,Exercise
+137,positive familiy history of cardio/cerebrovascular events,FH: Cardiovascular disease
+126,falls,Falls
+197,female sex steroids,Female sex hormones - serum level - finding
+191,fibromuscular dysplasia,Fibromuscular dysplasia
+130,income,Financial circumstances - finding
+161,kidney function,Finding of renal function
+127,fractures,Fracture of bone
+281,functional post stroke outcome,Functional assessment
+291,functional outcome (e.g. measured by mRS),Functional assessment
+166,genetic factors,Genetic predisposition
+277,GFR,Glomerular filtration rate
+226,GLP1 Receptor Agonists,Glucagon-like peptide 1 receptor agonist
+222,Healthy Diet,Healthy diet
+56,cardiac disease,Heart disease
+209,Other Cardiac Pathologies,Heart disease
+120,oxygen saturation,Hemoglobin saturation with oxygen
+58,high fat/ high carbonhydrate diet,High fat diet
+35,high fat salt diet,High fat diet
+200,hypercholesterolemia,Hypercholesterolemia
+91,LDL-cholesterol,Hypercholesterolemia
+135,hyperlipoproteinemia (high LDL),Hypercholesterolemia
+176,hypercoagulability,Hypercoagulability state
+207,Hypercoagulopathy,Hypercoagulability state
+117,blood lipids,Hyperlipidemia
+33,high blood cholesterol levels,Hyperlipidemia
+79,hyperlipidemia,Hyperlipidemia
+7,Hyperlipidemia,Hyperlipidemia
+185,decreased systemic perfusion,Hypoperfusion
+240,immobility,Immobility syndrome
+251,immobility before stroke,Immobility syndrome
+300,peripheral immune competence,Immune system finding - Peripheral
+243,immunodepression,Immunosuppression
+109,immunosuppression,Immunosuppression
+286,kognitive decline,Impaired cognition
+241,cognitive decline,Impaired cognition
+242,infarct localisation,Infarct - Localization - action
+238,large infarction,Infarct - Large
+80,infection,Infectious disease
+237,systemic inflammation,Inflammation - Systemic
+299,cerebral inflammation,Inflammation - Brain structure
+153,inflammation,Inflammation
+63,Inflammation,Inflammation
+212,Insulin Resistance / Impaired glucose metabolism,Insulin resistance
+274,brain IL6_time2,Interleukin-6 - Brain structure
+268,systemic IL6,Interleukin-6 - Systemic
+269,brain IL6_time1,Interleukin-6 - Brain structure
+39,first ischemic stroke,Ischemic stroke
+76,FIRST ISCHEMIC STROKE,Ischemic stroke
+298,Recurrent Stroke,Ischemic stroke
+239,second stroke,Ischemic stroke
+15,TOAST (etiology),Ischemic stroke
+236,first stroke,Ischemic stroke
+235,First Ischemic Stroke,Ischemic stroke
+83,second ischemic stroke,Ischemic stroke
+195,ischemic stroke,Ischemic stroke
+276,Ischemic stroke,Ischemic stroke
+45,1. stroke incidence,Ischemic stroke
+98,second ischemic stroke occurence,Ischemic stroke
+95,first-ever ischemic stroke occurence,Ischemic stroke
+54,Stroke,Ischemic stroke
+49,kidney disease,Kidney disease
+203,Lacunes,Lacunar infarction
+42,lesion size,Lesion size
+11,lesion_size,Lesion size
+155,white matter hyperintensities (MRI),Leuko-araiosis
+104,Lipoprotein a,Lipoprotein (a)
+26,Lipoprotein (a),Lipoprotein (a)
+181,low blood pressure,Low blood pressure
+172,female gender,Male
+31,sex(being male),Male
+116,sex(male),Male
+246,female,Male
+173,male gender,Male
+205,Male Sex,Male
+148,female sex,Male
+50,male sex,Male
+90,sex (being male),Male
+2,Sex (Male),Male
+86,sex (male),Male
+110,sex(female),Male
+168,cancer,Malignant neoplastic disease
+134,healthy (mediterranean) diet,Mediterranean diet
+152,metabolic syndrom,Metabolic syndrome X
+273,microglial proliferation,Microgliocyte - Proliferation
+180,migraine,Migraine
+149,migraine with aura,Migraine with aura
+293,mobility,Mobility
+279,mRS_follow_up,Modified Rankin Scale
+10,mRS_stroke,Modified Rankin Scale
+284,mortality,Mortality rate
+283,Mortality,Mortality rate
+193,Moyamoya disease,Moyamoya disease
+210,Myocardial Infarction,Myocardial infarction
+94,occurence of myocardial infarction,Myocardial infarction
+118,myocardial infarction,Myocardial infarction
+81,myocardial infarction (type 1),Myocardial infarction due to atherothrombotic coronary artery disease
+82,myocardial infarction (type 2),Myocardial infarction due to demand ischemia
+285,nt-pro-BNP,N-terminal pro-B-type natriuretic peptide
+9,NIHSS_stroke,National Institutes of Health stroke scale
+144,stroke severity (e.g. measured by NIHSS),National Institutes of Health stroke scale
+278,NIHSS_followup,National Institutes of Health stroke scale
+307,neuronal survival,Neuron - Survival rate
+179,neurosurgery,Neurosurgery
+248,malnutrition,Nutritional disorder
+216,Sleep disturbances / Obstructive Sleep Apnea,Obstructive sleep apnea syndrome
+245,pain,Pain
+263,multimodal pain therapy,Pain management
+123,paralysis,Paralysis
+28,persistent foramen ovale,Patent foramen ovale
+139,patent foramen ovale (PFO),Patent foramen ovale
+289,dependency,Patient dependence on
+119,patient positioning,Patient position
+178,endovascular interventions,Percutaneous transluminal procedure on blood vessel
+78,higher fitness/mobility pre,Physical fitness state
+77,higher fitness/mobility post,Physical fitness state
+257,physiotherapy,Physical therapy procedure
+230,Mono-/Dual Antiplatelet Therapy,Platelet aggregation inhibitor therapy
+142,antiplatelet therapy (e.g. ASS),Platelet aggregation inhibitor therapy
+106,pneumonia,Pneumonia
+164,preeclampsia/eclampsia,Pre-eclampsia
+217,Prediabetes,Prediabetes
+174,pregnancy,Pregnancy
+150,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Pregnancy-induced hypertension
+260,primary prevention,Primary prevention
+107,urinary catheter placement,Procedure involving urinary catheter
+256,psychotherapy,Psychotherapy
+125,pulmonary embolism,Pulmonary embolism
+302,reduced QoL/ADL,Quality of life satisfaction
+292,qualitiy of life,Quality of life satisfaction
+165,race,Race
+20,rate of thrombectomy,Removal of thrombus - Finding of speed of delivery
+282,secondary cardiovascular risk,Risk of cardiovascular disease - Secondary
+259,secondary prevention,Secondary prevention
+84,seizures,Seizure
+296,Neurological Sequalae,Sequela of cerebrovascular accident - Neurologic
+194,sickle cell disease arteriopathy,Sickling disorder due to hemoglobin S - Generalized atherosclerosis
+163,microbleeds,Silent micro-hemorrhage of brain
+87,stroke lesion affecting central autonomic network,Site of lesion - Autonomic nervous system structure
+151,cortical involvement or strategical localisation of stroke lesion,Site of lesion - Structure of cerebral cortex
+13,lesion_location,Site of lesion
+147,sleep apnea,Sleep apnea
+228,Smoking Cessation,Smoking cessation behavior
+131,social isolation,Social isolation
+258,social work,Social worker
+53,low socioeconomic status,Socioeconomic status - Low
+225,SGLT2 Inhibitors,Sodium glucose cotransporter subtype 2 inhibitor
+244,spasticity,Spasticity
+255,speech therapy,Speech therapy
+158,vessel stenosis/occlusion,Stenosis
+186,severe stenosis,Stenosis
+138,stenoses of cerebral vessels,Stenosis of cerebral artery
+102,stress,Stress
+214,Psychogenic Stress,Stress - Psychogenic
+114,stroke unit care,Stroke unit
+305,stroke volume,Stroke volume
+271,endothelial proliferation,Structure of endothelium tissue - Proliferation
+44,endothelial dysfunction,Structure of endothelium tissue - Disease
+162,enlarged perivascular spaces,Structure of perivascular space
+215,Sympathetic activation,Sympathetic nervous system structure - Increased
+88,Takotsubo syndrome,Takotsubo cardiomyopathy
+12,time_to_therapy,Therapy - Delay time
+224,Thiazolidindione,Thiazolidinedione
+19,rate of thrombolysis,Thrombolysis - Finding of speed of delivery
+41,Thrombolysis,Thrombolysis
+202,Thrombosis,Thrombosis
+69,cardiac thrombus,Thrombosis - Heart structure
+22,smoking,Tobacco smoking behavior - finding
+6,Smoking,Tobacco smoking behavior - finding
+132,TIA,Transient cerebral ischemia
+55,hs cardiac Troponin,Troponin
+89,troponin elevation,Troponin
+122,urinary incontinence,Urinary incontinence
+111,urinary tract infection,Urinary tract infectious disease
+231,Anticoagulation Therapy,Use of anticoagulation
+97,anticoagulation medication,Use of anticoagulation
+66,anticoagulation,Use of anticoagulation
+140,oral contraceptives,Uses oral contraception
+59,vascular disease,Vascular disorder
+169,vaskulitis,Vasculitis
+192,vasculitis,Vasculitis
+47,vascular inflammation,Vasculitis
+27,Vasculitis,Vasculitis
+270,collateralization,Vessel giving collaterals
+220,Weight Loss and Aerobic Exercise,Weight loss
+46,EMV,Endothelial microvesicles
+48,LMV,Leukocyte-derived microvesicles
+188,nonatherosclerotic abnormalities,Non-atherosclerotic abnormalities
+196,production of reactive oxygen species,Reactive Oxygen Species production
+208,Cardiac Remodelling,Cardiac remodeling
+295,loss of brain structural integrity,Loss of brain structural integrity
