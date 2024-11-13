@@ -21,7 +21,7 @@ def combine_csv_files(folder_path, output_filename):
 
             combined_data.append(df)
 
-    combined_df = pd.concat(combined_data, ignore_index=True)
+    combined_df = pd.concat(combined_data, ignore_index=True) # To combine a list object with all dataframes into a dataframe
 
     combined_df.to_csv(output_filename, index=False)
 
