@@ -1,0 +1,23 @@
+Author,Exposure,Outcome,Direction,Strength
+,arterial hypertension,endothelial dysfunction,Increase,6.84
+,Thrombolysis,functional post stroke outcome,Increase,2.68
+,lesion size,functional post stroke outcome,Decrease,6.26
+,arterial hypertension,functional post stroke outcome,Decrease,6.84
+,Obesity,functional post stroke outcome,Decrease,6.84
+,Obesity,endothelial dysfunction,Increase,4.61
+,endothelial dysfunction,EMV,Increase,6.84
+,Obesity,1. stroke incidence,Increase,6.84
+,arterial hypertension,1. stroke incidence,Increase,6.84
+,1. stroke incidence,functional post stroke outcome,Decrease,1.0
+,endothelial dysfunction,1. stroke incidence,Increase,5.42
+,EMV,secondary cardiovascular risk,Increase,6.84
+,arterial hypertension,secondary cardiovascular risk,Increase,6.84
+,endothelial dysfunction,secondary cardiovascular risk,Increase,2.0
+,EMV,1. stroke incidence,Increase,4.0
+,1. stroke incidence,lesion size,Increase,6.84
+,1. stroke incidence,secondary cardiovascular risk,Increase,6.84
+,lesion size,secondary cardiovascular risk,Increase,3.0
+,vascular inflammation,secondary cardiovascular risk,Increase,6.84
+,endothelial dysfunction,vascular inflammation,Increase,3.14
+,vascular inflammation,LMV,Increase,5.31
+,LMV,secondary cardiovascular risk,Increase,5.31

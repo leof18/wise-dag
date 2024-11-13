@@ -1,0 +1,22 @@
+Author,Exposure,Outcome,Direction,Strength
+,hypertension,first ischemic stroke,Increase,6.0
+,BMI_t0,first ischemic stroke,Increase,6.84
+,age,first ischemic stroke,Increase,6.84
+,sex(being male),first ischemic stroke,Increase,6.84
+,smoking,first ischemic stroke,Increase,6.84
+,diabetes,first ischemic stroke,Increase,6.84
+,high blood cholesterol levels,first ischemic stroke,Increase,6.84
+,high drinking levels,first ischemic stroke,Increase,6.84
+,high fat salt diet,first ischemic stroke,Increase,6.0
+,high fat salt diet,hypertension,Increase,2.68
+,atrial fibrillation,first ischemic stroke,Increase,6.0
+,Atherosclerosis,first ischemic stroke,Increase,6.84
+,high fat salt diet,Atherosclerosis,Increase,0.57
+,BMI_t1,second ischemic stroke,Increase,0.57
+,first ischemic stroke,BMI_t1,Decrease,0.57
+,smoking,second ischemic stroke,Increase,6.84
+,age,second ischemic stroke,Increase,6.84
+,sex(being male),second ischemic stroke,Increase,6.84
+,high drinking levels,second ischemic stroke,Increase,6.84
+,high fat salt diet,second ischemic stroke,Increase,6.84
+,diabetes,second ischemic stroke,Increase,6.84

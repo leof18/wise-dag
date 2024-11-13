@@ -1,0 +1,37 @@
+Author,Exposure,Outcome,Direction,Strength
+Christoph,hypertension,first ischemic stroke,Increase,6.84
+Christoph,hypertension,second ischemic stroke,Increase,6.84
+Christoph,first ischemic stroke,second ischemic stroke,Increase,6.84
+Christoph,first ischemic stroke,death,Increase,6.84
+Christoph,second ischemic stroke,death,Increase,6.84
+Christoph,aging,recovery level,Decrease,6.84
+Christoph,aging,death,Increase,6.84
+Christoph,aging,first ischemic stroke,Increase,6.84
+Christoph,aging,second ischemic stroke,Increase,6.84
+Christoph,second ischemic stroke,recovery level,Decrease,6.84
+,first ischemic stroke,recovery level,Decrease,2.68
+,B-cell infiltration,cognition,Decrease,2.68
+,aging,cognition,Decrease,6.84
+,hypertension,cognition,Decrease,4.08
+,first ischemic stroke,cognition,Decrease,2.06
+,second ischemic stroke,cognition,Decrease,6.84
+,systemic IL6,recovery level,Decrease,6.0
+,brain IL6_time1,recovery level,Increase,6.0
+,systemic IL6,second ischemic stroke,Increase,6.84
+,systemic IL6,second ischemic stroke,Increase,6.84
+,systemic IL6,first ischemic stroke,Increase,6.84
+,collateralization,stroke volume,Increase,6.84
+,first ischemic stroke,hemispheric atrophy,Increase,6.84
+,second ischemic stroke,hemispheric atrophy,Increase,6.84
+,hypertension,hemispheric atrophy,Increase,3.68
+,aging,hemispheric atrophy,Increase,6.84
+,endothelial proliferation,recovery level,Increase,6.84
+,endothelial proliferation,blood brain barrier integrity,Decrease,6.84
+,blood brain barrier integrity,B-cell infiltration,Increase,6.84
+,microglial proliferation,neuronal survival,Decrease,6.84
+,brain IL6_time2,recovery level,Decrease,2.68
+,astrocytic proliferation,recovery level,Increase,2.68
+,astrocytic proliferation,neuronal survival,Increase,2.68
+,endothelial proliferation,neuronal survival,Increase,5.2
+,collateralization,first ischemic stroke,Decrease,5.2
+,collateralization,second ischemic stroke,Decrease,5.2
