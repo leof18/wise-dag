@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
 
@@ -6,22 +6,11 @@ cytoscape.use(dagre);
 
 const DagViewer = ({ nodes, edges, onSelectNode }) => {
   const cyRef = useRef(null);
-  const [selectedStrength, setSelectedStrength] = useState('');
-
-  // Extract unique strength values for dropdown, filtering out NaN
-  const uniqueStrengths = [...new Set(edges.map(edge => edge.strength))]
-    .filter(strength => !isNaN(strength))
-    .sort((a, b) => a - b);
 
   useEffect(() => {
     if (cyRef.current) {
       cyRef.current.innerHTML = '';
     }
-
-    // Filter edges based on selected strength
-    const filteredEdges = selectedStrength
-      ? edges.filter(edge => edge.strength === parseFloat(selectedStrength))
-      : edges;
 
     const cy = cytoscape({
       container: cyRef.current,
@@ -29,7 +18,7 @@ const DagViewer = ({ nodes, edges, onSelectNode }) => {
         ...nodes.map(node => ({
           data: { id: node.id, label: node.label || '' }
         })),
-        ...filteredEdges.map(edge => ({
+        ...edges.map(edge => ({
           data: {
             source: edge.source,
             target: edge.target,
@@ -88,28 +77,10 @@ const DagViewer = ({ nodes, edges, onSelectNode }) => {
     });
 
     return () => cy.destroy();
-  }, [nodes, edges, onSelectNode, selectedStrength]);
+  }, [nodes, edges, onSelectNode]);
 
   return (
-    <div style={{ display: 'flex', height: '100%' }}>
-      <div style={{ width: '200px', padding: '10px', backgroundColor: '#f4f4f4', borderRight: '1px solid #ddd' }}>
-        <h3>Filters</h3>
-        <label>Select Strength:</label>
-        <select
-          value={selectedStrength}
-          onChange={e => setSelectedStrength(e.target.value)}
-          style={{ width: '100%', marginBottom: '10px' }}
-        >
-          <option value="">All</option>
-          {uniqueStrengths.map(strength => (
-            <option key={strength} value={strength}>
-              {strength}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div ref={cyRef} style={{ flex: 1, backgroundColor: '#f0f0f0' }} />
-    </div>
+    <div ref={cyRef} style={{ width: '100%', height: '100%', backgroundColor: '#f0f0f0' }} />
   );
 };
 

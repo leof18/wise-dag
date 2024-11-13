@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import DagViewer from './components/DagViewer';
-import AnalysisPanel from './components/AnalysisPanel';
 import { generateDagCode } from './utils/dagCodeGenerator';
 
 function App() {
   const [nodes, setNodes] = useState([]);
   const [edges, setEdges] = useState([]);
+  const [filteredEdges, setFilteredEdges] = useState(edges);
 
   useEffect(() => {
     // Fetch data from the backend
@@ -33,16 +33,30 @@ function App() {
 
         setNodes(nodes);
         setEdges(edges);
+        setFilteredEdges(edges); // Initialize filteredEdges to all edges initially
       })
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
+  const handleFilterChange = ({ strength, outcome }) => {
+    let newFilteredEdges = edges;
+
+    if (strength) {
+      newFilteredEdges = newFilteredEdges.filter(edge => edge.strength === parseFloat(strength));
+    }
+
+    if (outcome) {
+      newFilteredEdges = newFilteredEdges.filter(edge => edge.source === outcome || edge.target === outcome);
+    }
+
+    setFilteredEdges(newFilteredEdges);
+  };
+
   return (
     <div className="App" style={{ display: 'flex' }}>
-      <Sidebar nodes={nodes} edges={edges} />
+      <Sidebar nodes={nodes} edges={edges} onFilterChange={handleFilterChange} dagCode={generateDagCode(nodes, filteredEdges)} />
       <div style={{ flex: 1 }}>
-        <DagViewer nodes={nodes} edges={edges} setNodes={setNodes} setEdges={setEdges} />
-        <AnalysisPanel dagCode={generateDagCode(nodes, edges)} />
+        <DagViewer nodes={nodes} edges={filteredEdges} onSelectNode={() => {}} />
       </div>
     </div>
   );
