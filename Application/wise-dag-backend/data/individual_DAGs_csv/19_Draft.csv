@@ -1,0 +1,83 @@
+Author,Exposure,Outcome,Direction,Strength
+,first stroke,large infarction,Increase,6.84
+,first stroke,pneumonia,Increase,6.84
+,large infarction,pneumonia,Increase,6.84
+,pneumonia,death,Increase,6.84
+,first stroke,death,Increase,6.84
+,first stroke,second stroke,Increase,6.84
+,second stroke,pneumonia,Increase,6.84
+,second stroke,death,Increase,6.84
+,first stroke,depression,Increase,6.84
+,depression,immobility,Increase,6.84
+,immobility,pneumonia,Increase,6.84
+,first stroke,immobility,Increase,6.84
+,immobility,death,Increase,6.84
+,first stroke,cognitive decline,Increase,6.84
+,pneumonia,cognitive decline,Increase,5.1
+,cognitive decline,death,Increase,2.79
+,second stroke,cognitive decline,Increase,2.79
+,hypertension,first stroke,Increase,6.84
+,hypertension,second stroke,Increase,6.84
+,hypertension,cognitive decline,Increase,5.31
+,first stroke,infarct localisation,Increase,6.84
+,infarct localisation,cognitive decline,Increase,6.84
+,infarct localisation,immunodepression,Increase,6.84
+,immunodepression,pneumonia,Increase,6.84
+,immunodepression,cognitive decline,Decrease,0.51
+,diabetes mellitus,second stroke,Increase,6.84
+,diabetes mellitus,first stroke,Increase,6.84
+,diabetes mellitus,cognitive decline,Increase,4.61
+,first stroke,spasticity,Increase,6.84
+,second stroke,spasticity,Increase,6.84
+,spasticity,immobility,Increase,6.84
+,spasticity,pain,Increase,6.84
+,pain,immobility,Increase,6.84
+,female,large infarction,Increase,4.8
+,depression,female,Increase,4.8
+,large infarction,severe disability,Increase,6.84
+,severe disability,immobility,Increase,6.84
+,first stroke,dysphagia,Increase,6.84
+,second stroke,dysphagia,Increase,6.84
+,dysphagia,pneumonia,Increase,6.84
+,dysphagia,malnutrition,Increase,6.84
+,first stroke,cachexia,Increase,4.8
+,second stroke,cachexia,Increase,4.34
+,malnutrition,cachexia,Increase,6.84
+,cachexia,death,Increase,4.8
+,malnutrition,death,Increase,3.14
+,immobility,reduced QoL/ADL,Increase,6.84
+,spasticity,reduced QoL/ADL,Increase,6.84
+,dysphagia,reduced QoL/ADL,Increase,6.84
+,pain,reduced QoL/ADL,Increase,6.84
+,cognitive decline,reduced QoL/ADL,Increase,6.84
+,first stroke,reduced QoL/ADL,Increase,6.84
+,second stroke,reduced QoL/ADL,Increase,6.84
+,second stroke,aphasia,Increase,6.84
+,first stroke,aphasia,Increase,6.84
+,aphasia,reduced QoL/ADL,Increase,6.84
+,age,first stroke,Increase,6.84
+,age,cognitive decline,Increase,6.84
+,age,pneumonia,Increase,6.84
+,immobility before stroke,first stroke,Increase,6.0
+,immobility,second stroke,Increase,6.0
+,depression before stroke,first stroke,Increase,6.84
+,pneumonia,antibiotics,Increase,6.84
+,antibiotics,death,Decrease,6.84
+,depression,antidepressants,Increase,6.84
+,antidepressants,reduced QoL/ADL,Decrease,4.26
+,speech therapy,aphasia,Decrease,6.84
+,psychotherapy,depression,Decrease,6.84
+,psychotherapy,cognitive decline,Decrease,2.38
+,physiotherapy,immobility,Decrease,6.84
+,physiotherapy,severe disability,Decrease,6.84
+,social work,reduced QoL/ADL,Decrease,6.84
+,secondary prevention,second stroke,Decrease,6.84
+,primary prevention,first stroke,Decrease,6.84
+,physical exercise,first stroke,Decrease,6.84
+,physical exercise,second stroke,Decrease,6.84
+,physical exercise,cognitive decline,Decrease,6.84
+,care giving,death,Decrease,4.08
+,social work,care giving,Increase,3.07
+,multimodal pain therapy,pain,Decrease,6.84
+,botolinum toxin,spasticity,Decrease,6.84
+,cognitive training,cognitive decline,Decrease,5.0
