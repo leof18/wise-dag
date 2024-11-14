@@ -1,5 +1,9 @@
 # Folders with too much data
-ohdsi_athena_vocab/*
+Standardization/athena_vocabulary
+Standardization/derivedIndex
+Standardization/mainIndex
+Standardization/sleepyCat
+Standardization/*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
