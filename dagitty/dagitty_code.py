@@ -3,10 +3,10 @@ import re
 
 # Function to clean node names by retaining only alphanumeric and underscore characters
 def clean_name(name):
-    return re.sub(r'\W|^(?=\d)', '_', name)
+    return re.sub(r'\W|^(?=\d)', '_', name).lower()
 
 # Load CSV file
-df = pd.read_csv('data/DAGs.csv')
+df = pd.read_csv('../data/DAGs.csv')
 
 # Extract unique exposures and outcomes and create edges
 exposures = df['Exposure'].unique()
