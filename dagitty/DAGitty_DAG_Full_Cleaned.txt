@@ -1,392 +1,392 @@
 dag {
-fibromuscular_dysplasia [exposure]
-bladder_dysfunction [exposure]
-education [exposure]
-Anticoagulation_Therapy [exposure]
-urinary_tract_infection [exposure]
-sex_male_ [exposure]
-physical_activity [exposure]
-arterial_hypertension [exposure]
-preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ [exposure]
-ischemic_stroke [exposure]
-SGLT2_Inhibitors [exposure]
-Embolism [exposure]
-troponin_elevation [exposure]
-cognitive_training [exposure]
-pulmonary_embolism [exposure]
-BMI [exposure]
-infarct_localisation [exposure]
-heart_failure [exposure]
-LMV [exposure]
-microglial_proliferation [exposure]
-rate_of_thrombolysis [exposure]
-pregnancy [exposure]
-white_matter_hyperintensities__MRI_ [exposure]
-Lipoprotein__a_ [exposure]
-Hypertension [exposure]
-myocardial_infarction__type_2_ [exposure]
-vascular_disease [exposure]
-antihypertensive_medicatio [exposure]
-reduction_or_complete_blockage_of_blood_flow [exposure]
-Smoking [exposure]
-positive_familiy_history_of_cardio_cerebrovascular_events [exposure]
-female [exposure]
-TOAST__etiology_ [exposure]
-Sleep_disturbances___Obstructive_Sleep_Apnea [exposure]
-stroke_severity__e_g__measured_by_NIHSS_ [exposure]
-atherosclerosis__measured_by_low_ABI_ [exposure]
-seizures [exposure]
-hs_cardiac_Troponin [exposure]
-lesion_location [exposure]
-collateralization [exposure]
-Thrombosis [exposure]
-endothelial_proliferation [exposure]
-fractures [exposure]
-chemotherapy [exposure]
-Hypercoagulopathy [exposure]
-Low_Moderate_Alcohol_Consumption [exposure]
-cognitive_decline [exposure]
-Atrial_fibrillation [exposure]
-myocardial_infarction__type_1_ [exposure]
-anticoagulation [exposure]
-second_ischemic_stroke [exposure]
-microbleeds [exposure]
-cerebral_inflammation [exposure]
-dysphagia [exposure]
-preeclampsia_eclampsia [exposure]
-acute_heart_failure [exposure]
-arterial_dissection [exposure]
-Lacunes [exposure]
-loss_of_blood [exposure]
-blood_brain_barrier_breakdown [exposure]
-Healthy_Diet [exposure]
-functional_post_stroke_outcome [exposure]
-EMV [exposure]
-high_fat__high_carbonhydrate_diet [exposure]
-B_cell_infiltration [exposure]
-obesity [exposure]
-Moyamoya_disease [exposure]
-death__all_causes_ [exposure]
-disability [exposure]
-Barthel_Index_stroke [exposure]
-qualitiy_of_life [exposure]
-antibiotics [exposure]
-hypertension [exposure]
-mRS_stroke [exposure]
-aspiration [exposure]
-cancer [exposure]
-vasculitis [exposure]
-low_blood_pressure [exposure]
-anticoagulation_medication [exposure]
-kidney_function [exposure]
-mobility [exposure]
-Carotid_Endarterectomy___Angioplasty___stenting [exposure]
-Barthel_Index_follow_up [exposure]
-dyslipidemia [exposure]
-persistent_foramen_ovale [exposure]
-male_gender [exposure]
-nonatherosclerotic_abnormalities [exposure]
-Male_Sex [exposure]
-first_stroke [exposure]
-awareness_of_FAST_Scheme [exposure]
-blood_brain_barrier_integrity [exposure]
-statin_use [exposure]
-GLP1_Receptor_Agonists [exposure]
-Inflammation [exposure]
-GFR [exposure]
-recovery_level [exposure]
-deep_vein_thrombosis [exposure]
-female_sex [exposure]
-aphasia [exposure]
-sickle_cell_disease_arteriopathy [exposure]
-kognitive_decline [exposure]
-sex__being_male_ [exposure]
-cortical_involvement_or_strategical_localisation_of_stroke_lesion [exposure]
-hyperlipidemia [exposure]
-brain_IL6_time2 [exposure]
-Ischemic_stroke [exposure]
-smoking [exposure]
-atherosclerosis [exposure]
-race [exposure]
-Cardiac_Remodelling [exposure]
-nt_pro_BNP [exposure]
-aging [exposure]
-Statin_Therapy [exposure]
-Insulin_Resistance___Impaired_glucose_metabolism [exposure]
-DNA_damage [exposure]
-lesion_size [exposure]
-First_Ischemic_Stroke [exposure]
-endovascular_interventions [exposure]
-secondary_cardiovascular_risk [exposure]
-Thrombolysis [exposure]
-Diabetes [exposure]
-blood_glucose [exposure]
-Atrial_Fibrillation [exposure]
-death [exposure]
-patent_foramen_ovale__PFO_ [exposure]
-endocarditis [exposure]
-dependency [exposure]
-Myocardial_Infarction [exposure]
-secondary_prevention [exposure]
-cardiac_thrombus [exposure]
-delirium [exposure]
-urinary_incontinence [exposure]
-physiotherapy [exposure]
-coping_mechnisms [exposure]
-hypercoagulability [exposure]
-first_ever_ischemic_stroke_occurence [exposure]
-stroke_volume [exposure]
-immobility_before_stroke [exposure]
-Sex__Male_ [exposure]
-hypercholesterolemia [exposure]
-migraine [exposure]
-Dietary_salt_restriction [exposure]
-antiplatelet_therapy__e_g__ASS_ [exposure]
-Smoking_Cessation [exposure]
-Lipoprotein_a [exposure]
-stress [exposure]
-severe_arrrhythmia [exposure]
-NIHSS_stroke [exposure]
-neurosurgery [exposure]
-Neurological_Sequalae [exposure]
-sleep_apnea [exposure]
 higher_fitness_mobility_post [exposure]
-cardiac_dysfunction [exposure]
-Other_Cardiac_Pathologies [exposure]
+arterial_dissection [exposure]
+functional_post_stroke_outcome [exposure]
+infarct_localisation [exposure]
+glycemic_control [exposure]
+barthel_index_follow_up [exposure]
+aphasia [exposure]
+aspiration [exposure]
+high_fat_salt_diet [exposure]
+mortality [exposure]
+oxygen_saturation [exposure]
 atrial_fibrillation [exposure]
-cachexia [exposure]
-myocardial_infarction [exposure]
+pulmonary_embolism [exposure]
+reduction_or_complete_blockage_of_blood_flow [exposure]
+blood_glucose [exposure]
+large_artery_atherosclerosis [exposure]
+microglial_proliferation [exposure]
+nt_pro_bnp [exposure]
+obesity [exposure]
+coping_mechnisms [exposure]
+hs_cardiac_troponin [exposure]
+troponin_elevation [exposure]
+nonatherosclerotic_abnormalities [exposure]
+mono__dual_antiplatelet_therapy [exposure]
+endothelial_proliferation [exposure]
+present_atrial_fibrillation [exposure]
+bmi [exposure]
+diabetes [exposure]
+high_blood_cholesterol_levels [exposure]
+emv [exposure]
+ischemic_stroke [exposure]
 pain [exposure]
-vessel_stenosis_occlusion [exposure]
+bmi_t1 [exposure]
+heart_failure [exposure]
+covid_19 [exposure]
+atrial_fibrillation [exposure]
+time_to_therapy [exposure]
+infectious_endocarditis [exposure]
+sex_male_ [exposure]
+cardiac_remodelling [exposure]
+toast__etiology_ [exposure]
+reducing_alcohol_consumption [exposure]
+cerebral_inflammation [exposure]
+malnutrition [exposure]
 metabolic_syndrom [exposure]
-hemispheric_atrophy [exposure]
-physical_exercise [exposure]
-endarterectomy [exposure]
-Obesity [exposure]
-_1__stroke_incidence [exposure]
-blood_pressure [exposure]
-mRS_follow_up [exposure]
-dissection [exposure]
-malformations [exposure]
-NIHSS_followup [exposure]
-cardiac_autonomic_dysbalance [exposure]
-vulnerable_plaques [exposure]
-female_sex_steroids [exposure]
-reduced_QoL_ADL [exposure]
+healthy_diet [exposure]
+sinus_venous_thrombosis [exposure]
+lipoprotein_a [exposure]
+dietary_salt_restriction [exposure]
+second_stroke [exposure]
+lesion_size [exposure]
+severe_arrrhythmia [exposure]
+myocardial_infarction__type_1_ [exposure]
+other_cardiac_pathologies [exposure]
+dysphagia [exposure]
+cognitive_training [exposure]
+statin_therapy [exposure]
+secondary_cardiovascular_risk [exposure]
+stress [exposure]
 pneumonia [exposure]
+exercise__cardiac_not_excessive_ [exposure]
+dyslipidemia [exposure]
+cardiac_autonomic_dysbalance [exposure]
+healthy__mediterranean__diet [exposure]
+loss_of_brain_structural_integrity [exposure]
+migraine_with_aura [exposure]
+hypercoagulopathy [exposure]
+persistent_foramen_ovale [exposure]
+obesity [exposure]
+antihypertensive_therapy [exposure]
+first_ischemic_stroke [exposure]
+microbleeds [exposure]
+depression [exposure]
+mrs_stroke [exposure]
+acute_heart_failure [exposure]
+stroke_unit_care [exposure]
+ischemic_stroke [exposure]
+female_gender [exposure]
+race [exposure]
+positive_familiy_history_of_cardio_cerebrovascular_events [exposure]
+blood_pressure [exposure]
+patient_positioning [exposure]
+elevated_catecholamines [exposure]
+neuronal_survival [exposure]
+hyperlipoproteinemia__high_ldl_ [exposure]
+cognition [exposure]
+elevated_crp [exposure]
+arterial_dissection [exposure]
+cognitive_decline [exposure]
+anticoagulation_therapy [exposure]
+endothelial_dysfunction [exposure]
+dna_damage [exposure]
+antibiotics [exposure]
+second_hand_smoking [exposure]
+secondary_prevention [exposure]
+infection [exposure]
+ldl_cholesterol [exposure]
+systemic_il6 [exposure]
+antidepressants [exposure]
+female_sex_steroids [exposure]
+vulnerable_plaques [exposure]
+dissection_of_cerebral_vessel [exposure]
+falls [exposure]
+hypertension [exposure]
+smoking_cessation [exposure]
+statin_use [exposure]
+atherosclerosis__measured_by_low_abi_ [exposure]
+sex_female_ [exposure]
+psychogenic_stress [exposure]
+cardiac_disease [exposure]
+age [exposure]
+first_stroke [exposure]
+aging [exposure]
+income [exposure]
+brain_il6_time2 [exposure]
+migraine [exposure]
+lmv [exposure]
+arterial_hypertension [exposure]
+dissection [exposure]
+cancer [exposure]
+kidney_disease [exposure]
+occlusion_of_a_blood_vessel [exposure]
+lesion_size [exposure]
+endarterectomy [exposure]
+occurence_of_myocardial_infarction [exposure]
+botolinum_toxin [exposure]
+prediabetes [exposure]
+urinary_incontinence [exposure]
+disability [exposure]
+first_ischemic_stroke [exposure]
+kognitive_decline [exposure]
+moderate_physical_activity [exposure]
+primary_prevention [exposure]
+depression_before_stroke [exposure]
+stroke_lesion_affecting_central_autonomic_network [exposure]
+thiazolidindione [exposure]
+brain_il6_time1 [exposure]
+heavy_alcohol_consumption [exposure]
+recovery_level [exposure]
+gfr [exposure]
+ageing [exposure]
+astrocytic_proliferation [exposure]
+lesion_location [exposure]
+paralysis [exposure]
+awareness_of_fast_scheme [exposure]
+cortical_involvement_or_strategical_localisation_of_stroke_lesion [exposure]
+male_sex [exposure]
+social_isolation [exposure]
+diabetes_mellitus [exposure]
+first_ever_ischemic_stroke_occurence [exposure]
+immunodepression [exposure]
+severe_disability [exposure]
+death__all_causes_ [exposure]
+hemispheric_atrophy [exposure]
+tia [exposure]
+atrial_fibrilation [exposure]
+stenoses_of_cerebral_vessels [exposure]
+vaskulitis [exposure]
+post_stroke_epilepsy [exposure]
+social_work [exposure]
+mrs_follow_up [exposure]
+hyperlipidemia [exposure]
+exercise [exposure]
+ckd [exposure]
+cardiac_dysfunction [exposure]
+thrombosis [exposure]
+sickle_cell_disease_arteriopathy [exposure]
+recurrent_stroke [exposure]
+large_infarction [exposure]
+sex__male_ [exposure]
+nihss_stroke [exposure]
+rate_of_thrombectomy [exposure]
+sex__being_male_ [exposure]
+atherosclerosis [exposure]
+smoking [exposure]
+genetic_factors [exposure]
+cardiac_thrombus [exposure]
+inflammation [exposure]
+weight_loss_and_aerobic_exercise [exposure]
+cachexia [exposure]
+stroke_volume [exposure]
+antidepressive_medication [exposure]
+dependency [exposure]
+sleep_disturbances___obstructive_sleep_apnea [exposure]
+myocardial_infarction [exposure]
+takotsubo_syndrome [exposure]
+production_of_reactive_oxygen_species [exposure]
+antiplatelet_therapy__e_g__ass_ [exposure]
+reduced_qol_adl [exposure]
+habitual_alcohol_consumption [exposure]
+blood_brain_barrier_integrity [exposure]
+higher_fitness_mobility_pre [exposure]
+thrombolysis [exposure]
+chronic_heart_failure [exposure]
+female [exposure]
+neurological_sequalae [exposure]
+delirium [exposure]
+rate_of_thrombolysis [exposure]
+hyperlipidemia [exposure]
+atherosclerosis [exposure]
+hypercoagulability [exposure]
+b_cell_infiltration [exposure]
+stroke_severity__e_g__measured_by_nihss_ [exposure]
+stroke [exposure]
+deep_vein_thrombosis [exposure]
+embolism [exposure]
+insulin_resistance___impaired_glucose_metabolism [exposure]
+severe_stenosis [exposure]
+high_drinking_levels [exposure]
+depression [exposure]
+sleep_apnea [exposure]
+endocarditis [exposure]
+first_ischemic_stroke [exposure]
+care_giving [exposure]
+mobility [exposure]
+diabetes [exposure]
+female_sex [exposure]
+coagulopathy [exposure]
+seizures [exposure]
+moyamoya_disease [exposure]
+_1__stroke_incidence [exposure]
+male_sex [exposure]
+qualitiy_of_life [exposure]
+death [exposure]
+immobility [exposure]
+kidney_function [exposure]
+psychotherapy [exposure]
+decreased_systemic_perfusion [exposure]
+immunosuppression [exposure]
+myocardial_infarction [exposure]
+alcohol_consumption [exposure]
+antihypertensive_medicatio [exposure]
+low_moderate_alcohol_consumption [exposure]
+chemotherapy [exposure]
+myocardial_infarction__type_2_ [exposure]
+inflammation [exposure]
+patent_foramen_ovale__pfo_ [exposure]
+fibromuscular_dysplasia [exposure]
+urinary_tract_infection [exposure]
+lipoprotein__a_ [exposure]
+death [exposure]
+vascular_disease [exposure]
+diabetes_mellitus [exposure]
+vascular_inflammation [exposure]
+systemic_inflammation [exposure]
+low_blood_pressure [exposure]
+sex__male_ [exposure]
+multimodal_pain_therapy [exposure]
+body_temperature [exposure]
+male_gender [exposure]
+cpap_treatment [exposure]
+speech_therapy [exposure]
+atrial_fibrillation [exposure]
+statins [exposure]
+sympathetic_activation [exposure]
+white_matter_hyperintensities__mri_ [exposure]
+barthel_index_stroke [exposure]
+vasculitis [exposure]
+enlarged_perivascular_spaces [exposure]
+preeclampsia_eclampsia [exposure]
+smoking [exposure]
+atherosclerosis_thrombosis [exposure]
+anticoagulation_medication [exposure]
+oral_contraceptives [exposure]
+bmi_t0 [exposure]
+second_ischemic_stroke [exposure]
+glp1_receptor_agonists [exposure]
+hypertension [exposure]
 peripheral_immune_competence [exposure]
 cognitive_function [exposure]
-Thiazolidindione [exposure]
-LDL_cholesterol [exposure]
-multimodal_pain_therapy [exposure]
-Antihypertensive_Therapy [exposure]
-occlusion_of_a_blood_vessel [exposure]
-production_of_reactive_oxygen_species [exposure]
-large_artery_atherosclerosis [exposure]
-kidney_disease [exposure]
-body_temperature [exposure]
-lesion_size [exposure]
-male_sex [exposure]
-astrocytic_proliferation [exposure]
-Dyslipidemia [exposure]
-Reducing_Alcohol_Consumption [exposure]
-habitual_alcohol_consumption [exposure]
-inflammation [exposure]
-second_ischemic_stroke_occurence [exposure]
-elevated_catecholamines [exposure]
-Depression [exposure]
-rate_of_thrombectomy [exposure]
-ageing [exposure]
-first_ischemic_stroke [exposure]
-social_isolation [exposure]
-Diabetes_mellitus [exposure]
-coagulopathy [exposure]
-depression_before_stroke [exposure]
-cardiac_disease [exposure]
-high_blood_cholesterol_levels [exposure]
-Mortality [exposure]
-BMI_t0 [exposure]
-endothelial_dysfunction [exposure]
-diabetes [exposure]
-second_stroke [exposure]
-arteriosklerosis [exposure]
-genetic_factors [exposure]
-hyperlipoproteinemia__high_LDL_ [exposure]
-vascular_inflammation [exposure]
-sex__male_ [exposure]
-high_drinking_levels [exposure]
-speech_therapy [exposure]
-higher_fitness_mobility_pre [exposure]
-Glycemic_control [exposure]
-Cognitive_dysfunction [exposure]
-Statins [exposure]
-severe_stenosis [exposure]
-Psychogenic_Stress [exposure]
-low_socioeconomic_status [exposure]
-elevated_CRP [exposure]
-CPAP_Treatment [exposure]
-stroke_unit_care [exposure]
-Stroke [exposure]
-Recurrent_Stroke [exposure]
-immunodepression [exposure]
-immobility [exposure]
-social_work [exposure]
-sex_being_male_ [exposure]
-healthy__mediterranean__diet [exposure]
-alcohol_consumption [exposure]
-atherosclerosis_thrombosis [exposure]
-Arterial_Dissection [exposure]
-Weight_Loss_and_Aerobic_Exercise [exposure]
-care_giving [exposure]
-urinary_catheter_placement [exposure]
-infectious_endocarditis [exposure]
-Prediabetes [exposure]
-Age [exposure]
-severe_disability [exposure]
-depression [exposure]
-vaskulitis [exposure]
-decreased_systemic_perfusion [exposure]
-paralysis [exposure]
-Atherosclerosis [exposure]
-female_gender [exposure]
-CKD [exposure]
-FIRST_ISCHEMIC_STROKE [exposure]
-antidepressive_medication [exposure]
-time_till_diagnosis [exposure]
-occurence_of_myocardial_infarction [exposure]
-exercise [exposure]
-sinus_venous_thrombosis [exposure]
-high_fat_salt_diet [exposure]
-Mono__Dual_Antiplatelet_Therapy [exposure]
-mortality [exposure]
-antidepressants [exposure]
-functional_outcome__e_g__measured_by_mRS_ [exposure]
-immunosuppression [exposure]
-Death [exposure]
-BMI_t1 [exposure]
-cognition [exposure]
-large_infarction [exposure]
-present_atrial_fibrillation [exposure]
-Second_hand_Smoking [exposure]
-dissection_of_cerebral_vessel [exposure]
-Sympathetic_activation [exposure]
-systemic_inflammation [exposure]
-Hyperlipidemia [exposure]
-Vasculitis [exposure]
-botolinum_toxin [exposure]
-psychotherapy [exposure]
-income [exposure]
-systemic_IL6 [exposure]
-infection [exposure]
-malnutrition [exposure]
-Takotsubo_syndrome [exposure]
-sex_female_ [exposure]
-brain_IL6_time1 [exposure]
-patient_positioning [exposure]
-atrial_fibrilation [exposure]
-diabetes_mellitus [exposure]
-primary_prevention [exposure]
-migraine_with_aura [exposure]
-post_stroke_epilepsy [exposure]
-Heavy_Alcohol_Consumption [exposure]
-falls [exposure]
-exercise__cardiac_not_excessive_ [exposure]
-stroke_lesion_affecting_central_autonomic_network [exposure]
+preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ [exposure]
+hypercholesterolemia [exposure]
+carotid_endarterectomy___angioplasty___stenting [exposure]
 blood_lipids [exposure]
-TIA [exposure]
-time_to_therapy [exposure]
-moderate_physical_activity [exposure]
-loss_of_brain_structural_integrity [exposure]
-neuronal_survival [exposure]
-chronic_heart_failure [exposure]
-COVID_19 [exposure]
-oxygen_saturation [exposure]
-oral_contraceptives [exposure]
-stenoses_of_cerebral_vessels [exposure]
-age [exposure]
+bladder_dysfunction [exposure]
+arteriosklerosis [exposure]
+lacunes [exposure]
+mortality [exposure]
+sex_being_male_ [exposure]
+sglt2_inhibitors [exposure]
 spasticity [exposure]
-enlarged_perivascular_spaces [exposure]
-Physical_Inactivity [exposure]
-Diabetes -> Ischemic_stroke
-age -> Ischemic_stroke
-age -> Diabetes
-Sex__Male_ -> Ischemic_stroke
-Hypertension -> Ischemic_stroke
-age -> Hypertension
-BMI -> Hypertension
-BMI -> Diabetes
-BMI -> Ischemic_stroke
-Atrial_fibrillation -> Ischemic_stroke
-Sex__Male_ -> Atrial_fibrillation
-age -> Atrial_fibrillation
-BMI -> Atrial_fibrillation
-Hypertension -> Atrial_fibrillation
-Smoking -> Ischemic_stroke
-age -> Smoking
-Sex__Male_ -> Smoking
-Smoking -> Diabetes
-Smoking -> BMI
-Smoking -> Hypertension
-Smoking -> Atrial_fibrillation
-Hyperlipidemia -> Atrial_fibrillation
-Hyperlipidemia -> BMI
-Hyperlipidemia -> Hypertension
-Hyperlipidemia -> Diabetes
-Hyperlipidemia -> Ischemic_stroke
-Diabetes -> Atrial_fibrillation
-Smoking -> Hyperlipidemia
-Sex__Male_ -> Diabetes
-Diabetes -> Hypertension
-Hyperlipidemia -> GFR
-Sex__Male_ -> BMI
-Hypertension -> GFR
-Diabetes -> GFR
-Smoking -> CKD
-CKD -> Atrial_fibrillation
-CKD -> Ischemic_stroke
-NIHSS_stroke -> NIHSS_followup
-NIHSS_stroke -> mRS_follow_up
-mRS_stroke -> mRS_follow_up
-mRS_stroke -> NIHSS_followup
-lesion_size -> NIHSS_stroke
-lesion_size -> mRS_stroke
-lesion_size -> mRS_follow_up
-lesion_size -> NIHSS_followup
-time_to_therapy -> NIHSS_followup
-time_to_therapy -> mRS_follow_up
-lesion_size -> Barthel_Index_stroke
-lesion_location -> Barthel_Index_stroke
-lesion_location -> NIHSS_stroke
-lesion_location -> NIHSS_followup
-lesion_location -> mRS_follow_up
-lesion_location -> mRS_stroke
-NIHSS_stroke -> Barthel_Index_follow_up
-mRS_stroke -> Barthel_Index_follow_up
-lesion_size -> Barthel_Index_follow_up
-time_to_therapy -> Barthel_Index_follow_up
-Barthel_Index_stroke -> Barthel_Index_follow_up
-lesion_location -> Barthel_Index_follow_up
-TOAST__etiology_ -> lesion_size
-TOAST__etiology_ -> lesion_location
-present_atrial_fibrillation -> TOAST__etiology_
+physiotherapy [exposure]
+collateralization [exposure]
+low_socioeconomic_status [exposure]
+anticoagulation [exposure]
+second_ischemic_stroke_occurence [exposure]
+nihss_followup [exposure]
+functional_outcome__e_g__measured_by_mrs_ [exposure]
+education [exposure]
+physical_exercise [exposure]
+cognitive_dysfunction [exposure]
+endovascular_interventions [exposure]
+immobility_before_stroke [exposure]
+high_fat__high_carbonhydrate_diet [exposure]
+physical_activity [exposure]
+malformations [exposure]
+age [exposure]
+loss_of_blood [exposure]
+vessel_stenosis_occlusion [exposure]
+pregnancy [exposure]
+physical_inactivity [exposure]
+neurosurgery [exposure]
+vasculitis [exposure]
+blood_brain_barrier_breakdown [exposure]
+urinary_catheter_placement [exposure]
+dyslipidemia [exposure]
+fractures [exposure]
+time_till_diagnosis [exposure]
+diabetes -> ischemic_stroke
+age -> ischemic_stroke
+age -> diabetes
+sex__male_ -> ischemic_stroke
+hypertension -> ischemic_stroke
+age -> hypertension
+bmi -> hypertension
+bmi -> diabetes
+bmi -> ischemic_stroke
+atrial_fibrillation -> ischemic_stroke
+sex__male_ -> atrial_fibrillation
+age -> atrial_fibrillation
+bmi -> atrial_fibrillation
+hypertension -> atrial_fibrillation
+smoking -> ischemic_stroke
+age -> smoking
+sex__male_ -> smoking
+smoking -> diabetes
+smoking -> bmi
+smoking -> hypertension
+smoking -> atrial_fibrillation
+hyperlipidemia -> atrial_fibrillation
+hyperlipidemia -> bmi
+hyperlipidemia -> hypertension
+hyperlipidemia -> diabetes
+hyperlipidemia -> ischemic_stroke
+diabetes -> atrial_fibrillation
+smoking -> hyperlipidemia
+sex__male_ -> diabetes
+diabetes -> hypertension
+hyperlipidemia -> gfr
+sex__male_ -> bmi
+hypertension -> gfr
+diabetes -> gfr
+smoking -> ckd
+ckd -> atrial_fibrillation
+ckd -> ischemic_stroke
+nihss_stroke -> nihss_followup
+nihss_stroke -> mrs_follow_up
+mrs_stroke -> mrs_follow_up
+mrs_stroke -> nihss_followup
+lesion_size -> nihss_stroke
+lesion_size -> mrs_stroke
+lesion_size -> mrs_follow_up
+lesion_size -> nihss_followup
+time_to_therapy -> nihss_followup
+time_to_therapy -> mrs_follow_up
+lesion_size -> barthel_index_stroke
+lesion_location -> barthel_index_stroke
+lesion_location -> nihss_stroke
+lesion_location -> nihss_followup
+lesion_location -> mrs_follow_up
+lesion_location -> mrs_stroke
+nihss_stroke -> barthel_index_follow_up
+mrs_stroke -> barthel_index_follow_up
+lesion_size -> barthel_index_follow_up
+time_to_therapy -> barthel_index_follow_up
+barthel_index_stroke -> barthel_index_follow_up
+lesion_location -> barthel_index_follow_up
+toast__etiology_ -> lesion_size
+toast__etiology_ -> lesion_location
+present_atrial_fibrillation -> toast__etiology_
 time_till_diagnosis -> time_to_therapy
-awareness_of_FAST_Scheme -> time_till_diagnosis
+awareness_of_fast_scheme -> time_till_diagnosis
 time_till_diagnosis -> rate_of_thrombolysis
 time_till_diagnosis -> rate_of_thrombectomy
 rate_of_thrombolysis -> lesion_size
 rate_of_thrombectomy -> lesion_size
-TOAST__etiology_ -> rate_of_thrombolysis
-TOAST__etiology_ -> rate_of_thrombectomy
-arteriosklerosis -> TOAST__etiology_
+toast__etiology_ -> rate_of_thrombolysis
+toast__etiology_ -> rate_of_thrombectomy
+arteriosklerosis -> toast__etiology_
 smoking -> arteriosklerosis
-Age -> arteriosklerosis
-Diabetes_mellitus -> arteriosklerosis
-Dyslipidemia -> arteriosklerosis
-Lipoprotein__a_ -> arteriosklerosis
-Vasculitis -> arteriosklerosis
-persistent_foramen_ovale -> TOAST__etiology_
+age -> arteriosklerosis
+diabetes_mellitus -> arteriosklerosis
+dyslipidemia -> arteriosklerosis
+lipoprotein__a_ -> arteriosklerosis
+vasculitis -> arteriosklerosis
+persistent_foramen_ovale -> toast__etiology_
 hypertension -> first_ischemic_stroke
-BMI_t0 -> first_ischemic_stroke
+bmi_t0 -> first_ischemic_stroke
 age -> first_ischemic_stroke
 sex_being_male_ -> first_ischemic_stroke
 smoking -> first_ischemic_stroke
@@ -396,10 +396,10 @@ high_drinking_levels -> first_ischemic_stroke
 high_fat_salt_diet -> first_ischemic_stroke
 high_fat_salt_diet -> hypertension
 atrial_fibrillation -> first_ischemic_stroke
-Atherosclerosis -> first_ischemic_stroke
-high_fat_salt_diet -> Atherosclerosis
-BMI_t1 -> second_ischemic_stroke
-first_ischemic_stroke -> BMI_t1
+atherosclerosis -> first_ischemic_stroke
+high_fat_salt_diet -> atherosclerosis
+bmi_t1 -> second_ischemic_stroke
+first_ischemic_stroke -> bmi_t1
 smoking -> second_ischemic_stroke
 age -> second_ischemic_stroke
 sex_being_male_ -> second_ischemic_stroke
@@ -407,149 +407,149 @@ high_drinking_levels -> second_ischemic_stroke
 high_fat_salt_diet -> second_ischemic_stroke
 diabetes -> second_ischemic_stroke
 arterial_hypertension -> endothelial_dysfunction
-Thrombolysis -> functional_post_stroke_outcome
+thrombolysis -> functional_post_stroke_outcome
 lesion_size -> functional_post_stroke_outcome
 arterial_hypertension -> functional_post_stroke_outcome
-Obesity -> functional_post_stroke_outcome
-Obesity -> endothelial_dysfunction
-endothelial_dysfunction -> EMV
-Obesity -> _1__stroke_incidence
+obesity -> functional_post_stroke_outcome
+obesity -> endothelial_dysfunction
+endothelial_dysfunction -> emv
+obesity -> _1__stroke_incidence
 arterial_hypertension -> _1__stroke_incidence
 _1__stroke_incidence -> functional_post_stroke_outcome
 endothelial_dysfunction -> _1__stroke_incidence
-EMV -> secondary_cardiovascular_risk
+emv -> secondary_cardiovascular_risk
 arterial_hypertension -> secondary_cardiovascular_risk
 endothelial_dysfunction -> secondary_cardiovascular_risk
-EMV -> _1__stroke_incidence
+emv -> _1__stroke_incidence
 _1__stroke_incidence -> lesion_size
 _1__stroke_incidence -> secondary_cardiovascular_risk
 lesion_size -> secondary_cardiovascular_risk
 vascular_inflammation -> secondary_cardiovascular_risk
 endothelial_dysfunction -> vascular_inflammation
-vascular_inflammation -> LMV
-LMV -> secondary_cardiovascular_risk
-Smoking -> Stroke
-kidney_disease -> Stroke
-male_sex -> Stroke
-exercise -> Stroke
-male_sex -> Smoking
-BMI -> Stroke
-exercise -> BMI
-dyslipidemia -> Stroke
+vascular_inflammation -> lmv
+lmv -> secondary_cardiovascular_risk
+smoking -> stroke
+kidney_disease -> stroke
+male_sex -> stroke
+exercise -> stroke
+male_sex -> smoking
+bmi -> stroke
+exercise -> bmi
+dyslipidemia -> stroke
 exercise -> kidney_disease
-low_socioeconomic_status -> Stroke
-Stroke -> Depression
-Stroke -> Cognitive_dysfunction
-Stroke -> Mortality
-hs_cardiac_Troponin -> Stroke
-cardiac_disease -> hs_cardiac_Troponin
-cardiac_disease -> Stroke
+low_socioeconomic_status -> stroke
+stroke -> depression
+stroke -> cognitive_dysfunction
+stroke -> mortality
+hs_cardiac_troponin -> stroke
+cardiac_disease -> hs_cardiac_troponin
+cardiac_disease -> stroke
 exercise -> cardiac_disease
-Smoking -> cardiac_disease
-elevated_CRP -> Stroke
-low_socioeconomic_status -> Depression
-age -> Stroke
+smoking -> cardiac_disease
+elevated_crp -> stroke
+low_socioeconomic_status -> depression
+age -> stroke
 age -> cardiac_disease
 high_fat__high_carbonhydrate_diet -> arterial_hypertension
 high_fat__high_carbonhydrate_diet -> cardiac_disease
-dyslipidemia -> Depression
-dyslipidemia -> Cognitive_dysfunction
-vascular_disease -> Stroke
+dyslipidemia -> depression
+dyslipidemia -> cognitive_dysfunction
+vascular_disease -> stroke
 age -> vascular_disease
 vascular_disease -> kidney_disease
 diabetes -> kidney_disease
-diabetes -> Stroke
+diabetes -> stroke
 high_fat__high_carbonhydrate_diet -> dyslipidemia
 high_fat__high_carbonhydrate_diet -> diabetes
-high_fat__high_carbonhydrate_diet -> elevated_CRP
-Depression -> Mortality
-coping_mechnisms -> Depression
+high_fat__high_carbonhydrate_diet -> elevated_crp
+depression -> mortality
+coping_mechnisms -> depression
 low_socioeconomic_status -> high_fat__high_carbonhydrate_diet
-habitual_alcohol_consumption -> Stroke
+habitual_alcohol_consumption -> stroke
 habitual_alcohol_consumption -> diabetes
 habitual_alcohol_consumption -> coping_mechnisms
 exercise -> coping_mechnisms
 exercise -> arterial_hypertension
-exercise -> Stroke
-exercise -> Mortality
-Inflammation -> Mortality
-Inflammation -> elevated_CRP
-Inflammation -> Cognitive_dysfunction
-Inflammation -> Depression
-habitual_alcohol_consumption -> Inflammation
+exercise -> stroke
+exercise -> mortality
+inflammation -> mortality
+inflammation -> elevated_crp
+inflammation -> cognitive_dysfunction
+inflammation -> depression
+habitual_alcohol_consumption -> inflammation
 low_socioeconomic_status -> habitual_alcohol_consumption
 arterial_hypertension -> cardiac_disease
-Cognitive_dysfunction -> coping_mechnisms
-Inflammation -> vascular_disease
-high_fat__high_carbonhydrate_diet -> Inflammation
-Inflammation -> cardiac_disease
-arterial_hypertension -> Stroke
+cognitive_dysfunction -> coping_mechnisms
+inflammation -> vascular_disease
+high_fat__high_carbonhydrate_diet -> inflammation
+inflammation -> cardiac_disease
+arterial_hypertension -> stroke
 acute_heart_failure -> myocardial_infarction__type_2_
 acute_heart_failure -> mortality
-acute_heart_failure -> nt_pro_BNP
+acute_heart_failure -> nt_pro_bnp
 age -> diabetes
-age -> FIRST_ISCHEMIC_STROKE
+age -> first_ischemic_stroke
 age -> atrial_fibrillation
 age -> kognitive_decline
 age -> atherosclerosis
 anticoagulation -> second_ischemic_stroke
-anticoagulation -> FIRST_ISCHEMIC_STROKE
+anticoagulation -> first_ischemic_stroke
 anticoagulation -> cardiac_thrombus
-atherosclerosis -> FIRST_ISCHEMIC_STROKE
+atherosclerosis -> first_ischemic_stroke
 atherosclerosis -> myocardial_infarction__type_1_
-atrial_fibrillation -> FIRST_ISCHEMIC_STROKE
+atrial_fibrillation -> first_ischemic_stroke
 atrial_fibrillation -> troponin_elevation
-atrial_fibrillation -> nt_pro_BNP
+atrial_fibrillation -> nt_pro_bnp
 atrial_fibrillation -> severe_arrrhythmia
-BMI -> myocardial_infarction__type_1_
-BMI -> second_ischemic_stroke
-BMI -> FIRST_ISCHEMIC_STROKE
+bmi -> myocardial_infarction__type_1_
+bmi -> second_ischemic_stroke
+bmi -> first_ischemic_stroke
 cardiac_autonomic_dysbalance -> severe_arrrhythmia
-cardiac_thrombus -> FIRST_ISCHEMIC_STROKE
+cardiac_thrombus -> first_ischemic_stroke
 chronic_heart_failure -> kognitive_decline
-chronic_heart_failure -> FIRST_ISCHEMIC_STROKE
-chronic_heart_failure -> nt_pro_BNP
+chronic_heart_failure -> first_ischemic_stroke
+chronic_heart_failure -> nt_pro_bnp
 chronic_heart_failure -> troponin_elevation
 depression -> higher_fitness_mobility_post
 depression -> mortality
-depression -> Takotsubo_syndrome
+depression -> takotsubo_syndrome
 diabetes -> mortality
 diabetes -> infection
 diabetes -> myocardial_infarction__type_1_
-diabetes -> FIRST_ISCHEMIC_STROKE
-diabetes -> BMI
+diabetes -> first_ischemic_stroke
+diabetes -> bmi
 diabetes -> cardiac_autonomic_dysbalance
-dissection -> FIRST_ISCHEMIC_STROKE
+dissection -> first_ischemic_stroke
 dysphagia -> infection
 elevated_catecholamines -> severe_arrrhythmia
-elevated_catecholamines -> Takotsubo_syndrome
+elevated_catecholamines -> takotsubo_syndrome
 exercise__cardiac_not_excessive_ -> hypertension
-exercise__cardiac_not_excessive_ -> FIRST_ISCHEMIC_STROKE
+exercise__cardiac_not_excessive_ -> first_ischemic_stroke
 exercise__cardiac_not_excessive_ -> kognitive_decline
 exercise__cardiac_not_excessive_ -> atrial_fibrillation
 exercise__cardiac_not_excessive_ -> myocardial_infarction__type_1_
 exercise__cardiac_not_excessive_ -> chronic_heart_failure
-FIRST_ISCHEMIC_STROKE -> troponin_elevation
-FIRST_ISCHEMIC_STROKE -> second_ischemic_stroke
-FIRST_ISCHEMIC_STROKE -> mortality
-FIRST_ISCHEMIC_STROKE -> acute_heart_failure
-FIRST_ISCHEMIC_STROKE -> higher_fitness_mobility_post
-FIRST_ISCHEMIC_STROKE -> kognitive_decline
-FIRST_ISCHEMIC_STROKE -> myocardial_infarction__type_2_
-FIRST_ISCHEMIC_STROKE -> depression
-FIRST_ISCHEMIC_STROKE -> Takotsubo_syndrome
-FIRST_ISCHEMIC_STROKE -> infection
-FIRST_ISCHEMIC_STROKE -> elevated_catecholamines
-FIRST_ISCHEMIC_STROKE -> seizures
-FIRST_ISCHEMIC_STROKE -> dysphagia
-FIRST_ISCHEMIC_STROKE -> severe_arrrhythmia
+first_ischemic_stroke -> troponin_elevation
+first_ischemic_stroke -> second_ischemic_stroke
+first_ischemic_stroke -> mortality
+first_ischemic_stroke -> acute_heart_failure
+first_ischemic_stroke -> higher_fitness_mobility_post
+first_ischemic_stroke -> kognitive_decline
+first_ischemic_stroke -> myocardial_infarction__type_2_
+first_ischemic_stroke -> depression
+first_ischemic_stroke -> takotsubo_syndrome
+first_ischemic_stroke -> infection
+first_ischemic_stroke -> elevated_catecholamines
+first_ischemic_stroke -> seizures
+first_ischemic_stroke -> dysphagia
+first_ischemic_stroke -> severe_arrrhythmia
 higher_fitness_mobility_post -> second_ischemic_stroke
-higher_fitness_mobility_pre -> FIRST_ISCHEMIC_STROKE
+higher_fitness_mobility_pre -> first_ischemic_stroke
 higher_fitness_mobility_pre -> mortality
 hyperlipidemia -> myocardial_infarction__type_1_
-hyperlipidemia -> FIRST_ISCHEMIC_STROKE
+hyperlipidemia -> first_ischemic_stroke
 hypertension -> myocardial_infarction__type_1_
-hypertension -> FIRST_ISCHEMIC_STROKE
+hypertension -> first_ischemic_stroke
 hypertension -> dissection
 hypertension -> chronic_heart_failure
 hypertension -> myocardial_infarction__type_2_
@@ -557,7 +557,7 @@ hypertension -> acute_heart_failure
 infection -> mortality
 infection -> myocardial_infarction__type_2_
 kidney_disease -> troponin_elevation
-myocardial_infarction__type_1_ -> FIRST_ISCHEMIC_STROKE
+myocardial_infarction__type_1_ -> first_ischemic_stroke
 myocardial_infarction__type_1_ -> cardiac_autonomic_dysbalance
 myocardial_infarction__type_1_ -> mortality
 myocardial_infarction__type_1_ -> severe_arrrhythmia
@@ -567,63 +567,63 @@ myocardial_infarction__type_1_ -> cardiac_thrombus
 myocardial_infarction__type_1_ -> chronic_heart_failure
 myocardial_infarction__type_2_ -> troponin_elevation
 myocardial_infarction__type_2_ -> mortality
-persistent_foramen_ovale -> FIRST_ISCHEMIC_STROKE
+persistent_foramen_ovale -> first_ischemic_stroke
 second_ischemic_stroke -> mortality
 seizures -> mortality
 seizures -> troponin_elevation
 severe_arrrhythmia -> mortality
 sex__male_ -> smoking
-sex__male_ -> FIRST_ISCHEMIC_STROKE
-sex__male_ -> Takotsubo_syndrome
-smoking -> FIRST_ISCHEMIC_STROKE
+sex__male_ -> first_ischemic_stroke
+sex__male_ -> takotsubo_syndrome
+smoking -> first_ischemic_stroke
 smoking -> myocardial_infarction__type_1_
 stroke_lesion_affecting_central_autonomic_network -> cardiac_autonomic_dysbalance
 stroke_lesion_affecting_central_autonomic_network -> severe_arrrhythmia
 stroke_lesion_affecting_central_autonomic_network -> troponin_elevation
 stroke_lesion_affecting_central_autonomic_network -> elevated_catecholamines
-Takotsubo_syndrome -> troponin_elevation
+takotsubo_syndrome -> troponin_elevation
 troponin_elevation -> higher_fitness_mobility_post
 troponin_elevation -> kognitive_decline
 age -> first_ever_ischemic_stroke_occurence
 sex__being_male_ -> first_ever_ischemic_stroke_occurence
-BMI -> first_ever_ischemic_stroke_occurence
-LDL_cholesterol -> first_ever_ischemic_stroke_occurence
+bmi -> first_ever_ischemic_stroke_occurence
+ldl_cholesterol -> first_ever_ischemic_stroke_occurence
 blood_pressure -> first_ever_ischemic_stroke_occurence
-BMI -> LDL_cholesterol
-BMI -> blood_pressure
-LDL_cholesterol -> atherosclerosis__measured_by_low_ABI_
+bmi -> ldl_cholesterol
+bmi -> blood_pressure
+ldl_cholesterol -> atherosclerosis__measured_by_low_abi_
 atrial_fibrilation -> first_ever_ischemic_stroke_occurence
 occurence_of_myocardial_infarction -> first_ever_ischemic_stroke_occurence
 smoking -> first_ever_ischemic_stroke_occurence
 smoking -> occurence_of_myocardial_infarction
 smoking -> blood_pressure
-smoking -> atherosclerosis__measured_by_low_ABI_
+smoking -> atherosclerosis__measured_by_low_abi_
 first_ever_ischemic_stroke_occurence -> second_ischemic_stroke_occurence
-LDL_cholesterol -> second_ischemic_stroke_occurence
-LDL_cholesterol -> second_ischemic_stroke_occurence
+ldl_cholesterol -> second_ischemic_stroke_occurence
+ldl_cholesterol -> second_ischemic_stroke_occurence
 age -> second_ischemic_stroke_occurence
-BMI -> second_ischemic_stroke_occurence
-atherosclerosis__measured_by_low_ABI_ -> second_ischemic_stroke_occurence
+bmi -> second_ischemic_stroke_occurence
+atherosclerosis__measured_by_low_abi_ -> second_ischemic_stroke_occurence
 atrial_fibrilation -> second_ischemic_stroke_occurence
 occurence_of_myocardial_infarction -> second_ischemic_stroke_occurence
 smoking -> second_ischemic_stroke_occurence
 anticoagulation_medication -> first_ever_ischemic_stroke_occurence
 first_ever_ischemic_stroke_occurence -> cognitive_function
 second_ischemic_stroke_occurence -> cognitive_function
-atherosclerosis__measured_by_low_ABI_ -> cognitive_function
+atherosclerosis__measured_by_low_abi_ -> cognitive_function
 age -> cognitive_function
 diabetes_mellitus -> first_ever_ischemic_stroke_occurence
 diabetes_mellitus -> second_ischemic_stroke_occurence
 diabetes_mellitus -> occurence_of_myocardial_infarction
-diabetes_mellitus -> atherosclerosis__measured_by_low_ABI_
-sex__being_male_ -> atherosclerosis__measured_by_low_ABI_
-BMI -> diabetes_mellitus
+diabetes_mellitus -> atherosclerosis__measured_by_low_abi_
+sex__being_male_ -> atherosclerosis__measured_by_low_abi_
+bmi -> diabetes_mellitus
 age -> diabetes_mellitus
 exercise -> first_ever_ischemic_stroke_occurence
-exercise -> BMI
-exercise -> LDL_cholesterol
+exercise -> bmi
+exercise -> ldl_cholesterol
 exercise -> blood_pressure
-exercise -> atherosclerosis__measured_by_low_ABI_
+exercise -> atherosclerosis__measured_by_low_abi_
 exercise -> occurence_of_myocardial_infarction
 exercise -> second_ischemic_stroke_occurence
 exercise -> diabetes_mellitus
@@ -639,20 +639,20 @@ stress -> occurence_of_myocardial_infarction
 stress -> smoking
 stress -> second_ischemic_stroke_occurence
 stress -> alcohol_consumption
-stress -> atherosclerosis__measured_by_low_ABI_
+stress -> atherosclerosis__measured_by_low_abi_
 diabetes_mellitus -> cognitive_function
 statin_use -> first_ever_ischemic_stroke_occurence
-statin_use -> LDL_cholesterol
-statin_use -> atherosclerosis__measured_by_low_ABI_
+statin_use -> ldl_cholesterol
+statin_use -> atherosclerosis__measured_by_low_abi_
 statin_use -> occurence_of_myocardial_infarction
-Lipoprotein_a -> first_ever_ischemic_stroke_occurence
-Lipoprotein_a -> atherosclerosis__measured_by_low_ABI_
-atherosclerosis__measured_by_low_ABI_ -> first_ever_ischemic_stroke_occurence
+lipoprotein_a -> first_ever_ischemic_stroke_occurence
+lipoprotein_a -> atherosclerosis__measured_by_low_abi_
+atherosclerosis__measured_by_low_abi_ -> first_ever_ischemic_stroke_occurence
 blood_pressure -> cognitive_function
 antihypertensive_medicatio -> first_ever_ischemic_stroke_occurence
 antihypertensive_medicatio -> occurence_of_myocardial_infarction
-BMI -> atherosclerosis__measured_by_low_ABI_
-BMI -> occurence_of_myocardial_infarction
+bmi -> atherosclerosis__measured_by_low_abi_
+bmi -> occurence_of_myocardial_infarction
 first_ischemic_stroke -> second_ischemic_stroke
 first_ischemic_stroke -> mortality
 first_ischemic_stroke -> disability
@@ -694,9 +694,9 @@ smoking -> first_ischemic_stroke
 smoking -> second_ischemic_stroke
 sex_male_ -> first_ischemic_stroke
 atrial_fibrillation -> first_ischemic_stroke
-BMI -> first_ischemic_stroke
+bmi -> first_ischemic_stroke
 atrial_fibrillation -> second_ischemic_stroke
-BMI -> second_ischemic_stroke
+bmi -> second_ischemic_stroke
 blood_pressure -> first_ischemic_stroke
 blood_pressure -> second_ischemic_stroke
 age -> blood_pressure
@@ -707,7 +707,7 @@ diabetes -> first_ischemic_stroke
 first_ischemic_stroke -> blood_glucose
 diabetes -> blood_glucose
 age -> diabetes
-BMI -> diabetes
+bmi -> diabetes
 sex_male_ -> smoking
 stroke_unit_care -> mortality
 stroke_unit_care -> disability
@@ -753,42 +753,42 @@ physical_activity -> second_ischemic_stroke
 education -> first_ischemic_stroke
 income -> first_ischemic_stroke
 social_isolation -> first_ischemic_stroke
-TIA -> first_ischemic_stroke
-Smoking -> first_ischemic_stroke
-Diabetes_mellitus -> first_ischemic_stroke
+tia -> first_ischemic_stroke
+smoking -> first_ischemic_stroke
+diabetes_mellitus -> first_ischemic_stroke
 moderate_physical_activity -> first_ischemic_stroke
-moderate_physical_activity -> Diabetes_mellitus
+moderate_physical_activity -> diabetes_mellitus
 healthy__mediterranean__diet -> first_ischemic_stroke
-healthy__mediterranean__diet -> Diabetes_mellitus
-hyperlipoproteinemia__high_LDL_ -> first_ischemic_stroke
+healthy__mediterranean__diet -> diabetes_mellitus
+hyperlipoproteinemia__high_ldl_ -> first_ischemic_stroke
 atrial_fibrillation -> first_ischemic_stroke
 dissection_of_cerebral_vessel -> first_ischemic_stroke
 atherosclerosis -> first_ischemic_stroke
-hyperlipoproteinemia__high_LDL_ -> atherosclerosis
+hyperlipoproteinemia__high_ldl_ -> atherosclerosis
 positive_familiy_history_of_cardio_cerebrovascular_events -> first_ischemic_stroke
 stenoses_of_cerebral_vessels -> first_ischemic_stroke
 atherosclerosis -> stenoses_of_cerebral_vessels
 dissection_of_cerebral_vessel -> stenoses_of_cerebral_vessels
-patent_foramen_ovale__PFO_ -> first_ischemic_stroke
+patent_foramen_ovale__pfo_ -> first_ischemic_stroke
 oral_contraceptives -> first_ischemic_stroke
 depression -> first_ischemic_stroke
 antidepressive_medication -> first_ischemic_stroke
 depression -> antidepressive_medication
-antiplatelet_therapy__e_g__ASS_ -> first_ischemic_stroke
-Statins -> first_ischemic_stroke
-Statins -> hyperlipoproteinemia__high_LDL_
+antiplatelet_therapy__e_g__ass_ -> first_ischemic_stroke
+statins -> first_ischemic_stroke
+statins -> hyperlipoproteinemia__high_ldl_
 first_ischemic_stroke -> second_ischemic_stroke
-age -> hyperlipoproteinemia__high_LDL_
+age -> hyperlipoproteinemia__high_ldl_
 age -> atrial_fibrillation
-age -> patent_foramen_ovale__PFO_
+age -> patent_foramen_ovale__pfo_
 age -> first_ischemic_stroke
 arterial_hypertension -> first_ischemic_stroke
 age -> death__all_causes_
 age -> arterial_hypertension
 age -> second_ischemic_stroke
-Smoking -> second_ischemic_stroke
-Diabetes_mellitus -> second_ischemic_stroke
-hyperlipoproteinemia__high_LDL_ -> second_ischemic_stroke
+smoking -> second_ischemic_stroke
+diabetes_mellitus -> second_ischemic_stroke
+hyperlipoproteinemia__high_ldl_ -> second_ischemic_stroke
 moderate_physical_activity -> second_ischemic_stroke
 healthy__mediterranean__diet -> second_ischemic_stroke
 atrial_fibrillation -> second_ischemic_stroke
@@ -796,13 +796,13 @@ dissection_of_cerebral_vessel -> second_ischemic_stroke
 atherosclerosis -> second_ischemic_stroke
 positive_familiy_history_of_cardio_cerebrovascular_events -> second_ischemic_stroke
 stenoses_of_cerebral_vessels -> second_ischemic_stroke
-antiplatelet_therapy__e_g__ASS_ -> second_ischemic_stroke
-Statins -> second_ischemic_stroke
+antiplatelet_therapy__e_g__ass_ -> second_ischemic_stroke
+statins -> second_ischemic_stroke
 first_ischemic_stroke -> post_stroke_epilepsy
 second_ischemic_stroke -> post_stroke_epilepsy
-stroke_severity__e_g__measured_by_NIHSS_ -> post_stroke_epilepsy
-post_stroke_epilepsy -> functional_outcome__e_g__measured_by_mRS_
-stroke_severity__e_g__measured_by_NIHSS_ -> functional_outcome__e_g__measured_by_mRS_
+stroke_severity__e_g__measured_by_nihss_ -> post_stroke_epilepsy
+post_stroke_epilepsy -> functional_outcome__e_g__measured_by_mrs_
+stroke_severity__e_g__measured_by_nihss_ -> functional_outcome__e_g__measured_by_mrs_
 obesity -> first_ischemic_stroke
 obesity -> second_ischemic_stroke
 sleep_apnea -> first_ischemic_stroke
@@ -826,38 +826,38 @@ oral_contraceptives -> second_ischemic_stroke
 preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ -> second_ischemic_stroke
 preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ -> first_ischemic_stroke
 preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ -> arterial_hypertension
-preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ -> Diabetes_mellitus
+preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_ -> diabetes_mellitus
 female_sex -> preeclampsia_and_other_pregancy_related_complications__e_g__arterial_hypertension__diabetes_
 moderate_physical_activity -> obesity
 healthy__mediterranean__diet -> obesity
-stroke_severity__e_g__measured_by_NIHSS_ -> death__all_causes_
+stroke_severity__e_g__measured_by_nihss_ -> death__all_causes_
 first_ischemic_stroke -> death__all_causes_
 second_ischemic_stroke -> death__all_causes_
 depression -> death__all_causes_
 moderate_physical_activity -> migraine_with_aura
 healthy__mediterranean__diet -> death__all_causes_
 obesity -> death__all_causes_
-Smoking -> death__all_causes_
+smoking -> death__all_causes_
 moderate_physical_activity -> death__all_causes_
 atrial_fibrillation -> death__all_causes_
-atrial_fibrillation -> stroke_severity__e_g__measured_by_NIHSS_
+atrial_fibrillation -> stroke_severity__e_g__measured_by_nihss_
 atrial_fibrillation -> anticoagulation
-atherosclerosis -> antiplatelet_therapy__e_g__ASS_
-stenoses_of_cerebral_vessels -> antiplatelet_therapy__e_g__ASS_
-Smoking -> atherosclerosis
-Smoking -> stenoses_of_cerebral_vessels
+atherosclerosis -> antiplatelet_therapy__e_g__ass_
+stenoses_of_cerebral_vessels -> antiplatelet_therapy__e_g__ass_
+smoking -> atherosclerosis
+smoking -> stenoses_of_cerebral_vessels
 sleep_apnea -> arterial_hypertension
-Diabetes_mellitus -> arterial_hypertension
-low_socioeconomic_status -> Smoking
+diabetes_mellitus -> arterial_hypertension
+low_socioeconomic_status -> smoking
 low_socioeconomic_status -> arterial_hypertension
 low_socioeconomic_status -> healthy__mediterranean__diet
 low_socioeconomic_status -> moderate_physical_activity
 low_socioeconomic_status -> first_ischemic_stroke
 low_socioeconomic_status -> second_ischemic_stroke
 low_socioeconomic_status -> depression
-cortical_involvement_or_strategical_localisation_of_stroke_lesion -> functional_outcome__e_g__measured_by_mRS_
+cortical_involvement_or_strategical_localisation_of_stroke_lesion -> functional_outcome__e_g__measured_by_mrs_
 cortical_involvement_or_strategical_localisation_of_stroke_lesion -> post_stroke_epilepsy
-second_ischemic_stroke -> functional_outcome__e_g__measured_by_mRS_
+second_ischemic_stroke -> functional_outcome__e_g__measured_by_mrs_
 age -> first_ischemic_stroke
 male_sex -> first_ischemic_stroke
 hypertension -> first_ischemic_stroke
@@ -865,37 +865,37 @@ metabolic_syndrom -> first_ischemic_stroke
 inflammation -> first_ischemic_stroke
 inflammation -> blood_brain_barrier_breakdown
 blood_brain_barrier_breakdown -> first_ischemic_stroke
-metabolic_syndrom -> white_matter_hyperintensities__MRI_
-white_matter_hyperintensities__MRI_ -> first_ischemic_stroke
+metabolic_syndrom -> white_matter_hyperintensities__mri_
+white_matter_hyperintensities__mri_ -> first_ischemic_stroke
 exercise -> first_ischemic_stroke
 exercise -> metabolic_syndrom
 exercise -> hypertension
-hypertension -> white_matter_hyperintensities__MRI_
+hypertension -> white_matter_hyperintensities__mri_
 smoking -> first_ischemic_stroke
-smoking -> white_matter_hyperintensities__MRI_
-atherosclerosis -> white_matter_hyperintensities__MRI_
+smoking -> white_matter_hyperintensities__mri_
+atherosclerosis -> white_matter_hyperintensities__mri_
 metabolic_syndrom -> atherosclerosis
 atherosclerosis_thrombosis -> first_ischemic_stroke
 cardiac_dysfunction -> first_ischemic_stroke
-cardiac_dysfunction -> white_matter_hyperintensities__MRI_
+cardiac_dysfunction -> white_matter_hyperintensities__mri_
 atherosclerosis -> vessel_stenosis_occlusion
-vessel_stenosis_occlusion -> white_matter_hyperintensities__MRI_
+vessel_stenosis_occlusion -> white_matter_hyperintensities__mri_
 vessel_stenosis_occlusion -> first_ischemic_stroke
 atherosclerosis -> vulnerable_plaques
 vulnerable_plaques -> first_ischemic_stroke
-vulnerable_plaques -> white_matter_hyperintensities__MRI_
+vulnerable_plaques -> white_matter_hyperintensities__mri_
 endarterectomy -> vulnerable_plaques
 endarterectomy -> vessel_stenosis_occlusion
 kidney_function -> first_ischemic_stroke
-kidney_function -> white_matter_hyperintensities__MRI_
+kidney_function -> white_matter_hyperintensities__mri_
 metabolic_syndrom -> kidney_function
 enlarged_perivascular_spaces -> first_ischemic_stroke
-microbleeds -> white_matter_hyperintensities__MRI_
+microbleeds -> white_matter_hyperintensities__mri_
 preeclampsia_eclampsia -> first_ischemic_stroke
 race -> first_ischemic_stroke
 preeclampsia_eclampsia -> hypertension
 genetic_factors -> first_ischemic_stroke
-inflammation -> white_matter_hyperintensities__MRI_
+inflammation -> white_matter_hyperintensities__mri_
 infection -> first_ischemic_stroke
 infection -> inflammation
 inflammation -> coagulopathy
@@ -1001,18 +1001,18 @@ severe_stenosis -> reduction_or_complete_blockage_of_blood_flow
 occlusion_of_a_blood_vessel -> reduction_or_complete_blockage_of_blood_flow
 nonatherosclerotic_abnormalities -> ischemic_stroke
 arterial_dissection -> nonatherosclerotic_abnormalities
-COVID_19 -> ischemic_stroke
+covid_19 -> ischemic_stroke
 fibromuscular_dysplasia -> nonatherosclerotic_abnormalities
 vasculitis -> nonatherosclerotic_abnormalities
-Moyamoya_disease -> nonatherosclerotic_abnormalities
+moyamoya_disease -> nonatherosclerotic_abnormalities
 sickle_cell_disease_arteriopathy -> nonatherosclerotic_abnormalities
 ischemic_stroke -> production_of_reactive_oxygen_species
-production_of_reactive_oxygen_species -> DNA_damage
+production_of_reactive_oxygen_species -> dna_damage
 ischemic_stroke -> loss_of_brain_structural_integrity
 female_sex_steroids -> migraine
-female_sex_steroids -> COVID_19
+female_sex_steroids -> covid_19
 large_artery_atherosclerosis -> ischemic_stroke
-ageing -> DNA_damage
+ageing -> dna_damage
 ageing -> migraine
 ageing -> hypertension
 production_of_reactive_oxygen_species -> endothelial_dysfunction
@@ -1020,82 +1020,82 @@ hypercholesterolemia -> endothelial_dysfunction
 smoking -> endothelial_dysfunction
 diabetes_mellitus -> endothelial_dysfunction
 hypertension -> endothelial_dysfunction
-Embolism -> First_Ischemic_Stroke
-Thrombosis -> First_Ischemic_Stroke
-Lacunes -> Thrombosis
-Atrial_Fibrillation -> Embolism
-Atherosclerosis -> Thrombosis
-Male_Sex -> Atherosclerosis
-Age -> Atherosclerosis
-Smoking -> Atherosclerosis
-Diabetes -> Atherosclerosis
-Dyslipidemia -> Atherosclerosis
-Hypertension -> Atherosclerosis
-Arterial_Dissection -> First_Ischemic_Stroke
-Hypertension -> Lacunes
-Age -> Lacunes
-Hypercoagulopathy -> Thrombosis
-Vasculitis -> First_Ischemic_Stroke
-Cardiac_Remodelling -> Atrial_Fibrillation
-Age -> Cardiac_Remodelling
-Hypertension -> Cardiac_Remodelling
-Other_Cardiac_Pathologies -> Cardiac_Remodelling
-Atherosclerosis -> Other_Cardiac_Pathologies
-Atherosclerosis -> Myocardial_Infarction
-Myocardial_Infarction -> Cardiac_Remodelling
-Second_hand_Smoking -> Atherosclerosis
-Insulin_Resistance___Impaired_glucose_metabolism -> Diabetes
-Insulin_Resistance___Impaired_glucose_metabolism -> Atherosclerosis
-Age -> Insulin_Resistance___Impaired_glucose_metabolism
-Physical_Inactivity -> Obesity
-Insulin_Resistance___Impaired_glucose_metabolism -> Hypertension
-Insulin_Resistance___Impaired_glucose_metabolism -> Dyslipidemia
-Insulin_Resistance___Impaired_glucose_metabolism -> Inflammation
-Inflammation -> Atherosclerosis
-Obesity -> Insulin_Resistance___Impaired_glucose_metabolism
-Obesity -> Inflammation
-Psychogenic_Stress -> Sympathetic_activation
-Sympathetic_activation -> Thrombosis
-Sleep_disturbances___Obstructive_Sleep_Apnea -> Hypertension
-Sleep_disturbances___Obstructive_Sleep_Apnea -> Insulin_Resistance___Impaired_glucose_metabolism
-Sleep_disturbances___Obstructive_Sleep_Apnea -> Inflammation
-Psychogenic_Stress -> Smoking
-Insulin_Resistance___Impaired_glucose_metabolism -> Prediabetes
-Prediabetes -> Diabetes
-Hypertension -> Arterial_Dissection
-Smoking -> Hypertension
-Antihypertensive_Therapy -> Hypertension
-Statin_Therapy -> Dyslipidemia
-Statin_Therapy -> Inflammation
-Weight_Loss_and_Aerobic_Exercise -> Insulin_Resistance___Impaired_glucose_metabolism
-Dietary_salt_restriction -> Hypertension
-Weight_Loss_and_Aerobic_Exercise -> Physical_Inactivity
-Healthy_Diet -> Obesity
-Glycemic_control -> Diabetes
-Thiazolidindione -> Dyslipidemia
-Thiazolidindione -> Hypertension
-Thiazolidindione -> Insulin_Resistance___Impaired_glucose_metabolism
-SGLT2_Inhibitors -> Diabetes
-GLP1_Receptor_Agonists -> Diabetes
-CPAP_Treatment -> Sleep_disturbances___Obstructive_Sleep_Apnea
-Smoking_Cessation -> Smoking
-Carotid_Endarterectomy___Angioplasty___stenting -> Atherosclerosis
-Mono__Dual_Antiplatelet_Therapy -> Thrombosis
-Anticoagulation_Therapy -> Embolism
-Mono__Dual_Antiplatelet_Therapy -> Arterial_Dissection
-Anticoagulation_Therapy -> Arterial_Dissection
-Anticoagulation_Therapy -> Hypercoagulopathy
-Statin_Therapy -> Thrombosis
-Statin_Therapy -> Hypertension
-Low_Moderate_Alcohol_Consumption -> Atherosclerosis
-Heavy_Alcohol_Consumption -> Hypertension
-Heavy_Alcohol_Consumption -> Other_Cardiac_Pathologies
-Heavy_Alcohol_Consumption -> Atrial_Fibrillation
-Heavy_Alcohol_Consumption -> Thrombosis
-Reducing_Alcohol_Consumption -> Heavy_Alcohol_Consumption
-First_Ischemic_Stroke -> Neurological_Sequalae
-First_Ischemic_Stroke -> Death
-First_Ischemic_Stroke -> Recurrent_Stroke
+embolism -> first_ischemic_stroke
+thrombosis -> first_ischemic_stroke
+lacunes -> thrombosis
+atrial_fibrillation -> embolism
+atherosclerosis -> thrombosis
+male_sex -> atherosclerosis
+age -> atherosclerosis
+smoking -> atherosclerosis
+diabetes -> atherosclerosis
+dyslipidemia -> atherosclerosis
+hypertension -> atherosclerosis
+arterial_dissection -> first_ischemic_stroke
+hypertension -> lacunes
+age -> lacunes
+hypercoagulopathy -> thrombosis
+vasculitis -> first_ischemic_stroke
+cardiac_remodelling -> atrial_fibrillation
+age -> cardiac_remodelling
+hypertension -> cardiac_remodelling
+other_cardiac_pathologies -> cardiac_remodelling
+atherosclerosis -> other_cardiac_pathologies
+atherosclerosis -> myocardial_infarction
+myocardial_infarction -> cardiac_remodelling
+second_hand_smoking -> atherosclerosis
+insulin_resistance___impaired_glucose_metabolism -> diabetes
+insulin_resistance___impaired_glucose_metabolism -> atherosclerosis
+age -> insulin_resistance___impaired_glucose_metabolism
+physical_inactivity -> obesity
+insulin_resistance___impaired_glucose_metabolism -> hypertension
+insulin_resistance___impaired_glucose_metabolism -> dyslipidemia
+insulin_resistance___impaired_glucose_metabolism -> inflammation
+inflammation -> atherosclerosis
+obesity -> insulin_resistance___impaired_glucose_metabolism
+obesity -> inflammation
+psychogenic_stress -> sympathetic_activation
+sympathetic_activation -> thrombosis
+sleep_disturbances___obstructive_sleep_apnea -> hypertension
+sleep_disturbances___obstructive_sleep_apnea -> insulin_resistance___impaired_glucose_metabolism
+sleep_disturbances___obstructive_sleep_apnea -> inflammation
+psychogenic_stress -> smoking
+insulin_resistance___impaired_glucose_metabolism -> prediabetes
+prediabetes -> diabetes
+hypertension -> arterial_dissection
+smoking -> hypertension
+antihypertensive_therapy -> hypertension
+statin_therapy -> dyslipidemia
+statin_therapy -> inflammation
+weight_loss_and_aerobic_exercise -> insulin_resistance___impaired_glucose_metabolism
+dietary_salt_restriction -> hypertension
+weight_loss_and_aerobic_exercise -> physical_inactivity
+healthy_diet -> obesity
+glycemic_control -> diabetes
+thiazolidindione -> dyslipidemia
+thiazolidindione -> hypertension
+thiazolidindione -> insulin_resistance___impaired_glucose_metabolism
+sglt2_inhibitors -> diabetes
+glp1_receptor_agonists -> diabetes
+cpap_treatment -> sleep_disturbances___obstructive_sleep_apnea
+smoking_cessation -> smoking
+carotid_endarterectomy___angioplasty___stenting -> atherosclerosis
+mono__dual_antiplatelet_therapy -> thrombosis
+anticoagulation_therapy -> embolism
+mono__dual_antiplatelet_therapy -> arterial_dissection
+anticoagulation_therapy -> arterial_dissection
+anticoagulation_therapy -> hypercoagulopathy
+statin_therapy -> thrombosis
+statin_therapy -> hypertension
+low_moderate_alcohol_consumption -> atherosclerosis
+heavy_alcohol_consumption -> hypertension
+heavy_alcohol_consumption -> other_cardiac_pathologies
+heavy_alcohol_consumption -> atrial_fibrillation
+heavy_alcohol_consumption -> thrombosis
+reducing_alcohol_consumption -> heavy_alcohol_consumption
+first_ischemic_stroke -> neurological_sequalae
+first_ischemic_stroke -> death
+first_ischemic_stroke -> recurrent_stroke
 first_stroke -> cerebral_inflammation
 systemic_inflammation -> first_stroke
 first_stroke -> peripheral_immune_competence
@@ -1145,16 +1145,16 @@ second_stroke -> cachexia
 malnutrition -> cachexia
 cachexia -> death
 malnutrition -> death
-immobility -> reduced_QoL_ADL
-spasticity -> reduced_QoL_ADL
-dysphagia -> reduced_QoL_ADL
-pain -> reduced_QoL_ADL
-cognitive_decline -> reduced_QoL_ADL
-first_stroke -> reduced_QoL_ADL
-second_stroke -> reduced_QoL_ADL
+immobility -> reduced_qol_adl
+spasticity -> reduced_qol_adl
+dysphagia -> reduced_qol_adl
+pain -> reduced_qol_adl
+cognitive_decline -> reduced_qol_adl
+first_stroke -> reduced_qol_adl
+second_stroke -> reduced_qol_adl
 second_stroke -> aphasia
 first_stroke -> aphasia
-aphasia -> reduced_QoL_ADL
+aphasia -> reduced_qol_adl
 age -> first_stroke
 age -> cognitive_decline
 age -> pneumonia
@@ -1164,13 +1164,13 @@ depression_before_stroke -> first_stroke
 pneumonia -> antibiotics
 antibiotics -> death
 depression -> antidepressants
-antidepressants -> reduced_QoL_ADL
+antidepressants -> reduced_qol_adl
 speech_therapy -> aphasia
 psychotherapy -> depression
 psychotherapy -> cognitive_decline
 physiotherapy -> immobility
 physiotherapy -> severe_disability
-social_work -> reduced_QoL_ADL
+social_work -> reduced_qol_adl
 secondary_prevention -> second_stroke
 primary_prevention -> first_stroke
 physical_exercise -> first_stroke
@@ -1192,16 +1192,16 @@ aging -> first_ischemic_stroke
 aging -> second_ischemic_stroke
 second_ischemic_stroke -> recovery_level
 first_ischemic_stroke -> recovery_level
-B_cell_infiltration -> cognition
+b_cell_infiltration -> cognition
 aging -> cognition
 hypertension -> cognition
 first_ischemic_stroke -> cognition
 second_ischemic_stroke -> cognition
-systemic_IL6 -> recovery_level
-brain_IL6_time1 -> recovery_level
-systemic_IL6 -> second_ischemic_stroke
-systemic_IL6 -> second_ischemic_stroke
-systemic_IL6 -> first_ischemic_stroke
+systemic_il6 -> recovery_level
+brain_il6_time1 -> recovery_level
+systemic_il6 -> second_ischemic_stroke
+systemic_il6 -> second_ischemic_stroke
+systemic_il6 -> first_ischemic_stroke
 collateralization -> stroke_volume
 first_ischemic_stroke -> hemispheric_atrophy
 second_ischemic_stroke -> hemispheric_atrophy
@@ -1209,9 +1209,9 @@ hypertension -> hemispheric_atrophy
 aging -> hemispheric_atrophy
 endothelial_proliferation -> recovery_level
 endothelial_proliferation -> blood_brain_barrier_integrity
-blood_brain_barrier_integrity -> B_cell_infiltration
+blood_brain_barrier_integrity -> b_cell_infiltration
 microglial_proliferation -> neuronal_survival
-brain_IL6_time2 -> recovery_level
+brain_il6_time2 -> recovery_level
 astrocytic_proliferation -> recovery_level
 astrocytic_proliferation -> neuronal_survival
 endothelial_proliferation -> neuronal_survival
