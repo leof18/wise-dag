@@ -1,6 +1,6 @@
 import pandas as pd
 # Read dataframe
-df = pd.read_csv('standardized_DAG_table.csv')
+df = pd.read_csv('data/DAGs_standardized.csv')
 # Add Entry ID for trouble-shooting of opposite arrows
 df['Entry ID'] = range(1, len(df) + 1)
 ## Reorder Entry ID to the first column
