@@ -1,0 +1,105 @@
+Author,Exposure,Outcome,Direction,Strength
+O'Donnell et al. 2016,Smoking,first ischemic stroke,Increase,6.84
+O'Donnell et al. 2016,Diabetes mellitus,first ischemic stroke,Increase,6.84
+O'Donnell et al. 2016,moderate physical activity,first ischemic stroke,Decrease,6.84
+,moderate physical activity,Diabetes mellitus,Decrease,6.84
+"O'Donnell et al. 2016, Paterson et al. 2018",healthy (mediterranean) diet,first ischemic stroke,Decrease,6.84
+,healthy (mediterranean) diet,Diabetes mellitus,Decrease,3.92
+"Ebrahim et al., 2006",hyperlipoproteinemia (high LDL),first ischemic stroke,Increase,6.0
+,atrial fibrillation,first ischemic stroke,Increase,6.84
+,dissection of cerebral vessel,first ischemic stroke,Increase,6.84
+,atherosclerosis,first ischemic stroke,Increase,6.84
+,hyperlipoproteinemia (high LDL),atherosclerosis,Increase,6.84
+,positive familiy history of cardio/cerebrovascular events,first ischemic stroke,Increase,6.84
+,stenoses of cerebral vessels,first ischemic stroke,Increase,4.17
+,atherosclerosis,stenoses of cerebral vessels,Increase,6.84
+,dissection of cerebral vessel,stenoses of cerebral vessels,Increase,6.84
+In patients where no other risk factors are found and the PFO shows a right-->left shunt and shows a hypermobile septum,patent foramen ovale (PFO),first ischemic stroke,Increase,3.52
+Bushnell at el. 2014,oral contraceptives,first ischemic stroke,Increase,3.0
+in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,depression,first ischemic stroke,Increase,3.0
+"O'Donnell et al., 2010",antidepressive medication,first ischemic stroke,Increase,3.52
+,depression,antidepressive medication,Increase,3.52
+,antiplatelet therapy (e.g. ASS),first ischemic stroke,Decrease,6.0
+In patients with high cardiovascular risk profile,Statins,first ischemic stroke,Decrease,6.84
+"In patients with high cardiovascular risk profile, especially high LDL-Cholesterine",Statins,hyperlipoproteinemia (high LDL),Decrease,6.0
+"Law et al., 2003",first ischemic stroke,second ischemic stroke,Increase,6.0
+"Khanevski et al., 2019",age,hyperlipoproteinemia (high LDL),Increase,4.34
+,age,atrial fibrillation,Increase,6.84
+,age,patent foramen ovale (PFO),Decrease,3.68
+,age,first ischemic stroke,Increase,6.84
+,arterial hypertension,first ischemic stroke,Increase,6.84
+O'Donnell et al 2016,age,death (all causes),Increase,6.0
+,age,arterial hypertension,Increase,6.84
+,age,second ischemic stroke,Increase,6.0
+"Khanevski et al., 2019",Smoking,second ischemic stroke,Increase,6.84
+,Diabetes mellitus,second ischemic stroke,Increase,6.84
+,hyperlipoproteinemia (high LDL),second ischemic stroke,Increase,6.84
+,moderate physical activity,second ischemic stroke,Decrease,6.84
+,healthy (mediterranean) diet,second ischemic stroke,Decrease,6.84
+,atrial fibrillation,second ischemic stroke,Increase,6.84
+,dissection of cerebral vessel,second ischemic stroke,Increase,6.84
+,atherosclerosis,second ischemic stroke,Increase,6.84
+,positive familiy history of cardio/cerebrovascular events,second ischemic stroke,Increase,3.6
+,stenoses of cerebral vessels,second ischemic stroke,Increase,3.6
+,antiplatelet therapy (e.g. ASS),second ischemic stroke,Decrease,6.0
+Kernan et al. 2014,Statins,second ischemic stroke,Decrease,6.0
+"Amarenco et al., 2020",first ischemic stroke,post stroke epilepsy,Increase,5.31
+Browne and Holmes 2001,second ischemic stroke,post stroke epilepsy,Increase,6.84
+Browne and Holmes 2001,stroke severity (e.g. measured by NIHSS),post stroke epilepsy,Increase,6.0
+"Slapo et al., 2006",post stroke epilepsy,functional outcome (e.g. measured by mRS),Increase,4.0
+Arntz et al. 2013,stroke severity (e.g. measured by NIHSS),functional outcome (e.g. measured by mRS),Increase,4.26
+Arntz et al. 2013,obesity,first ischemic stroke,Increase,5.76
+,obesity,second ischemic stroke,Increase,5.76
+"Kernan et al., 2014 (AHA/ASA Guideline)",sleep apnea,first ischemic stroke,Increase,5.76
+"Kernan et al., 2014 (AHA/ASA Guideline)",sleep apnea,second ischemic stroke,Increase,5.76
+"Kernan et al., 2014 (AHA/ASA Guideline)",obesity,sleep apnea,Increase,3.29
+"Kernan et al., 2014 (AHA/ASA Guideline)",anticoagulation,first ischemic stroke,Decrease,6.84
+,anticoagulation,second ischemic stroke,Decrease,6.84
+Kernan et al. 2014 (for some patients patients with atrial fibrillation and some patients with thrombophilia),low socioeconomic status,death (all causes),Increase,4.43
+Kernan et al. 2014 (for patients patients with atrial fibrillation and some patients with thrombophilia),post stroke epilepsy,death (all causes),Increase,6.26
+"Vivanco-Hidalgo et al., 2019",arterial hypertension,second ischemic stroke,Increase,6.0
+Arrich et al. 2005,arterial hypertension,atherosclerosis,Increase,5.53
+Burneo et al. 2009,female sex,oral contraceptives,Increase,4.52
+"Khanevsky et al., 2019",female sex,depression,Increase,4.52
+,female sex,first ischemic stroke,Decrease,4.43
+,female sex,second ischemic stroke,Decrease,4.43
+Bushnell et al. 2014,female sex,migraine with aura,Increase,4.43
+Bushnell et al. 2014,migraine with aura,first ischemic stroke,Increase,4.43
+Bushnell et al. 2014,migraine with aura,second ischemic stroke,Increase,3.84
+Bushnell et al. 2014,female sex,arterial hypertension,Increase,3.84
+Bushnell et al. 2014,oral contraceptives,second ischemic stroke,Increase,4.08
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",second ischemic stroke,Increase,4.08
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",first ischemic stroke,Increase,4.08
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",arterial hypertension,Increase,4.08
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Diabetes mellitus,Increase,4.08
+Bushnell et al. 2014,female sex,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Increase,6.84
+Bushnell et al. 2014,moderate physical activity,obesity,Decrease,6.84
+Bushnell et al. 2014,healthy (mediterranean) diet,obesity,Decrease,6.84
+Bushnell et al. 2014,stroke severity (e.g. measured by NIHSS),death (all causes),Increase,6.84
+,first ischemic stroke,death (all causes),Increase,6.26
+,second ischemic stroke,death (all causes),Increase,6.26
+,depression,death (all causes),Increase,5.53
+"Khanevski et al., 2019",moderate physical activity,migraine with aura,Decrease,4.17
+"Khanevski et al., 2019",healthy (mediterranean) diet,death (all causes),Decrease,5.42
+,obesity,death (all causes),Increase,5.42
+,Smoking,death (all causes),Increase,5.42
+"Bushnell et al., 2014",moderate physical activity,death (all causes),Decrease,5.42
+"Bushnell et al., 2014",atrial fibrillation,death (all causes),Increase,5.42
+"Bushnell et al., 2014",atrial fibrillation,stroke severity (e.g. measured by NIHSS),Increase,6.84
+"Bushnell et al., 2014",atrial fibrillation,anticoagulation,Increase,6.84
+"Goldstein et al., 2011",atherosclerosis,antiplatelet therapy (e.g. ASS),Increase,6.84
+"Goldstein et al., 2011",stenoses of cerebral vessels,antiplatelet therapy (e.g. ASS),Increase,6.84
+,Smoking,atherosclerosis,Increase,6.84
+,Smoking,stenoses of cerebral vessels,Increase,6.84
+,sleep apnea,arterial hypertension,Increase,4.52
+,Diabetes mellitus,arterial hypertension,Increase,4.52
+,low socioeconomic status,Smoking,Increase,4.0
+,low socioeconomic status,arterial hypertension,Increase,4.08
+,low socioeconomic status,healthy (mediterranean) diet,Decrease,4.08
+Marshall et al. 2015,low socioeconomic status,moderate physical activity,Decrease,4.08
+Marshall et al. 2015,low socioeconomic status,first ischemic stroke,Increase,4.08
+Marshall et al. 2015,low socioeconomic status,second ischemic stroke,Increase,4.08
+Marshall et al. 2015,low socioeconomic status,depression,Increase,5.53
+Marshall et al. 2015,cortical involvement or strategical localisation of stroke lesion,functional outcome (e.g. measured by mRS),Increase,5.53
+Marshall et al. 2015,cortical involvement or strategical localisation of stroke lesion,post stroke epilepsy,Increase,5.53
+Lorant et al. 2013,second ischemic stroke,functional outcome (e.g. measured by mRS),Increase,5.0

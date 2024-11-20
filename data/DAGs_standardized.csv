@@ -1,0 +1,911 @@
+Author,Exposure,Outcome,Direction,Strength,ID,Status
+,201820,4310996,Increase,6.0,1,Final
+,4322978,4310996,Increase,6.0,1,Final
+,4322978,201820,Increase,5.0,1,Final
+,442985,4310996,Increase,6.0,1,Final
+,316866,4310996,Increase,6.0,1,Final
+,4322978,316866,Increase,6.0,1,Final
+,4245997,316866,Increase,4.0,1,Final
+,4245997,201820,Increase,4.0,1,Final
+,4245997,4310996,Increase,6.0,1,Final
+Carrero et al (2018),313217,4310996,Increase,6.0,1,Final
+de Leeuw et al. (2000),442985,313217,Increase,4.0,1,Final
+Kalantarian et al. (2014),4322978,313217,Increase,5.0,1,Final
+,4245997,313217,Increase,6.0,1,Final
+Diez-Villanueva P & Alfonso F. (2019),316866,313217,Increase,6.0,1,Final
+,4010813,4310996,Increase,5.0,1,Final
+,4322978,4010813,Increase,5.0,1,Final
+Pan et al. (2019),442985,4010813,Increase,6.0,1,Final
+Shah & Cole (2010),4010813,201820,Increase,4.0,1,Final
+,4010813,4245997,Decrease,2.0,1,Final
+,4010813,316866,Increase,3.0,1,Final
+Campagna et al. (2019),4010813,313217,Increase,6.0,1,Final
+Maddatu et al. (2017),432867,313217,Increase,6.0,1,Final
+Patel et al. (2011),432867,4245997,Increase,6.0,1,Final
+Watanabe et al. (2016),432867,316866,Increase,6.0,1,Final
+Halperin et al. (2008),432867,201820,Increase,6.0,1,Final
+,432867,4310996,Increase,6.0,1,Final
+,201820,313217,Increase,5.0,1,Final
+,4010813,432867,Increase,3.0,1,Final
+,442985,201820,Increase,3.0,1,Final
+,201820,316866,Increase,2.0,1,Final
+,432867,4213477,Decrease,2.0,1,Final
+Bohne et al. (2019),442985,4245997,Decrease,2.0,1,Final
+Sensi et al. (2015),316866,4213477,Decrease,2.0,1,Final
+Hallit et al. (2017),201820,4213477,Increase,3.0,1,Final
+Jain & Ducatman (2018),4010813,46271022,Increase,3.0,1,Final
+Kautzky-Willer et al. (2016),46271022,313217,Increase,2.0,1,Final
+Wishner (1996),46271022,4310996,Increase,4.0,1,Final
+,42872749,42872749,Increase,6.0,2,Final
+,42872749,42872749,Increase,6.84,2,Final
+,42872749,42872749,Increase,6.84,2,Final
+,42872749,42872749,Increase,6.84,2,Final
+,4084390,42872749,Increase,6.84,2,Final
+,4084390,42872749,Increase,6.84,2,Final
+,4084390,42872749,Increase,6.84,2,Final
+,4084390,42872749,Increase,6.84,2,Final
+,4077953,42872749,Increase,6.84,2,Final
+,4077953,42872749,Increase,6.84,2,Final
+,4084390,4172676,Decrease,6.0,2,Final
+eloquent / non-eloquent,40599742,4172676,Decrease,6.0,2,Final
+eloquent / non-eloquent,40599742,42872749,Increase,6.84,2,Final
+eloquent / non-eloquent,40599742,42872749,Increase,6.84,2,Final
+eloquent / non-eloquent,40599742,42872749,Increase,6.84,2,Final
+eloquent / non-eloquent,40599742,42872749,Increase,6.84,2,Final
+,42872749,4167605,Decrease,6.0,2,Final
+,42872749,4167605,Decrease,6.0,2,Final
+,4084390,4167605,Decrease,6.0,2,Final
+,4077953,4167605,Decrease,6.0,2,Final
+,4172676,4167605,Increase,6.84,2,Final
+eloquent/non eloquent,40599742,4167605,Decrease,6.0,2,Final
+,4310996,4084390,Increase,6.0,2,Final
+,4310996,40599742,Increase,6.0,2,Final
+cardioembolic,313217,4310996,Increase,2.68,2,Final
+,4234469,4077953,Increase,2.68,2,Final
+meaning the general population being aware of typical stroke symptoms,44791753,4234469,Decrease,2.0,2,Final
+,4234469,4196955,Decrease,6.84,2,Final
+,4234469,4185284,Decrease,6.84,2,Final
+,4196955,4084390,Decrease,2.93,2,Final
+,4185284,4084390,Decrease,2.93,2,Final
+cardioembolic,4310996,4196955,Increase,2.93,2,Final
+accesible arteries,4310996,4185284,Increase,2.68,2,Final
+macroangiopathic,4103842,4310996,Increase,2.68,2,Final
+,4010813,4103842,Increase,6.84,2,Final
+,4322978,4103842,Increase,6.84,2,Final
+,201820,4103842,Increase,6.84,2,Final
+,4159131,4103842,Increase,6.84,2,Final
+,4007663,4103842,Increase,6.84,2,Final
+,4137275,4103842,Increase,6.84,2,Final
+cardioembolic,4070299,4310996,Increase,6.84,2,Final
+,316866,4310996,Increase,6.0,3,Draft
+,4245997,4310996,Increase,6.84,3,Draft
+,4322978,4310996,Increase,6.84,3,Draft
+,442985,4310996,Increase,6.84,3,Draft
+,4010813,4310996,Increase,6.84,3,Draft
+,201820,4310996,Increase,6.84,3,Draft
+,4029305,4310996,Increase,6.84,3,Draft
+,4052460,4310996,Increase,6.84,3,Draft
+,4024366,4310996,Increase,6.0,3,Draft
+,4024366,316866,Increase,2.68,3,Draft
+,313217,4310996,Increase,6.0,3,Draft
+,4306703,4310996,Increase,6.84,3,Draft
+,4024366,4306703,Increase,0.57,3,Draft
+,4245997,4310996,Increase,0.57,3,Draft
+,4310996,4245997,Decrease,0.57,3,Draft
+,4010813,4310996,Increase,6.84,3,Draft
+,4322978,4310996,Increase,6.84,3,Draft
+,442985,4310996,Increase,6.84,3,Draft
+,4052460,4310996,Increase,6.84,3,Draft
+,4024366,4310996,Increase,6.84,3,Draft
+,201820,4310996,Increase,6.84,3,Draft
+,316866,4119952,Increase,6.84,4,Draft
+,4196955,4041284,Increase,2.68,4,Draft
+,4084390,4041284,Decrease,6.26,4,Draft
+,316866,4041284,Decrease,6.84,4,Draft
+,433736,4041284,Decrease,6.84,4,Draft
+,433736,4119952,Increase,4.61,4,Draft
+,4119952,EMV,Increase,6.84,4,Draft
+,433736,4310996,Increase,6.84,4,Draft
+,316866,4310996,Increase,6.84,4,Draft
+,4310996,4041284,Decrease,1.0,4,Draft
+,4119952,4310996,Increase,5.42,4,Draft
+,EMV,37311069,Increase,6.84,4,Draft
+,316866,37311069,Increase,6.84,4,Draft
+,4119952,37311069,Increase,2.0,4,Draft
+,EMV,4310996,Increase,4.0,4,Draft
+,4310996,4084390,Increase,6.84,4,Draft
+,4310996,37311069,Increase,6.84,4,Draft
+,4084390,37311069,Increase,3.0,4,Draft
+,4137275,37311069,Increase,6.84,4,Draft
+,4119952,4137275,Increase,3.14,4,Draft
+,4137275,LMV,Increase,5.31,4,Draft
+,LMV,37311069,Increase,5.31,4,Draft
+,4010813,4310996,Increase,6.0,5,Draft
+,198124,4310996,Increase,5.0,5,Draft
+,442985,4310996,Increase,1.0,5,Draft
+,4116678,4310996,Decrease,4.0,5,Draft
+,442985,4010813,Increase,1.0,5,Draft
+,4245997,4310996,Increase,5.0,5,Draft
+,4116678,4245997,Decrease,6.0,5,Draft
+,4159131,4310996,Increase,5.2,5,Draft
+,4116678,198124,Decrease,2.0,5,Draft
+,44803656,4310996,Decrease,1.75,5,Draft
+,4310996,440383,Increase,3.84,5,Draft
+,4310996,443432,Increase,3.84,5,Draft
+,4310996,4249566,Increase,6.84,5,Draft
+Broersen et al. 2020,44805124,4310996,Increase,0.94,5,Draft
+,321588,44805124,Increase,5.1,5,Draft
+,321588,4310996,Increase,6.84,5,Draft
+,4116678,321588,Decrease,6.84,5,Draft
+,4010813,321588,Increase,6.26,5,Draft
+,4208414,4310996,Increase,3.92,5,Draft
+,44803656,440383,Decrease,3.92,5,Draft
+,4322978,4310996,Increase,6.84,5,Draft
+,4322978,321588,Increase,6.84,5,Draft
+,4024366,316866,Increase,5.0,5,Draft
+,4024366,321588,Increase,5.0,5,Draft
+,4159131,440383,Increase,3.29,5,Draft
+,4159131,443432,Increase,3.29,5,Draft
+,443784,4310996,Increase,6.84,5,Draft
+,4322978,443784,Increase,3.44,5,Draft
+,443784,198124,Increase,6.84,5,Draft
+,201820,198124,Increase,6.84,5,Draft
+,201820,4310996,Increase,6.84,5,Draft
+,4024366,4159131,Increase,6.84,5,Draft
+,4024366,201820,Increase,6.84,5,Draft
+,4024366,4208414,Increase,3.68,5,Draft
+,440383,4249566,Increase,6.0,5,Draft
+,4225865,440383,Decrease,6.84,5,Draft
+,44803656,4024366,Decrease,2.93,5,Draft
+,4052460,4310996,Increase,6.84,5,Draft
+,4052460,201820,Increase,6.84,5,Draft
+,4052460,4225865,Decrease,6.13,5,Draft
+,4116678,4225865,Increase,0.51,5,Draft
+,4116678,316866,Decrease,2.72,5,Draft
+,4116678,4310996,Decrease,6.84,5,Draft
+,4116678,4249566,Decrease,6.84,5,Draft
+,4119715,4249566,Increase,5.0,5,Draft
+,4119715,4208414,Increase,6.84,5,Draft
+,4119715,443432,Increase,1.63,5,Draft
+,4119715,440383,Increase,0.51,5,Draft
+,4052460,4119715,Increase,3.44,5,Draft
+,44803656,4052460,Decrease,3.44,5,Draft
+,316866,321588,Increase,6.84,5,Draft
+,443432,4225865,Decrease,2.45,5,Draft
+,4119715,443784,Increase,4.17,5,Draft
+,4024366,4119715,Increase,4.17,5,Draft
+,4119715,321588,Increase,4.17,5,Draft
+,316866,4310996,Increase,6.84,5,Draft
+McCarthy 2018,442310,37309626,Increase,6.0,6,Final
+,442310,4249566,Increase,6.84,6,Final
+,442310,4189511,Increase,6.0,6,Final
+,4322978,201820,Increase,4.52,6,Final
+,4322978,4310996,Increase,6.84,6,Final
+,4322978,313217,Increase,4.34,6,Final
+"Bishop, Lu, & Yankner, 2010",4322978,443432,Increase,4.0,6,Final
+,4322978,4306703,Increase,6.84,6,Final
+Diener 2020,4056822,4310996,Decrease,3.0,6,Final
+Diener 2020,4056822,4310996,Decrease,3.0,6,Final
+,4056822,42538532,Decrease,2.72,6,Final
+,4306703,4310996,Increase,6.68,6,Final
+,4306703,604179,Increase,6.84,6,Final
+,313217,4310996,Increase,6.84,6,Final
+,313217,4021291,Increase,6.0,6,Final
+,313217,4189511,Increase,6.0,6,Final
+,313217,44784217,Increase,6.0,6,Final
+,4245997,604179,Increase,6.84,6,Final
+,4245997,4310996,Increase,6.84,6,Final
+,4245997,4310996,Increase,4.34,6,Final
+Rizas et al 2017,cardiac autonomic dysbalance,44784217,Increase,4.0,6,Final
+,42538532,4310996,Increase,5.1,6,Final
+,444031,443432,Increase,4.52,6,Final
+,444031,4310996,Increase,4.34,6,Final
+,444031,4189511,Increase,3.22,6,Final
+,444031,4021291,Increase,6.0,6,Final
+,440383,44800078,Decrease,2.68,6,Final
+,440383,4249566,Increase,2.68,6,Final
+Ghadri 2018,440383,40479589,Increase,2.0,6,Final
+,201820,4249566,Increase,4.52,6,Final
+,201820,432250,Increase,3.22,6,Final
+,201820,604179,Increase,6.0,6,Final
+,201820,4310996,Increase,4.52,6,Final
+,201820,4245997,Increase,4.52,6,Final
+,201820,cardiac autonomic dysbalance,Increase,4.0,6,Final
+,4046731,4310996,Increase,3.92,6,Final
+,31317,432250,Increase,3.22,6,Final
+,4275208,44784217,Increase,3.76,6,Final
+Ghadri 2018,4275208,40479589,Increase,6.0,6,Final
+,4116678,316866,Decrease,3.92,6,Final
+Diener 2020,4116678,4310996,Decrease,4.0,6,Final
+Strohle et al 2015,4116678,443432,Decrease,3.0,6,Final
+,4116678,313217,Increase,2.52,6,Final
+,4116678,604179,Decrease,2.72,6,Final
+,4116678,444031,Decrease,3.92,6,Final
+Scheitz et al 2014,4310996,4021291,Increase,6.0,6,Final
+,4310996,4310996,Increase,6.84,6,Final
+Diener 2020,4310996,4249566,Increase,6.0,6,Final
+scheitz 2018,4310996,442310,Increase,3.0,6,Final
+,4310996,44800078,Decrease,4.34,6,Final
+,4310996,443432,Increase,4.52,6,Final
+Thygesen 2018,4310996,37309626,Increase,6.0,6,Final
+,4310996,440383,Increase,4.61,6,Final
+"Scheitz, Templin 2021 under review",4310996,40479589,Increase,3.0,6,Final
+,4310996,432250,Increase,3.22,6,Final
+"Scheitz et al, Sposato 2020",4310996,4275208,Increase,2.0,6,Final
+,4310996,377091,Increase,4.17,6,Final
+,4310996,31317,Increase,3.22,6,Final
+scheitz et al 2018,4310996,44784217,Increase,6.0,6,Final
+,44800078,4310996,Increase,4.34,6,Final
+,44800078,4310996,Decrease,4.34,6,Final
+,44800078,4249566,Decrease,6.0,6,Final
+,432867,604179,Increase,6.84,6,Final
+,432867,4310996,Increase,3.22,6,Final
+,316866,604179,Increase,6.84,6,Final
+,316866,4310996,Increase,5.1,6,Final
+,316866,4046731,Increase,3.92,6,Final
+,316866,444031,Increase,5.1,6,Final
+Sandoval 2019,316866,37309626,Increase,4.0,6,Final
+,316866,442310,Increase,5.1,6,Final
+,432250,4249566,Increase,3.22,6,Final
+Sandoval 2019,432250,37309626,Increase,4.0,6,Final
+van der Linden 2017,198124,4021291,Increase,2.0,6,Final
+,604179,4310996,Increase,2.68,6,Final
+Rizas et al 2017,604179,cardiac autonomic dysbalance,Increase,6.0,6,Final
+"thygesen et al 2018, McAloon 2016",604179,4249566,Increase,6.0,6,Final
+thygesen et al 2018,604179,44784217,Increase,6.0,6,Final
+thygesen et al 2018,604179,4021291,Increase,6.0,6,Final
+Thygesen 2018,604179,442310,Increase,6.0,6,Final
+Thygesen 2018,604179,42538532,Increase,5.0,6,Final
+,604179,444031,Increase,6.84,6,Final
+DeFilippis 2019,37309626,4021291,Increase,6.0,6,Final
+McCarthy et al 2018,37309626,4249566,Increase,6.0,6,Final
+Wiktor 2018,4070299,4310996,Increase,3.0,6,Final
+,4310996,4249566,Increase,6.0,6,Final
+,377091,4249566,Increase,6.54,6,Final
+Faria et al 2020,377091,4021291,Increase,4.0,6,Final
+,44784217,4249566,Increase,6.68,6,Final
+,442985,4010813,Increase,3.84,6,Final
+,442985,4310996,Increase,4.34,6,Final
+,442985,40479589,Decrease,2.68,6,Final
+,4010813,4310996,Increase,6.84,6,Final
+,4010813,604179,Increase,6.84,6,Final
+,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance,Increase,2.72,6,Final
+Scheitz et.al 2018 lancet,stroke lesion affecting central autonomic network,44784217,Increase,6.0,6,Final
+Krause et al 2017,stroke lesion affecting central autonomic network,4021291,Increase,6.0,6,Final
+Scheitz 2018,stroke lesion affecting central autonomic network,4275208,Increase,2.0,6,Final
+Ghadri et at 2018,40479589,4021291,Increase,4.0,6,Final
+scheitz 2014,4021291,44800078,Decrease,3.0,6,Final
+broersen et al 2020,4021291,443432,Increase,4.0,6,Final
+,4322978,4310996,Increase,6.84,7,Final
+,442985,4310996,Increase,6.84,7,Final
+,4245997,4310996,Increase,6.84,7,Final
+Gorelick et al (1997),4029305,4310996,Increase,6.0,7,Final
+MacMahon et al (1990),4326744,4310996,Increase,6.0,7,Final
+,4245997,4029305,Increase,6.84,7,Final
+,4245997,4326744,Increase,6.84,7,Final
+,4029305,4306703,Increase,6.84,7,Final
+,313217,4310996,Increase,6.84,7,Final
+,4329847,4310996,Increase,4.17,7,Final
+Shinton et al (1999),4010813,4310996,Increase,6.0,7,Final
+Wilhelmsson et al (1975),4010813,4329847,Increase,6.0,7,Final
+,4010813,4326744,Increase,6.84,7,Final
+,4010813,4306703,Increase,6.84,7,Final
+,4310996,4310996,Increase,6.84,7,Final
+,4029305,4310996,Increase,6.84,7,Final
+,4029305,4310996,Increase,2.58,7,Final
+,4322978,4310996,Increase,2.68,7,Final
+,4245997,4310996,Increase,2.68,7,Final
+,4306703,4310996,Increase,2.68,7,Final
+,313217,4310996,Increase,2.68,7,Final
+,4329847,4310996,Increase,2.68,7,Final
+,4010813,4310996,Increase,2.68,7,Final
+,4056822,4310996,Decrease,2.68,7,Final
+Schneider et al. (2004),4310996,443432,Increase,2.0,7,Final
+Snowdon et al. (1997),4310996,443432,Increase,2.0,7,Final
+Schneider et al. (2014),4306703,443432,Increase,2.0,7,Final
+Guerchet et al (2011),4322978,443432,Increase,2.68,7,Final
+,201820,4310996,Increase,2.0,7,Final
+Kannell et al (1979),201820,4310996,Increase,2.68,7,Final
+,201820,4329847,Increase,2.68,7,Final
+,201820,4306703,Increase,2.68,7,Final
+,442985,4306703,Increase,2.68,7,Final
+,4245997,201820,Increase,2.68,7,Final
+,4322978,201820,Increase,2.68,7,Final
+,4116678,4310996,Decrease,2.68,7,Final
+,4116678,4245997,Decrease,2.68,7,Final
+,4116678,4029305,Decrease,0.83,7,Final
+,4116678,4326744,Decrease,3.29,7,Final
+,4116678,4306703,Decrease,0.78,7,Final
+,4116678,4329847,Decrease,3.29,7,Final
+,4116678,4310996,Decrease,3.29,7,Final
+,4116678,201820,Decrease,3.6,7,Final
+,43020873,4310996,Increase,3.6,7,Final
+,4052946,4310996,Increase,3.6,7,Final
+,4052946,4310996,Increase,1.46,7,Final
+,4052946,4326744,Increase,1.46,7,Final
+,4322978,4052946,Increase,0.89,7,Final
+,442985,4052946,Increase,1.81,7,Final
+,4251306,4310996,Increase,2.58,7,Final
+,4251306,4326744,Increase,2.58,7,Final
+,4251306,4329847,Increase,2.58,7,Final
+,4251306,4010813,Increase,1.11,7,Final
+,4251306,4310996,Increase,1.11,7,Final
+,4251306,4052946,Increase,1.11,7,Final
+,4251306,4306703,Increase,1.11,7,Final
+,201820,443432,Increase,2.0,7,Final
+Knopman et al (2001),4201029,4310996,Decrease,1.0,7,Final
+Hebert et al (1997),4201029,4029305,Decrease,4.8,7,Final
+,4201029,4306703,Decrease,1.4,7,Final
+,4201029,4329847,Decrease,2.86,7,Final
+,4007663,4310996,Increase,2.0,7,Final
+Nave et al (2015),4007663,4306703,Increase,2.68,7,Final
+,4306703,4310996,Increase,5.0,7,Final
+Hong et al. (2016),4326744,443432,Increase,2.68,7,Final
+Knopman et al (2001),4146455,4310996,Decrease,2.68,7,Final
+Collins et al (1990),4146455,4329847,Decrease,2.68,7,Final
+Collins et al (1990),4245997,4306703,Increase,2.68,7,Final
+McGill et al (2002),4245997,4329847,Increase,2.68,7,Final
+Burn et al. (1994),4310996,4310996,Increase,6.84,9,Final
+Brønnum-Hansen et al. (2001),4310996,4249566,Increase,6.84,9,Final
+Hankey et al. (2002),4310996,4052648,Increase,6.84,9,Final
+Davenport et al. (1996),4310996,255848,Increase,6.0,9,Final
+Johnston et al. (1998),4310996,81902,Increase,6.0,9,Final
+Davenport et al. (1996),255848,4249566,Increase,6.0,9,Final
+Finlayson et al. (2011),4310996,4249566,Increase,2.68,9,Final
+Poisson et al. (2010),4310996,4052648,Increase,2.68,9,Final
+Ersoz et al. (2007),4181165,81902,Increase,6.0,9,Final
+van der Worp & Kappelle (1998),4310996,4224118,Increase,6.0,9,Final
+,4310996,4181165,Increase,2.0,9,Final
+Poisson et al. (2010),4224118,81902,Increase,2.68,9,Final
+,4310996,4242843,Increase,0.51,9,Final
+Maki & Tambyah (2001),4242843,81902,Increase,0.51,9,Final
+Gould et al. (2010),442985,81902,Increase,6.0,9,Final
+Kong & Young (2000),4322978,81902,Increase,6.0,9,Final
+Poisson et al. (2010),4322978,4310996,Increase,6.0,9,Final
+,81902,4249566,Increase,0.51,9,Final
+Poisson et al. (2010),81902,4052648,Increase,0.51,9,Final
+Poisson et al. (2010),4310996,4302666,Increase,0.51,9,Final
+Azzimondi et al. (1995),81902,4302666,Increase,6.84,9,Final
+Boysen & Christensen (2001),255848,4302666,Increase,6.84,9,Final
+,4302666,4249566,Increase,0.51,9,Final
+,4302666,4052648,Increase,0.51,9,Final
+Jauch et al. (2013),4310996,373995,Increase,0.51,9,Final
+Jauch et al. (2013),4322978,373995,Increase,6.84,9,Final
+Oldenbeuving et al. (2007),81902,373995,Increase,0.51,9,Final
+Oldenbeuving et al. (2007),255848,373995,Increase,0.51,9,Final
+Oldenbeuving et al. (2007),373995,4052648,Increase,0.51,9,Final
+Oldenbeuving et al. (2007),4143576,373995,Decrease,0.51,9,Final
+Oldenbeuving et al. (2007),4224118,4181165,Increase,0.51,9,Final
+Oldenbeuving et al. (2007),4322978,255848,Increase,2.68,9,Final
+,255848,4052648,Increase,0.51,9,Final
+Finlayson et al. (2011),4310996,31317,Increase,6.0,9,Final
+Finlayson et al. (2011),31317,255848,Increase,6.84,9,Final
+Martino et al. (2005),31317,4033232,Increase,6.84,9,Final
+Martino et al. (2005),4033232,255848,Increase,6.84,9,Final
+Martino et al. (2005),4010813,4310996,Increase,6.84,9,Final
+Martino et al. (2005),4010813,4310996,Increase,6.84,9,Final
+,442985,4310996,Increase,6.84,9,Final
+,313217,4310996,Increase,6.84,9,Final
+,4245997,4310996,Increase,6.84,9,Final
+,313217,4310996,Increase,6.84,9,Final
+,4245997,4310996,Increase,6.84,9,Final
+,4326744,4310996,Increase,6.84,9,Final
+,4326744,4310996,Increase,6.84,9,Final
+,4322978,4326744,Increase,6.84,9,Final
+,4322978,4010813,Decrease,2.93,9,Final
+,4310996,4143576,Increase,6.84,9,Final
+,432867,4310996,Increase,6.84,9,Final
+Jauch et al. (2013),201820,4310996,Increase,6.84,9,Final
+,4310996,4275337,Increase,6.0,9,Final
+Khoury et al. (2013),201820,4275337,Increase,6.0,9,Final
+Jauch et al. (2013),4322978,201820,Increase,2.68,9,Final
+,4245997,201820,Increase,2.68,9,Final
+,442985,4010813,Increase,2.68,9,Final
+Langhorne et al. (2020),4143576,4249566,Decrease,4.71,9,Final
+Langhorne et al. (2020),4143576,4052648,Decrease,4.17,9,Final
+Touzé et al. (2005),4310996,4329847,Increase,1.0,9,Final
+,4329847,4249566,Increase,6.0,9,Final
+Sulter et al. (2000),4310996,4020553,Decrease,5.0,9,Final
+Rowat et al. (2006),4156503,4020553,Increase,0.51,9,Final
+Rowat et al. (2001),255848,4020553,Decrease,6.84,9,Final
+,4322978,4020553,Decrease,0.51,9,Final
+Sulter et al. (2000),31317,4020553,Decrease,0.51,9,Final
+Sulter et al. (2000),4020553,4249566,Decrease,0.51,9,Final
+Rowat et al. (2006),4310996,36713755,Increase,6.0,9,Final
+,4052648,36713755,Increase,6.0,9,Final
+,31317,36713755,Increase,2.68,9,Final
+Martino et al. (2005),4310996,197672,Increase,2.68,9,Final
+Nakayama et al. (1997),4322978,197672,Increase,2.68,9,Final
+Nakayama et al. (1997),197672,36713755,Increase,2.68,9,Final
+Patel et al. (2001),201820,197672,Increase,0.51,9,Final
+,197672,4181165,Increase,0.51,9,Final
+,4310996,440377,Increase,6.84,9,Final
+,440377,4052648,Increase,6.84,9,Final
+,440377,36713755,Increase,6.84,9,Final
+,4310996,4133004,Increase,6.84,9,Final
+Kappelle et al. (2011),440377,4133004,Increase,6.84,9,Final
+Kappelle et al. (2011),4133004,440417,Increase,6.84,9,Final
+,440417,4249566,Increase,6.84,9,Final
+,440417,4020553,Decrease,6.84,9,Final
+,440377,255848,Increase,2.0,9,Final
+,4310996,4059015,Increase,6.0,9,Final
+Wei et al. (2019),4322978,4059015,Increase,2.68,9,Final
+,197672,4059015,Increase,2.68,9,Final
+,373995,4059015,Increase,2.68,9,Final
+,4059015,4217808,Increase,2.0,9,Final
+Melton et al. (2001),4310996,4217808,Increase,2.68,9,Final
+Kanis et al. (2001),4217808,4052648,Increase,0.51,9,Final
+,4217808,36713755,Increase,0.51,9,Final
+,4116678,4310996,Increase,6.84,9,Final
+low or very high,4052946,4310996,Increase,3.84,9,Final
+,4306703,4310996,Increase,6.0,9,Final
+,432867,4310996,Increase,6.0,9,Final
+,4052946,4310996,Increase,3.0,9,Final
+,4116678,4310996,Increase,6.0,9,Final
+,4268546,4310996,Decrease,1.0,9,Final
+Reshetnyak et al. (2020),44803656,4310996,Decrease,1.0,9,Final
+Reshetnyak et al. (2020),4309238,4310996,Increase,0.51,9,Final
+Reshetnyak et al. (2020),373503,4310996,Increase,6.84,9,Final
+O'Donnell et al. 2016,4010813,4310996,Increase,6.84,10,Final
+O'Donnell et al. 2016,201820,4310996,Increase,6.84,10,Final
+O'Donnell et al. 2016,4116678,4310996,Decrease,6.84,10,Final
+,4116678,201820,Decrease,6.84,10,Final
+"O'Donnell et al. 2016, Paterson et al. 2018",37150978,4310996,Decrease,6.84,10,Final
+,37150978,201820,Decrease,3.92,10,Final
+"Ebrahim et al., 2006",4029305,4310996,Increase,6.0,10,Final
+,313217,4310996,Increase,6.84,10,Final
+,37016924,4310996,Increase,6.84,10,Final
+,4306703,4310996,Increase,6.84,10,Final
+,4029305,4306703,Increase,6.84,10,Final
+,4169009,4310996,Increase,6.84,10,Final
+,3654597,4310996,Increase,4.17,10,Final
+,4306703,3654597,Increase,6.84,10,Final
+,37016924,3654597,Increase,6.84,10,Final
+In patients where no other risk factors are found and the PFO shows a right-->left shunt and shows a hypermobile septum,4070299,4310996,Increase,3.52,10,Final
+Bushnell at el. 2014,4241216,4310996,Increase,3.0,10,Final
+in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,440383,4310996,Increase,3.0,10,Final
+"O'Donnell et al., 2010",44784326,4310996,Increase,3.52,10,Final
+,440383,44784326,Increase,3.52,10,Final
+,3655005,4310996,Decrease,6.0,10,Final
+In patients with high cardiovascular risk profile,4201029,4310996,Decrease,6.84,10,Final
+"In patients with high cardiovascular risk profile, especially high LDL-Cholesterine",4201029,4029305,Decrease,6.0,10,Final
+"Law et al., 2003",4310996,4310996,Increase,6.0,10,Final
+"Khanevski et al., 2019",4322978,4029305,Increase,4.34,10,Final
+,4322978,313217,Increase,6.84,10,Final
+,4322978,4070299,Decrease,3.68,10,Final
+,4322978,4310996,Increase,6.84,10,Final
+,316866,4310996,Increase,6.84,10,Final
+O'Donnell et al 2016,4322978,4306655,Increase,6.0,10,Final
+,4322978,316866,Increase,6.84,10,Final
+,4322978,4310996,Increase,6.0,10,Final
+"Khanevski et al., 2019",4010813,4310996,Increase,6.84,10,Final
+,201820,4310996,Increase,6.84,10,Final
+,4029305,4310996,Increase,6.84,10,Final
+,4116678,4310996,Decrease,6.84,10,Final
+,37150978,4310996,Decrease,6.84,10,Final
+,313217,4310996,Increase,6.84,10,Final
+,37016924,4310996,Increase,6.84,10,Final
+,4306703,4310996,Increase,6.84,10,Final
+,4169009,4310996,Increase,3.6,10,Final
+,3654597,4310996,Increase,3.6,10,Final
+,3655005,4310996,Decrease,6.0,10,Final
+Kernan et al. 2014,4201029,4310996,Decrease,6.0,10,Final
+"Amarenco et al., 2020",4310996,37110522,Increase,5.31,10,Final
+Browne and Holmes 2001,4310996,37110522,Increase,6.84,10,Final
+Browne and Holmes 2001,42872749,37110522,Increase,6.0,10,Final
+"Slapo et al., 2006",37110522,4041284,Increase,4.0,10,Final
+Arntz et al. 2013,42872749,4041284,Increase,4.26,10,Final
+Arntz et al. 2013,433736,4310996,Increase,5.76,10,Final
+,433736,4310996,Increase,5.76,10,Final
+"Kernan et al., 2014 (AHA/ASA Guideline)",313459,4310996,Increase,5.76,10,Final
+"Kernan et al., 2014 (AHA/ASA Guideline)",313459,4310996,Increase,5.76,10,Final
+"Kernan et al., 2014 (AHA/ASA Guideline)",433736,313459,Increase,3.29,10,Final
+"Kernan et al., 2014 (AHA/ASA Guideline)",4056822,4310996,Decrease,6.84,10,Final
+,4056822,4310996,Decrease,6.84,10,Final
+Kernan et al. 2014 (for some patients patients with atrial fibrillation and some patients with thrombophilia),44803656,4306655,Decrease,4.43,10,Final
+Kernan et al. 2014 (for patients patients with atrial fibrillation and some patients with thrombophilia),37110522,4306655,Increase,6.26,10,Final
+"Vivanco-Hidalgo et al., 2019",316866,4310996,Increase,6.0,10,Final
+Arrich et al. 2005,316866,4306703,Increase,5.53,10,Final
+Burneo et al. 2009,442985,4241216,Increase,4.52,10,Final
+"Khanevsky et al., 2019",442985,440383,Increase,4.52,10,Final
+,442985,4310996,Decrease,4.43,10,Final
+,442985,4310996,Decrease,4.43,10,Final
+Bushnell et al. 2014,442985,381549,Increase,4.43,10,Final
+Bushnell et al. 2014,381549,4310996,Increase,4.43,10,Final
+Bushnell et al. 2014,381549,4310996,Increase,3.84,10,Final
+Bushnell et al. 2014,442985,316866,Increase,3.84,10,Final
+Bushnell et al. 2014,4241216,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,439393,316866,Increase,4.08,10,Final
+Bushnell et al. 2014,439393,201820,Increase,4.08,10,Final
+Bushnell et al. 2014,442985,439393,Increase,6.84,10,Final
+Bushnell et al. 2014,4116678,433736,Decrease,6.84,10,Final
+Bushnell et al. 2014,37150978,433736,Decrease,6.84,10,Final
+Bushnell et al. 2014,42872749,4306655,Increase,6.84,10,Final
+,4310996,4306655,Increase,6.26,10,Final
+,4310996,4306655,Increase,6.26,10,Final
+,440383,4306655,Increase,5.53,10,Final
+"Khanevski et al., 2019",4116678,381549,Decrease,4.17,10,Final
+"Khanevski et al., 2019",37150978,4306655,Decrease,5.42,10,Final
+,433736,4306655,Increase,5.42,10,Final
+,4010813,4306655,Increase,5.42,10,Final
+"Bushnell et al., 2014",4116678,4306655,Decrease,5.42,10,Final
+"Bushnell et al., 2014",313217,4306655,Increase,5.42,10,Final
+"Bushnell et al., 2014",313217,42872749,Increase,6.84,10,Final
+"Bushnell et al., 2014",313217,4056822,Increase,6.84,10,Final
+"Goldstein et al., 2011",4306703,3655005,Increase,6.84,10,Final
+"Goldstein et al., 2011",3654597,3655005,Increase,6.84,10,Final
+,4010813,4306703,Increase,6.84,10,Final
+,4010813,3654597,Increase,6.84,10,Final
+,313459,316866,Increase,4.52,10,Final
+,201820,316866,Increase,4.52,10,Final
+,44803656,4010813,Decrease,4.0,10,Final
+,44803656,316866,Decrease,4.08,10,Final
+,44803656,37150978,Increase,4.08,10,Final
+Marshall et al. 2015,44803656,4116678,Increase,4.08,10,Final
+Marshall et al. 2015,44803656,4310996,Decrease,4.08,10,Final
+Marshall et al. 2015,44803656,4310996,Decrease,4.08,10,Final
+Marshall et al. 2015,44803656,440383,Decrease,5.53,10,Final
+Marshall et al. 2015,4200516,4041284,Increase,5.53,10,Final
+Marshall et al. 2015,4200516,37110522,Increase,5.53,10,Final
+Lorant et al. 2013,4310996,4041284,Increase,5.0,10,Final
+"Asplund et al, Stroke 2009",4322978,4310996,Increase,6.0,11,Final
+40:2319-2326,442985,4310996,Increase,5.0,11,Final
+"Bushnell et al., JCBF2018",316866,4310996,Increase,5.0,11,Final
+38: 2179–2191)postmenopausal vs premenopausal,436940,4310996,Increase,6.0,11,Final
+"Cipolla et al., JCBF2018",4119715,4310996,Increase,6.0,11,Final
+38:2129-2149,4119715,4068351,Decrease,6.0,11,Final
+"includes diabetes, hyperlipoproteinemia, obesity (Sol M Rodriguez-Colon, stroke 2009",4068351,4310996,Decrease,6.0,11,Final
+40:200-205),436940,4232457,Increase,6.0,11,Final
+"Bernardo-Castro et al., Front Neurol 2020",4232457,4310996,Increase,6.0,11,Final
+doi: 10.3389/fneur.2020.594672,4116678,4310996,Decrease,0.51,11,Final
+"Bernardo-Castro et al., Front Neurol 2020",4116678,436940,Decrease,0.51,11,Final
+doi: 10.3389/fneur.2020.594672,4116678,316866,Decrease,0.51,11,Final
+"Bernardo-Catro et al., 2020",316866,4232457,Increase,4.8,11,Final
+"Frey et al, Front Neurol 2019",4010813,4310996,Increase,5.31,11,Final
+doi: 10.3389/fneur.2019.00238,4010813,4232457,Increase,5.0,11,Final
+"Ryu et al., Brain 2017 doi: 10.1093/brain/aww259",4306703,4232457,Increase,6.0,11,Final
+,436940,4306703,Increase,6.0,11,Final
+,4306703,4310996,Increase,6.0,11,Final
+,4024552,4310996,Increase,6.0,11,Final
+120 versus 135 systolic blood pressure,4024552,4232457,Increase,6.54,11,Final
+,4306703,4217691,Increase,6.0,11,Final
+"Power et al., Neurology 2015",4217691,4232457,Increase,6.13,11,Final
+84:841-848,4217691,4310996,Increase,6.0,11,Final
+,4306703,4192115,Increase,3.0,11,Final
+"Sun et al., Sci Rep 2016 doi: 10.1038/srep33246",4192115,4310996,Increase,6.0,11,Final
+"Famakin et al., Stroke 2009 doi: 10.1161/STROKEAHA.108.546150",4192115,4232457,Increase,6.84,11,Final
+"myocardial infarction, coronary heart disease, cardiac failure Folsom et al., Stroke 2013",4194238,4192115,Decrease,1.0,11,Final
+44:961-967,4194238,4217691,Decrease,2.0,11,Final
+"myocardial infarction, coronary heart disease, cardiac failure",606770,4310996,Increase,3.0,11,Final
+"Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",606770,4232457,Increase,5.0,11,Final
+,436940,606770,Increase,6.0,11,Final
+"Adams et al., Stroke 1993",4287112,4310996,Increase,4.0,11,Final
+24:35-41,37109909,4232457,Increase,6.0,11,Final
+,439393,4310996,Increase,6.84,11,Final
+"Kassem et al., Ann Transl Med 2020 doi: 10.21037/atm-2020-cass-16",4013886,4310996,Increase,6.68,11,Final
+,439393,316866,Increase,6.0,11,Final
+"Cochrane Database Syst Rev. 2020, doi: 10.1002/14651858.CD000515.pub",4166231,4310996,Increase,5.53,11,Final
+,4119715,4232457,Increase,6.13,11,Final
+"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",432250,4310996,Increase,5.2,11,Final
+"Kim et al., Sci Rep 2019 doi: 10.1038/s41598-019-45109-y",432250,4119715,Increase,5.42,11,Final
+,4119715,432585,Increase,5.42,11,Final
+"Ballerini et al., Neuroimage Clin 2020 doi: 10.1016/j.nicl.2019.102120",432585,4310996,Increase,6.84,11,Final
+,4310996,4310996,Increase,6.39,13,Draft
+,4306703,4310996,Increase,5.0,13,Draft
+,4306703,4310996,Increase,5.0,13,Draft
+,313217,4310996,Increase,4.26,13,Draft
+,313217,4310996,Increase,4.26,13,Draft
+,37153816,4310996,Increase,4.08,13,Draft
+,4137275,4310996,Increase,5.2,13,Draft
+,4137275,4310996,Increase,5.2,13,Draft
+,37153816,4310996,Increase,5.2,13,Draft
+,4273629,4310996,Increase,5.2,13,Draft
+,4273629,4310996,Increase,5.2,13,Draft
+,37153816,4273629,Increase,5.2,13,Draft
+,4102202,4310996,Increase,5.2,13,Draft
+,4102202,4310996,Increase,5.2,13,Draft
+,4322978,4310996,Increase,5.2,13,Draft
+,4322978,4310996,Increase,5.2,13,Draft
+,4322978,4306703,Increase,5.2,13,Draft
+,4010813,4306703,Increase,5.2,13,Draft
+,4010813,4310996,Increase,5.2,13,Draft
+,4010813,4310996,Increase,5.2,13,Draft
+,4159131,4310996,Increase,5.2,13,Draft
+,4159131,4310996,Increase,5.2,13,Draft
+,4159131,4306703,Increase,5.2,13,Draft
+,201820,4306703,Increase,5.2,13,Draft
+,201820,4310996,Increase,5.2,13,Draft
+,201820,4310996,Increase,5.2,13,Draft
+,4322978,313217,Increase,4.08,13,Draft
+,4322978,37153816,Increase,4.08,13,Draft
+,442985,4102202,Increase,4.08,13,Draft
+,442985,4310996,Increase,4.08,13,Draft
+,442985,4310996,Increase,4.08,13,Draft
+,4299535,4102202,Increase,4.08,13,Draft
+,442985,4299535,Increase,6.84,13,Draft
+,4310996,4052648,Increase,6.84,13,Draft
+,4310996,4052648,Increase,6.84,13,Draft
+,37153816,4052648,Increase,6.84,13,Draft
+,4137275,4052648,Increase,6.84,13,Draft
+,201820,4052648,Increase,6.84,13,Draft
+,316866,4306703,Increase,5.1,13,Draft
+,316866,4310996,Increase,5.1,13,Draft
+,316866,4310996,Increase,5.1,13,Draft
+,316866,4052648,Increase,5.1,13,Draft
+,4322978,316866,Increase,5.1,13,Draft
+,4010813,316866,Increase,5.1,13,Draft
+,4299535,201820,Increase,5.1,13,Draft
+,4310996,440383,Increase,5.1,13,Draft
+,4310996,440383,Increase,5.1,13,Draft
+,37153816,440383,Increase,5.1,13,Draft
+,4310996,443432,Increase,5.1,13,Draft
+,4310996,443432,Increase,5.1,13,Draft
+,4310996,4234649,Decrease,5.1,13,Draft
+,4310996,4234649,Decrease,5.1,13,Draft
+,440383,4234649,Decrease,5.1,13,Draft
+,201820,4234649,Decrease,5.1,13,Draft
+,4137275,4234649,Decrease,5.1,13,Draft
+,4052648,4234649,Decrease,5.1,13,Draft
+,4299535,440383,Increase,5.1,13,Draft
+,4310996,4178501,Decrease,5.1,13,Draft
+,4310996,4178501,Decrease,2.65,13,Draft
+,4052648,4178501,Decrease,2.65,13,Draft
+,440383,4178501,Decrease,2.65,13,Draft
+,37153816,4234649,Decrease,2.65,13,Draft
+,4322978,4178501,Decrease,3.0,13,Draft
+,4299535,4178501,Decrease,0.57,13,Draft
+,441589,4310996,Increase,0.57,13,Draft
+,441589,4310996,Increase,0.57,13,Draft
+,441589,4310996,Increase,5.1,13,Draft
+,441589,4052648,Increase,5.1,13,Draft
+,4070299,4310996,Increase,5.64,13,Draft
+,4070299,4310996,Increase,5.64,13,Draft
+,4295287,4310996,Increase,4.61,13,Draft
+,4295287,4310996,Increase,4.61,13,Draft
+,4295287,4102202,Increase,4.61,13,Draft
+,37153816,4295287,Increase,4.61,13,Draft
+,4299535,4295287,Increase,4.61,13,Draft
+,4010813,4295287,Increase,3.0,13,Draft
+,4079975,4310996,Increase,1.4,13,Draft
+,4079975,4310996,Increase,1.4,13,Draft
+,37153627,4310996,Increase,5.88,13,Draft
+,37153627,4310996,Increase,5.88,13,Draft
+,4306703,37153627,Increase,5.88,13,Draft
+,441589,37153627,Increase,1.69,13,Draft
+,4299535,4273629,Decrease,3.14,13,Draft
+,4215133,4310996,Increase,3.14,13,Draft
+,4215133,4310996,Increase,4.34,13,Draft
+,37153816,4215133,Increase,4.34,13,Draft
+,4079975,4215133,Increase,3.14,13,Draft
+,318736,4310996,Increase,4.17,14,Draft
+,318736,4010813,Decrease,4.52,14,Draft
+,433736,4310996,Increase,6.0,14,Draft
+,316866,40479625,Increase,6.0,14,Draft
+,433736,316866,Increase,6.84,14,Draft
+,317002,4131044,Increase,6.84,14,Draft
+,316139,4131044,Increase,6.84,14,Draft
+,4179955,4131044,Increase,6.84,14,Draft
+,4070767,4310996,Increase,6.84,14,Draft
+,4131044,4070767,Increase,6.84,14,Draft
+,4217691,4070767,Increase,6.84,14,Draft
+,4282394,4070767,Increase,6.84,14,Draft
+,nonatherosclerotic abnormalities,4310996,Increase,6.84,14,Draft
+,46272492,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,37311061,4310996,Increase,6.84,14,Draft
+,4135811,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,4137275,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,378774,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,4213628,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,4310996,production of reactive oxygen species,Increase,6.84,14,Draft
+,production of reactive oxygen species,4285282,Increase,6.84,14,Draft
+,4310996,loss of brain structural integrity,Increase,6.84,14,Draft
+,4276568,318736,Increase,6.84,14,Draft
+,4276568,37311061,Decrease,3.37,14,Draft
+,40479625,4310996,Increase,6.84,14,Draft
+,4322978,4285282,Increase,6.84,14,Draft
+,4322978,318736,Decrease,6.84,14,Draft
+,4322978,316866,Increase,6.84,14,Draft
+,production of reactive oxygen species,4119952,Increase,6.84,14,Draft
+,4029305,4119952,Increase,6.84,14,Draft
+,4010813,4119952,Increase,6.84,14,Draft
+,201820,4119952,Increase,6.84,14,Draft
+,316866,4119952,Increase,6.84,14,Draft
+"Harrison Internal Med., 2020",4185607,4310996,Increase,6.0,16,Final
+"Harrison Internal Med., 2020",4231363,4310996,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4046360,4231363,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",313217,4185607,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4306703,4231363,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",442985,4306703,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4322978,4306703,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4010813,4306703,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",201820,4306703,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4159131,4306703,Increase,4.0,16,Final
+"Harrison Internal Med., 2020",316866,4306703,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",46272492,4310996,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",316866,4046360,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4322978,4046360,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",432585,4231363,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4137275,4310996,Increase,4.61,16,Final
+,Cardiac Remodelling,313217,Increase,4.61,16,Final
+,4322978,Cardiac Remodelling,Increase,4.61,16,Final
+,316866,Cardiac Remodelling,Increase,4.61,16,Final
+,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61,16,Final
+,4306703,Other Cardiac Pathologies,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4306703,4329847,Increase,4.61,16,Final
+,4329847,Cardiac Remodelling,Increase,4.61,16,Final
+"Harrison Internal Med., 2020",4009853,4306703,Increase,4.61,16,Final
+,35622016,201820,Increase,4.0,16,Final
+"Kernan, 2002",35622016,4306703,Increase,4.0,16,Final
+"Kernan, 2002",4322978,35622016,Increase,4.0,16,Final
+,4116678,433736,Decrease,4.61,16,Final
+Kernan et al. 2002,35622016,316866,Increase,4.0,16,Final
+Kernan et al 2002,35622016,4159131,Increase,2.0,16,Final
+Kernan et al 2002,35622016,4119715,Increase,4.0,16,Final
+"Hansson , 2006",4119715,4306703,Increase,4.17,16,Final
+Kahn et. al 2006,433736,35622016,Increase,4.0,16,Final
+Kahn et. al 2006,433736,4119715,Increase,4.17,16,Final
+"Hering, 2015",4251306,4285288,Increase,0.51,16,Final
+"Hering, 2015",4285288,4231363,Increase,0.51,16,Final
+Redline et al 2011,313459,316866,Increase,0.51,16,Final
+Redline et al 2011,313459,35622016,Increase,2.68,16,Final
+Redline et al 2011,313459,4119715,Increase,1.4,16,Final
+,4251306,4010813,Increase,2.68,16,Final
+,35622016,37018196,Increase,2.68,16,Final
+Fonville et al. 2014,37018196,201820,Increase,2.68,16,Final
+,316866,46272492,Increase,2.68,16,Final
+,4010813,316866,Increase,2.68,16,Final
+American Heart Association 2014,4146455,316866,Decrease,4.61,16,Final
+American Heart Association 2014,4201029,4159131,Decrease,4.61,16,Final
+Hansson 2006,4201029,4119715,Decrease,3.44,16,Final
+Kernan et al 2002,4229881,35622016,Decrease,3.44,16,Final
+American Heart Association 2014,4304917,316866,Decrease,3.44,16,Final
+American Heart Association 2014,4229881,4116678,Increase,2.68,16,Final
+American Heart Association 2014,4022846,433736,Decrease,2.68,16,Final
+American Heart Association 2014,4301936,201820,Decrease,2.68,16,Final
+Kernan et al 2002,4159324,4159131,Decrease,2.25,16,Final
+Kernan et al 2002,4159324,316866,Decrease,2.25,16,Final
+Kernan et al 2002,4159324,35622016,Decrease,2.25,16,Final
+American Diabetes Association 2020,42536002,201820,Decrease,2.25,16,Final
+American Diabetes Association 2020,36676288,201820,Decrease,2.25,16,Final
+American Heart Association 2014,4165535,313459,Decrease,2.25,16,Final
+American Heart Association 2014,44804450,4010813,Decrease,2.25,16,Final
+American Heart Association 2014,4283095,4306703,Decrease,3.07,16,Final
+American Heart Association 2014,3655005,4231363,Decrease,3.0,16,Final
+American Heart Association 2014,4056822,4185607,Decrease,3.07,16,Final
+American Heart Association 2014,3655005,46272492,Decrease,2.68,16,Final
+American Heart Association 2014,4056822,46272492,Decrease,2.68,16,Final
+American Heart Association 2014,4056822,432585,Decrease,2.68,16,Final
+Harrison internal medicine 2020,4201029,4231363,Decrease,2.68,16,Final
+Harrison internal medicine 2020,4201029,316866,Decrease,2.68,16,Final
+Sundell 2008 & mostofsky 2016,46270002,4306703,Decrease,2.0,16,Final
+Sundell 2008 & mostofsky 2016,4052460,316866,Increase,2.0,16,Final
+Sundell 2008 & mostofsky 2016,4052460,Other Cardiac Pathologies,Increase,2.0,16,Final
+Sundell 2008 & mostofsky 2016,4052460,313217,Increase,2.0,16,Final
+Sundell 2008 & mostofsky 2016,4052460,4231363,Increase,2.0,16,Final
+American Heart Association 2014,46270002,4052460,Decrease,2.0,16,Final
+,4310996,4180770,Increase,2.68,16,Final
+,4310996,4306655,Increase,2.68,16,Final
+,4310996,4310996,Increase,2.68,16,Final
+Dirnagl Review,4310996,378143,Increase,6.0,17,Draft
+Dirnagl Review,4119715,4310996,Increase,6.84,17,Draft
+Meisel Review NEJM/Nature,4310996,peripheral immune competence,Decrease,6.84,17,Draft
+,4310996,4206471,Increase,6.84,19,Draft
+,4310996,255848,Increase,6.84,19,Draft
+,4206471,255848,Increase,6.84,19,Draft
+,255848,4306655,Increase,6.84,19,Draft
+,4310996,4306655,Increase,6.84,19,Draft
+,4310996,4310996,Increase,6.84,19,Draft
+,4310996,255848,Increase,6.84,19,Draft
+,4310996,4306655,Increase,6.84,19,Draft
+,4310996,440383,Increase,6.84,19,Draft
+,440383,4178501,Decrease,6.84,19,Draft
+,4178501,255848,Decrease,6.84,19,Draft
+,4310996,4178501,Decrease,6.84,19,Draft
+,4178501,4306655,Decrease,6.84,19,Draft
+,4310996,443432,Increase,6.84,19,Draft
+,255848,443432,Increase,5.1,19,Draft
+,443432,4306655,Increase,2.79,19,Draft
+,4310996,443432,Increase,2.79,19,Draft
+,316866,4310996,Increase,6.84,19,Draft
+,316866,4310996,Increase,6.84,19,Draft
+,316866,443432,Increase,5.31,19,Draft
+,4310996,40599742,Increase,6.84,19,Draft
+,40599742,443432,Increase,6.84,19,Draft
+,40599742,4242843,Increase,6.84,19,Draft
+,4242843,255848,Increase,6.84,19,Draft
+,4242843,443432,Decrease,0.51,19,Draft
+,201820,4310996,Increase,6.84,19,Draft
+,201820,4310996,Increase,6.84,19,Draft
+,201820,443432,Increase,4.61,19,Draft
+,4310996,4329728,Increase,6.84,19,Draft
+,4310996,4329728,Increase,6.84,19,Draft
+,4329728,4178501,Decrease,6.84,19,Draft
+,4329728,4329041,Increase,6.84,19,Draft
+,4329041,4178501,Decrease,6.84,19,Draft
+,442985,4206471,Decrease,4.8,19,Draft
+,440383,442985,Decrease,4.8,19,Draft
+,4206471,4052648,Increase,6.84,19,Draft
+,4052648,4178501,Decrease,6.84,19,Draft
+,4310996,31317,Increase,6.84,19,Draft
+,4310996,31317,Increase,6.84,19,Draft
+,31317,255848,Increase,6.84,19,Draft
+,31317,4090739,Increase,6.84,19,Draft
+,4310996,134765,Increase,4.8,19,Draft
+,4310996,134765,Increase,4.34,19,Draft
+,4090739,134765,Increase,6.84,19,Draft
+,134765,4306655,Increase,4.8,19,Draft
+,4090739,4306655,Increase,3.14,19,Draft
+,4178501,4234649,Increase,6.84,19,Draft
+,4329728,4234649,Decrease,6.84,19,Draft
+,31317,4234649,Decrease,6.84,19,Draft
+,4329041,4234649,Decrease,6.84,19,Draft
+,443432,4234649,Decrease,6.84,19,Draft
+,4310996,4234649,Decrease,6.84,19,Draft
+,4310996,4234649,Decrease,6.84,19,Draft
+,4310996,440424,Increase,6.84,19,Draft
+,4310996,440424,Increase,6.84,19,Draft
+,440424,4234649,Decrease,6.84,19,Draft
+,4322978,4310996,Increase,6.84,19,Draft
+,4322978,443432,Increase,6.84,19,Draft
+,4322978,255848,Increase,6.84,19,Draft
+,4178501,4310996,Increase,6.0,19,Draft
+,4178501,4310996,Decrease,6.0,19,Draft
+,440383,4310996,Increase,6.84,19,Draft
+,255848,4085730,Increase,6.84,19,Draft
+,4085730,4306655,Decrease,6.84,19,Draft
+,440383,44784326,Increase,6.84,19,Draft
+,44784326,4234649,Increase,4.26,19,Draft
+,4201412,440424,Decrease,6.84,19,Draft
+,4327941,440383,Decrease,6.84,19,Draft
+,4327941,443432,Decrease,2.38,19,Draft
+,4238738,4178501,Increase,6.84,19,Draft
+,4238738,4052648,Decrease,6.84,19,Draft
+,4024166,4234649,Increase,6.84,19,Draft
+,4196427,4310996,Decrease,6.84,19,Draft
+,4201926,4310996,Decrease,6.84,19,Draft
+,4116678,4310996,Decrease,6.84,19,Draft
+,4116678,4310996,Decrease,6.84,19,Draft
+,4116678,443432,Decrease,6.84,19,Draft
+,4024618,4306655,Decrease,4.08,19,Draft
+,4024166,4024618,Increase,3.07,19,Draft
+,4083171,4329041,Decrease,6.84,19,Draft
+,4043344,4329728,Decrease,6.84,19,Draft
+,4114614,443432,Decrease,5.0,19,Draft
+Christoph,316866,4310996,Increase,6.84,20,Draft
+Christoph,316866,4310996,Increase,6.84,20,Draft
+Christoph,4310996,4310996,Increase,6.84,20,Draft
+Christoph,4310996,4306655,Increase,6.84,20,Draft
+Christoph,4310996,4306655,Increase,6.84,20,Draft
+Christoph,4322978,4234656,Decrease,6.84,20,Draft
+Christoph,4322978,4306655,Increase,6.84,20,Draft
+Christoph,4322978,4310996,Increase,6.84,20,Draft
+Christoph,4322978,4310996,Increase,6.84,20,Draft
+Christoph,4310996,4234656,Decrease,6.84,20,Draft
+,4310996,4234656,Decrease,2.68,20,Draft
+,B-cell infiltration,443432,Increase,2.68,20,Draft
+,4322978,443432,Increase,6.84,20,Draft
+,316866,443432,Increase,4.08,20,Draft
+,4310996,443432,Increase,2.06,20,Draft
+,4310996,443432,Increase,6.84,20,Draft
+,4150054,4234656,Decrease,6.0,20,Draft
+,4150054,4234656,Increase,6.0,20,Draft
+,4150054,4310996,Increase,6.84,20,Draft
+,4150054,4310996,Increase,6.84,20,Draft
+,4150054,4310996,Increase,6.84,20,Draft
+,collateralization,4231869,Increase,6.84,20,Draft
+,4310996,4150603,Increase,6.84,20,Draft
+,4310996,4150603,Increase,6.84,20,Draft
+,316866,4150603,Increase,3.68,20,Draft
+,4322978,4150603,Increase,6.84,20,Draft
+,endothelial proliferation,4234656,Increase,6.84,20,Draft
+,endothelial proliferation,4068351,Decrease,6.84,20,Draft
+,4068351,B-cell infiltration,Increase,6.84,20,Draft
+,microglial proliferation,neuronal survival,Decrease,6.84,20,Draft
+,4150054,4234656,Decrease,2.68,20,Draft
+,4217949,4234656,Increase,2.68,20,Draft
+,4217949,neuronal survival,Increase,2.68,20,Draft
+,endothelial proliferation,neuronal survival,Increase,5.2,20,Draft
+,collateralization,4310996,Decrease,5.2,20,Draft
+,collateralization,4310996,Decrease,5.2,20,Draft
