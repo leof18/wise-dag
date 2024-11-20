@@ -1,0 +1,56 @@
+Entry ID,Author,Exposure,Outcome,Direction,Strength,ID,Status
+8,,Body mass index,Diabetes mellitus,Increase,4.0,1,Final
+9,,Body mass index,Ischemic stroke,Increase,6.0,1,Final
+38,,National Institutes of Health stroke scale,National Institutes of Health stroke scale,Increase,6.0,2,Final
+39,,National Institutes of Health stroke scale,Modified Rankin Scale,Increase,6.84,2,Final
+40,,Modified Rankin Scale,Modified Rankin Scale,Increase,6.84,2,Final
+41,,Modified Rankin Scale,National Institutes of Health stroke scale,Increase,6.84,2,Final
+58,,Barthel index,Barthel index,Increase,6.84,2,Final
+80,,Body mass index,Ischemic stroke,Increase,6.84,3,Draft
+92,,Body mass index,Ischemic stroke,Increase,0.57,3,Draft
+93,,Ischemic stroke,Body mass index,Decrease,0.57,3,Draft
+107,,Body mass index,Ischemic stroke,Increase,6.84,4,Draft
+127,,Body mass index,Ischemic stroke,Increase,5.0,5,Draft
+132,,Ischemic stroke,Depressive disorder,Increase,3.84,5,Draft
+135,Broersen et al. 2020,Troponin,Ischemic stroke,Increase,0.94,5,Draft
+196,,Body mass index,Ischemic stroke,Increase,6.84,6,Final
+197,,Body mass index,Ischemic stroke,Increase,4.34,6,Final
+211,,Diabetes mellitus,Body mass index,Increase,4.52,6,Final
+223,Scheitz et al 2014,Ischemic stroke,Troponin,Increase,6.0,6,Final
+224,,Ischemic stroke,Ischemic stroke,Increase,6.84,6,Final
+227,,Ischemic stroke,Physical fitness state,Decrease,4.34,6,Final
+230,,Ischemic stroke,Depressive disorder,Increase,4.61,6,Final
+232,,Ischemic stroke,Infectious disease,Increase,3.22,6,Final
+237,,Physical fitness state,Ischemic stroke,Increase,4.34,6,Final
+238,,Physical fitness state,Ischemic stroke,Decrease,4.34,6,Final
+280,,Body mass index,Ischemic stroke,Increase,6.84,7,Final
+287,,Myocardial infarction,Ischemic stroke,Increase,4.17,7,Final
+292,,Ischemic stroke,Ischemic stroke,Increase,6.84,7,Final
+296,,Body mass index,Ischemic stroke,Increase,2.68,7,Final
+299,,Myocardial infarction,Ischemic stroke,Increase,2.68,7,Final
+311,,Body mass index,Diabetes mellitus,Increase,2.68,7,Final
+347,Burn et al. (1994),Ischemic stroke,Ischemic stroke,Increase,6.84,9,Final
+388,,Body mass index,Ischemic stroke,Increase,6.84,9,Final
+390,,Body mass index,Ischemic stroke,Increase,6.84,9,Final
+401,,Body mass index,Diabetes mellitus,Increase,2.68,9,Final
+405,Touzé et al. (2005),Ischemic stroke,Myocardial infarction,Increase,1.0,9,Final
+465,in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,Depressive disorder,Ischemic stroke,Increase,3.0,10,Final
+471,"Law et al., 2003",Ischemic stroke,Ischemic stroke,Increase,6.0,10,Final
+497,Arntz et al. 2013,Body mass index,Ischemic stroke,Increase,5.76,10,Final
+498,,Body mass index,Ischemic stroke,Increase,5.76,10,Final
+509,"Khanevsky et al., 2019",Male,Depressive disorder,Increase,4.52,10,Final
+590,"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",Infectious disease,Ischemic stroke,Increase,5.2,11,Final
+594,,Ischemic stroke,Ischemic stroke,Increase,6.39,13,Draft
+639,,Ischemic stroke,Depressive disorder,Increase,5.1,13,Draft
+640,,Ischemic stroke,Depressive disorder,Increase,5.1,13,Draft
+683,,Body mass index,Ischemic stroke,Increase,6.0,14,Draft
+692,,Cerebral artery occlusion,Cerebral artery occlusion,Increase,6.84,14,Draft
+789,,Ischemic stroke,Ischemic stroke,Increase,2.68,16,Final
+798,,Ischemic stroke,Ischemic stroke,Increase,6.84,19,Draft
+801,,Ischemic stroke,Depressive disorder,Increase,6.84,19,Draft
+804,,Ischemic stroke,Immobility syndrome,Increase,6.84,19,Draft
+827,,Depressive disorder,Male,Decrease,4.8,19,Draft
+852,,Immobility syndrome,Ischemic stroke,Increase,6.0,19,Draft
+853,,Immobility syndrome,Ischemic stroke,Increase,6.0,19,Draft
+854,,Depressive disorder,Ischemic stroke,Increase,6.84,19,Draft
+877,Christoph,Ischemic stroke,Ischemic stroke,Increase,6.84,20,Draft
