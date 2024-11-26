@@ -1,0 +1,911 @@
+Author,Exposure,Outcome,Direction,Strength,ID,Status,Exposure_Standardized,Outcome_Standardized
+,Diabetes,Ischemic stroke,Increase,6.0,1,Final,Diabetes mellitus,Ischemic stroke1.0
+,age,Ischemic stroke,Increase,6.0,1,Final,Age factor,Ischemic stroke1.0
+,age,Diabetes,Increase,5.0,1,Final,Age factor,Diabetes mellitus
+,Sex (Male),Ischemic stroke,Increase,6.0,1,Final,Male,Ischemic stroke1.0
+,Hypertension,Ischemic stroke,Increase,6.0,1,Final,Hypertensive disorder,Ischemic stroke1.0
+,age,Hypertension,Increase,6.0,1,Final,Age factor,Hypertensive disorder
+,BMI,Hypertension,Increase,4.0,1,Final,Body mass index,Hypertensive disorder
+,BMI,Diabetes,Increase,4.0,1,Final,Body mass index,Diabetes mellitus
+,BMI,Ischemic stroke,Increase,6.0,1,Final,Body mass index,Ischemic stroke1.0
+Carrero et al (2018),Atrial fibrillation,Ischemic stroke,Increase,6.0,1,Final,Atrial fibrillation,Ischemic stroke1.0
+de Leeuw et al. (2000),Sex (Male),Atrial fibrillation,Increase,4.0,1,Final,Male,Atrial fibrillation
+Kalantarian et al. (2014),age,Atrial fibrillation,Increase,5.0,1,Final,Age factor,Atrial fibrillation
+,BMI,Atrial fibrillation,Increase,6.0,1,Final,Body mass index,Atrial fibrillation
+Diez-Villanueva P & Alfonso F. (2019),Hypertension,Atrial fibrillation,Increase,6.0,1,Final,Hypertensive disorder,Atrial fibrillation
+,Smoking,Ischemic stroke,Increase,5.0,1,Final,Tobacco smoke,Ischemic stroke1.0
+,age,Smoking,Increase,5.0,1,Final,Age factor,Tobacco smoke
+Pan et al. (2019),Sex (Male),Smoking,Increase,6.0,1,Final,Male,Tobacco smoke
+Shah & Cole (2010),Smoking,Diabetes,Increase,4.0,1,Final,Tobacco smoke,Diabetes mellitus
+,Smoking,BMI,Decrease,2.0,1,Final,Tobacco smoke,Body mass index
+,Smoking,Hypertension,Increase,3.0,1,Final,Tobacco smoke,Hypertensive disorder
+Campagna et al. (2019),Smoking,Atrial fibrillation,Increase,6.0,1,Final,Tobacco smoke,Atrial fibrillation
+Maddatu et al. (2017),Hyperlipidemia,Atrial fibrillation,Increase,6.0,1,Final,Hyperlipidemia,Atrial fibrillation
+Patel et al. (2011),Hyperlipidemia,BMI,Increase,6.0,1,Final,Hyperlipidemia,Body mass index
+Watanabe et al. (2016),Hyperlipidemia,Hypertension,Increase,6.0,1,Final,Hyperlipidemia,Hypertensive disorder
+Halperin et al. (2008),Hyperlipidemia,Diabetes,Increase,6.0,1,Final,Hyperlipidemia,Diabetes mellitus
+,Hyperlipidemia,Ischemic stroke,Increase,6.0,1,Final,Hyperlipidemia,Ischemic stroke1.0
+,Diabetes,Atrial fibrillation,Increase,5.0,1,Final,Diabetes mellitus,Atrial fibrillation
+,Smoking,Hyperlipidemia,Increase,3.0,1,Final,Tobacco smoke,Hyperlipidemia
+,Sex (Male),Diabetes,Increase,3.0,1,Final,Male,Diabetes mellitus
+,Diabetes,Hypertension,Increase,2.0,1,Final,Diabetes mellitus,Hypertensive disorder
+,Hyperlipidemia,GFR,Decrease,2.0,1,Final,Hyperlipidemia,Glomerular filtration rate
+Bohne et al. (2019),Sex (Male),BMI,Decrease,2.0,1,Final,Male,Body mass index
+Sensi et al. (2015),Hypertension,GFR,Decrease,2.0,1,Final,Hypertensive disorder,Glomerular filtration rate
+Hallit et al. (2017),Diabetes,GFR,Increase,3.0,1,Final,Diabetes mellitus,Glomerular filtration rate
+Jain & Ducatman (2018),Smoking,CKD,Increase,3.0,1,Final,Tobacco smoke,Chronic kidney disease
+Kautzky-Willer et al. (2016),CKD,Atrial fibrillation,Increase,2.0,1,Final,Chronic kidney disease,Atrial fibrillation
+Wishner (1996),CKD,Ischemic stroke,Increase,4.0,1,Final,Chronic kidney disease,Ischemic stroke1.0
+,NIHSS_stroke,NIHSS_followup,Increase,6.0,2,Final,National Institutes of Health stroke scale1.0,National Institutes of Health stroke scale2.0
+,NIHSS_stroke,mRS_follow_up,Increase,6.84,2,Final,National Institutes of Health stroke scale1.0,National Institutes of Health stroke scale2.0
+,mRS_stroke,mRS_follow_up,Increase,6.84,2,Final,National Institutes of Health stroke scale1.0,National Institutes of Health stroke scale2.0
+,mRS_stroke,NIHSS_followup,Increase,6.84,2,Final,National Institutes of Health stroke scale1.0,National Institutes of Health stroke scale2.0
+,lesion_size,NIHSS_stroke,Increase,6.84,2,Final,Lesion size,National Institutes of Health stroke scale1.0
+,lesion_size,mRS_stroke,Increase,6.84,2,Final,Lesion size,National Institutes of Health stroke scale1.0
+,lesion_size,mRS_follow_up,Increase,6.84,2,Final,Lesion size,National Institutes of Health stroke scale2.0
+,lesion_size,NIHSS_followup,Increase,6.84,2,Final,Lesion size,National Institutes of Health stroke scale2.0
+,time_to_therapy,NIHSS_followup,Increase,6.84,2,Final,Therapy,National Institutes of Health stroke scale2.0
+,time_to_therapy,mRS_follow_up,Increase,6.84,2,Final,Therapy,National Institutes of Health stroke scale2.0
+,lesion_size,Barthel_Index_stroke,Decrease,6.0,2,Final,Lesion size,Stroke index1.0
+eloquent / non-eloquent,lesion_location,Barthel_Index_stroke,Decrease,6.0,2,Final,Lesion,Stroke index1.0
+eloquent / non-eloquent,lesion_location,NIHSS_stroke,Increase,6.84,2,Final,Lesion,National Institutes of Health stroke scale1.0
+eloquent / non-eloquent,lesion_location,NIHSS_followup,Increase,6.84,2,Final,Lesion,National Institutes of Health stroke scale2.0
+eloquent / non-eloquent,lesion_location,mRS_follow_up,Increase,6.84,2,Final,Lesion,National Institutes of Health stroke scale2.0
+eloquent / non-eloquent,lesion_location,mRS_stroke,Increase,6.84,2,Final,Lesion,National Institutes of Health stroke scale1.0
+,NIHSS_stroke,Barthel_Index_follow_up,Decrease,6.0,2,Final,National Institutes of Health stroke scale1.0,Barthel index2.0
+,mRS_stroke,Barthel_Index_follow_up,Decrease,6.0,2,Final,National Institutes of Health stroke scale1.0,Barthel index2.0
+,lesion_size,Barthel_Index_follow_up,Decrease,6.0,2,Final,Lesion size,Barthel index2.0
+,time_to_therapy,Barthel_Index_follow_up,Decrease,6.0,2,Final,Therapy,Barthel index2.0
+,Barthel_Index_stroke,Barthel_Index_follow_up,Increase,6.84,2,Final,Stroke index1.0,Barthel index2.0
+eloquent/non eloquent,lesion_location,Barthel_Index_follow_up,Decrease,6.0,2,Final,Lesion,Barthel index2.0
+,TOAST (etiology),lesion_size,Increase,6.0,2,Final,Ischemic stroke,Lesion size
+,TOAST (etiology),lesion_location,Increase,6.0,2,Final,Ischemic stroke,Lesion
+cardioembolic,present atrial fibrillation,TOAST (etiology),Increase,2.68,2,Final,Atrial fibrillation,Ischemic stroke
+,time_till_diagnosis,time_to_therapy,Increase,2.68,2,Final,Diagnosis,Therapy
+meaning the general population being aware of typical stroke symptoms,awareness of FAST-Scheme,time_till_diagnosis,Decrease,2.0,2,Final,FAST - Fast Alcohol Screening Test,Diagnosis
+,time_till_diagnosis,rate of thrombolysis,Decrease,6.84,2,Final,Diagnosis,Thrombolysis
+,time_till_diagnosis,rate of thrombectomy,Decrease,6.84,2,Final,Diagnosis,Removal of thrombus
+,rate of thrombolysis,lesion_size,Decrease,2.93,2,Final,Thrombolysis,Lesion size
+,rate of thrombectomy,lesion_size,Decrease,2.93,2,Final,Removal of thrombus,Lesion size
+cardioembolic,TOAST (etiology),rate of thrombolysis,Increase,2.93,2,Final,Ischemic stroke,Thrombolysis
+accesible arteries,TOAST (etiology),rate of thrombectomy,Increase,2.68,2,Final,Ischemic stroke,Removal of thrombus
+macroangiopathic,arteriosklerosis,TOAST (etiology),Increase,2.68,2,Final,Arteriosclerosis,Ischemic stroke
+,smoking,arteriosklerosis,Increase,6.84,2,Final,Tobacco smoke,Arteriosclerosis
+,Age,arteriosklerosis,Increase,6.84,2,Final,Age factor,Arteriosclerosis
+,Diabetes mellitus,arteriosklerosis,Increase,6.84,2,Final,Diabetes mellitus,Arteriosclerosis
+,Dyslipidemia,arteriosklerosis,Increase,6.84,2,Final,Dyslipidemia,Arteriosclerosis
+,Lipoprotein (a),arteriosklerosis,Increase,6.84,2,Final,Lipoprotein (a) measurement,Arteriosclerosis
+,Vasculitis,arteriosklerosis,Increase,6.84,2,Final,Vasculitis,Arteriosclerosis
+cardioembolic,persistent foramen ovale,TOAST (etiology),Increase,6.84,2,Final,Patent foramen ovale,Ischemic stroke
+,hypertension,first ischemic stroke,Increase,6.0,3,Draft,Hypertensive disorder,Ischemic stroke1.0
+,BMI_t0,first ischemic stroke,Increase,6.84,3,Draft,Body mass index1.0,Ischemic stroke1.0
+,age,first ischemic stroke,Increase,6.84,3,Draft,Age factor,Ischemic stroke1.0
+,sex(being male),first ischemic stroke,Increase,6.84,3,Draft,Male,Ischemic stroke1.0
+,smoking,first ischemic stroke,Increase,6.84,3,Draft,Tobacco smoke,Ischemic stroke1.0
+,diabetes,first ischemic stroke,Increase,6.84,3,Draft,Diabetes mellitus,Ischemic stroke1.0
+,high blood cholesterol levels,first ischemic stroke,Increase,6.84,3,Draft,Hypercholesterolemia,Ischemic stroke1.0
+,high drinking levels,first ischemic stroke,Increase,6.84,3,Draft,Alcohol intake above recommended sensible limits,Ischemic stroke1.0
+,high fat salt diet,first ischemic stroke,Increase,6.0,3,Draft,High fat diet,Ischemic stroke1.0
+,high fat salt diet,hypertension,Increase,2.68,3,Draft,High fat diet,Hypertensive disorder
+,atrial fibrillation,first ischemic stroke,Increase,6.0,3,Draft,Atrial fibrillation,Ischemic stroke1.0
+,Atherosclerosis,first ischemic stroke,Increase,6.84,3,Draft,Atherosclerosis,Ischemic stroke1.0
+,high fat salt diet,Atherosclerosis,Increase,0.57,3,Draft,High fat diet,Atherosclerosis
+,BMI_t1,second ischemic stroke,Increase,0.57,3,Draft,Body mass index2.0,Ischemic stroke2.0
+,first ischemic stroke,BMI_t1,Decrease,0.57,3,Draft,Ischemic stroke1.0,Body mass index2.0
+,smoking,second ischemic stroke,Increase,6.84,3,Draft,Tobacco smoke,Ischemic stroke2.0
+,age,second ischemic stroke,Increase,6.84,3,Draft,Age factor,Ischemic stroke2.0
+,sex(being male),second ischemic stroke,Increase,6.84,3,Draft,Male,Ischemic stroke2.0
+,high drinking levels,second ischemic stroke,Increase,6.84,3,Draft,Alcohol intake above recommended sensible limits,Ischemic stroke2.0
+,high fat salt diet,second ischemic stroke,Increase,6.84,3,Draft,High fat diet,Ischemic stroke2.0
+,diabetes,second ischemic stroke,Increase,6.84,3,Draft,Diabetes mellitus,Ischemic stroke2.0
+,arterial hypertension,endothelial dysfunction,Increase,6.84,4,Draft,Hypertensive disorder,Cardiac syndrome X
+,Thrombolysis,functional post stroke outcome,Increase,2.68,4,Draft,Thrombolysis,Functional finding
+,lesion size,functional post stroke outcome,Decrease,6.26,4,Draft,Lesion size,Functional finding
+,arterial hypertension,functional post stroke outcome,Decrease,6.84,4,Draft,Hypertensive disorder,Functional finding
+,Obesity,functional post stroke outcome,Decrease,6.84,4,Draft,Obesity,Functional finding
+,Obesity,endothelial dysfunction,Increase,4.61,4,Draft,Obesity,Cardiac syndrome X
+,endothelial dysfunction,EMV,Increase,6.84,4,Draft,Cardiac syndrome X,
+,Obesity,1. stroke incidence,Increase,6.84,4,Draft,Obesity,Ischemic stroke1.0
+,arterial hypertension,1. stroke incidence,Increase,6.84,4,Draft,Hypertensive disorder,Ischemic stroke1.0
+,1. stroke incidence,functional post stroke outcome,Decrease,1.0,4,Draft,Ischemic stroke1.0,Functional finding
+,endothelial dysfunction,1. stroke incidence,Increase,5.42,4,Draft,Cardiac syndrome X,Ischemic stroke1.0
+,EMV,secondary cardiovascular risk,Increase,6.84,4,Draft,,Risk of cardiovascular disease
+,arterial hypertension,secondary cardiovascular risk,Increase,6.84,4,Draft,Hypertensive disorder,Risk of cardiovascular disease
+,endothelial dysfunction,secondary cardiovascular risk,Increase,2.0,4,Draft,Cardiac syndrome X,Risk of cardiovascular disease
+,EMV,1. stroke incidence,Increase,4.0,4,Draft,,Ischemic stroke1.0
+,1. stroke incidence,lesion size,Increase,6.84,4,Draft,Ischemic stroke1.0,Lesion size
+,1. stroke incidence,secondary cardiovascular risk,Increase,6.84,4,Draft,Ischemic stroke1.0,Risk of cardiovascular disease
+,lesion size,secondary cardiovascular risk,Increase,3.0,4,Draft,Lesion size,Risk of cardiovascular disease
+,vascular inflammation,secondary cardiovascular risk,Increase,6.84,4,Draft,Vasculitis,Risk of cardiovascular disease
+,endothelial dysfunction,vascular inflammation,Increase,3.14,4,Draft,Cardiac syndrome X,Vasculitis
+,vascular inflammation,LMV,Increase,5.31,4,Draft,Vasculitis,
+,LMV,secondary cardiovascular risk,Increase,5.31,4,Draft,,Risk of cardiovascular disease
+,Smoking,Stroke,Increase,6.0,5,Draft,Tobacco smoke,Ischemic stroke1.0
+,kidney disease,Stroke,Increase,5.0,5,Draft,Kidney disease,Ischemic stroke1.0
+,male sex,Stroke,Increase,1.0,5,Draft,Male,Ischemic stroke1.0
+,exercise,Stroke,Decrease,4.0,5,Draft,Exercise,Ischemic stroke1.0
+,male sex,Smoking,Increase,1.0,5,Draft,Male,Tobacco smoke
+,BMI,Stroke,Increase,5.0,5,Draft,Body mass index,Ischemic stroke1.0
+,exercise,BMI,Decrease,6.0,5,Draft,Exercise,Body mass index
+,dyslipidemia,Stroke,Increase,5.2,5,Draft,Dyslipidemia,Ischemic stroke1.0
+,exercise,kidney disease,Decrease,2.0,5,Draft,Exercise,Kidney disease
+,low socioeconomic status,Stroke,Decrease,1.75,5,Draft,Socioeconomic status,Ischemic stroke1.0
+,Stroke,Depression,Increase,3.84,5,Draft,Ischemic stroke1.0,Depressive disorder
+,Stroke,Cognitive dysfunction,Increase,3.84,5,Draft,Ischemic stroke1.0,Impaired cognition
+,Stroke,Mortality,Increase,6.84,5,Draft,Ischemic stroke1.0,Mortality rate
+Broersen et al. 2020,hs cardiac Troponin,Stroke,Increase,0.94,5,Draft,High sensitivity cardiac troponin T measurement,Ischemic stroke1.0
+,cardiac disease,hs cardiac Troponin,Increase,5.1,5,Draft,Heart disease,High sensitivity cardiac troponin T measurement
+,cardiac disease,Stroke,Increase,6.84,5,Draft,Heart disease,Ischemic stroke1.0
+,exercise,cardiac disease,Decrease,6.84,5,Draft,Exercise,Heart disease
+,Smoking,cardiac disease,Increase,6.26,5,Draft,Tobacco smoke,Heart disease
+,elevated CRP,Stroke,Increase,3.92,5,Draft,C-reactive protein measurement,Ischemic stroke1.0
+,low socioeconomic status,Depression,Decrease,3.92,5,Draft,Socioeconomic status,Depressive disorder
+,age,Stroke,Increase,6.84,5,Draft,Age factor,Ischemic stroke1.0
+,age,cardiac disease,Increase,6.84,5,Draft,Age factor,Heart disease
+,high fat/ high carbonhydrate diet,arterial hypertension,Increase,5.0,5,Draft,High fat diet,Hypertensive disorder
+,high fat/ high carbonhydrate diet,cardiac disease,Increase,5.0,5,Draft,High fat diet,Heart disease
+,dyslipidemia,Depression,Increase,3.29,5,Draft,Dyslipidemia,Depressive disorder
+,dyslipidemia,Cognitive dysfunction,Increase,3.29,5,Draft,Dyslipidemia,Impaired cognition
+,vascular disease,Stroke,Increase,6.84,5,Draft,Vascular disorder,Ischemic stroke1.0
+,age,vascular disease,Increase,3.44,5,Draft,Age factor,Vascular disorder
+,vascular disease,kidney disease,Increase,6.84,5,Draft,Vascular disorder,Kidney disease
+,diabetes,kidney disease,Increase,6.84,5,Draft,Diabetes mellitus,Kidney disease
+,diabetes,Stroke,Increase,6.84,5,Draft,Diabetes mellitus,Ischemic stroke1.0
+,high fat/ high carbonhydrate diet,dyslipidemia,Increase,6.84,5,Draft,High fat diet,Dyslipidemia
+,high fat/ high carbonhydrate diet,diabetes,Increase,6.84,5,Draft,High fat diet,Diabetes mellitus
+,high fat/ high carbonhydrate diet,elevated CRP,Increase,3.68,5,Draft,High fat diet,C-reactive protein measurement
+,Depression,Mortality,Increase,6.0,5,Draft,Depressive disorder,Mortality rate
+,coping mechnisms,Depression,Decrease,6.84,5,Draft,Coping behavior,Depressive disorder
+,low socioeconomic status,high fat/ high carbonhydrate diet,Decrease,2.93,5,Draft,Socioeconomic status,High fat diet
+,habitual alcohol consumption,Stroke,Increase,6.84,5,Draft,Alcohol intake above recommended sensible limits,Ischemic stroke1.0
+,habitual alcohol consumption,diabetes,Increase,6.84,5,Draft,Alcohol intake above recommended sensible limits,Diabetes mellitus
+,habitual alcohol consumption,coping mechnisms,Decrease,6.13,5,Draft,Alcohol intake above recommended sensible limits,Coping behavior
+,exercise,coping mechnisms,Increase,0.51,5,Draft,Exercise,Coping behavior
+,exercise,arterial hypertension,Decrease,2.72,5,Draft,Exercise,Hypertensive disorder
+,exercise,Stroke,Decrease,6.84,5,Draft,Exercise,Ischemic stroke1.0
+,exercise,Mortality,Decrease,6.84,5,Draft,Exercise,Mortality rate
+,Inflammation,Mortality,Increase,5.0,5,Draft,Inflammation,Mortality rate
+,Inflammation,elevated CRP,Increase,6.84,5,Draft,Inflammation,C-reactive protein measurement
+,Inflammation,Cognitive dysfunction,Increase,1.63,5,Draft,Inflammation,Impaired cognition
+,Inflammation,Depression,Increase,0.51,5,Draft,Inflammation,Depressive disorder
+,habitual alcohol consumption,Inflammation,Increase,3.44,5,Draft,Alcohol intake above recommended sensible limits,Inflammation
+,low socioeconomic status,habitual alcohol consumption,Decrease,3.44,5,Draft,Socioeconomic status,Alcohol intake above recommended sensible limits
+,arterial hypertension,cardiac disease,Increase,6.84,5,Draft,Hypertensive disorder,Heart disease
+,Cognitive dysfunction,coping mechnisms,Decrease,2.45,5,Draft,Impaired cognition,Coping behavior
+,Inflammation,vascular disease,Increase,4.17,5,Draft,Inflammation,Vascular disorder
+,high fat/ high carbonhydrate diet,Inflammation,Increase,4.17,5,Draft,High fat diet,Inflammation
+,Inflammation,cardiac disease,Increase,4.17,5,Draft,Inflammation,Heart disease
+,arterial hypertension,Stroke,Increase,6.84,5,Draft,Hypertensive disorder,Ischemic stroke1.0
+McCarthy 2018,acute heart failure,myocardial infarction (type 2),Increase,6.0,6,Final,Acute heart failure,Myocardial infarction due to demand ischemia
+,acute heart failure,mortality,Increase,6.84,6,Final,Acute heart failure,Mortality rate
+,acute heart failure,nt-pro-BNP,Increase,6.0,6,Final,Acute heart failure,N terminal pro-brain natriuretic peptide level
+,age,diabetes,Increase,4.52,6,Final,Age factor,Diabetes mellitus
+,age,FIRST ISCHEMIC STROKE,Increase,6.84,6,Final,Age factor,Ischemic stroke1.0
+,age,atrial fibrillation,Increase,4.34,6,Final,Age factor,Atrial fibrillation
+"Bishop, Lu, & Yankner, 2010",age,kognitive decline,Increase,4.0,6,Final,Age factor,Impaired cognition
+,age,atherosclerosis,Increase,6.84,6,Final,Age factor,Atherosclerosis
+Diener 2020,anticoagulation,second ischemic stroke,Decrease,3.0,6,Final,Anticoagulant therapy,Ischemic stroke2.0
+Diener 2020,anticoagulation,FIRST ISCHEMIC STROKE,Decrease,3.0,6,Final,Anticoagulant therapy,Ischemic stroke1.0
+,anticoagulation,cardiac thrombus,Decrease,2.72,6,Final,Anticoagulant therapy,Thrombus of cardiac chamber
+,atherosclerosis,FIRST ISCHEMIC STROKE,Increase,6.68,6,Final,Atherosclerosis,Ischemic stroke1.0
+,atherosclerosis,myocardial infarction (type 1),Increase,6.84,6,Final,Atherosclerosis,Myocardial infarction due to atherothrombotic coronary artery disease
+,atrial fibrillation,FIRST ISCHEMIC STROKE,Increase,6.84,6,Final,Atrial fibrillation,Ischemic stroke1.0
+,atrial fibrillation,troponin elevation,Increase,6.0,6,Final,Atrial fibrillation,Troponin measurement
+,atrial fibrillation,nt-pro-BNP,Increase,6.0,6,Final,Atrial fibrillation,N terminal pro-brain natriuretic peptide level
+,atrial fibrillation,severe arrrhythmia,Increase,6.0,6,Final,Atrial fibrillation,Cardiac arrhythmia
+,BMI,myocardial infarction (type 1),Increase,6.84,6,Final,Body mass index,Myocardial infarction due to atherothrombotic coronary artery disease
+,BMI,second ischemic stroke,Increase,6.84,6,Final,Body mass index,Ischemic stroke2.0
+,BMI,FIRST ISCHEMIC STROKE,Increase,4.34,6,Final,Body mass index,Ischemic stroke1.0
+Rizas et al 2017,cardiac autonomic dysbalance,severe arrrhythmia,Increase,4.0,6,Final,,Cardiac arrhythmia
+,cardiac thrombus,FIRST ISCHEMIC STROKE,Increase,5.1,6,Final,Thrombus of cardiac chamber,Ischemic stroke1.0
+,chronic heart failure,kognitive decline,Increase,4.52,6,Final,Chronic heart failure,Impaired cognition
+,chronic heart failure,FIRST ISCHEMIC STROKE,Increase,4.34,6,Final,Chronic heart failure,Ischemic stroke1.0
+,chronic heart failure,nt-pro-BNP,Increase,3.22,6,Final,Chronic heart failure,N terminal pro-brain natriuretic peptide level
+,chronic heart failure,troponin elevation,Increase,6.0,6,Final,Chronic heart failure,Troponin measurement
+,depression,higher fitness/mobility post,Decrease,2.68,6,Final,Depressive disorder2.0,Physical fitness state2.0
+,depression,mortality,Increase,2.68,6,Final,Depressive disorder2.0,Mortality rate
+Ghadri 2018,depression,Takotsubo syndrome,Increase,2.0,6,Final,Depressive disorder2.0,Takotsubo cardiomyopathy
+,diabetes,mortality,Increase,4.52,6,Final,Diabetes mellitus,Mortality rate
+,diabetes,infection,Increase,3.22,6,Final,Diabetes mellitus,Infectious disease
+,diabetes,myocardial infarction (type 1),Increase,6.0,6,Final,Diabetes mellitus,Myocardial infarction due to atherothrombotic coronary artery disease
+,diabetes,FIRST ISCHEMIC STROKE,Increase,4.52,6,Final,Diabetes mellitus,Ischemic stroke1.0
+,diabetes,BMI,Increase,4.52,6,Final,Diabetes mellitus,Body mass index
+,diabetes,cardiac autonomic dysbalance,Increase,4.0,6,Final,Diabetes mellitus,
+,dissection,FIRST ISCHEMIC STROKE,Increase,3.92,6,Final,Dissection procedure,Ischemic stroke1.0
+,dysphagia,infection,Increase,3.22,6,Final,Dysphagia,Infectious disease
+,elevated catecholamines,severe arrrhythmia,Increase,3.76,6,Final,Catecholamine level - finding,Cardiac arrhythmia
+Ghadri 2018,elevated catecholamines,Takotsubo syndrome,Increase,6.0,6,Final,Catecholamine level - finding,Takotsubo cardiomyopathy
+,exercise (cardiac not excessive),hypertension,Decrease,3.92,6,Final,Exercise,Hypertensive disorder
+Diener 2020,exercise (cardiac not excessive),FIRST ISCHEMIC STROKE,Decrease,4.0,6,Final,Exercise,Ischemic stroke1.0
+Strohle et al 2015,exercise (cardiac not excessive),kognitive decline,Decrease,3.0,6,Final,Exercise,Impaired cognition
+,exercise (cardiac not excessive),atrial fibrillation,Increase,2.52,6,Final,Exercise,Atrial fibrillation
+,exercise (cardiac not excessive),myocardial infarction (type 1),Decrease,2.72,6,Final,Exercise,Myocardial infarction due to atherothrombotic coronary artery disease
+,exercise (cardiac not excessive),chronic heart failure,Decrease,3.92,6,Final,Exercise,Chronic heart failure
+Scheitz et al 2014,FIRST ISCHEMIC STROKE,troponin elevation,Increase,6.0,6,Final,Ischemic stroke1.0,Troponin measurement
+,FIRST ISCHEMIC STROKE,second ischemic stroke,Increase,6.84,6,Final,Ischemic stroke1.0,Ischemic stroke2.0
+Diener 2020,FIRST ISCHEMIC STROKE,mortality,Increase,6.0,6,Final,Ischemic stroke1.0,Mortality rate
+scheitz 2018,FIRST ISCHEMIC STROKE,acute heart failure,Increase,3.0,6,Final,Ischemic stroke1.0,Acute heart failure
+,FIRST ISCHEMIC STROKE,higher fitness/mobility post,Decrease,4.34,6,Final,Ischemic stroke1.0,Physical fitness state2.0
+,FIRST ISCHEMIC STROKE,kognitive decline,Increase,4.52,6,Final,Ischemic stroke1.0,Impaired cognition
+Thygesen 2018,FIRST ISCHEMIC STROKE,myocardial infarction (type 2),Increase,6.0,6,Final,Ischemic stroke1.0,Myocardial infarction due to demand ischemia
+,FIRST ISCHEMIC STROKE,depression,Increase,4.61,6,Final,Ischemic stroke1.0,Depressive disorder2.0
+"Scheitz, Templin 2021 under review",FIRST ISCHEMIC STROKE,Takotsubo syndrome,Increase,3.0,6,Final,Ischemic stroke1.0,Takotsubo cardiomyopathy
+,FIRST ISCHEMIC STROKE,infection,Increase,3.22,6,Final,Ischemic stroke1.0,Infectious disease
+"Scheitz et al, Sposato 2020",FIRST ISCHEMIC STROKE,elevated catecholamines,Increase,2.0,6,Final,Ischemic stroke1.0,Catecholamine level - finding
+,FIRST ISCHEMIC STROKE,seizures,Increase,4.17,6,Final,Ischemic stroke1.0,Seizure
+,FIRST ISCHEMIC STROKE,dysphagia,Increase,3.22,6,Final,Ischemic stroke1.0,Dysphagia
+scheitz et al 2018,FIRST ISCHEMIC STROKE,severe arrrhythmia,Increase,6.0,6,Final,Ischemic stroke1.0,Cardiac arrhythmia
+,higher fitness/mobility post,second ischemic stroke,Increase,4.34,6,Final,Physical fitness state2.0,Ischemic stroke2.0
+,higher fitness/mobility pre,FIRST ISCHEMIC STROKE,Decrease,4.34,6,Final,Physical fitness state1.0,Ischemic stroke1.0
+,higher fitness/mobility pre,mortality,Decrease,6.0,6,Final,Physical fitness state1.0,Mortality rate
+,hyperlipidemia,myocardial infarction (type 1),Increase,6.84,6,Final,Hyperlipidemia,Myocardial infarction due to atherothrombotic coronary artery disease
+,hyperlipidemia,FIRST ISCHEMIC STROKE,Increase,3.22,6,Final,Hyperlipidemia,Ischemic stroke1.0
+,hypertension,myocardial infarction (type 1),Increase,6.84,6,Final,Hypertensive disorder,Myocardial infarction due to atherothrombotic coronary artery disease
+,hypertension,FIRST ISCHEMIC STROKE,Increase,5.1,6,Final,Hypertensive disorder,Ischemic stroke1.0
+,hypertension,dissection,Increase,3.92,6,Final,Hypertensive disorder,Dissection procedure
+,hypertension,chronic heart failure,Increase,5.1,6,Final,Hypertensive disorder,Chronic heart failure
+Sandoval 2019,hypertension,myocardial infarction (type 2),Increase,4.0,6,Final,Hypertensive disorder,Myocardial infarction due to demand ischemia
+,hypertension,acute heart failure,Increase,5.1,6,Final,Hypertensive disorder,Acute heart failure
+,infection,mortality,Increase,3.22,6,Final,Infectious disease,Mortality rate
+Sandoval 2019,infection,myocardial infarction (type 2),Increase,4.0,6,Final,Infectious disease,Myocardial infarction due to demand ischemia
+van der Linden 2017,kidney disease,troponin elevation,Increase,2.0,6,Final,Kidney disease,Troponin measurement
+,myocardial infarction (type 1),FIRST ISCHEMIC STROKE,Increase,2.68,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Ischemic stroke1.0
+Rizas et al 2017,myocardial infarction (type 1),cardiac autonomic dysbalance,Increase,6.0,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,
+"thygesen et al 2018, McAloon 2016",myocardial infarction (type 1),mortality,Increase,6.0,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Mortality rate
+thygesen et al 2018,myocardial infarction (type 1),severe arrrhythmia,Increase,6.0,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Cardiac arrhythmia
+thygesen et al 2018,myocardial infarction (type 1),troponin elevation,Increase,6.0,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Troponin measurement
+Thygesen 2018,myocardial infarction (type 1),acute heart failure,Increase,6.0,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Acute heart failure
+Thygesen 2018,myocardial infarction (type 1),cardiac thrombus,Increase,5.0,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Thrombus of cardiac chamber
+,myocardial infarction (type 1),chronic heart failure,Increase,6.84,6,Final,Myocardial infarction due to atherothrombotic coronary artery disease,Chronic heart failure
+DeFilippis 2019,myocardial infarction (type 2),troponin elevation,Increase,6.0,6,Final,Myocardial infarction due to demand ischemia,Troponin measurement
+McCarthy et al 2018,myocardial infarction (type 2),mortality,Increase,6.0,6,Final,Myocardial infarction due to demand ischemia,Mortality rate
+Wiktor 2018,persistent foramen ovale,FIRST ISCHEMIC STROKE,Increase,3.0,6,Final,Patent foramen ovale,Ischemic stroke1.0
+,second ischemic stroke,mortality,Increase,6.0,6,Final,Ischemic stroke2.0,Mortality rate
+,seizures,mortality,Increase,6.54,6,Final,Seizure,Mortality rate
+Faria et al 2020,seizures,troponin elevation,Increase,4.0,6,Final,Seizure,Troponin measurement
+,severe arrrhythmia,mortality,Increase,6.68,6,Final,Cardiac arrhythmia,Mortality rate
+,sex (male),smoking,Increase,3.84,6,Final,Male,Tobacco smoke
+,sex (male),FIRST ISCHEMIC STROKE,Increase,4.34,6,Final,Male,Ischemic stroke1.0
+,sex (male),Takotsubo syndrome,Decrease,2.68,6,Final,Male,Takotsubo cardiomyopathy
+,smoking,FIRST ISCHEMIC STROKE,Increase,6.84,6,Final,Tobacco smoke,Ischemic stroke1.0
+,smoking,myocardial infarction (type 1),Increase,6.84,6,Final,Tobacco smoke,Myocardial infarction due to atherothrombotic coronary artery disease
+,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance,Increase,2.72,6,Final,,
+Scheitz et.al 2018 lancet,stroke lesion affecting central autonomic network,severe arrrhythmia,Increase,6.0,6,Final,,Cardiac arrhythmia
+Krause et al 2017,stroke lesion affecting central autonomic network,troponin elevation,Increase,6.0,6,Final,,Troponin measurement
+Scheitz 2018,stroke lesion affecting central autonomic network,elevated catecholamines,Increase,2.0,6,Final,,Catecholamine level - finding
+Ghadri et at 2018,Takotsubo syndrome,troponin elevation,Increase,4.0,6,Final,Takotsubo cardiomyopathy,Troponin measurement
+scheitz 2014,troponin elevation,higher fitness/mobility post,Decrease,3.0,6,Final,Troponin measurement,Physical fitness state2.0
+broersen et al 2020,troponin elevation,kognitive decline,Increase,4.0,6,Final,Troponin measurement,Impaired cognition
+,age,first-ever ischemic stroke occurence,Increase,6.84,7,Final,Age factor,Ischemic stroke1.0
+,sex (being male),first-ever ischemic stroke occurence,Increase,6.84,7,Final,Male,Ischemic stroke1.0
+,BMI,first-ever ischemic stroke occurence,Increase,6.84,7,Final,Body mass index,Ischemic stroke1.0
+Gorelick et al (1997),LDL-cholesterol,first-ever ischemic stroke occurence,Increase,6.0,7,Final,Hypercholesterolemia,Ischemic stroke1.0
+MacMahon et al (1990),blood pressure,first-ever ischemic stroke occurence,Increase,6.0,7,Final,Blood pressure,Ischemic stroke1.0
+,BMI,LDL-cholesterol,Increase,6.84,7,Final,Body mass index,Hypercholesterolemia
+,BMI,blood pressure,Increase,6.84,7,Final,Body mass index,Blood pressure
+,LDL-cholesterol,atherosclerosis (measured by low ABI),Increase,6.84,7,Final,Hypercholesterolemia,Atherosclerosis
+,atrial fibrilation,first-ever ischemic stroke occurence,Increase,6.84,7,Final,Atrial fibrillation,Ischemic stroke1.0
+,occurence of myocardial infarction,first-ever ischemic stroke occurence,Increase,4.17,7,Final,Myocardial infarction,Ischemic stroke1.0
+Shinton et al (1999),smoking,first-ever ischemic stroke occurence,Increase,6.0,7,Final,Tobacco smoke,Ischemic stroke1.0
+Wilhelmsson et al (1975),smoking,occurence of myocardial infarction,Increase,6.0,7,Final,Tobacco smoke,Myocardial infarction
+,smoking,blood pressure,Increase,6.84,7,Final,Tobacco smoke,Blood pressure
+,smoking,atherosclerosis (measured by low ABI),Increase,6.84,7,Final,Tobacco smoke,Atherosclerosis
+,first-ever ischemic stroke occurence,second ischemic stroke occurence,Increase,6.84,7,Final,Ischemic stroke1.0,Ischemic stroke2.0
+,LDL-cholesterol,second ischemic stroke occurence,Increase,6.84,7,Final,Hypercholesterolemia,Ischemic stroke2.0
+,LDL-cholesterol,second ischemic stroke occurence,Increase,2.58,7,Final,Hypercholesterolemia,Ischemic stroke2.0
+,age,second ischemic stroke occurence,Increase,2.68,7,Final,Age factor,Ischemic stroke2.0
+,BMI,second ischemic stroke occurence,Increase,2.68,7,Final,Body mass index,Ischemic stroke2.0
+,atherosclerosis (measured by low ABI),second ischemic stroke occurence,Increase,2.68,7,Final,Atherosclerosis,Ischemic stroke2.0
+,atrial fibrilation,second ischemic stroke occurence,Increase,2.68,7,Final,Atrial fibrillation,Ischemic stroke2.0
+,occurence of myocardial infarction,second ischemic stroke occurence,Increase,2.68,7,Final,Myocardial infarction,Ischemic stroke2.0
+,smoking,second ischemic stroke occurence,Increase,2.68,7,Final,Tobacco smoke,Ischemic stroke2.0
+,anticoagulation medication,first-ever ischemic stroke occurence,Decrease,2.68,7,Final,Anticoagulant therapy,Ischemic stroke1.0
+Schneider et al. (2004),first-ever ischemic stroke occurence,cognitive function,Increase,2.0,7,Final,Ischemic stroke1.0,Impaired cognition
+Snowdon et al. (1997),second ischemic stroke occurence,cognitive function,Increase,2.0,7,Final,Ischemic stroke2.0,Impaired cognition
+Schneider et al. (2014),atherosclerosis (measured by low ABI),cognitive function,Increase,2.0,7,Final,Atherosclerosis,Impaired cognition
+Guerchet et al (2011),age,cognitive function,Increase,2.68,7,Final,Age factor,Impaired cognition
+,diabetes mellitus,first-ever ischemic stroke occurence,Increase,2.0,7,Final,Diabetes mellitus,Ischemic stroke1.0
+Kannell et al (1979),diabetes mellitus,second ischemic stroke occurence,Increase,2.68,7,Final,Diabetes mellitus,Ischemic stroke2.0
+,diabetes mellitus,occurence of myocardial infarction,Increase,2.68,7,Final,Diabetes mellitus,Myocardial infarction
+,diabetes mellitus,atherosclerosis (measured by low ABI),Increase,2.68,7,Final,Diabetes mellitus,Atherosclerosis
+,sex (being male),atherosclerosis (measured by low ABI),Increase,2.68,7,Final,Male,Atherosclerosis
+,BMI,diabetes mellitus,Increase,2.68,7,Final,Body mass index,Diabetes mellitus
+,age,diabetes mellitus,Increase,2.68,7,Final,Age factor,Diabetes mellitus
+,exercise,first-ever ischemic stroke occurence,Decrease,2.68,7,Final,Exercise,Ischemic stroke1.0
+,exercise,BMI,Decrease,2.68,7,Final,Exercise,Body mass index
+,exercise,LDL-cholesterol,Decrease,0.83,7,Final,Exercise,Hypercholesterolemia
+,exercise,blood pressure,Decrease,3.29,7,Final,Exercise,Blood pressure
+,exercise,atherosclerosis (measured by low ABI),Decrease,0.78,7,Final,Exercise,Atherosclerosis
+,exercise,occurence of myocardial infarction,Decrease,3.29,7,Final,Exercise,Myocardial infarction
+,exercise,second ischemic stroke occurence,Decrease,3.29,7,Final,Exercise,Ischemic stroke2.0
+,exercise,diabetes mellitus,Decrease,3.6,7,Final,Exercise,Diabetes mellitus
+,infectious endocarditis,first-ever ischemic stroke occurence,Increase,3.6,7,Final,Acute infective endocarditis,Ischemic stroke1.0
+,alcohol consumption,first-ever ischemic stroke occurence,Increase,3.6,7,Final,Alcohol consumption unknown,Ischemic stroke1.0
+,alcohol consumption,second ischemic stroke occurence,Increase,1.46,7,Final,Alcohol consumption unknown,Ischemic stroke2.0
+,alcohol consumption,blood pressure,Increase,1.46,7,Final,Alcohol consumption unknown,Blood pressure
+,age,alcohol consumption,Increase,0.89,7,Final,Age factor,Alcohol consumption unknown
+,sex (being male),alcohol consumption,Increase,1.81,7,Final,Male,Alcohol consumption unknown
+,stress,first-ever ischemic stroke occurence,Increase,2.58,7,Final,Stress,Ischemic stroke1.0
+,stress,blood pressure,Increase,2.58,7,Final,Stress,Blood pressure
+,stress,occurence of myocardial infarction,Increase,2.58,7,Final,Stress,Myocardial infarction
+,stress,smoking,Increase,1.11,7,Final,Stress,Tobacco smoke
+,stress,second ischemic stroke occurence,Increase,1.11,7,Final,Stress,Ischemic stroke2.0
+,stress,alcohol consumption,Increase,1.11,7,Final,Stress,Alcohol consumption unknown
+,stress,atherosclerosis (measured by low ABI),Increase,1.11,7,Final,Stress,Atherosclerosis
+,diabetes mellitus,cognitive function,Increase,2.0,7,Final,Diabetes mellitus,Impaired cognition
+Knopman et al (2001),statin use,first-ever ischemic stroke occurence,Decrease,1.0,7,Final,Administration of prophylactic statin,Ischemic stroke1.0
+Hebert et al (1997),statin use,LDL-cholesterol,Decrease,4.8,7,Final,Administration of prophylactic statin,Hypercholesterolemia
+,statin use,atherosclerosis (measured by low ABI),Decrease,1.4,7,Final,Administration of prophylactic statin,Atherosclerosis
+,statin use,occurence of myocardial infarction,Decrease,2.86,7,Final,Administration of prophylactic statin,Myocardial infarction
+,Lipoprotein a,first-ever ischemic stroke occurence,Increase,2.0,7,Final,Lipoprotein (a) measurement,Ischemic stroke1.0
+Nave et al (2015),Lipoprotein a,atherosclerosis (measured by low ABI),Increase,2.68,7,Final,Lipoprotein (a) measurement,Atherosclerosis
+,atherosclerosis (measured by low ABI),first-ever ischemic stroke occurence,Increase,5.0,7,Final,Atherosclerosis,Ischemic stroke1.0
+Hong et al. (2016),blood pressure,cognitive function,Increase,2.68,7,Final,Blood pressure,Impaired cognition
+Knopman et al (2001),antihypertensive medicatio,first-ever ischemic stroke occurence,Decrease,2.68,7,Final,Antihypertensive therapy,Ischemic stroke1.0
+Collins et al (1990),antihypertensive medicatio,occurence of myocardial infarction,Decrease,2.68,7,Final,Antihypertensive therapy,Myocardial infarction
+Collins et al (1990),BMI,atherosclerosis (measured by low ABI),Increase,2.68,7,Final,Body mass index,Atherosclerosis
+McGill et al (2002),BMI,occurence of myocardial infarction,Increase,2.68,7,Final,Body mass index,Myocardial infarction
+Burn et al. (1994),first ischemic stroke,second ischemic stroke,Increase,6.84,9,Final,Ischemic stroke1.0,Ischemic stroke2.0
+Brønnum-Hansen et al. (2001),first ischemic stroke,mortality,Increase,6.84,9,Final,Ischemic stroke1.0,Mortality rate
+Hankey et al. (2002),first ischemic stroke,disability,Increase,6.84,9,Final,Ischemic stroke1.0,Disability
+Davenport et al. (1996),first ischemic stroke,pneumonia,Increase,6.0,9,Final,Ischemic stroke1.0,Pneumonia
+Johnston et al. (1998),first ischemic stroke,urinary tract infection,Increase,6.0,9,Final,Ischemic stroke1.0,Urinary tract infectious disease
+Davenport et al. (1996),pneumonia,mortality,Increase,6.0,9,Final,Pneumonia,Mortality rate
+Finlayson et al. (2011),second ischemic stroke,mortality,Increase,2.68,9,Final,Ischemic stroke2.0,Mortality rate
+Poisson et al. (2010),second ischemic stroke,disability,Increase,2.68,9,Final,Ischemic stroke2.0,Disability
+Ersoz et al. (2007),urinary catheter placement,urinary tract infection,Increase,6.0,9,Final,Procedure involving urinary catheter,Urinary tract infectious disease
+van der Worp & Kappelle (1998),first ischemic stroke,bladder dysfunction,Increase,6.0,9,Final,Ischemic stroke1.0,Dysfunction of urinary bladder
+,first ischemic stroke,urinary catheter placement,Increase,2.0,9,Final,Ischemic stroke1.0,Procedure involving urinary catheter
+Poisson et al. (2010),bladder dysfunction,urinary tract infection,Increase,2.68,9,Final,Dysfunction of urinary bladder,Urinary tract infectious disease
+,first ischemic stroke,immunosuppression,Increase,0.51,9,Final,Ischemic stroke1.0,Immunosuppression
+Maki & Tambyah (2001),immunosuppression,urinary tract infection,Increase,0.51,9,Final,Immunosuppression,Urinary tract infectious disease
+Gould et al. (2010),sex(female),urinary tract infection,Increase,6.0,9,Final,Male,Urinary tract infectious disease
+Kong & Young (2000),age,urinary tract infection,Increase,6.0,9,Final,Age factor,Urinary tract infectious disease
+Poisson et al. (2010),age,first ischemic stroke,Increase,6.0,9,Final,Age factor,Ischemic stroke1.0
+,urinary tract infection,mortality,Increase,0.51,9,Final,Urinary tract infectious disease,Mortality rate
+Poisson et al. (2010),urinary tract infection,disability,Increase,0.51,9,Final,Urinary tract infectious disease,Disability
+Poisson et al. (2010),first ischemic stroke,body temperature,Increase,0.51,9,Final,Ischemic stroke1.0,Body temperature
+Azzimondi et al. (1995),urinary tract infection,body temperature,Increase,6.84,9,Final,Urinary tract infectious disease,Body temperature
+Boysen & Christensen (2001),pneumonia,body temperature,Increase,6.84,9,Final,Pneumonia,Body temperature
+,body temperature,mortality,Increase,0.51,9,Final,Body temperature,Mortality rate
+,body temperature,disability,Increase,0.51,9,Final,Body temperature,Disability
+Jauch et al. (2013),first ischemic stroke,delirium,Increase,0.51,9,Final,Ischemic stroke1.0,Delirium
+Jauch et al. (2013),age,delirium,Increase,6.84,9,Final,Age factor,Delirium
+Oldenbeuving et al. (2007),urinary tract infection,delirium,Increase,0.51,9,Final,Urinary tract infectious disease,Delirium
+Oldenbeuving et al. (2007),pneumonia,delirium,Increase,0.51,9,Final,Pneumonia,Delirium
+Oldenbeuving et al. (2007),delirium,disability,Increase,0.51,9,Final,Delirium,Disability
+Oldenbeuving et al. (2007),stroke unit care,delirium,Decrease,0.51,9,Final,Admission to stroke unit,Delirium
+Oldenbeuving et al. (2007),bladder dysfunction,urinary catheter placement,Increase,0.51,9,Final,Dysfunction of urinary bladder,Procedure involving urinary catheter
+Oldenbeuving et al. (2007),age,pneumonia,Increase,2.68,9,Final,Age factor,Pneumonia
+,pneumonia,disability,Increase,0.51,9,Final,Pneumonia,Disability
+Finlayson et al. (2011),first ischemic stroke,dysphagia,Increase,6.0,9,Final,Ischemic stroke1.0,Dysphagia
+Finlayson et al. (2011),dysphagia,pneumonia,Increase,6.84,9,Final,Dysphagia,Pneumonia
+Martino et al. (2005),dysphagia,aspiration,Increase,6.84,9,Final,Dysphagia,Aspiration
+Martino et al. (2005),aspiration,pneumonia,Increase,6.84,9,Final,Aspiration,Pneumonia
+Martino et al. (2005),smoking,first ischemic stroke,Increase,6.84,9,Final,Tobacco smoke,Ischemic stroke1.0
+Martino et al. (2005),smoking,second ischemic stroke,Increase,6.84,9,Final,Tobacco smoke,Ischemic stroke2.0
+,sex(male),first ischemic stroke,Increase,6.84,9,Final,Male,Ischemic stroke1.0
+,atrial fibrillation,first ischemic stroke,Increase,6.84,9,Final,Atrial fibrillation,Ischemic stroke1.0
+,BMI,first ischemic stroke,Increase,6.84,9,Final,Body mass index,Ischemic stroke1.0
+,atrial fibrillation,second ischemic stroke,Increase,6.84,9,Final,Atrial fibrillation,Ischemic stroke2.0
+,BMI,second ischemic stroke,Increase,6.84,9,Final,Body mass index,Ischemic stroke2.0
+,blood pressure,first ischemic stroke,Increase,6.84,9,Final,Blood pressure,Ischemic stroke1.0
+,blood pressure,second ischemic stroke,Increase,6.84,9,Final,Blood pressure,Ischemic stroke2.0
+,age,blood pressure,Increase,6.84,9,Final,Age factor,Blood pressure
+,age,smoking,Decrease,2.93,9,Final,Age factor,Tobacco smoke
+,first ischemic stroke,stroke unit care,Increase,6.84,9,Final,Ischemic stroke1.0,Admission to stroke unit
+,blood lipids,first ischemic stroke,Increase,6.84,9,Final,Hyperlipidemia,Ischemic stroke1.0
+Jauch et al. (2013),diabetes,first ischemic stroke,Increase,6.84,9,Final,Diabetes mellitus,Ischemic stroke1.0
+,first ischemic stroke,blood glucose,Increase,6.0,9,Final,Ischemic stroke1.0,Blood glucose level - finding
+Khoury et al. (2013),diabetes,blood glucose,Increase,6.0,9,Final,Diabetes mellitus,Blood glucose level - finding
+Jauch et al. (2013),age,diabetes,Increase,2.68,9,Final,Age factor,Diabetes mellitus
+,BMI,diabetes,Increase,2.68,9,Final,Body mass index,Diabetes mellitus
+,sex(male),smoking,Increase,2.68,9,Final,Male,Tobacco smoke
+Langhorne et al. (2020),stroke unit care,mortality,Decrease,4.71,9,Final,Admission to stroke unit,Mortality rate
+Langhorne et al. (2020),stroke unit care,disability,Decrease,4.17,9,Final,Admission to stroke unit,Disability
+Touzé et al. (2005),first ischemic stroke,myocardial infarction,Increase,1.0,9,Final,Ischemic stroke1.0,Myocardial infarction
+,myocardial infarction,mortality,Increase,6.0,9,Final,Myocardial infarction,Mortality rate
+Sulter et al. (2000),first ischemic stroke,oxygen saturation,Decrease,5.0,9,Final,Ischemic stroke1.0,Oxygen saturation measurement
+Rowat et al. (2006),patient positioning,oxygen saturation,Increase,0.51,9,Final,Patient position finding,Oxygen saturation measurement
+Rowat et al. (2001),pneumonia,oxygen saturation,Decrease,6.84,9,Final,Pneumonia,Oxygen saturation measurement
+,age,oxygen saturation,Decrease,0.51,9,Final,Age factor,Oxygen saturation measurement
+Sulter et al. (2000),dysphagia,oxygen saturation,Decrease,0.51,9,Final,Dysphagia,Oxygen saturation measurement
+Sulter et al. (2000),oxygen saturation,mortality,Decrease,0.51,9,Final,Oxygen saturation measurement,Mortality rate
+Rowat et al. (2006),first ischemic stroke,dependency,Increase,6.0,9,Final,Ischemic stroke1.0,Functionally dependent
+,disability,dependency,Increase,6.0,9,Final,Disability,Functionally dependent
+,dysphagia,dependency,Increase,2.68,9,Final,Dysphagia,Functionally dependent
+Martino et al. (2005),first ischemic stroke,urinary incontinence,Increase,2.68,9,Final,Ischemic stroke1.0,Urinary incontinence
+Nakayama et al. (1997),age,urinary incontinence,Increase,2.68,9,Final,Age factor,Urinary incontinence
+Nakayama et al. (1997),urinary incontinence,dependency,Increase,2.68,9,Final,Urinary incontinence,Functionally dependent
+Patel et al. (2001),diabetes,urinary incontinence,Increase,0.51,9,Final,Diabetes mellitus,Urinary incontinence
+,urinary incontinence,urinary catheter placement,Increase,0.51,9,Final,Urinary incontinence,Procedure involving urinary catheter
+,first ischemic stroke,paralysis,Increase,6.84,9,Final,Ischemic stroke1.0,Paralysis
+,paralysis,disability,Increase,6.84,9,Final,Paralysis,Disability
+,paralysis,dependency,Increase,6.84,9,Final,Paralysis,Functionally dependent
+,first ischemic stroke,deep vein thrombosis,Increase,6.84,9,Final,Ischemic stroke1.0,Deep venous thrombosis
+Kappelle et al. (2011),paralysis,deep vein thrombosis,Increase,6.84,9,Final,Paralysis,Deep venous thrombosis
+Kappelle et al. (2011),deep vein thrombosis,pulmonary embolism,Increase,6.84,9,Final,Deep venous thrombosis,Pulmonary embolism
+,pulmonary embolism,mortality,Increase,6.84,9,Final,Pulmonary embolism,Mortality rate
+,pulmonary embolism,oxygen saturation,Decrease,6.84,9,Final,Pulmonary embolism,Oxygen saturation measurement
+,paralysis,pneumonia,Increase,2.0,9,Final,Paralysis,Pneumonia
+,first ischemic stroke,falls,Increase,6.0,9,Final,Ischemic stroke1.0,Falls
+Wei et al. (2019),age,falls,Increase,2.68,9,Final,Age factor,Falls
+,urinary incontinence,falls,Increase,2.68,9,Final,Urinary incontinence,Falls
+,delirium,falls,Increase,2.68,9,Final,Delirium,Falls
+,falls,fractures,Increase,2.0,9,Final,Falls,Fracture
+Melton et al. (2001),first ischemic stroke,fractures,Increase,2.68,9,Final,Ischemic stroke1.0,Fracture
+Kanis et al. (2001),fractures,disability,Increase,0.51,9,Final,Fracture,Disability
+,fractures,dependency,Increase,0.51,9,Final,Fracture,Functionally dependent
+,physical activity,first ischemic stroke,Increase,6.84,9,Final,Exercise,Ischemic stroke1.0
+low or very high,alcohol consumption,first ischemic stroke,Increase,3.84,9,Final,Alcohol consumption unknown,Ischemic stroke1.0
+,atherosclerosis,first ischemic stroke,Increase,6.0,9,Final,Atherosclerosis,Ischemic stroke1.0
+,blood lipids,second ischemic stroke,Increase,6.0,9,Final,Hyperlipidemia,Ischemic stroke2.0
+,alcohol consumption,second ischemic stroke,Increase,3.0,9,Final,Alcohol consumption unknown,Ischemic stroke2.0
+,physical activity,second ischemic stroke,Increase,6.0,9,Final,Exercise,Ischemic stroke2.0
+,education,first ischemic stroke,Decrease,1.0,9,Final,Education and/or schooling finding,Ischemic stroke1.0
+Reshetnyak et al. (2020),income,first ischemic stroke,Decrease,1.0,9,Final,Socioeconomic status,Ischemic stroke1.0
+Reshetnyak et al. (2020),social isolation,first ischemic stroke,Increase,0.51,9,Final,Social isolation,Ischemic stroke1.0
+Reshetnyak et al. (2020),TIA,first ischemic stroke,Increase,6.84,9,Final,Transient cerebral ischemia,Ischemic stroke1.0
+O'Donnell et al. 2016,Smoking,first ischemic stroke,Increase,6.84,10,Final,Tobacco smoke,Ischemic stroke1.0
+O'Donnell et al. 2016,Diabetes mellitus,first ischemic stroke,Increase,6.84,10,Final,Diabetes mellitus,Ischemic stroke1.0
+O'Donnell et al. 2016,moderate physical activity,first ischemic stroke,Decrease,6.84,10,Final,Exercise,Ischemic stroke1.0
+,moderate physical activity,Diabetes mellitus,Decrease,6.84,10,Final,Exercise,Diabetes mellitus
+"O'Donnell et al. 2016, Paterson et al. 2018",healthy (mediterranean) diet,first ischemic stroke,Decrease,6.84,10,Final,Mediterranean diet,Ischemic stroke1.0
+,healthy (mediterranean) diet,Diabetes mellitus,Decrease,3.92,10,Final,Mediterranean diet,Diabetes mellitus
+"Ebrahim et al., 2006",hyperlipoproteinemia (high LDL),first ischemic stroke,Increase,6.0,10,Final,Hypercholesterolemia,Ischemic stroke1.0
+,atrial fibrillation,first ischemic stroke,Increase,6.84,10,Final,Atrial fibrillation,Ischemic stroke1.0
+,dissection of cerebral vessel,first ischemic stroke,Increase,6.84,10,Final,Dissection of cerebral artery,Ischemic stroke1.0
+,atherosclerosis,first ischemic stroke,Increase,6.84,10,Final,Atherosclerosis,Ischemic stroke1.0
+,hyperlipoproteinemia (high LDL),atherosclerosis,Increase,6.84,10,Final,Hypercholesterolemia,Atherosclerosis
+,positive familiy history of cardio/cerebrovascular events,first ischemic stroke,Increase,6.84,10,Final,Family history of stroke,Ischemic stroke1.0
+,stenoses of cerebral vessels,first ischemic stroke,Increase,4.17,10,Final,Stenosis of cerebral artery,Ischemic stroke1.0
+,atherosclerosis,stenoses of cerebral vessels,Increase,6.84,10,Final,Atherosclerosis,Stenosis of cerebral artery
+,dissection of cerebral vessel,stenoses of cerebral vessels,Increase,6.84,10,Final,Dissection of cerebral artery,Stenosis of cerebral artery
+In patients where no other risk factors are found and the PFO shows a right-->left shunt and shows a hypermobile septum,patent foramen ovale (PFO),first ischemic stroke,Increase,3.52,10,Final,Patent foramen ovale,Ischemic stroke1.0
+Bushnell at el. 2014,oral contraceptives,first ischemic stroke,Increase,3.0,10,Final,Uses oral contraception,Ischemic stroke1.0
+in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,depression,first ischemic stroke,Increase,3.0,10,Final,Depressive disorder2.0,Ischemic stroke1.0
+"O'Donnell et al., 2010",antidepressive medication,first ischemic stroke,Increase,3.52,10,Final,Antidepressant therapy,Ischemic stroke1.0
+,depression,antidepressive medication,Increase,3.52,10,Final,Depressive disorder2.0,Antidepressant therapy
+,antiplatelet therapy (e.g. ASS),first ischemic stroke,Decrease,6.0,10,Final,Platelet aggregation inhibitor therapy,Ischemic stroke1.0
+In patients with high cardiovascular risk profile,Statins,first ischemic stroke,Decrease,6.84,10,Final,Administration of prophylactic statin,Ischemic stroke1.0
+"In patients with high cardiovascular risk profile, especially high LDL-Cholesterine",Statins,hyperlipoproteinemia (high LDL),Decrease,6.0,10,Final,Administration of prophylactic statin,Hypercholesterolemia
+"Law et al., 2003",first ischemic stroke,second ischemic stroke,Increase,6.0,10,Final,Ischemic stroke1.0,Ischemic stroke2.0
+"Khanevski et al., 2019",age,hyperlipoproteinemia (high LDL),Increase,4.34,10,Final,Age factor,Hypercholesterolemia
+,age,atrial fibrillation,Increase,6.84,10,Final,Age factor,Atrial fibrillation
+,age,patent foramen ovale (PFO),Decrease,3.68,10,Final,Age factor,Patent foramen ovale
+,age,first ischemic stroke,Increase,6.84,10,Final,Age factor,Ischemic stroke1.0
+,arterial hypertension,first ischemic stroke,Increase,6.84,10,Final,Hypertensive disorder,Ischemic stroke1.0
+O'Donnell et al 2016,age,death (all causes),Increase,6.0,10,Final,Age factor,Death
+,age,arterial hypertension,Increase,6.84,10,Final,Age factor,Hypertensive disorder
+,age,second ischemic stroke,Increase,6.0,10,Final,Age factor,Ischemic stroke2.0
+"Khanevski et al., 2019",Smoking,second ischemic stroke,Increase,6.84,10,Final,Tobacco smoke,Ischemic stroke2.0
+,Diabetes mellitus,second ischemic stroke,Increase,6.84,10,Final,Diabetes mellitus,Ischemic stroke2.0
+,hyperlipoproteinemia (high LDL),second ischemic stroke,Increase,6.84,10,Final,Hypercholesterolemia,Ischemic stroke2.0
+,moderate physical activity,second ischemic stroke,Decrease,6.84,10,Final,Exercise,Ischemic stroke2.0
+,healthy (mediterranean) diet,second ischemic stroke,Decrease,6.84,10,Final,Mediterranean diet,Ischemic stroke2.0
+,atrial fibrillation,second ischemic stroke,Increase,6.84,10,Final,Atrial fibrillation,Ischemic stroke2.0
+,dissection of cerebral vessel,second ischemic stroke,Increase,6.84,10,Final,Dissection of cerebral artery,Ischemic stroke2.0
+,atherosclerosis,second ischemic stroke,Increase,6.84,10,Final,Atherosclerosis,Ischemic stroke2.0
+,positive familiy history of cardio/cerebrovascular events,second ischemic stroke,Increase,3.6,10,Final,Family history of stroke,Ischemic stroke2.0
+,stenoses of cerebral vessels,second ischemic stroke,Increase,3.6,10,Final,Stenosis of cerebral artery,Ischemic stroke2.0
+,antiplatelet therapy (e.g. ASS),second ischemic stroke,Decrease,6.0,10,Final,Platelet aggregation inhibitor therapy,Ischemic stroke2.0
+Kernan et al. 2014,Statins,second ischemic stroke,Decrease,6.0,10,Final,Administration of prophylactic statin,Ischemic stroke2.0
+"Amarenco et al., 2020",first ischemic stroke,post stroke epilepsy,Increase,5.31,10,Final,Ischemic stroke1.0,Epilepsy due to cerebrovascular accident
+Browne and Holmes 2001,second ischemic stroke,post stroke epilepsy,Increase,6.84,10,Final,Ischemic stroke2.0,Epilepsy due to cerebrovascular accident
+Browne and Holmes 2001,stroke severity (e.g. measured by NIHSS),post stroke epilepsy,Increase,6.0,10,Final,National Institutes of Health stroke scale,Epilepsy due to cerebrovascular accident
+"Slapo et al., 2006",post stroke epilepsy,functional outcome (e.g. measured by mRS),Increase,4.0,10,Final,Epilepsy due to cerebrovascular accident,Functional finding
+Arntz et al. 2013,stroke severity (e.g. measured by NIHSS),functional outcome (e.g. measured by mRS),Increase,4.26,10,Final,National Institutes of Health stroke scale,Functional finding
+Arntz et al. 2013,obesity,first ischemic stroke,Increase,5.76,10,Final,Obesity,Ischemic stroke1.0
+,obesity,second ischemic stroke,Increase,5.76,10,Final,Obesity,Ischemic stroke2.0
+"Kernan et al., 2014 (AHA/ASA Guideline)",sleep apnea,first ischemic stroke,Increase,5.76,10,Final,Sleep apnea,Ischemic stroke1.0
+"Kernan et al., 2014 (AHA/ASA Guideline)",sleep apnea,second ischemic stroke,Increase,5.76,10,Final,Sleep apnea,Ischemic stroke2.0
+"Kernan et al., 2014 (AHA/ASA Guideline)",obesity,sleep apnea,Increase,3.29,10,Final,Obesity,Sleep apnea
+"Kernan et al., 2014 (AHA/ASA Guideline)",anticoagulation,first ischemic stroke,Decrease,6.84,10,Final,Anticoagulant therapy,Ischemic stroke1.0
+,anticoagulation,second ischemic stroke,Decrease,6.84,10,Final,Anticoagulant therapy,Ischemic stroke2.0
+Kernan et al. 2014 (for some patients patients with atrial fibrillation and some patients with thrombophilia),low socioeconomic status,death (all causes),Decrease,4.43,10,Final,Socioeconomic status,Death
+Kernan et al. 2014 (for patients patients with atrial fibrillation and some patients with thrombophilia),post stroke epilepsy,death (all causes),Increase,6.26,10,Final,Epilepsy due to cerebrovascular accident,Death
+"Vivanco-Hidalgo et al., 2019",arterial hypertension,second ischemic stroke,Increase,6.0,10,Final,Hypertensive disorder,Ischemic stroke2.0
+Arrich et al. 2005,arterial hypertension,atherosclerosis,Increase,5.53,10,Final,Hypertensive disorder,Atherosclerosis
+Burneo et al. 2009,female sex,oral contraceptives,Increase,4.52,10,Final,Male,Uses oral contraception
+"Khanevsky et al., 2019",female sex,depression,Increase,4.52,10,Final,Male,Depressive disorder2.0
+,female sex,first ischemic stroke,Decrease,4.43,10,Final,Male,Ischemic stroke1.0
+,female sex,second ischemic stroke,Decrease,4.43,10,Final,Male,Ischemic stroke2.0
+Bushnell et al. 2014,female sex,migraine with aura,Increase,4.43,10,Final,Male,Migraine with aura
+Bushnell et al. 2014,migraine with aura,first ischemic stroke,Increase,4.43,10,Final,Migraine with aura,Ischemic stroke1.0
+Bushnell et al. 2014,migraine with aura,second ischemic stroke,Increase,3.84,10,Final,Migraine with aura,Ischemic stroke2.0
+Bushnell et al. 2014,female sex,arterial hypertension,Increase,3.84,10,Final,Male,Hypertensive disorder
+Bushnell et al. 2014,oral contraceptives,second ischemic stroke,Increase,4.08,10,Final,Uses oral contraception,Ischemic stroke2.0
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",second ischemic stroke,Increase,4.08,10,Final,Pre-eclampsia,Ischemic stroke2.0
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",first ischemic stroke,Increase,4.08,10,Final,Pre-eclampsia,Ischemic stroke1.0
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",arterial hypertension,Increase,4.08,10,Final,Pre-eclampsia,Hypertensive disorder
+Bushnell et al. 2014,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Diabetes mellitus,Increase,4.08,10,Final,Pre-eclampsia,Diabetes mellitus
+Bushnell et al. 2014,female sex,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Increase,6.84,10,Final,Male,Pre-eclampsia
+Bushnell et al. 2014,moderate physical activity,obesity,Decrease,6.84,10,Final,Exercise,Obesity
+Bushnell et al. 2014,healthy (mediterranean) diet,obesity,Decrease,6.84,10,Final,Mediterranean diet,Obesity
+Bushnell et al. 2014,stroke severity (e.g. measured by NIHSS),death (all causes),Increase,6.84,10,Final,National Institutes of Health stroke scale,Death
+,first ischemic stroke,death (all causes),Increase,6.26,10,Final,Ischemic stroke1.0,Death
+,second ischemic stroke,death (all causes),Increase,6.26,10,Final,Ischemic stroke2.0,Death
+,depression,death (all causes),Increase,5.53,10,Final,Depressive disorder2.0,Death
+"Khanevski et al., 2019",moderate physical activity,migraine with aura,Decrease,4.17,10,Final,Exercise,Migraine with aura
+"Khanevski et al., 2019",healthy (mediterranean) diet,death (all causes),Decrease,5.42,10,Final,Mediterranean diet,Death
+,obesity,death (all causes),Increase,5.42,10,Final,Obesity,Death
+,Smoking,death (all causes),Increase,5.42,10,Final,Tobacco smoke,Death
+"Bushnell et al., 2014",moderate physical activity,death (all causes),Decrease,5.42,10,Final,Exercise,Death
+"Bushnell et al., 2014",atrial fibrillation,death (all causes),Increase,5.42,10,Final,Atrial fibrillation,Death
+"Bushnell et al., 2014",atrial fibrillation,stroke severity (e.g. measured by NIHSS),Increase,6.84,10,Final,Atrial fibrillation,National Institutes of Health stroke scale
+"Bushnell et al., 2014",atrial fibrillation,anticoagulation,Increase,6.84,10,Final,Atrial fibrillation,Anticoagulant therapy
+"Goldstein et al., 2011",atherosclerosis,antiplatelet therapy (e.g. ASS),Increase,6.84,10,Final,Atherosclerosis,Platelet aggregation inhibitor therapy
+"Goldstein et al., 2011",stenoses of cerebral vessels,antiplatelet therapy (e.g. ASS),Increase,6.84,10,Final,Stenosis of cerebral artery,Platelet aggregation inhibitor therapy
+,Smoking,atherosclerosis,Increase,6.84,10,Final,Tobacco smoke,Atherosclerosis
+,Smoking,stenoses of cerebral vessels,Increase,6.84,10,Final,Tobacco smoke,Stenosis of cerebral artery
+,sleep apnea,arterial hypertension,Increase,4.52,10,Final,Sleep apnea,Hypertensive disorder
+,Diabetes mellitus,arterial hypertension,Increase,4.52,10,Final,Diabetes mellitus,Hypertensive disorder
+,low socioeconomic status,Smoking,Decrease,4.0,10,Final,Socioeconomic status,Tobacco smoke
+,low socioeconomic status,arterial hypertension,Decrease,4.08,10,Final,Socioeconomic status,Hypertensive disorder
+,low socioeconomic status,healthy (mediterranean) diet,Increase,4.08,10,Final,Socioeconomic status,Mediterranean diet
+Marshall et al. 2015,low socioeconomic status,moderate physical activity,Increase,4.08,10,Final,Socioeconomic status,Exercise
+Marshall et al. 2015,low socioeconomic status,first ischemic stroke,Decrease,4.08,10,Final,Socioeconomic status,Ischemic stroke1.0
+Marshall et al. 2015,low socioeconomic status,second ischemic stroke,Decrease,4.08,10,Final,Socioeconomic status,Ischemic stroke2.0
+Marshall et al. 2015,low socioeconomic status,depression,Decrease,5.53,10,Final,Socioeconomic status,Depressive disorder2.0
+Marshall et al. 2015,cortical involvement or strategical localisation of stroke lesion,functional outcome (e.g. measured by mRS),Increase,5.53,10,Final,Lesion of brain,Functional finding
+Marshall et al. 2015,cortical involvement or strategical localisation of stroke lesion,post stroke epilepsy,Increase,5.53,10,Final,Lesion of brain,Epilepsy due to cerebrovascular accident
+Lorant et al. 2013,second ischemic stroke,functional outcome (e.g. measured by mRS),Increase,5.0,10,Final,Ischemic stroke2.0,Functional finding
+"Asplund et al, Stroke 2009",age,first ischemic stroke,Increase,6.0,11,Final,Age factor,Ischemic stroke1.0
+40:2319-2326,male sex,first ischemic stroke,Increase,5.0,11,Final,Male,Ischemic stroke1.0
+"Bushnell et al., JCBF2018",hypertension,first ischemic stroke,Increase,5.0,11,Final,Hypertensive disorder,Ischemic stroke1.0
+38: 2179–2191)postmenopausal vs premenopausal,metabolic syndrom,first ischemic stroke,Increase,6.0,11,Final,Metabolic syndrome X,Ischemic stroke1.0
+"Cipolla et al., JCBF2018",inflammation,first ischemic stroke,Increase,6.0,11,Final,Inflammation,Ischemic stroke1.0
+38:2129-2149,inflammation,blood-brain barrier breakdown,Decrease,6.0,11,Final,Inflammation,Blood-brain barrier
+"includes diabetes, hyperlipoproteinemia, obesity (Sol M Rodriguez-Colon, stroke 2009",blood-brain barrier breakdown,first ischemic stroke,Decrease,6.0,11,Final,Blood-brain barrier,Ischemic stroke1.0
+40:200-205),metabolic syndrom,white matter hyperintensities (MRI),Increase,6.0,11,Final,Metabolic syndrome X,Leuko-araiosis
+"Bernardo-Castro et al., Front Neurol 2020",white matter hyperintensities (MRI),first ischemic stroke,Increase,6.0,11,Final,Leuko-araiosis,Ischemic stroke1.0
+doi: 10.3389/fneur.2020.594672,exercise,first ischemic stroke,Decrease,0.51,11,Final,Exercise,Ischemic stroke1.0
+"Bernardo-Castro et al., Front Neurol 2020",exercise,metabolic syndrom,Decrease,0.51,11,Final,Exercise,Metabolic syndrome X
+doi: 10.3389/fneur.2020.594672,exercise,hypertension,Decrease,0.51,11,Final,Exercise,Hypertensive disorder
+"Bernardo-Catro et al., 2020",hypertension,white matter hyperintensities (MRI),Increase,4.8,11,Final,Hypertensive disorder,Leuko-araiosis
+"Frey et al, Front Neurol 2019",smoking,first ischemic stroke,Increase,5.31,11,Final,Tobacco smoke,Ischemic stroke1.0
+doi: 10.3389/fneur.2019.00238,smoking,white matter hyperintensities (MRI),Increase,5.0,11,Final,Tobacco smoke,Leuko-araiosis
+"Ryu et al., Brain 2017 doi: 10.1093/brain/aww259",atherosclerosis,white matter hyperintensities (MRI),Increase,6.0,11,Final,Atherosclerosis,Leuko-araiosis
+,metabolic syndrom,atherosclerosis,Increase,6.0,11,Final,Metabolic syndrome X,Atherosclerosis
+,atherosclerosis/thrombosis,first ischemic stroke,Increase,6.0,11,Final,Atherosclerosis,Ischemic stroke1.0
+,cardiac dysfunction,first ischemic stroke,Increase,6.0,11,Final,Disorder of cardiac function,Ischemic stroke1.0
+120 versus 135 systolic blood pressure,cardiac dysfunction,white matter hyperintensities (MRI),Increase,6.54,11,Final,Disorder of cardiac function,Leuko-araiosis
+,atherosclerosis,vessel stenosis/occlusion,Increase,6.0,11,Final,Atherosclerosis,Stenosis
+"Power et al., Neurology 2015",vessel stenosis/occlusion,white matter hyperintensities (MRI),Increase,6.13,11,Final,Stenosis,Leuko-araiosis
+84:841-848,vessel stenosis/occlusion,first ischemic stroke,Increase,6.0,11,Final,Stenosis,Ischemic stroke1.0
+,atherosclerosis,vulnerable plaques,Increase,3.0,11,Final,Atherosclerosis,Complicated atheromatous plaque
+"Sun et al., Sci Rep 2016 doi: 10.1038/srep33246",vulnerable plaques,first ischemic stroke,Increase,6.0,11,Final,Complicated atheromatous plaque,Ischemic stroke1.0
+"Famakin et al., Stroke 2009 doi: 10.1161/STROKEAHA.108.546150",vulnerable plaques,white matter hyperintensities (MRI),Increase,6.84,11,Final,Complicated atheromatous plaque,Leuko-araiosis
+"myocardial infarction, coronary heart disease, cardiac failure Folsom et al., Stroke 2013",endarterectomy,vulnerable plaques,Decrease,1.0,11,Final,Endarterectomy,Complicated atheromatous plaque
+44:961-967,endarterectomy,vessel stenosis/occlusion,Decrease,2.0,11,Final,Endarterectomy,Stenosis
+"myocardial infarction, coronary heart disease, cardiac failure",kidney function,first ischemic stroke,Increase,3.0,11,Final,Finding of renal function,Ischemic stroke1.0
+"Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",kidney function,white matter hyperintensities (MRI),Increase,5.0,11,Final,Finding of renal function,Leuko-araiosis
+,metabolic syndrom,kidney function,Increase,6.0,11,Final,Metabolic syndrome X,Finding of renal function
+"Adams et al., Stroke 1993",enlarged perivascular spaces,first ischemic stroke,Increase,4.0,11,Final,Structure of perivascular space,Ischemic stroke1.0
+24:35-41,microbleeds,white matter hyperintensities (MRI),Increase,6.0,11,Final,Silent micro-hemorrhage of brain,Leuko-araiosis
+,preeclampsia/eclampsia,first ischemic stroke,Increase,6.84,11,Final,Pre-eclampsia,Ischemic stroke1.0
+"Kassem et al., Ann Transl Med 2020 doi: 10.21037/atm-2020-cass-16",race,first ischemic stroke,Increase,6.68,11,Final,Race,Ischemic stroke1.0
+,preeclampsia/eclampsia,hypertension,Increase,6.0,11,Final,Pre-eclampsia,Hypertensive disorder
+"Cochrane Database Syst Rev. 2020, doi: 10.1002/14651858.CD000515.pub",genetic factors,first ischemic stroke,Increase,5.53,11,Final,Genetic predisposition,Ischemic stroke1.0
+,inflammation,white matter hyperintensities (MRI),Increase,6.13,11,Final,Inflammation,Leuko-araiosis
+"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",infection,first ischemic stroke,Increase,5.2,11,Final,Infectious disease,Ischemic stroke1.0
+"Kim et al., Sci Rep 2019 doi: 10.1038/s41598-019-45109-y",infection,inflammation,Increase,5.42,11,Final,Infectious disease,Inflammation
+,inflammation,coagulopathy,Increase,5.42,11,Final,Inflammation,Blood coagulation disorder
+"Ballerini et al., Neuroimage Clin 2020 doi: 10.1016/j.nicl.2019.102120",coagulopathy,first ischemic stroke,Increase,6.84,11,Final,Blood coagulation disorder,Ischemic stroke1.0
+,first ischemic stroke,second ischemic stroke,Increase,6.39,13,Draft,Ischemic stroke1.0,Ischemic stroke2.0
+,atherosclerosis,first ischemic stroke,Increase,5.0,13,Draft,Atherosclerosis,Ischemic stroke1.0
+,atherosclerosis,second ischemic stroke,Increase,5.0,13,Draft,Atherosclerosis,Ischemic stroke2.0
+,atrial fibrillation,second ischemic stroke,Increase,4.26,13,Draft,Atrial fibrillation,Ischemic stroke2.0
+,atrial fibrillation,first ischemic stroke,Increase,4.26,13,Draft,Atrial fibrillation,Ischemic stroke1.0
+,cancer,first ischemic stroke,Increase,4.08,13,Draft,Malignant neoplasm,Ischemic stroke1.0
+,vaskulitis,first ischemic stroke,Increase,5.2,13,Draft,Vasculitis,Ischemic stroke1.0
+,vaskulitis,second ischemic stroke,Increase,5.2,13,Draft,Vasculitis,Ischemic stroke2.0
+,cancer,second ischemic stroke,Increase,5.2,13,Draft,Malignant neoplasm,Ischemic stroke2.0
+,chemotherapy,first ischemic stroke,Increase,5.2,13,Draft,Chemotherapy,Ischemic stroke1.0
+,chemotherapy,second ischemic stroke,Increase,5.2,13,Draft,Chemotherapy,Ischemic stroke2.0
+,cancer,chemotherapy,Increase,5.2,13,Draft,Malignant neoplasm,Chemotherapy
+,sinus venous thrombosis,first ischemic stroke,Increase,5.2,13,Draft,Cerebral venous sinus thrombosis,Ischemic stroke1.0
+,sinus venous thrombosis,second ischemic stroke,Increase,5.2,13,Draft,Cerebral venous sinus thrombosis,Ischemic stroke2.0
+,age,second ischemic stroke,Increase,5.2,13,Draft,Age factor,Ischemic stroke2.0
+,age,first ischemic stroke,Increase,5.2,13,Draft,Age factor,Ischemic stroke1.0
+,age,atherosclerosis,Increase,5.2,13,Draft,Age factor,Atherosclerosis
+,smoking,atherosclerosis,Increase,5.2,13,Draft,Tobacco smoke,Atherosclerosis
+,smoking,first ischemic stroke,Increase,5.2,13,Draft,Tobacco smoke,Ischemic stroke1.0
+,smoking,second ischemic stroke,Increase,5.2,13,Draft,Tobacco smoke,Ischemic stroke2.0
+,dyslipidemia,second ischemic stroke,Increase,5.2,13,Draft,Dyslipidemia,Ischemic stroke2.0
+,dyslipidemia,first ischemic stroke,Increase,5.2,13,Draft,Dyslipidemia,Ischemic stroke1.0
+,dyslipidemia,atherosclerosis,Increase,5.2,13,Draft,Dyslipidemia,Atherosclerosis
+,diabetes,atherosclerosis,Increase,5.2,13,Draft,Diabetes mellitus,Atherosclerosis
+,diabetes,first ischemic stroke,Increase,5.2,13,Draft,Diabetes mellitus,Ischemic stroke1.0
+,diabetes,second ischemic stroke,Increase,5.2,13,Draft,Diabetes mellitus,Ischemic stroke2.0
+,age,atrial fibrillation,Increase,4.08,13,Draft,Age factor,Atrial fibrillation
+,age,cancer,Increase,4.08,13,Draft,Age factor,Malignant neoplasm
+,female gender,sinus venous thrombosis,Increase,4.08,13,Draft,Male,Cerebral venous sinus thrombosis
+,male gender,first ischemic stroke,Increase,4.08,13,Draft,Male,Ischemic stroke1.0
+,male gender,second ischemic stroke,Increase,4.08,13,Draft,Male,Ischemic stroke2.0
+,pregnancy,sinus venous thrombosis,Increase,4.08,13,Draft,Pregnancy,Cerebral venous sinus thrombosis
+,female gender,pregnancy,Increase,6.84,13,Draft,Male,Pregnancy
+,first ischemic stroke,disability,Increase,6.84,13,Draft,Ischemic stroke1.0,Disability
+,second ischemic stroke,disability,Increase,6.84,13,Draft,Ischemic stroke2.0,Disability
+,cancer,disability,Increase,6.84,13,Draft,Malignant neoplasm,Disability
+,vaskulitis,disability,Increase,6.84,13,Draft,Vasculitis,Disability
+,diabetes,disability,Increase,6.84,13,Draft,Diabetes mellitus,Disability
+,arterial hypertension,atherosclerosis,Increase,5.1,13,Draft,Hypertensive disorder,Atherosclerosis
+,arterial hypertension,first ischemic stroke,Increase,5.1,13,Draft,Hypertensive disorder,Ischemic stroke1.0
+,arterial hypertension,second ischemic stroke,Increase,5.1,13,Draft,Hypertensive disorder,Ischemic stroke2.0
+,arterial hypertension,disability,Increase,5.1,13,Draft,Hypertensive disorder,Disability
+,age,arterial hypertension,Increase,5.1,13,Draft,Age factor,Hypertensive disorder
+,smoking,arterial hypertension,Increase,5.1,13,Draft,Tobacco smoke,Hypertensive disorder
+,pregnancy,diabetes,Increase,5.1,13,Draft,Pregnancy,Diabetes mellitus
+,first ischemic stroke,depression,Increase,5.1,13,Draft,Ischemic stroke1.0,Depressive disorder2.0
+,second ischemic stroke,depression,Increase,5.1,13,Draft,Ischemic stroke2.0,Depressive disorder2.0
+,cancer,depression,Increase,5.1,13,Draft,Malignant neoplasm,Depressive disorder2.0
+,first ischemic stroke,cognitive decline,Increase,5.1,13,Draft,Ischemic stroke1.0,Impaired cognition
+,second ischemic stroke,cognitive decline,Increase,5.1,13,Draft,Ischemic stroke2.0,Impaired cognition
+,second ischemic stroke,qualitiy of life,Decrease,5.1,13,Draft,Ischemic stroke2.0,Quality of life satisfaction
+,first ischemic stroke,qualitiy of life,Decrease,5.1,13,Draft,Ischemic stroke1.0,Quality of life satisfaction
+,depression,qualitiy of life,Decrease,5.1,13,Draft,Depressive disorder2.0,Quality of life satisfaction
+,diabetes,qualitiy of life,Decrease,5.1,13,Draft,Diabetes mellitus,Quality of life satisfaction
+,vaskulitis,qualitiy of life,Decrease,5.1,13,Draft,Vasculitis,Quality of life satisfaction
+,disability,qualitiy of life,Decrease,5.1,13,Draft,Disability,Quality of life satisfaction
+,pregnancy,depression,Increase,5.1,13,Draft,Pregnancy,Depressive disorder2.0
+,first ischemic stroke,mobility,Decrease,5.1,13,Draft,Ischemic stroke1.0,Mobility
+,second ischemic stroke,mobility,Decrease,2.65,13,Draft,Ischemic stroke2.0,Mobility
+,disability,mobility,Decrease,2.65,13,Draft,Disability,Mobility
+,depression,mobility,Decrease,2.65,13,Draft,Depressive disorder2.0,Mobility
+,cancer,qualitiy of life,Decrease,2.65,13,Draft,Malignant neoplasm,Quality of life satisfaction
+,age,mobility,Decrease,3.0,13,Draft,Age factor,Mobility
+,pregnancy,mobility,Decrease,0.57,13,Draft,Pregnancy,Mobility
+,endocarditis,first ischemic stroke,Increase,0.57,13,Draft,Endocarditis,Ischemic stroke1.0
+,endocarditis,second ischemic stroke,Increase,0.57,13,Draft,Endocarditis,Ischemic stroke2.0
+,endocarditis,second ischemic stroke,Increase,5.1,13,Draft,Endocarditis,Ischemic stroke2.0
+,endocarditis,disability,Increase,5.1,13,Draft,Endocarditis,Disability
+,persistent foramen ovale,first ischemic stroke,Increase,5.64,13,Draft,Patent foramen ovale,Ischemic stroke1.0
+,persistent foramen ovale,second ischemic stroke,Increase,5.64,13,Draft,Patent foramen ovale,Ischemic stroke2.0
+,hypercoagulability,first ischemic stroke,Increase,4.61,13,Draft,Hypercoagulability state,Ischemic stroke1.0
+,hypercoagulability,second ischemic stroke,Increase,4.61,13,Draft,Hypercoagulability state,Ischemic stroke2.0
+,hypercoagulability,sinus venous thrombosis,Increase,4.61,13,Draft,Hypercoagulability state,Cerebral venous sinus thrombosis
+,cancer,hypercoagulability,Increase,4.61,13,Draft,Malignant neoplasm,Hypercoagulability state
+,pregnancy,hypercoagulability,Increase,4.61,13,Draft,Pregnancy,Hypercoagulability state
+,smoking,hypercoagulability,Increase,3.0,13,Draft,Tobacco smoke,Hypercoagulability state
+,malformations,first ischemic stroke,Increase,1.4,13,Draft,Congenital malformation,Ischemic stroke1.0
+,malformations,second ischemic stroke,Increase,1.4,13,Draft,Congenital malformation,Ischemic stroke2.0
+,endovascular interventions,first ischemic stroke,Increase,5.88,13,Draft,Percutaneous transluminal procedure on blood vessel,Ischemic stroke1.0
+,endovascular interventions,second ischemic stroke,Increase,5.88,13,Draft,Percutaneous transluminal procedure on blood vessel,Ischemic stroke2.0
+,atherosclerosis,endovascular interventions,Increase,5.88,13,Draft,Atherosclerosis,Percutaneous transluminal procedure on blood vessel
+,endocarditis,endovascular interventions,Increase,1.69,13,Draft,Endocarditis,Percutaneous transluminal procedure on blood vessel
+,pregnancy,chemotherapy,Decrease,3.14,13,Draft,Pregnancy,Chemotherapy
+,neurosurgery,first ischemic stroke,Increase,3.14,13,Draft,Neurosurgery,Ischemic stroke1.0
+,neurosurgery,second ischemic stroke,Increase,4.34,13,Draft,Neurosurgery,Ischemic stroke2.0
+,cancer,neurosurgery,Increase,4.34,13,Draft,Malignant neoplasm,Neurosurgery
+,malformations,neurosurgery,Increase,3.14,13,Draft,Congenital malformation,Neurosurgery
+,migraine,ischemic stroke,Increase,4.17,14,Draft,Migraine,Ischemic stroke
+,migraine,smoking,Decrease,4.52,14,Draft,Migraine,Tobacco smoke
+,obesity,ischemic stroke,Increase,6.0,14,Draft,Obesity,Ischemic stroke
+,hypertension,large artery atherosclerosis,Increase,6.0,14,Draft,Hypertensive disorder,Atherosclerosis of artery
+,obesity,hypertension,Increase,6.84,14,Draft,Obesity,Hypertensive disorder
+,low blood pressure,decreased systemic perfusion,Increase,6.84,14,Draft,Low blood pressure,Hypoperfusion
+,heart failure,decreased systemic perfusion,Increase,6.84,14,Draft,Heart failure,Hypoperfusion
+,loss of blood,decreased systemic perfusion,Increase,6.84,14,Draft,Hemorrhage,Hypoperfusion
+,reduction or complete blockage of blood flow,ischemic stroke,Increase,6.84,14,Draft,Decreased vascular flow,Ischemic stroke
+,decreased systemic perfusion,reduction or complete blockage of blood flow,Increase,6.84,14,Draft,Hypoperfusion,Decreased vascular flow
+,severe stenosis,reduction or complete blockage of blood flow,Increase,6.84,14,Draft,Stenosis,Decreased vascular flow
+,occlusion of a blood vessel,reduction or complete blockage of blood flow,Increase,6.84,14,Draft,Surgical occlusion of blood vessel,Decreased vascular flow
+,nonatherosclerotic abnormalities,ischemic stroke,Increase,6.84,14,Draft,,Ischemic stroke
+,arterial dissection,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,Dissection of artery,
+,COVID-19,ischemic stroke,Increase,6.84,14,Draft,COVID-19,Ischemic stroke
+,fibromuscular dysplasia,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,Fibromuscular dysplasia,
+,vasculitis,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,Vasculitis,
+,Moyamoya disease,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,Moyamoya disease,
+,sickle cell disease arteriopathy,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,Sickling disorder due to hemoglobin S,
+,ischemic stroke,production of reactive oxygen species,Increase,6.84,14,Draft,Ischemic stroke,
+,production of reactive oxygen species,DNA damage,Increase,6.84,14,Draft,,DNA damage
+,ischemic stroke,loss of brain structural integrity,Increase,6.84,14,Draft,Ischemic stroke,
+,female sex steroids,migraine,Increase,6.84,14,Draft,Female sex hormones - serum level - finding,Migraine
+,female sex steroids,COVID-19,Decrease,3.37,14,Draft,Female sex hormones - serum level - finding,COVID-19
+,large artery atherosclerosis,ischemic stroke,Increase,6.84,14,Draft,Atherosclerosis of artery,Ischemic stroke
+,ageing,DNA damage,Increase,6.84,14,Draft,Age factor,DNA damage
+,ageing,migraine,Decrease,6.84,14,Draft,Age factor,Migraine
+,ageing,hypertension,Increase,6.84,14,Draft,Age factor,Hypertensive disorder
+,production of reactive oxygen species,endothelial dysfunction,Increase,6.84,14,Draft,,Cardiac syndrome X
+,hypercholesterolemia,endothelial dysfunction,Increase,6.84,14,Draft,Hypercholesterolemia,Cardiac syndrome X
+,smoking,endothelial dysfunction,Increase,6.84,14,Draft,Tobacco smoke,Cardiac syndrome X
+,diabetes mellitus,endothelial dysfunction,Increase,6.84,14,Draft,Diabetes mellitus,Cardiac syndrome X
+,hypertension,endothelial dysfunction,Increase,6.84,14,Draft,Hypertensive disorder,Cardiac syndrome X
+"Harrison Internal Med., 2020",Embolism,First Ischemic Stroke,Increase,6.0,16,Final,Embolism,Ischemic stroke1.0
+"Harrison Internal Med., 2020",Thrombosis,First Ischemic Stroke,Increase,4.61,16,Final,Thrombosis,Ischemic stroke1.0
+"Harrison Internal Med., 2020",Lacunes,Thrombosis,Increase,4.61,16,Final,Lacunar infarction,Thrombosis
+"Harrison Internal Med., 2020",Atrial Fibrillation,Embolism,Increase,4.61,16,Final,Atrial fibrillation,Embolism
+"Harrison Internal Med., 2020",Atherosclerosis,Thrombosis,Increase,4.61,16,Final,Atherosclerosis,Thrombosis
+"Harrison Internal Med., 2020",Male Sex,Atherosclerosis,Increase,4.61,16,Final,Male,Atherosclerosis
+"Harrison Internal Med., 2020",Age,Atherosclerosis,Increase,4.61,16,Final,Age factor,Atherosclerosis
+"Harrison Internal Med., 2020",Smoking,Atherosclerosis,Increase,4.61,16,Final,Tobacco smoke,Atherosclerosis
+"Harrison Internal Med., 2020",Diabetes,Atherosclerosis,Increase,4.61,16,Final,Diabetes mellitus,Atherosclerosis
+"Harrison Internal Med., 2020",Dyslipidemia,Atherosclerosis,Increase,4.0,16,Final,Dyslipidemia,Atherosclerosis
+"Harrison Internal Med., 2020",Hypertension,Atherosclerosis,Increase,4.61,16,Final,Hypertensive disorder,Atherosclerosis
+"Harrison Internal Med., 2020",Arterial Dissection,First Ischemic Stroke,Increase,4.61,16,Final,Dissection of artery,Ischemic stroke1.0
+"Harrison Internal Med., 2020",Hypertension,Lacunes,Increase,4.61,16,Final,Hypertensive disorder,Lacunar infarction
+"Harrison Internal Med., 2020",Age,Lacunes,Increase,4.61,16,Final,Age factor,Lacunar infarction
+"Harrison Internal Med., 2020",Hypercoagulopathy,Thrombosis,Increase,4.61,16,Final,Blood coagulation disorder,Thrombosis
+"Harrison Internal Med., 2020",Vasculitis,First Ischemic Stroke,Increase,4.61,16,Final,Vasculitis,Ischemic stroke1.0
+,Cardiac Remodelling,Atrial Fibrillation,Increase,4.61,16,Final,,Atrial fibrillation
+,Age,Cardiac Remodelling,Increase,4.61,16,Final,Age factor,
+,Hypertension,Cardiac Remodelling,Increase,4.61,16,Final,Hypertensive disorder,
+,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61,16,Final,,
+,Atherosclerosis,Other Cardiac Pathologies,Increase,4.61,16,Final,Atherosclerosis,
+"Harrison Internal Med., 2020",Atherosclerosis,Myocardial Infarction,Increase,4.61,16,Final,Atherosclerosis,Myocardial infarction
+,Myocardial Infarction,Cardiac Remodelling,Increase,4.61,16,Final,Myocardial infarction,
+"Harrison Internal Med., 2020",Second-hand Smoking,Atherosclerosis,Increase,4.61,16,Final,Second hand cigarette smoke,Atherosclerosis
+,Insulin Resistance / Impaired glucose metabolism,Diabetes,Increase,4.0,16,Final,Insulin resistance,Diabetes mellitus
+"Kernan, 2002",Insulin Resistance / Impaired glucose metabolism,Atherosclerosis,Increase,4.0,16,Final,Insulin resistance,Atherosclerosis
+"Kernan, 2002",Age,Insulin Resistance / Impaired glucose metabolism,Increase,4.0,16,Final,Age factor,Insulin resistance
+,Physical Inactivity,Obesity,Decrease,4.61,16,Final,Exercise,Obesity
+Kernan et al. 2002,Insulin Resistance / Impaired glucose metabolism,Hypertension,Increase,4.0,16,Final,Insulin resistance,Hypertensive disorder
+Kernan et al 2002,Insulin Resistance / Impaired glucose metabolism,Dyslipidemia,Increase,2.0,16,Final,Insulin resistance,Dyslipidemia
+Kernan et al 2002,Insulin Resistance / Impaired glucose metabolism,Inflammation,Increase,4.0,16,Final,Insulin resistance,Inflammation
+"Hansson , 2006",Inflammation,Atherosclerosis,Increase,4.17,16,Final,Inflammation,Atherosclerosis
+Kahn et. al 2006,Obesity,Insulin Resistance / Impaired glucose metabolism,Increase,4.0,16,Final,Obesity,Insulin resistance
+Kahn et. al 2006,Obesity,Inflammation,Increase,4.17,16,Final,Obesity,Inflammation
+"Hering, 2015",Psychogenic Stress,Sympathetic activation,Increase,0.51,16,Final,Stress,Sympathetic nervous system structure
+"Hering, 2015",Sympathetic activation,Thrombosis,Increase,0.51,16,Final,Sympathetic nervous system structure,Thrombosis
+Redline et al 2011,Sleep disturbances / Obstructive Sleep Apnea,Hypertension,Increase,0.51,16,Final,Sleep apnea,Hypertensive disorder
+Redline et al 2011,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism,Increase,2.68,16,Final,Sleep apnea,Insulin resistance
+Redline et al 2011,Sleep disturbances / Obstructive Sleep Apnea,Inflammation,Increase,1.4,16,Final,Sleep apnea,Inflammation
+,Psychogenic Stress,Smoking,Increase,2.68,16,Final,Stress,Tobacco smoke
+,Insulin Resistance / Impaired glucose metabolism,Prediabetes,Increase,2.68,16,Final,Insulin resistance,Prediabetes
+Fonville et al. 2014,Prediabetes,Diabetes,Increase,2.68,16,Final,Prediabetes,Diabetes mellitus
+,Hypertension,Arterial Dissection,Increase,2.68,16,Final,Hypertensive disorder,Dissection of artery
+,Smoking,Hypertension,Increase,2.68,16,Final,Tobacco smoke,Hypertensive disorder
+American Heart Association 2014,Antihypertensive Therapy,Hypertension,Decrease,4.61,16,Final,Antihypertensive therapy,Hypertensive disorder
+American Heart Association 2014,Statin Therapy,Dyslipidemia,Decrease,4.61,16,Final,Administration of prophylactic statin,Dyslipidemia
+Hansson 2006,Statin Therapy,Inflammation,Decrease,3.44,16,Final,Administration of prophylactic statin,Inflammation
+Kernan et al 2002,Weight Loss and Aerobic Exercise,Insulin Resistance / Impaired glucose metabolism,Decrease,3.44,16,Final,Weight loss,Insulin resistance
+American Heart Association 2014,Dietary salt restriction,Hypertension,Decrease,3.44,16,Final,Low sodium diet,Hypertensive disorder
+American Heart Association 2014,Weight Loss and Aerobic Exercise,Physical Inactivity,Increase,2.68,16,Final,Weight loss,Exercise
+American Heart Association 2014,Healthy Diet,Obesity,Decrease,2.68,16,Final,Healthy diet,Obesity
+American Heart Association 2014,Glycemic control,Diabetes,Decrease,2.68,16,Final,Blood glucose management,Diabetes mellitus
+Kernan et al 2002,Thiazolidindione,Dyslipidemia,Decrease,2.25,16,Final,Thiazolidinedione,Dyslipidemia
+Kernan et al 2002,Thiazolidindione,Hypertension,Decrease,2.25,16,Final,Thiazolidinedione,Hypertensive disorder
+Kernan et al 2002,Thiazolidindione,Insulin Resistance / Impaired glucose metabolism,Decrease,2.25,16,Final,Thiazolidinedione,Insulin resistance
+American Diabetes Association 2020,SGLT2 Inhibitors,Diabetes,Decrease,2.25,16,Final,Sodium glucose cotransporter subtype 2 inhibitor,Diabetes mellitus
+American Diabetes Association 2020,GLP1 Receptor Agonists,Diabetes,Decrease,2.25,16,Final,Glucagon-like peptide 1 receptor agonist,Diabetes mellitus
+American Heart Association 2014,CPAP Treatment,Sleep disturbances / Obstructive Sleep Apnea,Decrease,2.25,16,Final,Continuous positive airway pressure ventilation treatment,Sleep apnea
+American Heart Association 2014,Smoking Cessation,Smoking,Decrease,2.25,16,Final,Smoking cessation,Tobacco smoke
+American Heart Association 2014,Carotid Endarterectomy / Angioplasty / stenting,Atherosclerosis,Decrease,3.07,16,Final,Carotid endarterectomy,Atherosclerosis
+American Heart Association 2014,Mono-/Dual Antiplatelet Therapy,Thrombosis,Decrease,3.0,16,Final,Platelet aggregation inhibitor therapy,Thrombosis
+American Heart Association 2014,Anticoagulation Therapy,Embolism,Decrease,3.07,16,Final,Anticoagulant therapy,Embolism
+American Heart Association 2014,Mono-/Dual Antiplatelet Therapy,Arterial Dissection,Decrease,2.68,16,Final,Platelet aggregation inhibitor therapy,Dissection of artery
+American Heart Association 2014,Anticoagulation Therapy,Arterial Dissection,Decrease,2.68,16,Final,Anticoagulant therapy,Dissection of artery
+American Heart Association 2014,Anticoagulation Therapy,Hypercoagulopathy,Decrease,2.68,16,Final,Anticoagulant therapy,Blood coagulation disorder
+Harrison internal medicine 2020,Statin Therapy,Thrombosis,Decrease,2.68,16,Final,Administration of prophylactic statin,Thrombosis
+Harrison internal medicine 2020,Statin Therapy,Hypertension,Decrease,2.68,16,Final,Administration of prophylactic statin,Hypertensive disorder
+Sundell 2008 & mostofsky 2016,Low-Moderate Alcohol Consumption,Atherosclerosis,Decrease,2.0,16,Final,Decreased alcohol consumption,Atherosclerosis
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Hypertension,Increase,2.0,16,Final,Alcohol intake above recommended sensible limits,Hypertensive disorder
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Other Cardiac Pathologies,Increase,2.0,16,Final,Alcohol intake above recommended sensible limits,
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Atrial Fibrillation,Increase,2.0,16,Final,Alcohol intake above recommended sensible limits,Atrial fibrillation
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Thrombosis,Increase,2.0,16,Final,Alcohol intake above recommended sensible limits,Thrombosis
+American Heart Association 2014,Reducing Alcohol Consumption,Heavy Alcohol Consumption,Decrease,2.0,16,Final,Decreased alcohol consumption,Alcohol intake above recommended sensible limits
+,First Ischemic Stroke,Neurological Sequalae,Increase,2.68,16,Final,Ischemic stroke1.0,Sequelae of neurological disorders
+,First Ischemic Stroke,Death,Increase,2.68,16,Final,Ischemic stroke1.0,Death
+,First Ischemic Stroke,Recurrent Stroke,Increase,2.68,16,Final,Ischemic stroke1.0,Ischemic stroke2.0
+Dirnagl Review,first stroke,cerebral inflammation,Increase,6.0,17,Draft,Ischemic stroke1.0,Encephalitis
+Dirnagl Review,systemic inflammation,first stroke,Increase,6.84,17,Draft,Inflammation,Ischemic stroke1.0
+Meisel Review NEJM/Nature,first stroke,peripheral immune competence,Decrease,6.84,17,Draft,Ischemic stroke1.0,
+,first stroke,large infarction,Increase,6.84,19,Draft,Ischemic stroke1.0,Infarct
+,first stroke,pneumonia,Increase,6.84,19,Draft,Ischemic stroke1.0,Pneumonia
+,large infarction,pneumonia,Increase,6.84,19,Draft,Infarct,Pneumonia
+,pneumonia,death,Increase,6.84,19,Draft,Pneumonia,Death
+,first stroke,death,Increase,6.84,19,Draft,Ischemic stroke1.0,Death
+,first stroke,second stroke,Increase,6.84,19,Draft,Ischemic stroke1.0,Ischemic stroke2.0
+,second stroke,pneumonia,Increase,6.84,19,Draft,Ischemic stroke2.0,Pneumonia
+,second stroke,death,Increase,6.84,19,Draft,Ischemic stroke2.0,Death
+,first stroke,depression,Increase,6.84,19,Draft,Ischemic stroke1.0,Depressive disorder2.0
+,depression,immobility,Decrease,6.84,19,Draft,Depressive disorder2.0,Mobility2.0
+,immobility,pneumonia,Decrease,6.84,19,Draft,Mobility2.0,Pneumonia
+,first stroke,immobility,Decrease,6.84,19,Draft,Ischemic stroke1.0,Mobility2.0
+,immobility,death,Decrease,6.84,19,Draft,Mobility2.0,Death
+,first stroke,cognitive decline,Increase,6.84,19,Draft,Ischemic stroke1.0,Impaired cognition
+,pneumonia,cognitive decline,Increase,5.1,19,Draft,Pneumonia,Impaired cognition
+,cognitive decline,death,Increase,2.79,19,Draft,Impaired cognition,Death
+,second stroke,cognitive decline,Increase,2.79,19,Draft,Ischemic stroke2.0,Impaired cognition
+,hypertension,first stroke,Increase,6.84,19,Draft,Hypertensive disorder,Ischemic stroke1.0
+,hypertension,second stroke,Increase,6.84,19,Draft,Hypertensive disorder,Ischemic stroke2.0
+,hypertension,cognitive decline,Increase,5.31,19,Draft,Hypertensive disorder,Impaired cognition
+,first stroke,infarct localisation,Increase,6.84,19,Draft,Ischemic stroke1.0,Lesion
+,infarct localisation,cognitive decline,Increase,6.84,19,Draft,Lesion,Impaired cognition
+,infarct localisation,immunodepression,Increase,6.84,19,Draft,Lesion,Immunosuppression
+,immunodepression,pneumonia,Increase,6.84,19,Draft,Immunosuppression,Pneumonia
+,immunodepression,cognitive decline,Decrease,0.51,19,Draft,Immunosuppression,Impaired cognition
+,diabetes mellitus,second stroke,Increase,6.84,19,Draft,Diabetes mellitus,Ischemic stroke2.0
+,diabetes mellitus,first stroke,Increase,6.84,19,Draft,Diabetes mellitus,Ischemic stroke1.0
+,diabetes mellitus,cognitive decline,Increase,4.61,19,Draft,Diabetes mellitus,Impaired cognition
+,first stroke,spasticity,Increase,6.84,19,Draft,Ischemic stroke1.0,Spasticity
+,second stroke,spasticity,Increase,6.84,19,Draft,Ischemic stroke2.0,Spasticity
+,spasticity,immobility,Decrease,6.84,19,Draft,Spasticity,Mobility2.0
+,spasticity,pain,Increase,6.84,19,Draft,Spasticity,Pain
+,pain,immobility,Decrease,6.84,19,Draft,Pain,Mobility2.0
+,female,large infarction,Decrease,4.8,19,Draft,Male,Infarct
+,depression,female,Decrease,4.8,19,Draft,Depressive disorder2.0,Male
+,large infarction,severe disability,Increase,6.84,19,Draft,Infarct,Disability
+,severe disability,immobility,Decrease,6.84,19,Draft,Disability,Mobility2.0
+,first stroke,dysphagia,Increase,6.84,19,Draft,Ischemic stroke1.0,Dysphagia
+,second stroke,dysphagia,Increase,6.84,19,Draft,Ischemic stroke2.0,Dysphagia
+,dysphagia,pneumonia,Increase,6.84,19,Draft,Dysphagia,Pneumonia
+,dysphagia,malnutrition,Increase,6.84,19,Draft,Dysphagia,Nutritional disorder
+,first stroke,cachexia,Increase,4.8,19,Draft,Ischemic stroke1.0,Cachexia
+,second stroke,cachexia,Increase,4.34,19,Draft,Ischemic stroke2.0,Cachexia
+,malnutrition,cachexia,Increase,6.84,19,Draft,Nutritional disorder,Cachexia
+,cachexia,death,Increase,4.8,19,Draft,Cachexia,Death
+,malnutrition,death,Increase,3.14,19,Draft,Nutritional disorder,Death
+,immobility,reduced QoL/ADL,Increase,6.84,19,Draft,Mobility2.0,Quality of life satisfaction
+,spasticity,reduced QoL/ADL,Decrease,6.84,19,Draft,Spasticity,Quality of life satisfaction
+,dysphagia,reduced QoL/ADL,Decrease,6.84,19,Draft,Dysphagia,Quality of life satisfaction
+,pain,reduced QoL/ADL,Decrease,6.84,19,Draft,Pain,Quality of life satisfaction
+,cognitive decline,reduced QoL/ADL,Decrease,6.84,19,Draft,Impaired cognition,Quality of life satisfaction
+,first stroke,reduced QoL/ADL,Decrease,6.84,19,Draft,Ischemic stroke1.0,Quality of life satisfaction
+,second stroke,reduced QoL/ADL,Decrease,6.84,19,Draft,Ischemic stroke2.0,Quality of life satisfaction
+,second stroke,aphasia,Increase,6.84,19,Draft,Ischemic stroke2.0,Aphasia
+,first stroke,aphasia,Increase,6.84,19,Draft,Ischemic stroke1.0,Aphasia
+,aphasia,reduced QoL/ADL,Decrease,6.84,19,Draft,Aphasia,Quality of life satisfaction
+,age,first stroke,Increase,6.84,19,Draft,Age factor,Ischemic stroke1.0
+,age,cognitive decline,Increase,6.84,19,Draft,Age factor,Impaired cognition
+,age,pneumonia,Increase,6.84,19,Draft,Age factor,Pneumonia
+,immobility before stroke,first stroke,Increase,6.0,19,Draft,Mobility1.0,Ischemic stroke1.0
+,immobility,second stroke,Decrease,6.0,19,Draft,Mobility2.0,Ischemic stroke2.0
+,depression before stroke,first stroke,Increase,6.84,19,Draft,Depressive disorder1.0,Ischemic stroke1.0
+,pneumonia,antibiotics,Increase,6.84,19,Draft,Pneumonia,Antibiotic therapy
+,antibiotics,death,Decrease,6.84,19,Draft,Antibiotic therapy,Death
+,depression,antidepressants,Increase,6.84,19,Draft,Depressive disorder2.0,Antidepressant therapy
+,antidepressants,reduced QoL/ADL,Increase,4.26,19,Draft,Antidepressant therapy,Quality of life satisfaction
+,speech therapy,aphasia,Decrease,6.84,19,Draft,Speech therapy,Aphasia
+,psychotherapy,depression,Decrease,6.84,19,Draft,Psychotherapy,Depressive disorder2.0
+,psychotherapy,cognitive decline,Decrease,2.38,19,Draft,Psychotherapy,Impaired cognition
+,physiotherapy,immobility,Increase,6.84,19,Draft,Physical therapy procedure,Mobility2.0
+,physiotherapy,severe disability,Decrease,6.84,19,Draft,Physical therapy procedure,Disability
+,social work,reduced QoL/ADL,Increase,6.84,19,Draft,Social worker,Quality of life satisfaction
+,secondary prevention,second stroke,Decrease,6.84,19,Draft,Secondary prevention,Ischemic stroke2.0
+,primary prevention,first stroke,Decrease,6.84,19,Draft,Primary prevention,Ischemic stroke1.0
+,physical exercise,first stroke,Decrease,6.84,19,Draft,Exercise,Ischemic stroke1.0
+,physical exercise,second stroke,Decrease,6.84,19,Draft,Exercise,Ischemic stroke2.0
+,physical exercise,cognitive decline,Decrease,6.84,19,Draft,Exercise,Impaired cognition
+,care giving,death,Decrease,4.08,19,Draft,Care provision regime,Death
+,social work,care giving,Increase,3.07,19,Draft,Social worker,Care provision regime
+,multimodal pain therapy,pain,Decrease,6.84,19,Draft,Pain management,Pain
+,botolinum toxin,spasticity,Decrease,6.84,19,Draft,Clostridium botulinum toxin,Spasticity
+,cognitive training,cognitive decline,Decrease,5.0,19,Draft,Cognitive skills training,Impaired cognition
+Christoph,hypertension,first ischemic stroke,Increase,6.84,20,Draft,Hypertensive disorder,Ischemic stroke1.0
+Christoph,hypertension,second ischemic stroke,Increase,6.84,20,Draft,Hypertensive disorder,Ischemic stroke2.0
+Christoph,first ischemic stroke,second ischemic stroke,Increase,6.84,20,Draft,Ischemic stroke1.0,Ischemic stroke2.0
+Christoph,first ischemic stroke,death,Increase,6.84,20,Draft,Ischemic stroke1.0,Death
+Christoph,second ischemic stroke,death,Increase,6.84,20,Draft,Ischemic stroke2.0,Death
+Christoph,aging,recovery level,Decrease,6.84,20,Draft,Age factor,Postprocedural recovery status
+Christoph,aging,death,Increase,6.84,20,Draft,Age factor,Death
+Christoph,aging,first ischemic stroke,Increase,6.84,20,Draft,Age factor,Ischemic stroke1.0
+Christoph,aging,second ischemic stroke,Increase,6.84,20,Draft,Age factor,Ischemic stroke2.0
+Christoph,second ischemic stroke,recovery level,Decrease,6.84,20,Draft,Ischemic stroke2.0,Postprocedural recovery status
+,first ischemic stroke,recovery level,Decrease,2.68,20,Draft,Ischemic stroke1.0,Postprocedural recovery status
+,B-cell infiltration,cognition,Increase,2.68,20,Draft,,Impaired cognition
+,aging,cognition,Increase,6.84,20,Draft,Age factor,Impaired cognition
+,hypertension,cognition,Increase,4.08,20,Draft,Hypertensive disorder,Impaired cognition
+,first ischemic stroke,cognition,Increase,2.06,20,Draft,Ischemic stroke1.0,Impaired cognition
+,second ischemic stroke,cognition,Increase,6.84,20,Draft,Ischemic stroke2.0,Impaired cognition
+,systemic IL6,recovery level,Decrease,6.0,20,Draft,Interleukin-6,Postprocedural recovery status
+,brain IL6_time1,recovery level,Increase,6.0,20,Draft,Interleukin-61.0,Postprocedural recovery status
+,systemic IL6,second ischemic stroke,Increase,6.84,20,Draft,Interleukin-6,Ischemic stroke2.0
+,systemic IL6,second ischemic stroke,Increase,6.84,20,Draft,Interleukin-6,Ischemic stroke2.0
+,systemic IL6,first ischemic stroke,Increase,6.84,20,Draft,Interleukin-6,Ischemic stroke1.0
+,collateralization,stroke volume,Increase,6.84,20,Draft,,Stroke volume
+,first ischemic stroke,hemispheric atrophy,Increase,6.84,20,Draft,Ischemic stroke1.0,Cerebral atrophy
+,second ischemic stroke,hemispheric atrophy,Increase,6.84,20,Draft,Ischemic stroke2.0,Cerebral atrophy
+,hypertension,hemispheric atrophy,Increase,3.68,20,Draft,Hypertensive disorder,Cerebral atrophy
+,aging,hemispheric atrophy,Increase,6.84,20,Draft,Age factor,Cerebral atrophy
+,endothelial proliferation,recovery level,Increase,6.84,20,Draft,,Postprocedural recovery status
+,endothelial proliferation,blood brain barrier integrity,Decrease,6.84,20,Draft,,Blood-brain barrier
+,blood brain barrier integrity,B-cell infiltration,Increase,6.84,20,Draft,Blood-brain barrier,
+,microglial proliferation,neuronal survival,Decrease,6.84,20,Draft,,
+,brain IL6_time2,recovery level,Decrease,2.68,20,Draft,Interleukin-62.0,Postprocedural recovery status
+,astrocytic proliferation,recovery level,Increase,2.68,20,Draft,Gliosis,Postprocedural recovery status
+,astrocytic proliferation,neuronal survival,Increase,2.68,20,Draft,Gliosis,
+,endothelial proliferation,neuronal survival,Increase,5.2,20,Draft,,
+,collateralization,first ischemic stroke,Decrease,5.2,20,Draft,,Ischemic stroke1.0
+,collateralization,second ischemic stroke,Decrease,5.2,20,Draft,,Ischemic stroke2.0
