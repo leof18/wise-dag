@@ -1,0 +1,15 @@
+Entry ID,Author,Exposure,Outcome,Direction,Strength,ID,Status,Exposure_Standardized,Outcome_Standardized
+8,,BMI,Diabetes,Increase,4.0,1,Final,Body mass index,Diabetes mellitus
+211,,diabetes,BMI,Increase,4.52,6,Final,Diabetes mellitus,Body mass index
+230,,FIRST ISCHEMIC STROKE,depression,Increase,4.61,6,Final,Ischemic stroke1.0,Depressive disorder2.0
+232,,FIRST ISCHEMIC STROKE,infection,Increase,3.22,6,Final,Ischemic stroke1.0,Infectious disease
+287,,occurence of myocardial infarction,first-ever ischemic stroke occurence,Increase,4.17,7,Final,Myocardial infarction,Ischemic stroke1.0
+311,,BMI,diabetes mellitus,Increase,2.68,7,Final,Body mass index,Diabetes mellitus
+401,,BMI,diabetes,Increase,2.68,9,Final,Body mass index,Diabetes mellitus
+405,Touzé et al. (2005),first ischemic stroke,myocardial infarction,Increase,1.0,9,Final,Ischemic stroke1.0,Myocardial infarction
+465,in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,depression,first ischemic stroke,Increase,3.0,10,Final,Depressive disorder2.0,Ischemic stroke1.0
+509,"Khanevsky et al., 2019",female sex,depression,Increase,4.52,10,Final,Male,Depressive disorder2.0
+590,"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",infection,first ischemic stroke,Increase,5.2,11,Final,Infectious disease,Ischemic stroke1.0
+639,,first ischemic stroke,depression,Increase,5.1,13,Draft,Ischemic stroke1.0,Depressive disorder2.0
+801,,first stroke,depression,Increase,6.84,19,Draft,Ischemic stroke1.0,Depressive disorder2.0
+827,,depression,female,Decrease,4.8,19,Draft,Depressive disorder2.0,Male
