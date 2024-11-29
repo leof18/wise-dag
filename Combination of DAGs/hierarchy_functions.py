@@ -1,6 +1,10 @@
 import numpy as np
 import networkx as nx
 from itertools import combinations
+from transformers import AutoTokenizer, AutoModel
+import torch
+from sklearn.manifold import TSNE
+import plotly.graph_objects as go
 
 
 def get_unique_coded_terms(dag_df):
@@ -143,6 +147,7 @@ def create_SNOMED_CT_graph_based_on_terms(my_terms, concept_df, concept_relation
 
     return pruned_graph
 
+
 def find_lca_and_distance(pruned_graph, term1, term2):
     """
     Finds the least common ancestor (LCA) and the total distance between two terms in a directed graph. 
@@ -227,3 +232,143 @@ def compute_lcas_and_distances(my_terms, pruned_graph):
 
     return lcas, distances
 
+
+def graph_distance_matrix_in_3d(distance_matrix, terms, title="3D Distance Matrix Visualization"):
+    """
+    Visualize a distance matrix in 3D using t-SNE and Plotly.
+
+    Args:
+        distance_matrix (pd.DataFrame): A symmetric distance matrix (shape: [n_terms, n_terms]).
+        terms (list): A list of terms corresponding to the rows/columns of the distance matrix.
+        title (str): Title of the plot. Defaults to "3D Distance Matrix Visualization".
+
+    Returns:
+        None: Displays a 3D scatter plot of the terms based on the distance matrix.
+    """
+    # Ensure distance matrix is symmetric
+    assert np.allclose(distance_matrix.values, distance_matrix.values.T), "Distance matrix must be symmetric."
+    
+    # Convert distance matrix to a NumPy array
+    distance_array = distance_matrix.values
+
+    # Perform t-SNE on the distance matrix
+    tsne = TSNE(n_components=3, metric="precomputed", init='random', random_state=42)
+    reduced_points = tsne.fit_transform(distance_array)
+
+    # Extract coordinates for the plot
+    x = reduced_points[:, 0]
+    y = reduced_points[:, 1]
+    z = reduced_points[:, 2]
+
+    # Create a 3D scatter plot
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatter3d(
+        x=x,
+        y=y,
+        z=z,
+        mode='markers+text',
+        marker=dict(
+            size=5,
+            opacity=0.8
+        ),
+        text=terms,
+        textposition="top center"
+    ))
+
+    # Update layout
+    fig.update_layout(
+        title=title,
+        scene=dict(
+            xaxis_title="t-SNE Dimension 1",
+            yaxis_title="t-SNE Dimension 2",
+            zaxis_title="t-SNE Dimension 3"
+        ),
+        margin=dict(l=0, r=0, b=0, t=40)
+    )
+
+    fig.show()
+
+
+def get_embeddings(terms, model_name):
+    """
+    Generate embeddings for a list of terms using a specified model.
+
+    Args:
+        terms (list): A list of strings for which embeddings will be generated.
+        model_name (str): The name of the pre-trained model.
+
+    Returns:
+        dict, list, np.ndarray: A dictionary of term-to-embedding mappings,
+                                 a list of terms,
+                                 and a NumPy matrix of embeddings.
+    """
+    # Load the tokenizer and model
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModel.from_pretrained(model_name)
+
+    # Generate embeddings for the terms
+    embeddings = {}
+    for term in terms:
+        inputs = tokenizer(term, return_tensors="pt", padding=True, truncation=True)
+        with torch.no_grad():
+            outputs = model(**inputs)
+        # Extract [CLS] token embedding
+        cls_embedding = outputs.last_hidden_state[:, 0, :].squeeze(0)
+        embeddings[term] = cls_embedding
+
+    embedding_name = list(embeddings.keys())
+    embedding_matrix = torch.stack(list(embeddings.values())).numpy()
+
+    return embeddings, embedding_name, embedding_matrix
+
+
+def graph_reduced_in_3d(embedding_matrix, term_labels, title="3D Term Visualization"):
+    """
+    Perform 3D t-SNE reduction and plot a 3D scatter plot of embeddings.
+
+    Args:
+        embedding_matrix (numpy.ndarray): The matrix of embeddings to reduce (shape: [n_samples, n_features]).
+        term_labels (list): A list of labels corresponding to the embeddings.
+        title (str): The title for the plot. Defaults to "3D Term Visualization".
+
+    Returns:
+        None: Displays the 3D scatter plot.
+    """
+    # Perform 3D t-SNE
+    tsne = TSNE(n_components=3, random_state=42)
+    reduced_embeddings = tsne.fit_transform(embedding_matrix)
+
+    # Extract coordinates
+    x = reduced_embeddings[:, 0]
+    y = reduced_embeddings[:, 1]
+    z = reduced_embeddings[:, 2]
+
+    # Create a 3D scatter plot
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatter3d(
+        x=x,
+        y=y,
+        z=z,
+        mode='markers+text',
+        marker=dict(
+            size=5,
+            opacity=0.8
+        ),
+        text=term_labels,
+        textposition="top center"
+    ))
+
+    # Update layout
+    fig.update_layout(
+        title=title,
+        scene=dict(
+            xaxis_title="t-SNE Dimension 1",
+            yaxis_title="t-SNE Dimension 2",
+            zaxis_title="t-SNE Dimension 3"
+        ),
+        margin=dict(l=0, r=0, b=0, t=40)
+    )
+
+    fig.show()
