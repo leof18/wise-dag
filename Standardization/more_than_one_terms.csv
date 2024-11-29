@@ -1,9 +1,9 @@
-,term
-0,vessel stenosis/occlusion
-1,Carotid Endarterectomy / Angioplasty / stenting
-2,atherosclerosis/thrombosis
-3,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
-4,Weight Loss and Aerobic Exercise
-5,higher fitness/mobility post
-6,higher fitness/mobility pre
-7,high fat/ high carbonhydrate diet
+term
+vessel stenosis/occlusion
+Carotid Endarterectomy / Angioplasty / stenting
+atherosclerosis/thrombosis
+"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
+Weight Loss and Aerobic Exercise
+higher fitness/mobility post
+higher fitness/mobility pre
+high fat/ high carbonhydrate diet

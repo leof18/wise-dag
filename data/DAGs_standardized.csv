@@ -143,7 +143,9 @@ Broersen et al. 2020,44805124,4310996,Increase,0.94,5,Draft
 ,4322978,4310996,Increase,6.84,5,Draft
 ,4322978,321588,Increase,6.84,5,Draft
 ,4024366,316866,Increase,5.0,5,Draft
+,4027011,316866,Increase,5.0,5,Draft
 ,4024366,321588,Increase,5.0,5,Draft
+,4027011,321588,Increase,5.0,5,Draft
 ,4159131,440383,Increase,3.29,5,Draft
 ,4159131,443432,Increase,3.29,5,Draft
 ,443784,4310996,Increase,6.84,5,Draft
@@ -152,11 +154,15 @@ Broersen et al. 2020,44805124,4310996,Increase,0.94,5,Draft
 ,201820,198124,Increase,6.84,5,Draft
 ,201820,4310996,Increase,6.84,5,Draft
 ,4024366,4159131,Increase,6.84,5,Draft
+,4027011,4159131,Increase,6.84,5,Draft
 ,4024366,201820,Increase,6.84,5,Draft
+,4027011,201820,Increase,6.84,5,Draft
 ,4024366,4208414,Increase,3.68,5,Draft
+,4027011,4208414,Increase,3.68,5,Draft
 ,440383,4249566,Increase,6.0,5,Draft
 ,4225865,440383,Decrease,6.84,5,Draft
 ,44803656,4024366,Decrease,2.93,5,Draft
+,44803656,4027011,Decrease,2.93,5,Draft
 ,4052460,4310996,Increase,6.84,5,Draft
 ,4052460,201820,Increase,6.84,5,Draft
 ,4052460,4225865,Decrease,6.13,5,Draft
@@ -174,6 +180,7 @@ Broersen et al. 2020,44805124,4310996,Increase,0.94,5,Draft
 ,443432,4225865,Decrease,2.45,5,Draft
 ,4119715,443784,Increase,4.17,5,Draft
 ,4024366,4119715,Increase,4.17,5,Draft
+,4027011,4119715,Increase,4.17,5,Draft
 ,4119715,321588,Increase,4.17,5,Draft
 ,316866,4310996,Increase,6.84,5,Draft
 McCarthy 2018,442310,37309626,Increase,6.0,6,Final
@@ -203,6 +210,7 @@ Rizas et al 2017,cardiac autonomic dysbalance,44784217,Increase,4.0,6,Final
 ,444031,4189511,Increase,3.22,6,Final
 ,444031,4021291,Increase,6.0,6,Final
 ,440383,44800078,Decrease,2.68,6,Final
+,440383,4178501,Decrease,2.68,6,Final
 ,440383,4249566,Increase,2.68,6,Final
 Ghadri 2018,440383,40479589,Increase,2.0,6,Final
 ,201820,4249566,Increase,4.52,6,Final
@@ -226,6 +234,7 @@ Scheitz et al 2014,4310996,4021291,Increase,6.0,6,Final
 Diener 2020,4310996,4249566,Increase,6.0,6,Final
 scheitz 2018,4310996,442310,Increase,3.0,6,Final
 ,4310996,44800078,Decrease,4.34,6,Final
+,4310996,4178501,Decrease,4.34,6,Final
 ,4310996,443432,Increase,4.52,6,Final
 Thygesen 2018,4310996,37309626,Increase,6.0,6,Final
 ,4310996,440383,Increase,4.61,6,Final
@@ -236,8 +245,11 @@ Thygesen 2018,4310996,37309626,Increase,6.0,6,Final
 ,4310996,31317,Increase,3.22,6,Final
 scheitz et al 2018,4310996,44784217,Increase,6.0,6,Final
 ,44800078,4310996,Increase,4.34,6,Final
+,4178501,4310996,Increase,4.34,6,Final
 ,44800078,4310996,Decrease,4.34,6,Final
+,4178501,4310996,Decrease,4.34,6,Final
 ,44800078,4249566,Decrease,6.0,6,Final
+,4178501,4249566,Decrease,6.0,6,Final
 ,432867,604179,Increase,6.84,6,Final
 ,432867,4310996,Increase,3.22,6,Final
 ,316866,604179,Increase,6.84,6,Final
@@ -275,6 +287,7 @@ Krause et al 2017,stroke lesion affecting central autonomic network,4021291,Incr
 Scheitz 2018,stroke lesion affecting central autonomic network,4275208,Increase,2.0,6,Final
 Ghadri et at 2018,40479589,4021291,Increase,4.0,6,Final
 scheitz 2014,4021291,44800078,Decrease,3.0,6,Final
+scheitz 2014,4021291,4178501,Decrease,3.0,6,Final
 broersen et al 2020,4021291,443432,Increase,4.0,6,Final
 ,4322978,4310996,Increase,6.84,7,Final
 ,442985,4310996,Increase,6.84,7,Final
@@ -516,10 +529,20 @@ Bushnell et al. 2014,381549,4310996,Increase,3.84,10,Final
 Bushnell et al. 2014,442985,316866,Increase,3.84,10,Final
 Bushnell et al. 2014,4241216,4310996,Increase,4.08,10,Final
 Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,42538946,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,37018765,4310996,Increase,4.08,10,Final
 Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,42538946,4310996,Increase,4.08,10,Final
+Bushnell et al. 2014,37018765,4310996,Increase,4.08,10,Final
 Bushnell et al. 2014,439393,316866,Increase,4.08,10,Final
+Bushnell et al. 2014,42538946,316866,Increase,4.08,10,Final
+Bushnell et al. 2014,37018765,316866,Increase,4.08,10,Final
 Bushnell et al. 2014,439393,201820,Increase,4.08,10,Final
+Bushnell et al. 2014,42538946,201820,Increase,4.08,10,Final
+Bushnell et al. 2014,37018765,201820,Increase,4.08,10,Final
 Bushnell et al. 2014,442985,439393,Increase,6.84,10,Final
+Bushnell et al. 2014,442985,42538946,Increase,6.84,10,Final
+Bushnell et al. 2014,442985,37018765,Increase,6.84,10,Final
 Bushnell et al. 2014,4116678,433736,Decrease,6.84,10,Final
 Bushnell et al. 2014,37150978,433736,Decrease,6.84,10,Final
 Bushnell et al. 2014,42872749,4306655,Increase,6.84,10,Final
@@ -568,16 +591,21 @@ doi: 10.3389/fneur.2019.00238,4010813,4232457,Increase,5.0,11,Final
 "Ryu et al., Brain 2017 doi: 10.1093/brain/aww259",4306703,4232457,Increase,6.0,11,Final
 ,436940,4306703,Increase,6.0,11,Final
 ,4306703,4310996,Increase,6.0,11,Final
+,4231363,4310996,Increase,6.0,11,Final
 ,4024552,4310996,Increase,6.0,11,Final
 120 versus 135 systolic blood pressure,4024552,4232457,Increase,6.54,11,Final
 ,4306703,4217691,Increase,6.0,11,Final
+,4306703,4178903,Increase,6.0,11,Final
 "Power et al., Neurology 2015",4217691,4232457,Increase,6.13,11,Final
+"Power et al., Neurology 2015",4178903,4232457,Increase,6.13,11,Final
 84:841-848,4217691,4310996,Increase,6.0,11,Final
+84:841-848,4178903,4310996,Increase,6.0,11,Final
 ,4306703,4192115,Increase,3.0,11,Final
 "Sun et al., Sci Rep 2016 doi: 10.1038/srep33246",4192115,4310996,Increase,6.0,11,Final
 "Famakin et al., Stroke 2009 doi: 10.1161/STROKEAHA.108.546150",4192115,4232457,Increase,6.84,11,Final
 "myocardial infarction, coronary heart disease, cardiac failure Folsom et al., Stroke 2013",4194238,4192115,Decrease,1.0,11,Final
 44:961-967,4194238,4217691,Decrease,2.0,11,Final
+44:961-967,4194238,4178903,Decrease,2.0,11,Final
 "myocardial infarction, coronary heart disease, cardiac failure",606770,4310996,Increase,3.0,11,Final
 "Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",606770,4232457,Increase,5.0,11,Final
 ,436940,606770,Increase,6.0,11,Final
@@ -760,8 +788,10 @@ American Heart Association 2014,4146455,316866,Decrease,4.61,16,Final
 American Heart Association 2014,4201029,4159131,Decrease,4.61,16,Final
 Hansson 2006,4201029,4119715,Decrease,3.44,16,Final
 Kernan et al 2002,4229881,35622016,Decrease,3.44,16,Final
+Kernan et al 2002,4116678,35622016,Decrease,3.44,16,Final
 American Heart Association 2014,4304917,316866,Decrease,3.44,16,Final
 American Heart Association 2014,4229881,4116678,Increase,2.68,16,Final
+American Heart Association 2014,4116678,4116678,Increase,2.68,16,Final
 American Heart Association 2014,4022846,433736,Decrease,2.68,16,Final
 American Heart Association 2014,4301936,201820,Decrease,2.68,16,Final
 Kernan et al 2002,4159324,4159131,Decrease,2.25,16,Final
@@ -772,6 +802,8 @@ American Diabetes Association 2020,36676288,201820,Decrease,2.25,16,Final
 American Heart Association 2014,4165535,313459,Decrease,2.25,16,Final
 American Heart Association 2014,44804450,4010813,Decrease,2.25,16,Final
 American Heart Association 2014,4283095,4306703,Decrease,3.07,16,Final
+American Heart Association 2014,4178631,4306703,Decrease,3.07,16,Final
+American Heart Association 2014,4050288,4306703,Decrease,3.07,16,Final
 American Heart Association 2014,3655005,4231363,Decrease,3.0,16,Final
 American Heart Association 2014,4056822,4185607,Decrease,3.07,16,Final
 American Heart Association 2014,3655005,46272492,Decrease,2.68,16,Final
@@ -891,7 +923,6 @@ Christoph,4310996,4234656,Decrease,6.84,20,Draft
 ,4310996,443432,Increase,6.84,20,Draft
 ,4150054,4234656,Decrease,6.0,20,Draft
 ,4150054,4234656,Increase,6.0,20,Draft
-,4150054,4310996,Increase,6.84,20,Draft
 ,4150054,4310996,Increase,6.84,20,Draft
 ,4150054,4310996,Increase,6.84,20,Draft
 ,collateralization,4231869,Increase,6.84,20,Draft
