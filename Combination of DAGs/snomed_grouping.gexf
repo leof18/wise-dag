@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2024-11-28">
+  <meta lastmodifieddate="2024-11-29">
     <creator>NetworkX 3.2.1</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
@@ -8,6 +8,16 @@
       <attribute id="0" title="type" type="string" />
     </attributes>
     <nodes>
+      <node id="Migraine" label="Migraine">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Migraine with aura" label="Migraine with aura">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
       <node id="Thrombosis" label="Thrombosis">
         <attvalues>
           <attvalue for="0" value="lca" />
@@ -23,42 +33,12 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Heart disease" label="Heart disease">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Cardiac arrhythmia" label="Cardiac arrhythmia">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
       <node id="Disorder of cardiac function" label="Disorder of cardiac function">
         <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Endocarditis" label="Endocarditis">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Takotsubo cardiomyopathy" label="Takotsubo cardiomyopathy">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Patent foramen ovale" label="Patent foramen ovale">
-        <attvalues>
-          <attvalue for="0" value="original" />
+          <attvalue for="0" value="lca" />
         </attvalues>
       </node>
       <node id="Heart failure" label="Heart failure">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Acute heart failure" label="Acute heart failure">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -68,17 +48,7 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Myocardial infarction" label="Myocardial infarction">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Myocardial infarction due to atherothrombotic coronary artery disease" label="Myocardial infarction due to atherothrombotic coronary artery disease">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Myocardial infarction due to demand ischemia" label="Myocardial infarction due to demand ischemia">
+      <node id="Acute heart failure" label="Acute heart failure">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -98,17 +68,12 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Blood coagulation disorder" label="Blood coagulation disorder">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
       <node id="Decreased vascular flow" label="Decreased vascular flow">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Urinary incontinence" label="Urinary incontinence">
+      <node id="Blood coagulation disorder" label="Blood coagulation disorder">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -118,12 +83,22 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Migraine" label="Migraine">
+      <node id="Urinary incontinence" label="Urinary incontinence">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Myocardial infarction" label="Myocardial infarction">
         <attvalues>
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Migraine with aura" label="Migraine with aura">
+      <node id="Myocardial infarction due to atherothrombotic coronary artery disease" label="Myocardial infarction due to atherothrombotic coronary artery disease">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Myocardial infarction due to demand ischemia" label="Myocardial infarction due to demand ischemia">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -143,12 +118,12 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Silent micro-hemorrhage of brain" label="Silent micro-hemorrhage of brain">
+      <node id="Stenosis of cerebral artery" label="Stenosis of cerebral artery">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Stenosis of cerebral artery" label="Stenosis of cerebral artery">
+      <node id="Silent micro-hemorrhage of brain" label="Silent micro-hemorrhage of brain">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -168,72 +143,27 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Alcohol intake - finding" label="Alcohol intake - finding">
+      <node id="Heart disease" label="Heart disease">
         <attvalues>
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Decreased alcohol consumption" label="Decreased alcohol consumption">
+      <node id="Cardiac arrhythmia" label="Cardiac arrhythmia">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Alcohol intake above recommended sensible limits" label="Alcohol intake above recommended sensible limits">
+      <node id="Endocarditis" label="Endocarditis">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Alcohol consumption unknown" label="Alcohol consumption unknown">
+      <node id="Takotsubo cardiomyopathy" label="Takotsubo cardiomyopathy">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Infectious disease" label="Infectious disease">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Urinary tract infectious disease" label="Urinary tract infectious disease">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Acute infective endocarditis" label="Acute infective endocarditis">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="COVID-19" label="COVID-19">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Central nervous system complication" label="Central nervous system complication">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Ischemic stroke" label="Ischemic stroke">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Epilepsy due to cerebrovascular accident" label="Epilepsy due to cerebrovascular accident">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Disorder of endocrine system" label="Disorder of endocrine system">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Insulin resistance" label="Insulin resistance">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Diabetes mellitus" label="Diabetes mellitus">
+      <node id="Patent foramen ovale" label="Patent foramen ovale">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -258,17 +188,22 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Atrial fibrillation" label="Atrial fibrillation">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Kidney disease" label="Kidney disease">
+      <node id="Alcohol intake - finding" label="Alcohol intake - finding">
         <attvalues>
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Chronic kidney disease" label="Chronic kidney disease">
+      <node id="Alcohol intake above recommended sensible limits" label="Alcohol intake above recommended sensible limits">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Decreased alcohol consumption" label="Decreased alcohol consumption">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Alcohol consumption unknown" label="Alcohol consumption unknown">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -278,17 +213,17 @@
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Obesity" label="Obesity">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
       <node id="Nutritional disorder" label="Nutritional disorder">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Sequelae of neurological disorders" label="Sequelae of neurological disorders">
+      <node id="Infectious disease" label="Infectious disease">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Obesity" label="Obesity">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -298,9 +233,9 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Congenital malformation" label="Congenital malformation">
+      <node id="Central nervous system complication" label="Central nervous system complication">
         <attvalues>
-          <attvalue for="0" value="original" />
+          <attvalue for="0" value="lca" />
         </attvalues>
       </node>
       <node id="Sleep apnea" label="Sleep apnea">
@@ -308,9 +243,29 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
+      <node id="Disorder of body system" label="Disorder of body system">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
       <node id="Disorder of brain" label="Disorder of brain">
         <attvalues>
           <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Sequelae of neurological disorders" label="Sequelae of neurological disorders">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Disorder of endocrine system" label="Disorder of endocrine system">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Congenital malformation" label="Congenital malformation">
+        <attvalues>
+          <attvalue for="0" value="original" />
         </attvalues>
       </node>
       <node id="Soft tissue lesion" label="Soft tissue lesion">
@@ -323,12 +278,7 @@
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Pulmonary embolism" label="Pulmonary embolism">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Disorder by body site" label="Disorder by body site">
+      <node id="Disorder of lipoprotein AND/OR lipid metabolism" label="Disorder of lipoprotein AND/OR lipid metabolism">
         <attvalues>
           <attvalue for="0" value="lca" />
         </attvalues>
@@ -338,32 +288,12 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Dyslipidemia" label="Dyslipidemia">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Clinical finding" label="Clinical finding">
+      <node id="Disorder of head" label="Disorder of head">
         <attvalues>
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Social isolation" label="Social isolation">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Spasticity" label="Spasticity">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Prediabetes" label="Prediabetes">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Finding of brain" label="Finding of brain">
+      <node id="Clinical finding" label="Clinical finding">
         <attvalues>
           <attvalue for="0" value="lca" />
         </attvalues>
@@ -373,7 +303,27 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
+      <node id="Prediabetes" label="Prediabetes">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Spasticity" label="Spasticity">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
       <node id="Physical fitness state" label="Physical fitness state">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Finding of brain" label="Finding of brain">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Pregnancy" label="Pregnancy">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -383,32 +333,7 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Pregnancy" label="Pregnancy">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Dietary finding" label="Dietary finding">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Nutritional finding" label="Nutritional finding">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Finding by site" label="Finding by site">
-        <attvalues>
-          <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="Patient position finding" label="Patient position finding">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Aphasia" label="Aphasia">
+      <node id="Social isolation" label="Social isolation">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -423,12 +348,17 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Male" label="Male">
+      <node id="Uses oral contraception" label="Uses oral contraception">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Uses oral contraception" label="Uses oral contraception">
+      <node id="Dietary finding" label="Dietary finding">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Patient position finding" label="Patient position finding">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -438,14 +368,29 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
+      <node id="Head finding" label="Head finding">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Aphasia" label="Aphasia">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Male" label="Male">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
       <node id="Immunosuppression" label="Immunosuppression">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Genetic predisposition" label="Genetic predisposition">
+      <node id="Finding by site" label="Finding by site">
         <attvalues>
-          <attvalue for="0" value="original" />
+          <attvalue for="0" value="lca" />
         </attvalues>
       </node>
       <node id="Pain" label="Pain">
@@ -458,19 +403,9 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Finding of substance level" label="Finding of substance level">
+      <node id="Evaluation finding" label="Evaluation finding">
         <attvalues>
           <attvalue for="0" value="lca" />
-        </attvalues>
-      </node>
-      <node id="DNA damage" label="DNA damage">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Hypercoagulability state" label="Hypercoagulability state">
-        <attvalues>
-          <attvalue for="0" value="original" />
         </attvalues>
       </node>
       <node id="Weight loss" label="Weight loss">
@@ -478,7 +413,27 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Leuko-araiosis" label="Leuko-araiosis">
+      <node id="Insulin resistance" label="Insulin resistance">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Diabetes mellitus" label="Diabetes mellitus">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Kidney disease" label="Kidney disease">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Chronic kidney disease" label="Chronic kidney disease">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Atrial fibrillation" label="Atrial fibrillation">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -488,17 +443,57 @@
           <attvalue for="0" value="lca" />
         </attvalues>
       </node>
-      <node id="Female sex hormones - serum level - finding" label="Female sex hormones - serum level - finding">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
       <node id="Blood glucose level - finding" label="Blood glucose level - finding">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Catecholamine level - finding" label="Catecholamine level - finding">
+      <node id="Female sex hormones - serum level - finding" label="Female sex hormones - serum level - finding">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Dissection of artery" label="Dissection of artery">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Dissection of cerebral artery" label="Dissection of cerebral artery">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Epilepsy due to cerebrovascular accident" label="Epilepsy due to cerebrovascular accident">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Ischemic stroke" label="Ischemic stroke">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Acute infective endocarditis" label="Acute infective endocarditis">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Urinary tract infectious disease" label="Urinary tract infectious disease">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="COVID-19" label="COVID-19">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Dysphagia" label="Dysphagia">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Pneumonia" label="Pneumonia">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -523,27 +518,37 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Dissection of artery" label="Dissection of artery">
+      <node id="Finding of substance level" label="Finding of substance level">
+        <attvalues>
+          <attvalue for="0" value="lca" />
+        </attvalues>
+      </node>
+      <node id="Catecholamine level - finding" label="Catecholamine level - finding">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Dissection of cerebral artery" label="Dissection of cerebral artery">
+      <node id="Pre-eclampsia" label="Pre-eclampsia">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Healthy diet" label="Healthy diet">
+      <node id="Hypertension complicating pregnancy" label="Hypertension complicating pregnancy">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Low sodium diet" label="Low sodium diet">
+      <node id="Dyslipidemia" label="Dyslipidemia">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="High fat diet" label="High fat diet">
+      <node id="Gestational diabetes mellitus complicating pregnancy" label="Gestational diabetes mellitus complicating pregnancy">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Pulmonary embolism" label="Pulmonary embolism">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -553,17 +558,27 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
+      <node id="Low sodium diet" label="Low sodium diet">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Healthy diet" label="Healthy diet">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="High carbohydrate diet" label="High carbohydrate diet">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="High fat diet" label="High fat diet">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
       <node id="Cerebral venous sinus thrombosis" label="Cerebral venous sinus thrombosis">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Pneumonia" label="Pneumonia">
-        <attvalues>
-          <attvalue for="0" value="original" />
-        </attvalues>
-      </node>
-      <node id="Dysphagia" label="Dysphagia">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
@@ -578,138 +593,162 @@
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Pre-eclampsia" label="Pre-eclampsia">
+      <node id="Cardiac syndrome X" label="Cardiac syndrome X">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
-      <node id="Cardiac syndrome X" label="Cardiac syndrome X">
+      <node id="Genetic predisposition" label="Genetic predisposition">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Leuko-araiosis" label="Leuko-araiosis">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="DNA damage" label="DNA damage">
+        <attvalues>
+          <attvalue for="0" value="original" />
+        </attvalues>
+      </node>
+      <node id="Hypercoagulability state" label="Hypercoagulability state">
         <attvalues>
           <attvalue for="0" value="original" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge source="Thrombosis" target="Thrombus of cardiac chamber" id="0" />
-      <edge source="Thrombosis" target="Deep venous thrombosis" id="1" />
-      <edge source="Heart disease" target="Cardiac arrhythmia" id="2" />
-      <edge source="Heart disease" target="Disorder of cardiac function" id="3" />
-      <edge source="Heart disease" target="Endocarditis" id="4" />
-      <edge source="Heart disease" target="Takotsubo cardiomyopathy" id="5" />
-      <edge source="Heart disease" target="Patent foramen ovale" id="6" />
-      <edge source="Cardiac arrhythmia" target="Atrial fibrillation" id="7" />
-      <edge source="Disorder of cardiac function" target="Heart failure" id="8" />
-      <edge source="Heart failure" target="Acute heart failure" id="9" />
-      <edge source="Heart failure" target="Chronic heart failure" id="10" />
-      <edge source="Myocardial infarction" target="Myocardial infarction due to atherothrombotic coronary artery disease" id="11" />
-      <edge source="Myocardial infarction" target="Myocardial infarction due to demand ischemia" id="12" />
-      <edge source="Functional finding" target="Disorder of cardiac function" id="13" />
-      <edge source="Functional finding" target="Functionally dependent" id="14" />
-      <edge source="Functional finding" target="Finding of renal function" id="15" />
-      <edge source="Functional finding" target="Blood coagulation disorder" id="16" />
-      <edge source="Functional finding" target="Decreased vascular flow" id="17" />
-      <edge source="Functional finding" target="Urinary incontinence" id="18" />
-      <edge source="Functional finding" target="Impaired cognition" id="19" />
-      <edge source="Migraine" target="Migraine with aura" id="20" />
-      <edge source="Vascular disorder" target="Vasculitis" id="21" />
-      <edge source="Vascular disorder" target="Embolism" id="22" />
-      <edge source="Vascular disorder" target="Silent micro-hemorrhage of brain" id="23" />
-      <edge source="Vascular disorder" target="Migraine" id="24" />
-      <edge source="Vascular disorder" target="Stenosis of cerebral artery" id="25" />
-      <edge source="Vascular disorder" target="Atherosclerosis of artery" id="26" />
-      <edge source="Hyperlipidemia" target="Hypercholesterolemia" id="27" />
-      <edge source="Alcohol intake - finding" target="Decreased alcohol consumption" id="28" />
-      <edge source="Alcohol intake - finding" target="Alcohol intake above recommended sensible limits" id="29" />
-      <edge source="Alcohol intake - finding" target="Alcohol consumption unknown" id="30" />
-      <edge source="Infectious disease" target="Urinary tract infectious disease" id="31" />
-      <edge source="Infectious disease" target="Acute infective endocarditis" id="32" />
-      <edge source="Infectious disease" target="COVID-19" id="33" />
-      <edge source="Central nervous system complication" target="Ischemic stroke" id="34" />
-      <edge source="Central nervous system complication" target="Epilepsy due to cerebrovascular accident" id="35" />
-      <edge source="Disorder of endocrine system" target="Insulin resistance" id="36" />
-      <edge source="Disorder of endocrine system" target="Diabetes mellitus" id="37" />
-      <edge source="Disorder of cardiovascular system" target="Thrombosis" id="38" />
-      <edge source="Disorder of cardiovascular system" target="Heart disease" id="39" />
-      <edge source="Disorder of cardiovascular system" target="Vascular disorder" id="40" />
-      <edge source="Disorder of cardiovascular system" target="Hypertensive disorder" id="41" />
-      <edge source="Disorder of cardiovascular system" target="Low blood pressure" id="42" />
-      <edge source="Disorder of cardiovascular system" target="Transient cerebral ischemia" id="43" />
-      <edge source="Hypertensive disorder" target="Pre-eclampsia" id="44" />
-      <edge source="Kidney disease" target="Chronic kidney disease" id="45" />
-      <edge source="Disease" target="Obesity" id="46" />
-      <edge source="Disease" target="Infectious disease" id="47" />
-      <edge source="Disease" target="Nutritional disorder" id="48" />
-      <edge source="Disease" target="Sequelae of neurological disorders" id="49" />
-      <edge source="Disease" target="Central nervous system complication" id="50" />
-      <edge source="Disease" target="Metabolic syndrome X" id="51" />
-      <edge source="Disease" target="Congenital malformation" id="52" />
-      <edge source="Disease" target="Disorder of endocrine system" id="53" />
-      <edge source="Disease" target="Sleep apnea" id="54" />
-      <edge source="Disease" target="Pulmonary embolism" id="55" />
-      <edge source="Disease" target="Disorder by body site" id="56" />
-      <edge source="Disease" target="Depressive disorder" id="57" />
-      <edge source="Disease" target="Dyslipidemia" id="58" />
-      <edge source="Disease" target="Hyperlipidemia" id="59" />
-      <edge source="Disorder of brain" target="Encephalitis" id="60" />
-      <edge source="Disorder of brain" target="Lesion of brain" id="61" />
-      <edge source="Disorder of brain" target="Cerebral atrophy" id="62" />
-      <edge source="Disorder of brain" target="Delirium" id="63" />
-      <edge source="Soft tissue lesion" target="Dissection of artery" id="64" />
-      <edge source="Soft tissue lesion" target="Embolism" id="65" />
-      <edge source="Soft tissue lesion" target="Dissection of cerebral artery" id="66" />
-      <edge source="Disorder of soft tissue" target="Soft tissue lesion" id="67" />
-      <edge source="Disorder of soft tissue" target="Vascular disorder" id="68" />
-      <edge source="Disorder by body site" target="Disorder of soft tissue" id="69" />
-      <edge source="Disorder by body site" target="Disorder of brain" id="70" />
-      <edge source="Disorder by body site" target="Disorder of cardiovascular system" id="71" />
-      <edge source="Disorder by body site" target="Myocardial infarction" id="72" />
-      <edge source="Disorder by body site" target="Cerebral venous sinus thrombosis" id="73" />
-      <edge source="Disorder by body site" target="Pneumonia" id="74" />
-      <edge source="Disorder by body site" target="Dysphagia" id="75" />
-      <edge source="Clinical finding" target="Disease" id="76" />
-      <edge source="Clinical finding" target="Functional finding" id="77" />
-      <edge source="Clinical finding" target="Social isolation" id="78" />
-      <edge source="Clinical finding" target="Spasticity" id="79" />
-      <edge source="Clinical finding" target="Prediabetes" id="80" />
-      <edge source="Clinical finding" target="Falls" id="81" />
-      <edge source="Clinical finding" target="Physical fitness state" id="82" />
-      <edge source="Clinical finding" target="Pregnancy" id="83" />
-      <edge source="Clinical finding" target="Nutritional finding" id="84" />
-      <edge source="Clinical finding" target="Finding by site" id="85" />
-      <edge source="Clinical finding" target="Patient position finding" id="86" />
-      <edge source="Clinical finding" target="Aphasia" id="87" />
+      <edge source="Migraine" target="Migraine with aura" id="0" />
+      <edge source="Thrombosis" target="Thrombus of cardiac chamber" id="1" />
+      <edge source="Thrombosis" target="Deep venous thrombosis" id="2" />
+      <edge source="Disorder of cardiac function" target="Heart failure" id="3" />
+      <edge source="Heart failure" target="Chronic heart failure" id="4" />
+      <edge source="Heart failure" target="Acute heart failure" id="5" />
+      <edge source="Functional finding" target="Functionally dependent" id="6" />
+      <edge source="Functional finding" target="Disorder of cardiac function" id="7" />
+      <edge source="Functional finding" target="Finding of renal function" id="8" />
+      <edge source="Functional finding" target="Decreased vascular flow" id="9" />
+      <edge source="Functional finding" target="Blood coagulation disorder" id="10" />
+      <edge source="Functional finding" target="Impaired cognition" id="11" />
+      <edge source="Functional finding" target="Urinary incontinence" id="12" />
+      <edge source="Myocardial infarction" target="Myocardial infarction due to atherothrombotic coronary artery disease" id="13" />
+      <edge source="Myocardial infarction" target="Myocardial infarction due to demand ischemia" id="14" />
+      <edge source="Vascular disorder" target="Vasculitis" id="15" />
+      <edge source="Vascular disorder" target="Embolism" id="16" />
+      <edge source="Vascular disorder" target="Migraine" id="17" />
+      <edge source="Vascular disorder" target="Stenosis of cerebral artery" id="18" />
+      <edge source="Vascular disorder" target="Silent micro-hemorrhage of brain" id="19" />
+      <edge source="Vascular disorder" target="Atherosclerosis of artery" id="20" />
+      <edge source="Embolism" target="Pulmonary embolism" id="21" />
+      <edge source="Hyperlipidemia" target="Hypercholesterolemia" id="22" />
+      <edge source="Heart disease" target="Disorder of cardiac function" id="23" />
+      <edge source="Heart disease" target="Cardiac arrhythmia" id="24" />
+      <edge source="Heart disease" target="Endocarditis" id="25" />
+      <edge source="Heart disease" target="Myocardial infarction" id="26" />
+      <edge source="Heart disease" target="Takotsubo cardiomyopathy" id="27" />
+      <edge source="Heart disease" target="Patent foramen ovale" id="28" />
+      <edge source="Cardiac arrhythmia" target="Atrial fibrillation" id="29" />
+      <edge source="Disorder of cardiovascular system" target="Thrombosis" id="30" />
+      <edge source="Disorder of cardiovascular system" target="Hypertensive disorder" id="31" />
+      <edge source="Disorder of cardiovascular system" target="Vascular disorder" id="32" />
+      <edge source="Disorder of cardiovascular system" target="Low blood pressure" id="33" />
+      <edge source="Disorder of cardiovascular system" target="Heart disease" id="34" />
+      <edge source="Disorder of cardiovascular system" target="Transient cerebral ischemia" id="35" />
+      <edge source="Hypertensive disorder" target="Pre-eclampsia" id="36" />
+      <edge source="Hypertensive disorder" target="Hypertension complicating pregnancy" id="37" />
+      <edge source="Alcohol intake - finding" target="Alcohol intake above recommended sensible limits" id="38" />
+      <edge source="Alcohol intake - finding" target="Decreased alcohol consumption" id="39" />
+      <edge source="Alcohol intake - finding" target="Alcohol consumption unknown" id="40" />
+      <edge source="Disease" target="Nutritional disorder" id="41" />
+      <edge source="Disease" target="Infectious disease" id="42" />
+      <edge source="Disease" target="Obesity" id="43" />
+      <edge source="Disease" target="Metabolic syndrome X" id="44" />
+      <edge source="Disease" target="Central nervous system complication" id="45" />
+      <edge source="Disease" target="Sleep apnea" id="46" />
+      <edge source="Disease" target="Disorder of body system" id="47" />
+      <edge source="Disease" target="Sequelae of neurological disorders" id="48" />
+      <edge source="Disease" target="Congenital malformation" id="49" />
+      <edge source="Disease" target="Disorder of soft tissue" id="50" />
+      <edge source="Disease" target="Disorder of lipoprotein AND/OR lipid metabolism" id="51" />
+      <edge source="Disease" target="Depressive disorder" id="52" />
+      <edge source="Disease" target="Disorder of head" id="53" />
+      <edge source="Infectious disease" target="Acute infective endocarditis" id="54" />
+      <edge source="Infectious disease" target="Urinary tract infectious disease" id="55" />
+      <edge source="Infectious disease" target="COVID-19" id="56" />
+      <edge source="Central nervous system complication" target="Epilepsy due to cerebrovascular accident" id="57" />
+      <edge source="Central nervous system complication" target="Ischemic stroke" id="58" />
+      <edge source="Disorder of body system" target="Disorder of cardiovascular system" id="59" />
+      <edge source="Disorder of body system" target="Disorder of endocrine system" id="60" />
+      <edge source="Disorder of body system" target="Disorder of brain" id="61" />
+      <edge source="Disorder of body system" target="Dysphagia" id="62" />
+      <edge source="Disorder of body system" target="Kidney disease" id="63" />
+      <edge source="Disorder of body system" target="Pneumonia" id="64" />
+      <edge source="Disorder of brain" target="Encephalitis" id="65" />
+      <edge source="Disorder of brain" target="Lesion of brain" id="66" />
+      <edge source="Disorder of brain" target="Cerebral atrophy" id="67" />
+      <edge source="Disorder of brain" target="Delirium" id="68" />
+      <edge source="Disorder of endocrine system" target="Insulin resistance" id="69" />
+      <edge source="Disorder of endocrine system" target="Diabetes mellitus" id="70" />
+      <edge source="Soft tissue lesion" target="Embolism" id="71" />
+      <edge source="Soft tissue lesion" target="Dissection of artery" id="72" />
+      <edge source="Soft tissue lesion" target="Dissection of cerebral artery" id="73" />
+      <edge source="Disorder of soft tissue" target="Vascular disorder" id="74" />
+      <edge source="Disorder of soft tissue" target="Soft tissue lesion" id="75" />
+      <edge source="Disorder of lipoprotein AND/OR lipid metabolism" target="Dyslipidemia" id="76" />
+      <edge source="Disorder of lipoprotein AND/OR lipid metabolism" target="Hyperlipidemia" id="77" />
+      <edge source="Disorder of head" target="Disorder of brain" id="78" />
+      <edge source="Disorder of head" target="Cerebral venous sinus thrombosis" id="79" />
+      <edge source="Clinical finding" target="Functional finding" id="80" />
+      <edge source="Clinical finding" target="Disease" id="81" />
+      <edge source="Clinical finding" target="Falls" id="82" />
+      <edge source="Clinical finding" target="Prediabetes" id="83" />
+      <edge source="Clinical finding" target="Spasticity" id="84" />
+      <edge source="Clinical finding" target="Physical fitness state" id="85" />
+      <edge source="Clinical finding" target="Pregnancy" id="86" />
+      <edge source="Clinical finding" target="Social isolation" id="87" />
       <edge source="Clinical finding" target="Paralysis" id="88" />
       <edge source="Clinical finding" target="Stress" id="89" />
-      <edge source="Clinical finding" target="Male" id="90" />
+      <edge source="Clinical finding" target="Alcohol intake - finding" id="90" />
       <edge source="Clinical finding" target="Uses oral contraception" id="91" />
-      <edge source="Clinical finding" target="Disability" id="92" />
-      <edge source="Clinical finding" target="Immunosuppression" id="93" />
-      <edge source="Clinical finding" target="Genetic predisposition" id="94" />
-      <edge source="Clinical finding" target="Pain" id="95" />
-      <edge source="Clinical finding" target="Education and/or schooling finding" id="96" />
-      <edge source="Clinical finding" target="Finding of substance level" id="97" />
-      <edge source="Clinical finding" target="DNA damage" id="98" />
-      <edge source="Clinical finding" target="Hypercoagulability state" id="99" />
-      <edge source="Clinical finding" target="Weight loss" id="100" />
-      <edge source="Clinical finding" target="Leuko-araiosis" id="101" />
-      <edge source="Finding of brain" target="Disorder of brain" id="102" />
-      <edge source="Finding of brain" target="Seizure" id="103" />
-      <edge source="Lesion of brain" target="Lacunar infarction" id="104" />
-      <edge source="Dietary finding" target="Healthy diet" id="105" />
+      <edge source="Clinical finding" target="Dietary finding" id="92" />
+      <edge source="Clinical finding" target="Patient position finding" id="93" />
+      <edge source="Clinical finding" target="Disability" id="94" />
+      <edge source="Clinical finding" target="Aphasia" id="95" />
+      <edge source="Clinical finding" target="Male" id="96" />
+      <edge source="Clinical finding" target="Immunosuppression" id="97" />
+      <edge source="Clinical finding" target="Finding by site" id="98" />
+      <edge source="Clinical finding" target="Pain" id="99" />
+      <edge source="Clinical finding" target="Education and/or schooling finding" id="100" />
+      <edge source="Clinical finding" target="Evaluation finding" id="101" />
+      <edge source="Clinical finding" target="Weight loss" id="102" />
+      <edge source="Finding of brain" target="Disorder of brain" id="103" />
+      <edge source="Finding of brain" target="Seizure" id="104" />
+      <edge source="Lesion of brain" target="Lacunar infarction" id="105" />
       <edge source="Dietary finding" target="Low sodium diet" id="106" />
-      <edge source="Dietary finding" target="High fat diet" id="107" />
-      <edge source="Nutritional finding" target="Alcohol intake - finding" id="108" />
-      <edge source="Nutritional finding" target="Dietary finding" id="109" />
-      <edge source="Finding by site" target="Disorder by body site" id="110" />
-      <edge source="Finding by site" target="Finding of brain" id="111" />
-      <edge source="Finding by site" target="Cachexia" id="112" />
-      <edge source="Finding by site" target="Kidney disease" id="113" />
-      <edge source="Finding by site" target="Dysfunction of urinary bladder" id="114" />
-      <edge source="Pain" target="Cardiac syndrome X" id="115" />
-      <edge source="Finding of substance level" target="Catecholamine level - finding" id="116" />
-      <edge source="Finding of substance level" target="Finding of blood substance level" id="117" />
-      <edge source="Finding of blood substance level" target="Female sex hormones - serum level - finding" id="118" />
-      <edge source="Finding of blood substance level" target="Blood glucose level - finding" id="119" />
+      <edge source="Dietary finding" target="Healthy diet" id="107" />
+      <edge source="Dietary finding" target="High carbohydrate diet" id="108" />
+      <edge source="Dietary finding" target="High fat diet" id="109" />
+      <edge source="Head finding" target="Disorder of head" id="110" />
+      <edge source="Head finding" target="Finding of brain" id="111" />
+      <edge source="Finding by site" target="Disorder of body system" id="112" />
+      <edge source="Finding by site" target="Disorder of soft tissue" id="113" />
+      <edge source="Finding by site" target="Head finding" id="114" />
+      <edge source="Finding by site" target="Cachexia" id="115" />
+      <edge source="Finding by site" target="Dysfunction of urinary bladder" id="116" />
+      <edge source="Pain" target="Cardiac syndrome X" id="117" />
+      <edge source="Evaluation finding" target="Finding of substance level" id="118" />
+      <edge source="Evaluation finding" target="Genetic predisposition" id="119" />
+      <edge source="Evaluation finding" target="Leuko-araiosis" id="120" />
+      <edge source="Evaluation finding" target="DNA damage" id="121" />
+      <edge source="Evaluation finding" target="Hypercoagulability state" id="122" />
+      <edge source="Diabetes mellitus" target="Gestational diabetes mellitus complicating pregnancy" id="123" />
+      <edge source="Kidney disease" target="Chronic kidney disease" id="124" />
+      <edge source="Finding of blood substance level" target="Blood glucose level - finding" id="125" />
+      <edge source="Finding of blood substance level" target="Female sex hormones - serum level - finding" id="126" />
+      <edge source="Finding of substance level" target="Finding of blood substance level" id="127" />
+      <edge source="Finding of substance level" target="Catecholamine level - finding" id="128" />
     </edges>
   </graph>
 </gexf>
