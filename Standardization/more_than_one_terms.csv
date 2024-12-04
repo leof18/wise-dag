@@ -1,9 +1,13 @@
-,term
-0,vessel stenosis/occlusion
-1,Carotid Endarterectomy / Angioplasty / stenting
-2,atherosclerosis/thrombosis
-3,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
-4,Weight Loss and Aerobic Exercise
-5,higher fitness/mobility post
-6,higher fitness/mobility pre
-7,high fat/ high carbonhydrate diet
+term
+vessel stenosis/occlusion
+preeclampsia/eclampsia
+Carotid Endarterectomy / Angioplasty / stenting
+atherosclerosis/thrombosis
+positive familiy history of cardio/cerebrovascular events
+Sleep disturbances / Obstructive Sleep Apnea
+"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
+Weight Loss and Aerobic Exercise
+higher fitness/mobility post
+Insulin Resistance / Impaired glucose metabolism
+higher fitness/mobility pre
+high fat/ high carbonhydrate diet
