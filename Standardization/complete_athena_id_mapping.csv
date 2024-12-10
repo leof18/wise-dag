@@ -1,0 +1,323 @@
+source_code_description,target_concept_id
+race,4216292
+Lacunes,4046360
+chemotherapy,4273629
+malformations,4079975
+kidney disease,198124
+botolinum toxin,4229563
+Glycemic control,4301936
+antidepressants,44784326
+Barthel_Index_follow_up,4126495
+genetic factors,4166231
+infarct localisation,443454
+vessel stenosis/occlusion,4178903
+vessel stenosis/occlusion,4217691
+infectious endocarditis,43020873
+peripheral immune competence,
+occlusion of a blood vessel,4178903
+microglial proliferation,
+Atrial Fibrillation,313217
+patent foramen ovale (PFO),4070299
+sinus venous thrombosis,4102202
+male sex,442985
+death,4306655
+Thiazolidindione,4159324
+coagulopathy,4295287
+cognitive training,4114614
+speech therapy,4201412
+immunodepression,4242843
+exercise,4038720
+vulnerable plaques,4192115
+brain IL6_time2,4150054
+Male Sex,442985
+aging,4322978
+endovascular interventions,37153627
+microbleeds,37109909
+female gender,442985
+reduced QoL/ADL,4234649
+SGLT2 Inhibitors,45771363
+alcohol consumption,4074035
+psychotherapy,4327941
+oral contraceptives,4241216
+spasticity,4329728
+Embolism,4185607
+cancer,443392
+functional post stroke outcome,3654822
+nonatherosclerotic abnormalities,
+stress,4251306
+endarterectomy,4194238
+preeclampsia/eclampsia,439393
+preeclampsia/eclampsia,443700
+vascular inflammation,4137275
+neurosurgery,4301351
+Recurrent Stroke,4310996
+immobility,4306934
+LMV,
+B-cell infiltration,
+physiotherapy,4238738
+astrocytic proliferation,
+Thrombosis,4231363
+vaskulitis,4137275
+migraine,318736
+Stroke,4310996
+Dietary salt restriction,4304917
+kidney function,606770
+statin use,4201029
+male gender,442985
+antidepressive medication,44784326
+mobility,4306934
+arterial dissection,46272492
+systemic IL6,4150054
+cognitive decline,443432
+social work,4059498
+secondary cardiovascular risk,37311069
+low blood pressure,317002
+pregnancy,4299535
+cerebral inflammation,378143
+Healthy Diet,4022846
+Cardiac Remodelling,
+Ischemic stroke,4310996
+DNA damage,4285282
+Lipoprotein a,37167374
+aphasia,440424
+NIHSS_followup,42872750
+hs cardiac Troponin,4010497
+COVID-19,37311061
+enlarged perivascular spaces,
+stroke volume,4338810
+GFR,4213477
+endocarditis,441589
+physical exercise,4038720
+severe disability,4052648
+mRS_follow_up,3654822
+antiplatelet therapy (e.g. ASS),3655005
+Smoking Cessation,46273821
+Other Cardiac Pathologies,
+nt-pro-BNP,4186398
+cardiac disease,321588
+immobility before stroke,4306934
+brain IL6_time1,4150054
+fibromuscular dysplasia,4135811
+care giving,4021166
+hypercoagulability,4295287
+hemispheric atrophy,4150603
+blood-brain barrier breakdown,4068351
+Statins,4201029
+malnutrition,4090739
+production of reactive oxygen species,
+loss of brain structural integrity,
+dyslipidemia,4159131
+atherosclerosis (measured by low ABI),4306703
+cachexia,134765
+kognitive decline,443432
+vasculitis,4137275
+Myocardial Infarction,4329847
+pain,4329041
+collateralization,
+depression before stroke,440383
+neuronal survival,
+Moyamoya disease,378774
+female,442985
+female sex steroids,4276568
+multimodal pain therapy,4083171
+Neurological Sequalae,4180770
+Carotid Endarterectomy / Angioplasty / stenting,4283095
+Carotid Endarterectomy / Angioplasty / stenting,4178631
+Carotid Endarterectomy / Angioplasty / stenting,4050288
+white matter hyperintensities (MRI),4232457
+cognitive function,443432
+low socioeconomic status,4249447
+antibiotics,4085730
+recovery level,4234656
+Death,4306655
+anticoagulation medication,4056822
+dissection of cerebral vessel,37016924
+Arterial Dissection,46272492
+endothelial proliferation,
+reduction or complete blockage of blood flow,4070767
+lesion size,4084390
+First Ischemic Stroke,4310996
+cognition,443432
+atherosclerosis/thrombosis,4231363
+atherosclerosis/thrombosis,4306703
+Mortality,4306655
+secondary prevention,4196427
+large artery atherosclerosis,4306703
+falls,4059015
+death (all causes),4306655
+Hypercoagulopathy,4295287
+sickle cell disease arteriopathy,4213628
+Mono-/Dual Antiplatelet Therapy,3655005
+Obesity,433736
+first stroke,4310996
+Anticoagulation Therapy,4056822
+ageing,4322978
+blood brain barrier integrity,4068351
+fractures,75053
+cardiac dysfunction,4024552
+mortality,4306655
+second ischemic stroke occurence,4310996
+decreased systemic perfusion,4176126
+Age,4322978
+primary prevention,4201926
+GLP1 Receptor Agonists,4166093
+ischemic stroke,4310996
+endothelial dysfunction,4119952
+patient positioning,4156503
+aspiration,4033232
+positive familiy history of cardio/cerebrovascular events,4169009
+positive familiy history of cardio/cerebrovascular events,4148407
+hypercholesterolemia,4029305
+systemic inflammation,434821
+social isolation,4309238
+blood glucose,4275337
+diabetes mellitus,201820
+CPAP Treatment,4165535
+physical activity,4038720
+Diabetes mellitus,201820
+severe stenosis,4217691
+lesion_size,4084390
+TIA,373503
+Low-Moderate Alcohol Consumption,4183729
+sex(male),442985
+functional outcome (e.g. measured by mRS),3654822
+disability,4052648
+dependency,36713755
+1. stroke incidence,4310996
+large infarction,443454
+oxygen saturation,40486533
+sex(female),442985
+Dyslipidemia,4159131
+heart failure,316139
+time_to_therapy,
+blood lipids,432867
+EMV,
+deep vein thrombosis,4133004
+stenoses of cerebral vessels,4217691
+BMI,4171825
+cardiac thrombus,42538532
+second stroke,4310996
+BMI_t1,4171825
+Heavy Alcohol Consumption,4336673
+Lipoprotein (a),37167374
+qualitiy of life,4234649
+urinary incontinence,197672
+loss of blood,437312
+moderate physical activity,4038720
+Sleep disturbances / Obstructive Sleep Apnea,313459
+Sleep disturbances / Obstructive Sleep Apnea,435657
+lesion_location,4104314
+myocardial infarction,4329847
+pulmonary embolism,440417
+urinary tract infection,81902
+education,4268546
+paralysis,440377
+Vasculitis,4137275
+NIHSS_stroke,42872750
+chronic heart failure,444031
+Atrial fibrillation,313217
+healthy (mediterranean) diet,37150978
+Prediabetes,37018196
+Takotsubo syndrome,40479589
+Diabetes,201820
+migraine with aura,381549
+first ischemic stroke,4310996
+income,4249447
+age,4322978
+mRS_stroke,3654822
+Smoking,4298794
+body temperature,4178904
+present atrial fibrillation,313217
+depression,440383
+habitual alcohol consumption,4074035
+Reducing Alcohol Consumption,46270002
+obesity,433736
+Barthel_Index_stroke,4126495
+rate of thrombolysis,4051022
+delirium,373995
+Sex (Male),442985
+hyperlipoproteinemia (high LDL),4029305
+troponin elevation,4009409
+time_till_diagnosis,
+Hyperlipidemia,432867
+Antihypertensive Therapy,4146455
+Inflammation,4180169
+atherosclerosis,4306703
+arterial hypertension,316866
+high blood cholesterol levels,4029305
+sleep apnea,313459
+elevated catecholamines,4275208
+TOAST (etiology),4310996
+CKD,46271022
+Hypertension,316866
+stroke unit care,4143576
+rate of thrombectomy,4185284
+sex (being male),442985
+Statin Therapy,4201029
+female sex,442985
+Cognitive dysfunction,443432
+Thrombolysis,4051022
+BMI_t0,4171825
+awareness of FAST-Scheme,44791753
+high drinking levels,4336673
+urinary catheter placement,4181165
+cardiac autonomic dysbalance,
+exercise (cardiac not excessive),4038720
+sex (male),442985
+high fat salt diet,4024366
+arteriosklerosis,4103842
+antihypertensive medicatio,4146455
+dissection,46272492
+Physical Inactivity,4038718
+acute heart failure,442310
+"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",439393
+"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",42538946
+"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",37018765
+Weight Loss and Aerobic Exercise,4038720
+Weight Loss and Aerobic Exercise,4229881
+bladder dysfunction,4224118
+sex(being male),442985
+Second-hand Smoking,4184633
+stroke severity (e.g. measured by NIHSS),42872750
+pneumonia,255848
+smoking,4298794
+persistent foramen ovale,4070299
+dysphagia,31317
+diabetes,201820
+FIRST ISCHEMIC STROKE,4310996
+Psychogenic Stress,4251306
+atrial fibrillation,313217
+immunosuppression,4242843
+anticoagulation,4056822
+post stroke epilepsy,37110522
+higher fitness/mobility post,44800078
+higher fitness/mobility post,4199549
+hypertension,316866
+myocardial infarction (type 1),604179
+LDL-cholesterol,4029305
+elevated CRP,37108742
+atrial fibrilation,313217
+vascular disease,443784
+second ischemic stroke,4310996
+cortical involvement or strategical localisation of stroke lesion,4200516
+Atherosclerosis,4306703
+Sympathetic activation,
+stroke lesion affecting central autonomic network,
+Insulin Resistance / Impaired glucose metabolism,35622016
+Insulin Resistance / Impaired glucose metabolism,4130526
+seizures,377091
+Depression,440383
+blood pressure,316866
+higher fitness/mobility pre,44800078
+higher fitness/mobility pre,4199549
+metabolic syndrom,436940
+high fat/ high carbonhydrate diet,4024366
+high fat/ high carbonhydrate diet,4027011
+myocardial infarction (type 2),37309626
+severe arrrhythmia,44784217
+hyperlipidemia,432867
+inflammation,4180169
+coping mechnisms,4022241
+occurence of myocardial infarction,4329847
+infection,432250
+first-ever ischemic stroke occurence,4310996
