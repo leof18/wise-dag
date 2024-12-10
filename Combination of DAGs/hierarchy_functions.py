@@ -136,14 +136,12 @@ def create_SNOMED_CT_graph_based_on_terms(my_terms, concept_df, concept_relation
     pruned_graph = G.subgraph(relevant_nodes).copy()
 
     # Checks
-    print(f"Number of nodes in graph of relevant SNOMED CT terms: {pruned_graph.number_of_nodes()}")
-    print(f"Number of edges in graph of relevant SNOMED CT terms: {pruned_graph.number_of_edges()}")
+    # print(f"Number of nodes in graph of relevant SNOMED CT terms: {pruned_graph.number_of_nodes()}")
+    # print(f"Number of edges in graph of relevant SNOMED CT terms: {pruned_graph.number_of_edges()}")
 
     missing_terms = [term for term in my_terms if term not in pruned_graph]
     if missing_terms:
         print(f"Warning: These terms are missing from the graph: {missing_terms}")
-    else:
-        print("All terms are present in the graph.")
 
     return pruned_graph
 
