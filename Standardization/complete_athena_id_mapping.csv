@@ -13,9 +13,9 @@ infarct localisation,443454
 vessel stenosis/occlusion,4178903
 vessel stenosis/occlusion,4217691
 infectious endocarditis,43020873
-peripheral immune competence,
+peripheral immune competence,1
 occlusion of a blood vessel,4178903
-microglial proliferation,
+microglial proliferation,2
 Atrial Fibrillation,313217
 patent foramen ovale (PFO),4070299
 sinus venous thrombosis,4102202
@@ -43,7 +43,6 @@ spasticity,4329728
 Embolism,4185607
 cancer,443392
 functional post stroke outcome,3654822
-nonatherosclerotic abnormalities,
 stress,4251306
 endarterectomy,4194238
 preeclampsia/eclampsia,439393
@@ -52,10 +51,10 @@ vascular inflammation,4137275
 neurosurgery,4301351
 Recurrent Stroke,4310996
 immobility,4306934
-LMV,
-B-cell infiltration,
+LMV,3
+B-cell infiltration,4
 physiotherapy,4238738
-astrocytic proliferation,
+astrocytic proliferation,5
 Thrombosis,4231363
 vaskulitis,4137275
 migraine,318736
@@ -75,7 +74,7 @@ low blood pressure,317002
 pregnancy,4299535
 cerebral inflammation,378143
 Healthy Diet,4022846
-Cardiac Remodelling,
+Cardiac Remodelling,6
 Ischemic stroke,4310996
 DNA damage,4285282
 Lipoprotein a,37167374
@@ -83,7 +82,7 @@ aphasia,440424
 NIHSS_followup,42872750
 hs cardiac Troponin,4010497
 COVID-19,37311061
-enlarged perivascular spaces,
+enlarged perivascular spaces,7
 stroke volume,4338810
 GFR,4213477
 endocarditis,441589
@@ -92,7 +91,6 @@ severe disability,4052648
 mRS_follow_up,3654822
 antiplatelet therapy (e.g. ASS),3655005
 Smoking Cessation,46273821
-Other Cardiac Pathologies,
 nt-pro-BNP,4186398
 cardiac disease,321588
 immobility before stroke,4306934
@@ -104,8 +102,8 @@ hemispheric atrophy,4150603
 blood-brain barrier breakdown,4068351
 Statins,4201029
 malnutrition,4090739
-production of reactive oxygen species,
-loss of brain structural integrity,
+production of reactive oxygen species,8
+loss of brain structural integrity,9
 dyslipidemia,4159131
 atherosclerosis (measured by low ABI),4306703
 cachexia,134765
@@ -113,9 +111,9 @@ kognitive decline,443432
 vasculitis,4137275
 Myocardial Infarction,4329847
 pain,4329041
-collateralization,
+collateralization,4283239
 depression before stroke,440383
-neuronal survival,
+neuronal survival,10
 Moyamoya disease,378774
 female,442985
 female sex steroids,4276568
@@ -133,7 +131,7 @@ Death,4306655
 anticoagulation medication,4056822
 dissection of cerebral vessel,37016924
 Arterial Dissection,46272492
-endothelial proliferation,
+endothelial proliferation,11
 reduction or complete blockage of blood flow,4070767
 lesion size,4084390
 First Ischemic Stroke,4310996
@@ -189,9 +187,9 @@ oxygen saturation,40486533
 sex(female),442985
 Dyslipidemia,4159131
 heart failure,316139
-time_to_therapy,
+time_to_therapy,12
 blood lipids,432867
-EMV,
+EMV,13
 deep vein thrombosis,4133004
 stenoses of cerebral vessels,4217691
 BMI,4171825
@@ -238,7 +236,7 @@ delirium,373995
 Sex (Male),442985
 hyperlipoproteinemia (high LDL),4029305
 troponin elevation,4009409
-time_till_diagnosis,
+time_till_diagnosis,14
 Hyperlipidemia,432867
 Antihypertensive Therapy,4146455
 Inflammation,4180169
@@ -258,10 +256,10 @@ female sex,442985
 Cognitive dysfunction,443432
 Thrombolysis,4051022
 BMI_t0,4171825
-awareness of FAST-Scheme,44791753
+awareness of FAST-Scheme,16
 high drinking levels,4336673
 urinary catheter placement,4181165
-cardiac autonomic dysbalance,
+cardiac autonomic dysbalance,434633
 exercise (cardiac not excessive),4038720
 sex (male),442985
 high fat salt diet,4024366
@@ -301,8 +299,8 @@ vascular disease,443784
 second ischemic stroke,4310996
 cortical involvement or strategical localisation of stroke lesion,4200516
 Atherosclerosis,4306703
-Sympathetic activation,
-stroke lesion affecting central autonomic network,
+Sympathetic activation,15
+stroke lesion affecting central autonomic network,4200516
 Insulin Resistance / Impaired glucose metabolism,35622016
 Insulin Resistance / Impaired glucose metabolism,4130526
 seizures,377091

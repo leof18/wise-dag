@@ -691,13 +691,12 @@ doi: 10.3389/fneur.2019.00238,smoking,white matter hyperintensities (MRI),Increa
 ,decreased systemic perfusion,reduction or complete blockage of blood flow,Increase,6.84,14,Draft
 ,severe stenosis,reduction or complete blockage of blood flow,Increase,6.84,14,Draft
 ,occlusion of a blood vessel,reduction or complete blockage of blood flow,Increase,6.84,14,Draft
-,nonatherosclerotic abnormalities,ischemic stroke,Increase,6.84,14,Draft
-,arterial dissection,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,arterial dissection,ischemic stroke,Increase,6.84,14,Draft
 ,COVID-19,ischemic stroke,Increase,6.84,14,Draft
-,fibromuscular dysplasia,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,vasculitis,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,Moyamoya disease,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,sickle cell disease arteriopathy,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,fibromuscular dysplasia,ischemic stroke,Increase,6.84,14,Draft
+,vasculitis,ischemic stroke,Increase,6.84,14,Draft
+,Moyamoya disease,ischemic stroke,Increase,6.84,14,Draft
+,sickle cell disease arteriopathy,ischemic stroke,Increase,6.84,14,Draft
 ,ischemic stroke,production of reactive oxygen species,Increase,6.84,14,Draft
 ,production of reactive oxygen species,DNA damage,Increase,6.84,14,Draft
 ,ischemic stroke,loss of brain structural integrity,Increase,6.84,14,Draft

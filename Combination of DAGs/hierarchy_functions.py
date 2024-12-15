@@ -87,7 +87,7 @@ def analyze_snomed_hierarchy(concept_ancestor_df, my_terms):
     }
 
 
-def create_SNOMED_CT_graph_based_on_terms(my_terms, concept_df, concept_relationship_df, selected_relationship_ids):
+def create_SNOMED_CT_graph_based_on_terms(my_terms, concept_relationship_df, selected_relationship_ids):
     """
     Creates a pruned SNOMED CT hierarchy graph based on the given terms.
 
@@ -97,9 +97,6 @@ def create_SNOMED_CT_graph_based_on_terms(my_terms, concept_df, concept_relation
 
     Args:
         my_terms (set): A set of concept IDs to include in the graph.
-        concept_df (pd.DataFrame): A DataFrame containing SNOMED concepts, 
-            typically with at least the columns 'concept_id' and 'vocabulary_id'. 
-            Only rows where 'vocabulary_id' equals 'SNOMED' are considered.
         concept_relationship_df (pd.DataFrame): A DataFrame containing concept relationships, 
             typically with at least the columns 'concept_id_1', 'concept_id_2', and 'relationship_id'.
         selected_relationship_ids (list): A list of relationship IDs to include when building the graph.
@@ -114,12 +111,7 @@ def create_SNOMED_CT_graph_based_on_terms(my_terms, concept_df, concept_relation
         - A warning if any of the input terms are missing from the resulting graph.
     """
 
-    snomed_concepts = concept_df[concept_df['vocabulary_id'] == 'SNOMED']
-    snomed_relationships = concept_relationship_df[
-        (concept_relationship_df['concept_id_1'].isin(snomed_concepts['concept_id'])) &
-        (concept_relationship_df['concept_id_2'].isin(snomed_concepts['concept_id'])) & 
-        (concept_relationship_df['relationship_id'].isin(selected_relationship_ids))
-    ]
+    snomed_relationships = concept_relationship_df[concept_relationship_df['relationship_id'].isin(selected_relationship_ids)]
 
     # Create graph of SNOMED CT hierarchy
     G = nx.DiGraph()

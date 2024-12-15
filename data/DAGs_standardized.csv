@@ -44,8 +44,8 @@ Wishner (1996),46271022,4310996,Increase,4.0,1,Final,CKD,Ischemic stroke
 ,4084390,3654822,Increase,6.84,2,Final,lesion_size,mRS_stroke
 ,4084390,3654822,Increase,6.84,2,Final,lesion_size,mRS_follow_up
 ,4084390,42872750,Increase,6.84,2,Final,lesion_size,NIHSS_followup
-,time_to_therapy,42872750,Increase,6.84,2,Final,time_to_therapy,NIHSS_followup
-,time_to_therapy,3654822,Increase,6.84,2,Final,time_to_therapy,mRS_follow_up
+,12,42872750,Increase,6.84,2,Final,time_to_therapy,NIHSS_followup
+,12,3654822,Increase,6.84,2,Final,time_to_therapy,mRS_follow_up
 ,4084390,4126495,Decrease,6.0,2,Final,lesion_size,Barthel_Index_stroke
 eloquent / non-eloquent,4104314,4126495,Decrease,6.0,2,Final,lesion_location,Barthel_Index_stroke
 eloquent / non-eloquent,4104314,42872750,Increase,6.84,2,Final,lesion_location,NIHSS_stroke
@@ -55,16 +55,16 @@ eloquent / non-eloquent,4104314,3654822,Increase,6.84,2,Final,lesion_location,mR
 ,42872750,4126495,Decrease,6.0,2,Final,NIHSS_stroke,Barthel_Index_follow_up
 ,3654822,4126495,Decrease,6.0,2,Final,mRS_stroke,Barthel_Index_follow_up
 ,4084390,4126495,Decrease,6.0,2,Final,lesion_size,Barthel_Index_follow_up
-,time_to_therapy,4126495,Decrease,6.0,2,Final,time_to_therapy,Barthel_Index_follow_up
+,12,4126495,Decrease,6.0,2,Final,time_to_therapy,Barthel_Index_follow_up
 ,4126495,4126495,Increase,6.84,2,Final,Barthel_Index_stroke,Barthel_Index_follow_up
 eloquent/non eloquent,4104314,4126495,Decrease,6.0,2,Final,lesion_location,Barthel_Index_follow_up
 ,4310996,4084390,Increase,6.0,2,Final,TOAST (etiology),lesion_size
 ,4310996,4104314,Increase,6.0,2,Final,TOAST (etiology),lesion_location
 cardioembolic,313217,4310996,Increase,2.68,2,Final,present atrial fibrillation,TOAST (etiology)
-,time_till_diagnosis,time_to_therapy,Increase,2.68,2,Final,time_till_diagnosis,time_to_therapy
-meaning the general population being aware of typical stroke symptoms,44791753,time_till_diagnosis,Decrease,2.0,2,Final,awareness of FAST-Scheme,time_till_diagnosis
-,time_till_diagnosis,4051022,Decrease,6.84,2,Final,time_till_diagnosis,rate of thrombolysis
-,time_till_diagnosis,4185284,Decrease,6.84,2,Final,time_till_diagnosis,rate of thrombectomy
+,14,12,Increase,2.68,2,Final,time_till_diagnosis,time_to_therapy
+meaning the general population being aware of typical stroke symptoms,16,14,Decrease,2.0,2,Final,awareness of FAST-Scheme,time_till_diagnosis
+,14,4051022,Decrease,6.84,2,Final,time_till_diagnosis,rate of thrombolysis
+,14,4185284,Decrease,6.84,2,Final,time_till_diagnosis,rate of thrombectomy
 ,4051022,4084390,Decrease,2.93,2,Final,rate of thrombolysis,lesion_size
 ,4185284,4084390,Decrease,2.93,2,Final,rate of thrombectomy,lesion_size
 cardioembolic,4310996,4051022,Increase,2.93,2,Final,TOAST (etiology),rate of thrombolysis
@@ -104,22 +104,22 @@ cardioembolic,4070299,4310996,Increase,6.84,2,Final,persistent foramen ovale,TOA
 ,316866,3654822,Decrease,6.84,4,Draft,arterial hypertension,functional post stroke outcome
 ,433736,3654822,Decrease,6.84,4,Draft,Obesity,functional post stroke outcome
 ,433736,4119952,Increase,4.61,4,Draft,Obesity,endothelial dysfunction
-,4119952,EMV,Increase,6.84,4,Draft,endothelial dysfunction,EMV
+,4119952,13,Increase,6.84,4,Draft,endothelial dysfunction,EMV
 ,433736,4310996,Increase,6.84,4,Draft,Obesity,1. stroke incidence
 ,316866,4310996,Increase,6.84,4,Draft,arterial hypertension,1. stroke incidence
 ,4310996,3654822,Decrease,1.0,4,Draft,1. stroke incidence,functional post stroke outcome
 ,4119952,4310996,Increase,5.42,4,Draft,endothelial dysfunction,1. stroke incidence
-,EMV,37311069,Increase,6.84,4,Draft,EMV,secondary cardiovascular risk
+,13,37311069,Increase,6.84,4,Draft,EMV,secondary cardiovascular risk
 ,316866,37311069,Increase,6.84,4,Draft,arterial hypertension,secondary cardiovascular risk
 ,4119952,37311069,Increase,2.0,4,Draft,endothelial dysfunction,secondary cardiovascular risk
-,EMV,4310996,Increase,4.0,4,Draft,EMV,1. stroke incidence
+,13,4310996,Increase,4.0,4,Draft,EMV,1. stroke incidence
 ,4310996,4084390,Increase,6.84,4,Draft,1. stroke incidence,lesion size
 ,4310996,37311069,Increase,6.84,4,Draft,1. stroke incidence,secondary cardiovascular risk
 ,4084390,37311069,Increase,3.0,4,Draft,lesion size,secondary cardiovascular risk
 ,4137275,37311069,Increase,6.84,4,Draft,vascular inflammation,secondary cardiovascular risk
 ,4119952,4137275,Increase,3.14,4,Draft,endothelial dysfunction,vascular inflammation
-,4137275,LMV,Increase,5.31,4,Draft,vascular inflammation,LMV
-,LMV,37311069,Increase,5.31,4,Draft,LMV,secondary cardiovascular risk
+,4137275,3,Increase,5.31,4,Draft,vascular inflammation,LMV
+,3,37311069,Increase,5.31,4,Draft,LMV,secondary cardiovascular risk
 ,4298794,4310996,Increase,6.0,5,Draft,Smoking,Stroke
 ,198124,4310996,Increase,5.0,5,Draft,kidney disease,Stroke
 ,442985,4310996,Increase,1.0,5,Draft,male sex,Stroke
@@ -203,7 +203,7 @@ Diener 2020,4056822,4310996,Decrease,3.0,6,Final,anticoagulation,FIRST ISCHEMIC 
 ,4171825,604179,Increase,6.84,6,Final,BMI,myocardial infarction (type 1)
 ,4171825,4310996,Increase,6.84,6,Final,BMI,second ischemic stroke
 ,4171825,4310996,Increase,4.34,6,Final,BMI,FIRST ISCHEMIC STROKE
-Rizas et al 2017,cardiac autonomic dysbalance,44784217,Increase,4.0,6,Final,cardiac autonomic dysbalance,severe arrrhythmia
+Rizas et al 2017,434633,44784217,Increase,4.0,6,Final,cardiac autonomic dysbalance,severe arrrhythmia
 ,42538532,4310996,Increase,5.1,6,Final,cardiac thrombus,FIRST ISCHEMIC STROKE
 ,444031,443432,Increase,4.52,6,Final,chronic heart failure,kognitive decline
 ,444031,4310996,Increase,4.34,6,Final,chronic heart failure,FIRST ISCHEMIC STROKE
@@ -218,7 +218,7 @@ Ghadri 2018,440383,40479589,Increase,2.0,6,Final,depression,Takotsubo syndrome
 ,201820,604179,Increase,6.0,6,Final,diabetes,myocardial infarction (type 1)
 ,201820,4310996,Increase,4.52,6,Final,diabetes,FIRST ISCHEMIC STROKE
 ,201820,4171825,Increase,4.52,6,Final,diabetes,BMI
-,201820,cardiac autonomic dysbalance,Increase,4.0,6,Final,diabetes,cardiac autonomic dysbalance
+,201820,434633,Increase,4.0,6,Final,diabetes,cardiac autonomic dysbalance
 ,46272492,4310996,Increase,3.92,6,Final,dissection,FIRST ISCHEMIC STROKE
 ,31317,432250,Increase,3.22,6,Final,dysphagia,infection
 ,4275208,44784217,Increase,3.76,6,Final,elevated catecholamines,severe arrrhythmia
@@ -262,7 +262,7 @@ Sandoval 2019,316866,37309626,Increase,4.0,6,Final,hypertension,myocardial infar
 Sandoval 2019,432250,37309626,Increase,4.0,6,Final,infection,myocardial infarction (type 2)
 van der Linden 2017,198124,4009409,Increase,2.0,6,Final,kidney disease,troponin elevation
 ,604179,4310996,Increase,2.68,6,Final,myocardial infarction (type 1),FIRST ISCHEMIC STROKE
-Rizas et al 2017,604179,cardiac autonomic dysbalance,Increase,6.0,6,Final,myocardial infarction (type 1),cardiac autonomic dysbalance
+Rizas et al 2017,604179,434633,Increase,6.0,6,Final,myocardial infarction (type 1),cardiac autonomic dysbalance
 "thygesen et al 2018, McAloon 2016",604179,4306655,Increase,6.0,6,Final,myocardial infarction (type 1),mortality
 thygesen et al 2018,604179,44784217,Increase,6.0,6,Final,myocardial infarction (type 1),severe arrrhythmia
 thygesen et al 2018,604179,4009409,Increase,6.0,6,Final,myocardial infarction (type 1),troponin elevation
@@ -281,10 +281,10 @@ Faria et al 2020,377091,4009409,Increase,4.0,6,Final,seizures,troponin elevation
 ,442985,40479589,Decrease,2.68,6,Final,sex (male),Takotsubo syndrome
 ,4298794,4310996,Increase,6.84,6,Final,smoking,FIRST ISCHEMIC STROKE
 ,4298794,604179,Increase,6.84,6,Final,smoking,myocardial infarction (type 1)
-,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance,Increase,2.72,6,Final,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance
-Scheitz et.al 2018 lancet,stroke lesion affecting central autonomic network,44784217,Increase,6.0,6,Final,stroke lesion affecting central autonomic network,severe arrrhythmia
-Krause et al 2017,stroke lesion affecting central autonomic network,4009409,Increase,6.0,6,Final,stroke lesion affecting central autonomic network,troponin elevation
-Scheitz 2018,stroke lesion affecting central autonomic network,4275208,Increase,2.0,6,Final,stroke lesion affecting central autonomic network,elevated catecholamines
+,4200516,434633,Increase,2.72,6,Final,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance
+Scheitz et.al 2018 lancet,4200516,44784217,Increase,6.0,6,Final,stroke lesion affecting central autonomic network,severe arrrhythmia
+Krause et al 2017,4200516,4009409,Increase,6.0,6,Final,stroke lesion affecting central autonomic network,troponin elevation
+Scheitz 2018,4200516,4275208,Increase,2.0,6,Final,stroke lesion affecting central autonomic network,elevated catecholamines
 Ghadri et at 2018,40479589,4009409,Increase,4.0,6,Final,Takotsubo syndrome,troponin elevation
 scheitz 2014,4009409,44800078,Increase,3.0,6,Final,troponin elevation,higher fitness/mobility post
 scheitz 2014,4009409,4199549,Increase,3.0,6,Final,troponin elevation,higher fitness/mobility post
@@ -611,7 +611,7 @@ doi: 10.3389/fneur.2019.00238,4298794,4232457,Increase,5.0,11,Final,smoking,whit
 "myocardial infarction, coronary heart disease, cardiac failure",606770,4310996,Increase,3.0,11,Final,kidney function,first ischemic stroke
 "Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",606770,4232457,Increase,5.0,11,Final,kidney function,white matter hyperintensities (MRI)
 ,436940,606770,Increase,6.0,11,Final,metabolic syndrom,kidney function
-"Adams et al., Stroke 1993",enlarged perivascular spaces,4310996,Increase,4.0,11,Final,enlarged perivascular spaces,first ischemic stroke
+"Adams et al., Stroke 1993",7,4310996,Increase,4.0,11,Final,enlarged perivascular spaces,first ischemic stroke
 24:35-41,37109909,4232457,Increase,6.0,11,Final,microbleeds,white matter hyperintensities (MRI)
 ,439393,4310996,Increase,6.84,11,Final,preeclampsia/eclampsia,first ischemic stroke
 ,443700,4310996,Increase,6.84,11,Final,preeclampsia/eclampsia,first ischemic stroke
@@ -723,23 +723,22 @@ doi: 10.3389/fneur.2019.00238,4298794,4232457,Increase,5.0,11,Final,smoking,whit
 ,4176126,4070767,Increase,6.84,14,Draft,decreased systemic perfusion,reduction or complete blockage of blood flow
 ,4217691,4070767,Increase,6.84,14,Draft,severe stenosis,reduction or complete blockage of blood flow
 ,4178903,4070767,Increase,6.84,14,Draft,occlusion of a blood vessel,reduction or complete blockage of blood flow
-,nonatherosclerotic abnormalities,4310996,Increase,6.84,14,Draft,nonatherosclerotic abnormalities,ischemic stroke
-,46272492,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,arterial dissection,nonatherosclerotic abnormalities
+,46272492,4310996,Increase,6.84,14,Draft,arterial dissection,ischemic stroke
 ,37311061,4310996,Increase,6.84,14,Draft,COVID-19,ischemic stroke
-,4135811,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,fibromuscular dysplasia,nonatherosclerotic abnormalities
-,4137275,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,vasculitis,nonatherosclerotic abnormalities
-,378774,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,Moyamoya disease,nonatherosclerotic abnormalities
-,4213628,nonatherosclerotic abnormalities,Increase,6.84,14,Draft,sickle cell disease arteriopathy,nonatherosclerotic abnormalities
-,4310996,production of reactive oxygen species,Increase,6.84,14,Draft,ischemic stroke,production of reactive oxygen species
-,production of reactive oxygen species,4285282,Increase,6.84,14,Draft,production of reactive oxygen species,DNA damage
-,4310996,loss of brain structural integrity,Increase,6.84,14,Draft,ischemic stroke,loss of brain structural integrity
+,4135811,4310996,Increase,6.84,14,Draft,fibromuscular dysplasia,ischemic stroke
+,4137275,4310996,Increase,6.84,14,Draft,vasculitis,ischemic stroke
+,378774,4310996,Increase,6.84,14,Draft,Moyamoya disease,ischemic stroke
+,4213628,4310996,Increase,6.84,14,Draft,sickle cell disease arteriopathy,ischemic stroke
+,4310996,8,Increase,6.84,14,Draft,ischemic stroke,production of reactive oxygen species
+,8,4285282,Increase,6.84,14,Draft,production of reactive oxygen species,DNA damage
+,4310996,9,Increase,6.84,14,Draft,ischemic stroke,loss of brain structural integrity
 ,4276568,318736,Increase,6.84,14,Draft,female sex steroids,migraine
 ,4276568,37311061,Decrease,3.37,14,Draft,female sex steroids,COVID-19
 ,4306703,4310996,Increase,6.84,14,Draft,large artery atherosclerosis,ischemic stroke
 ,4322978,4285282,Increase,6.84,14,Draft,ageing,DNA damage
 ,4322978,318736,Decrease,6.84,14,Draft,ageing,migraine
 ,4322978,316866,Increase,6.84,14,Draft,ageing,hypertension
-,production of reactive oxygen species,4119952,Increase,6.84,14,Draft,production of reactive oxygen species,endothelial dysfunction
+,8,4119952,Increase,6.84,14,Draft,production of reactive oxygen species,endothelial dysfunction
 ,4029305,4119952,Increase,6.84,14,Draft,hypercholesterolemia,endothelial dysfunction
 ,4298794,4119952,Increase,6.84,14,Draft,smoking,endothelial dysfunction
 ,201820,4119952,Increase,6.84,14,Draft,diabetes mellitus,endothelial dysfunction
@@ -760,13 +759,13 @@ doi: 10.3389/fneur.2019.00238,4298794,4232457,Increase,5.0,11,Final,smoking,whit
 "Harrison Internal Med., 2020",4322978,4046360,Increase,4.61,16,Final,Age,Lacunes
 "Harrison Internal Med., 2020",4295287,4231363,Increase,4.61,16,Final,Hypercoagulopathy,Thrombosis
 "Harrison Internal Med., 2020",4137275,4310996,Increase,4.61,16,Final,Vasculitis,First Ischemic Stroke
-,Cardiac Remodelling,313217,Increase,4.61,16,Final,Cardiac Remodelling,Atrial Fibrillation
-,4322978,Cardiac Remodelling,Increase,4.61,16,Final,Age,Cardiac Remodelling
-,316866,Cardiac Remodelling,Increase,4.61,16,Final,Hypertension,Cardiac Remodelling
-,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61,16,Final,Other Cardiac Pathologies,Cardiac Remodelling
+,6,313217,Increase,4.61,16,Final,Cardiac Remodelling,Atrial Fibrillation
+,4322978,6,Increase,4.61,16,Final,Age,Cardiac Remodelling
+,316866,6,Increase,4.61,16,Final,Hypertension,Cardiac Remodelling
+,Other Cardiac Pathologies,6,Increase,4.61,16,Final,Other Cardiac Pathologies,Cardiac Remodelling
 ,4306703,Other Cardiac Pathologies,Increase,4.61,16,Final,Atherosclerosis,Other Cardiac Pathologies
 "Harrison Internal Med., 2020",4306703,4329847,Increase,4.61,16,Final,Atherosclerosis,Myocardial Infarction
-,4329847,Cardiac Remodelling,Increase,4.61,16,Final,Myocardial Infarction,Cardiac Remodelling
+,4329847,6,Increase,4.61,16,Final,Myocardial Infarction,Cardiac Remodelling
 "Harrison Internal Med., 2020",4184633,4306703,Increase,4.61,16,Final,Second-hand Smoking,Atherosclerosis
 ,35622016,201820,Increase,4.0,16,Final,Insulin Resistance / Impaired glucose metabolism,Diabetes
 ,4130526,201820,Increase,4.0,16,Final,Insulin Resistance / Impaired glucose metabolism,Diabetes
@@ -785,8 +784,8 @@ Kernan et al 2002,4130526,4180169,Increase,4.0,16,Final,Insulin Resistance / Imp
 Kahn et. al 2006,433736,35622016,Increase,4.0,16,Final,Obesity,Insulin Resistance / Impaired glucose metabolism
 Kahn et. al 2006,433736,4130526,Increase,4.0,16,Final,Obesity,Insulin Resistance / Impaired glucose metabolism
 Kahn et. al 2006,433736,4180169,Increase,4.17,16,Final,Obesity,Inflammation
-"Hering, 2015",4251306,Sympathetic activation,Increase,0.51,16,Final,Psychogenic Stress,Sympathetic activation
-"Hering, 2015",Sympathetic activation,4231363,Increase,0.51,16,Final,Sympathetic activation,Thrombosis
+"Hering, 2015",4251306,15,Increase,0.51,16,Final,Psychogenic Stress,Sympathetic activation
+"Hering, 2015",15,4231363,Increase,0.51,16,Final,Sympathetic activation,Thrombosis
 Redline et al 2011,313459,316866,Increase,0.51,16,Final,Sleep disturbances / Obstructive Sleep Apnea,Hypertension
 Redline et al 2011,435657,316866,Increase,0.51,16,Final,Sleep disturbances / Obstructive Sleep Apnea,Hypertension
 Redline et al 2011,313459,35622016,Increase,2.68,16,Final,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism
@@ -843,7 +842,7 @@ American Heart Association 2014,46270002,4336673,Decrease,2.0,16,Final,Reducing 
 ,4310996,4310996,Increase,2.68,16,Final,First Ischemic Stroke,Recurrent Stroke
 Dirnagl Review,4310996,378143,Increase,6.0,17,Draft,first stroke,cerebral inflammation
 Dirnagl Review,434821,4310996,Increase,6.84,17,Draft,systemic inflammation,first stroke
-Meisel Review NEJM/Nature,4310996,peripheral immune competence,Decrease,6.84,17,Draft,first stroke,peripheral immune competence
+Meisel Review NEJM/Nature,4310996,1,Decrease,6.84,17,Draft,first stroke,peripheral immune competence
 ,4310996,443454,Increase,6.84,19,Draft,first stroke,large infarction
 ,4310996,255848,Increase,6.84,19,Draft,first stroke,pneumonia
 ,443454,255848,Increase,6.84,19,Draft,large infarction,pneumonia
@@ -937,7 +936,7 @@ Christoph,4322978,4310996,Increase,6.84,20,Draft,aging,first ischemic stroke
 Christoph,4322978,4310996,Increase,6.84,20,Draft,aging,second ischemic stroke
 Christoph,4310996,4234656,Decrease,6.84,20,Draft,second ischemic stroke,recovery level
 ,4310996,4234656,Decrease,2.68,20,Draft,first ischemic stroke,recovery level
-,B-cell infiltration,443432,Increase,2.68,20,Draft,B-cell infiltration,cognition
+,4,443432,Increase,2.68,20,Draft,B-cell infiltration,cognition
 ,4322978,443432,Increase,6.84,20,Draft,aging,cognition
 ,316866,443432,Increase,4.08,20,Draft,hypertension,cognition
 ,4310996,443432,Increase,2.06,20,Draft,first ischemic stroke,cognition
@@ -946,18 +945,18 @@ Christoph,4310996,4234656,Decrease,6.84,20,Draft,second ischemic stroke,recovery
 ,4150054,4234656,Increase,6.0,20,Draft,brain IL6_time1,recovery level
 ,4150054,4310996,Increase,6.84,20,Draft,systemic IL6,second ischemic stroke
 ,4150054,4310996,Increase,6.84,20,Draft,systemic IL6,first ischemic stroke
-,collateralization,4338810,Increase,6.84,20,Draft,collateralization,stroke volume
+,4283239,4338810,Increase,6.84,20,Draft,collateralization,stroke volume
 ,4310996,4150603,Increase,6.84,20,Draft,first ischemic stroke,hemispheric atrophy
 ,4310996,4150603,Increase,6.84,20,Draft,second ischemic stroke,hemispheric atrophy
 ,316866,4150603,Increase,3.68,20,Draft,hypertension,hemispheric atrophy
 ,4322978,4150603,Increase,6.84,20,Draft,aging,hemispheric atrophy
-,endothelial proliferation,4234656,Increase,6.84,20,Draft,endothelial proliferation,recovery level
-,endothelial proliferation,4068351,Decrease,6.84,20,Draft,endothelial proliferation,blood brain barrier integrity
-,4068351,B-cell infiltration,Increase,6.84,20,Draft,blood brain barrier integrity,B-cell infiltration
-,microglial proliferation,neuronal survival,Decrease,6.84,20,Draft,microglial proliferation,neuronal survival
+,11,4234656,Increase,6.84,20,Draft,endothelial proliferation,recovery level
+,11,4068351,Decrease,6.84,20,Draft,endothelial proliferation,blood brain barrier integrity
+,4068351,4,Increase,6.84,20,Draft,blood brain barrier integrity,B-cell infiltration
+,2,10,Decrease,6.84,20,Draft,microglial proliferation,neuronal survival
 ,4150054,4234656,Decrease,2.68,20,Draft,brain IL6_time2,recovery level
-,astrocytic proliferation,4234656,Increase,2.68,20,Draft,astrocytic proliferation,recovery level
-,astrocytic proliferation,neuronal survival,Increase,2.68,20,Draft,astrocytic proliferation,neuronal survival
-,endothelial proliferation,neuronal survival,Increase,5.2,20,Draft,endothelial proliferation,neuronal survival
-,collateralization,4310996,Decrease,5.2,20,Draft,collateralization,first ischemic stroke
-,collateralization,4310996,Decrease,5.2,20,Draft,collateralization,second ischemic stroke
+,5,4234656,Increase,2.68,20,Draft,astrocytic proliferation,recovery level
+,5,10,Increase,2.68,20,Draft,astrocytic proliferation,neuronal survival
+,11,10,Increase,5.2,20,Draft,endothelial proliferation,neuronal survival
+,4283239,4310996,Decrease,5.2,20,Draft,collateralization,first ischemic stroke
+,4283239,4310996,Decrease,5.2,20,Draft,collateralization,second ischemic stroke
