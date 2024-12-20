@@ -762,8 +762,7 @@ doi: 10.3389/fneur.2019.00238,4298794,4232457,Increase,5.0,11,Final,smoking,whit
 ,6,313217,Increase,4.61,16,Final,Cardiac Remodelling,Atrial Fibrillation
 ,4322978,6,Increase,4.61,16,Final,Age,Cardiac Remodelling
 ,316866,6,Increase,4.61,16,Final,Hypertension,Cardiac Remodelling
-,Other Cardiac Pathologies,6,Increase,4.61,16,Final,Other Cardiac Pathologies,Cardiac Remodelling
-,4306703,Other Cardiac Pathologies,Increase,4.61,16,Final,Atherosclerosis,Other Cardiac Pathologies
+,4306703,6,Increase,4.61,16,Final,Atherosclerosis,Cardiac Remodelling
 "Harrison Internal Med., 2020",4306703,4329847,Increase,4.61,16,Final,Atherosclerosis,Myocardial Infarction
 ,4329847,6,Increase,4.61,16,Final,Myocardial Infarction,Cardiac Remodelling
 "Harrison Internal Med., 2020",4184633,4306703,Increase,4.61,16,Final,Second-hand Smoking,Atherosclerosis
@@ -833,7 +832,7 @@ Harrison internal medicine 2020,4201029,4231363,Decrease,2.68,16,Final,Statin Th
 Harrison internal medicine 2020,4201029,316866,Decrease,2.68,16,Final,Statin Therapy,Hypertension
 Sundell 2008 & mostofsky 2016,4183729,4306703,Decrease,2.0,16,Final,Low-Moderate Alcohol Consumption,Atherosclerosis
 Sundell 2008 & mostofsky 2016,4336673,316866,Increase,2.0,16,Final,Heavy Alcohol Consumption,Hypertension
-Sundell 2008 & mostofsky 2016,4336673,Other Cardiac Pathologies,Increase,2.0,16,Final,Heavy Alcohol Consumption,Other Cardiac Pathologies
+Sundell 2008 & mostofsky 2016,4336673,6,Increase,2.0,16,Final,Heavy Alcohol Consumption,Cardiac Remodelling
 Sundell 2008 & mostofsky 2016,4336673,313217,Increase,2.0,16,Final,Heavy Alcohol Consumption,Atrial Fibrillation
 Sundell 2008 & mostofsky 2016,4336673,4231363,Increase,2.0,16,Final,Heavy Alcohol Consumption,Thrombosis
 American Heart Association 2014,46270002,4336673,Decrease,2.0,16,Final,Reducing Alcohol Consumption,Heavy Alcohol Consumption

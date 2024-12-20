@@ -730,8 +730,7 @@ doi: 10.3389/fneur.2019.00238,smoking,white matter hyperintensities (MRI),Increa
 ,Cardiac Remodelling,Atrial Fibrillation,Increase,4.61,16,Final
 ,Age,Cardiac Remodelling,Increase,4.61,16,Final
 ,Hypertension,Cardiac Remodelling,Increase,4.61,16,Final
-,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61,16,Final
-,Atherosclerosis,Other Cardiac Pathologies,Increase,4.61,16,Final
+,Atherosclerosis,Cardiac Remodelling,Increase,4.61,16,Final
 "Harrison Internal Med., 2020",Atherosclerosis,Myocardial Infarction,Increase,4.61,16,Final
 ,Myocardial Infarction,Cardiac Remodelling,Increase,4.61,16,Final
 "Harrison Internal Med., 2020",Second-hand Smoking,Atherosclerosis,Increase,4.61,16,Final
@@ -780,7 +779,7 @@ Harrison internal medicine 2020,Statin Therapy,Thrombosis,Decrease,2.68,16,Final
 Harrison internal medicine 2020,Statin Therapy,Hypertension,Decrease,2.68,16,Final
 Sundell 2008 & mostofsky 2016,Low-Moderate Alcohol Consumption,Atherosclerosis,Decrease,2.0,16,Final
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Hypertension,Increase,2.0,16,Final
-Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Other Cardiac Pathologies,Increase,2.0,16,Final
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Cardiac Remodelling,Increase,2.0,16,Final
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Atrial Fibrillation,Increase,2.0,16,Final
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Thrombosis,Increase,2.0,16,Final
 American Heart Association 2014,Reducing Alcohol Consumption,Heavy Alcohol Consumption,Decrease,2.0,16,Final
