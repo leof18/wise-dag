@@ -1,46 +1,33 @@
 import React, { createContext, useContext, useState } from 'react';
 
-// Create AuthContext
-export const AuthContext = createContext();
+const AuthContext = createContext();
 
-// AuthProvider Component
+export const useAuth = () => useContext(AuthContext);
+
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(
-    JSON.parse(localStorage.getItem('user')) || null
-  );
+  const [user, setUser] = useState(null);
 
   const login = async (email, password) => {
-    if (email === 'test@example.com' && password === 'password123') {
-      setUser({ email });
-      localStorage.setItem('user', JSON.stringify({ email }));
-    } else {
-      throw new Error('Invalid credentials');
-    }
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (email === 'admin@example.com' && password === 'password123') {
+          setUser({ email });
+          resolve();
+        } else {
+          reject(new Error('Invalid credentials'));
+        }
+      }, 1000);
+    });
   };
 
-  const signup = async (email, password) => {
-    // Mock Signup Logic
-    setUser({ email });
-    localStorage.setItem('user', JSON.stringify({ email }));
-  };
-
-  const logout = () => {
+  const logout = (callback) => {
     setUser(null);
-    localStorage.removeItem('user');
+    if (callback) callback(); // Call the callback for redirection
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
-};
-
-// Custom Hook for Auth
-export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
-  }
-  return context;
 };

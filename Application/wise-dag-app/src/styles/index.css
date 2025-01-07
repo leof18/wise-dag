@@ -6,3 +6,18 @@
 body {
   @apply bg-gray-100 text-gray-800;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-content {
+  flex: 1;
+}

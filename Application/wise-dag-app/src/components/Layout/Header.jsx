@@ -1,64 +1,49 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.png'; // Ensure the logo path is correct
 
 const Header = () => {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
-  const handleHomeClick = () => {
-    if (user) {
-      navigate('/dashboard'); // Redirect to dashboard if logged in
-    } else {
-      navigate('/'); // Redirect to home page if not logged in
-    }
-  };
-
   const handleLogout = () => {
-    logout();
-    navigate('/login');
+    logout(() => {
+      navigate('/'); // Redirect to homepage after logout
+    });
   };
 
   return (
-    <header className="bg-green-600 text-white shadow-lg">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        {/* Logo and Title (Home Link) */}
-        <div
-          className="flex items-center gap-4 cursor-pointer"
-          onClick={handleHomeClick}
-        >
+    <header className="bg-green-600 text-white p-4 shadow-md">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo & App Name */}
+        <Link to={user ? '/dashboard' : '/'} className="flex items-center gap-2">
           <img
             src={logo}
             alt="WISE DAG Logo"
-            className="h-12 w-auto transition-transform duration-500 ease-in-out hover:scale-105"
+            className="h-10 w-auto"
+            onError={(e) => {
+              console.error('Logo failed to load', e);
+              e.target.src = 'https://via.placeholder.com/150'; // Fallback placeholder
+            }}
           />
-          <h1 className="text-3xl font-bold">WISE DAG</h1>
-        </div>
+          <h1 className="text-xl font-bold">WISE DAG</h1>
+        </Link>
 
-        {/* Navigation Links */}
-        <nav className="flex gap-6 items-center">
-          {user ? (
-            <>
-              <span className="text-lg">Welcome, {user.email}</span>
+        {/* User Info & Logout */}
+        {user && (
+          <nav>
+            <div className="flex items-center gap-4">
+              <span>Welcome, {user.email}</span>
               <button
                 onClick={handleLogout}
-                className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
+                className="text-white underline hover:text-gray-200"
               >
                 Logout
               </button>
-            </>
-          ) : (
-            <>
-              <Link to="/login" className="hover:underline">
-                Login
-              </Link>
-              <Link to="/signup" className="hover:underline">
-                Signup
-              </Link>
-            </>
-          )}
-        </nav>
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );

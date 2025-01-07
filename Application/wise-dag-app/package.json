@@ -12,6 +12,7 @@
     "axios": "^1.7.9",
     "cytoscape": "^3.30.3",
     "cytoscape-dagre": "^2.5.0",
+    "framer-motion": "^11.16.0",
     "neo4j-driver": "^5.27.0",
     "papaparse": "^5.4.1",
     "react": "^18.3.1",
