@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "cytoscape": "^3.30.3",
     "cytoscape-dagre": "^2.5.0",
+    "neo4j-driver": "^5.27.0",
     "papaparse": "^5.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
