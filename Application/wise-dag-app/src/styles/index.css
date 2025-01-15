@@ -2,22 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles */
+/* Global body styles */
 body {
-  @apply bg-gray-100 text-gray-800;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-body {
+  @apply bg-gray-100 text-gray-800 font-sans;
   margin: 0;
-  font-family: 'Arial', sans-serif;
 }
 
+/* Root container */
+#root {
+  @apply flex flex-col min-h-screen;
+}
+
+/* Main content area (flexible height) */
 .main-content {
-  flex: 1;
+  @apply flex-1;
+}
+
+/* Header Styling */
+header {
+  @apply bg-blue-600 text-white sticky top-0 z-50 shadow-md;
+}
+
+header .header-container {
+  @apply max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center;
+}
+
+/* Footer Styling */
+footer {
+  @apply bg-gray-800 text-white text-center py-4;
+}
+
+/* Links */
+a {
+  @apply text-blue-300 no-underline;
+}
+
+a:hover {
+  @apply underline;
+}
+
+/* Utility for hiding elements */
+.hidden {
+  display: none;
+}
+
+/* Styles for GraphPage */
+
+/* Root container */
+.graph-container {
+  @apply flex flex-col items-center justify-center p-4 min-h-screen bg-gray-100;
+}
+
+/* Header and logo */
+.graph-header {
+  @apply flex flex-col items-center mb-4;
+}
+
+.graph-logo {
+  @apply w-16 h-auto mb-4;
+}
+
+.graph-title {
+  @apply text-gray-700 font-semibold text-sm;
+}
+
+/* Nodes */
+.graph-nodes {
+  @apply flex flex-wrap justify-center gap-6 mt-4;
+}
+
+.graph-node {
+  @apply flex items-center justify-center w-20 h-20 rounded-full border cursor-pointer text-center;
+  font-weight: bold;
+}
+
+.node-input {
+  @apply bg-black text-white;
+}
+
+.node-output {
+  @apply bg-black text-white;
+}
+
+.node-intermediate {
+  @apply bg-white border-gray-300 text-black;
+}
+
+/* Granularity control */
+.granularity-control {
+  @apply text-center mb-6;
+}
+
+.granularity-slider {
+  @apply w-2/3 mx-auto my-4 block;
+}
+
+/* Copy button */
+.copy-button {
+  @apply bg-black text-white px-6 py-2 rounded-lg shadow-md mt-6;
+}
+
+.copy-button:hover {
+  @apply bg-opacity-90;
 }

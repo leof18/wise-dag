@@ -1,32 +1,40 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useState, useContext } from 'react';
+import { signup as apiSignup, login as apiLogin, sendPasswordResetEmail } from '../utils/api';
+import { useNavigate } from 'react-router-dom';
 
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  return useContext(AuthContext);
+};
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
-  const login = async (email, password) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (email === 'admin@example.com' && password === 'password123') {
-          setUser({ email });
-          resolve();
-        } else {
-          reject(new Error('Invalid credentials'));
-        }
-      }, 1000);
-    });
+  const signup = async (username, email, password) => {
+    const response = await apiSignup(username, email, password);
+    setUser(response.data.user);
+    navigate('/');
   };
 
-  const logout = (callback) => {
+  const login = async (username, password) => {
+    const response = await apiLogin(username, password);
+    setUser(response.data.user);
+    navigate('/');
+  };
+
+  const logout = () => {
     setUser(null);
-    if (callback) callback(); // Call the callback for redirection
+    navigate('/');
+  };
+
+  const resetPassword = async (email) => {
+    await sendPasswordResetEmail(email);
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user, signup, login, logout, resetPassword }}>
       {children}
     </AuthContext.Provider>
   );

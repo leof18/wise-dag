@@ -1,14 +1,13 @@
-// src/utils/api.js
 import axios from 'axios';
 
-const API = axios.create({
-  baseURL: 'http://localhost:3001/api',
-});
-
-export const loginUser = async (email, password) => {
-  return API.post('/auth/login', { email, password });
+export const signup = (username, email, password) => {
+  return axios.post('/api/auth/signup', { username, email, password });
 };
 
-export const signupUser = async (email, password) => {
-  return API.post('/auth/signup', { email, password });
+export const login = (username, password) => {
+  return axios.post('/api/auth/login', { username, password });
+};
+
+export const sendPasswordResetEmail = (email) => {
+  return axios.post('/api/auth/reset-password', { email });
 };
