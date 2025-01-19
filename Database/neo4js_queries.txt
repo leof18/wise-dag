@@ -1,0 +1,45 @@
+// NEO4JS SCRIPT COLLECTION
+
+// Step 1: For all concepts, inherit causal relationships from descendant concepts
+MATCH (ancestor:Concept)-[:SUBSUMES*]->(descendant:Concept)-[:CAUSES]->(effect:Concept)
+MERGE (ancestor)-[:CAUSES]->(effect)
+
+// OPTIONAL: Creates lots of cycles, discuss in meeting
+// Step 2: Establish causal relationships between ancestor nodes based on descendant relationships
+// MATCH (ancestor1:Concept)-[:SUBSUMES*]->(descendant1:Concept)-[:CAUSES]->(descendant2:Concept)<-[:SUBSUMES*]-(ancestor2:Concept)
+// WHERE ancestor1 <> ancestor2
+// MERGE (ancestor1)-[:CAUSES]->(ancestor2)
+
+// Retrieve all nodes at the specified iteration level
+MATCH (n:Concept)-[:PART_OF]->(level:IterationLevel)
+WHERE level.level = 1
+WITH collect(n) AS selectedLevelNodes
+UNWIND selectedLevelNodes AS n
+OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
+WHERE m IN selectedLevelNodes
+RETURN n, r, m
+
+// Expanding a single node
+// Step 1: Retrieve all nodes at the current level
+MATCH (n:Concept)-[:PART_OF]->(level:IterationLevel)
+WHERE level.level = 0
+WITH collect(n) AS selectedLevelNodes
+// Step 2: Expand the immediate children of the selected node
+UNWIND selectedLevelNodes AS n
+OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
+WITH n, r, m, selectedLevelNodes
+OPTIONAL MATCH (n:Concept {name: 'FH: Cardiovascular disease'})-[:SUBSUMES]->(child:Concept)
+OPTIONAL MATCH (child)-[childR:CAUSES]->(childEffect:Concept)
+WITH 
+  CASE 
+    WHEN n.name = 'FH: Cardiovascular disease' THEN COLLECT(child)
+    ELSE [n]
+  END AS expandedNodes,
+  r, m, child, childR, childEffect
+UNWIND expandedNodes AS node
+RETURN 
+  node AS n,
+  r,
+  m,
+  childR,
+  childEffect
