@@ -22,4 +22,4 @@ def run_queries(uri, user, password, cypher_file):
                         pbar.update(1)
 
 if __name__ == "__main__":
-    run_queries(uri, username, password, "Database/all_in_one_script.cypher")
+    run_queries(uri, username, password, "Database/output.cypher")
