@@ -99,15 +99,15 @@ cardioembolic,4070299,4310996,Increase,6.84,2,Final,Increase,persistent foramen 
 ,4024366,4310996,Increase,6.84,3,Draft,Increase,high fat salt diet,second ischemic stroke
 ,201820,4310996,Increase,6.84,3,Draft,Increase,diabetes,second ischemic stroke
 ,316866,4119952,Increase,6.84,4,Draft,Increase,arterial hypertension,endothelial dysfunction
-,4051022,3654822,Increase,2.68,4,Draft,Increase,Thrombolysis,functional post stroke outcome
-,4084390,3654822,Decrease,6.26,4,Draft,Decrease,lesion size,functional post stroke outcome
-,316866,3654822,Decrease,6.84,4,Draft,Decrease,arterial hypertension,functional post stroke outcome
-,433736,3654822,Decrease,6.84,4,Draft,Decrease,Obesity,functional post stroke outcome
+,4051022,3654822,Increase,2.68,4,Draft,Decrease,Thrombolysis,functional post stroke outcome
+,4084390,3654822,Decrease,6.26,4,Draft,Increase,lesion size,functional post stroke outcome
+,316866,3654822,Decrease,6.84,4,Draft,Increase,arterial hypertension,functional post stroke outcome
+,433736,3654822,Decrease,6.84,4,Draft,Increase,Obesity,functional post stroke outcome
 ,433736,4119952,Increase,4.61,4,Draft,Increase,Obesity,endothelial dysfunction
 ,4119952,13,Increase,6.84,4,Draft,Increase,endothelial dysfunction,EMV
 ,433736,4310996,Increase,6.84,4,Draft,Increase,Obesity,1. stroke incidence
 ,316866,4310996,Increase,6.84,4,Draft,Increase,arterial hypertension,1. stroke incidence
-,4310996,3654822,Decrease,1.0,4,Draft,Decrease,1. stroke incidence,functional post stroke outcome
+,4310996,3654822,Decrease,1.0,4,Draft,Increase,1. stroke incidence,functional post stroke outcome
 ,4119952,4310996,Increase,5.42,4,Draft,Increase,endothelial dysfunction,1. stroke incidence
 ,13,37311069,Increase,6.84,4,Draft,Increase,EMV,secondary cardiovascular risk
 ,316866,37311069,Increase,6.84,4,Draft,Increase,arterial hypertension,secondary cardiovascular risk
