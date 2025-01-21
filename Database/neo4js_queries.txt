@@ -1,8 +1,8 @@
 // NEO4JS SCRIPT COLLECTION
 
 // Step 1: For all concepts, inherit causal relationships from descendant concepts
-MATCH (ancestor:Concept)-[:SUBSUMES*]->(descendant:Concept)-[:CAUSES]->(effect:Concept)
-MERGE (ancestor)-[:CAUSES]->(effect)
+MATCH (ancestor:Concept)-[:SUBSUMES*]->(descendant:Concept)-[r:CAUSES]->(effect:Concept)
+MERGE (ancestor)-[new:CAUSES]->(effect)
 
 // OPTIONAL: Creates lots of cycles, discuss in meeting
 // Step 2: Establish causal relationships between ancestor nodes based on descendant relationships
@@ -11,8 +11,8 @@ MERGE (ancestor)-[:CAUSES]->(effect)
 // MERGE (ancestor1)-[:CAUSES]->(ancestor2)
 
 // Retrieve all nodes at the specified iteration level
-MATCH (n:Concept)-[:PART_OF]->(level:IterationLevel)
-WHERE level.level = 1
+MATCH (n:Concept)-[:PART_OF]->(i:Iteration)
+WHERE i.id = 1
 WITH collect(n) AS selectedLevelNodes
 UNWIND selectedLevelNodes AS n
 OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)

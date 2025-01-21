@@ -36,7 +36,7 @@ def create_causal_relationships_in_cypher(df):
     cypher_statements = []
     for _, row in df.iterrows():
         cypher_statement = (
-            f"MATCH (e:Concept {{id: \"{row['Exposure']}\"}}), (o:Concept {{id: \"{row['Outcome']}\"}}) "
+            f"MATCH (e:Concept {{id: {row['Exposure']}}}), (o:Concept {{id: {row['Outcome']}}}) "
             f"CREATE (e)-[:CAUSES {{\n"
             f"    direction: \"{row['Direction']}\",\n"
             f"    confidence_sum: {row['Confidence_Sum']},\n"
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     cypher_output += create_hierarchy_in_cypher(hierarchy_df) + "\n\n"
     cypher_output += create_causal_relationships_in_cypher(causal_relationships_df) + "\n\n"
     cypher_output += create_iteration_nodes_in_cypher(iterations_dict) + "\n\n"
-    cypher_output += create_part_of_relationships_in_cypher(iterations_dict)
-    cypher_output += "\n\n" + create_inferred_causal_relationships_in_cypher()
+    cypher_output += create_part_of_relationships_in_cypher(iterations_dict) + "\n\n"
+    cypher_output += create_inferred_causal_relationships_in_cypher()
     with open("Database/output.cypher", "w") as file:
         file.write(cypher_output)

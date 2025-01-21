@@ -2000,3913 +2000,3913 @@ MERGE (c1:Concept {id: 4167841}) MERGE (c2:Concept {id: 16}) MERGE (c1)-[:SUBSUM
 MERGE (c1:Concept {id: 4167841}) MERGE (c2:Concept {id: 4216292}) MERGE (c1)-[:SUBSUMES]->(c2);
 MERGE (c1:Concept {id: 4167841}) MERGE (c2:Concept {id: 4249447}) MERGE (c1)-[:SUBSUMES]->(c2);
 
-MATCH (e:Concept {id: "11"}), (o:Concept {id: "10"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 11}), (o:Concept {id: 10}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.2,
     confidence_mean: 5.2,
     confidence_direction: 5.2
 }]->(o);
-MATCH (e:Concept {id: "11"}), (o:Concept {id: "4068351"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 11}), (o:Concept {id: 4068351}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "11"}), (o:Concept {id: "4234656"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 11}), (o:Concept {id: 4234656}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "12"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 12}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "12"}), (o:Concept {id: "4126495"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 12}), (o:Concept {id: 4126495}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "12"}), (o:Concept {id: "42872750"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 12}), (o:Concept {id: 42872750}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "13"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 13}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "13"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 13}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "134765"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 134765}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.8,
     confidence_mean: 4.8,
     confidence_direction: 4.8
 }]->(o);
-MATCH (e:Concept {id: "14"}), (o:Concept {id: "12"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 14}), (o:Concept {id: 12}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "14"}), (o:Concept {id: "4051022"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 14}), (o:Concept {id: 4051022}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "14"}), (o:Concept {id: "4185284"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 14}), (o:Concept {id: 4185284}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "15"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 15}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "16"}), (o:Concept {id: "14"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 16}), (o:Concept {id: 14}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "197672"}), (o:Concept {id: "36713755"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 197672}), (o:Concept {id: 36713755}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "197672"}), (o:Concept {id: "4059015"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 197672}), (o:Concept {id: 4059015}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "197672"}), (o:Concept {id: "4181165"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 197672}), (o:Concept {id: 4181165}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "198124"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 198124}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "198124"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 198124}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "2"}), (o:Concept {id: "10"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 2}), (o:Concept {id: 10}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "197672"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 197672}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "198124"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 198124}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.52,
     confidence_mean: 3.26,
     confidence_direction: 6.52
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4103842"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4103842}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4119952"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4119952}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4171825"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4171825}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.52,
     confidence_mean: 4.52,
     confidence_direction: 4.52
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4213477"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4213477}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4275337"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4275337}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.52,
     confidence_mean: 4.52,
     confidence_direction: 4.52
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.490000000000002,
     confidence_mean: 4.163333333333334,
     confidence_direction: 12.490000000000002
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 80.32000000000002,
     confidence_mean: 5.737142857142858,
     confidence_direction: 80.32000000000002
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "432250"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 432250}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.22,
     confidence_mean: 3.22,
     confidence_direction: 3.22
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "434633"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 434633}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.61,
     confidence_mean: 3.305,
     confidence_direction: 2.6100000000000003
 }]->(o);
-MATCH (e:Concept {id: "201820"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 201820}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "373995"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 373995}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "40486533"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 40486533}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "4085730"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 4085730}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "4178904"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 4178904}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.84,
     confidence_mean: 6.42,
     confidence_direction: 12.84
 }]->(o);
-MATCH (e:Concept {id: "255848"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 255848}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "3"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.31,
     confidence_mean: 5.31,
     confidence_direction: 5.31
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "36713755"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 36713755}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "4033232"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 4033232}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "40486533"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 40486533}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "4090739"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 4090739}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "31317"}), (o:Concept {id: "432250"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 31317}), (o:Concept {id: 432250}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.22,
     confidence_mean: 3.22,
     confidence_direction: 3.22
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "4056822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 4056822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "4185607"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 4185607}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "4186398"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 4186398}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "42872750"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 42872750}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 66.92,
     confidence_mean: 5.576666666666667,
     confidence_direction: 66.92
 }]->(o);
-MATCH (e:Concept {id: "313217"}), (o:Concept {id: "44784217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313217}), (o:Concept {id: 44784217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "313459"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313459}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.029999999999999,
     confidence_mean: 2.515,
     confidence_direction: 5.029999999999999
 }]->(o);
-MATCH (e:Concept {id: "313459"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313459}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "313459"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313459}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "313459"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313459}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.4,
     confidence_mean: 1.4,
     confidence_direction: 1.4
 }]->(o);
-MATCH (e:Concept {id: "313459"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 313459}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 11.52,
     confidence_mean: 5.76,
     confidence_direction: 11.52
 }]->(o);
-MATCH (e:Concept {id: "316139"}), (o:Concept {id: "4176126"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316139}), (o:Concept {id: 4176126}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "37309626"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 37309626}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4046360"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4046360}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4119952"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4119952}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4150603"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4150603}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.68,
     confidence_mean: 3.68,
     confidence_direction: 3.68
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4213477"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4213477}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.8,
     confidence_mean: 4.8,
     confidence_direction: 4.8
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 21.24,
     confidence_mean: 5.31,
     confidence_direction: 21.24
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 105.86,
     confidence_mean: 6.227058823529412,
     confidence_direction: 105.86
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "442310"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 442310}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 12.07,
     confidence_mean: 4.023333333333333,
     confidence_direction: 1.4500000000000006
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "444031"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 444031}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "46272492"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 46272492}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.6,
     confidence_mean: 3.3,
     confidence_direction: 6.6
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "6"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 6}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "316866"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 316866}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "317002"}), (o:Concept {id: "4176126"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 317002}), (o:Concept {id: 4176126}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "318736"}), (o:Concept {id: "4298794"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 318736}), (o:Concept {id: 4298794}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.52,
     confidence_mean: 4.52,
     confidence_direction: 4.52
 }]->(o);
-MATCH (e:Concept {id: "318736"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 318736}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "321588"}), (o:Concept {id: "4010497"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 321588}), (o:Concept {id: 4010497}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "321588"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 321588}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "35622016"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 35622016}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "35622016"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 35622016}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "35622016"}), (o:Concept {id: "37018196"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 35622016}), (o:Concept {id: 37018196}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "35622016"}), (o:Concept {id: "4159131"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 35622016}), (o:Concept {id: 4159131}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "35622016"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 35622016}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "35622016"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 35622016}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "3654822"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3654822}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "3654822"}), (o:Concept {id: "4126495"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3654822}), (o:Concept {id: 4126495}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "3654822"}), (o:Concept {id: "42872750"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3654822}), (o:Concept {id: 42872750}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "3655005"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3655005}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "3655005"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3655005}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 12.0,
     confidence_mean: 6.0,
     confidence_direction: 12.0
 }]->(o);
-MATCH (e:Concept {id: "3655005"}), (o:Concept {id: "46272492"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 3655005}), (o:Concept {id: 46272492}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "37016924"}), (o:Concept {id: "4217691"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37016924}), (o:Concept {id: 4217691}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "37016924"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37016924}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "37018196"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37018196}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "37018765"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37018765}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "37018765"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37018765}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "37018765"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37018765}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 8.16,
     confidence_mean: 4.08,
     confidence_direction: 8.16
 }]->(o);
-MATCH (e:Concept {id: "37108742"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37108742}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.92,
     confidence_mean: 3.92,
     confidence_direction: 3.92
 }]->(o);
-MATCH (e:Concept {id: "37109909"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37109909}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "37110522"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37110522}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "37110522"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37110522}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.26,
     confidence_mean: 6.26,
     confidence_direction: 6.26
 }]->(o);
-MATCH (e:Concept {id: "37150978"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37150978}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.92,
     confidence_mean: 3.92,
     confidence_direction: 3.92
 }]->(o);
-MATCH (e:Concept {id: "37150978"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37150978}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "37150978"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37150978}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "37150978"}), (o:Concept {id: "433736"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37150978}), (o:Concept {id: 433736}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "37153627"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37153627}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 11.76,
     confidence_mean: 5.88,
     confidence_direction: 11.76
 }]->(o);
-MATCH (e:Concept {id: "37167374"}), (o:Concept {id: "4103842"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37167374}), (o:Concept {id: 4103842}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "37167374"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37167374}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "37167374"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37167374}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "37309626"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37309626}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "37309626"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37309626}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "37311061"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 37311061}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "373503"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 373503}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "373995"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 373995}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "373995"}), (o:Concept {id: "4059015"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 373995}), (o:Concept {id: 4059015}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "377091"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 377091}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "377091"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 377091}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.54,
     confidence_mean: 6.54,
     confidence_direction: 6.54
 }]->(o);
-MATCH (e:Concept {id: "378774"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 378774}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "381549"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 381549}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 8.27,
     confidence_mean: 4.135,
     confidence_direction: 8.27
 }]->(o);
-MATCH (e:Concept {id: "4"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4009409"}), (o:Concept {id: "4199549"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4009409}), (o:Concept {id: 4199549}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4009409"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4009409}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4009409"}), (o:Concept {id: "44800078"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4009409}), (o:Concept {id: 44800078}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4010497"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4010497}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.94,
     confidence_mean: 0.94,
     confidence_direction: 0.94
 }]->(o);
-MATCH (e:Concept {id: "4021166"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4021166}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "4022241"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4022241}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4022846"}), (o:Concept {id: "433736"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4022846}), (o:Concept {id: 433736}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 7.68,
     confidence_mean: 3.84,
     confidence_direction: 7.68
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "37108742"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 37108742}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.68,
     confidence_mean: 3.68,
     confidence_direction: 3.68
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "4159131"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 4159131}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.57,
     confidence_mean: 0.57,
     confidence_direction: 0.57
 }]->(o);
-MATCH (e:Concept {id: "4024366"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024366}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.84,
     confidence_mean: 6.42,
     confidence_direction: 12.84
 }]->(o);
-MATCH (e:Concept {id: "4024552"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024552}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.54,
     confidence_mean: 6.54,
     confidence_direction: 6.54
 }]->(o);
-MATCH (e:Concept {id: "4024552"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4024552}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4027011"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4027011}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4027011"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4027011}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4027011"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4027011}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4027011"}), (o:Concept {id: "37108742"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4027011}), (o:Concept {id: 37108742}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.68,
     confidence_mean: 3.68,
     confidence_direction: 3.68
 }]->(o);
-MATCH (e:Concept {id: "4027011"}), (o:Concept {id: "4159131"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4027011}), (o:Concept {id: 4159131}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4027011"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4027011}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4029305"}), (o:Concept {id: "4119952"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4029305}), (o:Concept {id: 4119952}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4029305"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4029305}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4029305"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4029305}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 35.099999999999994,
     confidence_mean: 5.849999999999999,
     confidence_direction: 35.099999999999994
 }]->(o);
-MATCH (e:Concept {id: "4033232"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4033232}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4038718"}), (o:Concept {id: "433736"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038718}), (o:Concept {id: 433736}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "198124"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 198124}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 10.44,
     confidence_mean: 5.22,
     confidence_direction: 10.44
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.52,
     confidence_mean: 2.52,
     confidence_direction: 2.52
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 10.44,
     confidence_mean: 2.61,
     confidence_direction: 10.44
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "381549"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 381549}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4022241"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4022241}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4029305"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4029305}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.83,
     confidence_mean: 0.83,
     confidence_direction: 0.83
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4038718"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4038718}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4171825"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4171825}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 8.68,
     confidence_mean: 4.34,
     confidence_direction: 8.68
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 12.26,
     confidence_mean: 6.13,
     confidence_direction: 12.26
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.78,
     confidence_mean: 0.78,
     confidence_direction: 0.78
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 61.52,
     confidence_mean: 5.126666666666666,
     confidence_direction: 35.84
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.29,
     confidence_mean: 3.29,
     confidence_direction: 3.29
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "433736"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 433736}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "436940"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 436940}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 9.84,
     confidence_mean: 4.92,
     confidence_direction: 9.84
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "444031"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 444031}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.92,
     confidence_mean: 3.92,
     confidence_direction: 3.92
 }]->(o);
-MATCH (e:Concept {id: "4038720"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4038720}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.72,
     confidence_mean: 2.72,
     confidence_direction: 2.72
 }]->(o);
-MATCH (e:Concept {id: "4046360"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4046360}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "40479589"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 40479589}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "40486533"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 40486533}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4050288"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4050288}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.07,
     confidence_mean: 3.07,
     confidence_direction: 3.07
 }]->(o);
-MATCH (e:Concept {id: "4051022"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4051022}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4051022"}), (o:Concept {id: "4084390"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4051022}), (o:Concept {id: 4084390}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.93,
     confidence_mean: 2.93,
     confidence_direction: 2.93
 }]->(o);
-MATCH (e:Concept {id: "4052648"}), (o:Concept {id: "36713755"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4052648}), (o:Concept {id: 36713755}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4052648"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4052648}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "4052648"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4052648}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.49,
     confidence_mean: 4.745,
     confidence_direction: 4.19
 }]->(o);
-MATCH (e:Concept {id: "4056822"}), (o:Concept {id: "4185607"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4056822}), (o:Concept {id: 4185607}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.07,
     confidence_mean: 3.07,
     confidence_direction: 3.07
 }]->(o);
-MATCH (e:Concept {id: "4056822"}), (o:Concept {id: "42538532"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4056822}), (o:Concept {id: 42538532}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.72,
     confidence_mean: 2.72,
     confidence_direction: 2.72
 }]->(o);
-MATCH (e:Concept {id: "4056822"}), (o:Concept {id: "4295287"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4056822}), (o:Concept {id: 4295287}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4056822"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4056822}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 22.36,
     confidence_mean: 4.472,
     confidence_direction: 22.36
 }]->(o);
-MATCH (e:Concept {id: "4056822"}), (o:Concept {id: "46272492"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4056822}), (o:Concept {id: 46272492}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4059015"}), (o:Concept {id: "75053"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4059015}), (o:Concept {id: 75053}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4059498"}), (o:Concept {id: "4021166"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4059498}), (o:Concept {id: 4021166}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.07,
     confidence_mean: 3.07,
     confidence_direction: 3.07
 }]->(o);
-MATCH (e:Concept {id: "4059498"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4059498}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4068351"}), (o:Concept {id: "4"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4068351}), (o:Concept {id: 4}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4068351"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4068351}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4070299"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4070299}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 24.64,
     confidence_mean: 4.928,
     confidence_direction: 24.64
 }]->(o);
-MATCH (e:Concept {id: "4070767"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4070767}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4074035"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4074035}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4074035"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4074035}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.46,
     confidence_mean: 1.46,
     confidence_direction: 1.46
 }]->(o);
-MATCH (e:Concept {id: "4074035"}), (o:Concept {id: "4022241"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4074035}), (o:Concept {id: 4022241}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.13,
     confidence_mean: 6.13,
     confidence_direction: 6.13
 }]->(o);
-MATCH (e:Concept {id: "4074035"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4074035}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4074035"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4074035}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 18.74,
     confidence_mean: 3.748,
     confidence_direction: 18.74
 }]->(o);
-MATCH (e:Concept {id: "4079975"}), (o:Concept {id: "4301351"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4079975}), (o:Concept {id: 4301351}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.14,
     confidence_mean: 3.14,
     confidence_direction: 3.14
 }]->(o);
-MATCH (e:Concept {id: "4079975"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4079975}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.8,
     confidence_mean: 1.4,
     confidence_direction: 2.8
 }]->(o);
-MATCH (e:Concept {id: "4083171"}), (o:Concept {id: "4329041"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4083171}), (o:Concept {id: 4329041}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4084390"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4084390}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 19.94,
     confidence_mean: 6.646666666666666,
     confidence_direction: 7.42
 }]->(o);
-MATCH (e:Concept {id: "4084390"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4084390}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4084390"}), (o:Concept {id: "4126495"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4084390}), (o:Concept {id: 4126495}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 12.0,
     confidence_mean: 6.0,
     confidence_direction: 12.0
 }]->(o);
-MATCH (e:Concept {id: "4084390"}), (o:Concept {id: "42872750"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4084390}), (o:Concept {id: 42872750}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4085730"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4085730}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4090739"}), (o:Concept {id: "134765"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4090739}), (o:Concept {id: 134765}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4090739"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4090739}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.14,
     confidence_mean: 3.14,
     confidence_direction: 3.14
 }]->(o);
-MATCH (e:Concept {id: "4102202"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4102202}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.4,
     confidence_mean: 5.2,
     confidence_direction: 10.4
 }]->(o);
-MATCH (e:Concept {id: "4103842"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4103842}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4104314"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4104314}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4104314"}), (o:Concept {id: "4126495"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4104314}), (o:Concept {id: 4126495}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 12.0,
     confidence_mean: 6.0,
     confidence_direction: 12.0
 }]->(o);
-MATCH (e:Concept {id: "4104314"}), (o:Concept {id: "42872750"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4104314}), (o:Concept {id: 42872750}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4114614"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4114614}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4119952"}), (o:Concept {id: "13"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4119952}), (o:Concept {id: 13}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4119952"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4119952}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4119952"}), (o:Concept {id: "4137275"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4119952}), (o:Concept {id: 4137275}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.14,
     confidence_mean: 3.14,
     confidence_direction: 3.14
 }]->(o);
-MATCH (e:Concept {id: "4119952"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4119952}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "4126495"}), (o:Concept {id: "4126495"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4126495}), (o:Concept {id: 4126495}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4130526"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4130526}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4130526"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4130526}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4130526"}), (o:Concept {id: "37018196"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4130526}), (o:Concept {id: 37018196}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4130526"}), (o:Concept {id: "4159131"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4130526}), (o:Concept {id: 4159131}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4130526"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4130526}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4130526"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4130526}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4133004"}), (o:Concept {id: "440417"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4133004}), (o:Concept {id: 440417}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4135811"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4135811}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4137275"}), (o:Concept {id: "3"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4137275}), (o:Concept {id: 3}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.31,
     confidence_mean: 5.31,
     confidence_direction: 5.31
 }]->(o);
-MATCH (e:Concept {id: "4137275"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4137275}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4137275"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4137275}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4137275"}), (o:Concept {id: "4103842"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4137275}), (o:Concept {id: 4103842}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4137275"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4137275}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "4137275"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4137275}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 21.85,
     confidence_mean: 5.4625,
     confidence_direction: 21.85
 }]->(o);
-MATCH (e:Concept {id: "4143576"}), (o:Concept {id: "373995"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4143576}), (o:Concept {id: 373995}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4143576"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4143576}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4143576"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4143576}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.71,
     confidence_mean: 4.71,
     confidence_direction: 4.71
 }]->(o);
-MATCH (e:Concept {id: "4146455"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4146455}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4146455"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4146455}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4146455"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4146455}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4148407"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4148407}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.44,
     confidence_mean: 5.22,
     confidence_direction: 10.44
 }]->(o);
-MATCH (e:Concept {id: "4150054"}), (o:Concept {id: "4234656"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4150054}), (o:Concept {id: 4234656}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 14.68,
     confidence_mean: 4.8933333333333335,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4150054"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4150054}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4156503"}), (o:Concept {id: "40486533"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4156503}), (o:Concept {id: 40486533}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4159131"}), (o:Concept {id: "4103842"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159131}), (o:Concept {id: 4103842}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4159131"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159131}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.2,
     confidence_mean: 4.6,
     confidence_direction: 9.2
 }]->(o);
-MATCH (e:Concept {id: "4159131"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159131}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 15.6,
     confidence_mean: 5.2,
     confidence_direction: 15.6
 }]->(o);
-MATCH (e:Concept {id: "4159131"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159131}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.29,
     confidence_mean: 3.29,
     confidence_direction: 3.29
 }]->(o);
-MATCH (e:Concept {id: "4159131"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159131}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.29,
     confidence_mean: 3.29,
     confidence_direction: 3.29
 }]->(o);
-MATCH (e:Concept {id: "4159324"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159324}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4159324"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159324}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4159324"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159324}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4159324"}), (o:Concept {id: "4159131"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4159324}), (o:Concept {id: 4159131}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4165535"}), (o:Concept {id: "313459"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4165535}), (o:Concept {id: 313459}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4165535"}), (o:Concept {id: "435657"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4165535}), (o:Concept {id: 435657}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4166093"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4166093}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "4166231"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4166231}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.53,
     confidence_mean: 5.53,
     confidence_direction: 5.53
 }]->(o);
-MATCH (e:Concept {id: "4169009"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4169009}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.44,
     confidence_mean: 5.22,
     confidence_direction: 10.44
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.36,
     confidence_mean: 3.12,
     confidence_direction: 9.36
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.84,
     confidence_mean: 5.42,
     confidence_direction: 10.84
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "4029305"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 4029305}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 52.790000000000006,
     confidence_mean: 5.279000000000001,
     confidence_direction: 52.790000000000006
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4171825"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4171825}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4176126"}), (o:Concept {id: "4070767"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4176126}), (o:Concept {id: 4070767}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4178631"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4178631}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.07,
     confidence_mean: 3.07,
     confidence_direction: 3.07
 }]->(o);
-MATCH (e:Concept {id: "4178903"}), (o:Concept {id: "4070767"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4178903}), (o:Concept {id: 4070767}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4178903"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4178903}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.13,
     confidence_mean: 6.13,
     confidence_direction: 6.13
 }]->(o);
-MATCH (e:Concept {id: "4178903"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4178903}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4178904"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4178904}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4178904"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4178904}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "37108742"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 37108742}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "4068351"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 4068351}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.13,
     confidence_mean: 6.13,
     confidence_direction: 6.13
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "4295287"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 4295287}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.63,
     confidence_mean: 1.63,
     confidence_direction: 1.63
 }]->(o);
-MATCH (e:Concept {id: "4180169"}), (o:Concept {id: "443784"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4180169}), (o:Concept {id: 443784}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4181165"}), (o:Concept {id: "81902"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4181165}), (o:Concept {id: 81902}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4183729"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4183729}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4184633"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4184633}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4185284"}), (o:Concept {id: "4084390"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4185284}), (o:Concept {id: 4084390}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.93,
     confidence_mean: 2.93,
     confidence_direction: 2.93
 }]->(o);
-MATCH (e:Concept {id: "4185607"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4185607}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4192115"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4192115}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4192115"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4192115}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4194238"}), (o:Concept {id: "4178903"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4194238}), (o:Concept {id: 4178903}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4194238"}), (o:Concept {id: "4192115"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4194238}), (o:Concept {id: 4192115}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 1.0,
     confidence_mean: 1.0,
     confidence_direction: 1.0
 }]->(o);
-MATCH (e:Concept {id: "4194238"}), (o:Concept {id: "4217691"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4194238}), (o:Concept {id: 4217691}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4196427"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4196427}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4199549"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4199549}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4199549"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4199549}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 8.68,
     confidence_mean: 4.34,
     confidence_direction: 0.0
 }]->(o);
-MATCH (e:Concept {id: "4200516"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4200516}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.53,
     confidence_mean: 5.53,
     confidence_direction: 5.53
 }]->(o);
-MATCH (e:Concept {id: "4200516"}), (o:Concept {id: "37110522"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4200516}), (o:Concept {id: 37110522}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.53,
     confidence_mean: 5.53,
     confidence_direction: 5.53
 }]->(o);
-MATCH (e:Concept {id: "4200516"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4200516}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4200516"}), (o:Concept {id: "4275208"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4200516}), (o:Concept {id: 4275208}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4200516"}), (o:Concept {id: "434633"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4200516}), (o:Concept {id: 434633}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.72,
     confidence_mean: 2.72,
     confidence_direction: 2.72
 }]->(o);
-MATCH (e:Concept {id: "4200516"}), (o:Concept {id: "44784217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4200516}), (o:Concept {id: 44784217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4029305"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4029305}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 10.8,
     confidence_mean: 5.4,
     confidence_direction: 10.8
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4159131"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4159131}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 1.4,
     confidence_mean: 1.4,
     confidence_direction: 1.4
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 13.84,
     confidence_mean: 4.613333333333333,
     confidence_direction: 13.84
 }]->(o);
-MATCH (e:Concept {id: "4201029"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201029}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.86,
     confidence_mean: 2.86,
     confidence_direction: 2.86
 }]->(o);
-MATCH (e:Concept {id: "4201412"}), (o:Concept {id: "440424"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201412}), (o:Concept {id: 440424}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4201926"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4201926}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4213628"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4213628}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4216292"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4216292}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.68,
     confidence_mean: 6.68,
     confidence_direction: 6.68
 }]->(o);
-MATCH (e:Concept {id: "4217691"}), (o:Concept {id: "3655005"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4217691}), (o:Concept {id: 3655005}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4217691"}), (o:Concept {id: "4070767"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4217691}), (o:Concept {id: 4070767}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4217691"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4217691}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.13,
     confidence_mean: 6.13,
     confidence_direction: 6.13
 }]->(o);
-MATCH (e:Concept {id: "4217691"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4217691}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.77,
     confidence_mean: 4.59,
     confidence_direction: 13.77
 }]->(o);
-MATCH (e:Concept {id: "4224118"}), (o:Concept {id: "4181165"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4224118}), (o:Concept {id: 4181165}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4224118"}), (o:Concept {id: "81902"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4224118}), (o:Concept {id: 81902}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4229563"}), (o:Concept {id: "4329728"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4229563}), (o:Concept {id: 4329728}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4229881"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4229881}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4229881"}), (o:Concept {id: "4038718"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4229881}), (o:Concept {id: 4038718}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4229881"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4229881}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4231363"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4231363}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.61,
     confidence_mean: 5.305,
     confidence_direction: 10.61
 }]->(o);
-MATCH (e:Concept {id: "4232457"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4232457}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4238738"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4238738}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4238738"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4238738}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4241216"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4241216}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 7.08,
     confidence_mean: 3.54,
     confidence_direction: 7.08
 }]->(o);
-MATCH (e:Concept {id: "4242843"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4242843}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4242843"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4242843}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4242843"}), (o:Concept {id: "81902"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4242843}), (o:Concept {id: 81902}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "37150978"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 37150978}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4024366"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4024366}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.93,
     confidence_mean: 2.93,
     confidence_direction: 2.93
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4027011"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4027011}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.93,
     confidence_mean: 2.93,
     confidence_direction: 2.93
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4038720"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4038720}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4074035"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4074035}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4298794"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4298794}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.43,
     confidence_mean: 4.43,
     confidence_direction: 4.43
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.91,
     confidence_mean: 2.7275,
     confidence_direction: 8.91
 }]->(o);
-MATCH (e:Concept {id: "4249447"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4249447}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.45,
     confidence_mean: 4.725,
     confidence_direction: 9.45
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "15"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 15}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.58,
     confidence_mean: 2.58,
     confidence_direction: 2.58
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "4074035"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 4074035}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.11,
     confidence_mean: 1.11,
     confidence_direction: 1.11
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "4298794"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 4298794}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.79,
     confidence_mean: 1.895,
     confidence_direction: 3.79
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.11,
     confidence_mean: 1.11,
     confidence_direction: 1.11
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.69,
     confidence_mean: 1.845,
     confidence_direction: 3.69
 }]->(o);
-MATCH (e:Concept {id: "4251306"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4251306}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.58,
     confidence_mean: 2.58,
     confidence_direction: 2.58
 }]->(o);
-MATCH (e:Concept {id: "42538532"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42538532}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "42538946"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42538946}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "42538946"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42538946}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "42538946"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42538946}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 8.16,
     confidence_mean: 4.08,
     confidence_direction: 8.16
 }]->(o);
-MATCH (e:Concept {id: "4268546"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4268546}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 1.0,
     confidence_mean: 1.0,
     confidence_direction: 1.0
 }]->(o);
-MATCH (e:Concept {id: "4273629"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4273629}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.4,
     confidence_mean: 5.2,
     confidence_direction: 10.4
 }]->(o);
-MATCH (e:Concept {id: "4275208"}), (o:Concept {id: "40479589"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4275208}), (o:Concept {id: 40479589}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4275208"}), (o:Concept {id: "44784217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4275208}), (o:Concept {id: 44784217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.76,
     confidence_mean: 3.76,
     confidence_direction: 3.76
 }]->(o);
-MATCH (e:Concept {id: "4276568"}), (o:Concept {id: "318736"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4276568}), (o:Concept {id: 318736}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4276568"}), (o:Concept {id: "37311061"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4276568}), (o:Concept {id: 37311061}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.37,
     confidence_mean: 3.37,
     confidence_direction: 3.37
 }]->(o);
-MATCH (e:Concept {id: "4283095"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4283095}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.07,
     confidence_mean: 3.07,
     confidence_direction: 3.07
 }]->(o);
-MATCH (e:Concept {id: "4283239"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4283239}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 10.4,
     confidence_mean: 5.2,
     confidence_direction: 10.4
 }]->(o);
-MATCH (e:Concept {id: "4283239"}), (o:Concept {id: "4338810"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4283239}), (o:Concept {id: 4338810}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "42872750"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42872750}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 11.1,
     confidence_mean: 5.55,
     confidence_direction: 11.1
 }]->(o);
-MATCH (e:Concept {id: "42872750"}), (o:Concept {id: "37110522"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42872750}), (o:Concept {id: 37110522}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "42872750"}), (o:Concept {id: "4126495"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42872750}), (o:Concept {id: 4126495}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "42872750"}), (o:Concept {id: "42872750"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42872750}), (o:Concept {id: 42872750}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "42872750"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 42872750}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4295287"}), (o:Concept {id: "4102202"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4295287}), (o:Concept {id: 4102202}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4295287"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4295287}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4295287"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4295287}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 16.06,
     confidence_mean: 5.353333333333333,
     confidence_direction: 16.06
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 17.62,
     confidence_mean: 4.405,
     confidence_direction: 17.62
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.26,
     confidence_mean: 6.26,
     confidence_direction: 6.26
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4103842"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4103842}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4119952"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4119952}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4171825"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4171825}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4217691"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4217691}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4295287"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4295287}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 23.49,
     confidence_mean: 5.8725,
     confidence_direction: 23.49
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 83.27000000000001,
     confidence_mean: 5.947857142857144,
     confidence_direction: 83.27000000000001
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "432867"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 432867}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "46271022"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 46271022}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4298794"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4298794}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4299535"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4299535}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "4299535"}), (o:Concept {id: "4102202"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4299535}), (o:Concept {id: 4102202}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "4299535"}), (o:Concept {id: "4273629"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4299535}), (o:Concept {id: 4273629}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.14,
     confidence_mean: 3.14,
     confidence_direction: 3.14
 }]->(o);
-MATCH (e:Concept {id: "4299535"}), (o:Concept {id: "4295287"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4299535}), (o:Concept {id: 4295287}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4299535"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4299535}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.57,
     confidence_mean: 0.57,
     confidence_direction: 0.57
 }]->(o);
-MATCH (e:Concept {id: "4299535"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4299535}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "4301351"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4301351}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 7.48,
     confidence_mean: 3.74,
     confidence_direction: 7.48
 }]->(o);
-MATCH (e:Concept {id: "4301936"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4301936}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "43020873"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 43020873}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.6,
     confidence_mean: 3.6,
     confidence_direction: 3.6
 }]->(o);
-MATCH (e:Concept {id: "4304917"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4304917}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "3655005"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 3655005}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "37153627"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 37153627}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.88,
     confidence_mean: 5.88,
     confidence_direction: 5.88
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4178903"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4178903}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4192115"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4192115}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4217691"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4217691}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.84,
     confidence_mean: 6.42,
     confidence_direction: 12.84
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 63.72,
     confidence_mean: 5.792727272727273,
     confidence_direction: 63.72
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "6"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 6}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4306703"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306703}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4306934"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306934}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4306934"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306934}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4306934"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306934}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4306934"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4306934}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.0,
     confidence_mean: 6.0,
     confidence_direction: 12.0
 }]->(o);
-MATCH (e:Concept {id: "4309238"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4309238}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "1"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 1}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "134765"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 134765}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.14,
     confidence_mean: 4.57,
     confidence_direction: 9.14
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "197672"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 197672}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 19.68,
     confidence_mean: 6.56,
     confidence_direction: 19.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "31317"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 31317}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 22.9,
     confidence_mean: 5.7250000000000005,
     confidence_direction: 22.9
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 3.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "36713755"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 36713755}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "37110522"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 37110522}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.15,
     confidence_mean: 6.074999999999999,
     confidence_direction: 12.15
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "37309626"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 37309626}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "37311069"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 37311069}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "373995"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 373995}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "377091"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 377091}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "378143"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 378143}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "40479589"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 40479589}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "40486533"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 40486533}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4051022"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4051022}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.93,
     confidence_mean: 2.93,
     confidence_direction: 2.93
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 23.2,
     confidence_mean: 5.8,
     confidence_direction: 23.2
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4059015"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4059015}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4084390"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4084390}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.84,
     confidence_mean: 6.42,
     confidence_direction: 12.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4104314"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4104314}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4133004"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4133004}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4143576"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4143576}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4150603"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4150603}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4171825"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4171825}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.57,
     confidence_mean: 0.57,
     confidence_direction: 0.57
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4178904"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4178904}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4180770"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4180770}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4181165"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4181165}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4185284"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4185284}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4199549"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4199549}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.34,
     confidence_mean: 4.34,
     confidence_direction: 4.34
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4224118"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4224118}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 23.88,
     confidence_mean: 5.97,
     confidence_direction: 3.4800000000000004
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4234656"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4234656}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 9.52,
     confidence_mean: 4.76,
     confidence_direction: 9.52
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4242843"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4242843}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4275208"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4275208}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4275337"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4275337}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 70.92000000000002,
     confidence_mean: 5.910000000000001,
     confidence_direction: 70.92000000000002
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 14.59,
     confidence_mean: 4.863333333333333,
     confidence_direction: 0.91
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 49.27,
     confidence_mean: 6.15875,
     confidence_direction: 49.27
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "432250"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 432250}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.22,
     confidence_mean: 3.22,
     confidence_direction: 3.22
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4329728"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4329728}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "4329847"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 4329847}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.0,
     confidence_mean: 1.0,
     confidence_direction: 1.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "440377"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 440377}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 25.49,
     confidence_mean: 5.098,
     confidence_direction: 25.49
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "440424"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 440424}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "442310"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 442310}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 41.09,
     confidence_mean: 4.109,
     confidence_direction: 15.29
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "443454"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 443454}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "44784217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 44784217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "44800078"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 44800078}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.34,
     confidence_mean: 4.34,
     confidence_direction: 4.34
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "75053"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 75053}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "8"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 8}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "81902"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 81902}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4310996"}), (o:Concept {id: "9"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4310996}), (o:Concept {id: 9}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "432250"}), (o:Concept {id: "37309626"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432250}), (o:Concept {id: 37309626}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "432250"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432250}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "432250"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432250}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.22,
     confidence_mean: 3.22,
     confidence_direction: 3.22
 }]->(o);
-MATCH (e:Concept {id: "432250"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432250}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.2,
     confidence_mean: 5.2,
     confidence_direction: 5.2
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "197672"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 197672}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 14.88,
     confidence_mean: 3.72,
     confidence_direction: 14.88
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.52,
     confidence_mean: 4.76,
     confidence_direction: 9.52
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 20.26,
     confidence_mean: 5.065,
     confidence_direction: 20.26
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 31.62,
     confidence_mean: 6.324,
     confidence_direction: 31.62
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "318736"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 318736}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "321588"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 321588}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "373995"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 373995}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4029305"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4029305}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.34,
     confidence_mean: 4.34,
     confidence_direction: 4.34
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4046360"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4046360}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "40486533"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 40486533}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4059015"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4059015}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4070299"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4070299}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.68,
     confidence_mean: 3.68,
     confidence_direction: 3.68
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4074035"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4074035}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.89,
     confidence_mean: 0.89,
     confidence_direction: 0.89
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4103842"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4103842}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4150603"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4150603}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4234656"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4234656}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4285282"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4285282}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4298794"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4298794}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 7.93,
     confidence_mean: 3.965,
     confidence_direction: 2.07
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 12.84,
     confidence_mean: 6.42,
     confidence_direction: 12.84
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 16.65,
     confidence_mean: 5.55,
     confidence_direction: 16.65
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 98.64,
     confidence_mean: 6.165,
     confidence_direction: 98.64
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "443392"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 443392}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 20.36,
     confidence_mean: 5.09,
     confidence_direction: 1.3200000000000005
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "443784"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 443784}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.44,
     confidence_mean: 3.44,
     confidence_direction: 3.44
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "6"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 6}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4322978"}), (o:Concept {id: "81902"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4322978}), (o:Concept {id: 81902}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4327941"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4327941}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4327941"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4327941}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.38,
     confidence_mean: 2.38,
     confidence_direction: 2.38
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "4171825"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 4171825}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "4213477"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 4213477}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 22.06,
     confidence_mean: 5.515000000000001,
     confidence_direction: 22.06
 }]->(o);
-MATCH (e:Concept {id: "432867"}), (o:Concept {id: "604179"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 432867}), (o:Concept {id: 604179}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4329041"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329041}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4329041"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329041}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4329728"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329728}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4329728"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329728}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4329728"}), (o:Concept {id: "4329041"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329728}), (o:Concept {id: 4329041}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "4329847"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329847}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "4329847"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329847}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.85,
     confidence_mean: 3.425,
     confidence_direction: 6.85
 }]->(o);
-MATCH (e:Concept {id: "4329847"}), (o:Concept {id: "6"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4329847}), (o:Concept {id: 6}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "4336673"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4336673}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4336673"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4336673}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4336673"}), (o:Concept {id: "4231363"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4336673}), (o:Concept {id: 4231363}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "4336673"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4336673}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.68,
     confidence_mean: 6.84,
     confidence_direction: 13.68
 }]->(o);
-MATCH (e:Concept {id: "4336673"}), (o:Concept {id: "6"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 4336673}), (o:Concept {id: 6}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "313459"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 313459}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.29,
     confidence_mean: 3.29,
     confidence_direction: 3.29
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "3654822"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 3654822}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "4119952"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 4119952}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.17,
     confidence_mean: 4.17,
     confidence_direction: 4.17
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.42,
     confidence_mean: 5.42,
     confidence_direction: 5.42
 }]->(o);
-MATCH (e:Concept {id: "433736"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 433736}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 24.36,
     confidence_mean: 6.09,
     confidence_direction: 24.36
 }]->(o);
-MATCH (e:Concept {id: "434633"}), (o:Concept {id: "44784217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 434633}), (o:Concept {id: 44784217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "434821"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 434821}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "435657"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 435657}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "435657"}), (o:Concept {id: "35622016"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 435657}), (o:Concept {id: 35622016}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "435657"}), (o:Concept {id: "4130526"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 435657}), (o:Concept {id: 4130526}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "435657"}), (o:Concept {id: "4180169"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 435657}), (o:Concept {id: 4180169}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.4,
     confidence_mean: 1.4,
     confidence_direction: 1.4
 }]->(o);
-MATCH (e:Concept {id: "436940"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 436940}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "436940"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 436940}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "436940"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 436940}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "436940"}), (o:Concept {id: "606770"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 436940}), (o:Concept {id: 606770}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "437312"}), (o:Concept {id: "4176126"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 437312}), (o:Concept {id: 4176126}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "439393"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 439393}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "439393"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 439393}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.08,
     confidence_mean: 5.04,
     confidence_direction: 10.08
 }]->(o);
-MATCH (e:Concept {id: "439393"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 439393}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 15.0,
     confidence_mean: 5.0,
     confidence_direction: 15.0
 }]->(o);
-MATCH (e:Concept {id: "440377"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440377}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "440377"}), (o:Concept {id: "36713755"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440377}), (o:Concept {id: 36713755}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "440377"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440377}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "440377"}), (o:Concept {id: "4133004"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440377}), (o:Concept {id: 4133004}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "40479589"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 40479589}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "4199549"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 4199549}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 14.21,
     confidence_mean: 4.736666666666667,
     confidence_direction: 14.21
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "4306934"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 4306934}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.49,
     confidence_mean: 4.745,
     confidence_direction: 4.19
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.84,
     confidence_mean: 4.92,
     confidence_direction: 9.84
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "44784326"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 44784326}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 10.36,
     confidence_mean: 5.18,
     confidence_direction: 10.36
 }]->(o);
-MATCH (e:Concept {id: "440383"}), (o:Concept {id: "44800078"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440383}), (o:Concept {id: 44800078}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "440417"}), (o:Concept {id: "40486533"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440417}), (o:Concept {id: 40486533}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "440417"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440417}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "440424"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 440424}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "441589"}), (o:Concept {id: "37153627"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 441589}), (o:Concept {id: 37153627}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.69,
     confidence_mean: 1.69,
     confidence_direction: 1.69
 }]->(o);
-MATCH (e:Concept {id: "441589"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 441589}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "441589"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 441589}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.239999999999999,
     confidence_mean: 2.08,
     confidence_direction: 6.239999999999999
 }]->(o);
-MATCH (e:Concept {id: "442310"}), (o:Concept {id: "37309626"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442310}), (o:Concept {id: 37309626}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "442310"}), (o:Concept {id: "4186398"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442310}), (o:Concept {id: 4186398}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "442310"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442310}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.84,
     confidence_mean: 3.84,
     confidence_direction: 3.84
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "37018765"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 37018765}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "381549"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 381549}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.43,
     confidence_mean: 4.43,
     confidence_direction: 4.43
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "40479589"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 40479589}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4074035"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4074035}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 1.81,
     confidence_mean: 1.81,
     confidence_direction: 1.81
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4102202"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4102202}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.08,
     confidence_mean: 4.08,
     confidence_direction: 4.08
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4171825"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4171825}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4241216"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4241216}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.52,
     confidence_mean: 4.52,
     confidence_direction: 4.52
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "42538946"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 42538946}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4298794"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4298794}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 13.52,
     confidence_mean: 3.38,
     confidence_direction: 13.52
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4299535"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4299535}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4306703"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4306703}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 7.290000000000001,
     confidence_mean: 3.645000000000001,
     confidence_direction: 7.290000000000001
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 60.71999999999999,
     confidence_mean: 5.06,
     confidence_direction: 42.99999999999999
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "439393"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 439393}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.52,
     confidence_mean: 4.52,
     confidence_direction: 4.52
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "443454"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 443454}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.8,
     confidence_mean: 4.8,
     confidence_direction: 4.8
 }]->(o);
-MATCH (e:Concept {id: "442985"}), (o:Concept {id: "81902"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 442985}), (o:Concept {id: 81902}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.65,
     confidence_mean: 2.65,
     confidence_direction: 2.65
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "4273629"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 4273629}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.2,
     confidence_mean: 5.2,
     confidence_direction: 5.2
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "4295287"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 4295287}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "4301351"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 4301351}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.34,
     confidence_mean: 4.34,
     confidence_direction: 4.34
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 9.28,
     confidence_mean: 4.640000000000001,
     confidence_direction: 9.28
 }]->(o);
-MATCH (e:Concept {id: "443392"}), (o:Concept {id: "440383"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443392}), (o:Concept {id: 440383}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.1,
     confidence_mean: 5.1,
     confidence_direction: 5.1
 }]->(o);
-MATCH (e:Concept {id: "443432"}), (o:Concept {id: "4022241"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443432}), (o:Concept {id: 4022241}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.45,
     confidence_mean: 2.45,
     confidence_direction: 2.45
 }]->(o);
-MATCH (e:Concept {id: "443432"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443432}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443432"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443432}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.79,
     confidence_mean: 2.79,
     confidence_direction: 2.79
 }]->(o);
-MATCH (e:Concept {id: "443454"}), (o:Concept {id: "255848"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443454}), (o:Concept {id: 255848}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443454"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443454}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443454"}), (o:Concept {id: "4242843"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443454}), (o:Concept {id: 4242843}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443454"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443454}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443700"}), (o:Concept {id: "316866"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443700}), (o:Concept {id: 316866}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "443700"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443700}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443784"}), (o:Concept {id: "198124"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443784}), (o:Concept {id: 198124}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "443784"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 443784}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "444031"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 444031}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "444031"}), (o:Concept {id: "4186398"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 444031}), (o:Concept {id: 4186398}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.22,
     confidence_mean: 3.22,
     confidence_direction: 3.22
 }]->(o);
-MATCH (e:Concept {id: "444031"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 444031}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.34,
     confidence_mean: 4.34,
     confidence_direction: 4.34
 }]->(o);
-MATCH (e:Concept {id: "444031"}), (o:Concept {id: "443432"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 444031}), (o:Concept {id: 443432}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.52,
     confidence_mean: 4.52,
     confidence_direction: 4.52
 }]->(o);
-MATCH (e:Concept {id: "44784217"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 44784217}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.68,
     confidence_mean: 6.68,
     confidence_direction: 6.68
 }]->(o);
-MATCH (e:Concept {id: "44784326"}), (o:Concept {id: "4234649"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 44784326}), (o:Concept {id: 4234649}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 4.26,
     confidence_mean: 4.26,
     confidence_direction: 4.26
 }]->(o);
-MATCH (e:Concept {id: "44784326"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 44784326}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.52,
     confidence_mean: 3.52,
     confidence_direction: 3.52
 }]->(o);
-MATCH (e:Concept {id: "44800078"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 44800078}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "44800078"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 44800078}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 8.68,
     confidence_mean: 4.34,
     confidence_direction: 0.0
 }]->(o);
-MATCH (e:Concept {id: "45771363"}), (o:Concept {id: "201820"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 45771363}), (o:Concept {id: 201820}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "46270002"}), (o:Concept {id: "4336673"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 46270002}), (o:Concept {id: 4336673}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "46271022"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 46271022}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.0,
     confidence_mean: 2.0,
     confidence_direction: 2.0
 }]->(o);
-MATCH (e:Concept {id: "46271022"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 46271022}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "46272492"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 46272492}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 15.37,
     confidence_mean: 5.123333333333334,
     confidence_direction: 15.37
 }]->(o);
-MATCH (e:Concept {id: "46273821"}), (o:Concept {id: "4298794"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 46273821}), (o:Concept {id: 4298794}) CREATE (e)-[:CAUSES {
     direction: "Decrease",
     confidence_sum: 2.25,
     confidence_mean: 2.25,
     confidence_direction: 2.25
 }]->(o);
-MATCH (e:Concept {id: "5"}), (o:Concept {id: "10"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 5}), (o:Concept {id: 10}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "5"}), (o:Concept {id: "4234656"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 5}), (o:Concept {id: 4234656}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "6"}), (o:Concept {id: "313217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 6}), (o:Concept {id: 313217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.61,
     confidence_mean: 4.61,
     confidence_direction: 4.61
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "4009409"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 4009409}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "42538532"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 42538532}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 2.68,
     confidence_mean: 2.68,
     confidence_direction: 2.68
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "434633"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 434633}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "442310"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 442310}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "444031"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 444031}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "604179"}), (o:Concept {id: "44784217"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 604179}), (o:Concept {id: 44784217}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.0,
     confidence_mean: 6.0,
     confidence_direction: 6.0
 }]->(o);
-MATCH (e:Concept {id: "606770"}), (o:Concept {id: "4232457"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 606770}), (o:Concept {id: 4232457}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 5.0,
     confidence_mean: 5.0,
     confidence_direction: 5.0
 }]->(o);
-MATCH (e:Concept {id: "606770"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 606770}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 3.0,
     confidence_mean: 3.0,
     confidence_direction: 3.0
 }]->(o);
-MATCH (e:Concept {id: "7"}), (o:Concept {id: "4310996"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 7}), (o:Concept {id: 4310996}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 4.0,
     confidence_mean: 4.0,
     confidence_direction: 4.0
 }]->(o);
-MATCH (e:Concept {id: "75053"}), (o:Concept {id: "36713755"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 75053}), (o:Concept {id: 36713755}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "75053"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 75053}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "8"}), (o:Concept {id: "4119952"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 8}), (o:Concept {id: 4119952}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "8"}), (o:Concept {id: "4285282"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 8}), (o:Concept {id: 4285282}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "81902"}), (o:Concept {id: "373995"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 81902}), (o:Concept {id: 373995}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "81902"}), (o:Concept {id: "4052648"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 81902}), (o:Concept {id: 4052648}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
     confidence_direction: 0.51
 }]->(o);
-MATCH (e:Concept {id: "81902"}), (o:Concept {id: "4178904"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 81902}), (o:Concept {id: 4178904}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 6.84,
     confidence_mean: 6.84,
     confidence_direction: 6.84
 }]->(o);
-MATCH (e:Concept {id: "81902"}), (o:Concept {id: "4306655"}) CREATE (e)-[:CAUSES {
+MATCH (e:Concept {id: 81902}), (o:Concept {id: 4306655}) CREATE (e)-[:CAUSES {
     direction: "Increase",
     confidence_sum: 0.51,
     confidence_mean: 0.51,
