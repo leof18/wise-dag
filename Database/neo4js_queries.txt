@@ -10,9 +10,12 @@ MERGE (ancestor)-[new:CAUSES]->(effect)
 // WHERE ancestor1 <> ancestor2
 // MERGE (ancestor1)-[:CAUSES]->(ancestor2)
 
+:param selectedIteration => {id: 0};
+:param selectedNode => {name: "Social context"};
+
 // Retrieve all nodes at the specified iteration level
 MATCH (n:Concept)-[:PART_OF]->(i:Iteration)
-WHERE i.id = 1
+WHERE i.id = $selectedIteration.id
 WITH collect(n) AS selectedLevelNodes
 UNWIND selectedLevelNodes AS n
 OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
@@ -20,26 +23,21 @@ WHERE m IN selectedLevelNodes
 RETURN n, r, m
 
 // Expanding a single node
-// Step 1: Retrieve all nodes at the current level
-MATCH (n:Concept)-[:PART_OF]->(level:IterationLevel)
-WHERE level.level = 0
-WITH collect(n) AS selectedLevelNodes
-// Step 2: Expand the immediate children of the selected node
-UNWIND selectedLevelNodes AS n
-OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
-WITH n, r, m, selectedLevelNodes
-OPTIONAL MATCH (n:Concept {name: 'FH: Cardiovascular disease'})-[:SUBSUMES]->(child:Concept)
-OPTIONAL MATCH (child)-[childR:CAUSES]->(childEffect:Concept)
-WITH 
-  CASE 
-    WHEN n.name = 'FH: Cardiovascular disease' THEN COLLECT(child)
-    ELSE [n]
-  END AS expandedNodes,
-  r, m, child, childR, childEffect
-UNWIND expandedNodes AS node
-RETURN 
-  node AS n,
-  r,
-  m,
-  childR,
-  childEffect
+// Step 1: Match the selected node using the parameter
+MATCH (iteration:Iteration {id: $selectedIteration.id})
+MATCH (excludedNode:Concept {name: $selectedNode.name})
+// Step 2: Select all concept nodes with a part_of relationship to the iteration node 0, except of the elected node
+MATCH (concept:Concept)-[:PART_OF]->(iteration)
+WHERE concept.name <> $selectedNode.name
+WITH collect(concept) AS initialConcepts, excludedNode
+// Step 3: Find the children of the excluded node and combine with initial nodes
+MATCH (excludedNode)-[:SUBSUMES]->(child:Concept)
+WITH initialConcepts, collect(child) AS children
+WITH initialConcepts + children AS finalNodes
+// Step 4: Match causal relationships
+UNWIND finalNodes AS finalNode
+OPTIONAL MATCH (finalNode)-[causal:CAUSES]->(relatedFinalNode:Concept)
+WHERE relatedFinalNode IN finalNodes
+RETURN finalNodes, causal
+
+// Expanding multiple nodes at the same time
