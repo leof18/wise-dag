@@ -5,6 +5,7 @@ const { driver } = require('./db/neo4j');
 const graphRoutes = require('./routes/graphRoutes');
 const iterationLevelRoutes = require('./routes/iterationLevelRoutes');
 const causalQueryRoutes = require('./routes/causalQueryRoutes');
+const granularityQuery = require('./routes/granularityQuery');
 
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 app.use('/api', graphRoutes);
 app.use('/api', iterationLevelRoutes);
 app.use('/api', causalQueryRoutes);
+app.use('/api', granularityQuery);
 
 // Close Neo4j connection when server stops
 process.on('SIGINT', async () => {
