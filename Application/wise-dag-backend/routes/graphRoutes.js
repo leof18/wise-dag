@@ -1,26 +1,35 @@
-const express = require("express");
-const router = express.Router(); // Initialize the router
-const neo4j = require("../db/neo4j");
+const express = require('express');
+const router = express.Router();
+const { driver } = require('../db/neo4j');
 
-// Define routes
-router.get("/exposure-outcome", async (req, res) => {
+// Define /api/graph-data endpoint
+router.get('/graph-data', async (req, res) => {
+  const session = driver.session();
   try {
-    const session = neo4j.session();
+    // Example query to fetch nodes and edges
     const result = await session.run(`
-      MATCH (exposure:Concept)-[r:CAUSES]->(outcome:Concept)
-      RETURN exposure.name AS exposureName, outcome.name AS outcomeName
+      MATCH (n)-[r]->(m)
+      RETURN 
+        collect({
+          id: id(n),
+          name: n.name,
+          type: n.type
+        }) AS nodes,
+        collect({
+          source: id(startNode(r)),
+          target: id(endNode(r))
+        }) AS edges
     `);
 
-    const data = result.records.map((record) => ({
-      exposure: record.get("exposureName"),
-      outcome: record.get("outcomeName"),
-    }));
+    const nodes = result.records[0].get('nodes');
+    const edges = result.records[0].get('edges');
 
-    session.close();
-    res.json(data);
+    res.json({ nodes, edges });
   } catch (error) {
-    console.error("Error fetching exposure-outcome data:", error);
-    res.status(500).json({ error: "Internal server error" });
+    console.error('Error fetching graph data:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  } finally {
+    session.close();
   }
 });
 
