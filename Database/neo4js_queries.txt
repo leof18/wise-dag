@@ -56,7 +56,6 @@ RETURN COLLECT(DISTINCT finalNode) AS resultingNodes, causalRelationships;
 
 // WIHTOUT relationships
 
-
 MATCH (iteration:Iteration {id: $selectedIteration.id})
 MATCH (concept:Concept)-[:PART_OF]->(iteration)
 WITH collect(concept) AS initialConcepts
@@ -70,3 +69,4 @@ WITH CASE
         ELSE [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name]
      END AS finalNodes
 RETURN COLLECT(DISTINCT finalNodes) AS resultingNodes;
+
