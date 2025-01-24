@@ -20,7 +20,7 @@ WHERE NOT EXISTS { MATCH (node)-[:SUBSUMES]->(:Concept) }
 SET node.is_leaf_node = true;
 
 :param selectedIteration => {id: 0};
-:param selectedNode => {name: "Social context"};
+:param exposureOutcomeNames => {name: ["Smoking","Ischemic stroke"]};
 
 // Retrieve all nodes at the specified iteration level
 MATCH (n:Concept)-[:PART_OF]->(i:Iteration)
@@ -28,14 +28,16 @@ WHERE i.id = $selectedIteration.id
 WITH collect(n) AS selectedLevelNodes
 UNWIND selectedLevelNodes AS n
 OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
-WHERE m IN selectedLevelNodes
+WHERE m IN selectedLevelNodes OR m.name IN $exposureOutcomeNames
+WITH DISTINCT n, r, m
 RETURN n, r, m
 
 
 // Expanding nodes
 :param selectedIteration => {id: 0};
-:param selectedNodes => {name: ["Social context", "Substance", "Biological substance","Troponin"]};
+:param selectedNodes => {name: [""]};
 :param selectedConfidence => {score: 0};
+
 MATCH (iteration:Iteration {id: $selectedIteration.id})
 MATCH (excludedNodes:Concept)
 WHERE excludedNodes.name IN $selectedNodes.name
@@ -48,4 +50,23 @@ WITH [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name] AS final
 UNWIND finalNodes AS finalNode
 OPTIONAL MATCH (finalNode)-[causal:CAUSES]->(relatedFinalNode:Concept)
 WHERE causal.confidence_mean > $selectedConfidence.score
-RETURN COLLECT(DISTINCT(finalNode)) AS resultingNodes, causal;
+WITH finalNode, COLLECT(causal) AS causalRelationships
+RETURN COLLECT(DISTINCT finalNode) AS resultingNodes, causalRelationships;
+
+
+// WIHTOUT relationships
+
+
+MATCH (iteration:Iteration {id: $selectedIteration.id})
+MATCH (concept:Concept)-[:PART_OF]->(iteration)
+WITH collect(concept) AS initialConcepts
+OPTIONAL MATCH (excludedNodes:Concept)
+WHERE $selectedNodes.name <> [""] AND excludedNodes.name IN $selectedNodes.name
+OPTIONAL MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
+WITH initialConcepts, collect(child) AS children, excludedNodes
+WITH initialConcepts + children AS combinedNodes, excludedNodes
+WITH CASE 
+        WHEN $selectedNodes.name = [""] THEN combinedNodes
+        ELSE [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name]
+     END AS finalNodes
+RETURN COLLECT(DISTINCT finalNodes) AS resultingNodes;
