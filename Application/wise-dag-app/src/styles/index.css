@@ -15,12 +15,12 @@ body {
 
 /* Main content area (flexible height) */
 .main-content {
-  @apply flex-1;
+  @apply flex-1 flex flex-col;
 }
 
 /* Header Styling */
 header {
-  @apply bg-blue-600 text-white sticky top-0 z-50 shadow-md;
+  @apply bg-gray-100 text-gray-600 sticky top-0 z-50 shadow-md;
 }
 
 header .header-container {
@@ -30,6 +30,7 @@ header .header-container {
 /* Footer Styling */
 footer {
   @apply bg-gray-800 text-white text-center py-4;
+  margin-top: auto; /* Ensures footer stays at the bottom */
 }
 
 /* Links */
@@ -46,62 +47,80 @@ a:hover {
   display: none;
 }
 
-/* Styles for GraphPage */
-
-/* Root container */
-.graph-container {
-  @apply flex flex-col items-center justify-center p-4 min-h-screen bg-gray-100;
+/* Main Graph Page */
+.graph-page-container {
+  @apply flex flex-col items-center justify-between min-h-full p-4 bg-white;
 }
 
-/* Header and logo */
+/* Graph Header */
 .graph-header {
-  @apply flex flex-col items-center mb-4;
+  @apply text-center text-gray-700 font-medium mb-4;
 }
 
-.graph-logo {
-  @apply w-16 h-auto mb-4;
+.graph-header .graph-logo {
+  @apply mx-auto mb-2;
+  width: 80px;
+  height: auto;
 }
 
-.graph-title {
-  @apply text-gray-700 font-semibold text-sm;
+.graph-header .graph-title {
+  @apply text-sm text-gray-500;
 }
 
-/* Nodes */
-.graph-nodes {
-  @apply flex flex-wrap justify-center gap-6 mt-4;
+/* Controls */
+.graph-controls {
+  @apply flex justify-between items-center w-full mb-4;
 }
 
-.graph-node {
-  @apply flex items-center justify-center w-20 h-20 rounded-full border cursor-pointer text-center;
-  font-weight: bold;
-}
-
-.node-input {
-  @apply bg-black text-white;
-}
-
-.node-output {
-  @apply bg-black text-white;
-}
-
-.node-intermediate {
-  @apply bg-white border-gray-300 text-black;
-}
-
-/* Granularity control */
 .granularity-control {
-  @apply text-center mb-6;
+  @apply flex flex-col items-center text-center mb-4;
 }
 
 .granularity-slider {
-  @apply w-2/3 mx-auto my-4 block;
+  @apply w-3/4 mx-auto mt-2;
 }
 
-/* Copy button */
-.copy-button {
-  @apply bg-black text-white px-6 py-2 rounded-lg shadow-md mt-6;
+.zoom-controls {
+  @apply flex gap-2;
 }
 
-.copy-button:hover {
-  @apply bg-opacity-90;
+.zoom-button {
+  @apply bg-gray-500 text-white py-2 px-4 rounded shadow hover:bg-gray-700;
+}
+
+.graph-container-wrapper {
+  position: relative;
+  height: 600px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+/* Graph Container */
+.graph-container {
+  @apply relative flex flex-wrap justify-center items-center;
+  min-width: 1200px;
+  min-height: 1200px;
+}
+
+/* Nodes */
+.node {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffcccb;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.node:hover {
+  @apply bg-blue-500 text-white;
 }
