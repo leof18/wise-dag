@@ -6,9 +6,18 @@ MERGE (ancestor)-[new:CAUSES]->(effect)
 
 // OPTIONAL: Creates lots of cycles, discuss in meeting
 // Step 2: Establish causal relationships between ancestor nodes based on descendant relationships
-// MATCH (ancestor1:Concept)-[:SUBSUMES*]->(descendant1:Concept)-[:CAUSES]->(descendant2:Concept)<-[:SUBSUMES*]-(ancestor2:Concept)
-// WHERE ancestor1 <> ancestor2
-// MERGE (ancestor1)-[:CAUSES]->(ancestor2)
+MATCH (ancestor1:Concept)-[:SUBSUMES*]->(descendant1:Concept)-[:CAUSES]->(descendant2:Concept)<-[:SUBSUMES*]-(ancestor2:Concept)
+WHERE ancestor1 <> ancestor2
+MERGE (ancestor1)-[:CAUSES]->(ancestor2)
+
+// POTENTIALLY USEFUL TO PREVENT BEING ABLE TO EXPAND NODES THAT ARE ALREADY FULLY EXPANDED (color code in UI?)
+// Set is_leaf_node to false for all nodes initially
+MATCH (node:Concept)
+SET node.is_leaf_node = false;
+// Set is_leaf_node to true for leaf nodes
+MATCH (node:Concept)
+WHERE NOT EXISTS { MATCH (node)-[:SUBSUMES]->(:Concept) }
+SET node.is_leaf_node = true;
 
 :param selectedIteration => {id: 0};
 :param selectedNode => {name: "Social context"};
@@ -22,22 +31,21 @@ OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
 WHERE m IN selectedLevelNodes
 RETURN n, r, m
 
-// Expanding a single node
-// Step 1: Match the selected node using the parameter
+
+// Expanding nodes
+:param selectedIteration => {id: 0};
+:param selectedNodes => {name: ["Social context", "Substance", "Biological substance","Troponin"]};
+:param selectedConfidence => {score: 0};
 MATCH (iteration:Iteration {id: $selectedIteration.id})
-MATCH (excludedNode:Concept {name: $selectedNode.name})
-// Step 2: Select all concept nodes with a part_of relationship to the iteration node 0, except of the elected node
+MATCH (excludedNodes:Concept)
+WHERE excludedNodes.name IN $selectedNodes.name
 MATCH (concept:Concept)-[:PART_OF]->(iteration)
-WHERE concept.name <> $selectedNode.name
-WITH collect(concept) AS initialConcepts, excludedNode
-// Step 3: Find the children of the excluded node and combine with initial nodes
-MATCH (excludedNode)-[:SUBSUMES]->(child:Concept)
+WITH collect(concept) AS initialConcepts, excludedNodes
+MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
 WITH initialConcepts, collect(child) AS children
-WITH initialConcepts + children AS finalNodes
-// Step 4: Match causal relationships
+WITH initialConcepts + children AS combinedNodes
+WITH [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name] AS finalNodes
 UNWIND finalNodes AS finalNode
 OPTIONAL MATCH (finalNode)-[causal:CAUSES]->(relatedFinalNode:Concept)
-WHERE relatedFinalNode IN finalNodes
-RETURN finalNodes, causal
-
-// Expanding multiple nodes at the same time
+WHERE causal.confidence_mean > $selectedConfidence.score
+RETURN COLLECT(DISTINCT(finalNode)) AS resultingNodes, causal;

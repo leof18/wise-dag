@@ -75,6 +75,13 @@ def create_inferred_causal_relationships_in_cypher():
         "MERGE (ancestor)-[:CAUSES]->(effect);"
     )
 
+def created_causal_relationships_between_ancestors():
+    return (
+        "MATCH (ancestor1:Concept)-[:SUBSUMES*]->(descendant1:Concept)-[:CAUSES]->(descendant2:Concept)<-[:SUBSUMES*]-(ancestor2:Concept)\n"
+        "WHERE ancestor1 <> ancestor2\n"
+        "MERGE (ancestor1)-[:CAUSES]->(ancestor2);"
+    )
+
 if __name__ == "__main__":
     cypher_output = ""
     cypher_output += create_nodes_in_cypher(nodes_df) + "\n\n"
