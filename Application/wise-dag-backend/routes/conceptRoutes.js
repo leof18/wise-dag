@@ -3,12 +3,12 @@ const router = express.Router();
 const { driver } = require("../db/neo4j");
 
 // Fetch concepts dynamically based on search term
-router.post("/concepts", async (req, res) => {
-  const { searchTerm } = req.body; // Expecting `searchTerm` in the request body
+router.get("/concepts", async (req, res) => {
+  const { searchTerm } = req.query; // Fetch `searchTerm` from query parameters
 
-  if (!searchTerm || typeof searchTerm !== "string" || searchTerm.trim() === "") {
+  if (!searchTerm) {
     return res.status(400).json({
-      error: "Missing or invalid required parameter: searchTerm",
+      error: "Missing required parameter: searchTerm",
     });
   }
 
@@ -17,13 +17,13 @@ router.post("/concepts", async (req, res) => {
   try {
     const query = `
       MATCH (concept:Concept)
-      WHERE toLower(concept.name) STARTS WITH toLower($searchTerm)
+      WHERE toLower(concept.name) CONTAINS toLower($searchTerm)
       RETURN concept.name AS ConceptName
       ORDER BY concept.name ASC
-      LIMIT 10
+      LIMIT 5
     `;
 
-    const params = { searchTerm: searchTerm.trim() };
+    const params = { searchTerm };
 
     console.log("Executing query with params:", params);
 
@@ -36,7 +36,7 @@ router.post("/concepts", async (req, res) => {
       data: concepts,
     });
   } catch (error) {
-    console.error(`Error executing Neo4j query with searchTerm "${searchTerm}":`, error);
+    console.error("Error executing Neo4j query:", error);
     res.status(500).json({
       error: "An error occurred while fetching concepts",
       details: error.message,
