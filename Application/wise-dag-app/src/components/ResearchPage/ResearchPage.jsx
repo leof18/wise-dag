@@ -1,12 +1,28 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DropdownWithSearch from "../DropdownWithSearch/DropdownWithSearch";
+import DropdownWithSearch from "../DropdownWithSearch/DropdownWithSearch"
 import logo from "../../assets/logo.png";
 
+const fetchConcepts = async (searchTerm) => {
+  try {
+    const response = await fetch(
+      `http://localhost:3001/api/concepts?searchTerm=${encodeURIComponent(searchTerm)}`
+    );
+    const data = await response.json();
+    if (data.success) {
+      return data.data;
+    }
+    return [];
+  } catch (error) {
+    console.error("Error fetching concepts:", error);
+    return [];
+  }
+};
+
 const ResearchPage = () => {
-  const [exposure, setExposure] = useState(""); // Selected exposure
-  const [outcome, setOutcome] = useState(""); // Selected outcome
-  const [error, setError] = useState(""); // Error handling
+  const [exposure, setExposure] = useState("");
+  const [outcome, setOutcome] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = () => {
@@ -15,22 +31,6 @@ const ResearchPage = () => {
       return;
     }
     navigate("/graph", { state: { exposure, outcome } });
-  };
-
-  const fetchOptions = async (searchTerm) => {
-    try {
-      const response = await fetch(
-        `/api/concepts?searchTerm=${encodeURIComponent(searchTerm)}`
-      );
-      if (!response.ok) {
-        throw new Error("Failed to fetch options");
-      }
-      const data = await response.json();
-      return data.map((item) => item.ConceptName); // Return concept names
-    } catch (error) {
-      console.error("Error fetching options:", error);
-      return [];
-    }
   };
 
   return (
@@ -52,15 +52,15 @@ const ResearchPage = () => {
           <div className="flex items-center space-x-2">
             <label className="text-gray-700 font-medium">Does</label>
             <DropdownWithSearch
-              placeholder="Select exposure"
-              fetchOptions={fetchOptions}
+              placeholder="Enter exposure"
+              fetchOptions={fetchConcepts}
               value={exposure}
               onChange={setExposure}
             />
             <label className="text-gray-700 font-medium">affect</label>
             <DropdownWithSearch
-              placeholder="Select outcome"
-              fetchOptions={fetchOptions}
+              placeholder="Enter outcome"
+              fetchOptions={fetchConcepts}
               value={outcome}
               onChange={setOutcome}
             />
