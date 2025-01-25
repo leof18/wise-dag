@@ -4,6 +4,12 @@ Standardization/derivedIndex
 Standardization/mainIndex
 Standardization/sleepyCat
 Standardization/*.txt
+/node_modules
+Application/node_modules
+Application/*.json
+Application/node_modules/*.json
+Application/wise-dag-app/*.json
+*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

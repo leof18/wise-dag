@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import DropdownWithSearch from "../DropdownWithSearch/DropdownWithSearch";
 import logo from "../../assets/logo.png";
 
 const ResearchPage = () => {
-  const [exposure, setExposure] = useState("");
-  const [outcome, setOutcome] = useState("");
-  const [error, setError] = useState("");
+  const [exposure, setExposure] = useState(""); // Selected exposure
+  const [outcome, setOutcome] = useState(""); // Selected outcome
+  const [error, setError] = useState(""); // Error handling
   const navigate = useNavigate();
 
   const handleSubmit = () => {
@@ -14,6 +15,22 @@ const ResearchPage = () => {
       return;
     }
     navigate("/graph", { state: { exposure, outcome } });
+  };
+
+  const fetchOptions = async (searchTerm) => {
+    try {
+      const response = await fetch(
+        `/api/concepts?searchTerm=${encodeURIComponent(searchTerm)}`
+      );
+      if (!response.ok) {
+        throw new Error("Failed to fetch options");
+      }
+      const data = await response.json();
+      return data.map((item) => item.ConceptName); // Return concept names
+    } catch (error) {
+      console.error("Error fetching options:", error);
+      return [];
+    }
   };
 
   return (
@@ -34,20 +51,18 @@ const ResearchPage = () => {
         <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
           <div className="flex items-center space-x-2">
             <label className="text-gray-700 font-medium">Does</label>
-            <input
-              type="text"
+            <DropdownWithSearch
+              placeholder="Select exposure"
+              fetchOptions={fetchOptions}
               value={exposure}
-              onChange={(e) => setExposure(e.target.value)}
-              placeholder="Enter exposure"
-              className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={setExposure}
             />
             <label className="text-gray-700 font-medium">affect</label>
-            <input
-              type="text"
+            <DropdownWithSearch
+              placeholder="Select outcome"
+              fetchOptions={fetchOptions}
               value={outcome}
-              onChange={(e) => setOutcome(e.target.value)}
-              placeholder="Enter outcome"
-              className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              onChange={setOutcome}
             />
             <label className="text-gray-700 font-medium">?</label>
           </div>
