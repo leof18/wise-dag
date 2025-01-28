@@ -17,10 +17,10 @@ router.get("/concepts", async (req, res) => {
   try {
     const query = `
       MATCH (concept:Concept)
-      WHERE toLower(concept.name) CONTAINS toLower($searchTerm)
-      RETURN concept.name AS ConceptName
-      ORDER BY concept.name ASC
-      LIMIT 5
+    WHERE toLower(concept.name) STARTS WITH toLower($searchTerm)
+    RETURN concept.name AS ConceptName
+    ORDER BY concept.name ASC
+    LIMIT 10
     `;
 
     const params = { searchTerm };
