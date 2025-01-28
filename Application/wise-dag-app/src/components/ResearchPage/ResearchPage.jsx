@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DropdownWithSearch from "../DropdownWithSearch/DropdownWithSearch"
+import DropdownWithSearch from "../DropdownwithSearch";
 import logo from "../../assets/logo.png";
 
 const fetchConcepts = async (searchTerm) => {
@@ -30,7 +30,13 @@ const ResearchPage = () => {
       setError("Please provide both an exposure and an outcome.");
       return;
     }
-    navigate("/graph", { state: { exposure, outcome } });
+
+    const stateData = {
+      exposure,
+      outcome,
+    };
+
+    navigate("/graph", { state: stateData }); // Pass exposure and outcome to GraphPage
   };
 
   return (
