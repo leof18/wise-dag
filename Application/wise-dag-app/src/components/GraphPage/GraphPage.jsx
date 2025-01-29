@@ -16,7 +16,7 @@ const GraphPage = () => {
   const GRAPH_WIDTH = 1600;
   const GRAPH_HEIGHT = 900;
   const BASE_NODE_SPACING_X = 220; // Default horizontal spacing
-  const BASE_NODE_SPACING_Y = 100; // Default vertical spacing
+  const BASE_NODE_SPACING_Y = 120; // Default vertical spacing
 
   const fetchGraphData = async (level) => {
     try {
@@ -33,12 +33,13 @@ const GraphPage = () => {
           name: node.properties.name,
           isExposure: node.properties.name === exposure,
           isOutcome: node.properties.name === outcome,
+          isLeaf: node.properties.is_leaf_node, // Determines if node is clickable
           textLength: node.properties.name.length, // Track text length for spacing
         }));
 
         const uniqueNodes = [
-          { id: "exposure", name: exposure, isExposure: true, textLength: exposure.length },
-          { id: "outcome", name: outcome, isOutcome: true, textLength: outcome.length },
+          { id: "exposure", name: exposure, isExposure: true, isLeaf: false, textLength: exposure.length },
+          { id: "outcome", name: outcome, isOutcome: true, isLeaf: false, textLength: outcome.length },
           ...extractedNodes.filter((n) => n.name !== exposure && n.name !== outcome),
         ];
 
@@ -46,14 +47,32 @@ const GraphPage = () => {
         const cols = Math.ceil(Math.sqrt(totalNodes));
         const rows = Math.ceil(totalNodes / cols);
 
-        // Adjust spacing dynamically based on text length
+        // Dynamically calculate max widths per row
+        let currentX = 100; // Start X position
+        let currentY = 100; // Start Y position
+        let maxHeightInRow = BASE_NODE_SPACING_Y;
+
         const positionedNodes = uniqueNodes.map((node, index) => {
-          const dynamicSpacingX = BASE_NODE_SPACING_X + node.textLength * 4; // Expand if text is long
-          return {
+          const nodeWidth = node.textLength * 10 + 50; // Expand width dynamically
+          const nextX = currentX + nodeWidth + 20; // Next X position
+
+          if (nextX > GRAPH_WIDTH - 150) {
+            // Move to new row if exceeding width
+            currentX = 100;
+            currentY += maxHeightInRow;
+            maxHeightInRow = BASE_NODE_SPACING_Y; // Reset row height
+          }
+
+          const positionedNode = {
             ...node,
-            x: Math.min((index % cols) * dynamicSpacingX + 100, GRAPH_WIDTH - dynamicSpacingX),
-            y: Math.min(Math.floor(index / cols) * BASE_NODE_SPACING_Y + 100, GRAPH_HEIGHT - BASE_NODE_SPACING_Y),
+            x: currentX,
+            y: currentY,
           };
+
+          currentX += nodeWidth + 20;
+          maxHeightInRow = Math.max(maxHeightInRow, BASE_NODE_SPACING_Y);
+
+          return positionedNode;
         });
 
         setNodes(positionedNodes);
@@ -69,6 +88,13 @@ const GraphPage = () => {
     setNodes([]);
     fetchGraphData(granularity);
   }, [granularity]);
+
+  const handleNodeClick = (node) => {
+    if (!node.isLeaf) {
+      console.log(`Expanding node: ${node.name} with iteration level ${granularity}`);
+      // Add logic here to fetch expanded node data
+    }
+  };
 
   return (
     <div className="flex flex-col items-center p-6 bg-gray-100 min-h-screen w-full">
@@ -124,15 +150,16 @@ const GraphPage = () => {
                   {nodes.map((node) => (
                     <div
                       key={node.id}
-                      className="absolute p-2 rounded-full text-center font-semibold shadow-md"
+                      className="absolute p-2 rounded-full text-center font-semibold shadow-md cursor-pointer"
+                      onClick={() => handleNodeClick(node)}
                       style={{
                         left: `${node.x}px`,
                         top: `${node.y}px`,
-                        backgroundColor: node.isExposure || node.isOutcome ? "#EF4444" : "#A7F3D0",
+                        backgroundColor: node.isExposure || node.isOutcome ? "#EF4444" : node.isLeaf ? "#D1D5DB" : "#A7F3D0",
                         color: node.isExposure || node.isOutcome ? "white" : "black",
                         border: node.isExposure || node.isOutcome ? "2px solid black" : "none",
                         transform: "translate(-50%, -50%)",
-                        minWidth: `${node.textLength * 6}px`, // Prevents text from overlapping
+                        minWidth: `${node.textLength * 10}px`, // Expands box width for long names
                         whiteSpace: "nowrap",
                         padding: "6px 12px",
                       }}
