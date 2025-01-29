@@ -11,25 +11,22 @@ const GraphPage = () => {
 
   const [nodes, setNodes] = useState([]);
   const [granularity, setGranularity] = useState(0);
-
-  // Refs to store zoom functions
-  const zoomInRef = useRef(null);
-  const zoomOutRef = useRef(null);
-  const resetTransformRef = useRef(null);
+  const transformRef = useRef(null);
 
   // Graph Space Dimensions
   const GRAPH_WIDTH = 1600;
   const GRAPH_HEIGHT = 900;
-  const BASE_NODE_SPACING_X = 220; // Default horizontal spacing
-  const BASE_NODE_SPACING_Y = 120; // Default vertical spacing
+  const BASE_NODE_SPACING_X = 220;
+  const BASE_NODE_SPACING_Y = 120;
 
-  const fetchGraphData = async (level) => {
+  const fetchGraphData = async (level, selectedNode = null) => {
     try {
-      const response = await axios.post("http://localhost:3001/api/granularity-query", {
+      const requestData = {
         selectedIteration: { id: level },
-        selectedNodes: { name: [exposure, outcome] },
-      });
+        selectedNodes: selectedNode ? { name: [selectedNode] } : { name: [exposure, outcome] },
+      };
 
+      const response = await axios.post("http://localhost:3001/api/granularity-query", requestData);
       const data = response.data;
 
       if (data.success) {
@@ -38,34 +35,28 @@ const GraphPage = () => {
           name: node.properties.name,
           isExposure: node.properties.name === exposure,
           isOutcome: node.properties.name === outcome,
-          isLeaf: node.properties.is_leaf_node, // Determines if node is clickable
-          textLength: node.properties.name.length, // Track text length for spacing
+          isLeaf: node.properties.is_leaf_node,
+          textLength: node.properties.name.length,
         }));
 
-        const uniqueNodes = [
+        const sortedNodes = [
           { id: "exposure", name: exposure, isExposure: true, isLeaf: false, textLength: exposure.length },
-          { id: "outcome", name: outcome, isOutcome: true, isLeaf: false, textLength: outcome.length },
           ...extractedNodes.filter((n) => n.name !== exposure && n.name !== outcome),
+          { id: "outcome", name: outcome, isOutcome: true, isLeaf: false, textLength: outcome.length },
         ];
 
-        const totalNodes = uniqueNodes.length;
-        const cols = Math.ceil(Math.sqrt(totalNodes));
-        const rows = Math.ceil(totalNodes / cols);
-
-        // Dynamically calculate max widths per row
-        let currentX = 100; // Start X position
-        let currentY = 100; // Start Y position
+        let currentX = 100;
+        let currentY = 100;
         let maxHeightInRow = BASE_NODE_SPACING_Y;
 
-        const positionedNodes = uniqueNodes.map((node, index) => {
-          const nodeWidth = node.textLength * 10 + 50; // Expand width dynamically
-          const nextX = currentX + nodeWidth + 20; // Next X position
+        const positionedNodes = sortedNodes.map((node, index) => {
+          const nodeWidth = node.textLength * 10 + 50;
+          const nextX = currentX + nodeWidth + 20;
 
           if (nextX > GRAPH_WIDTH - 150) {
-            // Move to new row if exceeding width
             currentX = 100;
             currentY += maxHeightInRow;
-            maxHeightInRow = BASE_NODE_SPACING_Y; // Reset row height
+            maxHeightInRow = BASE_NODE_SPACING_Y;
           }
 
           const positionedNode = {
@@ -81,6 +72,12 @@ const GraphPage = () => {
         });
 
         setNodes(positionedNodes);
+
+        if (transformRef.current) {
+          setTimeout(() => {
+            transformRef.current.centerView(0.5, 200); // Ensure it starts zoomed out
+          }, 300);
+        }
       } else {
         console.error("Failed to fetch graph data:", data.error);
       }
@@ -90,80 +87,77 @@ const GraphPage = () => {
   };
 
   useEffect(() => {
-    setNodes([]);
     fetchGraphData(granularity);
   }, [granularity]);
 
   const handleNodeClick = (node) => {
     if (!node.isLeaf) {
       console.log(`Expanding node: ${node.name} with iteration level ${granularity}`);
-      // Add logic here to fetch expanded node data
+      fetchGraphData(granularity, node.name);
     }
   };
 
   return (
     <TransformWrapper
-      initialScale={1}
-      minScale={0.5}
+      initialScale={0.5} // Starts in a zoomed-out position
+      minScale={0.3}
       maxScale={3}
       centerOnInit
-      wheel={{ step: 0.1 }} // Optional: Smooth zooming with mouse wheel
+      wheel={{ step: 0.1 }}
+      ref={transformRef}
     >
-      {({ zoomIn, zoomOut, resetTransform }) => {
-        // Store functions in refs so header buttons can access them
-        zoomInRef.current = zoomIn;
-        zoomOutRef.current = zoomOut;
-        resetTransformRef.current = resetTransform;
+      {({ zoomIn, zoomOut, resetTransform, centerView }) => {
+        transformRef.current = { zoomIn, zoomOut, resetTransform, centerView };
 
         return (
           <div className="flex flex-col items-center p-6 bg-gray-100 min-h-screen w-full">
-            {/* Fixed Header Section (Now Includes Granularity Slider + Zoom Controls) */}
-            <header className="w-full flex flex-col items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
-              <h1 className="text-2xl font-bold">Graph Visualization</h1>
-              <p className="text-sm text-gray-600">
-                Exposure: <span className="text-red-500 font-semibold">{exposure}</span>, Outcome:{" "}
-                <span className="text-red-500 font-semibold">{outcome}</span>
-              </p>
+            {/* Fixed Header with Granularity Slider + Zoom Buttons */}
+            <header className="w-full flex justify-between items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
+              <div className="flex flex-col items-center flex-grow">
+                <h1 className="text-2xl font-bold">Graph Visualization</h1>
+                <p className="text-sm text-gray-600">
+                  Exposure: <span className="text-red-500 font-semibold">{exposure}</span>, Outcome:{" "}
+                  <span className="text-red-500 font-semibold">{outcome}</span>
+                </p>
 
-              {/* Granularity Slider and Zoom Controls Together */}
-              <div className="w-full flex flex-col items-center mt-3 space-y-2">
                 {/* Granularity Slider */}
-                <label htmlFor="granularity-slider" className="text-lg font-semibold">
-                  Granularity Level: {granularity}
-                </label>
-                <input
-                  id="granularity-slider"
-                  type="range"
-                  min="0"
-                  max="74"
-                  step="1"
-                  value={granularity}
-                  onChange={(e) => setGranularity(parseInt(e.target.value))}
-                  className="w-full"
-                />
-
-                {/* Zoom Controls Inside Header */}
-                <div className="flex space-x-2 bg-gray-100 p-2 rounded-lg shadow-md">
-                  <button onClick={() => zoomInRef.current()} className="p-2 bg-gray-200 rounded">
-                    <AiOutlineZoomIn size={20} />
-                  </button>
-                  <button onClick={() => zoomOutRef.current()} className="p-2 bg-gray-200 rounded">
-                    <AiOutlineZoomOut size={20} />
-                  </button>
-                  <button onClick={() => resetTransformRef.current()} className="p-2 bg-gray-200 rounded">
-                    <FaEraser size={20} />
-                  </button>
+                <div className="w-full flex flex-col items-center mt-2">
+                  <label htmlFor="granularity-slider" className="text-lg font-semibold">
+                    Granularity Level: {granularity}
+                  </label>
+                  <input
+                    id="granularity-slider"
+                    type="range"
+                    min="0"
+                    max="74"
+                    step="1"
+                    value={granularity}
+                    onChange={(e) => setGranularity(parseInt(e.target.value))}
+                    className="w-full"
+                  />
                 </div>
+              </div>
+
+              {/* Zoom Controls in Top Right */}
+              <div className="flex space-x-2 bg-gray-100 p-2 rounded-lg shadow-md">
+                <button onClick={() => transformRef.current.zoomIn()} className="p-2 bg-gray-200 rounded">
+                  <AiOutlineZoomIn size={20} />
+                </button>
+                <button onClick={() => transformRef.current.zoomOut()} className="p-2 bg-gray-200 rounded">
+                  <AiOutlineZoomOut size={20} />
+                </button>
+                <button onClick={() => transformRef.current.resetTransform()} className="p-2 bg-gray-200 rounded">
+                  <FaEraser size={20} />
+                </button>
               </div>
             </header>
 
             {/* Graph Space */}
             <div
-              className="relative border rounded-lg bg-white p-4 overflow-hidden"
+              className="relative border rounded-lg bg-white p-4 overflow-hidden mt-4"
               style={{ width: `${GRAPH_WIDTH}px`, height: `${GRAPH_HEIGHT}px` }}
             >
               <TransformComponent>
-                {/* Graph Nodes */}
                 <div className="relative" style={{ width: GRAPH_WIDTH, height: GRAPH_HEIGHT }}>
                   {nodes.map((node) => (
                     <div
@@ -177,7 +171,7 @@ const GraphPage = () => {
                         color: node.isExposure || node.isOutcome ? "white" : "black",
                         border: node.isExposure || node.isOutcome ? "2px solid black" : "none",
                         transform: "translate(-50%, -50%)",
-                        minWidth: `${node.textLength * 10}px`, // Expands box width for long names
+                        minWidth: `${node.textLength * 10}px`,
                         whiteSpace: "nowrap",
                         padding: "6px 12px",
                       }}
