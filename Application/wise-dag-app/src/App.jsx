@@ -6,6 +6,7 @@ import Signup from './components/Auth/Signup';
 import ForgotPassword from './components/Auth/ForgotPassword';
 import ResearchPage from './components/ResearchPage/ResearchPage';
 import GraphPage from './components/GraphPage/GraphPage';
+import DagittyPage from './components/DagittyPage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/research" element={<ResearchPage />} />
         <Route path="/graph" element={<GraphPage />} />
+        <Route path="/dagitty" element={<DagittyPage />} />
       </Routes>
     </Layout>
   );
