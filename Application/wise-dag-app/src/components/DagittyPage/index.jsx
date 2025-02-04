@@ -6,7 +6,7 @@ const DagittyPage = () => {
 
     scripts.forEach((scriptName) => {
       const script = document.createElement("script");
-      script.src = `/dagitty/${scriptName}`;  // Load from public/dagitty/
+      script.src = `/dagitty/${scriptName}`; // Load from public/dagitty/
       script.async = true;
       document.body.appendChild(script);
 
@@ -18,7 +18,9 @@ const DagittyPage = () => {
     return () => {
       // Cleanup scripts on unmount
       scripts.forEach((scriptName) => {
-        const script = document.querySelector(`script[src="/dagitty/${scriptName}"]`);
+        const script = document.querySelector(
+          `script[src="/dagitty/${scriptName}"]`
+        );
         if (script) document.body.removeChild(script);
       });
     };
