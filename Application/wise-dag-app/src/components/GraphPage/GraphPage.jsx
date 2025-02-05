@@ -89,11 +89,12 @@ const GraphPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center p-6 bg-gray-100 min-h-screen w-full">
+    <div className="flex flex-col items-center p-6 bg-gray-100 w-full"
+    style={{ height: "calc(100vh - 130px)" }}>
       {/* Fixed Header with Granularity Slider + Zoom Buttons */}
       <header className="w-full flex justify-between items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
         <div className="flex flex-col items-center flex-grow">
-          <h1 className="text-2xl font-bold">Graph Visualization</h1>
+          <h1 className="text-2xl font-bold">Node Selection</h1>
           <p className="text-sm text-gray-600">
             Exposure:{" "}
             <span className="text-red-500 font-semibold">{exposure}</span>,
@@ -122,27 +123,15 @@ const GraphPage = () => {
           </div>
         </div>
 
-        {/* Zoom Controls in Top Right */}
-        <div className="flex space-x-2 bg-gray-100 p-2 rounded-lg shadow-md">
-          <button
-            onClick={() => transformRef.current.zoomIn()}
-            className="p-2 bg-gray-200 rounded"
-          >
-            <AiOutlineZoomIn size={20} />
-          </button>
-          <button
-            onClick={() => transformRef.current.zoomOut()}
-            className="p-2 bg-gray-200 rounded"
-          >
-            <AiOutlineZoomOut size={20} />
-          </button>
-          <button
-            onClick={() => transformRef.current.resetTransform()}
-            className="p-2 bg-gray-200 rounded"
-          >
-            <FaEraser size={20} />
-          </button>
-        </div>
+        {/* Dagify Button */}
+  <button
+    onClick={() => console.log("Dagify action triggered!")}
+    className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
+  >
+    Dagify
+  </button>
+
+        
       </header>
 
       {/* Graph Space */}
@@ -181,9 +170,11 @@ const GraphPage = () => {
                   node.isExposure || node.isOutcome
                     ? "2px solid black"
                     : "none",
-                width: "320px",
-                padding: "6px 12px",
-                margin: "8px",
+                    height: "140px",
+                    width: "140px",
+                    padding: "6px 12px",
+                    margin: "8px",
+                    alignContent: "center",
               }}
             >
               {node.name}
