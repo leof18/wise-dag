@@ -1,0 +1,23 @@
+from flask import Flask, send_from_directory, render_template_string
+
+app = Flask(__name__, static_url_path='', static_folder='static')
+
+@app.route("/")
+def home():
+    return render_template_string("""
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Local DAGitty</title>
+        </head>
+        <body>
+            <h1>DAGitty Hosted Locally</h1>
+            <iframe src="dagitty-3.1/gui/dags.html" width="100%" height="600" style="border:none;"></iframe>
+        </body>
+        </html>
+    """)
+
+if __name__ == "__main__":
+    app.run(debug=True)

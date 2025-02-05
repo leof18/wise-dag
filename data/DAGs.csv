@@ -691,13 +691,12 @@ doi: 10.3389/fneur.2019.00238,smoking,white matter hyperintensities (MRI),Increa
 ,decreased systemic perfusion,reduction or complete blockage of blood flow,Increase,6.84,14,Draft
 ,severe stenosis,reduction or complete blockage of blood flow,Increase,6.84,14,Draft
 ,occlusion of a blood vessel,reduction or complete blockage of blood flow,Increase,6.84,14,Draft
-,nonatherosclerotic abnormalities,ischemic stroke,Increase,6.84,14,Draft
-,arterial dissection,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,arterial dissection,ischemic stroke,Increase,6.84,14,Draft
 ,COVID-19,ischemic stroke,Increase,6.84,14,Draft
-,fibromuscular dysplasia,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,vasculitis,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,Moyamoya disease,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,sickle cell disease arteriopathy,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
+,fibromuscular dysplasia,ischemic stroke,Increase,6.84,14,Draft
+,vasculitis,ischemic stroke,Increase,6.84,14,Draft
+,Moyamoya disease,ischemic stroke,Increase,6.84,14,Draft
+,sickle cell disease arteriopathy,ischemic stroke,Increase,6.84,14,Draft
 ,ischemic stroke,production of reactive oxygen species,Increase,6.84,14,Draft
 ,production of reactive oxygen species,DNA damage,Increase,6.84,14,Draft
 ,ischemic stroke,loss of brain structural integrity,Increase,6.84,14,Draft
@@ -731,8 +730,7 @@ doi: 10.3389/fneur.2019.00238,smoking,white matter hyperintensities (MRI),Increa
 ,Cardiac Remodelling,Atrial Fibrillation,Increase,4.61,16,Final
 ,Age,Cardiac Remodelling,Increase,4.61,16,Final
 ,Hypertension,Cardiac Remodelling,Increase,4.61,16,Final
-,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61,16,Final
-,Atherosclerosis,Other Cardiac Pathologies,Increase,4.61,16,Final
+,Atherosclerosis,Cardiac Remodelling,Increase,4.61,16,Final
 "Harrison Internal Med., 2020",Atherosclerosis,Myocardial Infarction,Increase,4.61,16,Final
 ,Myocardial Infarction,Cardiac Remodelling,Increase,4.61,16,Final
 "Harrison Internal Med., 2020",Second-hand Smoking,Atherosclerosis,Increase,4.61,16,Final
@@ -781,7 +779,7 @@ Harrison internal medicine 2020,Statin Therapy,Thrombosis,Decrease,2.68,16,Final
 Harrison internal medicine 2020,Statin Therapy,Hypertension,Decrease,2.68,16,Final
 Sundell 2008 & mostofsky 2016,Low-Moderate Alcohol Consumption,Atherosclerosis,Decrease,2.0,16,Final
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Hypertension,Increase,2.0,16,Final
-Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Other Cardiac Pathologies,Increase,2.0,16,Final
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Cardiac Remodelling,Increase,2.0,16,Final
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Atrial Fibrillation,Increase,2.0,16,Final
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Thrombosis,Increase,2.0,16,Final
 American Heart Association 2014,Reducing Alcohol Consumption,Heavy Alcohol Consumption,Decrease,2.0,16,Final
@@ -825,7 +823,6 @@ Meisel Review NEJM/Nature,first stroke,peripheral immune competence,Decrease,6.8
 ,spasticity,pain,Increase,6.84,19,Draft
 ,pain,immobility,Increase,6.84,19,Draft
 ,female,large infarction,Increase,4.8,19,Draft
-,depression,female,Increase,4.8,19,Draft
 ,large infarction,severe disability,Increase,6.84,19,Draft
 ,severe disability,immobility,Increase,6.84,19,Draft
 ,first stroke,dysphagia,Increase,6.84,19,Draft

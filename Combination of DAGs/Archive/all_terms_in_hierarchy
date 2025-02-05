@@ -1,0 +1,360 @@
+,concept_id,concept_name
+0,40316773,Prediabetes
+1,4009409,Troponin
+2,37108742,C-reactive protein above reference range
+3,4189265,Antidiabetic agent
+4,432250,Infectious disease
+5,40484935,Measurement finding above reference range
+6,42872750,Assessment using National Institutes of Health stroke scale
+7,4299535,Pregnancy
+8,37203927,Finding of substance level
+9,3544575,Assessment using National Institutes of Health stroke scale
+10,3654822,Assessment using Modified Rankin Scale
+11,37150978,Mediterranean diet
+12,37153627,Percutaneous transluminal procedure on blood vessel
+13,37167374,Lipoprotein (a) hyperlipoproteinemia
+14,37174816,Finding of blood substance level
+15,4010497,Cardiac troponin T
+16,4011630,Neurological finding
+17,4022675,Substance
+18,4024018,Immune system finding
+19,4027306,Vascular sclerosis
+20,4027403,Introduction procedure
+21,4012788,Congenital malformation
+22,606770,Finding of renal function
+23,4019381,Biological substance
+24,46270002,Decreased alcohol consumption
+25,4042150,Removal
+26,437312,Bleeding
+27,4033232,Aspiration
+28,4059498,Social worker involved
+29,197672,Urinary incontinence
+30,4061660,Preventive procedure
+31,40338249,Low sodium diet
+32,4056822,Anticoagulant therapy
+33,4088217,Administration of medication
+34,4068351,Blood-brain barrier
+35,4074035,Current drinker
+36,4329728,Spasticity
+37,4329041,Pain
+38,4021166,Care regime
+39,4024366,High fat diet
+40,4027011,High carbohydrate diet
+41,4022846,Healthy diet
+42,4051022,Thrombolysis of artery
+43,4050288,Insertion of carotid artery stent
+44,4119952,Cardiac syndrome X
+45,134765,Cachexia
+46,4072499,Regimes and therapies
+47,4084390,Lesion size
+48,4093991,General finding of soft tissue
+49,4136014,Stress
+50,4130722,Thrombosis
+51,4148407,FH: Cardiovascular disease
+52,4169009,Family history of stroke
+53,373995,Delirium
+54,4083171,Pain management
+55,4085730,Antibiotic therapy
+56,44791448,Smoking cessation therapy
+57,40375324,Cachexia
+58,4103842,Arteriosclerosis
+59,4128331,Pregnancy
+60,4101796,Finding of brain
+61,4104314,Finding of lesion
+62,4103183,Cardiac finding
+63,4200516,Lesion of brain
+64,4147213,Proliferation
+65,4126495,Activities of daily living assessment
+66,4143576,Admission to stroke unit
+67,4146455,Antihypertensive therapy
+68,4148948,Vascular surgery procedure
+69,4201029,Administration of prophylactic statin
+70,4201926,Primary prevention
+71,4196427,Secondary prevention
+72,4135811,Fibromuscular dysplasia
+73,440383,Depressive disorder
+74,40541201,Antidiabetic agent
+75,443392,Malignant neoplastic disease
+76,4181663,Observable entity
+77,4268546,Education and/or schooling finding
+78,4273629,Chemotherapy
+79,4159324,Thiazolidinedione
+80,4242843,Immunosuppression
+81,4298744,Antidiabetic agent
+82,4304917,Low sodium diet
+83,443432,Impaired cognition
+84,4306703,Atherosclerosis
+85,4301351,Surgical procedure
+86,3522248,Impaired mobility
+87,4194238,Endarterectomy
+88,4287788,Spasticity
+89,4229563,Injection of botulinum toxin
+90,4224118,Dysfunction of urinary bladder
+91,4234649,Quality of life satisfaction
+92,4234656,Postprocedural recovery status
+93,4237321,Procedure with a clinical finding focus
+94,4186398,N-terminal pro-B-type natriuretic peptide
+95,4216292,Racial group
+96,4217691,Stenosis
+97,4166093,Glucagon-like peptide 1 receptor agonist
+98,4216752,Drug therapy
+99,4222559,Dietary finding
+100,4301936,Blood glucose management
+101,40595267,Urinary incontinence
+102,4306655,Death
+103,4178631,Angioplasty of carotid artery
+104,4181165,Procedure involving urinary catheter
+105,4184633,Passive smoker
+106,4183729,Moderate drinker
+107,4185284,Removal of thrombus
+108,40480457,Evaluation finding
+109,440377,Paralysis
+110,378143,Encephalitis
+111,4171825,Increased body mass index
+112,40598814,Surgical procedure
+113,4175951,Morphologically abnormal structure
+114,4178903,Complete obstruction
+115,4178904,Body temperature above reference range
+116,4201412,Speech therapy
+117,4212119,Growth alteration
+118,4241216,Uses oral contraception
+119,4283095,Carotid endarterectomy
+120,44784217,Cardiac arrhythmia
+121,44784326,Antidepressant therapy
+122,45771363,Sodium glucose cotransporter subtype 2 inhibitor
+123,46273821,Smoking cessation therapy
+124,4322976,Procedure
+125,4322978,Age factor
+126,37018196,Prediabetes
+127,201820,Diabetes mellitus
+128,42536002,Sodium glucose cotransporter subtype 2 inhibitor
+129,3543258,Antidepressant therapy
+130,4192115,Complicated atheromatous plaque
+131,4327941,Psychotherapy
+132,35622016,Insulin resistance
+133,4295287,Hypercoagulability state
+134,4298794,Smoker
+135,36676288,Glucagon-like peptide 1 receptor agonist
+136,4213477,Glomerular filtration rate
+137,37311267,Weight loss
+138,37311069,Risk of cardiovascular disease
+139,3655005,Platelet aggregation inhibitor therapy
+140,4336673,Heavy drinker
+141,440424,Aphasia
+142,44810310,Social context
+143,4229881,Weight loss
+144,198124,Kidney disease
+145,377091,Seizure
+146,4024552,Disorder of cardiac function
+147,4023987,Activity exercise pattern
+148,4023995,Cardiovascular finding
+149,3571988,Cerebral atrophy
+150,4042140,Finding by site
+151,4041436,Measurement finding
+152,40287600,Bleeding
+153,4047779,Disorder by body site
+154,75053,Fracture of bone
+155,4130526,Disorder of glucose metabolism
+156,4133004,Deep venous thrombosis
+157,4027384,Inflammatory disorder
+158,4029305,Hypercholesterolemia
+159,40298651,Moderate drinker
+160,40298652,Heavy drinker
+161,40298675,Passive smoker
+162,40299110,Smoker
+163,40299155,Low sodium diet
+164,40299249,Social worker involved
+165,40299702,Social isolation
+166,40300339,Disability
+167,40303807,Falls
+168,40304531,Urinary incontinence
+169,40306821,Male
+170,40310152,Preventive procedure
+171,40310854,Primary prevention
+172,40310856,Secondary prevention
+173,40313533,Endarterectomy
+174,40309949,Chemotherapy
+175,40313157,Anticoagulant therapy
+176,40313656,Antihypertensive therapy
+177,434633,Disorder of autonomic nervous system
+178,40321249,Obesity
+179,40321752,Delirium
+180,40322764,Migraine
+181,40322765,Migraine with aura
+182,40323940,Heart failure
+183,40323949,Atherosclerosis
+184,40316588,Sleep apnea
+185,40318661,Eclampsia
+186,443700,Eclampsia
+187,40329145,Moderate drinker
+188,40329146,Heavy drinker
+189,4059015,Falls
+190,40328104,Male
+191,37309626,Myocardial infarction due to demand ischemia
+192,40340194,Primary prevention
+193,40340196,Secondary prevention
+194,3523671,Glomerular filtration rate
+195,40378936,Antihypertensive therapy
+196,3577339,Glomerular filtration rate
+197,40386789,Metabolic syndrome X
+198,3577386,Glomerular filtration rate
+199,40389148,Obesity
+200,40389543,Diabetes mellitus
+201,4102202,Cerebral venous sinus thrombosis
+202,40398876,Atherosclerosis
+203,40398899,Cardiac syndrome X
+204,40392302,Acute heart failure
+205,40392800,Atherosclerosis
+206,40393267,Vasculitis
+207,40396499,Sleep apnea
+208,376208,Disorder of soft tissue
+209,40394330,Eclampsia
+210,4070299,Patent foramen ovale
+211,4052648,Disability
+212,3524252,Cardiac syndrome X
+213,3572455,Metabolic syndrome X
+214,4070767,Decreased vascular flow
+215,4329847,Myocardial infarction
+216,40427925,Smoker
+217,4022241,Able to cope
+218,4038718,Gets no exercise
+219,4038720,Exercises regularly
+220,4046360,Lacunar infarction
+221,40433581,Delirium
+222,255848,Pneumonia
+223,40436955,Myocardial infarction
+224,436940,Metabolic syndrome X
+225,434821,Systemic inflammatory response syndrome
+226,4344497,Soft tissue lesion
+227,442985,Male
+228,4090739,Nutritional disorder
+229,40450877,Spasticity
+230,40456493,Stenosis
+231,4128134,Substance
+232,373503,Transient cerebral ischemia
+233,40350983,Low blood pressure
+234,40351537,Clinical finding
+235,4156503,Patient position finding
+236,443784,Vascular disorder
+237,4079975,Congenital malformation
+238,4150603,Cerebral atrophy
+239,3579102,Smoking cessation therapy
+240,4199549,Able to mobilize
+241,4114614,Cognitive skills training
+242,40504283,Bleeding
+243,4150054,Interleukin-6
+244,4137275,Vasculitis
+245,44800078,Physical fitness state
+246,4180628,Disorder of body system
+247,31821,Disorder of endocrine system
+248,4180169,Inflammation of specific body structures or tissue
+249,4180770,Sequelae of neurological disorders
+250,4273948,Finding related to ability to mobilize
+251,4275208,Catecholamine level - finding
+252,4276568,Female sex hormones - serum level - finding
+253,4275337,Blood glucose level - finding
+254,4269989,Health-related behavior finding
+255,40546090,Pain
+256,40546700,Pain
+257,4159131,Dyslipidemia
+258,318736,Migraine
+259,316866,Hypertensive disorder
+260,40557547,Transient cerebral ischemia
+261,40572008,Vasculitis
+262,439393,Pre-eclampsia
+263,435524,Sleep disorder
+264,40566982,Death
+265,441840,Clinical finding
+266,31317,Dysphagia
+267,37018765,Gestational diabetes mellitus complicating pregnancy
+268,3522351,Impaired mobility
+269,4185607,Embolism
+270,433736,Obesity
+271,4213628,Sickling disorder due to hemoglobin S
+272,4310996,Ischemic stroke
+273,4309238,Social isolation
+274,443454,Cerebral infarction
+275,3522473,Metabolic syndrome X
+276,4231363,Thrombosis
+277,40479589,Takotsubo cardiomyopathy
+278,435657,Dyssomnia
+279,40484194,Assessment using assessment scale
+280,381549,Migraine with aura
+281,40486533,Finding of oxygen saturation
+282,317002,Low blood pressure
+283,43020873,Acute infective endocarditis
+284,3522600,Impaired mobility
+285,4165535,Continuous positive airway pressure ventilation treatment
+286,3522636,Impaired mobility
+287,4166231,Genetic predisposition
+288,4167841,Social context
+289,444031,Chronic heart failure
+290,313217,Atrial fibrillation
+291,134057,Disorder of cardiovascular system
+292,4176126,Organ or tissue vascular perfusion decreased
+293,40600705,Anticoagulant therapy
+294,432867,Hyperlipidemia
+295,321588,Heart disease
+296,442310,Acute heart failure
+297,441589,Endocarditis
+298,440417,Pulmonary embolism
+299,40614339,Pneumonia
+300,40611621,Death
+301,4274025,Disease
+302,4283239,Increased collateral circulation
+303,4285282,DNA damage
+304,81902,Urinary tract infectious disease
+305,378774,Moyamoya disease
+306,46271022,Chronic kidney disease
+307,46272492,Dissection of artery
+308,37016924,Dissection of cerebral artery
+309,36713755,Functionally dependent
+310,37109909,Silent micro-hemorrhage of brain
+311,37110522,Epilepsy due to cerebrovascular accident
+312,604179,Myocardial infarction due to atherothrombotic coronary artery disease
+313,313459,Sleep apnea
+314,4251306,Stress
+315,4249447,Economic status
+316,3521297,Takotsubo cardiomyopathy
+317,3573771,Takotsubo cardiomyopathy
+318,42538532,Thrombus of cardiac chamber
+319,3558769,Healthy diet
+320,40627933,Impaired cognition
+321,42538946,Hypertension complicating pregnancy
+322,4306934,Impaired mobility
+323,3522933,Metabolic syndrome X
+324,3545412,Systemic inflammatory response syndrome
+325,3545458,Falls
+326,37311061,COVID-19
+327,316139,Heart failure
+328,3559638,Admission to stroke unit
+329,3573928,Insulin resistance
+330,373087,Central nervous system complication
+331,4338810,Increased cardiac stroke volume
+332,4232457,Leuko-araiosis
+333,4238738,Physical therapy procedure
+334,3546851,Impaired cognition
+335,37310269,COVID-19
+336,40376857,Stenosis
+337,40325673,Social isolation
+338,40378945,Drug therapy
+339,40379503,Chemotherapy
+340,40624294,Social isolation
+341,40619422,Pre-eclampsia
+342,40631215,Endarterectomy
+343,1,Peripheral immune competence
+344,2,Microglial proliferation
+345,3,Leukocyte-derived microvesicles
+346,4,B-cell infiltration
+347,5,Astrocytic proliferation
+348,6,Cardiac remodeling
+349,7,Enlarged perivascular spaces
+350,8,Production of reactive oxygen species
+351,9,Loss of brain structural integrity
+352,10,Neuronal survival
+353,11,Endothelial proliferation
+354,12,Time to therapy
+355,13,Endothelial microvesicles
+356,14,Time until diagnosis
+357,15,Sympathetic activation
+358,16,General Public Awareness of FAST-Scheme

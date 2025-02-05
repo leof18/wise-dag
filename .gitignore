@@ -9,6 +9,8 @@ Application/*.json
 Application/node_modules/*.json
 Application/wise-dag-app/*.json
 *.json
+Application/node_modules
+node_modules
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
