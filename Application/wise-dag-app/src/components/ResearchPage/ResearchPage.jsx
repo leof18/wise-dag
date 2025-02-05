@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DropdownWithSearch from "../DropdownWithSearch/index";
+import DropdownWithSearch from '../DropdownWithSearch';
 import logo from "../../assets/logo.png";
 
 const fetchConcepts = async (searchTerm) => {

@@ -4,8 +4,6 @@ Standardization/derivedIndex
 Standardization/mainIndex
 Standardization/sleepyCat
 Standardization/*.txt
-node_modules
-/node_modules
 Application/node_modules
 Application/*.json
 Application/node_modules/*.json
