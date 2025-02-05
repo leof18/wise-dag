@@ -11,13 +11,12 @@ Author,Exposure,Outcome,Direction,Strength
 ,decreased systemic perfusion,reduction or complete blockage of blood flow,Increase,6.84
 ,severe stenosis,reduction or complete blockage of blood flow,Increase,6.84
 ,occlusion of a blood vessel,reduction or complete blockage of blood flow,Increase,6.84
-,nonatherosclerotic abnormalities,ischemic stroke,Increase,6.84
-,arterial dissection,nonatherosclerotic abnormalities,Increase,6.84
+,arterial dissection,ischemic stroke,Increase,6.84
 ,COVID-19,ischemic stroke,Increase,6.84
-,fibromuscular dysplasia,nonatherosclerotic abnormalities,Increase,6.84
-,vasculitis,nonatherosclerotic abnormalities,Increase,6.84
-,Moyamoya disease,nonatherosclerotic abnormalities,Increase,6.84
-,sickle cell disease arteriopathy,nonatherosclerotic abnormalities,Increase,6.84
+,fibromuscular dysplasia,ischemic stroke,Increase,6.84
+,vasculitis,ischemic stroke,Increase,6.84
+,Moyamoya disease,ischemic stroke,Increase,6.84
+,sickle cell disease arteriopathy,ischemic stroke,Increase,6.84
 ,ischemic stroke,production of reactive oxygen species,Increase,6.84
 ,production of reactive oxygen species,DNA damage,Increase,6.84
 ,ischemic stroke,loss of brain structural integrity,Increase,6.84

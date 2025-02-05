@@ -1,963 +1,960 @@
-Author,Exposure,Outcome,Direction,Strength,ID,Status
-,201820,4310996,Increase,6.0,1,Final
-,4322978,4310996,Increase,6.0,1,Final
-,4322978,201820,Increase,5.0,1,Final
-,442985,4310996,Increase,6.0,1,Final
-,316866,4310996,Increase,6.0,1,Final
-,4322978,316866,Increase,6.0,1,Final
-,4171825,316866,Increase,4.0,1,Final
-,4171825,201820,Increase,4.0,1,Final
-,4171825,4310996,Increase,6.0,1,Final
-Carrero et al (2018),313217,4310996,Increase,6.0,1,Final
-de Leeuw et al. (2000),442985,313217,Increase,4.0,1,Final
-Kalantarian et al. (2014),4322978,313217,Increase,5.0,1,Final
-,4171825,313217,Increase,6.0,1,Final
-Diez-Villanueva P & Alfonso F. (2019),316866,313217,Increase,6.0,1,Final
-,4298794,4310996,Increase,5.0,1,Final
-,4322978,4298794,Increase,5.0,1,Final
-Pan et al. (2019),442985,4298794,Increase,6.0,1,Final
-Shah & Cole (2010),4298794,201820,Increase,4.0,1,Final
-,4298794,4171825,Decrease,2.0,1,Final
-,4298794,316866,Increase,3.0,1,Final
-Campagna et al. (2019),4298794,313217,Increase,6.0,1,Final
-Maddatu et al. (2017),432867,313217,Increase,6.0,1,Final
-Patel et al. (2011),432867,4171825,Increase,6.0,1,Final
-Watanabe et al. (2016),432867,316866,Increase,6.0,1,Final
-Halperin et al. (2008),432867,201820,Increase,6.0,1,Final
-,432867,4310996,Increase,6.0,1,Final
-,201820,313217,Increase,5.0,1,Final
-,4298794,432867,Increase,3.0,1,Final
-,442985,201820,Increase,3.0,1,Final
-,201820,316866,Increase,2.0,1,Final
-,432867,4213477,Decrease,2.0,1,Final
-Bohne et al. (2019),442985,4171825,Decrease,2.0,1,Final
-Sensi et al. (2015),316866,4213477,Decrease,2.0,1,Final
-Hallit et al. (2017),201820,4213477,Increase,3.0,1,Final
-Jain & Ducatman (2018),4298794,46271022,Increase,3.0,1,Final
-Kautzky-Willer et al. (2016),46271022,313217,Increase,2.0,1,Final
-Wishner (1996),46271022,4310996,Increase,4.0,1,Final
-,42872750,42872750,Increase,6.0,2,Final
-,42872750,3654822,Increase,6.84,2,Final
-,3654822,3654822,Increase,6.84,2,Final
-,3654822,42872750,Increase,6.84,2,Final
-,4084390,42872750,Increase,6.84,2,Final
-,4084390,3654822,Increase,6.84,2,Final
-,4084390,3654822,Increase,6.84,2,Final
-,4084390,42872750,Increase,6.84,2,Final
-,time_to_therapy,42872750,Increase,6.84,2,Final
-,time_to_therapy,3654822,Increase,6.84,2,Final
-,4084390,4126495,Decrease,6.0,2,Final
-eloquent / non-eloquent,4104314,4126495,Decrease,6.0,2,Final
-eloquent / non-eloquent,4104314,42872750,Increase,6.84,2,Final
-eloquent / non-eloquent,4104314,42872750,Increase,6.84,2,Final
-eloquent / non-eloquent,4104314,3654822,Increase,6.84,2,Final
-eloquent / non-eloquent,4104314,3654822,Increase,6.84,2,Final
-,42872750,4126495,Decrease,6.0,2,Final
-,3654822,4126495,Decrease,6.0,2,Final
-,4084390,4126495,Decrease,6.0,2,Final
-,time_to_therapy,4126495,Decrease,6.0,2,Final
-,4126495,4126495,Increase,6.84,2,Final
-eloquent/non eloquent,4104314,4126495,Decrease,6.0,2,Final
-,4310996,4084390,Increase,6.0,2,Final
-,4310996,4104314,Increase,6.0,2,Final
-cardioembolic,313217,4310996,Increase,2.68,2,Final
-,time_till_diagnosis,time_to_therapy,Increase,2.68,2,Final
-meaning the general population being aware of typical stroke symptoms,44791753,time_till_diagnosis,Decrease,2.0,2,Final
-,time_till_diagnosis,4051022,Decrease,6.84,2,Final
-,time_till_diagnosis,4185284,Decrease,6.84,2,Final
-,4051022,4084390,Decrease,2.93,2,Final
-,4185284,4084390,Decrease,2.93,2,Final
-cardioembolic,4310996,4051022,Increase,2.93,2,Final
-accesible arteries,4310996,4185284,Increase,2.68,2,Final
-macroangiopathic,4103842,4310996,Increase,2.68,2,Final
-,4298794,4103842,Increase,6.84,2,Final
-,4322978,4103842,Increase,6.84,2,Final
-,201820,4103842,Increase,6.84,2,Final
-,4159131,4103842,Increase,6.84,2,Final
-,37167374,4103842,Increase,6.84,2,Final
-,4137275,4103842,Increase,6.84,2,Final
-cardioembolic,4070299,4310996,Increase,6.84,2,Final
-,316866,4310996,Increase,6.0,3,Draft
-,4171825,4310996,Increase,6.84,3,Draft
-,4322978,4310996,Increase,6.84,3,Draft
-,442985,4310996,Increase,6.84,3,Draft
-,4298794,4310996,Increase,6.84,3,Draft
-,201820,4310996,Increase,6.84,3,Draft
-,4029305,4310996,Increase,6.84,3,Draft
-,4336673,4310996,Increase,6.84,3,Draft
-,4024366,4310996,Increase,6.0,3,Draft
-,4024366,316866,Increase,2.68,3,Draft
-,313217,4310996,Increase,6.0,3,Draft
-,4306703,4310996,Increase,6.84,3,Draft
-,4024366,4306703,Increase,0.57,3,Draft
-,4171825,4310996,Increase,0.57,3,Draft
-,4310996,4171825,Decrease,0.57,3,Draft
-,4298794,4310996,Increase,6.84,3,Draft
-,4322978,4310996,Increase,6.84,3,Draft
-,442985,4310996,Increase,6.84,3,Draft
-,4336673,4310996,Increase,6.84,3,Draft
-,4024366,4310996,Increase,6.84,3,Draft
-,201820,4310996,Increase,6.84,3,Draft
-,316866,4119952,Increase,6.84,4,Draft
-,4051022,3654822,Increase,2.68,4,Draft
-,4084390,3654822,Decrease,6.26,4,Draft
-,316866,3654822,Decrease,6.84,4,Draft
-,433736,3654822,Decrease,6.84,4,Draft
-,433736,4119952,Increase,4.61,4,Draft
-,4119952,EMV,Increase,6.84,4,Draft
-,433736,4310996,Increase,6.84,4,Draft
-,316866,4310996,Increase,6.84,4,Draft
-,4310996,3654822,Decrease,1.0,4,Draft
-,4119952,4310996,Increase,5.42,4,Draft
-,EMV,37311069,Increase,6.84,4,Draft
-,316866,37311069,Increase,6.84,4,Draft
-,4119952,37311069,Increase,2.0,4,Draft
-,EMV,4310996,Increase,4.0,4,Draft
-,4310996,4084390,Increase,6.84,4,Draft
-,4310996,37311069,Increase,6.84,4,Draft
-,4084390,37311069,Increase,3.0,4,Draft
-,4137275,37311069,Increase,6.84,4,Draft
-,4119952,4137275,Increase,3.14,4,Draft
-,4137275,LMV,Increase,5.31,4,Draft
-,LMV,37311069,Increase,5.31,4,Draft
-,4298794,4310996,Increase,6.0,5,Draft
-,198124,4310996,Increase,5.0,5,Draft
-,442985,4310996,Increase,1.0,5,Draft
-,4038720,4310996,Decrease,4.0,5,Draft
-,442985,4298794,Increase,1.0,5,Draft
-,4171825,4310996,Increase,5.0,5,Draft
-,4038720,4171825,Decrease,6.0,5,Draft
-,4159131,4310996,Increase,5.2,5,Draft
-,4038720,198124,Decrease,2.0,5,Draft
-,4249447,4310996,Decrease,1.75,5,Draft
-,4310996,440383,Increase,3.84,5,Draft
-,4310996,443432,Increase,3.84,5,Draft
-,4310996,4306655,Increase,6.84,5,Draft
-Broersen et al. 2020,4010497,4310996,Increase,0.94,5,Draft
-,321588,4010497,Increase,5.1,5,Draft
-,321588,4310996,Increase,6.84,5,Draft
-,4038720,321588,Decrease,6.84,5,Draft
-,4298794,321588,Increase,6.26,5,Draft
-,37108742,4310996,Increase,3.92,5,Draft
-,4249447,440383,Decrease,3.92,5,Draft
-,4322978,4310996,Increase,6.84,5,Draft
-,4322978,321588,Increase,6.84,5,Draft
-,4024366,316866,Increase,5.0,5,Draft
-,4027011,316866,Increase,5.0,5,Draft
-,4024366,321588,Increase,5.0,5,Draft
-,4027011,321588,Increase,5.0,5,Draft
-,4159131,440383,Increase,3.29,5,Draft
-,4159131,443432,Increase,3.29,5,Draft
-,443784,4310996,Increase,6.84,5,Draft
-,4322978,443784,Increase,3.44,5,Draft
-,443784,198124,Increase,6.84,5,Draft
-,201820,198124,Increase,6.84,5,Draft
-,201820,4310996,Increase,6.84,5,Draft
-,4024366,4159131,Increase,6.84,5,Draft
-,4027011,4159131,Increase,6.84,5,Draft
-,4024366,201820,Increase,6.84,5,Draft
-,4027011,201820,Increase,6.84,5,Draft
-,4024366,37108742,Increase,3.68,5,Draft
-,4027011,37108742,Increase,3.68,5,Draft
-,440383,4306655,Increase,6.0,5,Draft
-,4022241,440383,Decrease,6.84,5,Draft
-,4249447,4024366,Decrease,2.93,5,Draft
-,4249447,4027011,Decrease,2.93,5,Draft
-,4074035,4310996,Increase,6.84,5,Draft
-,4074035,201820,Increase,6.84,5,Draft
-,4074035,4022241,Decrease,6.13,5,Draft
-,4038720,4022241,Increase,0.51,5,Draft
-,4038720,316866,Decrease,2.72,5,Draft
-,4038720,4310996,Decrease,6.84,5,Draft
-,4038720,4306655,Decrease,6.84,5,Draft
-,4180169,4306655,Increase,5.0,5,Draft
-,4180169,37108742,Increase,6.84,5,Draft
-,4180169,443432,Increase,1.63,5,Draft
-,4180169,440383,Increase,0.51,5,Draft
-,4074035,4180169,Increase,3.44,5,Draft
-,4249447,4074035,Decrease,3.44,5,Draft
-,316866,321588,Increase,6.84,5,Draft
-,443432,4022241,Decrease,2.45,5,Draft
-,4180169,443784,Increase,4.17,5,Draft
-,4024366,4180169,Increase,4.17,5,Draft
-,4027011,4180169,Increase,4.17,5,Draft
-,4180169,321588,Increase,4.17,5,Draft
-,316866,4310996,Increase,6.84,5,Draft
-McCarthy 2018,442310,37309626,Increase,6.0,6,Final
-,442310,4306655,Increase,6.84,6,Final
-,442310,4186398,Increase,6.0,6,Final
-,4322978,201820,Increase,4.52,6,Final
-,4322978,4310996,Increase,6.84,6,Final
-,4322978,313217,Increase,4.34,6,Final
-"Bishop, Lu, & Yankner, 2010",4322978,443432,Increase,4.0,6,Final
-,4322978,4306703,Increase,6.84,6,Final
-Diener 2020,4056822,4310996,Decrease,3.0,6,Final
-Diener 2020,4056822,4310996,Decrease,3.0,6,Final
-,4056822,42538532,Decrease,2.72,6,Final
-,4306703,4310996,Increase,6.68,6,Final
-,4306703,604179,Increase,6.84,6,Final
-,313217,4310996,Increase,6.84,6,Final
-,313217,4009409,Increase,6.0,6,Final
-,313217,4186398,Increase,6.0,6,Final
-,313217,44784217,Increase,6.0,6,Final
-,4171825,604179,Increase,6.84,6,Final
-,4171825,4310996,Increase,6.84,6,Final
-,4171825,4310996,Increase,4.34,6,Final
-Rizas et al 2017,cardiac autonomic dysbalance,44784217,Increase,4.0,6,Final
-,42538532,4310996,Increase,5.1,6,Final
-,444031,443432,Increase,4.52,6,Final
-,444031,4310996,Increase,4.34,6,Final
-,444031,4186398,Increase,3.22,6,Final
-,444031,4009409,Increase,6.0,6,Final
-,440383,44800078,Increase,2.68,6,Final
-,440383,4199549,Increase,2.68,6,Final
-,440383,4306655,Increase,2.68,6,Final
-Ghadri 2018,440383,40479589,Increase,2.0,6,Final
-,201820,4306655,Increase,4.52,6,Final
-,201820,432250,Increase,3.22,6,Final
-,201820,604179,Increase,6.0,6,Final
-,201820,4310996,Increase,4.52,6,Final
-,201820,4171825,Increase,4.52,6,Final
-,201820,cardiac autonomic dysbalance,Increase,4.0,6,Final
-,46272492,4310996,Increase,3.92,6,Final
-,31317,432250,Increase,3.22,6,Final
-,4275208,44784217,Increase,3.76,6,Final
-Ghadri 2018,4275208,40479589,Increase,6.0,6,Final
-,4038720,316866,Decrease,3.92,6,Final
-Diener 2020,4038720,4310996,Decrease,4.0,6,Final
-Strohle et al 2015,4038720,443432,Decrease,3.0,6,Final
-,4038720,313217,Increase,2.52,6,Final
-,4038720,604179,Decrease,2.72,6,Final
-,4038720,444031,Decrease,3.92,6,Final
-Scheitz et al 2014,4310996,4009409,Increase,6.0,6,Final
-,4310996,4310996,Increase,6.84,6,Final
-Diener 2020,4310996,4306655,Increase,6.0,6,Final
-scheitz 2018,4310996,442310,Increase,3.0,6,Final
-,4310996,44800078,Increase,4.34,6,Final
-,4310996,4199549,Increase,4.34,6,Final
-,4310996,443432,Increase,4.52,6,Final
-Thygesen 2018,4310996,37309626,Increase,6.0,6,Final
-,4310996,440383,Increase,4.61,6,Final
-"Scheitz, Templin 2021 under review",4310996,40479589,Increase,3.0,6,Final
-,4310996,432250,Increase,3.22,6,Final
-"Scheitz et al, Sposato 2020",4310996,4275208,Increase,2.0,6,Final
-,4310996,377091,Increase,4.17,6,Final
-,4310996,31317,Increase,3.22,6,Final
-scheitz et al 2018,4310996,44784217,Increase,6.0,6,Final
-,44800078,4310996,Decrease,4.34,6,Final
-,4199549,4310996,Decrease,4.34,6,Final
-,44800078,4310996,Increase,4.34,6,Final
-,4199549,4310996,Increase,4.34,6,Final
-,44800078,4306655,Increase,6.0,6,Final
-,4199549,4306655,Increase,6.0,6,Final
-,432867,604179,Increase,6.84,6,Final
-,432867,4310996,Increase,3.22,6,Final
-,316866,604179,Increase,6.84,6,Final
-,316866,4310996,Increase,5.1,6,Final
-,316866,46272492,Increase,3.92,6,Final
-,316866,444031,Increase,5.1,6,Final
-Sandoval 2019,316866,37309626,Increase,4.0,6,Final
-,316866,442310,Increase,5.1,6,Final
-,432250,4306655,Increase,3.22,6,Final
-Sandoval 2019,432250,37309626,Increase,4.0,6,Final
-van der Linden 2017,198124,4009409,Increase,2.0,6,Final
-,604179,4310996,Increase,2.68,6,Final
-Rizas et al 2017,604179,cardiac autonomic dysbalance,Increase,6.0,6,Final
-"thygesen et al 2018, McAloon 2016",604179,4306655,Increase,6.0,6,Final
-thygesen et al 2018,604179,44784217,Increase,6.0,6,Final
-thygesen et al 2018,604179,4009409,Increase,6.0,6,Final
-Thygesen 2018,604179,442310,Increase,6.0,6,Final
-Thygesen 2018,604179,42538532,Increase,5.0,6,Final
-,604179,444031,Increase,6.84,6,Final
-DeFilippis 2019,37309626,4009409,Increase,6.0,6,Final
-McCarthy et al 2018,37309626,4306655,Increase,6.0,6,Final
-Wiktor 2018,4070299,4310996,Increase,3.0,6,Final
-,4310996,4306655,Increase,6.0,6,Final
-,377091,4306655,Increase,6.54,6,Final
-Faria et al 2020,377091,4009409,Increase,4.0,6,Final
-,44784217,4306655,Increase,6.68,6,Final
-,442985,4298794,Increase,3.84,6,Final
-,442985,4310996,Increase,4.34,6,Final
-,442985,40479589,Decrease,2.68,6,Final
-,4298794,4310996,Increase,6.84,6,Final
-,4298794,604179,Increase,6.84,6,Final
-,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance,Increase,2.72,6,Final
-Scheitz et.al 2018 lancet,stroke lesion affecting central autonomic network,44784217,Increase,6.0,6,Final
-Krause et al 2017,stroke lesion affecting central autonomic network,4009409,Increase,6.0,6,Final
-Scheitz 2018,stroke lesion affecting central autonomic network,4275208,Increase,2.0,6,Final
-Ghadri et at 2018,40479589,4009409,Increase,4.0,6,Final
-scheitz 2014,4009409,44800078,Increase,3.0,6,Final
-scheitz 2014,4009409,4199549,Increase,3.0,6,Final
-broersen et al 2020,4009409,443432,Increase,4.0,6,Final
-,4322978,4310996,Increase,6.84,7,Final
-,442985,4310996,Increase,6.84,7,Final
-,4171825,4310996,Increase,6.84,7,Final
-Gorelick et al (1997),4029305,4310996,Increase,6.0,7,Final
-MacMahon et al (1990),316866,4310996,Increase,6.0,7,Final
-,4171825,4029305,Increase,6.84,7,Final
-,4171825,316866,Increase,6.84,7,Final
-,4029305,4306703,Increase,6.84,7,Final
-,313217,4310996,Increase,6.84,7,Final
-,4329847,4310996,Increase,4.17,7,Final
-Shinton et al (1999),4298794,4310996,Increase,6.0,7,Final
-Wilhelmsson et al (1975),4298794,4329847,Increase,6.0,7,Final
-,4298794,316866,Increase,6.84,7,Final
-,4298794,4306703,Increase,6.84,7,Final
-,4310996,4310996,Increase,6.84,7,Final
-,4029305,4310996,Increase,6.84,7,Final
-,4029305,4310996,Increase,2.58,7,Final
-,4322978,4310996,Increase,2.68,7,Final
-,4171825,4310996,Increase,2.68,7,Final
-,4306703,4310996,Increase,2.68,7,Final
-,313217,4310996,Increase,2.68,7,Final
-,4329847,4310996,Increase,2.68,7,Final
-,4298794,4310996,Increase,2.68,7,Final
-,4056822,4310996,Decrease,2.68,7,Final
-Schneider et al. (2004),4310996,443432,Increase,2.0,7,Final
-Snowdon et al. (1997),4310996,443432,Increase,2.0,7,Final
-Schneider et al. (2014),4306703,443432,Increase,2.0,7,Final
-Guerchet et al (2011),4322978,443432,Increase,2.68,7,Final
-,201820,4310996,Increase,2.0,7,Final
-Kannell et al (1979),201820,4310996,Increase,2.68,7,Final
-,201820,4329847,Increase,2.68,7,Final
-,201820,4306703,Increase,2.68,7,Final
-,442985,4306703,Increase,2.68,7,Final
-,4171825,201820,Increase,2.68,7,Final
-,4322978,201820,Increase,2.68,7,Final
-,4038720,4310996,Decrease,2.68,7,Final
-,4038720,4171825,Decrease,2.68,7,Final
-,4038720,4029305,Decrease,0.83,7,Final
-,4038720,316866,Decrease,3.29,7,Final
-,4038720,4306703,Decrease,0.78,7,Final
-,4038720,4329847,Decrease,3.29,7,Final
-,4038720,4310996,Decrease,3.29,7,Final
-,4038720,201820,Decrease,3.6,7,Final
-,43020873,4310996,Increase,3.6,7,Final
-,4074035,4310996,Increase,3.6,7,Final
-,4074035,4310996,Increase,1.46,7,Final
-,4074035,316866,Increase,1.46,7,Final
-,4322978,4074035,Increase,0.89,7,Final
-,442985,4074035,Increase,1.81,7,Final
-,4251306,4310996,Increase,2.58,7,Final
-,4251306,316866,Increase,2.58,7,Final
-,4251306,4329847,Increase,2.58,7,Final
-,4251306,4298794,Increase,1.11,7,Final
-,4251306,4310996,Increase,1.11,7,Final
-,4251306,4074035,Increase,1.11,7,Final
-,4251306,4306703,Increase,1.11,7,Final
-,201820,443432,Increase,2.0,7,Final
-Knopman et al (2001),4201029,4310996,Decrease,1.0,7,Final
-Hebert et al (1997),4201029,4029305,Decrease,4.8,7,Final
-,4201029,4306703,Decrease,1.4,7,Final
-,4201029,4329847,Decrease,2.86,7,Final
-,37167374,4310996,Increase,2.0,7,Final
-Nave et al (2015),37167374,4306703,Increase,2.68,7,Final
-,4306703,4310996,Increase,5.0,7,Final
-Hong et al. (2016),316866,443432,Increase,2.68,7,Final
-Knopman et al (2001),4146455,4310996,Decrease,2.68,7,Final
-Collins et al (1990),4146455,4329847,Decrease,2.68,7,Final
-Collins et al (1990),4171825,4306703,Increase,2.68,7,Final
-McGill et al (2002),4171825,4329847,Increase,2.68,7,Final
-Burn et al. (1994),4310996,4310996,Increase,6.84,9,Final
-Brønnum-Hansen et al. (2001),4310996,4306655,Increase,6.84,9,Final
-Hankey et al. (2002),4310996,4052648,Increase,6.84,9,Final
-Davenport et al. (1996),4310996,255848,Increase,6.0,9,Final
-Johnston et al. (1998),4310996,81902,Increase,6.0,9,Final
-Davenport et al. (1996),255848,4306655,Increase,6.0,9,Final
-Finlayson et al. (2011),4310996,4306655,Increase,2.68,9,Final
-Poisson et al. (2010),4310996,4052648,Increase,2.68,9,Final
-Ersoz et al. (2007),4181165,81902,Increase,6.0,9,Final
-van der Worp & Kappelle (1998),4310996,4224118,Increase,6.0,9,Final
-,4310996,4181165,Increase,2.0,9,Final
-Poisson et al. (2010),4224118,81902,Increase,2.68,9,Final
-,4310996,4242843,Increase,0.51,9,Final
-Maki & Tambyah (2001),4242843,81902,Increase,0.51,9,Final
-Gould et al. (2010),442985,81902,Increase,6.0,9,Final
-Kong & Young (2000),4322978,81902,Increase,6.0,9,Final
-Poisson et al. (2010),4322978,4310996,Increase,6.0,9,Final
-,81902,4306655,Increase,0.51,9,Final
-Poisson et al. (2010),81902,4052648,Increase,0.51,9,Final
-Poisson et al. (2010),4310996,4178904,Increase,0.51,9,Final
-Azzimondi et al. (1995),81902,4178904,Increase,6.84,9,Final
-Boysen & Christensen (2001),255848,4178904,Increase,6.84,9,Final
-,4178904,4306655,Increase,0.51,9,Final
-,4178904,4052648,Increase,0.51,9,Final
-Jauch et al. (2013),4310996,373995,Increase,0.51,9,Final
-Jauch et al. (2013),4322978,373995,Increase,6.84,9,Final
-Oldenbeuving et al. (2007),81902,373995,Increase,0.51,9,Final
-Oldenbeuving et al. (2007),255848,373995,Increase,0.51,9,Final
-Oldenbeuving et al. (2007),373995,4052648,Increase,0.51,9,Final
-Oldenbeuving et al. (2007),4143576,373995,Decrease,0.51,9,Final
-Oldenbeuving et al. (2007),4224118,4181165,Increase,0.51,9,Final
-Oldenbeuving et al. (2007),4322978,255848,Increase,2.68,9,Final
-,255848,4052648,Increase,0.51,9,Final
-Finlayson et al. (2011),4310996,31317,Increase,6.0,9,Final
-Finlayson et al. (2011),31317,255848,Increase,6.84,9,Final
-Martino et al. (2005),31317,4033232,Increase,6.84,9,Final
-Martino et al. (2005),4033232,255848,Increase,6.84,9,Final
-Martino et al. (2005),4298794,4310996,Increase,6.84,9,Final
-Martino et al. (2005),4298794,4310996,Increase,6.84,9,Final
-,442985,4310996,Increase,6.84,9,Final
-,313217,4310996,Increase,6.84,9,Final
-,4171825,4310996,Increase,6.84,9,Final
-,313217,4310996,Increase,6.84,9,Final
-,4171825,4310996,Increase,6.84,9,Final
-,316866,4310996,Increase,6.84,9,Final
-,316866,4310996,Increase,6.84,9,Final
-,4322978,316866,Increase,6.84,9,Final
-,4322978,4298794,Decrease,2.93,9,Final
-,4310996,4143576,Increase,6.84,9,Final
-,432867,4310996,Increase,6.84,9,Final
-Jauch et al. (2013),201820,4310996,Increase,6.84,9,Final
-,4310996,4275337,Increase,6.0,9,Final
-Khoury et al. (2013),201820,4275337,Increase,6.0,9,Final
-Jauch et al. (2013),4322978,201820,Increase,2.68,9,Final
-,4171825,201820,Increase,2.68,9,Final
-,442985,4298794,Increase,2.68,9,Final
-Langhorne et al. (2020),4143576,4306655,Decrease,4.71,9,Final
-Langhorne et al. (2020),4143576,4052648,Decrease,4.17,9,Final
-Touzé et al. (2005),4310996,4329847,Increase,1.0,9,Final
-,4329847,4306655,Increase,6.0,9,Final
-Sulter et al. (2000),4310996,40486533,Decrease,5.0,9,Final
-Rowat et al. (2006),4156503,40486533,Increase,0.51,9,Final
-Rowat et al. (2001),255848,40486533,Decrease,6.84,9,Final
-,4322978,40486533,Decrease,0.51,9,Final
-Sulter et al. (2000),31317,40486533,Decrease,0.51,9,Final
-Sulter et al. (2000),40486533,4306655,Decrease,0.51,9,Final
-Rowat et al. (2006),4310996,36713755,Increase,6.0,9,Final
-,4052648,36713755,Increase,6.0,9,Final
-,31317,36713755,Increase,2.68,9,Final
-Martino et al. (2005),4310996,197672,Increase,2.68,9,Final
-Nakayama et al. (1997),4322978,197672,Increase,2.68,9,Final
-Nakayama et al. (1997),197672,36713755,Increase,2.68,9,Final
-Patel et al. (2001),201820,197672,Increase,0.51,9,Final
-,197672,4181165,Increase,0.51,9,Final
-,4310996,440377,Increase,6.84,9,Final
-,440377,4052648,Increase,6.84,9,Final
-,440377,36713755,Increase,6.84,9,Final
-,4310996,4133004,Increase,6.84,9,Final
-Kappelle et al. (2011),440377,4133004,Increase,6.84,9,Final
-Kappelle et al. (2011),4133004,440417,Increase,6.84,9,Final
-,440417,4306655,Increase,6.84,9,Final
-,440417,40486533,Decrease,6.84,9,Final
-,440377,255848,Increase,2.0,9,Final
-,4310996,4059015,Increase,6.0,9,Final
-Wei et al. (2019),4322978,4059015,Increase,2.68,9,Final
-,197672,4059015,Increase,2.68,9,Final
-,373995,4059015,Increase,2.68,9,Final
-,4059015,75053,Increase,2.0,9,Final
-Melton et al. (2001),4310996,75053,Increase,2.68,9,Final
-Kanis et al. (2001),75053,4052648,Increase,0.51,9,Final
-,75053,36713755,Increase,0.51,9,Final
-,4038720,4310996,Increase,6.84,9,Final
-low or very high,4074035,4310996,Increase,3.84,9,Final
-,4306703,4310996,Increase,6.0,9,Final
-,432867,4310996,Increase,6.0,9,Final
-,4074035,4310996,Increase,3.0,9,Final
-,4038720,4310996,Increase,6.0,9,Final
-,4268546,4310996,Decrease,1.0,9,Final
-Reshetnyak et al. (2020),4249447,4310996,Decrease,1.0,9,Final
-Reshetnyak et al. (2020),4309238,4310996,Increase,0.51,9,Final
-Reshetnyak et al. (2020),373503,4310996,Increase,6.84,9,Final
-O'Donnell et al. 2016,4298794,4310996,Increase,6.84,10,Final
-O'Donnell et al. 2016,201820,4310996,Increase,6.84,10,Final
-O'Donnell et al. 2016,4038720,4310996,Decrease,6.84,10,Final
-,4038720,201820,Decrease,6.84,10,Final
-"O'Donnell et al. 2016, Paterson et al. 2018",37150978,4310996,Decrease,6.84,10,Final
-,37150978,201820,Decrease,3.92,10,Final
-"Ebrahim et al., 2006",4029305,4310996,Increase,6.0,10,Final
-,313217,4310996,Increase,6.84,10,Final
-,37016924,4310996,Increase,6.84,10,Final
-,4306703,4310996,Increase,6.84,10,Final
-,4029305,4306703,Increase,6.84,10,Final
-,4169009,4310996,Increase,6.84,10,Final
-,4148407,4310996,Increase,6.84,10,Final
-,4217691,4310996,Increase,4.17,10,Final
-,4306703,4217691,Increase,6.84,10,Final
-,37016924,4217691,Increase,6.84,10,Final
-In patients where no other risk factors are found and the PFO shows a right-->left shunt and shows a hypermobile septum,4070299,4310996,Increase,3.52,10,Final
-Bushnell at el. 2014,4241216,4310996,Increase,3.0,10,Final
-in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,440383,4310996,Increase,3.0,10,Final
-"O'Donnell et al., 2010",44784326,4310996,Increase,3.52,10,Final
-,440383,44784326,Increase,3.52,10,Final
-,3655005,4310996,Decrease,6.0,10,Final
-In patients with high cardiovascular risk profile,4201029,4310996,Decrease,6.84,10,Final
-"In patients with high cardiovascular risk profile, especially high LDL-Cholesterine",4201029,4029305,Decrease,6.0,10,Final
-"Law et al., 2003",4310996,4310996,Increase,6.0,10,Final
-"Khanevski et al., 2019",4322978,4029305,Increase,4.34,10,Final
-,4322978,313217,Increase,6.84,10,Final
-,4322978,4070299,Decrease,3.68,10,Final
-,4322978,4310996,Increase,6.84,10,Final
-,316866,4310996,Increase,6.84,10,Final
-O'Donnell et al 2016,4322978,4306655,Increase,6.0,10,Final
-,4322978,316866,Increase,6.84,10,Final
-,4322978,4310996,Increase,6.0,10,Final
-"Khanevski et al., 2019",4298794,4310996,Increase,6.84,10,Final
-,201820,4310996,Increase,6.84,10,Final
-,4029305,4310996,Increase,6.84,10,Final
-,4038720,4310996,Decrease,6.84,10,Final
-,37150978,4310996,Decrease,6.84,10,Final
-,313217,4310996,Increase,6.84,10,Final
-,37016924,4310996,Increase,6.84,10,Final
-,4306703,4310996,Increase,6.84,10,Final
-,4169009,4310996,Increase,3.6,10,Final
-,4148407,4310996,Increase,3.6,10,Final
-,4217691,4310996,Increase,3.6,10,Final
-,3655005,4310996,Decrease,6.0,10,Final
-Kernan et al. 2014,4201029,4310996,Decrease,6.0,10,Final
-"Amarenco et al., 2020",4310996,37110522,Increase,5.31,10,Final
-Browne and Holmes 2001,4310996,37110522,Increase,6.84,10,Final
-Browne and Holmes 2001,42872750,37110522,Increase,6.0,10,Final
-"Slapo et al., 2006",37110522,3654822,Increase,4.0,10,Final
-Arntz et al. 2013,42872750,3654822,Increase,4.26,10,Final
-Arntz et al. 2013,433736,4310996,Increase,5.76,10,Final
-,433736,4310996,Increase,5.76,10,Final
-"Kernan et al., 2014 (AHA/ASA Guideline)",313459,4310996,Increase,5.76,10,Final
-"Kernan et al., 2014 (AHA/ASA Guideline)",313459,4310996,Increase,5.76,10,Final
-"Kernan et al., 2014 (AHA/ASA Guideline)",433736,313459,Increase,3.29,10,Final
-"Kernan et al., 2014 (AHA/ASA Guideline)",4056822,4310996,Decrease,6.84,10,Final
-,4056822,4310996,Decrease,6.84,10,Final
-Kernan et al. 2014 (for some patients patients with atrial fibrillation and some patients with thrombophilia),4249447,4306655,Decrease,4.43,10,Final
-Kernan et al. 2014 (for patients patients with atrial fibrillation and some patients with thrombophilia),37110522,4306655,Increase,6.26,10,Final
-"Vivanco-Hidalgo et al., 2019",316866,4310996,Increase,6.0,10,Final
-Arrich et al. 2005,316866,4306703,Increase,5.53,10,Final
-Burneo et al. 2009,442985,4241216,Increase,4.52,10,Final
-"Khanevsky et al., 2019",442985,440383,Increase,4.52,10,Final
-,442985,4310996,Decrease,4.43,10,Final
-,442985,4310996,Decrease,4.43,10,Final
-Bushnell et al. 2014,442985,381549,Increase,4.43,10,Final
-Bushnell et al. 2014,381549,4310996,Increase,4.43,10,Final
-Bushnell et al. 2014,381549,4310996,Increase,3.84,10,Final
-Bushnell et al. 2014,442985,316866,Increase,3.84,10,Final
-Bushnell et al. 2014,4241216,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,42538946,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,37018765,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,42538946,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,37018765,4310996,Increase,4.08,10,Final
-Bushnell et al. 2014,439393,316866,Increase,4.08,10,Final
-Bushnell et al. 2014,42538946,316866,Increase,4.08,10,Final
-Bushnell et al. 2014,37018765,316866,Increase,4.08,10,Final
-Bushnell et al. 2014,439393,201820,Increase,4.08,10,Final
-Bushnell et al. 2014,42538946,201820,Increase,4.08,10,Final
-Bushnell et al. 2014,37018765,201820,Increase,4.08,10,Final
-Bushnell et al. 2014,442985,439393,Increase,6.84,10,Final
-Bushnell et al. 2014,442985,42538946,Increase,6.84,10,Final
-Bushnell et al. 2014,442985,37018765,Increase,6.84,10,Final
-Bushnell et al. 2014,4038720,433736,Decrease,6.84,10,Final
-Bushnell et al. 2014,37150978,433736,Decrease,6.84,10,Final
-Bushnell et al. 2014,42872750,4306655,Increase,6.84,10,Final
-,4310996,4306655,Increase,6.26,10,Final
-,4310996,4306655,Increase,6.26,10,Final
-,440383,4306655,Increase,5.53,10,Final
-"Khanevski et al., 2019",4038720,381549,Decrease,4.17,10,Final
-"Khanevski et al., 2019",37150978,4306655,Decrease,5.42,10,Final
-,433736,4306655,Increase,5.42,10,Final
-,4298794,4306655,Increase,5.42,10,Final
-"Bushnell et al., 2014",4038720,4306655,Decrease,5.42,10,Final
-"Bushnell et al., 2014",313217,4306655,Increase,5.42,10,Final
-"Bushnell et al., 2014",313217,42872750,Increase,6.84,10,Final
-"Bushnell et al., 2014",313217,4056822,Increase,6.84,10,Final
-"Goldstein et al., 2011",4306703,3655005,Increase,6.84,10,Final
-"Goldstein et al., 2011",4217691,3655005,Increase,6.84,10,Final
-,4298794,4306703,Increase,6.84,10,Final
-,4298794,4217691,Increase,6.84,10,Final
-,313459,316866,Increase,4.52,10,Final
-,201820,316866,Increase,4.52,10,Final
-,4249447,4298794,Decrease,4.0,10,Final
-,4249447,316866,Decrease,4.08,10,Final
-,4249447,37150978,Increase,4.08,10,Final
-Marshall et al. 2015,4249447,4038720,Increase,4.08,10,Final
-Marshall et al. 2015,4249447,4310996,Decrease,4.08,10,Final
-Marshall et al. 2015,4249447,4310996,Decrease,4.08,10,Final
-Marshall et al. 2015,4249447,440383,Decrease,5.53,10,Final
-Marshall et al. 2015,4200516,3654822,Increase,5.53,10,Final
-Marshall et al. 2015,4200516,37110522,Increase,5.53,10,Final
-Lorant et al. 2013,4310996,3654822,Increase,5.0,10,Final
-"Asplund et al, Stroke 2009",4322978,4310996,Increase,6.0,11,Final
-40:2319-2326,442985,4310996,Increase,5.0,11,Final
-"Bushnell et al., JCBF2018",316866,4310996,Increase,5.0,11,Final
-38: 2179–2191)postmenopausal vs premenopausal,436940,4310996,Increase,6.0,11,Final
-"Cipolla et al., JCBF2018",4180169,4310996,Increase,6.0,11,Final
-38:2129-2149,4180169,4068351,Decrease,6.0,11,Final
-"includes diabetes, hyperlipoproteinemia, obesity (Sol M Rodriguez-Colon, stroke 2009",4068351,4310996,Decrease,6.0,11,Final
-40:200-205),436940,4232457,Increase,6.0,11,Final
-"Bernardo-Castro et al., Front Neurol 2020",4232457,4310996,Increase,6.0,11,Final
-doi: 10.3389/fneur.2020.594672,4038720,4310996,Decrease,0.51,11,Final
-"Bernardo-Castro et al., Front Neurol 2020",4038720,436940,Decrease,0.51,11,Final
-doi: 10.3389/fneur.2020.594672,4038720,316866,Decrease,0.51,11,Final
-"Bernardo-Catro et al., 2020",316866,4232457,Increase,4.8,11,Final
-"Frey et al, Front Neurol 2019",4298794,4310996,Increase,5.31,11,Final
-doi: 10.3389/fneur.2019.00238,4298794,4232457,Increase,5.0,11,Final
-"Ryu et al., Brain 2017 doi: 10.1093/brain/aww259",4306703,4232457,Increase,6.0,11,Final
-,436940,4306703,Increase,6.0,11,Final
-,4231363,4310996,Increase,6.0,11,Final
-,4306703,4310996,Increase,6.0,11,Final
-,4024552,4310996,Increase,6.0,11,Final
-120 versus 135 systolic blood pressure,4024552,4232457,Increase,6.54,11,Final
-,4306703,4178903,Increase,6.0,11,Final
-,4306703,4217691,Increase,6.0,11,Final
-"Power et al., Neurology 2015",4178903,4232457,Increase,6.13,11,Final
-"Power et al., Neurology 2015",4217691,4232457,Increase,6.13,11,Final
-84:841-848,4178903,4310996,Increase,6.0,11,Final
-84:841-848,4217691,4310996,Increase,6.0,11,Final
-,4306703,4192115,Increase,3.0,11,Final
-"Sun et al., Sci Rep 2016 doi: 10.1038/srep33246",4192115,4310996,Increase,6.0,11,Final
-"Famakin et al., Stroke 2009 doi: 10.1161/STROKEAHA.108.546150",4192115,4232457,Increase,6.84,11,Final
-"myocardial infarction, coronary heart disease, cardiac failure Folsom et al., Stroke 2013",4194238,4192115,Decrease,1.0,11,Final
-44:961-967,4194238,4178903,Decrease,2.0,11,Final
-44:961-967,4194238,4217691,Decrease,2.0,11,Final
-"myocardial infarction, coronary heart disease, cardiac failure",606770,4310996,Increase,3.0,11,Final
-"Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",606770,4232457,Increase,5.0,11,Final
-,436940,606770,Increase,6.0,11,Final
-"Adams et al., Stroke 1993",enlarged perivascular spaces,4310996,Increase,4.0,11,Final
-24:35-41,37109909,4232457,Increase,6.0,11,Final
-,439393,4310996,Increase,6.84,11,Final
-,443700,4310996,Increase,6.84,11,Final
-"Kassem et al., Ann Transl Med 2020 doi: 10.21037/atm-2020-cass-16",4216292,4310996,Increase,6.68,11,Final
-,439393,316866,Increase,6.0,11,Final
-,443700,316866,Increase,6.0,11,Final
-"Cochrane Database Syst Rev. 2020, doi: 10.1002/14651858.CD000515.pub",4166231,4310996,Increase,5.53,11,Final
-,4180169,4232457,Increase,6.13,11,Final
-"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",432250,4310996,Increase,5.2,11,Final
-"Kim et al., Sci Rep 2019 doi: 10.1038/s41598-019-45109-y",432250,4180169,Increase,5.42,11,Final
-,4180169,4295287,Increase,5.42,11,Final
-"Ballerini et al., Neuroimage Clin 2020 doi: 10.1016/j.nicl.2019.102120",4295287,4310996,Increase,6.84,11,Final
-,4310996,4310996,Increase,6.39,13,Draft
-,4306703,4310996,Increase,5.0,13,Draft
-,4306703,4310996,Increase,5.0,13,Draft
-,313217,4310996,Increase,4.26,13,Draft
-,313217,4310996,Increase,4.26,13,Draft
-,443392,4310996,Increase,4.08,13,Draft
-,4137275,4310996,Increase,5.2,13,Draft
-,4137275,4310996,Increase,5.2,13,Draft
-,443392,4310996,Increase,5.2,13,Draft
-,4273629,4310996,Increase,5.2,13,Draft
-,4273629,4310996,Increase,5.2,13,Draft
-,443392,4273629,Increase,5.2,13,Draft
-,4102202,4310996,Increase,5.2,13,Draft
-,4102202,4310996,Increase,5.2,13,Draft
-,4322978,4310996,Increase,5.2,13,Draft
-,4322978,4310996,Increase,5.2,13,Draft
-,4322978,4306703,Increase,5.2,13,Draft
-,4298794,4306703,Increase,5.2,13,Draft
-,4298794,4310996,Increase,5.2,13,Draft
-,4298794,4310996,Increase,5.2,13,Draft
-,4159131,4310996,Increase,5.2,13,Draft
-,4159131,4310996,Increase,5.2,13,Draft
-,4159131,4306703,Increase,5.2,13,Draft
-,201820,4306703,Increase,5.2,13,Draft
-,201820,4310996,Increase,5.2,13,Draft
-,201820,4310996,Increase,5.2,13,Draft
-,4322978,313217,Increase,4.08,13,Draft
-,4322978,443392,Increase,4.08,13,Draft
-,442985,4102202,Increase,4.08,13,Draft
-,442985,4310996,Increase,4.08,13,Draft
-,442985,4310996,Increase,4.08,13,Draft
-,4299535,4102202,Increase,4.08,13,Draft
-,442985,4299535,Increase,6.84,13,Draft
-,4310996,4052648,Increase,6.84,13,Draft
-,4310996,4052648,Increase,6.84,13,Draft
-,443392,4052648,Increase,6.84,13,Draft
-,4137275,4052648,Increase,6.84,13,Draft
-,201820,4052648,Increase,6.84,13,Draft
-,316866,4306703,Increase,5.1,13,Draft
-,316866,4310996,Increase,5.1,13,Draft
-,316866,4310996,Increase,5.1,13,Draft
-,316866,4052648,Increase,5.1,13,Draft
-,4322978,316866,Increase,5.1,13,Draft
-,4298794,316866,Increase,5.1,13,Draft
-,4299535,201820,Increase,5.1,13,Draft
-,4310996,440383,Increase,5.1,13,Draft
-,4310996,440383,Increase,5.1,13,Draft
-,443392,440383,Increase,5.1,13,Draft
-,4310996,443432,Increase,5.1,13,Draft
-,4310996,443432,Increase,5.1,13,Draft
-,4310996,4234649,Decrease,5.1,13,Draft
-,4310996,4234649,Decrease,5.1,13,Draft
-,440383,4234649,Decrease,5.1,13,Draft
-,201820,4234649,Decrease,5.1,13,Draft
-,4137275,4234649,Decrease,5.1,13,Draft
-,4052648,4234649,Decrease,5.1,13,Draft
-,4299535,440383,Increase,5.1,13,Draft
-,4310996,4306934,Increase,5.1,13,Draft
-,4310996,4306934,Increase,2.65,13,Draft
-,4052648,4306934,Increase,2.65,13,Draft
-,440383,4306934,Increase,2.65,13,Draft
-,443392,4234649,Decrease,2.65,13,Draft
-,4322978,4306934,Increase,3.0,13,Draft
-,4299535,4306934,Increase,0.57,13,Draft
-,441589,4310996,Increase,0.57,13,Draft
-,441589,4310996,Increase,0.57,13,Draft
-,441589,4310996,Increase,5.1,13,Draft
-,441589,4052648,Increase,5.1,13,Draft
-,4070299,4310996,Increase,5.64,13,Draft
-,4070299,4310996,Increase,5.64,13,Draft
-,4295287,4310996,Increase,4.61,13,Draft
-,4295287,4310996,Increase,4.61,13,Draft
-,4295287,4102202,Increase,4.61,13,Draft
-,443392,4295287,Increase,4.61,13,Draft
-,4299535,4295287,Increase,4.61,13,Draft
-,4298794,4295287,Increase,3.0,13,Draft
-,4079975,4310996,Increase,1.4,13,Draft
-,4079975,4310996,Increase,1.4,13,Draft
-,37153627,4310996,Increase,5.88,13,Draft
-,37153627,4310996,Increase,5.88,13,Draft
-,4306703,37153627,Increase,5.88,13,Draft
-,441589,37153627,Increase,1.69,13,Draft
-,4299535,4273629,Decrease,3.14,13,Draft
-,4301351,4310996,Increase,3.14,13,Draft
-,4301351,4310996,Increase,4.34,13,Draft
-,443392,4301351,Increase,4.34,13,Draft
-,4079975,4301351,Increase,3.14,13,Draft
-,318736,4310996,Increase,4.17,14,Draft
-,318736,4298794,Decrease,4.52,14,Draft
-,433736,4310996,Increase,6.0,14,Draft
-,316866,4306703,Increase,6.0,14,Draft
-,433736,316866,Increase,6.84,14,Draft
-,317002,4176126,Increase,6.84,14,Draft
-,316139,4176126,Increase,6.84,14,Draft
-,437312,4176126,Increase,6.84,14,Draft
-,4070767,4310996,Increase,6.84,14,Draft
-,4176126,4070767,Increase,6.84,14,Draft
-,4217691,4070767,Increase,6.84,14,Draft
-,4178903,4070767,Increase,6.84,14,Draft
-,nonatherosclerotic abnormalities,4310996,Increase,6.84,14,Draft
-,46272492,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,37311061,4310996,Increase,6.84,14,Draft
-,4135811,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,4137275,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,378774,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,4213628,nonatherosclerotic abnormalities,Increase,6.84,14,Draft
-,4310996,production of reactive oxygen species,Increase,6.84,14,Draft
-,production of reactive oxygen species,4285282,Increase,6.84,14,Draft
-,4310996,loss of brain structural integrity,Increase,6.84,14,Draft
-,4276568,318736,Increase,6.84,14,Draft
-,4276568,37311061,Decrease,3.37,14,Draft
-,4306703,4310996,Increase,6.84,14,Draft
-,4322978,4285282,Increase,6.84,14,Draft
-,4322978,318736,Decrease,6.84,14,Draft
-,4322978,316866,Increase,6.84,14,Draft
-,production of reactive oxygen species,4119952,Increase,6.84,14,Draft
-,4029305,4119952,Increase,6.84,14,Draft
-,4298794,4119952,Increase,6.84,14,Draft
-,201820,4119952,Increase,6.84,14,Draft
-,316866,4119952,Increase,6.84,14,Draft
-"Harrison Internal Med., 2020",4185607,4310996,Increase,6.0,16,Final
-"Harrison Internal Med., 2020",4231363,4310996,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4046360,4231363,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",313217,4185607,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4306703,4231363,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",442985,4306703,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4322978,4306703,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4298794,4306703,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",201820,4306703,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4159131,4306703,Increase,4.0,16,Final
-"Harrison Internal Med., 2020",316866,4306703,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",46272492,4310996,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",316866,4046360,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4322978,4046360,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4295287,4231363,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4137275,4310996,Increase,4.61,16,Final
-,Cardiac Remodelling,313217,Increase,4.61,16,Final
-,4322978,Cardiac Remodelling,Increase,4.61,16,Final
-,316866,Cardiac Remodelling,Increase,4.61,16,Final
-,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61,16,Final
-,4306703,Other Cardiac Pathologies,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4306703,4329847,Increase,4.61,16,Final
-,4329847,Cardiac Remodelling,Increase,4.61,16,Final
-"Harrison Internal Med., 2020",4184633,4306703,Increase,4.61,16,Final
-,35622016,201820,Increase,4.0,16,Final
-,4130526,201820,Increase,4.0,16,Final
-"Kernan, 2002",35622016,4306703,Increase,4.0,16,Final
-"Kernan, 2002",4130526,4306703,Increase,4.0,16,Final
-"Kernan, 2002",4322978,35622016,Increase,4.0,16,Final
-"Kernan, 2002",4322978,4130526,Increase,4.0,16,Final
-,4038718,433736,Increase,4.61,16,Final
-Kernan et al. 2002,35622016,316866,Increase,4.0,16,Final
-Kernan et al. 2002,4130526,316866,Increase,4.0,16,Final
-Kernan et al 2002,35622016,4159131,Increase,2.0,16,Final
-Kernan et al 2002,4130526,4159131,Increase,2.0,16,Final
-Kernan et al 2002,35622016,4180169,Increase,4.0,16,Final
-Kernan et al 2002,4130526,4180169,Increase,4.0,16,Final
-"Hansson , 2006",4180169,4306703,Increase,4.17,16,Final
-Kahn et. al 2006,433736,35622016,Increase,4.0,16,Final
-Kahn et. al 2006,433736,4130526,Increase,4.0,16,Final
-Kahn et. al 2006,433736,4180169,Increase,4.17,16,Final
-"Hering, 2015",4251306,Sympathetic activation,Increase,0.51,16,Final
-"Hering, 2015",Sympathetic activation,4231363,Increase,0.51,16,Final
-Redline et al 2011,313459,316866,Increase,0.51,16,Final
-Redline et al 2011,435657,316866,Increase,0.51,16,Final
-Redline et al 2011,313459,35622016,Increase,2.68,16,Final
-Redline et al 2011,313459,4130526,Increase,2.68,16,Final
-Redline et al 2011,435657,35622016,Increase,2.68,16,Final
-Redline et al 2011,435657,4130526,Increase,2.68,16,Final
-Redline et al 2011,313459,4180169,Increase,1.4,16,Final
-Redline et al 2011,435657,4180169,Increase,1.4,16,Final
-,4251306,4298794,Increase,2.68,16,Final
-,35622016,37018196,Increase,2.68,16,Final
-,4130526,37018196,Increase,2.68,16,Final
-Fonville et al. 2014,37018196,201820,Increase,2.68,16,Final
-,316866,46272492,Increase,2.68,16,Final
-,4298794,316866,Increase,2.68,16,Final
-American Heart Association 2014,4146455,316866,Decrease,4.61,16,Final
-American Heart Association 2014,4201029,4159131,Decrease,4.61,16,Final
-Hansson 2006,4201029,4180169,Decrease,3.44,16,Final
-Kernan et al 2002,4038720,35622016,Decrease,3.44,16,Final
-Kernan et al 2002,4038720,4130526,Decrease,3.44,16,Final
-Kernan et al 2002,4229881,35622016,Decrease,3.44,16,Final
-Kernan et al 2002,4229881,4130526,Decrease,3.44,16,Final
-American Heart Association 2014,4304917,316866,Decrease,3.44,16,Final
-American Heart Association 2014,4038720,4038718,Decrease,2.68,16,Final
-American Heart Association 2014,4229881,4038718,Decrease,2.68,16,Final
-American Heart Association 2014,4022846,433736,Decrease,2.68,16,Final
-American Heart Association 2014,4301936,201820,Decrease,2.68,16,Final
-Kernan et al 2002,4159324,4159131,Decrease,2.25,16,Final
-Kernan et al 2002,4159324,316866,Decrease,2.25,16,Final
-Kernan et al 2002,4159324,35622016,Decrease,2.25,16,Final
-Kernan et al 2002,4159324,4130526,Decrease,2.25,16,Final
-American Diabetes Association 2020,45771363,201820,Decrease,2.25,16,Final
-American Diabetes Association 2020,4166093,201820,Decrease,2.25,16,Final
-American Heart Association 2014,4165535,313459,Decrease,2.25,16,Final
-American Heart Association 2014,4165535,435657,Decrease,2.25,16,Final
-American Heart Association 2014,46273821,4298794,Decrease,2.25,16,Final
-American Heart Association 2014,4283095,4306703,Decrease,3.07,16,Final
-American Heart Association 2014,4178631,4306703,Decrease,3.07,16,Final
-American Heart Association 2014,4050288,4306703,Decrease,3.07,16,Final
-American Heart Association 2014,3655005,4231363,Decrease,3.0,16,Final
-American Heart Association 2014,4056822,4185607,Decrease,3.07,16,Final
-American Heart Association 2014,3655005,46272492,Decrease,2.68,16,Final
-American Heart Association 2014,4056822,46272492,Decrease,2.68,16,Final
-American Heart Association 2014,4056822,4295287,Decrease,2.68,16,Final
-Harrison internal medicine 2020,4201029,4231363,Decrease,2.68,16,Final
-Harrison internal medicine 2020,4201029,316866,Decrease,2.68,16,Final
-Sundell 2008 & mostofsky 2016,4183729,4306703,Decrease,2.0,16,Final
-Sundell 2008 & mostofsky 2016,4336673,316866,Increase,2.0,16,Final
-Sundell 2008 & mostofsky 2016,4336673,Other Cardiac Pathologies,Increase,2.0,16,Final
-Sundell 2008 & mostofsky 2016,4336673,313217,Increase,2.0,16,Final
-Sundell 2008 & mostofsky 2016,4336673,4231363,Increase,2.0,16,Final
-American Heart Association 2014,46270002,4336673,Decrease,2.0,16,Final
-,4310996,4180770,Increase,2.68,16,Final
-,4310996,4306655,Increase,2.68,16,Final
-,4310996,4310996,Increase,2.68,16,Final
-Dirnagl Review,4310996,378143,Increase,6.0,17,Draft
-Dirnagl Review,434821,4310996,Increase,6.84,17,Draft
-Meisel Review NEJM/Nature,4310996,peripheral immune competence,Decrease,6.84,17,Draft
-,4310996,443454,Increase,6.84,19,Draft
-,4310996,255848,Increase,6.84,19,Draft
-,443454,255848,Increase,6.84,19,Draft
-,255848,4306655,Increase,6.84,19,Draft
-,4310996,4306655,Increase,6.84,19,Draft
-,4310996,4310996,Increase,6.84,19,Draft
-,4310996,255848,Increase,6.84,19,Draft
-,4310996,4306655,Increase,6.84,19,Draft
-,4310996,440383,Increase,6.84,19,Draft
-,440383,4306934,Decrease,6.84,19,Draft
-,4306934,255848,Decrease,6.84,19,Draft
-,4310996,4306934,Decrease,6.84,19,Draft
-,4306934,4306655,Decrease,6.84,19,Draft
-,4310996,443432,Increase,6.84,19,Draft
-,255848,443432,Increase,5.1,19,Draft
-,443432,4306655,Increase,2.79,19,Draft
-,4310996,443432,Increase,2.79,19,Draft
-,316866,4310996,Increase,6.84,19,Draft
-,316866,4310996,Increase,6.84,19,Draft
-,316866,443432,Increase,5.31,19,Draft
-,4310996,443454,Increase,6.84,19,Draft
-,443454,443432,Increase,6.84,19,Draft
-,443454,4242843,Increase,6.84,19,Draft
-,4242843,255848,Increase,6.84,19,Draft
-,4242843,443432,Decrease,0.51,19,Draft
-,201820,4310996,Increase,6.84,19,Draft
-,201820,4310996,Increase,6.84,19,Draft
-,201820,443432,Increase,4.61,19,Draft
-,4310996,4329728,Increase,6.84,19,Draft
-,4310996,4329728,Increase,6.84,19,Draft
-,4329728,4306934,Decrease,6.84,19,Draft
-,4329728,4329041,Increase,6.84,19,Draft
-,4329041,4306934,Decrease,6.84,19,Draft
-,442985,443454,Decrease,4.8,19,Draft
-,440383,442985,Decrease,4.8,19,Draft
-,443454,4052648,Increase,6.84,19,Draft
-,4052648,4306934,Decrease,6.84,19,Draft
-,4310996,31317,Increase,6.84,19,Draft
-,4310996,31317,Increase,6.84,19,Draft
-,31317,255848,Increase,6.84,19,Draft
-,31317,4090739,Increase,6.84,19,Draft
-,4310996,134765,Increase,4.8,19,Draft
-,4310996,134765,Increase,4.34,19,Draft
-,4090739,134765,Increase,6.84,19,Draft
-,134765,4306655,Increase,4.8,19,Draft
-,4090739,4306655,Increase,3.14,19,Draft
-,4306934,4234649,Increase,6.84,19,Draft
-,4329728,4234649,Decrease,6.84,19,Draft
-,31317,4234649,Decrease,6.84,19,Draft
-,4329041,4234649,Decrease,6.84,19,Draft
-,443432,4234649,Decrease,6.84,19,Draft
-,4310996,4234649,Decrease,6.84,19,Draft
-,4310996,4234649,Decrease,6.84,19,Draft
-,4310996,440424,Increase,6.84,19,Draft
-,4310996,440424,Increase,6.84,19,Draft
-,440424,4234649,Decrease,6.84,19,Draft
-,4322978,4310996,Increase,6.84,19,Draft
-,4322978,443432,Increase,6.84,19,Draft
-,4322978,255848,Increase,6.84,19,Draft
-,4306934,4310996,Increase,6.0,19,Draft
-,4306934,4310996,Decrease,6.0,19,Draft
-,440383,4310996,Increase,6.84,19,Draft
-,255848,4085730,Increase,6.84,19,Draft
-,4085730,4306655,Decrease,6.84,19,Draft
-,440383,44784326,Increase,6.84,19,Draft
-,44784326,4234649,Increase,4.26,19,Draft
-,4201412,440424,Decrease,6.84,19,Draft
-,4327941,440383,Decrease,6.84,19,Draft
-,4327941,443432,Decrease,2.38,19,Draft
-,4238738,4306934,Increase,6.84,19,Draft
-,4238738,4052648,Decrease,6.84,19,Draft
-,4059498,4234649,Increase,6.84,19,Draft
-,4196427,4310996,Decrease,6.84,19,Draft
-,4201926,4310996,Decrease,6.84,19,Draft
-,4038720,4310996,Decrease,6.84,19,Draft
-,4038720,4310996,Decrease,6.84,19,Draft
-,4038720,443432,Decrease,6.84,19,Draft
-,4021166,4306655,Decrease,4.08,19,Draft
-,4059498,4021166,Increase,3.07,19,Draft
-,4083171,4329041,Decrease,6.84,19,Draft
-,4229563,4329728,Decrease,6.84,19,Draft
-,4114614,443432,Decrease,5.0,19,Draft
-Christoph,316866,4310996,Increase,6.84,20,Draft
-Christoph,316866,4310996,Increase,6.84,20,Draft
-Christoph,4310996,4310996,Increase,6.84,20,Draft
-Christoph,4310996,4306655,Increase,6.84,20,Draft
-Christoph,4310996,4306655,Increase,6.84,20,Draft
-Christoph,4322978,4234656,Decrease,6.84,20,Draft
-Christoph,4322978,4306655,Increase,6.84,20,Draft
-Christoph,4322978,4310996,Increase,6.84,20,Draft
-Christoph,4322978,4310996,Increase,6.84,20,Draft
-Christoph,4310996,4234656,Decrease,6.84,20,Draft
-,4310996,4234656,Decrease,2.68,20,Draft
-,B-cell infiltration,443432,Increase,2.68,20,Draft
-,4322978,443432,Increase,6.84,20,Draft
-,316866,443432,Increase,4.08,20,Draft
-,4310996,443432,Increase,2.06,20,Draft
-,4310996,443432,Increase,6.84,20,Draft
-,4150054,4234656,Decrease,6.0,20,Draft
-,4150054,4234656,Increase,6.0,20,Draft
-,4150054,4310996,Increase,6.84,20,Draft
-,4150054,4310996,Increase,6.84,20,Draft
-,collateralization,4338810,Increase,6.84,20,Draft
-,4310996,4150603,Increase,6.84,20,Draft
-,4310996,4150603,Increase,6.84,20,Draft
-,316866,4150603,Increase,3.68,20,Draft
-,4322978,4150603,Increase,6.84,20,Draft
-,endothelial proliferation,4234656,Increase,6.84,20,Draft
-,endothelial proliferation,4068351,Decrease,6.84,20,Draft
-,4068351,B-cell infiltration,Increase,6.84,20,Draft
-,microglial proliferation,neuronal survival,Decrease,6.84,20,Draft
-,4150054,4234656,Decrease,2.68,20,Draft
-,astrocytic proliferation,4234656,Increase,2.68,20,Draft
-,astrocytic proliferation,neuronal survival,Increase,2.68,20,Draft
-,endothelial proliferation,neuronal survival,Increase,5.2,20,Draft
-,collateralization,4310996,Decrease,5.2,20,Draft
-,collateralization,4310996,Decrease,5.2,20,Draft
+Author,Exposure,Outcome,Direction,Strength,ID,Status,Corrected_Direction,Exposure_name,Outcome_name
+,201820,4310996,Increase,6.0,1,Final,Increase,Diabetes,Ischemic stroke
+,4322978,4310996,Increase,6.0,1,Final,Increase,age,Ischemic stroke
+,4322978,201820,Increase,5.0,1,Final,Increase,age,Diabetes
+,442985,4310996,Increase,6.0,1,Final,Increase,Sex (Male),Ischemic stroke
+,316866,4310996,Increase,6.0,1,Final,Increase,Hypertension,Ischemic stroke
+,4322978,316866,Increase,6.0,1,Final,Increase,age,Hypertension
+,4171825,316866,Increase,4.0,1,Final,Increase,BMI,Hypertension
+,4171825,201820,Increase,4.0,1,Final,Increase,BMI,Diabetes
+,4171825,4310996,Increase,6.0,1,Final,Increase,BMI,Ischemic stroke
+Carrero et al (2018),313217,4310996,Increase,6.0,1,Final,Increase,Atrial fibrillation,Ischemic stroke
+de Leeuw et al. (2000),442985,313217,Increase,4.0,1,Final,Increase,Sex (Male),Atrial fibrillation
+Kalantarian et al. (2014),4322978,313217,Increase,5.0,1,Final,Increase,age,Atrial fibrillation
+,4171825,313217,Increase,6.0,1,Final,Increase,BMI,Atrial fibrillation
+Diez-Villanueva P & Alfonso F. (2019),316866,313217,Increase,6.0,1,Final,Increase,Hypertension,Atrial fibrillation
+,4298794,4310996,Increase,5.0,1,Final,Increase,Smoking,Ischemic stroke
+,4322978,4298794,Increase,5.0,1,Final,Increase,age,Smoking
+Pan et al. (2019),442985,4298794,Increase,6.0,1,Final,Increase,Sex (Male),Smoking
+Shah & Cole (2010),4298794,201820,Increase,4.0,1,Final,Increase,Smoking,Diabetes
+,4298794,4171825,Decrease,2.0,1,Final,Decrease,Smoking,BMI
+,4298794,316866,Increase,3.0,1,Final,Increase,Smoking,Hypertension
+Campagna et al. (2019),4298794,313217,Increase,6.0,1,Final,Increase,Smoking,Atrial fibrillation
+Maddatu et al. (2017),432867,313217,Increase,6.0,1,Final,Increase,Hyperlipidemia,Atrial fibrillation
+Patel et al. (2011),432867,4171825,Increase,6.0,1,Final,Increase,Hyperlipidemia,BMI
+Watanabe et al. (2016),432867,316866,Increase,6.0,1,Final,Increase,Hyperlipidemia,Hypertension
+Halperin et al. (2008),432867,201820,Increase,6.0,1,Final,Increase,Hyperlipidemia,Diabetes
+,432867,4310996,Increase,6.0,1,Final,Increase,Hyperlipidemia,Ischemic stroke
+,201820,313217,Increase,5.0,1,Final,Increase,Diabetes,Atrial fibrillation
+,4298794,432867,Increase,3.0,1,Final,Increase,Smoking,Hyperlipidemia
+,442985,201820,Increase,3.0,1,Final,Increase,Sex (Male),Diabetes
+,201820,316866,Increase,2.0,1,Final,Increase,Diabetes,Hypertension
+,432867,4213477,Decrease,2.0,1,Final,Decrease,Hyperlipidemia,GFR
+Bohne et al. (2019),442985,4171825,Decrease,2.0,1,Final,Decrease,Sex (Male),BMI
+Sensi et al. (2015),316866,4213477,Decrease,2.0,1,Final,Decrease,Hypertension,GFR
+Hallit et al. (2017),201820,4213477,Increase,3.0,1,Final,Increase,Diabetes,GFR
+Jain & Ducatman (2018),4298794,46271022,Increase,3.0,1,Final,Increase,Smoking,CKD
+Kautzky-Willer et al. (2016),46271022,313217,Increase,2.0,1,Final,Increase,CKD,Atrial fibrillation
+Wishner (1996),46271022,4310996,Increase,4.0,1,Final,Increase,CKD,Ischemic stroke
+,42872750,42872750,Increase,6.0,2,Final,Increase,NIHSS_stroke,NIHSS_followup
+,42872750,3654822,Increase,6.84,2,Final,Increase,NIHSS_stroke,mRS_follow_up
+,3654822,3654822,Increase,6.84,2,Final,Increase,mRS_stroke,mRS_follow_up
+,3654822,42872750,Increase,6.84,2,Final,Increase,mRS_stroke,NIHSS_followup
+,4084390,42872750,Increase,6.84,2,Final,Increase,lesion_size,NIHSS_stroke
+,4084390,3654822,Increase,6.84,2,Final,Increase,lesion_size,mRS_stroke
+,4084390,3654822,Increase,6.84,2,Final,Increase,lesion_size,mRS_follow_up
+,4084390,42872750,Increase,6.84,2,Final,Increase,lesion_size,NIHSS_followup
+,12,42872750,Increase,6.84,2,Final,Increase,time_to_therapy,NIHSS_followup
+,12,3654822,Increase,6.84,2,Final,Increase,time_to_therapy,mRS_follow_up
+,4084390,4126495,Decrease,6.0,2,Final,Decrease,lesion_size,Barthel_Index_stroke
+eloquent / non-eloquent,4104314,4126495,Decrease,6.0,2,Final,Decrease,lesion_location,Barthel_Index_stroke
+eloquent / non-eloquent,4104314,42872750,Increase,6.84,2,Final,Increase,lesion_location,NIHSS_stroke
+eloquent / non-eloquent,4104314,42872750,Increase,6.84,2,Final,Increase,lesion_location,NIHSS_followup
+eloquent / non-eloquent,4104314,3654822,Increase,6.84,2,Final,Increase,lesion_location,mRS_follow_up
+eloquent / non-eloquent,4104314,3654822,Increase,6.84,2,Final,Increase,lesion_location,mRS_stroke
+,42872750,4126495,Decrease,6.0,2,Final,Decrease,NIHSS_stroke,Barthel_Index_follow_up
+,3654822,4126495,Decrease,6.0,2,Final,Decrease,mRS_stroke,Barthel_Index_follow_up
+,4084390,4126495,Decrease,6.0,2,Final,Decrease,lesion_size,Barthel_Index_follow_up
+,12,4126495,Decrease,6.0,2,Final,Decrease,time_to_therapy,Barthel_Index_follow_up
+,4126495,4126495,Increase,6.84,2,Final,Increase,Barthel_Index_stroke,Barthel_Index_follow_up
+eloquent/non eloquent,4104314,4126495,Decrease,6.0,2,Final,Decrease,lesion_location,Barthel_Index_follow_up
+,4310996,4084390,Increase,6.0,2,Final,Increase,TOAST (etiology),lesion_size
+,4310996,4104314,Increase,6.0,2,Final,Increase,TOAST (etiology),lesion_location
+cardioembolic,313217,4310996,Increase,2.68,2,Final,Increase,present atrial fibrillation,TOAST (etiology)
+,14,12,Increase,2.68,2,Final,Increase,time_till_diagnosis,time_to_therapy
+meaning the general population being aware of typical stroke symptoms,16,14,Decrease,2.0,2,Final,Decrease,awareness of FAST-Scheme,time_till_diagnosis
+,14,4051022,Decrease,6.84,2,Final,Decrease,time_till_diagnosis,rate of thrombolysis
+,14,4185284,Decrease,6.84,2,Final,Decrease,time_till_diagnosis,rate of thrombectomy
+,4051022,4084390,Decrease,2.93,2,Final,Decrease,rate of thrombolysis,lesion_size
+,4185284,4084390,Decrease,2.93,2,Final,Decrease,rate of thrombectomy,lesion_size
+cardioembolic,4310996,4051022,Increase,2.93,2,Final,Increase,TOAST (etiology),rate of thrombolysis
+accesible arteries,4310996,4185284,Increase,2.68,2,Final,Increase,TOAST (etiology),rate of thrombectomy
+macroangiopathic,4103842,4310996,Increase,2.68,2,Final,Increase,arteriosklerosis,TOAST (etiology)
+,4298794,4103842,Increase,6.84,2,Final,Increase,smoking,arteriosklerosis
+,4322978,4103842,Increase,6.84,2,Final,Increase,Age,arteriosklerosis
+,201820,4103842,Increase,6.84,2,Final,Increase,Diabetes mellitus,arteriosklerosis
+,4159131,4103842,Increase,6.84,2,Final,Increase,Dyslipidemia,arteriosklerosis
+,37167374,4103842,Increase,6.84,2,Final,Increase,Lipoprotein (a),arteriosklerosis
+,4137275,4103842,Increase,6.84,2,Final,Increase,Vasculitis,arteriosklerosis
+cardioembolic,4070299,4310996,Increase,6.84,2,Final,Increase,persistent foramen ovale,TOAST (etiology)
+,316866,4310996,Increase,6.0,3,Draft,Increase,hypertension,first ischemic stroke
+,4171825,4310996,Increase,6.84,3,Draft,Increase,BMI_t0,first ischemic stroke
+,4322978,4310996,Increase,6.84,3,Draft,Increase,age,first ischemic stroke
+,442985,4310996,Increase,6.84,3,Draft,Increase,sex(being male),first ischemic stroke
+,4298794,4310996,Increase,6.84,3,Draft,Increase,smoking,first ischemic stroke
+,201820,4310996,Increase,6.84,3,Draft,Increase,diabetes,first ischemic stroke
+,4029305,4310996,Increase,6.84,3,Draft,Increase,high blood cholesterol levels,first ischemic stroke
+,4336673,4310996,Increase,6.84,3,Draft,Increase,high drinking levels,first ischemic stroke
+,4024366,4310996,Increase,6.0,3,Draft,Increase,high fat salt diet,first ischemic stroke
+,4024366,316866,Increase,2.68,3,Draft,Increase,high fat salt diet,hypertension
+,313217,4310996,Increase,6.0,3,Draft,Increase,atrial fibrillation,first ischemic stroke
+,4306703,4310996,Increase,6.84,3,Draft,Increase,Atherosclerosis,first ischemic stroke
+,4024366,4306703,Increase,0.57,3,Draft,Increase,high fat salt diet,Atherosclerosis
+,4171825,4310996,Increase,0.57,3,Draft,Increase,BMI_t1,second ischemic stroke
+,4310996,4171825,Decrease,0.57,3,Draft,Decrease,first ischemic stroke,BMI_t1
+,4298794,4310996,Increase,6.84,3,Draft,Increase,smoking,second ischemic stroke
+,4322978,4310996,Increase,6.84,3,Draft,Increase,age,second ischemic stroke
+,442985,4310996,Increase,6.84,3,Draft,Increase,sex(being male),second ischemic stroke
+,4336673,4310996,Increase,6.84,3,Draft,Increase,high drinking levels,second ischemic stroke
+,4024366,4310996,Increase,6.84,3,Draft,Increase,high fat salt diet,second ischemic stroke
+,201820,4310996,Increase,6.84,3,Draft,Increase,diabetes,second ischemic stroke
+,316866,4119952,Increase,6.84,4,Draft,Increase,arterial hypertension,endothelial dysfunction
+,4051022,3654822,Increase,2.68,4,Draft,Decrease,Thrombolysis,functional post stroke outcome
+,4084390,3654822,Decrease,6.26,4,Draft,Increase,lesion size,functional post stroke outcome
+,316866,3654822,Decrease,6.84,4,Draft,Increase,arterial hypertension,functional post stroke outcome
+,433736,3654822,Decrease,6.84,4,Draft,Increase,Obesity,functional post stroke outcome
+,433736,4119952,Increase,4.61,4,Draft,Increase,Obesity,endothelial dysfunction
+,4119952,13,Increase,6.84,4,Draft,Increase,endothelial dysfunction,EMV
+,433736,4310996,Increase,6.84,4,Draft,Increase,Obesity,1. stroke incidence
+,316866,4310996,Increase,6.84,4,Draft,Increase,arterial hypertension,1. stroke incidence
+,4310996,3654822,Decrease,1.0,4,Draft,Increase,1. stroke incidence,functional post stroke outcome
+,4119952,4310996,Increase,5.42,4,Draft,Increase,endothelial dysfunction,1. stroke incidence
+,13,37311069,Increase,6.84,4,Draft,Increase,EMV,secondary cardiovascular risk
+,316866,37311069,Increase,6.84,4,Draft,Increase,arterial hypertension,secondary cardiovascular risk
+,4119952,37311069,Increase,2.0,4,Draft,Increase,endothelial dysfunction,secondary cardiovascular risk
+,13,4310996,Increase,4.0,4,Draft,Increase,EMV,1. stroke incidence
+,4310996,4084390,Increase,6.84,4,Draft,Increase,1. stroke incidence,lesion size
+,4310996,37311069,Increase,6.84,4,Draft,Increase,1. stroke incidence,secondary cardiovascular risk
+,4084390,37311069,Increase,3.0,4,Draft,Increase,lesion size,secondary cardiovascular risk
+,4137275,37311069,Increase,6.84,4,Draft,Increase,vascular inflammation,secondary cardiovascular risk
+,4119952,4137275,Increase,3.14,4,Draft,Increase,endothelial dysfunction,vascular inflammation
+,4137275,3,Increase,5.31,4,Draft,Increase,vascular inflammation,LMV
+,3,37311069,Increase,5.31,4,Draft,Increase,LMV,secondary cardiovascular risk
+,4298794,4310996,Increase,6.0,5,Draft,Increase,Smoking,Stroke
+,198124,4310996,Increase,5.0,5,Draft,Increase,kidney disease,Stroke
+,442985,4310996,Increase,1.0,5,Draft,Increase,male sex,Stroke
+,4038720,4310996,Decrease,4.0,5,Draft,Decrease,exercise,Stroke
+,442985,4298794,Increase,1.0,5,Draft,Increase,male sex,Smoking
+,4171825,4310996,Increase,5.0,5,Draft,Increase,BMI,Stroke
+,4038720,4171825,Decrease,6.0,5,Draft,Decrease,exercise,BMI
+,4159131,4310996,Increase,5.2,5,Draft,Increase,dyslipidemia,Stroke
+,4038720,198124,Decrease,2.0,5,Draft,Decrease,exercise,kidney disease
+,4249447,4310996,Increase,1.75,5,Draft,Decrease,low socioeconomic status,Stroke
+,4310996,440383,Increase,3.84,5,Draft,Increase,Stroke,Depression
+,4310996,443432,Increase,3.84,5,Draft,Increase,Stroke,Cognitive dysfunction
+,4310996,4306655,Increase,6.84,5,Draft,Increase,Stroke,Mortality
+Broersen et al. 2020,4010497,4310996,Increase,0.94,5,Draft,Increase,hs cardiac Troponin,Stroke
+,321588,4010497,Increase,5.1,5,Draft,Increase,cardiac disease,hs cardiac Troponin
+,321588,4310996,Increase,6.84,5,Draft,Increase,cardiac disease,Stroke
+,4038720,321588,Decrease,6.84,5,Draft,Decrease,exercise,cardiac disease
+,4298794,321588,Increase,6.26,5,Draft,Increase,Smoking,cardiac disease
+,37108742,4310996,Increase,3.92,5,Draft,Increase,elevated CRP,Stroke
+,4249447,440383,Increase,3.92,5,Draft,Decrease,low socioeconomic status,Depression
+,4322978,4310996,Increase,6.84,5,Draft,Increase,age,Stroke
+,4322978,321588,Increase,6.84,5,Draft,Increase,age,cardiac disease
+,4024366,316866,Increase,5.0,5,Draft,Increase,high fat/ high carbonhydrate diet,arterial hypertension
+,4027011,316866,Increase,5.0,5,Draft,Increase,high fat/ high carbonhydrate diet,arterial hypertension
+,4024366,321588,Increase,5.0,5,Draft,Increase,high fat/ high carbonhydrate diet,cardiac disease
+,4027011,321588,Increase,5.0,5,Draft,Increase,high fat/ high carbonhydrate diet,cardiac disease
+,4159131,440383,Increase,3.29,5,Draft,Increase,dyslipidemia,Depression
+,4159131,443432,Increase,3.29,5,Draft,Increase,dyslipidemia,Cognitive dysfunction
+,443784,4310996,Increase,6.84,5,Draft,Increase,vascular disease,Stroke
+,4322978,443784,Increase,3.44,5,Draft,Increase,age,vascular disease
+,443784,198124,Increase,6.84,5,Draft,Increase,vascular disease,kidney disease
+,201820,198124,Increase,6.84,5,Draft,Increase,diabetes,kidney disease
+,201820,4310996,Increase,6.84,5,Draft,Increase,diabetes,Stroke
+,4024366,4159131,Increase,6.84,5,Draft,Increase,high fat/ high carbonhydrate diet,dyslipidemia
+,4027011,4159131,Increase,6.84,5,Draft,Increase,high fat/ high carbonhydrate diet,dyslipidemia
+,4024366,201820,Increase,6.84,5,Draft,Increase,high fat/ high carbonhydrate diet,diabetes
+,4027011,201820,Increase,6.84,5,Draft,Increase,high fat/ high carbonhydrate diet,diabetes
+,4024366,37108742,Increase,3.68,5,Draft,Increase,high fat/ high carbonhydrate diet,elevated CRP
+,4027011,37108742,Increase,3.68,5,Draft,Increase,high fat/ high carbonhydrate diet,elevated CRP
+,440383,4306655,Increase,6.0,5,Draft,Increase,Depression,Mortality
+,4022241,440383,Decrease,6.84,5,Draft,Decrease,coping mechnisms,Depression
+,4249447,4024366,Increase,2.93,5,Draft,Decrease,low socioeconomic status,high fat/ high carbonhydrate diet
+,4249447,4027011,Increase,2.93,5,Draft,Decrease,low socioeconomic status,high fat/ high carbonhydrate diet
+,4074035,4310996,Increase,6.84,5,Draft,Increase,habitual alcohol consumption,Stroke
+,4074035,201820,Increase,6.84,5,Draft,Increase,habitual alcohol consumption,diabetes
+,4074035,4022241,Decrease,6.13,5,Draft,Decrease,habitual alcohol consumption,coping mechnisms
+,4038720,4022241,Increase,0.51,5,Draft,Increase,exercise,coping mechnisms
+,4038720,316866,Decrease,2.72,5,Draft,Decrease,exercise,arterial hypertension
+,4038720,4310996,Decrease,6.84,5,Draft,Decrease,exercise,Stroke
+,4038720,4306655,Decrease,6.84,5,Draft,Decrease,exercise,Mortality
+,4180169,4306655,Increase,5.0,5,Draft,Increase,Inflammation,Mortality
+,4180169,37108742,Increase,6.84,5,Draft,Increase,Inflammation,elevated CRP
+,4180169,443432,Increase,1.63,5,Draft,Increase,Inflammation,Cognitive dysfunction
+,4180169,440383,Increase,0.51,5,Draft,Increase,Inflammation,Depression
+,4074035,4180169,Increase,3.44,5,Draft,Increase,habitual alcohol consumption,Inflammation
+,4249447,4074035,Increase,3.44,5,Draft,Decrease,low socioeconomic status,habitual alcohol consumption
+,316866,321588,Increase,6.84,5,Draft,Increase,arterial hypertension,cardiac disease
+,443432,4022241,Decrease,2.45,5,Draft,Decrease,Cognitive dysfunction,coping mechnisms
+,4180169,443784,Increase,4.17,5,Draft,Increase,Inflammation,vascular disease
+,4024366,4180169,Increase,4.17,5,Draft,Increase,high fat/ high carbonhydrate diet,Inflammation
+,4027011,4180169,Increase,4.17,5,Draft,Increase,high fat/ high carbonhydrate diet,Inflammation
+,4180169,321588,Increase,4.17,5,Draft,Increase,Inflammation,cardiac disease
+,316866,4310996,Increase,6.84,5,Draft,Increase,arterial hypertension,Stroke
+McCarthy 2018,442310,37309626,Increase,6.0,6,Final,Increase,acute heart failure,myocardial infarction (type 2)
+,442310,4306655,Increase,6.84,6,Final,Increase,acute heart failure,mortality
+,442310,4186398,Increase,6.0,6,Final,Increase,acute heart failure,nt-pro-BNP
+,4322978,201820,Increase,4.52,6,Final,Increase,age,diabetes
+,4322978,4310996,Increase,6.84,6,Final,Increase,age,FIRST ISCHEMIC STROKE
+,4322978,313217,Increase,4.34,6,Final,Increase,age,atrial fibrillation
+"Bishop, Lu, & Yankner, 2010",4322978,443432,Increase,4.0,6,Final,Increase,age,kognitive decline
+,4322978,4306703,Increase,6.84,6,Final,Increase,age,atherosclerosis
+Diener 2020,4056822,4310996,Decrease,3.0,6,Final,Decrease,anticoagulation,second ischemic stroke
+Diener 2020,4056822,4310996,Decrease,3.0,6,Final,Decrease,anticoagulation,FIRST ISCHEMIC STROKE
+,4056822,42538532,Decrease,2.72,6,Final,Decrease,anticoagulation,cardiac thrombus
+,4306703,4310996,Increase,6.68,6,Final,Increase,atherosclerosis,FIRST ISCHEMIC STROKE
+,4306703,604179,Increase,6.84,6,Final,Increase,atherosclerosis,myocardial infarction (type 1)
+,313217,4310996,Increase,6.84,6,Final,Increase,atrial fibrillation,FIRST ISCHEMIC STROKE
+,313217,4009409,Increase,6.0,6,Final,Increase,atrial fibrillation,troponin elevation
+,313217,4186398,Increase,6.0,6,Final,Increase,atrial fibrillation,nt-pro-BNP
+,313217,44784217,Increase,6.0,6,Final,Increase,atrial fibrillation,severe arrrhythmia
+,4171825,604179,Increase,6.84,6,Final,Increase,BMI,myocardial infarction (type 1)
+,4171825,4310996,Increase,6.84,6,Final,Increase,BMI,second ischemic stroke
+,4171825,4310996,Increase,4.34,6,Final,Increase,BMI,FIRST ISCHEMIC STROKE
+Rizas et al 2017,434633,44784217,Increase,4.0,6,Final,Increase,cardiac autonomic dysbalance,severe arrrhythmia
+,42538532,4310996,Increase,5.1,6,Final,Increase,cardiac thrombus,FIRST ISCHEMIC STROKE
+,444031,443432,Increase,4.52,6,Final,Increase,chronic heart failure,kognitive decline
+,444031,4310996,Increase,4.34,6,Final,Increase,chronic heart failure,FIRST ISCHEMIC STROKE
+,444031,4186398,Increase,3.22,6,Final,Increase,chronic heart failure,nt-pro-BNP
+,444031,4009409,Increase,6.0,6,Final,Increase,chronic heart failure,troponin elevation
+,440383,44800078,Decrease,2.68,6,Final,Decrease,depression,higher fitness/mobility post
+,440383,4199549,Decrease,2.68,6,Final,Decrease,depression,higher fitness/mobility post
+,440383,4306655,Increase,2.68,6,Final,Increase,depression,mortality
+Ghadri 2018,440383,40479589,Increase,2.0,6,Final,Increase,depression,Takotsubo syndrome
+,201820,4306655,Increase,4.52,6,Final,Increase,diabetes,mortality
+,201820,432250,Increase,3.22,6,Final,Increase,diabetes,infection
+,201820,604179,Increase,6.0,6,Final,Increase,diabetes,myocardial infarction (type 1)
+,201820,4310996,Increase,4.52,6,Final,Increase,diabetes,FIRST ISCHEMIC STROKE
+,201820,4171825,Increase,4.52,6,Final,Increase,diabetes,BMI
+,201820,434633,Increase,4.0,6,Final,Increase,diabetes,cardiac autonomic dysbalance
+,46272492,4310996,Increase,3.92,6,Final,Increase,dissection,FIRST ISCHEMIC STROKE
+,31317,432250,Increase,3.22,6,Final,Increase,dysphagia,infection
+,4275208,44784217,Increase,3.76,6,Final,Increase,elevated catecholamines,severe arrrhythmia
+Ghadri 2018,4275208,40479589,Increase,6.0,6,Final,Increase,elevated catecholamines,Takotsubo syndrome
+,4038720,316866,Decrease,3.92,6,Final,Decrease,exercise (cardiac not excessive),hypertension
+Diener 2020,4038720,4310996,Decrease,4.0,6,Final,Decrease,exercise (cardiac not excessive),FIRST ISCHEMIC STROKE
+Strohle et al 2015,4038720,443432,Decrease,3.0,6,Final,Decrease,exercise (cardiac not excessive),kognitive decline
+,4038720,313217,Increase,2.52,6,Final,Increase,exercise (cardiac not excessive),atrial fibrillation
+,4038720,604179,Decrease,2.72,6,Final,Decrease,exercise (cardiac not excessive),myocardial infarction (type 1)
+,4038720,444031,Decrease,3.92,6,Final,Decrease,exercise (cardiac not excessive),chronic heart failure
+Scheitz et al 2014,4310996,4009409,Increase,6.0,6,Final,Increase,FIRST ISCHEMIC STROKE,troponin elevation
+,4310996,4310996,Increase,6.84,6,Final,Increase,FIRST ISCHEMIC STROKE,second ischemic stroke
+Diener 2020,4310996,4306655,Increase,6.0,6,Final,Increase,FIRST ISCHEMIC STROKE,mortality
+scheitz 2018,4310996,442310,Increase,3.0,6,Final,Increase,FIRST ISCHEMIC STROKE,acute heart failure
+,4310996,44800078,Decrease,4.34,6,Final,Decrease,FIRST ISCHEMIC STROKE,higher fitness/mobility post
+,4310996,4199549,Decrease,4.34,6,Final,Decrease,FIRST ISCHEMIC STROKE,higher fitness/mobility post
+,4310996,443432,Increase,4.52,6,Final,Increase,FIRST ISCHEMIC STROKE,kognitive decline
+Thygesen 2018,4310996,37309626,Increase,6.0,6,Final,Increase,FIRST ISCHEMIC STROKE,myocardial infarction (type 2)
+,4310996,440383,Increase,4.61,6,Final,Increase,FIRST ISCHEMIC STROKE,depression
+"Scheitz, Templin 2021 under review",4310996,40479589,Increase,3.0,6,Final,Increase,FIRST ISCHEMIC STROKE,Takotsubo syndrome
+,4310996,432250,Increase,3.22,6,Final,Increase,FIRST ISCHEMIC STROKE,infection
+"Scheitz et al, Sposato 2020",4310996,4275208,Increase,2.0,6,Final,Increase,FIRST ISCHEMIC STROKE,elevated catecholamines
+,4310996,377091,Increase,4.17,6,Final,Increase,FIRST ISCHEMIC STROKE,seizures
+,4310996,31317,Increase,3.22,6,Final,Increase,FIRST ISCHEMIC STROKE,dysphagia
+scheitz et al 2018,4310996,44784217,Increase,6.0,6,Final,Increase,FIRST ISCHEMIC STROKE,severe arrrhythmia
+,44800078,4310996,Increase,4.34,6,Final,Increase,higher fitness/mobility post,second ischemic stroke
+,4199549,4310996,Increase,4.34,6,Final,Increase,higher fitness/mobility post,second ischemic stroke
+,44800078,4310996,Decrease,4.34,6,Final,Decrease,higher fitness/mobility pre,FIRST ISCHEMIC STROKE
+,4199549,4310996,Decrease,4.34,6,Final,Decrease,higher fitness/mobility pre,FIRST ISCHEMIC STROKE
+,44800078,4306655,Decrease,6.0,6,Final,Decrease,higher fitness/mobility pre,mortality
+,4199549,4306655,Decrease,6.0,6,Final,Decrease,higher fitness/mobility pre,mortality
+,432867,604179,Increase,6.84,6,Final,Increase,hyperlipidemia,myocardial infarction (type 1)
+,432867,4310996,Increase,3.22,6,Final,Increase,hyperlipidemia,FIRST ISCHEMIC STROKE
+,316866,604179,Increase,6.84,6,Final,Increase,hypertension,myocardial infarction (type 1)
+,316866,4310996,Increase,5.1,6,Final,Increase,hypertension,FIRST ISCHEMIC STROKE
+,316866,46272492,Increase,3.92,6,Final,Increase,hypertension,dissection
+,316866,444031,Increase,5.1,6,Final,Increase,hypertension,chronic heart failure
+Sandoval 2019,316866,37309626,Increase,4.0,6,Final,Increase,hypertension,myocardial infarction (type 2)
+,316866,442310,Increase,5.1,6,Final,Increase,hypertension,acute heart failure
+,432250,4306655,Increase,3.22,6,Final,Increase,infection,mortality
+Sandoval 2019,432250,37309626,Increase,4.0,6,Final,Increase,infection,myocardial infarction (type 2)
+van der Linden 2017,198124,4009409,Increase,2.0,6,Final,Increase,kidney disease,troponin elevation
+,604179,4310996,Increase,2.68,6,Final,Increase,myocardial infarction (type 1),FIRST ISCHEMIC STROKE
+Rizas et al 2017,604179,434633,Increase,6.0,6,Final,Increase,myocardial infarction (type 1),cardiac autonomic dysbalance
+"thygesen et al 2018, McAloon 2016",604179,4306655,Increase,6.0,6,Final,Increase,myocardial infarction (type 1),mortality
+thygesen et al 2018,604179,44784217,Increase,6.0,6,Final,Increase,myocardial infarction (type 1),severe arrrhythmia
+thygesen et al 2018,604179,4009409,Increase,6.0,6,Final,Increase,myocardial infarction (type 1),troponin elevation
+Thygesen 2018,604179,442310,Increase,6.0,6,Final,Increase,myocardial infarction (type 1),acute heart failure
+Thygesen 2018,604179,42538532,Increase,5.0,6,Final,Increase,myocardial infarction (type 1),cardiac thrombus
+,604179,444031,Increase,6.84,6,Final,Increase,myocardial infarction (type 1),chronic heart failure
+DeFilippis 2019,37309626,4009409,Increase,6.0,6,Final,Increase,myocardial infarction (type 2),troponin elevation
+McCarthy et al 2018,37309626,4306655,Increase,6.0,6,Final,Increase,myocardial infarction (type 2),mortality
+Wiktor 2018,4070299,4310996,Increase,3.0,6,Final,Increase,persistent foramen ovale,FIRST ISCHEMIC STROKE
+,4310996,4306655,Increase,6.0,6,Final,Increase,second ischemic stroke,mortality
+,377091,4306655,Increase,6.54,6,Final,Increase,seizures,mortality
+Faria et al 2020,377091,4009409,Increase,4.0,6,Final,Increase,seizures,troponin elevation
+,44784217,4306655,Increase,6.68,6,Final,Increase,severe arrrhythmia,mortality
+,442985,4298794,Increase,3.84,6,Final,Increase,sex (male),smoking
+,442985,4310996,Increase,4.34,6,Final,Increase,sex (male),FIRST ISCHEMIC STROKE
+,442985,40479589,Decrease,2.68,6,Final,Decrease,sex (male),Takotsubo syndrome
+,4298794,4310996,Increase,6.84,6,Final,Increase,smoking,FIRST ISCHEMIC STROKE
+,4298794,604179,Increase,6.84,6,Final,Increase,smoking,myocardial infarction (type 1)
+,4200516,434633,Increase,2.72,6,Final,Increase,stroke lesion affecting central autonomic network,cardiac autonomic dysbalance
+Scheitz et.al 2018 lancet,4200516,44784217,Increase,6.0,6,Final,Increase,stroke lesion affecting central autonomic network,severe arrrhythmia
+Krause et al 2017,4200516,4009409,Increase,6.0,6,Final,Increase,stroke lesion affecting central autonomic network,troponin elevation
+Scheitz 2018,4200516,4275208,Increase,2.0,6,Final,Increase,stroke lesion affecting central autonomic network,elevated catecholamines
+Ghadri et at 2018,40479589,4009409,Increase,4.0,6,Final,Increase,Takotsubo syndrome,troponin elevation
+scheitz 2014,4009409,44800078,Decrease,3.0,6,Final,Decrease,troponin elevation,higher fitness/mobility post
+scheitz 2014,4009409,4199549,Decrease,3.0,6,Final,Decrease,troponin elevation,higher fitness/mobility post
+broersen et al 2020,4009409,443432,Increase,4.0,6,Final,Increase,troponin elevation,kognitive decline
+,4322978,4310996,Increase,6.84,7,Final,Increase,age,first-ever ischemic stroke occurence
+,442985,4310996,Increase,6.84,7,Final,Increase,sex (being male),first-ever ischemic stroke occurence
+,4171825,4310996,Increase,6.84,7,Final,Increase,BMI,first-ever ischemic stroke occurence
+Gorelick et al (1997),4029305,4310996,Increase,6.0,7,Final,Increase,LDL-cholesterol,first-ever ischemic stroke occurence
+MacMahon et al (1990),316866,4310996,Increase,6.0,7,Final,Increase,blood pressure,first-ever ischemic stroke occurence
+,4171825,4029305,Increase,6.84,7,Final,Increase,BMI,LDL-cholesterol
+,4171825,316866,Increase,6.84,7,Final,Increase,BMI,blood pressure
+,4029305,4306703,Increase,6.84,7,Final,Increase,LDL-cholesterol,atherosclerosis (measured by low ABI)
+,313217,4310996,Increase,6.84,7,Final,Increase,atrial fibrilation,first-ever ischemic stroke occurence
+,4329847,4310996,Increase,4.17,7,Final,Increase,occurence of myocardial infarction,first-ever ischemic stroke occurence
+Shinton et al (1999),4298794,4310996,Increase,6.0,7,Final,Increase,smoking,first-ever ischemic stroke occurence
+Wilhelmsson et al (1975),4298794,4329847,Increase,6.0,7,Final,Increase,smoking,occurence of myocardial infarction
+,4298794,316866,Increase,6.84,7,Final,Increase,smoking,blood pressure
+,4298794,4306703,Increase,6.84,7,Final,Increase,smoking,atherosclerosis (measured by low ABI)
+,4310996,4310996,Increase,6.84,7,Final,Increase,first-ever ischemic stroke occurence,second ischemic stroke occurence
+,4029305,4310996,Increase,6.84,7,Final,Increase,LDL-cholesterol,second ischemic stroke occurence
+,4029305,4310996,Increase,2.58,7,Final,Increase,LDL-cholesterol,second ischemic stroke occurence
+,4322978,4310996,Increase,2.68,7,Final,Increase,age,second ischemic stroke occurence
+,4171825,4310996,Increase,2.68,7,Final,Increase,BMI,second ischemic stroke occurence
+,4306703,4310996,Increase,2.68,7,Final,Increase,atherosclerosis (measured by low ABI),second ischemic stroke occurence
+,313217,4310996,Increase,2.68,7,Final,Increase,atrial fibrilation,second ischemic stroke occurence
+,4329847,4310996,Increase,2.68,7,Final,Increase,occurence of myocardial infarction,second ischemic stroke occurence
+,4298794,4310996,Increase,2.68,7,Final,Increase,smoking,second ischemic stroke occurence
+,4056822,4310996,Decrease,2.68,7,Final,Decrease,anticoagulation medication,first-ever ischemic stroke occurence
+Schneider et al. (2004),4310996,443432,Decrease,2.0,7,Final,Increase,first-ever ischemic stroke occurence,cognitive function
+Snowdon et al. (1997),4310996,443432,Decrease,2.0,7,Final,Increase,second ischemic stroke occurence,cognitive function
+Schneider et al. (2014),4306703,443432,Decrease,2.0,7,Final,Increase,atherosclerosis (measured by low ABI),cognitive function
+Guerchet et al (2011),4322978,443432,Decrease,2.68,7,Final,Increase,age,cognitive function
+,201820,4310996,Increase,2.0,7,Final,Increase,diabetes mellitus,first-ever ischemic stroke occurence
+Kannell et al (1979),201820,4310996,Increase,2.68,7,Final,Increase,diabetes mellitus,second ischemic stroke occurence
+,201820,4329847,Increase,2.68,7,Final,Increase,diabetes mellitus,occurence of myocardial infarction
+,201820,4306703,Increase,2.68,7,Final,Increase,diabetes mellitus,atherosclerosis (measured by low ABI)
+,442985,4306703,Increase,2.68,7,Final,Increase,sex (being male),atherosclerosis (measured by low ABI)
+,4171825,201820,Increase,2.68,7,Final,Increase,BMI,diabetes mellitus
+,4322978,201820,Increase,2.68,7,Final,Increase,age,diabetes mellitus
+,4038720,4310996,Decrease,2.68,7,Final,Decrease,exercise,first-ever ischemic stroke occurence
+,4038720,4171825,Decrease,2.68,7,Final,Decrease,exercise,BMI
+,4038720,4029305,Decrease,0.83,7,Final,Decrease,exercise,LDL-cholesterol
+,4038720,316866,Decrease,3.29,7,Final,Decrease,exercise,blood pressure
+,4038720,4306703,Decrease,0.78,7,Final,Decrease,exercise,atherosclerosis (measured by low ABI)
+,4038720,4329847,Decrease,3.29,7,Final,Decrease,exercise,occurence of myocardial infarction
+,4038720,4310996,Decrease,3.29,7,Final,Decrease,exercise,second ischemic stroke occurence
+,4038720,201820,Decrease,3.6,7,Final,Decrease,exercise,diabetes mellitus
+,43020873,4310996,Increase,3.6,7,Final,Increase,infectious endocarditis,first-ever ischemic stroke occurence
+,4074035,4310996,Increase,3.6,7,Final,Increase,alcohol consumption,first-ever ischemic stroke occurence
+,4074035,4310996,Increase,1.46,7,Final,Increase,alcohol consumption,second ischemic stroke occurence
+,4074035,316866,Increase,1.46,7,Final,Increase,alcohol consumption,blood pressure
+,4322978,4074035,Increase,0.89,7,Final,Increase,age,alcohol consumption
+,442985,4074035,Increase,1.81,7,Final,Increase,sex (being male),alcohol consumption
+,4251306,4310996,Increase,2.58,7,Final,Increase,stress,first-ever ischemic stroke occurence
+,4251306,316866,Increase,2.58,7,Final,Increase,stress,blood pressure
+,4251306,4329847,Increase,2.58,7,Final,Increase,stress,occurence of myocardial infarction
+,4251306,4298794,Increase,1.11,7,Final,Increase,stress,smoking
+,4251306,4310996,Increase,1.11,7,Final,Increase,stress,second ischemic stroke occurence
+,4251306,4074035,Increase,1.11,7,Final,Increase,stress,alcohol consumption
+,4251306,4306703,Increase,1.11,7,Final,Increase,stress,atherosclerosis (measured by low ABI)
+,201820,443432,Decrease,2.0,7,Final,Increase,diabetes mellitus,cognitive function
+Knopman et al (2001),4201029,4310996,Decrease,1.0,7,Final,Decrease,statin use,first-ever ischemic stroke occurence
+Hebert et al (1997),4201029,4029305,Decrease,4.8,7,Final,Decrease,statin use,LDL-cholesterol
+,4201029,4306703,Decrease,1.4,7,Final,Decrease,statin use,atherosclerosis (measured by low ABI)
+,4201029,4329847,Decrease,2.86,7,Final,Decrease,statin use,occurence of myocardial infarction
+,37167374,4310996,Increase,2.0,7,Final,Increase,Lipoprotein a,first-ever ischemic stroke occurence
+Nave et al (2015),37167374,4306703,Increase,2.68,7,Final,Increase,Lipoprotein a,atherosclerosis (measured by low ABI)
+,4306703,4310996,Increase,5.0,7,Final,Increase,atherosclerosis (measured by low ABI),first-ever ischemic stroke occurence
+Hong et al. (2016),316866,443432,Decrease,2.68,7,Final,Increase,blood pressure,cognitive function
+Knopman et al (2001),4146455,4310996,Decrease,2.68,7,Final,Decrease,antihypertensive medicatio,first-ever ischemic stroke occurence
+Collins et al (1990),4146455,4329847,Decrease,2.68,7,Final,Decrease,antihypertensive medicatio,occurence of myocardial infarction
+Collins et al (1990),4171825,4306703,Increase,2.68,7,Final,Increase,BMI,atherosclerosis (measured by low ABI)
+McGill et al (2002),4171825,4329847,Increase,2.68,7,Final,Increase,BMI,occurence of myocardial infarction
+Burn et al. (1994),4310996,4310996,Increase,6.84,9,Final,Increase,first ischemic stroke,second ischemic stroke
+Brønnum-Hansen et al. (2001),4310996,4306655,Increase,6.84,9,Final,Increase,first ischemic stroke,mortality
+Hankey et al. (2002),4310996,4052648,Increase,6.84,9,Final,Increase,first ischemic stroke,disability
+Davenport et al. (1996),4310996,255848,Increase,6.0,9,Final,Increase,first ischemic stroke,pneumonia
+Johnston et al. (1998),4310996,81902,Increase,6.0,9,Final,Increase,first ischemic stroke,urinary tract infection
+Davenport et al. (1996),255848,4306655,Increase,6.0,9,Final,Increase,pneumonia,mortality
+Finlayson et al. (2011),4310996,4306655,Increase,2.68,9,Final,Increase,second ischemic stroke,mortality
+Poisson et al. (2010),4310996,4052648,Increase,2.68,9,Final,Increase,second ischemic stroke,disability
+Ersoz et al. (2007),4181165,81902,Increase,6.0,9,Final,Increase,urinary catheter placement,urinary tract infection
+van der Worp & Kappelle (1998),4310996,4224118,Increase,6.0,9,Final,Increase,first ischemic stroke,bladder dysfunction
+,4310996,4181165,Increase,2.0,9,Final,Increase,first ischemic stroke,urinary catheter placement
+Poisson et al. (2010),4224118,81902,Increase,2.68,9,Final,Increase,bladder dysfunction,urinary tract infection
+,4310996,4242843,Increase,0.51,9,Final,Increase,first ischemic stroke,immunosuppression
+Maki & Tambyah (2001),4242843,81902,Increase,0.51,9,Final,Increase,immunosuppression,urinary tract infection
+Gould et al. (2010),442985,81902,Increase,6.0,9,Final,Decrease,sex(female),urinary tract infection
+Kong & Young (2000),4322978,81902,Increase,6.0,9,Final,Increase,age,urinary tract infection
+Poisson et al. (2010),4322978,4310996,Increase,6.0,9,Final,Increase,age,first ischemic stroke
+,81902,4306655,Increase,0.51,9,Final,Increase,urinary tract infection,mortality
+Poisson et al. (2010),81902,4052648,Increase,0.51,9,Final,Increase,urinary tract infection,disability
+Poisson et al. (2010),4310996,4178904,Increase,0.51,9,Final,Increase,first ischemic stroke,body temperature
+Azzimondi et al. (1995),81902,4178904,Increase,6.84,9,Final,Increase,urinary tract infection,body temperature
+Boysen & Christensen (2001),255848,4178904,Increase,6.84,9,Final,Increase,pneumonia,body temperature
+,4178904,4306655,Increase,0.51,9,Final,Increase,body temperature,mortality
+,4178904,4052648,Increase,0.51,9,Final,Increase,body temperature,disability
+Jauch et al. (2013),4310996,373995,Increase,0.51,9,Final,Increase,first ischemic stroke,delirium
+Jauch et al. (2013),4322978,373995,Increase,6.84,9,Final,Increase,age,delirium
+Oldenbeuving et al. (2007),81902,373995,Increase,0.51,9,Final,Increase,urinary tract infection,delirium
+Oldenbeuving et al. (2007),255848,373995,Increase,0.51,9,Final,Increase,pneumonia,delirium
+Oldenbeuving et al. (2007),373995,4052648,Increase,0.51,9,Final,Increase,delirium,disability
+Oldenbeuving et al. (2007),4143576,373995,Decrease,0.51,9,Final,Decrease,stroke unit care,delirium
+Oldenbeuving et al. (2007),4224118,4181165,Increase,0.51,9,Final,Increase,bladder dysfunction,urinary catheter placement
+Oldenbeuving et al. (2007),4322978,255848,Increase,2.68,9,Final,Increase,age,pneumonia
+,255848,4052648,Increase,0.51,9,Final,Increase,pneumonia,disability
+Finlayson et al. (2011),4310996,31317,Increase,6.0,9,Final,Increase,first ischemic stroke,dysphagia
+Finlayson et al. (2011),31317,255848,Increase,6.84,9,Final,Increase,dysphagia,pneumonia
+Martino et al. (2005),31317,4033232,Increase,6.84,9,Final,Increase,dysphagia,aspiration
+Martino et al. (2005),4033232,255848,Increase,6.84,9,Final,Increase,aspiration,pneumonia
+Martino et al. (2005),4298794,4310996,Increase,6.84,9,Final,Increase,smoking,first ischemic stroke
+Martino et al. (2005),4298794,4310996,Increase,6.84,9,Final,Increase,smoking,second ischemic stroke
+,442985,4310996,Increase,6.84,9,Final,Increase,sex(male),first ischemic stroke
+,313217,4310996,Increase,6.84,9,Final,Increase,atrial fibrillation,first ischemic stroke
+,4171825,4310996,Increase,6.84,9,Final,Increase,BMI,first ischemic stroke
+,313217,4310996,Increase,6.84,9,Final,Increase,atrial fibrillation,second ischemic stroke
+,4171825,4310996,Increase,6.84,9,Final,Increase,BMI,second ischemic stroke
+,316866,4310996,Increase,6.84,9,Final,Increase,blood pressure,first ischemic stroke
+,316866,4310996,Increase,6.84,9,Final,Increase,blood pressure,second ischemic stroke
+,4322978,316866,Increase,6.84,9,Final,Increase,age,blood pressure
+,4322978,4298794,Decrease,2.93,9,Final,Decrease,age,smoking
+,4310996,4143576,Increase,6.84,9,Final,Increase,first ischemic stroke,stroke unit care
+,432867,4310996,Increase,6.84,9,Final,Increase,blood lipids,first ischemic stroke
+Jauch et al. (2013),201820,4310996,Increase,6.84,9,Final,Increase,diabetes,first ischemic stroke
+,4310996,4275337,Increase,6.0,9,Final,Increase,first ischemic stroke,blood glucose
+Khoury et al. (2013),201820,4275337,Increase,6.0,9,Final,Increase,diabetes,blood glucose
+Jauch et al. (2013),4322978,201820,Increase,2.68,9,Final,Increase,age,diabetes
+,4171825,201820,Increase,2.68,9,Final,Increase,BMI,diabetes
+,442985,4298794,Increase,2.68,9,Final,Increase,sex(male),smoking
+Langhorne et al. (2020),4143576,4306655,Decrease,4.71,9,Final,Decrease,stroke unit care,mortality
+Langhorne et al. (2020),4143576,4052648,Decrease,4.17,9,Final,Decrease,stroke unit care,disability
+Touzé et al. (2005),4310996,4329847,Increase,1.0,9,Final,Increase,first ischemic stroke,myocardial infarction
+,4329847,4306655,Increase,6.0,9,Final,Increase,myocardial infarction,mortality
+Sulter et al. (2000),4310996,40486533,Decrease,5.0,9,Final,Decrease,first ischemic stroke,oxygen saturation
+Rowat et al. (2006),4156503,40486533,Increase,0.51,9,Final,Increase,patient positioning,oxygen saturation
+Rowat et al. (2001),255848,40486533,Decrease,6.84,9,Final,Decrease,pneumonia,oxygen saturation
+,4322978,40486533,Decrease,0.51,9,Final,Decrease,age,oxygen saturation
+Sulter et al. (2000),31317,40486533,Decrease,0.51,9,Final,Decrease,dysphagia,oxygen saturation
+Sulter et al. (2000),40486533,4306655,Decrease,0.51,9,Final,Decrease,oxygen saturation,mortality
+Rowat et al. (2006),4310996,36713755,Increase,6.0,9,Final,Increase,first ischemic stroke,dependency
+,4052648,36713755,Increase,6.0,9,Final,Increase,disability,dependency
+,31317,36713755,Increase,2.68,9,Final,Increase,dysphagia,dependency
+Martino et al. (2005),4310996,197672,Increase,2.68,9,Final,Increase,first ischemic stroke,urinary incontinence
+Nakayama et al. (1997),4322978,197672,Increase,2.68,9,Final,Increase,age,urinary incontinence
+Nakayama et al. (1997),197672,36713755,Increase,2.68,9,Final,Increase,urinary incontinence,dependency
+Patel et al. (2001),201820,197672,Increase,0.51,9,Final,Increase,diabetes,urinary incontinence
+,197672,4181165,Increase,0.51,9,Final,Increase,urinary incontinence,urinary catheter placement
+,4310996,440377,Increase,6.84,9,Final,Increase,first ischemic stroke,paralysis
+,440377,4052648,Increase,6.84,9,Final,Increase,paralysis,disability
+,440377,36713755,Increase,6.84,9,Final,Increase,paralysis,dependency
+,4310996,4133004,Increase,6.84,9,Final,Increase,first ischemic stroke,deep vein thrombosis
+Kappelle et al. (2011),440377,4133004,Increase,6.84,9,Final,Increase,paralysis,deep vein thrombosis
+Kappelle et al. (2011),4133004,440417,Increase,6.84,9,Final,Increase,deep vein thrombosis,pulmonary embolism
+,440417,4306655,Increase,6.84,9,Final,Increase,pulmonary embolism,mortality
+,440417,40486533,Decrease,6.84,9,Final,Decrease,pulmonary embolism,oxygen saturation
+,440377,255848,Increase,2.0,9,Final,Increase,paralysis,pneumonia
+,4310996,4059015,Increase,6.0,9,Final,Increase,first ischemic stroke,falls
+Wei et al. (2019),4322978,4059015,Increase,2.68,9,Final,Increase,age,falls
+,197672,4059015,Increase,2.68,9,Final,Increase,urinary incontinence,falls
+,373995,4059015,Increase,2.68,9,Final,Increase,delirium,falls
+,4059015,75053,Increase,2.0,9,Final,Increase,falls,fractures
+Melton et al. (2001),4310996,75053,Increase,2.68,9,Final,Increase,first ischemic stroke,fractures
+Kanis et al. (2001),75053,4052648,Increase,0.51,9,Final,Increase,fractures,disability
+,75053,36713755,Increase,0.51,9,Final,Increase,fractures,dependency
+,4038720,4310996,Increase,6.84,9,Final,Increase,physical activity,first ischemic stroke
+low or very high,4074035,4310996,Increase,3.84,9,Final,Increase,alcohol consumption,first ischemic stroke
+,4306703,4310996,Increase,6.0,9,Final,Increase,atherosclerosis,first ischemic stroke
+,432867,4310996,Increase,6.0,9,Final,Increase,blood lipids,second ischemic stroke
+,4074035,4310996,Increase,3.0,9,Final,Increase,alcohol consumption,second ischemic stroke
+,4038720,4310996,Increase,6.0,9,Final,Increase,physical activity,second ischemic stroke
+,4268546,4310996,Decrease,1.0,9,Final,Decrease,education,first ischemic stroke
+Reshetnyak et al. (2020),4249447,4310996,Decrease,1.0,9,Final,Decrease,income,first ischemic stroke
+Reshetnyak et al. (2020),4309238,4310996,Increase,0.51,9,Final,Increase,social isolation,first ischemic stroke
+Reshetnyak et al. (2020),373503,4310996,Increase,6.84,9,Final,Increase,TIA,first ischemic stroke
+O'Donnell et al. 2016,4298794,4310996,Increase,6.84,10,Final,Increase,Smoking,first ischemic stroke
+O'Donnell et al. 2016,201820,4310996,Increase,6.84,10,Final,Increase,Diabetes mellitus,first ischemic stroke
+O'Donnell et al. 2016,4038720,4310996,Decrease,6.84,10,Final,Decrease,moderate physical activity,first ischemic stroke
+,4038720,201820,Decrease,6.84,10,Final,Decrease,moderate physical activity,Diabetes mellitus
+"O'Donnell et al. 2016, Paterson et al. 2018",37150978,4310996,Decrease,6.84,10,Final,Decrease,healthy (mediterranean) diet,first ischemic stroke
+,37150978,201820,Decrease,3.92,10,Final,Decrease,healthy (mediterranean) diet,Diabetes mellitus
+"Ebrahim et al., 2006",4029305,4310996,Increase,6.0,10,Final,Increase,hyperlipoproteinemia (high LDL),first ischemic stroke
+,313217,4310996,Increase,6.84,10,Final,Increase,atrial fibrillation,first ischemic stroke
+,37016924,4310996,Increase,6.84,10,Final,Increase,dissection of cerebral vessel,first ischemic stroke
+,4306703,4310996,Increase,6.84,10,Final,Increase,atherosclerosis,first ischemic stroke
+,4029305,4306703,Increase,6.84,10,Final,Increase,hyperlipoproteinemia (high LDL),atherosclerosis
+,4169009,4310996,Increase,6.84,10,Final,Increase,positive familiy history of cardio/cerebrovascular events,first ischemic stroke
+,4148407,4310996,Increase,6.84,10,Final,Increase,positive familiy history of cardio/cerebrovascular events,first ischemic stroke
+,4217691,4310996,Increase,4.17,10,Final,Increase,stenoses of cerebral vessels,first ischemic stroke
+,4306703,4217691,Increase,6.84,10,Final,Increase,atherosclerosis,stenoses of cerebral vessels
+,37016924,4217691,Increase,6.84,10,Final,Increase,dissection of cerebral vessel,stenoses of cerebral vessels
+In patients where no other risk factors are found and the PFO shows a right-->left shunt and shows a hypermobile septum,4070299,4310996,Increase,3.52,10,Final,Increase,patent foramen ovale (PFO),first ischemic stroke
+Bushnell at el. 2014,4241216,4310996,Increase,3.0,10,Final,Increase,oral contraceptives,first ischemic stroke
+in women with other cardiovascular risk factors or vessels that are sensitive to homonal changes,440383,4310996,Increase,3.0,10,Final,Increase,depression,first ischemic stroke
+"O'Donnell et al., 2010",44784326,4310996,Increase,3.52,10,Final,Increase,antidepressive medication,first ischemic stroke
+,440383,44784326,Increase,3.52,10,Final,Increase,depression,antidepressive medication
+,3655005,4310996,Decrease,6.0,10,Final,Decrease,antiplatelet therapy (e.g. ASS),first ischemic stroke
+In patients with high cardiovascular risk profile,4201029,4310996,Decrease,6.84,10,Final,Decrease,Statins,first ischemic stroke
+"In patients with high cardiovascular risk profile, especially high LDL-Cholesterine",4201029,4029305,Decrease,6.0,10,Final,Decrease,Statins,hyperlipoproteinemia (high LDL)
+"Law et al., 2003",4310996,4310996,Increase,6.0,10,Final,Increase,first ischemic stroke,second ischemic stroke
+"Khanevski et al., 2019",4322978,4029305,Increase,4.34,10,Final,Increase,age,hyperlipoproteinemia (high LDL)
+,4322978,313217,Increase,6.84,10,Final,Increase,age,atrial fibrillation
+,4322978,4070299,Decrease,3.68,10,Final,Decrease,age,patent foramen ovale (PFO)
+,4322978,4310996,Increase,6.84,10,Final,Increase,age,first ischemic stroke
+,316866,4310996,Increase,6.84,10,Final,Increase,arterial hypertension,first ischemic stroke
+O'Donnell et al 2016,4322978,4306655,Increase,6.0,10,Final,Increase,age,death (all causes)
+,4322978,316866,Increase,6.84,10,Final,Increase,age,arterial hypertension
+,4322978,4310996,Increase,6.0,10,Final,Increase,age,second ischemic stroke
+"Khanevski et al., 2019",4298794,4310996,Increase,6.84,10,Final,Increase,Smoking,second ischemic stroke
+,201820,4310996,Increase,6.84,10,Final,Increase,Diabetes mellitus,second ischemic stroke
+,4029305,4310996,Increase,6.84,10,Final,Increase,hyperlipoproteinemia (high LDL),second ischemic stroke
+,4038720,4310996,Decrease,6.84,10,Final,Decrease,moderate physical activity,second ischemic stroke
+,37150978,4310996,Decrease,6.84,10,Final,Decrease,healthy (mediterranean) diet,second ischemic stroke
+,313217,4310996,Increase,6.84,10,Final,Increase,atrial fibrillation,second ischemic stroke
+,37016924,4310996,Increase,6.84,10,Final,Increase,dissection of cerebral vessel,second ischemic stroke
+,4306703,4310996,Increase,6.84,10,Final,Increase,atherosclerosis,second ischemic stroke
+,4169009,4310996,Increase,3.6,10,Final,Increase,positive familiy history of cardio/cerebrovascular events,second ischemic stroke
+,4148407,4310996,Increase,3.6,10,Final,Increase,positive familiy history of cardio/cerebrovascular events,second ischemic stroke
+,4217691,4310996,Increase,3.6,10,Final,Increase,stenoses of cerebral vessels,second ischemic stroke
+,3655005,4310996,Decrease,6.0,10,Final,Decrease,antiplatelet therapy (e.g. ASS),second ischemic stroke
+Kernan et al. 2014,4201029,4310996,Decrease,6.0,10,Final,Decrease,Statins,second ischemic stroke
+"Amarenco et al., 2020",4310996,37110522,Increase,5.31,10,Final,Increase,first ischemic stroke,post stroke epilepsy
+Browne and Holmes 2001,4310996,37110522,Increase,6.84,10,Final,Increase,second ischemic stroke,post stroke epilepsy
+Browne and Holmes 2001,42872750,37110522,Increase,6.0,10,Final,Increase,stroke severity (e.g. measured by NIHSS),post stroke epilepsy
+"Slapo et al., 2006",37110522,3654822,Increase,4.0,10,Final,Increase,post stroke epilepsy,functional outcome (e.g. measured by mRS)
+Arntz et al. 2013,42872750,3654822,Increase,4.26,10,Final,Increase,stroke severity (e.g. measured by NIHSS),functional outcome (e.g. measured by mRS)
+Arntz et al. 2013,433736,4310996,Increase,5.76,10,Final,Increase,obesity,first ischemic stroke
+,433736,4310996,Increase,5.76,10,Final,Increase,obesity,second ischemic stroke
+"Kernan et al., 2014 (AHA/ASA Guideline)",313459,4310996,Increase,5.76,10,Final,Increase,sleep apnea,first ischemic stroke
+"Kernan et al., 2014 (AHA/ASA Guideline)",313459,4310996,Increase,5.76,10,Final,Increase,sleep apnea,second ischemic stroke
+"Kernan et al., 2014 (AHA/ASA Guideline)",433736,313459,Increase,3.29,10,Final,Increase,obesity,sleep apnea
+"Kernan et al., 2014 (AHA/ASA Guideline)",4056822,4310996,Decrease,6.84,10,Final,Decrease,anticoagulation,first ischemic stroke
+,4056822,4310996,Decrease,6.84,10,Final,Decrease,anticoagulation,second ischemic stroke
+Kernan et al. 2014 (for some patients patients with atrial fibrillation and some patients with thrombophilia),4249447,4306655,Increase,4.43,10,Final,Decrease,low socioeconomic status,death (all causes)
+Kernan et al. 2014 (for patients patients with atrial fibrillation and some patients with thrombophilia),37110522,4306655,Increase,6.26,10,Final,Increase,post stroke epilepsy,death (all causes)
+"Vivanco-Hidalgo et al., 2019",316866,4310996,Increase,6.0,10,Final,Increase,arterial hypertension,second ischemic stroke
+Arrich et al. 2005,316866,4306703,Increase,5.53,10,Final,Increase,arterial hypertension,atherosclerosis
+Burneo et al. 2009,442985,4241216,Increase,4.52,10,Final,Decrease,female sex,oral contraceptives
+"Khanevsky et al., 2019",442985,440383,Increase,4.52,10,Final,Decrease,female sex,depression
+,442985,4310996,Decrease,4.43,10,Final,Increase,female sex,first ischemic stroke
+,442985,4310996,Decrease,4.43,10,Final,Increase,female sex,second ischemic stroke
+Bushnell et al. 2014,442985,381549,Increase,4.43,10,Final,Decrease,female sex,migraine with aura
+Bushnell et al. 2014,381549,4310996,Increase,4.43,10,Final,Increase,migraine with aura,first ischemic stroke
+Bushnell et al. 2014,381549,4310996,Increase,3.84,10,Final,Increase,migraine with aura,second ischemic stroke
+Bushnell et al. 2014,442985,316866,Increase,3.84,10,Final,Decrease,female sex,arterial hypertension
+Bushnell et al. 2014,4241216,4310996,Increase,4.08,10,Final,Increase,oral contraceptives,second ischemic stroke
+Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",second ischemic stroke
+Bushnell et al. 2014,42538946,4310996,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",second ischemic stroke
+Bushnell et al. 2014,37018765,4310996,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",second ischemic stroke
+Bushnell et al. 2014,439393,4310996,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",first ischemic stroke
+Bushnell et al. 2014,42538946,4310996,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",first ischemic stroke
+Bushnell et al. 2014,37018765,4310996,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",first ischemic stroke
+Bushnell et al. 2014,439393,316866,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",arterial hypertension
+Bushnell et al. 2014,42538946,316866,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",arterial hypertension
+Bushnell et al. 2014,37018765,316866,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",arterial hypertension
+Bushnell et al. 2014,439393,201820,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Diabetes mellitus
+Bushnell et al. 2014,42538946,201820,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Diabetes mellitus
+Bushnell et al. 2014,37018765,201820,Increase,4.08,10,Final,Increase,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)",Diabetes mellitus
+Bushnell et al. 2014,442985,439393,Increase,6.84,10,Final,Decrease,female sex,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
+Bushnell et al. 2014,442985,42538946,Increase,6.84,10,Final,Decrease,female sex,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
+Bushnell et al. 2014,442985,37018765,Increase,6.84,10,Final,Decrease,female sex,"preeclampsia and other pregancy related complications (e.g. arterial hypertension, diabetes)"
+Bushnell et al. 2014,4038720,433736,Decrease,6.84,10,Final,Decrease,moderate physical activity,obesity
+Bushnell et al. 2014,37150978,433736,Decrease,6.84,10,Final,Decrease,healthy (mediterranean) diet,obesity
+Bushnell et al. 2014,42872750,4306655,Increase,6.84,10,Final,Increase,stroke severity (e.g. measured by NIHSS),death (all causes)
+,4310996,4306655,Increase,6.26,10,Final,Increase,first ischemic stroke,death (all causes)
+,4310996,4306655,Increase,6.26,10,Final,Increase,second ischemic stroke,death (all causes)
+,440383,4306655,Increase,5.53,10,Final,Increase,depression,death (all causes)
+"Khanevski et al., 2019",4038720,381549,Decrease,4.17,10,Final,Decrease,moderate physical activity,migraine with aura
+"Khanevski et al., 2019",37150978,4306655,Decrease,5.42,10,Final,Decrease,healthy (mediterranean) diet,death (all causes)
+,433736,4306655,Increase,5.42,10,Final,Increase,obesity,death (all causes)
+,4298794,4306655,Increase,5.42,10,Final,Increase,Smoking,death (all causes)
+"Bushnell et al., 2014",4038720,4306655,Decrease,5.42,10,Final,Decrease,moderate physical activity,death (all causes)
+"Bushnell et al., 2014",313217,4306655,Increase,5.42,10,Final,Increase,atrial fibrillation,death (all causes)
+"Bushnell et al., 2014",313217,42872750,Increase,6.84,10,Final,Increase,atrial fibrillation,stroke severity (e.g. measured by NIHSS)
+"Bushnell et al., 2014",313217,4056822,Increase,6.84,10,Final,Increase,atrial fibrillation,anticoagulation
+"Goldstein et al., 2011",4306703,3655005,Increase,6.84,10,Final,Increase,atherosclerosis,antiplatelet therapy (e.g. ASS)
+"Goldstein et al., 2011",4217691,3655005,Increase,6.84,10,Final,Increase,stenoses of cerebral vessels,antiplatelet therapy (e.g. ASS)
+,4298794,4306703,Increase,6.84,10,Final,Increase,Smoking,atherosclerosis
+,4298794,4217691,Increase,6.84,10,Final,Increase,Smoking,stenoses of cerebral vessels
+,313459,316866,Increase,4.52,10,Final,Increase,sleep apnea,arterial hypertension
+,201820,316866,Increase,4.52,10,Final,Increase,Diabetes mellitus,arterial hypertension
+,4249447,4298794,Increase,4.0,10,Final,Decrease,low socioeconomic status,Smoking
+,4249447,316866,Increase,4.08,10,Final,Decrease,low socioeconomic status,arterial hypertension
+,4249447,37150978,Decrease,4.08,10,Final,Increase,low socioeconomic status,healthy (mediterranean) diet
+Marshall et al. 2015,4249447,4038720,Decrease,4.08,10,Final,Increase,low socioeconomic status,moderate physical activity
+Marshall et al. 2015,4249447,4310996,Increase,4.08,10,Final,Decrease,low socioeconomic status,first ischemic stroke
+Marshall et al. 2015,4249447,4310996,Increase,4.08,10,Final,Decrease,low socioeconomic status,second ischemic stroke
+Marshall et al. 2015,4249447,440383,Increase,5.53,10,Final,Decrease,low socioeconomic status,depression
+Marshall et al. 2015,4200516,3654822,Increase,5.53,10,Final,Increase,cortical involvement or strategical localisation of stroke lesion,functional outcome (e.g. measured by mRS)
+Marshall et al. 2015,4200516,37110522,Increase,5.53,10,Final,Increase,cortical involvement or strategical localisation of stroke lesion,post stroke epilepsy
+Lorant et al. 2013,4310996,3654822,Increase,5.0,10,Final,Increase,second ischemic stroke,functional outcome (e.g. measured by mRS)
+"Asplund et al, Stroke 2009",4322978,4310996,Increase,6.0,11,Final,Increase,age,first ischemic stroke
+40:2319-2326,442985,4310996,Increase,5.0,11,Final,Increase,male sex,first ischemic stroke
+"Bushnell et al., JCBF2018",316866,4310996,Increase,5.0,11,Final,Increase,hypertension,first ischemic stroke
+38: 2179–2191)postmenopausal vs premenopausal,436940,4310996,Increase,6.0,11,Final,Increase,metabolic syndrom,first ischemic stroke
+"Cipolla et al., JCBF2018",4180169,4310996,Increase,6.0,11,Final,Increase,inflammation,first ischemic stroke
+38:2129-2149,4180169,4068351,Increase,6.0,11,Final,Decrease,inflammation,blood-brain barrier breakdown
+"includes diabetes, hyperlipoproteinemia, obesity (Sol M Rodriguez-Colon, stroke 2009",4068351,4310996,Increase,6.0,11,Final,Decrease,blood-brain barrier breakdown,first ischemic stroke
+40:200-205),436940,4232457,Increase,6.0,11,Final,Increase,metabolic syndrom,white matter hyperintensities (MRI)
+"Bernardo-Castro et al., Front Neurol 2020",4232457,4310996,Increase,6.0,11,Final,Increase,white matter hyperintensities (MRI),first ischemic stroke
+doi: 10.3389/fneur.2020.594672,4038720,4310996,Decrease,0.51,11,Final,Decrease,exercise,first ischemic stroke
+"Bernardo-Castro et al., Front Neurol 2020",4038720,436940,Decrease,0.51,11,Final,Decrease,exercise,metabolic syndrom
+doi: 10.3389/fneur.2020.594672,4038720,316866,Decrease,0.51,11,Final,Decrease,exercise,hypertension
+"Bernardo-Catro et al., 2020",316866,4232457,Increase,4.8,11,Final,Increase,hypertension,white matter hyperintensities (MRI)
+"Frey et al, Front Neurol 2019",4298794,4310996,Increase,5.31,11,Final,Increase,smoking,first ischemic stroke
+doi: 10.3389/fneur.2019.00238,4298794,4232457,Increase,5.0,11,Final,Increase,smoking,white matter hyperintensities (MRI)
+"Ryu et al., Brain 2017 doi: 10.1093/brain/aww259",4306703,4232457,Increase,6.0,11,Final,Increase,atherosclerosis,white matter hyperintensities (MRI)
+,436940,4306703,Increase,6.0,11,Final,Increase,metabolic syndrom,atherosclerosis
+,4231363,4310996,Increase,6.0,11,Final,Increase,atherosclerosis/thrombosis,first ischemic stroke
+,4306703,4310996,Increase,6.0,11,Final,Increase,atherosclerosis/thrombosis,first ischemic stroke
+,4024552,4310996,Increase,6.0,11,Final,Increase,cardiac dysfunction,first ischemic stroke
+120 versus 135 systolic blood pressure,4024552,4232457,Increase,6.54,11,Final,Increase,cardiac dysfunction,white matter hyperintensities (MRI)
+,4306703,4178903,Increase,6.0,11,Final,Increase,atherosclerosis,vessel stenosis/occlusion
+,4306703,4217691,Increase,6.0,11,Final,Increase,atherosclerosis,vessel stenosis/occlusion
+"Power et al., Neurology 2015",4178903,4232457,Increase,6.13,11,Final,Increase,vessel stenosis/occlusion,white matter hyperintensities (MRI)
+"Power et al., Neurology 2015",4217691,4232457,Increase,6.13,11,Final,Increase,vessel stenosis/occlusion,white matter hyperintensities (MRI)
+84:841-848,4178903,4310996,Increase,6.0,11,Final,Increase,vessel stenosis/occlusion,first ischemic stroke
+84:841-848,4217691,4310996,Increase,6.0,11,Final,Increase,vessel stenosis/occlusion,first ischemic stroke
+,4306703,4192115,Increase,3.0,11,Final,Increase,atherosclerosis,vulnerable plaques
+"Sun et al., Sci Rep 2016 doi: 10.1038/srep33246",4192115,4310996,Increase,6.0,11,Final,Increase,vulnerable plaques,first ischemic stroke
+"Famakin et al., Stroke 2009 doi: 10.1161/STROKEAHA.108.546150",4192115,4232457,Increase,6.84,11,Final,Increase,vulnerable plaques,white matter hyperintensities (MRI)
+"myocardial infarction, coronary heart disease, cardiac failure Folsom et al., Stroke 2013",4194238,4192115,Decrease,1.0,11,Final,Decrease,endarterectomy,vulnerable plaques
+44:961-967,4194238,4178903,Decrease,2.0,11,Final,Decrease,endarterectomy,vessel stenosis/occlusion
+44:961-967,4194238,4217691,Decrease,2.0,11,Final,Decrease,endarterectomy,vessel stenosis/occlusion
+"myocardial infarction, coronary heart disease, cardiac failure",606770,4310996,Increase,3.0,11,Final,Increase,kidney function,first ischemic stroke
+"Hoshino et al., Jama Neurol 2018 doi: 10.1001/jamaneurol.2017.3960",606770,4232457,Increase,5.0,11,Final,Increase,kidney function,white matter hyperintensities (MRI)
+,436940,606770,Increase,6.0,11,Final,Increase,metabolic syndrom,kidney function
+"Adams et al., Stroke 1993",7,4310996,Increase,4.0,11,Final,Increase,enlarged perivascular spaces,first ischemic stroke
+24:35-41,37109909,4232457,Increase,6.0,11,Final,Increase,microbleeds,white matter hyperintensities (MRI)
+,439393,4310996,Increase,6.84,11,Final,Increase,preeclampsia/eclampsia,first ischemic stroke
+,443700,4310996,Increase,6.84,11,Final,Increase,preeclampsia/eclampsia,first ischemic stroke
+"Kassem et al., Ann Transl Med 2020 doi: 10.21037/atm-2020-cass-16",4216292,4310996,Increase,6.68,11,Final,Increase,race,first ischemic stroke
+,439393,316866,Increase,6.0,11,Final,Increase,preeclampsia/eclampsia,hypertension
+,443700,316866,Increase,6.0,11,Final,Increase,preeclampsia/eclampsia,hypertension
+"Cochrane Database Syst Rev. 2020, doi: 10.1002/14651858.CD000515.pub",4166231,4310996,Increase,5.53,11,Final,Increase,genetic factors,first ischemic stroke
+,4180169,4232457,Increase,6.13,11,Final,Increase,inflammation,white matter hyperintensities (MRI)
+"Kelley et al., Stroke 2020 doi: 10.1161/STROKEAHA.120.030045",432250,4310996,Increase,5.2,11,Final,Increase,infection,first ischemic stroke
+"Kim et al., Sci Rep 2019 doi: 10.1038/s41598-019-45109-y",432250,4180169,Increase,5.42,11,Final,Increase,infection,inflammation
+,4180169,4295287,Increase,5.42,11,Final,Increase,inflammation,coagulopathy
+"Ballerini et al., Neuroimage Clin 2020 doi: 10.1016/j.nicl.2019.102120",4295287,4310996,Increase,6.84,11,Final,Increase,coagulopathy,first ischemic stroke
+,4310996,4310996,Increase,6.39,13,Draft,Increase,first ischemic stroke,second ischemic stroke
+,4306703,4310996,Increase,5.0,13,Draft,Increase,atherosclerosis,first ischemic stroke
+,4306703,4310996,Increase,5.0,13,Draft,Increase,atherosclerosis,second ischemic stroke
+,313217,4310996,Increase,4.26,13,Draft,Increase,atrial fibrillation,second ischemic stroke
+,313217,4310996,Increase,4.26,13,Draft,Increase,atrial fibrillation,first ischemic stroke
+,443392,4310996,Increase,4.08,13,Draft,Increase,cancer,first ischemic stroke
+,4137275,4310996,Increase,5.2,13,Draft,Increase,vaskulitis,first ischemic stroke
+,4137275,4310996,Increase,5.2,13,Draft,Increase,vaskulitis,second ischemic stroke
+,443392,4310996,Increase,5.2,13,Draft,Increase,cancer,second ischemic stroke
+,4273629,4310996,Increase,5.2,13,Draft,Increase,chemotherapy,first ischemic stroke
+,4273629,4310996,Increase,5.2,13,Draft,Increase,chemotherapy,second ischemic stroke
+,443392,4273629,Increase,5.2,13,Draft,Increase,cancer,chemotherapy
+,4102202,4310996,Increase,5.2,13,Draft,Increase,sinus venous thrombosis,first ischemic stroke
+,4102202,4310996,Increase,5.2,13,Draft,Increase,sinus venous thrombosis,second ischemic stroke
+,4322978,4310996,Increase,5.2,13,Draft,Increase,age,second ischemic stroke
+,4322978,4310996,Increase,5.2,13,Draft,Increase,age,first ischemic stroke
+,4322978,4306703,Increase,5.2,13,Draft,Increase,age,atherosclerosis
+,4298794,4306703,Increase,5.2,13,Draft,Increase,smoking,atherosclerosis
+,4298794,4310996,Increase,5.2,13,Draft,Increase,smoking,first ischemic stroke
+,4298794,4310996,Increase,5.2,13,Draft,Increase,smoking,second ischemic stroke
+,4159131,4310996,Increase,5.2,13,Draft,Increase,dyslipidemia,second ischemic stroke
+,4159131,4310996,Increase,5.2,13,Draft,Increase,dyslipidemia,first ischemic stroke
+,4159131,4306703,Increase,5.2,13,Draft,Increase,dyslipidemia,atherosclerosis
+,201820,4306703,Increase,5.2,13,Draft,Increase,diabetes,atherosclerosis
+,201820,4310996,Increase,5.2,13,Draft,Increase,diabetes,first ischemic stroke
+,201820,4310996,Increase,5.2,13,Draft,Increase,diabetes,second ischemic stroke
+,4322978,313217,Increase,4.08,13,Draft,Increase,age,atrial fibrillation
+,4322978,443392,Increase,4.08,13,Draft,Increase,age,cancer
+,442985,4102202,Increase,4.08,13,Draft,Decrease,female gender,sinus venous thrombosis
+,442985,4310996,Increase,4.08,13,Draft,Increase,male gender,first ischemic stroke
+,442985,4310996,Increase,4.08,13,Draft,Increase,male gender,second ischemic stroke
+,4299535,4102202,Increase,4.08,13,Draft,Increase,pregnancy,sinus venous thrombosis
+,442985,4299535,Increase,6.84,13,Draft,Decrease,female gender,pregnancy
+,4310996,4052648,Increase,6.84,13,Draft,Increase,first ischemic stroke,disability
+,4310996,4052648,Increase,6.84,13,Draft,Increase,second ischemic stroke,disability
+,443392,4052648,Increase,6.84,13,Draft,Increase,cancer,disability
+,4137275,4052648,Increase,6.84,13,Draft,Increase,vaskulitis,disability
+,201820,4052648,Increase,6.84,13,Draft,Increase,diabetes,disability
+,316866,4306703,Increase,5.1,13,Draft,Increase,arterial hypertension,atherosclerosis
+,316866,4310996,Increase,5.1,13,Draft,Increase,arterial hypertension,first ischemic stroke
+,316866,4310996,Increase,5.1,13,Draft,Increase,arterial hypertension,second ischemic stroke
+,316866,4052648,Increase,5.1,13,Draft,Increase,arterial hypertension,disability
+,4322978,316866,Increase,5.1,13,Draft,Increase,age,arterial hypertension
+,4298794,316866,Increase,5.1,13,Draft,Increase,smoking,arterial hypertension
+,4299535,201820,Increase,5.1,13,Draft,Increase,pregnancy,diabetes
+,4310996,440383,Increase,5.1,13,Draft,Increase,first ischemic stroke,depression
+,4310996,440383,Increase,5.1,13,Draft,Increase,second ischemic stroke,depression
+,443392,440383,Increase,5.1,13,Draft,Increase,cancer,depression
+,4310996,443432,Increase,5.1,13,Draft,Increase,first ischemic stroke,cognitive decline
+,4310996,443432,Increase,5.1,13,Draft,Increase,second ischemic stroke,cognitive decline
+,4310996,4234649,Decrease,5.1,13,Draft,Decrease,second ischemic stroke,qualitiy of life
+,4310996,4234649,Decrease,5.1,13,Draft,Decrease,first ischemic stroke,qualitiy of life
+,440383,4234649,Decrease,5.1,13,Draft,Decrease,depression,qualitiy of life
+,201820,4234649,Decrease,5.1,13,Draft,Decrease,diabetes,qualitiy of life
+,4137275,4234649,Decrease,5.1,13,Draft,Decrease,vaskulitis,qualitiy of life
+,4052648,4234649,Decrease,5.1,13,Draft,Decrease,disability,qualitiy of life
+,4299535,440383,Increase,5.1,13,Draft,Increase,pregnancy,depression
+,4310996,4306934,Decrease,5.1,13,Draft,Increase,first ischemic stroke,mobility
+,4310996,4306934,Decrease,2.65,13,Draft,Increase,second ischemic stroke,mobility
+,4052648,4306934,Decrease,2.65,13,Draft,Increase,disability,mobility
+,440383,4306934,Decrease,2.65,13,Draft,Increase,depression,mobility
+,443392,4234649,Decrease,2.65,13,Draft,Decrease,cancer,qualitiy of life
+,4322978,4306934,Decrease,3.0,13,Draft,Increase,age,mobility
+,4299535,4306934,Decrease,0.57,13,Draft,Increase,pregnancy,mobility
+,441589,4310996,Increase,0.57,13,Draft,Increase,endocarditis,first ischemic stroke
+,441589,4310996,Increase,0.57,13,Draft,Increase,endocarditis,second ischemic stroke
+,441589,4310996,Increase,5.1,13,Draft,Increase,endocarditis,second ischemic stroke
+,441589,4052648,Increase,5.1,13,Draft,Increase,endocarditis,disability
+,4070299,4310996,Increase,5.64,13,Draft,Increase,persistent foramen ovale,first ischemic stroke
+,4070299,4310996,Increase,5.64,13,Draft,Increase,persistent foramen ovale,second ischemic stroke
+,4295287,4310996,Increase,4.61,13,Draft,Increase,hypercoagulability,first ischemic stroke
+,4295287,4310996,Increase,4.61,13,Draft,Increase,hypercoagulability,second ischemic stroke
+,4295287,4102202,Increase,4.61,13,Draft,Increase,hypercoagulability,sinus venous thrombosis
+,443392,4295287,Increase,4.61,13,Draft,Increase,cancer,hypercoagulability
+,4299535,4295287,Increase,4.61,13,Draft,Increase,pregnancy,hypercoagulability
+,4298794,4295287,Increase,3.0,13,Draft,Increase,smoking,hypercoagulability
+,4079975,4310996,Increase,1.4,13,Draft,Increase,malformations,first ischemic stroke
+,4079975,4310996,Increase,1.4,13,Draft,Increase,malformations,second ischemic stroke
+,37153627,4310996,Increase,5.88,13,Draft,Increase,endovascular interventions,first ischemic stroke
+,37153627,4310996,Increase,5.88,13,Draft,Increase,endovascular interventions,second ischemic stroke
+,4306703,37153627,Increase,5.88,13,Draft,Increase,atherosclerosis,endovascular interventions
+,441589,37153627,Increase,1.69,13,Draft,Increase,endocarditis,endovascular interventions
+,4299535,4273629,Decrease,3.14,13,Draft,Decrease,pregnancy,chemotherapy
+,4301351,4310996,Increase,3.14,13,Draft,Increase,neurosurgery,first ischemic stroke
+,4301351,4310996,Increase,4.34,13,Draft,Increase,neurosurgery,second ischemic stroke
+,443392,4301351,Increase,4.34,13,Draft,Increase,cancer,neurosurgery
+,4079975,4301351,Increase,3.14,13,Draft,Increase,malformations,neurosurgery
+,318736,4310996,Increase,4.17,14,Draft,Increase,migraine,ischemic stroke
+,318736,4298794,Decrease,4.52,14,Draft,Decrease,migraine,smoking
+,433736,4310996,Increase,6.0,14,Draft,Increase,obesity,ischemic stroke
+,316866,4306703,Increase,6.0,14,Draft,Increase,hypertension,large artery atherosclerosis
+,433736,316866,Increase,6.84,14,Draft,Increase,obesity,hypertension
+,317002,4176126,Increase,6.84,14,Draft,Increase,low blood pressure,decreased systemic perfusion
+,316139,4176126,Increase,6.84,14,Draft,Increase,heart failure,decreased systemic perfusion
+,437312,4176126,Increase,6.84,14,Draft,Increase,loss of blood,decreased systemic perfusion
+,4070767,4310996,Increase,6.84,14,Draft,Increase,reduction or complete blockage of blood flow,ischemic stroke
+,4176126,4070767,Increase,6.84,14,Draft,Increase,decreased systemic perfusion,reduction or complete blockage of blood flow
+,4217691,4070767,Increase,6.84,14,Draft,Increase,severe stenosis,reduction or complete blockage of blood flow
+,4178903,4070767,Increase,6.84,14,Draft,Increase,occlusion of a blood vessel,reduction or complete blockage of blood flow
+,46272492,4310996,Increase,6.84,14,Draft,Increase,arterial dissection,ischemic stroke
+,37311061,4310996,Increase,6.84,14,Draft,Increase,COVID-19,ischemic stroke
+,4135811,4310996,Increase,6.84,14,Draft,Increase,fibromuscular dysplasia,ischemic stroke
+,4137275,4310996,Increase,6.84,14,Draft,Increase,vasculitis,ischemic stroke
+,378774,4310996,Increase,6.84,14,Draft,Increase,Moyamoya disease,ischemic stroke
+,4213628,4310996,Increase,6.84,14,Draft,Increase,sickle cell disease arteriopathy,ischemic stroke
+,4310996,8,Increase,6.84,14,Draft,Increase,ischemic stroke,production of reactive oxygen species
+,8,4285282,Increase,6.84,14,Draft,Increase,production of reactive oxygen species,DNA damage
+,4310996,9,Increase,6.84,14,Draft,Increase,ischemic stroke,loss of brain structural integrity
+,4276568,318736,Increase,6.84,14,Draft,Increase,female sex steroids,migraine
+,4276568,37311061,Decrease,3.37,14,Draft,Decrease,female sex steroids,COVID-19
+,4306703,4310996,Increase,6.84,14,Draft,Increase,large artery atherosclerosis,ischemic stroke
+,4322978,4285282,Increase,6.84,14,Draft,Increase,ageing,DNA damage
+,4322978,318736,Decrease,6.84,14,Draft,Decrease,ageing,migraine
+,4322978,316866,Increase,6.84,14,Draft,Increase,ageing,hypertension
+,8,4119952,Increase,6.84,14,Draft,Increase,production of reactive oxygen species,endothelial dysfunction
+,4029305,4119952,Increase,6.84,14,Draft,Increase,hypercholesterolemia,endothelial dysfunction
+,4298794,4119952,Increase,6.84,14,Draft,Increase,smoking,endothelial dysfunction
+,201820,4119952,Increase,6.84,14,Draft,Increase,diabetes mellitus,endothelial dysfunction
+,316866,4119952,Increase,6.84,14,Draft,Increase,hypertension,endothelial dysfunction
+"Harrison Internal Med., 2020",4185607,4310996,Increase,6.0,16,Final,Increase,Embolism,First Ischemic Stroke
+"Harrison Internal Med., 2020",4231363,4310996,Increase,4.61,16,Final,Increase,Thrombosis,First Ischemic Stroke
+"Harrison Internal Med., 2020",4046360,4231363,Increase,4.61,16,Final,Increase,Lacunes,Thrombosis
+"Harrison Internal Med., 2020",313217,4185607,Increase,4.61,16,Final,Increase,Atrial Fibrillation,Embolism
+"Harrison Internal Med., 2020",4306703,4231363,Increase,4.61,16,Final,Increase,Atherosclerosis,Thrombosis
+"Harrison Internal Med., 2020",442985,4306703,Increase,4.61,16,Final,Increase,Male Sex,Atherosclerosis
+"Harrison Internal Med., 2020",4322978,4306703,Increase,4.61,16,Final,Increase,Age,Atherosclerosis
+"Harrison Internal Med., 2020",4298794,4306703,Increase,4.61,16,Final,Increase,Smoking,Atherosclerosis
+"Harrison Internal Med., 2020",201820,4306703,Increase,4.61,16,Final,Increase,Diabetes,Atherosclerosis
+"Harrison Internal Med., 2020",4159131,4306703,Increase,4.0,16,Final,Increase,Dyslipidemia,Atherosclerosis
+"Harrison Internal Med., 2020",316866,4306703,Increase,4.61,16,Final,Increase,Hypertension,Atherosclerosis
+"Harrison Internal Med., 2020",46272492,4310996,Increase,4.61,16,Final,Increase,Arterial Dissection,First Ischemic Stroke
+"Harrison Internal Med., 2020",316866,4046360,Increase,4.61,16,Final,Increase,Hypertension,Lacunes
+"Harrison Internal Med., 2020",4322978,4046360,Increase,4.61,16,Final,Increase,Age,Lacunes
+"Harrison Internal Med., 2020",4295287,4231363,Increase,4.61,16,Final,Increase,Hypercoagulopathy,Thrombosis
+"Harrison Internal Med., 2020",4137275,4310996,Increase,4.61,16,Final,Increase,Vasculitis,First Ischemic Stroke
+,6,313217,Increase,4.61,16,Final,Increase,Cardiac Remodelling,Atrial Fibrillation
+,4322978,6,Increase,4.61,16,Final,Increase,Age,Cardiac Remodelling
+,316866,6,Increase,4.61,16,Final,Increase,Hypertension,Cardiac Remodelling
+,4306703,6,Increase,4.61,16,Final,Increase,Atherosclerosis,Cardiac Remodelling
+"Harrison Internal Med., 2020",4306703,4329847,Increase,4.61,16,Final,Increase,Atherosclerosis,Myocardial Infarction
+,4329847,6,Increase,4.61,16,Final,Increase,Myocardial Infarction,Cardiac Remodelling
+"Harrison Internal Med., 2020",4184633,4306703,Increase,4.61,16,Final,Increase,Second-hand Smoking,Atherosclerosis
+,35622016,201820,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Diabetes
+,4130526,201820,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Diabetes
+"Kernan, 2002",35622016,4306703,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Atherosclerosis
+"Kernan, 2002",4130526,4306703,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Atherosclerosis
+"Kernan, 2002",4322978,35622016,Increase,4.0,16,Final,Increase,Age,Insulin Resistance / Impaired glucose metabolism
+"Kernan, 2002",4322978,4130526,Increase,4.0,16,Final,Increase,Age,Insulin Resistance / Impaired glucose metabolism
+,4038718,433736,Increase,4.61,16,Final,Increase,Physical Inactivity,Obesity
+Kernan et al. 2002,35622016,316866,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Hypertension
+Kernan et al. 2002,4130526,316866,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Hypertension
+Kernan et al 2002,35622016,4159131,Increase,2.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Dyslipidemia
+Kernan et al 2002,4130526,4159131,Increase,2.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Dyslipidemia
+Kernan et al 2002,35622016,4180169,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Inflammation
+Kernan et al 2002,4130526,4180169,Increase,4.0,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Inflammation
+"Hansson , 2006",4180169,4306703,Increase,4.17,16,Final,Increase,Inflammation,Atherosclerosis
+Kahn et. al 2006,433736,35622016,Increase,4.0,16,Final,Increase,Obesity,Insulin Resistance / Impaired glucose metabolism
+Kahn et. al 2006,433736,4130526,Increase,4.0,16,Final,Increase,Obesity,Insulin Resistance / Impaired glucose metabolism
+Kahn et. al 2006,433736,4180169,Increase,4.17,16,Final,Increase,Obesity,Inflammation
+"Hering, 2015",4251306,15,Increase,0.51,16,Final,Increase,Psychogenic Stress,Sympathetic activation
+"Hering, 2015",15,4231363,Increase,0.51,16,Final,Increase,Sympathetic activation,Thrombosis
+Redline et al 2011,313459,316866,Increase,0.51,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Hypertension
+Redline et al 2011,435657,316866,Increase,0.51,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Hypertension
+Redline et al 2011,313459,35622016,Increase,2.68,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism
+Redline et al 2011,313459,4130526,Increase,2.68,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism
+Redline et al 2011,435657,35622016,Increase,2.68,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism
+Redline et al 2011,435657,4130526,Increase,2.68,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Insulin Resistance / Impaired glucose metabolism
+Redline et al 2011,313459,4180169,Increase,1.4,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Inflammation
+Redline et al 2011,435657,4180169,Increase,1.4,16,Final,Increase,Sleep disturbances / Obstructive Sleep Apnea,Inflammation
+,4251306,4298794,Increase,2.68,16,Final,Increase,Psychogenic Stress,Smoking
+,35622016,37018196,Increase,2.68,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Prediabetes
+,4130526,37018196,Increase,2.68,16,Final,Increase,Insulin Resistance / Impaired glucose metabolism,Prediabetes
+Fonville et al. 2014,37018196,201820,Increase,2.68,16,Final,Increase,Prediabetes,Diabetes
+,316866,46272492,Increase,2.68,16,Final,Increase,Hypertension,Arterial Dissection
+,4298794,316866,Increase,2.68,16,Final,Increase,Smoking,Hypertension
+American Heart Association 2014,4146455,316866,Decrease,4.61,16,Final,Decrease,Antihypertensive Therapy,Hypertension
+American Heart Association 2014,4201029,4159131,Decrease,4.61,16,Final,Decrease,Statin Therapy,Dyslipidemia
+Hansson 2006,4201029,4180169,Decrease,3.44,16,Final,Decrease,Statin Therapy,Inflammation
+Kernan et al 2002,4038720,35622016,Decrease,3.44,16,Final,Decrease,Weight Loss and Aerobic Exercise,Insulin Resistance / Impaired glucose metabolism
+Kernan et al 2002,4038720,4130526,Decrease,3.44,16,Final,Decrease,Weight Loss and Aerobic Exercise,Insulin Resistance / Impaired glucose metabolism
+Kernan et al 2002,4229881,35622016,Decrease,3.44,16,Final,Decrease,Weight Loss and Aerobic Exercise,Insulin Resistance / Impaired glucose metabolism
+Kernan et al 2002,4229881,4130526,Decrease,3.44,16,Final,Decrease,Weight Loss and Aerobic Exercise,Insulin Resistance / Impaired glucose metabolism
+American Heart Association 2014,4304917,316866,Decrease,3.44,16,Final,Decrease,Dietary salt restriction,Hypertension
+American Heart Association 2014,4038720,4038718,Decrease,2.68,16,Final,Decrease,Weight Loss and Aerobic Exercise,Physical Inactivity
+American Heart Association 2014,4229881,4038718,Decrease,2.68,16,Final,Decrease,Weight Loss and Aerobic Exercise,Physical Inactivity
+American Heart Association 2014,4022846,433736,Decrease,2.68,16,Final,Decrease,Healthy Diet,Obesity
+American Heart Association 2014,4301936,201820,Decrease,2.68,16,Final,Decrease,Glycemic control,Diabetes
+Kernan et al 2002,4159324,4159131,Decrease,2.25,16,Final,Decrease,Thiazolidindione,Dyslipidemia
+Kernan et al 2002,4159324,316866,Decrease,2.25,16,Final,Decrease,Thiazolidindione,Hypertension
+Kernan et al 2002,4159324,35622016,Decrease,2.25,16,Final,Decrease,Thiazolidindione,Insulin Resistance / Impaired glucose metabolism
+Kernan et al 2002,4159324,4130526,Decrease,2.25,16,Final,Decrease,Thiazolidindione,Insulin Resistance / Impaired glucose metabolism
+American Diabetes Association 2020,45771363,201820,Decrease,2.25,16,Final,Decrease,SGLT2 Inhibitors,Diabetes
+American Diabetes Association 2020,4166093,201820,Decrease,2.25,16,Final,Decrease,GLP1 Receptor Agonists,Diabetes
+American Heart Association 2014,4165535,313459,Decrease,2.25,16,Final,Decrease,CPAP Treatment,Sleep disturbances / Obstructive Sleep Apnea
+American Heart Association 2014,4165535,435657,Decrease,2.25,16,Final,Decrease,CPAP Treatment,Sleep disturbances / Obstructive Sleep Apnea
+American Heart Association 2014,46273821,4298794,Decrease,2.25,16,Final,Decrease,Smoking Cessation,Smoking
+American Heart Association 2014,4283095,4306703,Decrease,3.07,16,Final,Decrease,Carotid Endarterectomy / Angioplasty / stenting,Atherosclerosis
+American Heart Association 2014,4178631,4306703,Decrease,3.07,16,Final,Decrease,Carotid Endarterectomy / Angioplasty / stenting,Atherosclerosis
+American Heart Association 2014,4050288,4306703,Decrease,3.07,16,Final,Decrease,Carotid Endarterectomy / Angioplasty / stenting,Atherosclerosis
+American Heart Association 2014,3655005,4231363,Decrease,3.0,16,Final,Decrease,Mono-/Dual Antiplatelet Therapy,Thrombosis
+American Heart Association 2014,4056822,4185607,Decrease,3.07,16,Final,Decrease,Anticoagulation Therapy,Embolism
+American Heart Association 2014,3655005,46272492,Decrease,2.68,16,Final,Decrease,Mono-/Dual Antiplatelet Therapy,Arterial Dissection
+American Heart Association 2014,4056822,46272492,Decrease,2.68,16,Final,Decrease,Anticoagulation Therapy,Arterial Dissection
+American Heart Association 2014,4056822,4295287,Decrease,2.68,16,Final,Decrease,Anticoagulation Therapy,Hypercoagulopathy
+Harrison internal medicine 2020,4201029,4231363,Decrease,2.68,16,Final,Decrease,Statin Therapy,Thrombosis
+Harrison internal medicine 2020,4201029,316866,Decrease,2.68,16,Final,Decrease,Statin Therapy,Hypertension
+Sundell 2008 & mostofsky 2016,4183729,4306703,Decrease,2.0,16,Final,Decrease,Low-Moderate Alcohol Consumption,Atherosclerosis
+Sundell 2008 & mostofsky 2016,4336673,316866,Increase,2.0,16,Final,Increase,Heavy Alcohol Consumption,Hypertension
+Sundell 2008 & mostofsky 2016,4336673,6,Increase,2.0,16,Final,Increase,Heavy Alcohol Consumption,Cardiac Remodelling
+Sundell 2008 & mostofsky 2016,4336673,313217,Increase,2.0,16,Final,Increase,Heavy Alcohol Consumption,Atrial Fibrillation
+Sundell 2008 & mostofsky 2016,4336673,4231363,Increase,2.0,16,Final,Increase,Heavy Alcohol Consumption,Thrombosis
+American Heart Association 2014,46270002,4336673,Decrease,2.0,16,Final,Decrease,Reducing Alcohol Consumption,Heavy Alcohol Consumption
+,4310996,4180770,Increase,2.68,16,Final,Increase,First Ischemic Stroke,Neurological Sequalae
+,4310996,4306655,Increase,2.68,16,Final,Increase,First Ischemic Stroke,Death
+,4310996,4310996,Increase,2.68,16,Final,Increase,First Ischemic Stroke,Recurrent Stroke
+Dirnagl Review,4310996,378143,Increase,6.0,17,Draft,Increase,first stroke,cerebral inflammation
+Dirnagl Review,434821,4310996,Increase,6.84,17,Draft,Increase,systemic inflammation,first stroke
+Meisel Review NEJM/Nature,4310996,1,Decrease,6.84,17,Draft,Decrease,first stroke,peripheral immune competence
+,4310996,443454,Increase,6.84,19,Draft,Increase,first stroke,large infarction
+,4310996,255848,Increase,6.84,19,Draft,Increase,first stroke,pneumonia
+,443454,255848,Increase,6.84,19,Draft,Increase,large infarction,pneumonia
+,255848,4306655,Increase,6.84,19,Draft,Increase,pneumonia,death
+,4310996,4306655,Increase,6.84,19,Draft,Increase,first stroke,death
+,4310996,4310996,Increase,6.84,19,Draft,Increase,first stroke,second stroke
+,4310996,255848,Increase,6.84,19,Draft,Increase,second stroke,pneumonia
+,4310996,4306655,Increase,6.84,19,Draft,Increase,second stroke,death
+,4310996,440383,Increase,6.84,19,Draft,Increase,first stroke,depression
+,440383,4306934,Increase,6.84,19,Draft,Increase,depression,immobility
+,4306934,255848,Increase,6.84,19,Draft,Increase,immobility,pneumonia
+,4310996,4306934,Increase,6.84,19,Draft,Increase,first stroke,immobility
+,4306934,4306655,Increase,6.84,19,Draft,Increase,immobility,death
+,4310996,443432,Increase,6.84,19,Draft,Increase,first stroke,cognitive decline
+,255848,443432,Increase,5.1,19,Draft,Increase,pneumonia,cognitive decline
+,443432,4306655,Increase,2.79,19,Draft,Increase,cognitive decline,death
+,4310996,443432,Increase,2.79,19,Draft,Increase,second stroke,cognitive decline
+,316866,4310996,Increase,6.84,19,Draft,Increase,hypertension,first stroke
+,316866,4310996,Increase,6.84,19,Draft,Increase,hypertension,second stroke
+,316866,443432,Increase,5.31,19,Draft,Increase,hypertension,cognitive decline
+,4310996,443454,Increase,6.84,19,Draft,Increase,first stroke,infarct localisation
+,443454,443432,Increase,6.84,19,Draft,Increase,infarct localisation,cognitive decline
+,443454,4242843,Increase,6.84,19,Draft,Increase,infarct localisation,immunodepression
+,4242843,255848,Increase,6.84,19,Draft,Increase,immunodepression,pneumonia
+,4242843,443432,Decrease,0.51,19,Draft,Decrease,immunodepression,cognitive decline
+,201820,4310996,Increase,6.84,19,Draft,Increase,diabetes mellitus,second stroke
+,201820,4310996,Increase,6.84,19,Draft,Increase,diabetes mellitus,first stroke
+,201820,443432,Increase,4.61,19,Draft,Increase,diabetes mellitus,cognitive decline
+,4310996,4329728,Increase,6.84,19,Draft,Increase,first stroke,spasticity
+,4310996,4329728,Increase,6.84,19,Draft,Increase,second stroke,spasticity
+,4329728,4306934,Increase,6.84,19,Draft,Increase,spasticity,immobility
+,4329728,4329041,Increase,6.84,19,Draft,Increase,spasticity,pain
+,4329041,4306934,Increase,6.84,19,Draft,Increase,pain,immobility
+,442985,443454,Increase,4.8,19,Draft,Decrease,female,large infarction
+,443454,4052648,Increase,6.84,19,Draft,Increase,large infarction,severe disability
+,4052648,4306934,Increase,6.84,19,Draft,Increase,severe disability,immobility
+,4310996,31317,Increase,6.84,19,Draft,Increase,first stroke,dysphagia
+,4310996,31317,Increase,6.84,19,Draft,Increase,second stroke,dysphagia
+,31317,255848,Increase,6.84,19,Draft,Increase,dysphagia,pneumonia
+,31317,4090739,Increase,6.84,19,Draft,Increase,dysphagia,malnutrition
+,4310996,134765,Increase,4.8,19,Draft,Increase,first stroke,cachexia
+,4310996,134765,Increase,4.34,19,Draft,Increase,second stroke,cachexia
+,4090739,134765,Increase,6.84,19,Draft,Increase,malnutrition,cachexia
+,134765,4306655,Increase,4.8,19,Draft,Increase,cachexia,death
+,4090739,4306655,Increase,3.14,19,Draft,Increase,malnutrition,death
+,4306934,4234649,Increase,6.84,19,Draft,Decrease,immobility,reduced QoL/ADL
+,4329728,4234649,Increase,6.84,19,Draft,Decrease,spasticity,reduced QoL/ADL
+,31317,4234649,Increase,6.84,19,Draft,Decrease,dysphagia,reduced QoL/ADL
+,4329041,4234649,Increase,6.84,19,Draft,Decrease,pain,reduced QoL/ADL
+,443432,4234649,Increase,6.84,19,Draft,Decrease,cognitive decline,reduced QoL/ADL
+,4310996,4234649,Increase,6.84,19,Draft,Decrease,first stroke,reduced QoL/ADL
+,4310996,4234649,Increase,6.84,19,Draft,Decrease,second stroke,reduced QoL/ADL
+,4310996,440424,Increase,6.84,19,Draft,Increase,second stroke,aphasia
+,4310996,440424,Increase,6.84,19,Draft,Increase,first stroke,aphasia
+,440424,4234649,Increase,6.84,19,Draft,Decrease,aphasia,reduced QoL/ADL
+,4322978,4310996,Increase,6.84,19,Draft,Increase,age,first stroke
+,4322978,443432,Increase,6.84,19,Draft,Increase,age,cognitive decline
+,4322978,255848,Increase,6.84,19,Draft,Increase,age,pneumonia
+,4306934,4310996,Increase,6.0,19,Draft,Increase,immobility before stroke,first stroke
+,4306934,4310996,Increase,6.0,19,Draft,Increase,immobility,second stroke
+,440383,4310996,Increase,6.84,19,Draft,Increase,depression before stroke,first stroke
+,255848,4085730,Increase,6.84,19,Draft,Increase,pneumonia,antibiotics
+,4085730,4306655,Decrease,6.84,19,Draft,Decrease,antibiotics,death
+,440383,44784326,Increase,6.84,19,Draft,Increase,depression,antidepressants
+,44784326,4234649,Decrease,4.26,19,Draft,Increase,antidepressants,reduced QoL/ADL
+,4201412,440424,Decrease,6.84,19,Draft,Decrease,speech therapy,aphasia
+,4327941,440383,Decrease,6.84,19,Draft,Decrease,psychotherapy,depression
+,4327941,443432,Decrease,2.38,19,Draft,Decrease,psychotherapy,cognitive decline
+,4238738,4306934,Decrease,6.84,19,Draft,Decrease,physiotherapy,immobility
+,4238738,4052648,Decrease,6.84,19,Draft,Decrease,physiotherapy,severe disability
+,4059498,4234649,Decrease,6.84,19,Draft,Increase,social work,reduced QoL/ADL
+,4196427,4310996,Decrease,6.84,19,Draft,Decrease,secondary prevention,second stroke
+,4201926,4310996,Decrease,6.84,19,Draft,Decrease,primary prevention,first stroke
+,4038720,4310996,Decrease,6.84,19,Draft,Decrease,physical exercise,first stroke
+,4038720,4310996,Decrease,6.84,19,Draft,Decrease,physical exercise,second stroke
+,4038720,443432,Decrease,6.84,19,Draft,Decrease,physical exercise,cognitive decline
+,4021166,4306655,Decrease,4.08,19,Draft,Decrease,care giving,death
+,4059498,4021166,Increase,3.07,19,Draft,Increase,social work,care giving
+,4083171,4329041,Decrease,6.84,19,Draft,Decrease,multimodal pain therapy,pain
+,4229563,4329728,Decrease,6.84,19,Draft,Decrease,botolinum toxin,spasticity
+,4114614,443432,Decrease,5.0,19,Draft,Decrease,cognitive training,cognitive decline
+Christoph,316866,4310996,Increase,6.84,20,Draft,Increase,hypertension,first ischemic stroke
+Christoph,316866,4310996,Increase,6.84,20,Draft,Increase,hypertension,second ischemic stroke
+Christoph,4310996,4310996,Increase,6.84,20,Draft,Increase,first ischemic stroke,second ischemic stroke
+Christoph,4310996,4306655,Increase,6.84,20,Draft,Increase,first ischemic stroke,death
+Christoph,4310996,4306655,Increase,6.84,20,Draft,Increase,second ischemic stroke,death
+Christoph,4322978,4234656,Decrease,6.84,20,Draft,Decrease,aging,recovery level
+Christoph,4322978,4306655,Increase,6.84,20,Draft,Increase,aging,death
+Christoph,4322978,4310996,Increase,6.84,20,Draft,Increase,aging,first ischemic stroke
+Christoph,4322978,4310996,Increase,6.84,20,Draft,Increase,aging,second ischemic stroke
+Christoph,4310996,4234656,Decrease,6.84,20,Draft,Decrease,second ischemic stroke,recovery level
+,4310996,4234656,Decrease,2.68,20,Draft,Decrease,first ischemic stroke,recovery level
+,4,443432,Decrease,2.68,20,Draft,Increase,B-cell infiltration,cognition
+,4322978,443432,Decrease,6.84,20,Draft,Increase,aging,cognition
+,316866,443432,Decrease,4.08,20,Draft,Increase,hypertension,cognition
+,4310996,443432,Decrease,2.06,20,Draft,Increase,first ischemic stroke,cognition
+,4310996,443432,Decrease,6.84,20,Draft,Increase,second ischemic stroke,cognition
+,4150054,4234656,Decrease,6.0,20,Draft,Decrease,systemic IL6,recovery level
+,4150054,4234656,Increase,6.0,20,Draft,Increase,brain IL6_time1,recovery level
+,4150054,4310996,Increase,6.84,20,Draft,Increase,systemic IL6,second ischemic stroke
+,4150054,4310996,Increase,6.84,20,Draft,Increase,systemic IL6,first ischemic stroke
+,4283239,4338810,Increase,6.84,20,Draft,Increase,collateralization,stroke volume
+,4310996,4150603,Increase,6.84,20,Draft,Increase,first ischemic stroke,hemispheric atrophy
+,4310996,4150603,Increase,6.84,20,Draft,Increase,second ischemic stroke,hemispheric atrophy
+,316866,4150603,Increase,3.68,20,Draft,Increase,hypertension,hemispheric atrophy
+,4322978,4150603,Increase,6.84,20,Draft,Increase,aging,hemispheric atrophy
+,11,4234656,Increase,6.84,20,Draft,Increase,endothelial proliferation,recovery level
+,11,4068351,Decrease,6.84,20,Draft,Decrease,endothelial proliferation,blood brain barrier integrity
+,4068351,4,Increase,6.84,20,Draft,Increase,blood brain barrier integrity,B-cell infiltration
+,2,10,Decrease,6.84,20,Draft,Decrease,microglial proliferation,neuronal survival
+,4150054,4234656,Decrease,2.68,20,Draft,Decrease,brain IL6_time2,recovery level
+,5,4234656,Increase,2.68,20,Draft,Increase,astrocytic proliferation,recovery level
+,5,10,Increase,2.68,20,Draft,Increase,astrocytic proliferation,neuronal survival
+,11,10,Increase,5.2,20,Draft,Increase,endothelial proliferation,neuronal survival
+,4283239,4310996,Decrease,5.2,20,Draft,Decrease,collateralization,first ischemic stroke
+,4283239,4310996,Decrease,5.2,20,Draft,Decrease,collateralization,second ischemic stroke

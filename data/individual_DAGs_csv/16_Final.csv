@@ -18,8 +18,7 @@ Author,Exposure,Outcome,Direction,Strength
 ,Cardiac Remodelling,Atrial Fibrillation,Increase,4.61
 ,Age,Cardiac Remodelling,Increase,4.61
 ,Hypertension,Cardiac Remodelling,Increase,4.61
-,Other Cardiac Pathologies,Cardiac Remodelling,Increase,4.61
-,Atherosclerosis,Other Cardiac Pathologies,Increase,4.61
+,Atherosclerosis,Cardiac Remodelling,Increase,4.61
 "Harrison Internal Med., 2020",Atherosclerosis,Myocardial Infarction,Increase,4.61
 ,Myocardial Infarction,Cardiac Remodelling,Increase,4.61
 "Harrison Internal Med., 2020",Second-hand Smoking,Atherosclerosis,Increase,4.61
@@ -68,7 +67,7 @@ Harrison internal medicine 2020,Statin Therapy,Thrombosis,Decrease,2.68
 Harrison internal medicine 2020,Statin Therapy,Hypertension,Decrease,2.68
 Sundell 2008 & mostofsky 2016,Low-Moderate Alcohol Consumption,Atherosclerosis,Decrease,2.0
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Hypertension,Increase,2.0
-Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Other Cardiac Pathologies,Increase,2.0
+Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Cardiac Remodelling,Increase,2.0
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Atrial Fibrillation,Increase,2.0
 Sundell 2008 & mostofsky 2016,Heavy Alcohol Consumption,Thrombosis,Increase,2.0
 American Heart Association 2014,Reducing Alcohol Consumption,Heavy Alcohol Consumption,Decrease,2.0
