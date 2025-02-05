@@ -1,6 +1,23 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import DropdownWithSearch from "../DropdownWithSearch/index";
 import logo from "../../assets/logo.png";
+
+const fetchConcepts = async (searchTerm) => {
+  try {
+    const response = await fetch(
+      `http://localhost:3001/api/concepts?searchTerm=${encodeURIComponent(searchTerm)}`
+    );
+    const data = await response.json();
+    if (data.success) {
+      return data.data;
+    }
+    return [];
+  } catch (error) {
+    console.error("Error fetching concepts:", error);
+    return [];
+  }
+};
 
 const ResearchPage = () => {
   const [exposure, setExposure] = useState("");
@@ -13,7 +30,13 @@ const ResearchPage = () => {
       setError("Please provide both an exposure and an outcome.");
       return;
     }
-    navigate("/graph", { state: { exposure, outcome } });
+
+    const stateData = {
+      exposure,
+      outcome,
+    };
+
+    navigate("/graph", { state: stateData }); // Pass exposure and outcome to GraphPage
   };
 
   return (
@@ -34,20 +57,18 @@ const ResearchPage = () => {
         <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
           <div className="flex items-center space-x-2">
             <label className="text-gray-700 font-medium">Does</label>
-            <input
-              type="text"
-              value={exposure}
-              onChange={(e) => setExposure(e.target.value)}
+            <DropdownWithSearch
               placeholder="Enter exposure"
-              className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              fetchOptions={fetchConcepts}
+              value={exposure}
+              onChange={setExposure}
             />
             <label className="text-gray-700 font-medium">affect</label>
-            <input
-              type="text"
-              value={outcome}
-              onChange={(e) => setOutcome(e.target.value)}
+            <DropdownWithSearch
               placeholder="Enter outcome"
-              className="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              fetchOptions={fetchConcepts}
+              value={outcome}
+              onChange={setOutcome}
             />
             <label className="text-gray-700 font-medium">?</label>
           </div>
