@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-green-600 text-white p-4 shadow-md">
+    <header className="bg-gray-800 text-gray-900 p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo & App Name */}
         <Link to={user ? '/dashboard' : '/'} className="flex items-center gap-2">

@@ -88,82 +88,84 @@ const { exec } = require('child_process');
         "Procedure": 4
     };
 
-    // Start building the Dagitty graph string.
-    let dagittyGraph = "dag {\n";
+// Start building the Dagitty graph string.
+let dagittyGraph = "dag {\n";
 
-    // ─── 1. Create nodes for each timestep ──────────────────────────────
-    // For each timestep t from 1 to timePoints, create a copy of every node.
-    for (let t = 1; t <= timePoints; t++) {
-        allNodes.forEach(node => {
-            // For t = 1, keep the original name; for t > 1, add the suffix.
-            const nodeName = t === 1 ? node : `${node}_${t}`;
-            let attributes = [];
-            if (node === exposureNode) attributes.push("exposure");
-            if (node === outcomeNode) attributes.push("outcome");
-            // Add the ordering attribute if available.
-            if (timeOrderedNodes[node] !== undefined) {
-                attributes.push(`time=${timeOrderedNodes[node]}`);
-            }
-            if (attributes.length > 0) {
-                dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
-            } else {
-                dagittyGraph += `  "${nodeName}";\n`;
-            }
-        });
+// ─── 1. Create nodes for each timestep ──────────────────────────────
+// For each timestep t from 1 to timePoints, create a copy of every node.
+for (let t = 1; t <= timePoints; t++) {
+  allNodes.forEach(node => {
+    // Now every node gets a time suffix, e.g. "node_T1", "node_T2", etc.
+    const nodeName = `${node}_T${t}`;
+    let attributes = [];
+    if (node === exposureNode) attributes.push("exposure");
+    if (node === outcomeNode) attributes.push("outcome");
+    // Add the ordering attribute if available.
+    if (timeOrderedNodes[node] !== undefined) {
+      attributes.push(`time=${timeOrderedNodes[node]}`);
     }
-
-    // ─── 2. Intra–timestep causal edges ────────────────────────────────────
-    // For each timestep, add the causal edges that exist in the original graph,
-    // but—if both nodes have an ordering defined—only add the edge if the source’s
-    // ordering is less than the target’s ordering.
-    for (let t = 1; t <= timePoints; t++) {
-        causalEdges.forEach(edge => {
-            if (edge.from && edge.to) {
-                // Check ordering only if both nodes have a defined order.
-                if (timeOrderedNodes[edge.from] !== undefined && timeOrderedNodes[edge.to] !== undefined) {
-                    if (timeOrderedNodes[edge.from] < timeOrderedNodes[edge.to]) {
-                        const source = t === 1 ? edge.from : `${edge.from}_${t}`;
-                        const target = t === 1 ? edge.to : `${edge.to}_${t}`;
-                        dagittyGraph += `  "${source}" -> "${target}";\n`;
-                    }
-                    // If the ordering condition fails, do not add the edge at this timestep.
-                } else {
-                    // If one or both nodes don't have an ordering value, add the edge.
-                    const source = t === 1 ? edge.from : `${edge.from}_${t}`;
-                    const target = t === 1 ? edge.to : `${edge.to}_${t}`;
-                    dagittyGraph += `  "${source}" -> "${target}";\n`;
-                }
-            }
-        });
+    if (attributes.length > 0) {
+      dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
+    } else {
+      dagittyGraph += `  "${nodeName}";\n`;
     }
+  });
+}
 
-    // ─── 3. Cross–timestep edges ─────────────────────────────────────────
-    // For every pair of timesteps (i, j) with i < j, we add two kinds of edges:
-    //    a) Self–progression edges: Each node “progresses” from timestep i to j.
-    //    b) Cross–timestep causal edges: For every causal edge in the original graph,
-    //       we add an edge from the node at timestep i to the target node at timestep j.
-    //       (Here we do not enforce the ordering constraint, allowing an edge that may
-    //        reverse the intra–timestep order.)
-    for (let i = 1; i < timePoints; i++) {
-        for (let j = i + 1; j <= timePoints; j++) {
-            // a) Self–progression edges for each node.
-            allNodes.forEach(node => {
-                const source = i === 1 ? node : `${node}_${i}`;
-                const target = `${node}_${j}`;
-                dagittyGraph += `  "${source}" -> "${target}";\n`;
-            });
-            // b) Cross–timestep causal edges.
-            causalEdges.forEach(edge => {
-                if (edge.from && edge.to) {
-                    const source = i === 1 ? edge.from : `${edge.from}_${i}`;
-                    const target = `${edge.to}_${j}`;
-                    dagittyGraph += `  "${source}" -> "${target}";\n`;
-                }
-            });
+// ─── 2. Intra–timestep causal edges ────────────────────────────────────
+// For each timestep, add the causal edges that exist in the original graph,
+// but—if both nodes have an ordering defined—only add the edge if the source’s
+// ordering is less than the target’s ordering.
+for (let t = 1; t <= timePoints; t++) {
+  causalEdges.forEach(edge => {
+    if (edge.from && edge.to) {
+      // Check ordering only if both nodes have a defined order.
+      if (
+        timeOrderedNodes[edge.from] !== undefined &&
+        timeOrderedNodes[edge.to] !== undefined
+      ) {
+        if (timeOrderedNodes[edge.from] < timeOrderedNodes[edge.to]) {
+          const source = `${edge.from}_T${t}`;
+          const target = `${edge.to}_T${t}`;
+          dagittyGraph += `  "${source}" -> "${target}";\n`;
         }
+        // If the ordering condition fails, do not add the edge at this timestep.
+      } else {
+        // If one or both nodes don't have an ordering value, add the edge.
+        const source = `${edge.from}_T${t}`;
+        const target = `${edge.to}_T${t}`;
+        dagittyGraph += `  "${source}" -> "${target}";\n`;
+      }
     }
+  });
+}
 
-    dagittyGraph += "}\n";
+// ─── 3. Cross–timestep edges ─────────────────────────────────────────
+// For every pair of timesteps (i, j) with i < j, we add two kinds of edges:
+//    a) Self–progression edges: Each node “progresses” from timestep i to j.
+//    b) Cross–timestep causal edges: For every causal edge in the original graph,
+//       we add an edge from the node at timestep i to the target node at timestep j.
+//       (Here we do not enforce the ordering constraint.)
+for (let i = 1; i < timePoints; i++) {
+  for (let j = i + 1; j <= timePoints; j++) {
+    // a) Self–progression edges for each node.
+    allNodes.forEach(node => {
+      const source = `${node}_T${i}`;
+      const target = `${node}_T${j}`;
+      dagittyGraph += `  "${source}" -> "${target}";\n`;
+    });
+    // b) Cross–timestep causal edges.
+    causalEdges.forEach(edge => {
+      if (edge.from && edge.to) {
+        const source = `${edge.from}_T${i}`;
+        const target = `${edge.to}_T${j}`;
+        dagittyGraph += `  "${source}" -> "${target}";\n`;
+      }
+    });
+  }
+}
+
+dagittyGraph += "}\n";
 
     // Close the session
     await session.close();

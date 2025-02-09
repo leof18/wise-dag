@@ -3,7 +3,7 @@ const router = express.Router();
 const { driver } = require("../db/neo4j");
 
 router.post("/granularity-query", async (req, res) => {
-  const { selectedIteration, selectedNodes } = req.body;
+  const { selectedIteration, selectedNodes , exposure, outcome } = req.body;
 
   // Validate required parameters
   if (!selectedIteration || !selectedNodes) {
@@ -15,30 +15,44 @@ router.post("/granularity-query", async (req, res) => {
   const session = driver.session();
 
   try {
-    // Adjust query based on whether selectedNodes.name is empty
-    const isExcludedNodesEmpty = selectedNodes.name.length === 0;
-
-    const query = `
-      MATCH (iteration:Iteration {id: $selectedIteration.id})
-        MATCH (concept:Concept)-[:PART_OF]->(iteration)
-        WITH collect(concept) AS initialConcepts
-        OPTIONAL MATCH (excludedNodes:Concept)
-        WHERE $selectedNodes.name <> [""] AND excludedNodes.name IN $selectedNodes.name
-        OPTIONAL MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
-        WITH initialConcepts, collect(child) AS children, excludedNodes
-        WITH initialConcepts + children AS combinedNodes, excludedNodes
-        WITH CASE 
-                WHEN $selectedNodes.name = [""] THEN combinedNodes
-                ELSE [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name]
-            END AS finalNodes
-        RETURN COLLECT(DISTINCT finalNodes) AS resultingNodes;
-    `;
 
     const params = {
       selectedIteration,
       selectedNodes,
+      exposure,
+      outcome
     };
 
+    const query = `
+        // Get nodes, excluding expanded nodes
+        MATCH (iteration:Iteration {id: $selectedIteration.id})
+        MATCH (concept:Concept)-[:PART_OF]->(iteration)
+        WHERE NOT concept.name IN $selectedNodes
+        MATCH (exposure:Concept {name: $exposure})
+        MATCH (outcome:Concept {name: $outcome})
+        
+        // Get children of expanded nodes
+        OPTIONAL MATCH (expanded:Concept)-[:SUBSUMES]->(child:Concept) 
+        WHERE expanded.name IN $selectedNodes AND NOT child.name IN $selectedNodes
+
+        // Collect all nodes
+        WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS initialNodes, exposure, outcome
+
+        // Ensure exposure and outcome are only added if they are not already in concepts or children
+        WITH CASE 
+                WHEN exposure IN initialNodes THEN initialNodes 
+                ELSE initialNodes + [exposure]
+            END AS nodesWithExposure,
+            outcome
+        WITH CASE 
+                WHEN outcome IN nodesWithExposure THEN nodesWithExposure 
+                ELSE nodesWithExposure + [outcome] 
+            END AS Nodes
+
+        UNWIND Nodes AS Node
+        RETURN 
+            COLLECT(DISTINCT Node) AS resultingNodes
+    `;
     console.log("Executing query with params:", params);
 
     const result = await session.run(query, params);

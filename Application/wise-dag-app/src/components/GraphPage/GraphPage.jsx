@@ -12,6 +12,7 @@ const GraphPage = () => {
 
   const [nodes, setNodes] = useState([]);
   const [granularity, setGranularity] = useState(0);
+  const [selectedNodes, setSelectedNodes] = useState([]);
   const transformRef = useRef(null);
 
   const handleTimepoint = () => {
@@ -20,20 +21,26 @@ const GraphPage = () => {
       return;
     }
     // Navigating to timepointpage with selected nodes
-    navigate("/timepoints", { state: { selectedNodes: nodes } });
+    navigate("/timepoints", {
+      state: { granularity, selectedNodes, exposure, outcome },
+    });
   };
 
   // Graph Space Dimensions
   const GRAPH_HEIGHT = 900;
 
-  const fetchGraphData = async (level, selectedNode = null) => {
+  const fetchGraphData = async (level, selectedNodesList = []) => {
     try {
       const requestData = {
         selectedIteration: { id: level },
-        selectedNodes: selectedNode
-          ? { name: [selectedNode] }
-          : { name: [exposure, outcome] },
+        selectedNodes: selectedNodesList,
+        exposure: exposure ,
+        outcome: outcome
       };
+
+      console.log(
+        requestData
+      );
 
       const response = await axios.post(
         "http://localhost:3001/api/granularity-query",
@@ -56,7 +63,7 @@ const GraphPage = () => {
             id: "exposure",
             name: exposure,
             isExposure: true,
-            isLeaf: false,
+            isLeaf: true,
             textLength: exposure.length,
           },
           ...extractedNodes.filter(
@@ -66,7 +73,7 @@ const GraphPage = () => {
             id: "outcome",
             name: outcome,
             isOutcome: true,
-            isLeaf: false,
+            isLeaf: true,
             textLength: outcome.length,
           },
         ];
@@ -95,55 +102,90 @@ const GraphPage = () => {
       console.log(
         `Expanding node: ${node.name} with iteration level ${granularity}`
       );
-      fetchGraphData(granularity, node.name);
+      const newSelectedNodes = [...selectedNodes, node.name];
+      setSelectedNodes(newSelectedNodes);
+      fetchGraphData(granularity, newSelectedNodes);
     }
+  };
+
+  // ** Reset Button Handler **
+  // Clears the selected nodes list and re-fetches data without any selections.
+  const handleReset = () => {
+    setSelectedNodes([]);
+    fetchGraphData(granularity, []);
+  };
+
+  // ** Undo Button Handler **
+  // Removes the last node from the selectedNodes list and re-fetches data.
+  const handleUndo = () => {
+    if (selectedNodes.length === 0) return;
+    const newSelectedNodes = selectedNodes.slice(0, -1);
+    setSelectedNodes(newSelectedNodes);
+    fetchGraphData(granularity, newSelectedNodes);
   };
 
   return (
     <div className="flex flex-col items-center p-6 bg-gray-100 w-full"
     style={{ height: "calc(100vh - 130px)" }}>
       {/* Fixed Header with Granularity Slider + Zoom Buttons */}
-      <header className="w-full flex justify-between items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
-        <div className="flex flex-col items-center flex-grow">
-          <h1 className="text-2xl font-bold">Node Selection</h1>
-          <p className="text-sm text-gray-600">
-            Exposure:{" "}
-            <span className="text-red-500 font-semibold">{exposure}</span>,
-            Outcome:{" "}
-            <span className="text-red-500 font-semibold">{outcome}</span>
-          </p>
+      <header className="w-full bg-white p-4 rounded-lg shadow-md sticky top-0 z-50">
+        <div className="flex">
+          {/* Left Column: 75% width */}
+          <div className="w-3/4">
+            {/* Title and Info */}
+            <h1 className="text-base font-semibold text-center">Node Selection</h1>
+            <p className="text-sm text-center text-gray-600">
+              Exposure: <span className="text-red-500 font-semibold">{exposure}</span>,{" "}
+              Outcome: <span className="text-red-500 font-semibold">{outcome}</span>
+            </p>
+            
+            {/* Controls: Undo & Reset above the Slider */}
+            <div className="mt-2">
+              <div className="flex justify-center space-x-2 mb-2">
+                <button
+                  onClick={handleUndo}
+                  className="bg-yellow-500 text-white px-3 py-1 rounded-md shadow-md hover:bg-yellow-600 transition"
+                >
+                  Undo
+                </button>
+                <button
+                  onClick={handleReset}
+                  className="bg-red-500 text-white px-3 py-1 rounded-md shadow-md hover:bg-red-600 transition"
+                >
+                  Reset Expansion
+                </button>
+              </div>
+              {/* Slider Container */}
+              <div className="w-3/4 mx-auto">
+                <label htmlFor="granularity-slider" className="block text-sm font-semibold">
+                  Granularity Level: {granularity}
+                </label>
+                <input
+                  id="granularity-slider"
+                  type="range"
+                  min="0"
+                  max="74"
+                  step="1"
+                  value={granularity}
+                  onChange={(e) => setGranularity(parseInt(e.target.value))}
+                  className="w-full"
+                />
+              </div>
+            </div>
+          </div>
 
-          {/* Granularity Slider */}
-          <div className="w-full flex flex-col items-center mt-2">
-            <label
-              htmlFor="granularity-slider"
-              className="text-lg font-semibold"
+          {/* Right Column: 25% width */}
+          <div className="w-1/4 flex items-center justify-end">
+            <button
+              onClick={handleTimepoint}
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
             >
-              Granularity Level: {granularity}
-            </label>
-            <input
-              id="granularity-slider"
-              type="range"
-              min="0"
-              max="74"
-              step="1"
-              value={granularity}
-              onChange={(e) => setGranularity(parseInt(e.target.value))}
-              className="w-full"
-            />
+              Select Timepoints
+            </button>
           </div>
         </div>
-
-        {/* Dagify Button */}
-  <button
-    onClick={handleTimepoint}
-    className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
-  >
-    Select Timepoints
-  </button>
-
-        
       </header>
+
 
       {/* Graph Space */}
       <div

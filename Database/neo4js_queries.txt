@@ -32,6 +32,7 @@ MATCH (outcome:Concept {name: $outcome.name})
 // Get children of expanded nodes
 OPTIONAL MATCH (expanded:Concept)-[:SUBSUMES]->(child:Concept) 
 WHERE expanded.name IN $selectedNodes.name
+AND NOT child.name IN $selectedNodes
 
 // Collect all nodes
 WITH COLLECT(concept) + COLLECT(DISTINCT child) AS initialNodes, exposure, outcome
