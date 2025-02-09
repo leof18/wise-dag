@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
@@ -6,11 +7,21 @@ import { FaEraser } from "react-icons/fa";
 
 const GraphPage = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { exposure, outcome } = location.state;
 
   const [nodes, setNodes] = useState([]);
   const [granularity, setGranularity] = useState(0);
   const transformRef = useRef(null);
+
+  const handleTimepoint = () => {
+    if (nodes.length === 0) {
+      alert("No nodes available to Dagify!");
+      return;
+    }
+    // Navigating to timepointpage with selected nodes
+    navigate("/timepoints", { state: { selectedNodes: nodes } });
+  };
 
   // Graph Space Dimensions
   const GRAPH_HEIGHT = 900;
@@ -125,10 +136,10 @@ const GraphPage = () => {
 
         {/* Dagify Button */}
   <button
-    onClick={() => console.log("Dagify action triggered!")}
+    onClick={handleTimepoint}
     className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
   >
-    Dagify
+    Select Timepoints
   </button>
 
         

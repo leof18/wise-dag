@@ -6,6 +6,7 @@ import Signup from './components/Auth/Signup';
 import ForgotPassword from './components/Auth/ForgotPassword';
 import ResearchPage from './components/ResearchPage/ResearchPage';
 import GraphPage from './components/GraphPage/GraphPage';
+import TimepointPage from './components/TimepointPage';
 import DagittyPage from './components/DagittyPage';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/research" element={<ResearchPage />} />
         <Route path="/graph" element={<GraphPage />} />
         <Route path="/dagitty" element={<DagittyPage />} />
+        <Route path="/timepoints" element={<TimepointPage />} />
       </Routes>
     </Layout>
   );
