@@ -7,6 +7,7 @@ const iterationLevelRoutes = require('./routes/iterationLevelRoutes');
 const causalQueryRoutes = require('./routes/causalQueryRoutes');
 const granularityQuery = require('./routes/granularityQuery');
 const conceptRoutes = require('./routes/conceptRoutes');
+const dagittyCyclesCheck = require('./routes/dagittyCyclesCheck');
 
 
 const app = express();
@@ -22,6 +23,7 @@ app.use('/api', iterationLevelRoutes);
 app.use('/api', causalQueryRoutes);
 app.use('/api', granularityQuery);
 app.use('/api', conceptRoutes);
+app.use('/api', dagittyCyclesCheck);
 
 // Close Neo4j connection when server stops
 process.on('SIGINT', async () => {

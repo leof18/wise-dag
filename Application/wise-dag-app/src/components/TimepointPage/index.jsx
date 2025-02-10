@@ -1,14 +1,16 @@
 import { useNavigate, useLocation } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const TimepointPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { selectedNodes } = location.state || { selectedNodes: [] };
+  const { granularity, selectedNodes, exposure, outcome, nodes} = location.state || {};
 
   const [timepointsInput, setTimepointsInput] = useState(""); // User enters value here
   const [timepoints, setTimepoints] = useState(null); // Gets set when confirmed
-  const [timepointData, setTimepointData] = useState([]);
+  const [nodeOrder, setNodeOrder] = useState([]);
+  const [rOutput, setROutput] = useState(null);
 
   const handleInputChange = (e) => {
     setTimepointsInput(e.target.value);
@@ -21,61 +23,102 @@ const TimepointPage = () => {
       return;
     }
     setTimepoints(numTimepoints);
-
-    // Generate timepointed nodes
-    if (selectedNodes.length > 0) {
-      const initializedData = selectedNodes.map((node) => ({
-        ...node,
-        isFixed: false,
-        timepoints: Array.from({ length: numTimepoints }, (_, i) => ({
-          name: `${node.name}_T${i + 1}`,
-          value: 0,
-        })),
-      }));
-      setTimepointData(initializedData);
-    }
   };
 
+  // Generate ordered nodes starting with all at 0
+  useEffect(() => {
+    if (timepoints !== null && nodes && nodes.length > 0) {
+      const initializedData = nodes.map((node) => ({
+        ...node,
+        isFixed: false,
+        order: {name: node.name, value: node.order?.value ?? 0}
+      }));
+      setNodeOrder(initializedData);
+    }
+  }, [timepoints, nodes]);
+
+  // Once the number of timepoints is confirmed, call the API to check for cycles
+  useEffect(() => {
+    if (nodeOrder && nodeOrder.length > 0) {
+      
+      // Convert the nodeOrder array into the expected object format
+      const orderPayload = nodeOrder.reduce((acc, node) => {
+        acc[node.order.name] = node.order.value;
+        return acc;
+      }, {});
+      
+      const requestCycles = {
+        granularity: { id: granularity },
+        selectedNodes,
+        exposure,
+        outcome,
+        timepoints,
+        nodeOrder: orderPayload,
+      };
+
+      // fetchCycles send a request to retireve whether there are cycles in the DAG or not. If yes it returns one of the cycles to be solved. 
+      // This should be run iteratively until all cycles are solved.
+      const fetchCycles = async () => {
+        try {
+          const response = await axios.post(
+            "http://localhost:3001/api/cycles",
+            requestCycles
+          );
+          const data = response.data;
+          setROutput(data.rOutput);
+        } catch (error) {
+          console.error("Error fetching cycles:", error);
+        }
+      };
+      fetchCycles();
+    }
+  }, [timepoints, nodeOrder, granularity, selectedNodes, exposure, outcome]);
+
   const handleFixedNodeToggle = (nodeName) => {
-    setTimepointData((prevData) =>
+    setNodeOrder((prevData) =>
       prevData.map((node) =>
         node.name === nodeName ? { ...node, isFixed: !node.isFixed } : node
       )
     );
   };
 
-  const handleTimepointValueChange = (nodeName, index, value) => {
-    setTimepointData((prevData) =>
+  const handleNodeOrderValueChange = (nodeName, value) => {
+    setNodeOrder((prevData) =>
       prevData.map((node) =>
         node.name === nodeName
-          ? {
-              ...node,
-              timepoints: node.timepoints.map((tp, i) =>
-                i === index ? { ...tp, value } : tp
-              ),
-            }
+          ? { ...node, order: { ...node.order, value }}
           : node
       )
     );
   };
 
   const handleNext = () => {
-    navigate("/dagitty", { state: { timepointData } });
+    navigate("/dagitty");
   };
 
   return (
-    <div className="flex flex-col items-center bg-gray-100 w-full"
-      style={{ height: "calc(100vh - 130px)" }}>
-      
+    <div
+      className="flex flex-col items-center bg-gray-100 w-full"
+      style={{ height: "calc(100vh - 130px)" }}
+    >
       {/* Fixed Header (Same as GraphPage) */}
       <header className="w-full flex justify-center items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
         <h1 className="text-2xl font-bold">Set Timepoints</h1>
       </header>
 
+        {/* Display of the R Output */}
+        {rOutput && (
+        <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-md mb-4">
+          <h2 className="text-xl font-semibold">Cycle to solve:</h2>
+          <pre>{rOutput}</pre>
+        </div>
+      )}
+
       {/* Scrollable Content */}
-      <div className="w-full max-w-3xl bg-white p-6 rounded-lg shadow-md overflow-auto"
-        style={{ maxHeight: "80vh" }}>
-        
+      <div
+        className="w-full max-w-3xl bg-white p-6 rounded-lg shadow-md overflow-auto"
+        style={{ maxHeight: "80vh" }}
+      >
         {/* Ask for number of timepoints */}
         {timepoints === null ? (
           <div className="flex flex-col items-center">
@@ -103,11 +146,8 @@ const TimepointPage = () => {
               You have chosen <strong>{timepoints}</strong> timepoints.
             </p>
 
-            {timepointData.map((node) => (
-              <div
-                key={node.id}
-                className="border p-3 rounded-md mb-4 bg-gray-50"
-              >
+            {nodeOrder.map((node) => (
+              <div key={node.id || node.name} className="border p-3 rounded-md mb-4 bg-gray-50">
                 <h2 className="text-lg font-semibold">{node.name}</h2>
                 <label className="text-sm flex items-center">
                   <input
@@ -116,37 +156,29 @@ const TimepointPage = () => {
                     onChange={() => handleFixedNodeToggle(node.name)}
                     className="mr-2"
                   />
-                  Keep this node constant (No timepoints)
+                  This node has no order in time
                 </label>
 
                 {!node.isFixed && (
                   <div className="mt-2 grid grid-cols-3 gap-2">
-                    {node.timepoints.map((tp, index) => (
-                      <div key={index} className="flex flex-col items-center">
-                        <input
-                          type="text"
-                          value={tp.name}
-                          disabled
-                          className="text-center font-semibold border rounded p-1"
-                        />
-                        <input
-                          type="number"
-                          value={tp.value}
-                          onChange={(e) =>
-                            handleTimepointValueChange(
-                              node.name,
-                              index,
-                              e.target.value
-                            )
-                          }
-                          className="border rounded p-1 text-center w-full"
+                    <input
+                      type="text"
+                      value="Measurement order"
+                      disabled
+                      className="text-center font-semibold border rounded p-1"
+                    />
+                    <input
+                      type="number"
+                      value={node.order.value}
+                      onChange={(e) =>
+                        handleNodeOrderValueChange(node.name, e.target.value)
+                      }
+                      className="border rounded p-1 text-center w-full"
                         />
                       </div>
-                    ))}
+                    )}
                   </div>
-                )}
-              </div>
-            ))}
+                ))}
 
             <button
               onClick={handleNext}

@@ -22,7 +22,7 @@ const GraphPage = () => {
     }
     // Navigating to timepointpage with selected nodes
     navigate("/timepoints", {
-      state: { granularity, selectedNodes, exposure, outcome },
+      state: { granularity, selectedNodes, exposure, outcome, nodes},
     });
   };
 

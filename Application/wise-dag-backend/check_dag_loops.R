@@ -14,7 +14,7 @@ dag_string <- paste(lines, collapse = "")
 dag <- dagitty(dag_string)
 
 if (isAcyclic(dag)) {
-  cat("No loops detected. DAG is valid!")
+  cat("No more cycles!")
 } else {
   cat(findCycle(dag))
 }
