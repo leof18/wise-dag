@@ -11,6 +11,7 @@ const TimepointPage = () => {
   const [timepoints, setTimepoints] = useState(null); // Gets set when confirmed
   const [nodeOrder, setNodeOrder] = useState([]);
   const [rOutput, setROutput] = useState(null);
+  const [nodesToResolve, setNodesToResolve] = useState([]);
 
   const handleInputChange = (e) => {
     setTimepointsInput(e.target.value);
@@ -48,7 +49,7 @@ const TimepointPage = () => {
       }, {});
       
       const requestCycles = {
-        granularity: { id: granularity },
+        granularity,
         selectedNodes,
         exposure,
         outcome,
@@ -74,6 +75,26 @@ const TimepointPage = () => {
     }
   }, [timepoints, nodeOrder, granularity, selectedNodes, exposure, outcome]);
 
+  // Whenever rOutput changes, parse it to extract node names.
+  useEffect(() => {
+    if (rOutput) {
+      // Split by "->", trim extra whitespace, and filter out any empty strings.
+      const newNodes = rOutput
+        .split("->")
+        .map((nodeStr) => nodeStr.trim())
+        .filter((nodeStr) => nodeStr.length > 0);
+
+      // Remove duplicates.
+      const uniqueNodes = Array.from(new Set(newNodes));
+
+      // Update nodesToResolve by combining any previous nodes with the new ones.
+      setNodesToResolve((prevNodes) => {
+        const combined = new Set([...prevNodes, ...uniqueNodes]);
+        return Array.from(combined);
+      });
+    }
+  }, [rOutput]);
+
   const handleFixedNodeToggle = (nodeName) => {
     setNodeOrder((prevData) =>
       prevData.map((node) =>
@@ -95,6 +116,11 @@ const TimepointPage = () => {
   const handleNext = () => {
     navigate("/dagitty");
   };
+
+  // Only include nodes whose names are in nodesToResolve.
+  const nodesToDisplay = nodesToResolve.length
+    ? nodeOrder.filter((node) => nodesToResolve.includes(node.name))
+    : [];
 
   return (
     <div
@@ -143,42 +169,54 @@ const TimepointPage = () => {
         ) : (
           <>
             <p className="text-md text-gray-700 mb-4">
-              You have chosen <strong>{timepoints}</strong> timepoints.
+              {/* You have chosen <strong>{timepoints}</strong> timepoints. */}
             </p>
 
-            {nodeOrder.map((node) => (
-              <div key={node.id || node.name} className="border p-3 rounded-md mb-4 bg-gray-50">
-                <h2 className="text-lg font-semibold">{node.name}</h2>
-                <label className="text-sm flex items-center">
-                  <input
-                    type="checkbox"
-                    checked={node.isFixed}
-                    onChange={() => handleFixedNodeToggle(node.name)}
-                    className="mr-2"
-                  />
-                  This node has no order in time
-                </label>
-
-                {!node.isFixed && (
-                  <div className="mt-2 grid grid-cols-3 gap-2">
+            {/* Only show nodes that are in the nodesToResolve list */}
+            {nodesToDisplay.length > 0 ? (
+              nodesToDisplay.map((node) => (
+                <div
+                  key={node.id || node.name}
+                  className="border p-3 rounded-md mb-4 bg-gray-50"
+                >
+                  <h2 className="text-lg font-semibold">{node.name}</h2>
+                  <label className="text-sm flex items-center">
                     <input
-                      type="text"
-                      value="Measurement order"
-                      disabled
-                      className="text-center font-semibold border rounded p-1"
+                      type="checkbox"
+                      checked={node.isFixed}
+                      onChange={() => handleFixedNodeToggle(node.name)}
+                      className="mr-2"
                     />
-                    <input
-                      type="number"
-                      value={node.order.value}
-                      onChange={(e) =>
-                        handleNodeOrderValueChange(node.name, e.target.value)
-                      }
-                      className="border rounded p-1 text-center w-full"
-                        />
-                      </div>
-                    )}
-                  </div>
-                ))}
+                    This node has no order in time
+                  </label>
+
+                  {!node.isFixed && (
+                    <div className="mt-2 grid grid-cols-3 gap-2">
+                      <input
+                        type="text"
+                        value="Measurement order"
+                        disabled
+                        className="text-center font-semibold border rounded p-1"
+                      />
+                      <input
+                        type="number"
+                        value={node.order.value}
+                        onChange={(e) =>
+                          handleNodeOrderValueChange(node.name, e.target.value)
+                        }
+                        className="border rounded p-1 text-center w-full"
+                      />
+                    </div>
+                  )}
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-600">
+                {rOutput
+                  ? "No nodes to resolve. All cycles might have been fixed!"
+                  : "Waiting for cycle detection..."}
+              </p>
+            )}
 
             <button
               onClick={handleNext}

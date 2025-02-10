@@ -10,24 +10,26 @@ const fs = require('fs');
 const R_SCRIPT_PATH = '"C:\\Program Files\\R\\R-4.3.1\\bin\\Rscript.exe"';
 const CHECK_LOOPS_COMMAND = `${R_SCRIPT_PATH} check_dag_loops.R dagitty_input.txt`;
 
-router.post('/cycles', async (req, res) => {
-  console.log("Received payload:", req.body);
-  const { iteration, selectedNodes, exposure, outcome, timepoints, nodeOrder} = req.body;
+// Define a cache variable to hold the graph data
+let cachedGraphData = null;
 
+/**
+ * A helper function that runs the database query and returns the data.
+ * If the data is already cached, it returns that instead.
+ */
+async function getGraphData(parameters) {
+  // If we already have cached data, return it immediately.
+  if (cachedGraphData) {
+    console.log("Using cached graph data.");
+    return cachedGraphData;
+  }
+  
+  console.log("Fetching data from the database...");
+  const session = driver.session();
   try {
-    const session = driver.session();
-
-    const parameters = {
-      selectedIteration: { id: iteration || 0 },
-      selectedNodes: selectedNodes,
-      exposure: exposure,
-      outcome: outcome
-    };
-
-    // Define your Cypher query.
     const query = `
       // Get nodes, excluding expanded nodes
-      MATCH (iteration:Iteration {id: $selectedIteration.id})
+      MATCH (iteration:Iteration {id: $selectedIteration})
       MATCH (concept:Concept)-[:PART_OF]->(iteration)
       WHERE NOT concept.name IN $selectedNodes
       MATCH (exposure:Concept {name: $exposure})
@@ -63,12 +65,33 @@ router.post('/cycles', async (req, res) => {
           [edge IN rawEdges WHERE edge IS NOT NULL] AS causalEdges;
     `;
 
-    // Run the query.
     const result = await session.run(query, parameters);
 
-    // Retrieve the nodes and edges from the result.
     const allNodes = result.records[0].get("allNodes");
     const causalEdges = result.records[0].get("causalEdges");
+
+    // Cache the result in memory
+    cachedGraphData = { allNodes, causalEdges };
+    return cachedGraphData;
+  } finally {
+    await session.close();
+  }
+}
+
+router.post('/cycles', async (req, res) => {
+  console.log("Received payload:", req.body);
+  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder } = req.body;
+
+  try {
+    const parameters = {
+      selectedIteration: granularity,
+      selectedNodes: selectedNodes,
+      exposure: exposure,
+      outcome: outcome
+    };
+
+    // Get the graph data, using the cache if available.
+    const { allNodes, causalEdges } = await getGraphData(parameters);
 
     // Build the Dagitty graph string.
     let dagittyGraph = "dag {\n";
@@ -135,8 +158,6 @@ router.post('/cycles', async (req, res) => {
 
     dagittyGraph += "}\n";
 
-    await session.close();
-
     // Write the generated DAG to a file that the R script will process.
     fs.writeFileSync("dagitty_input.txt", dagittyGraph, { encoding: "utf8" });
 
@@ -149,28 +170,22 @@ router.post('/cycles', async (req, res) => {
       if (stderr) {
         console.error(`R Script Error: ${stderr}`);
       }
-      // This regex does the following:
-      // - (.+?) : Capture any characters (non-greedy) as the name.
-      // - _T\d+ : Match the suffix, e.g. _T1, _T2, etc.
-      // - (?=\s|$) : Assert that the suffix is followed by a whitespace character or the end of the string.
-      console.log(stdout)
+      console.log(stdout);
       if (stdout === "No more cycles!") {
         return res.json({ rOutput: stdout });
-      }
-      else {
+      } else {
+        // Process the R script output.
         const regex = /(.+?)_T\d+(?=\s|$)/g;
         const matches = [...stdout.matchAll(regex)];
         const names = matches.map(match => match[1].trim());
         const processedOutput = names.join(" -> ");
-        console.log(processedOutput)
+        console.log(processedOutput);
         return res.json({ rOutput: processedOutput });
       }
-
     });
   } catch (err) {
     console.error(`Connection or query error:\n${err}`);
     res.status(500).json({ error: err.message });
-  } finally {
   }
 });
 
