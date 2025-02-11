@@ -7,6 +7,8 @@ Standardization/derivedIndex
 Standardization/mainIndex
 Standardization/sleepyCat
 Standardization/*.txt
+Application/node_modules
+node_modules
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
