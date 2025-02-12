@@ -6,40 +6,67 @@ MERGE (ancestor)-[new:CAUSES]->(effect)
 
 // OPTIONAL: Creates lots of cycles, discuss in meeting
 // Step 2: Establish causal relationships between ancestor nodes based on descendant relationships
-// MATCH (ancestor1:Concept)-[:SUBSUMES*]->(descendant1:Concept)-[:CAUSES]->(descendant2:Concept)<-[:SUBSUMES*]-(ancestor2:Concept)
-// WHERE ancestor1 <> ancestor2
-// MERGE (ancestor1)-[:CAUSES]->(ancestor2)
+MATCH (ancestor1:Concept)-[:SUBSUMES*]->(descendant1:Concept)-[:CAUSES]->(descendant2:Concept)<-[:SUBSUMES*]-(ancestor2:Concept)
+WHERE ancestor1 <> ancestor2
+MERGE (ancestor1)-[:CAUSES]->(ancestor2)
+
+// POTENTIALLY USEFUL TO PREVENT BEING ABLE TO EXPAND NODES THAT ARE ALREADY FULLY EXPANDED (color code in UI?)
+// Set is_leaf_node to false for all nodes initially
+MATCH (node:Concept)
+SET node.is_leaf_node = false;
+// Set is_leaf_node to true for leaf nodes
+MATCH (node:Concept)
+WHERE NOT EXISTS { MATCH (node)-[:SUBSUMES]->(:Concept) }
+SET node.is_leaf_node = true;
+
+:param selectedIteration => {id: 0};
+:param exposureOutcomeNames => {name: ["Smoking","Ischemic stroke"]};
 
 // Retrieve all nodes at the specified iteration level
 MATCH (n:Concept)-[:PART_OF]->(i:Iteration)
-WHERE i.id = 1
+WHERE i.id = $selectedIteration.id
 WITH collect(n) AS selectedLevelNodes
 UNWIND selectedLevelNodes AS n
 OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
-WHERE m IN selectedLevelNodes
+WHERE m IN selectedLevelNodes OR m.name IN $exposureOutcomeNames
+WITH DISTINCT n, r, m
 RETURN n, r, m
 
-// Expanding a single node
-// Step 1: Retrieve all nodes at the current level
-MATCH (n:Concept)-[:PART_OF]->(level:IterationLevel)
-WHERE level.level = 0
-WITH collect(n) AS selectedLevelNodes
-// Step 2: Expand the immediate children of the selected node
-UNWIND selectedLevelNodes AS n
-OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
-WITH n, r, m, selectedLevelNodes
-OPTIONAL MATCH (n:Concept {name: 'FH: Cardiovascular disease'})-[:SUBSUMES]->(child:Concept)
-OPTIONAL MATCH (child)-[childR:CAUSES]->(childEffect:Concept)
-WITH 
-  CASE 
-    WHEN n.name = 'FH: Cardiovascular disease' THEN COLLECT(child)
-    ELSE [n]
-  END AS expandedNodes,
-  r, m, child, childR, childEffect
-UNWIND expandedNodes AS node
-RETURN 
-  node AS n,
-  r,
-  m,
-  childR,
-  childEffect
+
+// Expanding nodes
+:param selectedIteration => {id: 0};
+:param selectedNodes => {name: [""]};
+:param selectedConfidence => {score: 0};
+
+MATCH (iteration:Iteration {id: $selectedIteration.id})
+MATCH (excludedNodes:Concept)
+WHERE excludedNodes.name IN $selectedNodes.name
+MATCH (concept:Concept)-[:PART_OF]->(iteration)
+WITH collect(concept) AS initialConcepts, excludedNodes
+MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
+WITH initialConcepts, collect(child) AS children
+WITH initialConcepts + children AS combinedNodes
+WITH [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name] AS finalNodes
+UNWIND finalNodes AS finalNode
+OPTIONAL MATCH (finalNode)-[causal:CAUSES]->(relatedFinalNode:Concept)
+WHERE causal.confidence_mean > $selectedConfidence.score
+WITH finalNode, COLLECT(causal) AS causalRelationships
+RETURN COLLECT(DISTINCT finalNode) AS resultingNodes, causalRelationships;
+
+
+// WIHTOUT relationships
+
+MATCH (iteration:Iteration {id: $selectedIteration.id})
+MATCH (concept:Concept)-[:PART_OF]->(iteration)
+WITH collect(concept) AS initialConcepts
+OPTIONAL MATCH (excludedNodes:Concept)
+WHERE $selectedNodes.name <> [""] AND excludedNodes.name IN $selectedNodes.name
+OPTIONAL MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
+WITH initialConcepts, collect(child) AS children, excludedNodes
+WITH initialConcepts + children AS combinedNodes, excludedNodes
+WITH CASE 
+        WHEN $selectedNodes.name = [""] THEN combinedNodes
+        ELSE [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name]
+     END AS finalNodes
+RETURN COLLECT(DISTINCT finalNodes) AS resultingNodes;
+

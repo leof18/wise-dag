@@ -1,9 +1,14 @@
+# Test script from Chun-Jie
+Path_Finding/
+
 # Folders with too much data
 Standardization/athena_vocabulary
 Standardization/derivedIndex
 Standardization/mainIndex
 Standardization/sleepyCat
 Standardization/*.txt
+Application/node_modules
+node_modules
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
