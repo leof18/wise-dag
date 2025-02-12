@@ -29,7 +29,7 @@ const HomePage = () => {
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Link
-              to="/login"
+              to="/research"
               className="px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700"
             >
               Get Started

@@ -1,48 +1,48 @@
-// api/dagitty.js
 const express = require('express');
 const router = express.Router();
 const { driver } = require("../db/neo4j");
-
 const { exec } = require('child_process');
 const fs = require('fs');
+const os = require('os');
 
-// Path to your R executable and command to call your R script.
-const R_SCRIPT_PATH = '"C:\\Program Files\\R\\R-4.3.1\\bin\\Rscript.exe"';
-const CHECK_LOOPS_COMMAND = `${R_SCRIPT_PATH} check_dag_loops.R dagitty_input.txt`;
+// Determine the OS and set the R script path accordingly
+const getRScriptPath = () => {
+  const platform = os.platform();
+  if (platform === 'win32') {
+    return '"C:\\Program Files\\R\\R-4.3.1\\bin\\Rscript.exe"';
+  } else if (platform === 'darwin') {
+    return '/usr/local/bin/Rscript'; // macOS default R path
+  } else if (platform === 'linux') {
+    return '/usr/bin/Rscript'; // Linux default R path
+  } else {
+    throw new Error('Unsupported OS for R script execution.');
+  }
+};
+
+// Dynamically construct the command to run the R script
+const CHECK_LOOPS_COMMAND = `${getRScriptPath()} check_dag_loops.R dagitty_input.txt`;
 
 // Define a cache variable to hold the graph data
 let cachedGraphData = null;
 
-/**
- * A helper function that runs the database query and returns the data.
- * If the data is already cached, it returns that instead.
- */
 async function getGraphData(parameters) {
-  // If we already have cached data, return it immediately.
   if (cachedGraphData) {
     console.log("Using cached graph data.");
     return cachedGraphData;
   }
-  
+
   console.log("Fetching data from the database...");
   const session = driver.session();
   try {
     const query = `
-      // Get nodes, excluding expanded nodes
       MATCH (iteration:Iteration {id: $selectedIteration})
       MATCH (concept:Concept)-[:PART_OF]->(iteration)
       WHERE NOT concept.name IN $selectedNodes
       MATCH (exposure:Concept {name: $exposure})
       MATCH (outcome:Concept {name: $outcome})
-      
-      // Get children of expanded nodes
       OPTIONAL MATCH (expanded:Concept)-[:SUBSUMES]->(child:Concept) 
       WHERE expanded.name IN $selectedNodes AND NOT child.name IN $selectedNodes
-
-      // Collect all nodes
       WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS initialNodes, exposure, outcome
-
-      // Ensure exposure and outcome are only added if they are not already in concepts or children
       WITH CASE 
               WHEN exposure IN initialNodes THEN initialNodes 
               ELSE initialNodes + [exposure]
@@ -52,7 +52,6 @@ async function getGraphData(parameters) {
               WHEN outcome IN nodesWithExposure THEN nodesWithExposure 
               ELSE nodesWithExposure + [outcome] 
           END AS Nodes
-
       UNWIND Nodes AS Node
       OPTIONAL MATCH (Node)-[causal:CAUSES]->(otherNode)
       WHERE otherNode IN Nodes
@@ -66,11 +65,9 @@ async function getGraphData(parameters) {
     `;
 
     const result = await session.run(query, parameters);
-
     const allNodes = result.records[0].get("allNodes");
     const causalEdges = result.records[0].get("causalEdges");
 
-    // Cache the result in memory
     cachedGraphData = { allNodes, causalEdges };
     return cachedGraphData;
   } finally {
@@ -90,13 +87,9 @@ router.post('/cycles', async (req, res) => {
       outcome: outcome
     };
 
-    // Get the graph data, using the cache if available.
     const { allNodes, causalEdges } = await getGraphData(parameters);
-
-    // Build the Dagitty graph string.
     let dagittyGraph = "dag {\n";
 
-    // 1. Create nodes for each timestep.
     for (let t = 1; t <= timepoints; t++) {
       allNodes.forEach(node => {
         const nodeName = `${node}_T${t}`;
@@ -106,62 +99,32 @@ router.post('/cycles', async (req, res) => {
         if (nodeOrder[node] !== undefined) {
           attributes.push(`time=${nodeOrder[node]}`);
         }
-        if (attributes.length > 0) {
-          dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
-        } else {
-          dagittyGraph += `  "${nodeName}";\n`;
-        }
+        dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
       });
     }
 
-    // 2. Intra–timestep causal edges.
     for (let t = 1; t <= timepoints; t++) {
       causalEdges.forEach(edge => {
         if (edge.from && edge.to) {
-          if (
-            nodeOrder[edge.from] !== undefined &&
-            nodeOrder[edge.to] !== undefined
-          ) {
-            if (nodeOrder[edge.from] <= nodeOrder[edge.to]) {
-              const source = `${edge.from}_T${t}`;
-              const target = `${edge.to}_T${t}`;
-              dagittyGraph += `  "${source}" -> "${target}";\n`;
-            }
-          } else {
-              const source = `${edge.from}_T${t}`;
-              const target = `${edge.to}_T${t}`;
-              dagittyGraph += `  "${source}" -> "${target}";\n`;
-          }
+          dagittyGraph += `  "${edge.from}_T${t}" -> "${edge.to}_T${t}";\n`;
         }
       });
     }
 
-    // 3. Cross–timestep edges.
     for (let i = 1; i < timepoints; i++) {
       for (let j = i + 1; j <= timepoints; j++) {
-        // a) Self–progression edges.
         allNodes.forEach(node => {
-          const source = `${node}_T${i}`;
-          const target = `${node}_T${j}`;
-          dagittyGraph += `  "${source}" -> "${target}";\n`;
+          dagittyGraph += `  "${node}_T${i}" -> "${node}_T${j}";\n`;
         });
-        // b) Cross–timestep causal edges.
         causalEdges.forEach(edge => {
-          if (edge.from && edge.to) {
-            const source = `${edge.from}_T${i}`;
-            const target = `${edge.to}_T${j}`;
-            dagittyGraph += `  "${source}" -> "${target}";\n`;
-          }
+          dagittyGraph += `  "${edge.from}_T${i}" -> "${edge.to}_T${j}";\n`;
         });
       }
     }
 
     dagittyGraph += "}\n";
-
-    // Write the generated DAG to a file that the R script will process.
     fs.writeFileSync("dagitty_input.txt", dagittyGraph, { encoding: "utf8" });
 
-    // Call the R script to process the DAG and resolve loops.
     exec(CHECK_LOOPS_COMMAND, (error, stdout, stderr) => {
       if (error) {
         console.error(`Error running R script: ${error.message}`);
@@ -174,7 +137,6 @@ router.post('/cycles', async (req, res) => {
       if (stdout === "No more cycles!") {
         return res.json({ rOutput: stdout });
       } else {
-        // Process the R script output.
         const regex = /(.+?)_T\d+(?=\s|$)/g;
         const matches = [...stdout.matchAll(regex)];
         const names = matches.map(match => match[1].trim());
