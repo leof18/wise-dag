@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
-  const [options, setOptions] = useState([]); // Dropdown options
-  const [searchTerm, setSearchTerm] = useState(""); // Current search term
-  const [loading, setLoading] = useState(false); // Loading indicator
-  const [focused, setFocused] = useState(false); // Tracks if the input is focused
+  const [options, setOptions] = useState([]);      // Dropdown options
+  const [searchTerm, setSearchTerm] = useState("");  // Current search term
+  const [loading, setLoading] = useState(false);     // Loading indicator
+  const [focused, setFocused] = useState(false);     // Tracks if the input is focused
 
   useEffect(() => {
     // Function to fetch options based on the current search term
@@ -33,10 +33,10 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
   }, [searchTerm, fetchOptions]);
 
   const handleSelect = (option) => {
-    onChange(option); // Notify parent component of the selection
-    setSearchTerm(option); // Set the selected option in the input
-    setOptions([]); // Clear options
-    setFocused(false); // Close the dropdown
+    onChange(option);       // Notify parent component of the selection
+    setSearchTerm(option);  // Set the selected option in the input
+    setOptions([]);         // Clear options
+    setFocused(false);      // Close the dropdown
   };
 
   return (
@@ -46,6 +46,7 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
         placeholder={placeholder}
         value={searchTerm}
         onFocus={() => setFocused(true)}
+        onBlur={() => setFocused(false)}
         onChange={(e) => setSearchTerm(e.target.value)}
         className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
@@ -59,7 +60,7 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
             options.map((option, index) => (
               <div
                 key={index}
-                onClick={() => handleSelect(option)}
+                onMouseDown={() => handleSelect(option)}
                 className="cursor-pointer px-4 py-2 hover:bg-gray-100"
               >
                 {option}
