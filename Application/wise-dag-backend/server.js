@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { driver } = require('./db/neo4j');
+const initialGranularityQuery = require('./routes/initialGranularityQuery');
 const granularityQuery = require('./routes/granularityQuery');
 const conceptRoutes = require('./routes/conceptRoutes');
 const dagittyCyclesCheck = require('./routes/dagittyCyclesCheck');
@@ -14,8 +15,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api', granularityQuery);
 app.use('/api', conceptRoutes);
+app.use('/api', initialGranularityQuery);
+app.use('/api', granularityQuery);
 app.use('/api', dagittyCyclesCheck);
 
 // Close Neo4j connection when server stops
