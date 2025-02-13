@@ -69,6 +69,41 @@ const GraphPage = () => {
 
         const sortedNodes = [];
         sortedNodes.push(...extractedNodes);
+
+        // Add custom exposure node if needed
+        if (exposure && exposure.type === "custom") {
+          const exposureExists = extractedNodes.some(
+            (n) => n.name === exposure.value
+          );
+          if (!exposureExists) {
+            sortedNodes.push({
+              id: `customExposure-${exposure.value}`,
+              name: exposure.value,
+              isExposure: true,
+              isOutcome: false,
+              isLeaf: true,
+              textLength: exposure.value.length,
+            });
+          }
+        }
+
+        // Add custom outcome node if needed
+        if (outcome && outcome.type === "custom") {
+          const outcomeExists = extractedNodes.some(
+            (n) => n.name === outcome.value
+          );
+          if (!outcomeExists) {
+            sortedNodes.push({
+              id: `customOutcome-${outcome.value}`,
+              name: outcome.value,
+              isExposure: false,
+              isOutcome: true,
+              isLeaf: true,
+              textLength: outcome.value.length,
+            });
+          }
+        }
+
         setNodes(sortedNodes);
 
         if (transformRef.current) {
