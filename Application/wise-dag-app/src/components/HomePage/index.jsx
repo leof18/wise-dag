@@ -35,7 +35,7 @@ const HomePage = () => {
               Get Started
             </Link>
             <a
-              href="#about"
+              href="/about"
               className="px-8 py-3 bg-gray-200 text-gray-800 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-300"
             >
               Learn More

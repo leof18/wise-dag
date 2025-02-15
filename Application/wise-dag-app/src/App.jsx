@@ -9,6 +9,7 @@ import ResearchPage from './components/ResearchPage/ResearchPage';
 import GraphPage from './components/GraphPage/GraphPage';
 import TimepointPage from './components/TimepointPage';
 import DagittyPage from './components/DagittyPage';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
         <Route path="/graph" element={<GraphPage />} />
         <Route path="/dagitty" element={<DagittyPage />} />
         <Route path="/timepoints" element={<TimepointPage />} />
+        <Route path="/about" element={<AboutUs />} />
+      
       </Routes>
     </Layout>
   );
