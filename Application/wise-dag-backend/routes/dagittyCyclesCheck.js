@@ -22,7 +22,7 @@ const getRScriptPath = () => {
 // Dynamically construct the command to run the R script
 const CHECK_LOOPS_COMMAND = `${getRScriptPath()} check_dag_loops.R dagitty_input.txt`;
 
-// Define a cache variable to hold the graph data
+// Define a cache variable to hold the graph data 
 let cachedGraphData = null;
 
 async function getGraphData(parameters) {
@@ -38,20 +38,9 @@ async function getGraphData(parameters) {
       MATCH (iteration:Iteration {id: $selectedIteration})
       MATCH (concept:Concept)-[:PART_OF]->(iteration)
       WHERE NOT concept.name IN $selectedNodes
-      MATCH (exposure:Concept {name: $exposure})
-      MATCH (outcome:Concept {name: $outcome})
       OPTIONAL MATCH (expanded:Concept)-[:SUBSUMES]->(child:Concept) 
       WHERE expanded.name IN $selectedNodes AND NOT child.name IN $selectedNodes
-      WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS initialNodes, exposure, outcome
-      WITH CASE 
-              WHEN exposure IN initialNodes THEN initialNodes 
-              ELSE initialNodes + [exposure]
-          END AS nodesWithExposure,
-          outcome
-      WITH CASE 
-              WHEN outcome IN nodesWithExposure THEN nodesWithExposure 
-              ELSE nodesWithExposure + [outcome] 
-          END AS Nodes
+      WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS Nodes
       UNWIND Nodes AS Node
       OPTIONAL MATCH (Node)-[causal:CAUSES]->(otherNode)
       WHERE otherNode IN Nodes
@@ -82,45 +71,87 @@ router.post('/cycles', async (req, res) => {
   try {
     const parameters = {
       selectedIteration: granularity,
-      selectedNodes: selectedNodes,
-      exposure: exposure,
-      outcome: outcome
+      selectedNodes: selectedNodes
     };
 
     const { allNodes, causalEdges } = await getGraphData(parameters);
+
+    // Add custom exposure and outcome
+    if (exposure.type === "custom" && !allNodes.includes(exposure.value)) {
+      allNodes.push(exposure.value);
+    }
+    if (outcome.type === "custom" && !allNodes.includes(outcome.value)) {
+      allNodes.push(outcome.value);
+    }
+
     let dagittyGraph = "dag {\n";
 
     for (let t = 1; t <= timepoints; t++) {
       allNodes.forEach(node => {
         const nodeName = `${node}_T${t}`;
         let attributes = [];
-        if (node === exposure) attributes.push("exposure");
-        if (node === outcome) attributes.push("outcome");
+        // Only set "exposure" at the first timepoint
+        if (t === 1 && node === exposure.value) {
+          attributes.push("exposure");
+        }
+        // Only set "outcome" at the last timepoint
+        if (t === timepoints && node === outcome.value) {
+          attributes.push("outcome");
+        }
+        // Push time attribute
         if (nodeOrder[node] !== undefined) {
           attributes.push(`time=${nodeOrder[node]}`);
         }
-        dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
+
+        if (attributes.length > 0) {
+          dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
+        } else {
+          dagittyGraph += `  "${nodeName}";\n`;
+        }
       });
     }
-
+    // 2. Intra–timestep causal edges.
     for (let t = 1; t <= timepoints; t++) {
       causalEdges.forEach(edge => {
         if (edge.from && edge.to) {
-          dagittyGraph += `  "${edge.from}_T${t}" -> "${edge.to}_T${t}";\n`;
+          if (
+            nodeOrder[edge.from] !== undefined &&
+            nodeOrder[edge.to] !== undefined
+          ) {
+            if (nodeOrder[edge.from] <= nodeOrder[edge.to]) {
+              const source = `${edge.from}_T${t}`;
+              const target = `${edge.to}_T${t}`;
+              dagittyGraph += `  "${source}" -> "${target}";\n`;
+            }
+          } else {
+              const source = `${edge.from}_T${t}`;
+              const target = `${edge.to}_T${t}`;
+              dagittyGraph += `  "${source}" -> "${target}";\n`;
+          }
         }
       });
     }
 
+    // 3. Cross–timestep edges.
     for (let i = 1; i < timepoints; i++) {
       for (let j = i + 1; j <= timepoints; j++) {
+        // a) Self–progression edges.
         allNodes.forEach(node => {
-          dagittyGraph += `  "${node}_T${i}" -> "${node}_T${j}";\n`;
+          const source = `${node}_T${i}`;
+          const target = `${node}_T${j}`;
+          dagittyGraph += `  "${source}" -> "${target}";\n`;
         });
+        // b) Cross–timestep causal edges.
         causalEdges.forEach(edge => {
-          dagittyGraph += `  "${edge.from}_T${i}" -> "${edge.to}_T${j}";\n`;
+          if (edge.from && edge.to) {
+            const source = `${edge.from}_T${i}`;
+            const target = `${edge.to}_T${j}`;
+            dagittyGraph += `  "${source}" -> "${target}";\n`;
+          }
         });
       }
     }
+
 
     dagittyGraph += "}\n";
     fs.writeFileSync("dagitty_input.txt", dagittyGraph, { encoding: "utf8" });

@@ -3,7 +3,7 @@ const router = express.Router();
 const { driver } = require("../db/neo4j");
 
 router.post("/granularity-query", async (req, res) => {
-  const { selectedIteration, selectedNodes , exposure, outcome } = req.body;
+  const { selectedIteration, selectedNodes } = req.body;
 
   // Validate required parameters
   if (!selectedIteration || !selectedNodes) {
@@ -19,8 +19,6 @@ router.post("/granularity-query", async (req, res) => {
     const params = {
       selectedIteration,
       selectedNodes,
-      exposure,
-      outcome
     };
 
     const query = `
@@ -28,32 +26,19 @@ router.post("/granularity-query", async (req, res) => {
         MATCH (iteration:Iteration {id: $selectedIteration.id})
         MATCH (concept:Concept)-[:PART_OF]->(iteration)
         WHERE NOT concept.name IN $selectedNodes
-        MATCH (exposure:Concept {name: $exposure})
-        MATCH (outcome:Concept {name: $outcome})
         
         // Get children of expanded nodes
         OPTIONAL MATCH (expanded:Concept)-[:SUBSUMES]->(child:Concept) 
         WHERE expanded.name IN $selectedNodes AND NOT child.name IN $selectedNodes
 
         // Collect all nodes
-        WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS initialNodes, exposure, outcome
-
-        // Ensure exposure and outcome are only added if they are not already in concepts or children
-        WITH CASE 
-                WHEN exposure IN initialNodes THEN initialNodes 
-                ELSE initialNodes + [exposure]
-            END AS nodesWithExposure,
-            outcome
-        WITH CASE 
-                WHEN outcome IN nodesWithExposure THEN nodesWithExposure 
-                ELSE nodesWithExposure + [outcome] 
-            END AS Nodes
+        WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS Nodes
 
         UNWIND Nodes AS Node
         RETURN 
             COLLECT(DISTINCT Node) AS resultingNodes
     `;
-    console.log("Executing query with params:", params);
+    console.log("Executing granularity query with params:", params);
 
     const result = await session.run(query, params);
 

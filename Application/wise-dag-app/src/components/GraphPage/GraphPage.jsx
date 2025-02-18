@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
@@ -8,7 +8,14 @@ import { FaEraser } from "react-icons/fa";
 const GraphPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { exposure, outcome } = location.state;
+  // Expect exposure and outcome to be objects { value: string, type: "none" | "custom" | "predefined" }
+  const { 
+    exposure = { value: "", type: "none" }, 
+    outcome = { value: "", type: "none" } 
+  } = location.state || {};
+  
+  // Track whether the inital fetch was done to prevent duplicate calls
+  const [initialFetchDone, setInitialFetchDone] = useState(false);
 
   const [nodes, setNodes] = useState([]);
   const [granularity, setGranularity] = useState(0);
@@ -20,27 +27,22 @@ const GraphPage = () => {
       alert("No nodes available to Dagify!");
       return;
     }
-    // Navigating to timepointpage with selected nodes
     navigate("/timepoints", {
-      state: { granularity, selectedNodes, exposure, outcome, nodes},
+      state: { granularity, selectedNodes, exposure, outcome, nodes },
     });
   };
 
   // Graph Space Dimensions
   const GRAPH_HEIGHT = 900;
-
-  const fetchGraphData = async (level, selectedNodesList = []) => {
+  
+  // FETCH FOR SELECTED ITERATION
+  const fetchGraphData = async (iteration, exposure, outcome, selectedNodesList = []) => {
     try {
+      // Only include exposure/outcome if they are predefined.
       const requestData = {
-        selectedIteration: { id: level },
+        selectedIteration: { id: iteration },
         selectedNodes: selectedNodesList,
-        exposure: exposure ,
-        outcome: outcome
       };
-
-      console.log(
-        requestData
-      );
 
       const response = await axios.post(
         "http://localhost:3001/api/granularity-query",
@@ -49,40 +51,64 @@ const GraphPage = () => {
       const data = response.data;
 
       if (data.success) {
+        // Map returned data into nodes.
         const extractedNodes = data.data.flat(Infinity).map((node) => ({
           id: node.identity.low,
           name: node.properties.name,
-          isExposure: node.properties.name === exposure,
-          isOutcome: node.properties.name === outcome,
+          isExposure:
+            exposure &&
+            exposure.type === "predefined" &&
+            node.properties.name === exposure.value,
+          isOutcome:
+            outcome &&
+            outcome.type === "predefined" &&
+            node.properties.name === outcome.value,
           isLeaf: node.properties.is_leaf_node,
           textLength: node.properties.name.length,
         }));
 
-        const sortedNodes = [
-          {
-            id: "exposure",
-            name: exposure,
-            isExposure: true,
-            isLeaf: true,
-            textLength: exposure.length,
-          },
-          ...extractedNodes.filter(
-            (n) => n.name !== exposure && n.name !== outcome
-          ),
-          {
-            id: "outcome",
-            name: outcome,
-            isOutcome: true,
-            isLeaf: true,
-            textLength: outcome.length,
-          },
-        ];
+        const sortedNodes = [];
+        sortedNodes.push(...extractedNodes);
+
+        // Add custom exposure node if needed
+        if (exposure && exposure.type === "custom") {
+          const exposureExists = extractedNodes.some(
+            (n) => n.name === exposure.value
+          );
+          if (!exposureExists) {
+            sortedNodes.push({
+              id: `customExposure-${exposure.value}`,
+              name: exposure.value,
+              isExposure: true,
+              isOutcome: false,
+              isLeaf: true,
+              textLength: exposure.value.length,
+            });
+          }
+        }
+
+        // Add custom outcome node if needed
+        if (outcome && outcome.type === "custom") {
+          const outcomeExists = extractedNodes.some(
+            (n) => n.name === outcome.value
+          );
+          if (!outcomeExists) {
+            sortedNodes.push({
+              id: `customOutcome-${outcome.value}`,
+              name: outcome.value,
+              isExposure: false,
+              isOutcome: true,
+              isLeaf: true,
+              textLength: outcome.value.length,
+            });
+          }
+        }
 
         setNodes(sortedNodes);
 
         if (transformRef.current) {
           setTimeout(() => {
-            transformRef.current.centerView(0.5, 200); // Ensure it starts zoomed out
+            transformRef.current.centerView(0.5, 200);
           }, 300);
         }
       } else {
@@ -93,53 +119,95 @@ const GraphPage = () => {
     }
   };
 
-  useEffect(() => {
-    fetchGraphData(granularity);
-  }, [granularity]);
+  // INITIAL FETCH FOR ITERATION AND SELECTED LIST (where both concepts are present)
+  const fetchInitialGraphParams = async (exposure, outcome) => {
+    try {
+    if (exposure.type !== "predefined" && outcome.type !== "predefined") {
+      await fetchGraphData(0, exposure, outcome, []);
+      setInitialFetchDone(true);
+      return;
+    }
 
-  const handleNodeClick = (node) => {
-    if (!node.isLeaf) {
-      console.log(
-        `Expanding node: ${node.name} with iteration level ${granularity}`
+      const requestData = {
+        exposure: exposure,
+        outcome: outcome
+      };
+
+      const response = await axios.post(
+        "http://localhost:3001/api/initial-graph-query",
+        requestData
       );
-      const newSelectedNodes = [...selectedNodes, node.name];
-      setSelectedNodes(newSelectedNodes);
-      fetchGraphData(granularity, newSelectedNodes);
+      const result = response.data;
+
+      if (result.success) {
+
+        const { iteration, initSelectedNodes} = result.data[0];
+
+        setGranularity(iteration);
+        setSelectedNodes(initSelectedNodes);
+
+        await fetchGraphData(iteration, exposure, outcome, initSelectedNodes);
+        setInitialFetchDone(true);
+
+      } else {
+        console.error("Failed to fetch initial graph data:", result.error);
+      }
+    } catch (error) {
+      console.error("Error fetching initial graph data:", error);
     }
   };
 
-  // ** Reset Button Handler **
-  // Clears the selected nodes list and re-fetches data without any selections.
-  const handleReset = () => {
-    setSelectedNodes([]);
-    fetchGraphData(granularity, []);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    fetchInitialGraphParams(exposure, outcome);
+  }, []);
+  
+  useEffect(() => {
+    if (initialFetchDone) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      fetchGraphData(granularity, exposure, outcome, []);
+    }
+  }, [granularity]);
+
+
+  const handleNodeClick = (node) => {
+    if (!node.isLeaf) {
+      console.log(`Expanding node: ${node.name} with iteration level ${granularity}`);
+      const newSelectedNodes = [...selectedNodes, node.name];
+      setSelectedNodes(newSelectedNodes);
+      fetchGraphData(granularity, exposure, outcome, newSelectedNodes);
+    }
   };
 
-  // ** Undo Button Handler **
-  // Removes the last node from the selectedNodes list and re-fetches data.
+  const handleReset = () => {
+    setSelectedNodes([]);
+    fetchGraphData(granularity, exposure, outcome, []);
+  };
+
   const handleUndo = () => {
     if (selectedNodes.length === 0) return;
     const newSelectedNodes = selectedNodes.slice(0, -1);
     setSelectedNodes(newSelectedNodes);
-    fetchGraphData(granularity, newSelectedNodes);
+    fetchGraphData(granularity, exposure, outcome, newSelectedNodes);
   };
 
   return (
-    <div className="flex flex-col items-center p-6 bg-gray-100 w-full"
-    style={{ height: "calc(100vh - 130px)" }}>
-      {/* Fixed Header with Granularity Slider + Zoom Buttons */}
+    <div className="flex flex-col items-center p-6 bg-gray-100 w-full" style={{ height: "calc(100vh - 130px)" }}>
+      {/* Fixed Header */}
       <header className="w-full bg-white p-4 rounded-lg shadow-md sticky top-0 z-50">
         <div className="flex">
-          {/* Left Column: 75% width */}
           <div className="w-3/4">
-            {/* Title and Info */}
             <h1 className="text-base font-semibold text-center">Node Selection</h1>
             <p className="text-sm text-center text-gray-600">
-              Exposure: <span className="text-red-500 font-semibold">{exposure}</span>,{" "}
-              Outcome: <span className="text-red-500 font-semibold">{outcome}</span>
+              Exposure:{" "}
+              <span className="text-red-500 font-semibold">
+                {exposure && exposure.type !== "none" ? exposure.value : "Not set"}
+              </span>
+              , Outcome:{" "}
+              <span className="text-red-500 font-semibold">
+                {outcome && outcome.type !== "none" ? outcome.value : "Not set"}
+              </span>
             </p>
-            
-            {/* Controls: Undo & Reset above the Slider */}
             <div className="mt-2">
               <div className="flex justify-center space-x-2 mb-2">
                 <button
@@ -155,7 +223,6 @@ const GraphPage = () => {
                   Reset Expansion
                 </button>
               </div>
-              {/* Slider Container */}
               <div className="w-3/4 mx-auto">
                 <label htmlFor="granularity-slider" className="block text-sm font-semibold">
                   Granularity Level: {granularity}
@@ -167,14 +234,12 @@ const GraphPage = () => {
                   max="74"
                   step="1"
                   value={granularity}
-                  onChange={(e) => setGranularity(parseInt(e.target.value))}
+                  onChange={(e) => setGranularity(parseInt(e.target.value, 10))}
                   className="w-full"
                 />
               </div>
             </div>
           </div>
-
-          {/* Right Column: 25% width */}
           <div className="w-1/4 flex items-center justify-end">
             <button
               onClick={handleTimepoint}
@@ -186,23 +251,22 @@ const GraphPage = () => {
         </div>
       </header>
 
-
       {/* Graph Space */}
       <div
         className="border rounded-lg bg-white p-4 mt-4 overflow-auto"
         style={{
           width: "100%",
           height: `${GRAPH_HEIGHT}px`,
-          maxHeight: "80vh", // Prevents it from overflowing the screen
+          maxHeight: "80vh",
         }}
       >
         <div
           className="relative"
           style={{
             display: "flex",
-            flexWrap: "wrap", // Ensures horizontal spread first
-            justifyContent: "flex-start", // Aligns items properly
-            gap: "12px", // Adds space between nodes
+            flexWrap: "wrap",
+            justifyContent: "flex-start",
+            gap: "12px",
             padding: "12px",
           }}
         >
@@ -212,22 +276,14 @@ const GraphPage = () => {
               className="p-2 rounded-full text-center font-semibold shadow-md cursor-pointer"
               onClick={() => handleNodeClick(node)}
               style={{
-                backgroundColor:
-                  node.isExposure || node.isOutcome
-                    ? "#EF4444"
-                    : node.isLeaf
-                    ? "#D1D5DB"
-                    : "#A7F3D0",
+                backgroundColor: node.isExposure || node.isOutcome ? "#EF4444" : node.isLeaf ? "#D1D5DB" : "#A7F3D0",
                 color: node.isExposure || node.isOutcome ? "white" : "black",
-                border:
-                  node.isExposure || node.isOutcome
-                    ? "2px solid black"
-                    : "none",
-                    height: "140px",
-                    width: "140px",
-                    padding: "6px 12px",
-                    margin: "8px",
-                    alignContent: "center",
+                border: node.isExposure || node.isOutcome ? "2px solid black" : "none",
+                height: "140px",
+                width: "140px",
+                padding: "6px 12px",
+                margin: "8px",
+                alignContent: "center",
               }}
             >
               {node.name}

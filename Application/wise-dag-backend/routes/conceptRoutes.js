@@ -25,7 +25,7 @@ router.get("/concepts", async (req, res) => {
 
     const params = { searchTerm };
 
-    console.log("Executing query with params:", params);
+    console.log("Executing concept query with params:", params);
 
     const result = await session.run(query, params);
 

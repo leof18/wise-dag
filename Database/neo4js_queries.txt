@@ -19,7 +19,7 @@ MATCH (node:Concept)
 WHERE NOT EXISTS { MATCH (node)-[:SUBSUMES]->(:Concept) }
 SET node.is_leaf_node = true;
 
-
+/////////////////////////////////////////////////////////////////////////
 // MAIN SCRIPT TO QUERY DATABASE
 
 // Get nodes, excluding expanded nodes
@@ -60,3 +60,68 @@ RETURN
     // For Dagitty
     COLLECT(DISTINCT Node.name) AS allNodes,
     COLLECT(DISTINCT { from: Node.name, to: otherNode.name }) AS causalEdges;
+
+
+/////////////////////////////////////////////////////////////////////////
+
+MATCH (iteration:Iteration)
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(exp:Concept {name: $exposure})
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(out:Concept {name: $outcome})
+WITH iteration, 
+     CASE 
+       WHEN exp IS NOT NULL AND out IS NOT NULL THEN 2 
+       WHEN exp IS NOT NULL OR out IS NOT NULL THEN 1 
+       ELSE 0 
+     END AS score
+WHERE score > 0
+ORDER BY score DESC, iteration.id ASC
+LIMIT 1
+RETURN iteration
+
+/////////////////////////////////////////////////////////////////////////
+
+// Step 1: Choose the best iteration based on score and iteration id
+MATCH (iteration:Iteration)
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(exp:Concept {name: $exposure})
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(out:Concept {name: $outcome})
+WITH iteration, exp, out,
+     CASE 
+       WHEN exp IS NOT NULL AND out IS NOT NULL THEN 2 
+       WHEN exp IS NOT NULL OR out IS NOT NULL THEN 1 
+       ELSE 0 
+     END AS score
+WHERE score > 0
+ORDER BY score DESC, iteration.id ASC
+LIMIT 1
+
+// Step 2: Determine the missing concept name if score = 1
+WITH iteration, score, exp, out,
+     CASE 
+       WHEN score = 1 AND exp IS NULL THEN $exposure
+       WHEN score = 1 AND out IS NULL THEN $outcome
+       ELSE null
+     END AS missingName
+
+// Step 3: If missingName is set, find the shortest path from the missing node 
+// to any node in the iteration (via SUBSUMES), then return the nodes in that path 
+// (excluding the missing node) as selectedNodes.
+CALL (iteration, missingName) {
+  WITH iteration, missingName
+  OPTIONAL MATCH (missing:Concept {name: missingName})
+  WHERE missing IS NOT NULL
+  MATCH (iteration)<-[:PART_OF]-(iterationNode:Concept)
+  WITH iteration, missing, collect(iterationNode) AS iterationNodes
+  UNWIND iterationNodes AS targetNode
+  WITH iteration, missing, targetNode, shortestPath((missing)-[:SUBSUMES*]-(targetNode)) AS sp
+  WHERE sp IS NOT NULL
+  RETURN sp
+  ORDER BY length(sp) ASC
+  LIMIT 1
+}
+RETURN iteration, 
+       score, 
+       CASE 
+         WHEN score = 1 AND sp IS NOT NULL 
+         THEN reverse([node IN nodes(sp)[1..] | node.name])
+         ELSE [] 
+       END AS selectedNodes

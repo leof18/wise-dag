@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DropdownWithSearch from '../DropdownWithSearch';
+import DropdownWithSearch from "../DropdownwithSearch";
 import logo from "../../assets/logo.png";
 
 const fetchConcepts = async (searchTerm) => {
@@ -20,23 +20,16 @@ const fetchConcepts = async (searchTerm) => {
 };
 
 const ResearchPage = () => {
-  const [exposure, setExposure] = useState("");
-  const [outcome, setOutcome] = useState("");
-  const [error, setError] = useState("");
+  
   const navigate = useNavigate();
+  // Each state holds an object with both a value and a type ("none", "predefined", or "custom")
+  const [exposure, setExposure] = useState({ value: "", type: "none" });
+  const [outcome, setOutcome] = useState({ value: "", type: "none" });
 
   const handleSubmit = () => {
-    if (!exposure || !outcome) {
-      setError("Please provide both an exposure and an outcome.");
-      return;
-    }
-
-    const stateData = {
-      exposure,
-      outcome,
-    };
-
-    navigate("/graph", { state: stateData }); // Pass exposure and outcome to GraphPage
+    const stateData = { exposure, outcome };
+    console.log(stateData)
+    navigate("/graph", { state: stateData });
   };
 
   return (
@@ -53,21 +46,22 @@ const ResearchPage = () => {
             Which research question do you want to investigate?
           </h2>
         </div>
-        {error && <div className="text-red-500 text-sm mb-4">{error}</div>}
         <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
           <div className="flex items-center space-x-2">
             <label className="text-gray-700 font-medium">Does</label>
             <DropdownWithSearch
               placeholder="Enter exposure"
               fetchOptions={fetchConcepts}
-              value={exposure}
+              // Pass the current value string
+              value={exposure.value}
+              // onChange receives the full object with both value and type
               onChange={setExposure}
             />
             <label className="text-gray-700 font-medium">affect</label>
             <DropdownWithSearch
               placeholder="Enter outcome"
               fetchOptions={fetchConcepts}
-              value={outcome}
+              value={outcome.value}
               onChange={setOutcome}
             />
             <label className="text-gray-700 font-medium">?</label>

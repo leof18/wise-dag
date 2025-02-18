@@ -129,7 +129,7 @@ const TimepointPage = () => {
     >
       {/* Fixed Header (Same as GraphPage) */}
       <header className="w-full flex justify-center items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
-        <h1 className="text-2xl font-bold">Set Timepoints</h1>
+        <h1 className="text-2xl font-bold">Set Timepoints And Order</h1>
       </header>
 
         {/* Display of the R Output */}

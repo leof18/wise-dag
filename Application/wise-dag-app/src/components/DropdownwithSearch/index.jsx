@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
-  const [options, setOptions] = useState([]); // Dropdown options
-  const [searchTerm, setSearchTerm] = useState(""); // Current search term
-  const [loading, setLoading] = useState(false); // Loading indicator
-  const [focused, setFocused] = useState(false); // Tracks if the input is focused
+  const [options, setOptions] = useState([]);      // Dropdown options
+  const [searchTerm, setSearchTerm] = useState("");  // Current search term
+  const [loading, setLoading] = useState(false);     // Loading indicator
+  const [focused, setFocused] = useState(false);     // Tracks if the input is focused
 
   useEffect(() => {
     // Function to fetch options based on the current search term
@@ -32,11 +32,24 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
     return () => clearTimeout(debounceTimeout); // Cleanup timeout
   }, [searchTerm, fetchOptions]);
 
+  // When an option is selected from the dropdown:
   const handleSelect = (option) => {
-    onChange(option); // Notify parent component of the selection
-    setSearchTerm(option); // Set the selected option in the input
-    setOptions([]); // Clear options
-    setFocused(false); // Close the dropdown
+    onChange({ value: option, type: "predefined" });  // Notify parent of a predefined selection
+    setSearchTerm(option);  // Update the input with the selected option
+    setOptions([]);         // Clear the options
+    setFocused(false);      // Close the dropdown
+  };
+
+  // When the user types or changes the input:
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+    setSearchTerm(inputValue);
+
+    if (inputValue.trim() === "") {
+      onChange({ value: "", type: "none" });
+    } else {
+      onChange({ value: inputValue, type: "custom" });
+    }
   };
 
   return (
@@ -46,7 +59,8 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
         placeholder={placeholder}
         value={searchTerm}
         onFocus={() => setFocused(true)}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        onBlur={() => setFocused(false)}
+        onChange={handleInputChange}
         className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
       />
       {focused && searchTerm && (
@@ -54,12 +68,12 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
           {loading ? (
             <div className="p-2 text-center text-gray-500">Loading...</div>
           ) : options.length === 0 ? (
-            <div className="p-2 text-center text-gray-500">No options found</div>
+            <div className="p-2 text-center text-gray-500">No predefined found</div>
           ) : (
             options.map((option, index) => (
               <div
                 key={index}
-                onClick={() => handleSelect(option)}
+                onMouseDown={() => handleSelect(option)}
                 className="cursor-pointer px-4 py-2 hover:bg-gray-100"
               >
                 {option}
