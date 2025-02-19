@@ -74,7 +74,17 @@
 		DAGittyControl.observe( 'graphchange',
 			function(g){
 				Model.dag = g;
-				document.getElementById("adj_matrix").value = g.toString();
+				// Check if there's a DAGitty input stored in localStorage (sent from frontend)
+const storedDAGittyText = localStorage.getItem("dagittyText");
+
+if (storedDAGittyText) {
+  console.log("Using stored DAGitty input...");
+  document.getElementById("adj_matrix").value = storedDAGittyText;
+} else {
+  console.log("No stored DAGitty input, using default.");
+  document.getElementById("adj_matrix").value = g.toString();
+}
+
 				// if previously highlighted variable no longer exists, fold up this menu
 				if( !g.getVertex(document.getElementById("variable_id").value) ){
 					document.getElementById("variable_id").value = ''
@@ -199,12 +209,7 @@
    </ul>
 
    <div id="canvas" class="dagitty" data-mutable="true">
-ddag {
-  "Urinary incontinence" -> "Falls"
-  "Urinary incontinence" -> "Procedure involving urinary catheter"
-  "Vascular disorder" -> "Kidney disease"
-  "Weight loss" -> "Disorder of glucose metabolism"
-}
+
 
    </div>
 </main>
@@ -342,19 +347,25 @@ ddag {
     </div>
 
     <h3 onclick="displayToggle('model_data')">
-        <img src="./images/arrow-down.png" alt="" id="a_model_data" />
-        Model code
-    </h3>
-    <div id="model_data" style="display:block">
-      <form name="model_data_frm">
-        <textarea rows="10" cols="35" name="adj_matrix" id="adj_matrix"
-           onkeydown="if(this.value != Model.dag_model_text_data){ displayShow('model_refresh');this.style.backgroundColor='#fec'; }"></textarea>
-      </form>
-      <p id="model_refresh" style="display:none">
-        You have modified the model code. To draw the modified model, click here:
-        <button onclick="loadDAGFromTextData()">Update DAG</button>
-      </p>
-    </div>
+      <img src="./images/arrow-down.png" alt="" id="a_model_data" />
+      Model code
+  </h3>
+  <div id="model_data" style="display:block">
+    <form name="model_data_frm">
+      <textarea rows="10" cols="35" name="adj_matrix" id="adj_matrix"
+         onkeydown="if(this.value != Model.dag_model_text_data){ displayShow('model_refresh');this.style.backgroundColor='#fec'; }"></textarea>
+    </form>
+    <p id="model_refresh" style="display:none">
+      You have modified the model code. To draw the modified model, click here:
+      <button onclick="loadDAGFromTextData()">Update DAG</button>
+    </p>
+  </div>
+
+  <!-- ✅ Permanent "Generate DAG" Button -->
+  <div style="text-align: center; margin-top: 10px;">
+      <button onclick="loadDAGFromTextData()" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">
+          Generate DAG
+      </button>
 
    <h3 onclick="displayToggle('summary')">
        <img src="./images/arrow-down.png" alt="" id="a_summary">

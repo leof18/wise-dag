@@ -6,6 +6,7 @@ const initialGranularityQuery = require('./routes/initialGranularityQuery');
 const granularityQuery = require('./routes/granularityQuery');
 const conceptRoutes = require('./routes/conceptRoutes');
 const dagittyCyclesCheck = require('./routes/dagittyCyclesCheck');
+const dagittyInputRoute = require("./routes/dagittyInput"); 
 
 const app = express();
 const PORT = 3001;
@@ -19,6 +20,7 @@ app.use('/api', conceptRoutes);
 app.use('/api', initialGranularityQuery);
 app.use('/api', granularityQuery);
 app.use('/api', dagittyCyclesCheck);
+app.use('/api', dagittyInputRoute);
 
 // Close Neo4j connection when server stops
 process.on('SIGINT', async () => {

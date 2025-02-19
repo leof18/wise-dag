@@ -113,9 +113,20 @@ const TimepointPage = () => {
     );
   };
 
-  const handleNext = () => {
-    navigate("/dagitty");
+  const handleNext = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/api/dagitty-input"); // Fetch updated file
+      const data = await response.json();
+  
+      if (data.dagittyText) {
+        localStorage.setItem("dagittyText", data.dagittyText); // Store updated DAGitty input
+        navigate("/dagitty"); // Navigate to DAGittyPage
+      }
+    } catch (error) {
+      console.error("Error fetching updated DAGitty input:", error);
+    }
   };
+  
 
   // Only include nodes whose names are in nodesToResolve.
   const nodesToDisplay = nodesToResolve.length
