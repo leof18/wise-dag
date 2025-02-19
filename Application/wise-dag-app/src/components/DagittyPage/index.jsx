@@ -4,16 +4,36 @@ const DagittyPage = () => {
   useEffect(() => {
     const scripts = ["dagitty.js", "base64.js", "example-dags.js", "main.js"];
 
-    scripts.forEach((scriptName) => {
-      const script = document.createElement("script");
-      script.src = `/dagitty/${scriptName}`; // Load from public/dagitty/
-      script.async = true;
-      document.body.appendChild(script);
+    const loadScript = (src) =>
+      new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.async = false; // Load in order
+        script.onload = () => {
+          console.log(`Loaded: ${src}`);
+          resolve();
+        };
+        script.onerror = () => {
+          console.error(`Failed to load script: ${src}`);
+          reject();
+        };
+        document.body.appendChild(script);
+      });
 
-      script.onerror = () => {
-        console.error(`Failed to load script: ${scriptName}`);
-      };
-    });
+    Promise.all(scripts.map((scriptName) => loadScript(`/dagitty/${scriptName}`)))
+      .then(() => {
+        console.log("✅ All scripts loaded!");
+        
+        // Reload iframe to ensure DAGitty loads inside it
+        setTimeout(() => {
+          const iframe = document.querySelector("iframe");
+          if (iframe) {
+            console.log("🔄 Reloading iframe...");
+            iframe.src += ""; // Force reload
+          }
+        }, 500);
+      })
+      .catch((err) => console.error("❌ Script loading error:", err));
 
     return () => {
       // Cleanup scripts on unmount

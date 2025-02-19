@@ -12064,5 +12064,10 @@ var GraphGUI_SVG = Class.extend({
         (docElement.scrollTop || body.scrollTop) -
         (docElement.clientTop || 0)
     );
+    
   },
+  
 });
+
+window.DAGitty = DAGitty;
+console.log("🌐 DAGitty is now globally available.");
