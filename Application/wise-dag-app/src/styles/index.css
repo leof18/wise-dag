@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles */
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+  margin: 0;
+}
+
+/* Root container */
+#root {
+  @apply flex flex-col min-h-screen;
+}
+
+/* Main content area (flexible height) */
+.main-content {
+  @apply flex-1 flex flex-col;
+}
+
+/* Header Styling */
+header {
+  @apply bg-gray-100 text-gray-600 sticky top-0 z-50 shadow-md;
+}
+
+header .header-container {
+  @apply max-w-screen-xl mx-auto px-4 py-2 flex justify-between items-center;
+}
+
+/* Footer Styling */
+footer {
+  @apply bg-gray-800 text-white text-center py-4;
+  margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Links */
+a {
+  @apply text-blue-300 no-underline;
+}
+
+a:hover {
+  @apply underline;
+}
+
+/* Utility for hiding elements */
+.hidden {
+  display: none;
+}
+
+.about-us {
+  max-width: 800px;  /* Limit width for better readability */
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about-us h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #004466;  /* Dark blue for emphasis */
+}
+
+.about-us p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify; /* Improves text readability */
+}
+
+.diagram-container {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.wise-dag-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.wise-dag-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.diagram-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.about-us a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.about-us a:hover {
+  color: #0055aa;
+  text-decoration: underline;
+}
+
+
+/* Main Graph Page */
+.graph-page-container {
+  @apply flex flex-col items-center justify-between min-h-full p-4 bg-white;
+}
+
+/* Graph Header */
+.graph-header {
+  @apply text-center text-gray-700 font-medium mb-4;
+}
+
+.graph-header .graph-logo {
+  @apply mx-auto mb-2;
+  width: 80px;
+  height: auto;
+}
+
+.graph-header .graph-title {
+  @apply text-sm text-gray-500;
+}
+
+/* Controls */
+.graph-controls {
+  @apply flex justify-between items-center w-full mb-4;
+}
+
+.granularity-control {
+  @apply flex flex-col items-center text-center mb-4;
+}
+
+.granularity-slider {
+  @apply w-3/4 mx-auto mt-2;
+}
+
+.zoom-controls {
+  @apply flex gap-2;
+}
+
+.zoom-button {
+  @apply bg-gray-500 text-white py-2 px-4 rounded shadow hover:bg-gray-700;
+}
+
+.graph-container-wrapper {
+  position: relative;
+  height: 600px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+
+/* Graph Container */
+.graph-container {
+  @apply relative flex flex-wrap justify-center items-center;
+  min-width: 1200px;
+  min-height: 1200px;
+}
+
+/* Nodes */
+.node {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffcccb;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.node:hover {
+  @apply bg-blue-500 text-white;
+}

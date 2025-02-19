@@ -82,6 +82,22 @@ def created_causal_relationships_between_ancestors():
         "MERGE (ancestor1)-[:CAUSES]->(ancestor2);"
     )
 
+# Set is_leaf_node to false for all nodes initially
+def set_leaf_nodes():
+    return (
+        "MATCH (node:Concept)\n"
+        "SET node.is_leaf_node = false;\n"
+        "MATCH (node:Concept)\n"
+        "WHERE NOT EXISTS { MATCH (node)-[:SUBSUMES]->(:Concept) }\n"
+        "SET node.is_leaf_node = true;"
+    )
+
+def remove_self_loops():
+    return (
+        "MATCH (n)-[r]->(n)\n"
+        "DELETE r;"
+    )
+
 if __name__ == "__main__":
     cypher_output = ""
     cypher_output += create_nodes_in_cypher(nodes_df) + "\n\n"
@@ -89,6 +105,8 @@ if __name__ == "__main__":
     cypher_output += create_causal_relationships_in_cypher(causal_relationships_df) + "\n\n"
     cypher_output += create_iteration_nodes_in_cypher(iterations_dict) + "\n\n"
     cypher_output += create_part_of_relationships_in_cypher(iterations_dict) + "\n\n"
-    cypher_output += create_inferred_causal_relationships_in_cypher()
+    cypher_output += create_inferred_causal_relationships_in_cypher() + "\n\n"
+    cypher_output += set_leaf_nodes() + "\n\n"
+    cypher_output += remove_self_loops()
     with open("Database/output.cypher", "w") as file:
         file.write(cypher_output)
