@@ -62,7 +62,7 @@
 
 	function initialize(){
 
-
+    let dagInitialized = false;
 		DAGitty.setup({autofocus:true});
 		DAGittyControl = DAGitty.controllers[0];
 
@@ -85,6 +85,13 @@ if (storedDAGittyText) {
   console.log("No stored DAGitty input, using default.");
   document.getElementById("adj_matrix").value = g.toString();
 }
+
+if (!dagInitialized && document.getElementById("adj_matrix").value.trim() !== "") {
+  dagInitialized = true;
+  console.log("Generating DAG from input...");
+  loadDAGFromTextData();
+}
+
 
 				// if previously highlighted variable no longer exists, fold up this menu
 				if( !g.getVertex(document.getElementById("variable_id").value) ){
@@ -343,7 +350,7 @@ if (storedDAGittyText) {
         Testable implications
     </h3>
 
-    <div id="testable_implications" style="display:block">
+    <div id="testable_implications" style="display:none">
 
     </div>
 
