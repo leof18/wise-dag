@@ -35,6 +35,7 @@
 
 	<script src="https://www.google.com/recaptcha/api.js?render=explicit"
 		async defer></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -42,6 +43,7 @@
 	var redraw;
 	var renderer;
 	var layouter;
+
 	var height = 300;
 	var width = 600;
 	var mouse_on_canvas;
@@ -199,153 +201,99 @@
    </ul>
 
    <div id="canvas" class="dagitty" data-mutable="true">
-ddag {
-  "Able to cope" -> "Depressive disorder"
-  "Activities of daily living assessment" -> "Activities of daily living assessment"
-  "Admission to stroke unit" -> "Disability"
-  "Admission to stroke unit" -> "Delirium"
-  "Admission to stroke unit" -> "Death"
-  "Age factor" -> "Disorder of glucose metabolism"
-  "Age factor" -> "Patent foramen ovale"
-  "Age factor" -> "Vascular disorder"
-  "Age factor" -> "Urinary incontinence"
-  "Age factor" -> "Falls"
-  "Age factor" -> "Hypertensive disorder"
-  "Age factor" -> "Hypertensive disorder"
-  "Age factor" -> "Hypertensive disorder"
-  "Age factor" -> "Hypertensive disorder"
-  "Age factor" -> "Hypertensive disorder"
-  "Age factor" -> "Impaired cognition"
-  "Age factor" -> "Impaired cognition"
-  "Age factor" -> "Impaired cognition"
-  "Age factor" -> "Impaired cognition"
-  "Age factor" -> "Delirium"
-  "Age factor" -> "Cerebral atrophy"
-  "Age factor" -> "Malignant neoplastic disease"
-  "Age factor" -> "DNA damage"
-  "Age factor" -> "Postprocedural recovery status"
-  "Age factor" -> "Death"
-  "Age factor" -> "Death"
-  "Aphasia" -> "Quality of life satisfaction"
-  "Body temperature above reference range" -> "Disability"
-  "Body temperature above reference range" -> "Death"
-  "Cardiac arrhythmia" -> "Death"
-  "Care regime" -> "Death"
-  "Cognitive skills training" -> "Impaired cognition"
-  "Complete obstruction" -> "Decreased vascular flow"
-  "Complete obstruction" -> "Leuko-araiosis"
-  "Congenital malformation" -> "Surgical procedure"
-  "Delirium" -> "Falls"
-  "Delirium" -> "Disability"
-  "Depressive disorder" -> "Takotsubo cardiomyopathy"
-  "Depressive disorder" -> "Physical fitness state"
-  "Depressive disorder" -> "Male"
-  "Depressive disorder" -> "Quality of life satisfaction"
-  "Depressive disorder" -> "Death"
-  "Depressive disorder" -> "Death"
-  "Depressive disorder" -> "Death"
-  "Disability" -> "Functionally dependent"
-  "Disability" -> "Quality of life satisfaction"
-  "Disorder of autonomic nervous system" -> "Cardiac arrhythmia"
-  "Disorder of cardiac function" -> "Leuko-araiosis"
-  "Disorder of glucose metabolism" -> "Prediabetes"
-  "Disorder of glucose metabolism" -> "Hypertensive disorder"
-  "Disorder of glucose metabolism" -> "Inflammation of specific body structures or tissue"
-  "Disorder of glucose metabolism" -> "Dyslipidemia"
-  "Dysfunction of urinary bladder" -> "Procedure involving urinary catheter"
-  "Dyslipidemia" -> "Impaired cognition"
-  "Dyslipidemia" -> "Depressive disorder"
-  "Dysphagia" -> "Functionally dependent"
-  "Dysphagia" -> "Infectious disease"
-  "Dysphagia" -> "Nutritional disorder"
-  "Dysphagia" -> "Quality of life satisfaction"
-  "Endocarditis" -> "Disability"
-  "Falls" -> "Fracture of bone"
-  "Finding of lesion" -> "Activities of daily living assessment"
-  "Finding of lesion" -> "Activities of daily living assessment"
-  "Finding of renal function" -> "Leuko-araiosis"
-  "Fracture of bone" -> "Functionally dependent"
-  "Fracture of bone" -> "Disability"
-  "Hypercoagulability state" -> "Thrombosis"
-  "Hypercoagulability state" -> "Cerebral venous sinus thrombosis"
-  "Hypertensive disorder" -> "Disability"
-  "Hypertensive disorder" -> "Impaired cognition"
-  "Hypertensive disorder" -> "Impaired cognition"
-  "Hypertensive disorder" -> "Impaired cognition"
-  "Hypertensive disorder" -> "Cerebral atrophy"
-  "Hypertensive disorder" -> "Leuko-araiosis"
-  "Hypertensive disorder" -> "Risk of cardiovascular disease"
-  "Hypertensive disorder" -> "Glomerular filtration rate"
-  "Impaired cognition" -> "Able to cope"
-  "Impaired cognition" -> "Quality of life satisfaction"
-  "Impaired cognition" -> "Death"
-  "Increased body mass index" -> "Myocardial infarction"
-  "Increased body mass index" -> "Hypertensive disorder"
-  "Increased body mass index" -> "Hypertensive disorder"
-  "Increased collateral circulation" -> "Increased cardiac stroke volume"
-  "Infectious disease" -> "Inflammation of specific body structures or tissue"
-  "Infectious disease" -> "Death"
-  "Inflammation of specific body structures or tissue" -> "Vascular disorder"
-  "Inflammation of specific body structures or tissue" -> "Impaired cognition"
-  "Inflammation of specific body structures or tissue" -> "Depressive disorder"
-  "Inflammation of specific body structures or tissue" -> "Leuko-araiosis"
-  "Inflammation of specific body structures or tissue" -> "Hypercoagulability state"
-  "Inflammation of specific body structures or tissue" -> "Blood-brain barrier"
-  "Inflammation of specific body structures or tissue" -> "Death"
-  "Lesion of brain" -> "Cardiac arrhythmia"
-  "Lesion of brain" -> "Disorder of autonomic nervous system"
-  "Lesion size" -> "Activities of daily living assessment"
-  "Lesion size" -> "Activities of daily living assessment"
-  "Lesion size" -> "Risk of cardiovascular disease"
-  "Male" -> "Takotsubo cardiomyopathy"
-  "Male" -> "Pregnancy"
-  "Male" -> "Hypertensive disorder"
-  "Male" -> "Increased body mass index"
-  "Male" -> "Uses oral contraception"
-  "Male" -> "Cerebral venous sinus thrombosis"
-  "Male" -> "Depressive disorder"
-  "Malignant neoplastic disease" -> "Disability"
-  "Malignant neoplastic disease" -> "Depressive disorder"
-  "Malignant neoplastic disease" -> "Hypercoagulability state"
-  "Malignant neoplastic disease" -> "Surgical procedure"
-  "Malignant neoplastic disease" -> "Quality of life satisfaction"
-  "Metabolic syndrome X" -> "Finding of renal function"
-  "Metabolic syndrome X" -> "Leuko-araiosis"
-  "Myocardial infarction" -> "Death"
-  "Nutritional disorder" -> "Death"
-  "Obesity" -> "Disorder of glucose metabolism"
-  "Obesity" -> "Hypertensive disorder"
-  "Obesity" -> "Inflammation of specific body structures or tissue"
-  "Obesity" -> "Death"
-  "Pain" -> "Quality of life satisfaction"
-  "Paralysis" -> "Functionally dependent"
-  "Paralysis" -> "Disability"
-  "Physical fitness state" -> "Death"
-  "Pregnancy" -> "Cerebral venous sinus thrombosis"
-  "Pregnancy" -> "Depressive disorder"
-  "Pregnancy" -> "Hypercoagulability state"
-  "Production of reactive oxygen species" -> "DNA damage"
-  "Psychotherapy" -> "Impaired cognition"
-  "Psychotherapy" -> "Depressive disorder"
-  "Pulmonary embolism" -> "Death"
-  "Seizure" -> "Death"
-  "Social worker involved" -> "Care regime"
-  "Social worker involved" -> "Quality of life satisfaction"
-  "Spasticity" -> "Pain"
-  "Spasticity" -> "Quality of life satisfaction"
-  "Stenosis" -> "Decreased vascular flow"
-  "Stenosis" -> "Leuko-araiosis"
-  "Stress" -> "Myocardial infarction"
-  "Stress" -> "Sympathetic activation"
-  "Stress" -> "Hypertensive disorder"
-  "Sympathetic activation" -> "Thrombosis"
-  "Time to therapy" -> "Activities of daily living assessment"
-  "Time until diagnosis" -> "Time to therapy"
-  "Urinary incontinence" -> "Functionally dependent"
-  "Urinary incontinence" -> "Falls"
-  "Urinary incontinence" -> "Procedure involving urinary catheter"
-  "Vascular disorder" -> "Kidney disease"
-  "Weight loss" -> "Disorder of glucose metabolism"
+dag {
+bb="-11.43,-11.78,12.0,11.64"
+"Immune system finding" [pos="-9.39,-0.7"]
+"Impaired cognition" [pos="2.79,-9.67"]
+"Death" [pos="-6.55,-7.49"]
+"Finding by site" [pos="-3.97,9.16"]
+"Finding related to ability to mobilize" [pos="8.81,5.2"]
+"Morphologically abnormal structure" [pos="0.71,-9.51"]
+"Social context" [pos="-8.05,-5.88"]
+"Production of reactive oxygen species" [pos="-4.78,-8.54"]
+"Observable entity" [pos="6.98,7.52"]
+"Able to cope" [pos="9.07,-0.86"]
+"Male" [pos="-8.45,5.59"]
+"Finding of lesion" [pos="8.63,-5.02"]
+"Prediabetes" [pos="5.32,-6.99"]
+"Time to therapy" [pos="9.26,-2.91"]
+"Falls" [pos="4.68,-8.56"]
+"Functionally dependent" [pos="4.88,7.55"]
+"Urinary incontinence" [pos="-6.47,5.63"]
+"Pregnancy" [pos="-2.78,8.37"]
+"Finding of renal function" [pos="1.21,9.02"]
+"Evaluation finding" [pos="7.07,-6.24"]
+"Physical fitness state" [pos="-8.04,-4.12"]
+"Disability" [outcome, pos="8.81,2.85"]
+"Body temperature above reference range" [pos="-0.79,9.64"]
+"Substance" [pos="-2.9,-8.74"]
+"Uses oral contraception" [pos="6.23,4.47"]
+"Decreased vascular flow" [pos="-9.23,3.26"]
+"Increased body mass index" [pos="-9.01,1.28"]
+"Time until diagnosis" [pos="-9.43,-2.73"]
+"Neurological finding" [pos="10.0,1.17"]
+"Disease" [pos="-6.56,7.97"]
+"Procedure" [pos="3.34,9.06"]
+"Health-related behavior finding" [pos="-1.34,-9.78"]
+"Body temperature above reference range" -> "Disability"
+"Body temperature above reference range" -> "Death"
+"Decreased vascular flow" -> "Decreased vascular flow"
+"Disability" -> "Functionally dependent"
+"Disease" -> "Finding of lesion"
+"Disease" -> "Production of reactive oxygen species"
+"Disease" -> "Urinary incontinence"
+"Disease" -> "Functionally dependent"
+"Disease" -> "Prediabetes"
+"Disease" -> "Falls"
+"Disease" -> "Physical fitness state"
+"Disease" -> "Finding of renal function"
+"Disease" -> "Disability"
+"Disease" -> "Increased body mass index"
+"Disease" -> "Impaired cognition"
+"Disease" -> "Body temperature above reference range"
+"Disease" -> "Death"
+"Evaluation finding" -> "Increased body mass index"
+"Evaluation finding" -> "Death"
+"Finding by site" -> "Urinary incontinence"
+"Finding by site" -> "Functionally dependent"
+"Finding by site" -> "Prediabetes"
+"Finding by site" -> "Falls"
+"Finding by site" -> "Disability"
+"Finding by site" -> "Increased body mass index"
+"Finding by site" -> "Impaired cognition"
+"Finding by site" -> "Body temperature above reference range"
+"Finding by site" -> "Death"
+"Finding related to ability to mobilize" -> "Death"
+"Health-related behavior finding" -> "Able to cope"
+"Health-related behavior finding" -> "Increased body mass index"
+"Health-related behavior finding" -> "Impaired cognition"
+"Health-related behavior finding" -> "Death"
+"Immune system finding" -> "Impaired cognition"
+"Impaired cognition" -> "Able to cope"
+"Impaired cognition" -> "Death"
+"Male" -> "Pregnancy"
+"Male" -> "Increased body mass index"
+"Male" -> "Uses oral contraception"
+"Morphologically abnormal structure" -> "Decreased vascular flow"
+"Morphologically abnormal structure" -> "Impaired cognition"
+"Neurological finding" -> "Functionally dependent"
+"Neurological finding" -> "Disability"
+"Neurological finding" -> "Death"
+"Observable entity" -> "Urinary incontinence"
+"Observable entity" -> "Falls"
+"Observable entity" -> "Impaired cognition"
+"Observable entity" -> "Death"
+"Physical fitness state" -> "Death"
+"Procedure" -> "Disability"
+"Procedure" -> "Impaired cognition"
+"Procedure" -> "Death"
+"Social context" -> "Time until diagnosis"
+"Social context" -> "Death"
+"Substance" -> "Physical fitness state"
+"Substance" -> "Impaired cognition"
+"Time until diagnosis" -> "Time to therapy"
+"Urinary incontinence" -> "Functionally dependent"
+"Urinary incontinence" -> "Falls"
 }
 
    </div>
@@ -531,7 +479,7 @@ ddag {
 
 
 
-   
+
    <div id="export" style="display: none;">
       <form name="exportform" id="exportform" action="http://www.dagitty.net/pdf/pdf.php" method="POST" target="_blank">
          <input type="hidden" name="exportformsvg" id="exportformsvg" />
