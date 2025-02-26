@@ -19,54 +19,109 @@ MATCH (node:Concept)
 WHERE NOT EXISTS { MATCH (node)-[:SUBSUMES]->(:Concept) }
 SET node.is_leaf_node = true;
 
-:param selectedIteration => {id: 0};
-:param exposureOutcomeNames => {name: ["Smoking","Ischemic stroke"]};
+/////////////////////////////////////////////////////////////////////////
+// MAIN SCRIPT TO QUERY DATABASE
 
-// Retrieve all nodes at the specified iteration level
-MATCH (n:Concept)-[:PART_OF]->(i:Iteration)
-WHERE i.id = $selectedIteration.id
-WITH collect(n) AS selectedLevelNodes
-UNWIND selectedLevelNodes AS n
-OPTIONAL MATCH (n)-[r:CAUSES]->(m:Concept)
-WHERE m IN selectedLevelNodes OR m.name IN $exposureOutcomeNames
-WITH DISTINCT n, r, m
-RETURN n, r, m
-
-
-// Expanding nodes
-:param selectedIteration => {id: 0};
-:param selectedNodes => {name: [""]};
-:param selectedConfidence => {score: 0};
-
-MATCH (iteration:Iteration {id: $selectedIteration.id})
-MATCH (excludedNodes:Concept)
-WHERE excludedNodes.name IN $selectedNodes.name
-MATCH (concept:Concept)-[:PART_OF]->(iteration)
-WITH collect(concept) AS initialConcepts, excludedNodes
-MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
-WITH initialConcepts, collect(child) AS children
-WITH initialConcepts + children AS combinedNodes
-WITH [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name] AS finalNodes
-UNWIND finalNodes AS finalNode
-OPTIONAL MATCH (finalNode)-[causal:CAUSES]->(relatedFinalNode:Concept)
-WHERE causal.confidence_mean > $selectedConfidence.score
-WITH finalNode, COLLECT(causal) AS causalRelationships
-RETURN COLLECT(DISTINCT finalNode) AS resultingNodes, causalRelationships;
-
-
-// WIHTOUT relationships
-
+// Get nodes, excluding expanded nodes
 MATCH (iteration:Iteration {id: $selectedIteration.id})
 MATCH (concept:Concept)-[:PART_OF]->(iteration)
-WITH collect(concept) AS initialConcepts
-OPTIONAL MATCH (excludedNodes:Concept)
-WHERE $selectedNodes.name <> [""] AND excludedNodes.name IN $selectedNodes.name
-OPTIONAL MATCH (excludedNodes)-[:SUBSUMES]->(child:Concept)
-WITH initialConcepts, collect(child) AS children, excludedNodes
-WITH initialConcepts + children AS combinedNodes, excludedNodes
+WHERE NOT concept.name IN $selectedNodes.name
+MATCH (exposure:Concept {name: $exposure.name})
+MATCH (outcome:Concept {name: $outcome.name})
+
+// Get children of expanded nodes
+OPTIONAL MATCH (expanded:Concept)-[:SUBSUMES]->(child:Concept) 
+WHERE expanded.name IN $selectedNodes.name
+AND NOT child.name IN $selectedNodes
+
+// Collect all nodes
+WITH COLLECT(concept) + COLLECT(DISTINCT child) AS initialNodes, exposure, outcome
+
+// Ensure exposure and outcome are only added if they are not already in concepts or children
 WITH CASE 
-        WHEN $selectedNodes.name = [""] THEN combinedNodes
-        ELSE [node IN combinedNodes WHERE NOT node.name IN $selectedNodes.name]
-     END AS finalNodes
-RETURN COLLECT(DISTINCT finalNodes) AS resultingNodes;
+        WHEN exposure IN initialNodes THEN initialNodes 
+        ELSE initialNodes + [exposure]
+    END AS nodesWithExposure,
+    outcome
+WITH CASE 
+        WHEN outcome IN nodesWithExposure THEN nodesWithExposure 
+        ELSE nodesWithExposure + [outcome] 
+    END AS Nodes
 
+// Match only relationships that exist between these Nodes
+UNWIND Nodes AS Node
+OPTIONAL MATCH (Node)-[causal:CAUSES]->(otherNode)
+WHERE otherNode IN Nodes
+
+RETURN 
+    COLLECT(DISTINCT Node) AS resultingNodes,
+    COLLECT(DISTINCT causal) AS causalRelationships,
+
+    // For Dagitty
+    COLLECT(DISTINCT Node.name) AS allNodes,
+    COLLECT(DISTINCT { from: Node.name, to: otherNode.name }) AS causalEdges;
+
+
+/////////////////////////////////////////////////////////////////////////
+
+MATCH (iteration:Iteration)
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(exp:Concept {name: $exposure})
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(out:Concept {name: $outcome})
+WITH iteration, 
+     CASE 
+       WHEN exp IS NOT NULL AND out IS NOT NULL THEN 2 
+       WHEN exp IS NOT NULL OR out IS NOT NULL THEN 1 
+       ELSE 0 
+     END AS score
+WHERE score > 0
+ORDER BY score DESC, iteration.id ASC
+LIMIT 1
+RETURN iteration
+
+/////////////////////////////////////////////////////////////////////////
+
+// Step 1: Choose the best iteration based on score and iteration id
+MATCH (iteration:Iteration)
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(exp:Concept {name: $exposure})
+OPTIONAL MATCH (iteration)<-[:PART_OF]-(out:Concept {name: $outcome})
+WITH iteration, exp, out,
+     CASE 
+       WHEN exp IS NOT NULL AND out IS NOT NULL THEN 2 
+       WHEN exp IS NOT NULL OR out IS NOT NULL THEN 1 
+       ELSE 0 
+     END AS score
+WHERE score > 0
+ORDER BY score DESC, iteration.id ASC
+LIMIT 1
+
+// Step 2: Determine the missing concept name if score = 1
+WITH iteration, score, exp, out,
+     CASE 
+       WHEN score = 1 AND exp IS NULL THEN $exposure
+       WHEN score = 1 AND out IS NULL THEN $outcome
+       ELSE null
+     END AS missingName
+
+// Step 3: If missingName is set, find the shortest path from the missing node 
+// to any node in the iteration (via SUBSUMES), then return the nodes in that path 
+// (excluding the missing node) as selectedNodes.
+CALL (iteration, missingName) {
+  WITH iteration, missingName
+  OPTIONAL MATCH (missing:Concept {name: missingName})
+  WHERE missing IS NOT NULL
+  MATCH (iteration)<-[:PART_OF]-(iterationNode:Concept)
+  WITH iteration, missing, collect(iterationNode) AS iterationNodes
+  UNWIND iterationNodes AS targetNode
+  WITH iteration, missing, targetNode, shortestPath((missing)-[:SUBSUMES*]-(targetNode)) AS sp
+  WHERE sp IS NOT NULL
+  RETURN sp
+  ORDER BY length(sp) ASC
+  LIMIT 1
+}
+RETURN iteration, 
+       score, 
+       CASE 
+         WHEN score = 1 AND sp IS NOT NULL 
+         THEN reverse([node IN nodes(sp)[1..] | node.name])
+         ELSE [] 
+       END AS selectedNodes
