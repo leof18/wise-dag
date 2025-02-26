@@ -66,7 +66,13 @@ async function getGraphData(parameters) {
 
 router.post('/cycles', async (req, res) => {
   console.log("Received payload:", req.body);
-  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings } = req.body;
+  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings, resetCache} = req.body;
+
+  // Reset the cache if the flag is set.
+  if (resetCache) {
+    cachedGraphData = null;
+    console.log("Cache has been reset due to resetCache flag.");
+  }
 
   try {
     const parameters = {

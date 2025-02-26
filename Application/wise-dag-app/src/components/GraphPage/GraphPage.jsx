@@ -28,7 +28,7 @@ const GraphPage = () => {
       return;
     }
     navigate("/timepoints", {
-      state: { granularity, selectedNodes, exposure, outcome, nodes },
+      state: { granularity, selectedNodes, exposure, outcome, nodes, resetCache: true},
     });
   };
 
