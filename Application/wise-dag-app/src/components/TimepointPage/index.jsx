@@ -5,7 +5,8 @@ import axios from "axios";
 const TimepointPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { granularity, selectedNodes, exposure, outcome, nodes } = location.state || {};
+  const { granularity, selectedNodes, exposure, outcome, nodes, resetCache: initialResetCache } = location.state || {};
+  const [shouldResetCache, setShouldResetCache] = useState(initialResetCache || false);
 
   const [currentStep, setCurrentStep] = useState(1);
   
@@ -88,6 +89,7 @@ const TimepointPage = () => {
         timepoints,
         nodeOrder: orderPayload,
         nodeSettings: nodeSettingsPayload,
+        resetCache: shouldResetCache
       };
 
       const fetchCycles = async () => {
@@ -95,6 +97,7 @@ const TimepointPage = () => {
           const response = await axios.post("http://localhost:3001/api/cycles", requestCycles);
           const data = response.data;
           setROutput(data.rOutput);
+          setShouldResetCache(false);
         } catch (error) {
           console.error("Error fetching cycles:", error);
         }
@@ -118,13 +121,6 @@ const TimepointPage = () => {
     }
   }, [rOutput]);
 
-  const handleFixedNodeToggle = (nodeName) => {
-    setNodeOrder((prevData) =>
-      prevData.map((node) =>
-        node.name === nodeName ? { ...node, isFixed: !node.isFixed } : node
-      )
-    );
-  };
 
   const handleNodeOrderValueChange = (nodeName, value) => {
     setNodeOrder((prevData) =>
