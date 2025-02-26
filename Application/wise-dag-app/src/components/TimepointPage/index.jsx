@@ -63,7 +63,20 @@ const TimepointPage = () => {
   useEffect(() => {
     if (nodeOrder && nodeOrder.length > 0) {
       const orderPayload = nodeOrder.reduce((acc, node) => {
-        acc[node.order.name] = node.order.value; // TODO: ADD isFixed and observation
+        acc[node.name] = node.order.value;
+        return acc;
+      }, {});
+
+      const nodeSettingsPayload = nodeOrder.reduce((acc, node) => {
+        acc[node.name] = {
+          isFixed: node.isFixed,
+          observation: 
+            node.name === exposure.value
+              ? ""
+              : node.name === outcome.value
+                ? ""
+                : node.observation,
+        };
         return acc;
       }, {});
 
@@ -74,6 +87,7 @@ const TimepointPage = () => {
         outcome,
         timepoints,
         nodeOrder: orderPayload,
+        nodeSettings: nodeSettingsPayload,
       };
 
       const fetchCycles = async () => {
@@ -196,9 +210,9 @@ const TimepointPage = () => {
               <div className="flex items-center justify-end gap-2">
                 <span className="font-medium">Type:</span>
                 {node.name === exposure.value ? (
-                  <span className="font-medium">Exposure</span>
+                  <span className="font-medium">Observed (Exposure)</span>
                 ) : node.name === outcome.value ? (
-                  <span className="font-medium">Outcome</span>
+                  <span className="font-medium">Observed (Outcome)</span>
                 ) : (
                   <select
                     value={node.observation}
@@ -206,6 +220,7 @@ const TimepointPage = () => {
                     className="border p-1 rounded"
                   >
                     <option value="unobserved">Unobserved</option>
+                    <option value="">Observed</option>
                     <option value="adjusted">Adjusted</option>
                   </select>
                 )}
