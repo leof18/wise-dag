@@ -5,13 +5,17 @@ import axios from "axios";
 const TimepointPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { granularity, selectedNodes, exposure, outcome, nodes} = location.state || {};
+  const { granularity, selectedNodes, exposure, outcome, nodes, resetCache: initialResetCache } = location.state || {};
+  const [shouldResetCache, setShouldResetCache] = useState(initialResetCache || false);
 
-  const [timepointsInput, setTimepointsInput] = useState(""); // User enters value here
-  const [timepoints, setTimepoints] = useState(null); // Gets set when confirmed
+  const [currentStep, setCurrentStep] = useState(1);
+  
+  const [timepointsInput, setTimepointsInput] = useState("");
+  const [timepoints, setTimepoints] = useState(null);
   const [nodeOrder, setNodeOrder] = useState([]);
   const [rOutput, setROutput] = useState(null);
   const [nodesToResolve, setNodesToResolve] = useState([]);
+  const [showAllNodes, setShowAllNodes] = useState(false); // Toggle state
 
   const handleInputChange = (e) => {
     setTimepointsInput(e.target.value);
@@ -24,30 +28,59 @@ const TimepointPage = () => {
       return;
     }
     setTimepoints(numTimepoints);
+
+    const initializedData = nodes.map((node) => ({
+      ...node,
+      isFixed: false,
+      order: { name: node.name, value: node.order?.value ?? 0 },
+      observation: "unobserved", // default unobserved
+    }));
+    setNodeOrder(initializedData);
+    setCurrentStep(2)
   };
 
-  // Generate ordered nodes starting with all at 0
-  useEffect(() => {
-    if (timepoints !== null && nodes && nodes.length > 0) {
-      const initializedData = nodes.map((node) => ({
-        ...node,
-        isFixed: false,
-        order: {name: node.name, value: node.order?.value ?? 0}
-      }));
-      setNodeOrder(initializedData);
-    }
-  }, [timepoints, nodes]);
+  // STEP 2: Let the user set which nodes are constant in time.
+  const handleToggleConstant = (nodeName) => {
+    setNodeOrder((prevData) =>
+      prevData.map((node) =>
+        node.name === nodeName ? { ...node, isFixed: !node.isFixed } : node
+      )
+    );
+  };
 
-  // Once the number of timepoints is confirmed, call the API to check for cycles
+  const handleObservationChange = (nodeName, newValue) => {
+    setNodeOrder((prevData) =>
+      prevData.map((node) =>
+        node.name === nodeName ? { ...node, observation: newValue } : node
+      )
+    );
+  };
+
+  const handleConfirmNodeSettings = () => {
+    setCurrentStep(3);
+  };
+
+  // After timepoints are set, call API to check for cycles
   useEffect(() => {
     if (nodeOrder && nodeOrder.length > 0) {
-      
-      // Convert the nodeOrder array into the expected object format
       const orderPayload = nodeOrder.reduce((acc, node) => {
-        acc[node.order.name] = node.order.value;
+        acc[node.name] = node.order.value;
         return acc;
       }, {});
-      
+
+      const nodeSettingsPayload = nodeOrder.reduce((acc, node) => {
+        acc[node.name] = {
+          isFixed: node.isFixed,
+          observation: 
+            node.name === exposure.value
+              ? ""
+              : node.name === outcome.value
+                ? ""
+                : node.observation,
+        };
+        return acc;
+      }, {});
+
       const requestCycles = {
         granularity,
         selectedNodes,
@@ -55,18 +88,16 @@ const TimepointPage = () => {
         outcome,
         timepoints,
         nodeOrder: orderPayload,
+        nodeSettings: nodeSettingsPayload,
+        resetCache: shouldResetCache
       };
 
-      // fetchCycles send a request to retireve whether there are cycles in the DAG or not. If yes it returns one of the cycles to be solved. 
-      // This should be run iteratively until all cycles are solved.
       const fetchCycles = async () => {
         try {
-          const response = await axios.post(
-            "http://localhost:3001/api/cycles",
-            requestCycles
-          );
+          const response = await axios.post("http://localhost:3001/api/cycles", requestCycles);
           const data = response.data;
           setROutput(data.rOutput);
+          setShouldResetCache(false);
         } catch (error) {
           console.error("Error fetching cycles:", error);
         }
@@ -75,19 +106,14 @@ const TimepointPage = () => {
     }
   }, [timepoints, nodeOrder, granularity, selectedNodes, exposure, outcome]);
 
-  // Whenever rOutput changes, parse it to extract node names.
+  // Parse rOutput to update nodesToResolve list
   useEffect(() => {
     if (rOutput) {
-      // Split by "->", trim extra whitespace, and filter out any empty strings.
       const newNodes = rOutput
         .split("->")
         .map((nodeStr) => nodeStr.trim())
         .filter((nodeStr) => nodeStr.length > 0);
-
-      // Remove duplicates.
       const uniqueNodes = Array.from(new Set(newNodes));
-
-      // Update nodesToResolve by combining any previous nodes with the new ones.
       setNodesToResolve((prevNodes) => {
         const combined = new Set([...prevNodes, ...uniqueNodes]);
         return Array.from(combined);
@@ -95,115 +121,150 @@ const TimepointPage = () => {
     }
   }, [rOutput]);
 
-  const handleFixedNodeToggle = (nodeName) => {
-    setNodeOrder((prevData) =>
-      prevData.map((node) =>
-        node.name === nodeName ? { ...node, isFixed: !node.isFixed } : node
-      )
-    );
-  };
 
   const handleNodeOrderValueChange = (nodeName, value) => {
     setNodeOrder((prevData) =>
       prevData.map((node) =>
         node.name === nodeName
-          ? { ...node, order: { ...node.order, value }}
+          ? { ...node, order: { ...node.order, value } }
           : node
       )
     );
   };
 
-  const handleNext = () => {
-    navigate("/dagitty");
+  const handleNext = async () => {
+    try {
+      const response = await fetch("http://localhost:3001/api/dagitty-input");
+      const data = await response.json();
+      if (data.dagittyText) {
+        localStorage.setItem("dagittyText", data.dagittyText);
+        navigate("/dagitty");
+      }
+    } catch (error) {
+      console.error("Error fetching updated DAGitty input:", error);
+    }
   };
 
-  // Only include nodes whose names are in nodesToResolve.
-  const nodesToDisplay = nodesToResolve.length
-    ? nodeOrder.filter((node) => nodesToResolve.includes(node.name))
-    : [];
+  // Determine which nodes to display based on toggle state
+  const nodesToDisplay = showAllNodes
+    ? nodeOrder
+    : nodesToResolve.length
+      ? nodeOrder.filter((node) => nodesToResolve.includes(node.name))
+      : [];
+
+  // Toggle the node display mode
+  const handleToggleNodes = () => {
+    setShowAllNodes((prev) => !prev);
+  };
 
   return (
-    <div
-      className="flex flex-col items-center bg-gray-100 w-full"
-      style={{ height: "calc(100vh - 130px)" }}
-    >
-      {/* Fixed Header (Same as GraphPage) */}
+    <div className="flex flex-col items-center bg-gray-100 w-full" style={{ height: "calc(100vh - 130px)" }}>
       <header className="w-full flex justify-center items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
         <h1 className="text-2xl font-bold">Set Timepoints And Order</h1>
       </header>
 
-        {/* Display of the R Output */}
-        {rOutput && (
-        <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-md mb-4">
-          <h2 className="text-xl font-semibold">Cycle to solve:</h2>
-          <pre>{rOutput}</pre>
+      {currentStep === 1 && (
+        <div className="flex flex-col items-center">
+          <label className="text-lg font-semibold">How many timepoints do you need?</label>
+          <input
+            type="number"
+            min="1"
+            max="10"
+            value={timepointsInput}
+            onChange={handleInputChange}
+            className="w-full border p-2 rounded mt-2"
+          />
+          <button
+            onClick={handleConfirmTimepoints}
+            className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition mt-3"
+          >
+            Confirm
+          </button>
+        </div>
+      )} 
+       {currentStep === 2 && (
+      <div className="w-full max-w-3xl bg-white p-6 rounded-lg shadow-md overflow-y-auto" style={{ maxHeight: 'calc(100vh - 130px)' }}>
+      <h2 className="text-xl font-semibold mb-4">
+            Select nodes that are constant in time and set the observation type:
+          </h2>
+          {nodeOrder.map((node) => (
+          <div
+            key={node.id || node.name}
+            className="flex items-center justify-between border p-4 rounded-md mb-4 bg-gray-50"
+          >
+            <h2 className="text-lg font-semibold">{node.name}</h2>
+            <div className="grid grid-cols-2 gap-8">
+              <div className="flex items-center justify-end gap-2">
+                <span className="font-medium">Constant?</span>
+                <input
+                  type="checkbox"
+                  checked={node.isFixed}
+                  onChange={() => handleToggleConstant(node.name)}
+                  className="w-6 h-6"
+                />
+              </div>
+              <div className="flex items-center justify-end gap-2">
+                <span className="font-medium">Type:</span>
+                {node.name === exposure.value ? (
+                  <span className="font-medium">Observed (Exposure)</span>
+                ) : node.name === outcome.value ? (
+                  <span className="font-medium">Observed (Outcome)</span>
+                ) : (
+                  <select
+                    value={node.observation}
+                    onChange={(e) => handleObservationChange(node.name, e.target.value)}
+                    className="border p-1 rounded"
+                  >
+                    <option value="unobserved">Unobserved</option>
+                    <option value="">Observed</option>
+                    <option value="adjusted">Adjusted</option>
+                  </select>
+                )}
+              </div>
+            </div>
+          </div>
+          ))}
+          <button
+            onClick={handleConfirmNodeSettings}
+            className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+          >
+            Confirm
+          </button>
         </div>
       )}
 
-      {/* Scrollable Content */}
-      <div
-        className="w-full max-w-3xl bg-white p-6 rounded-lg shadow-md overflow-auto"
-        style={{ maxHeight: "80vh" }}
-      >
-        {/* Ask for number of timepoints */}
-        {timepoints === null ? (
-          <div className="flex flex-col items-center">
-            <label className="text-lg font-semibold">
-              How many timepoints do you need?
-            </label>
-            <input
-              type="number"
-              min="1"
-              max="10"
-              value={timepointsInput}
-              onChange={handleInputChange}
-              className="w-full border p-2 rounded mt-2"
-            />
+      {currentStep === 3 && rOutput && (
+                    <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-md mb-4">
+                      <h2 className="text-xl font-semibold">Cycle to solve:</h2>
+                      <pre>{rOutput}</pre>
+                    </div>
+                  )}
+
+      {currentStep === 3 && (
+        <>
+          <div className="w-full max-w-3xl mb-4">
             <button
-              onClick={handleConfirmTimepoints}
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition mt-3"
+              onClick={handleToggleNodes}
+              className="bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
             >
-              Confirm
+              {showAllNodes ? "Show Relevant Nodes" : "Show All Nodes"}
             </button>
           </div>
-        ) : (
-          <>
-            <p className="text-md text-gray-700 mb-4">
-              {/* You have chosen <strong>{timepoints}</strong> timepoints. */}
-            </p>
+          
+          <div className="w-full max-w-3xl bg-white p-6 rounded-lg shadow-md overflow-auto" style={{ maxHeight: "80vh" }}>
 
-            {/* Only show nodes that are in the nodesToResolve list */}
+            <h2 className="text-xl font-semibold mb-4">Now set the node order within one timepoint to resolve the shown cycles:</h2>
+
             {nodesToDisplay.length > 0 ? (
               nodesToDisplay.map((node) => (
-                <div
-                  key={node.id || node.name}
-                  className="border p-3 rounded-md mb-4 bg-gray-50"
-                >
+                <div key={node.id || node.name} className="border p-3 rounded-md mb-4 bg-gray-50">
                   <h2 className="text-lg font-semibold">{node.name}</h2>
-                  <label className="text-sm flex items-center">
-                    <input
-                      type="checkbox"
-                      checked={node.isFixed}
-                      onChange={() => handleFixedNodeToggle(node.name)}
-                      className="mr-2"
-                    />
-                    This node has no order in time
-                  </label>
-
                   {!node.isFixed && (
                     <div className="mt-2 grid grid-cols-3 gap-2">
                       <input
-                        type="text"
-                        value="Measurement order"
-                        disabled
-                        className="text-center font-semibold border rounded p-1"
-                      />
-                      <input
                         type="number"
                         value={node.order.value}
-                        onChange={(e) =>
-                          handleNodeOrderValueChange(node.name, e.target.value)
-                        }
+                        onChange={(e) => handleNodeOrderValueChange(node.name, e.target.value)}
                         className="border rounded p-1 text-center w-full"
                       />
                     </div>
@@ -217,16 +278,15 @@ const TimepointPage = () => {
                   : "Waiting for cycle detection..."}
               </p>
             )}
-
             <button
               onClick={handleNext}
               className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition w-full mt-4"
             >
               Proceed to DAGify
             </button>
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

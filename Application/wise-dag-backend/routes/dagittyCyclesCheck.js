@@ -66,7 +66,13 @@ async function getGraphData(parameters) {
 
 router.post('/cycles', async (req, res) => {
   console.log("Received payload:", req.body);
-  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder } = req.body;
+  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings, resetCache} = req.body;
+
+  // Reset the cache if the flag is set.
+  if (resetCache) {
+    cachedGraphData = null;
+    console.log("Cache has been reset due to resetCache flag.");
+  }
 
   try {
     const parameters = {
@@ -88,70 +94,118 @@ router.post('/cycles', async (req, res) => {
 
     for (let t = 1; t <= timepoints; t++) {
       allNodes.forEach(node => {
-        const nodeName = `${node}_T${t}`;
-        let attributes = [];
-        // Only set "exposure" at the first timepoint
-        if (t === 1 && node === exposure.value) {
-          attributes.push("exposure");
-        }
-        // Only set "outcome" at the last timepoint
-        if (t === timepoints && node === outcome.value) {
-          attributes.push("outcome");
-        }
-        // Push time attribute
-        if (nodeOrder[node] !== undefined) {
-          attributes.push(`time=${nodeOrder[node]}`);
-        }
+        const settings = nodeSettings && nodeSettings[node];
+        const isFixed = settings && settings.isFixed;
+        const observationAttr = settings && settings.observation && settings.observation.trim() !== ""
+          ? settings.observation.trim()
+          : "";
 
-        if (attributes.length > 0) {
-          dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
+        if (isFixed) {
+          // For fixed nodes, output a single node without a time suffix.
+          let attributes = [];
+          // For fixed nodes, if it matches the exposure or outcome, add those attributes.
+          if (node === exposure.value) {
+            attributes.push("exposure");
+          }
+          if (node === outcome.value) {
+            attributes.push("outcome");
+          }
+          if (observationAttr !== "") {
+            attributes.push(observationAttr);
+          }
+          if (attributes.length > 0) {
+            dagittyGraph += `  "${node}" [${attributes.join(", ")}];\n`;
+          } else {
+            dagittyGraph += `  "${node}";\n`;
+          }
         } else {
-          dagittyGraph += `  "${nodeName}";\n`;
+          // For non-fixed nodes, create a node for each timepoint.
+          for (let t = 1; t <= timepoints; t++) {
+            const nodeName = `${node}_T${t}`;
+            let attributes = [];
+            // Apply exposure/outcome only at the proper timepoints.
+            if (t === 1 && node === exposure.value) {
+              attributes.push("exposure");
+            }
+            if (t === timepoints && node === outcome.value) {
+              attributes.push("outcome");
+            }
+            if (nodeOrder[node] !== undefined) {
+              attributes.push(`order=${nodeOrder[node]}`);
+            }
+            if (observationAttr !== "") {
+              attributes.push(observationAttr);
+            }
+            if (attributes.length > 0) {
+              dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
+            } else {
+              dagittyGraph += `  "${nodeName}";\n`;
+            }
+          }
         }
       });
     }
-    // 2. Intra–timestep causal edges.
+
+    // Helper function to get the appropriate node label based on fixed status.
+    function getNodeLabel(node, t) {
+      const settings = nodeSettings && nodeSettings[node];
+      const isFixed = settings && settings.isFixed;
+      return isFixed ? node : `${node}_T${t}`;
+    }
+
+    // EDGES
+    const allEdges = new Set();
+    // 2. Intra–timestep causal edges
     for (let t = 1; t <= timepoints; t++) {
       causalEdges.forEach(edge => {
         if (edge.from && edge.to) {
-          if (
-            nodeOrder[edge.from] !== undefined &&
-            nodeOrder[edge.to] !== undefined
-          ) {
+          const sourceLabel = getNodeLabel(edge.from, t);
+          const targetLabel = getNodeLabel(edge.to, t);
+          // If both nodes are non-fixed, you can enforce the ordering (if desired)
+          const fromFixed = nodeSettings && nodeSettings[edge.from] && nodeSettings[edge.from].isFixed;
+          const toFixed = nodeSettings && nodeSettings[edge.to] && nodeSettings[edge.to].isFixed;
+          if (!fromFixed && !toFixed && nodeOrder[edge.from] !== undefined && nodeOrder[edge.to] !== undefined) {
             if (nodeOrder[edge.from] <= nodeOrder[edge.to]) {
-              const source = `${edge.from}_T${t}`;
-              const target = `${edge.to}_T${t}`;
-              dagittyGraph += `  "${source}" -> "${target}";\n`;
+              const edgeString = `"${sourceLabel}" -> "${targetLabel}"`;
+              allEdges.add(edgeString);
             }
           } else {
-              const source = `${edge.from}_T${t}`;
-              const target = `${edge.to}_T${t}`;
-              dagittyGraph += `  "${source}" -> "${target}";\n`;
+            // If one (or both) are fixed, simply add the edge.
+            const edgeString = `"${sourceLabel}" -> "${targetLabel}"`;
+            allEdges.add(edgeString);
           }
         }
       });
     }
 
-    // 3. Cross–timestep edges.
+// 3. Cross–timestep edges
     for (let i = 1; i < timepoints; i++) {
       for (let j = i + 1; j <= timepoints; j++) {
-        // a) Self–progression edges.
+        // a) Self–progression edges for non-fixed nodes only.
         allNodes.forEach(node => {
-          const source = `${node}_T${i}`;
-          const target = `${node}_T${j}`;
-          dagittyGraph += `  "${source}" -> "${target}";\n`;
+          const settings = nodeSettings && nodeSettings[node];
+          const isFixed = settings && settings.isFixed;
+          if (!isFixed) {
+            const source = `${node}_T${i}`;
+            const target = `${node}_T${j}`;
+            const edgeString = `"${source}" -> "${target}"`;
+            allEdges.add(edgeString);
+          }
         });
         // b) Cross–timestep causal edges.
         causalEdges.forEach(edge => {
-          if (edge.from && edge.to) {
-            const source = `${edge.from}_T${i}`;
-            const target = `${edge.to}_T${j}`;
-            dagittyGraph += `  "${source}" -> "${target}";\n`;
-          }
+          const source = getNodeLabel(edge.from, i);
+          const target = getNodeLabel(edge.to, j);
+          // Build the edge string.
+          const edgeString = `"${source}" -> "${target}"`;
+          allEdges.add(edgeString);
         });
       }
     }
-
+    // Append unique cross–timestep edges.
+    allEdges.forEach(edgeStr => {
+      dagittyGraph += `  ${edgeStr};\n`;
+    });
 
     dagittyGraph += "}\n";
     fs.writeFileSync("dagitty_input.txt", dagittyGraph, { encoding: "utf8" });

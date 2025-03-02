@@ -24,12 +24,13 @@ const DagittyPage = () => {
       .then(() => {
         console.log("✅ All scripts loaded!");
         
-        // Reload iframe to ensure DAGitty loads inside it
+        // Inject DAGitty input into the textarea inside the iframe
         setTimeout(() => {
           const iframe = document.querySelector("iframe");
           if (iframe) {
-            console.log("🔄 Reloading iframe...");
-            iframe.src += ""; // Force reload
+            console.log("🔄 Injecting DAGitty input...");
+            const dagittyText = localStorage.getItem("dagittyText");
+            iframe.contentWindow.postMessage({ dagittyText }, "*"); // Send data to iframe
           }
         }, 500);
       })

@@ -1,20 +1,19 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import { AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
-import { FaEraser } from "react-icons/fa";
 
 const GraphPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  // Expect exposure and outcome to be objects { value: string, type: "none" | "custom" | "predefined" }
-  const { 
-    exposure = { value: "", type: "none" }, 
-    outcome = { value: "", type: "none" } 
+
+  // Expect exposure/outcome to be objects { value: string, type: "none" | "custom" | "predefined" }
+  const {
+    exposure = { value: "", type: "none" },
+    outcome = { value: "", type: "none" },
   } = location.state || {};
-  
-  // Track whether the inital fetch was done to prevent duplicate calls
+
+  // Track whether the initial fetch was done to prevent duplicate calls
   const [initialFetchDone, setInitialFetchDone] = useState(false);
 
   const [nodes, setNodes] = useState([]);
@@ -22,154 +21,184 @@ const GraphPage = () => {
   const [selectedNodes, setSelectedNodes] = useState([]);
   const transformRef = useRef(null);
 
+  const GRAPH_HEIGHT = 900; // Graph Space Dimensions
+
+  // --------------------------
+  // 1) handleTimepoint
+  // --------------------------
   const handleTimepoint = () => {
     if (nodes.length === 0) {
       alert("No nodes available to Dagify!");
       return;
     }
     navigate("/timepoints", {
-      state: { granularity, selectedNodes, exposure, outcome, nodes },
+      state: {
+        granularity,
+        selectedNodes,
+        exposure,
+        outcome,
+        nodes,
+        resetCache: true,
+      },
     });
   };
 
-  // Graph Space Dimensions
-  const GRAPH_HEIGHT = 900;
-  
-  // FETCH FOR SELECTED ITERATION
-  const fetchGraphData = async (iteration, exposure, outcome, selectedNodesList = []) => {
-    try {
-      // Only include exposure/outcome if they are predefined.
-      const requestData = {
-        selectedIteration: { id: iteration },
-        selectedNodes: selectedNodesList,
-      };
+  // --------------------------
+  // 2) fetchGraphData
+  // --------------------------
+  // Use useCallback so we can safely reference it in useEffect dependencies.
+  const fetchGraphData = useCallback(
+    async (iteration, exposureParam, outcomeParam, selectedNodesList = []) => {
+      try {
+        // Only include exposure/outcome if they are predefined.
+        const requestData = {
+          selectedIteration: { id: iteration },
+          selectedNodes: selectedNodesList,
+        };
 
-      const response = await axios.post(
-        "http://localhost:3001/api/granularity-query",
-        requestData
-      );
-      const data = response.data;
+        const response = await axios.post(
+          "http://localhost:3001/api/granularity-query",
+          requestData
+        );
+        const data = response.data;
 
-      if (data.success) {
-        // Map returned data into nodes.
-        const extractedNodes = data.data.flat(Infinity).map((node) => ({
-          id: node.identity.low,
-          name: node.properties.name,
-          isExposure:
-            exposure &&
-            exposure.type === "predefined" &&
-            node.properties.name === exposure.value,
-          isOutcome:
-            outcome &&
-            outcome.type === "predefined" &&
-            node.properties.name === outcome.value,
-          isLeaf: node.properties.is_leaf_node,
-          textLength: node.properties.name.length,
-        }));
+        if (data.success) {
+          // Map returned data into nodes
+          const extractedNodes = data.data.flat(Infinity).map((node) => ({
+            id: node.identity.low,
+            name: node.properties.name,
+            isExposure:
+              exposureParam?.type === "predefined" &&
+              node.properties.name === exposureParam.value,
+            isOutcome:
+              outcomeParam?.type === "predefined" &&
+              node.properties.name === outcomeParam.value,
+            isLeaf: node.properties.is_leaf_node,
+            textLength: node.properties.name.length,
+          }));
 
-        const sortedNodes = [];
-        sortedNodes.push(...extractedNodes);
+          // Start building the final array
+          let finalNodes = [...extractedNodes];
 
-        // Add custom exposure node if needed
-        if (exposure && exposure.type === "custom") {
-          const exposureExists = extractedNodes.some(
-            (n) => n.name === exposure.value
-          );
-          if (!exposureExists) {
-            sortedNodes.push({
-              id: `customExposure-${exposure.value}`,
-              name: exposure.value,
-              isExposure: true,
-              isOutcome: false,
-              isLeaf: true,
-              textLength: exposure.value.length,
-            });
+          // Add custom exposure node if needed
+          if (exposureParam?.type === "custom") {
+            const exposureExists = extractedNodes.some(
+              (n) => n.name === exposureParam.value
+            );
+            if (!exposureExists) {
+              finalNodes.push({
+                id: `customExposure-${exposureParam.value}`,
+                name: exposureParam.value,
+                isExposure: true,
+                isOutcome: false,
+                isLeaf: true,
+                textLength: exposureParam.value.length,
+              });
+            }
           }
-        }
 
-        // Add custom outcome node if needed
-        if (outcome && outcome.type === "custom") {
-          const outcomeExists = extractedNodes.some(
-            (n) => n.name === outcome.value
-          );
-          if (!outcomeExists) {
-            sortedNodes.push({
-              id: `customOutcome-${outcome.value}`,
-              name: outcome.value,
-              isExposure: false,
-              isOutcome: true,
-              isLeaf: true,
-              textLength: outcome.value.length,
-            });
+          // Add custom outcome node if needed
+          if (outcomeParam?.type === "custom") {
+            const outcomeExists = extractedNodes.some(
+              (n) => n.name === outcomeParam.value
+            );
+            if (!outcomeExists) {
+              finalNodes.push({
+                id: `customOutcome-${outcomeParam.value}`,
+                name: outcomeParam.value,
+                isExposure: false,
+                isOutcome: true,
+                isLeaf: true,
+                textLength: outcomeParam.value.length,
+              });
+            }
           }
+
+          // 2a) Sort nodes by name
+          finalNodes.sort((a, b) => a.name.localeCompare(b.name));
+
+          // 2b) Update state
+          setNodes(finalNodes);
+
+          // 2c) Optionally center the view if transformRef is used
+          if (transformRef.current) {
+            setTimeout(() => {
+              transformRef.current.centerView?.(0.5, 200);
+            }, 300);
+          }
+        } else {
+          console.error("Failed to fetch graph data:", data.error);
+        }
+      } catch (error) {
+        console.error("Error fetching graph data:", error);
+      }
+    },
+    []
+  );
+
+  // --------------------------
+  // 3) fetchInitialGraphParams
+  // --------------------------
+  // Also use useCallback, referencing fetchGraphData
+  const fetchInitialGraphParams = useCallback(
+    async (exposureParam, outcomeParam) => {
+      try {
+        // If both exposure/outcome are not predefined, default iteration=0
+        if (
+          exposureParam.type !== "predefined" &&
+          outcomeParam.type !== "predefined"
+        ) {
+          await fetchGraphData(0, exposureParam, outcomeParam, []);
+          setInitialFetchDone(true);
+          return;
         }
 
-        setNodes(sortedNodes);
+        const requestData = {
+          exposure: exposureParam,
+          outcome: outcomeParam,
+        };
 
-        if (transformRef.current) {
-          setTimeout(() => {
-            transformRef.current.centerView(0.5, 200);
-          }, 300);
+        const response = await axios.post(
+          "http://localhost:3001/api/initial-graph-query",
+          requestData
+        );
+        const result = response.data;
+
+        if (result.success) {
+          const { iteration, initSelectedNodes } = result.data[0];
+          setGranularity(iteration);
+          setSelectedNodes(initSelectedNodes);
+
+          await fetchGraphData(iteration, exposureParam, outcomeParam, initSelectedNodes);
+          setInitialFetchDone(true);
+        } else {
+          console.error("Failed to fetch initial graph data:", result.error);
         }
-      } else {
-        console.error("Failed to fetch graph data:", data.error);
+      } catch (error) {
+        console.error("Error fetching initial graph data:", error);
       }
-    } catch (error) {
-      console.error("Error fetching graph data:", error);
-    }
-  };
+    },
+    [fetchGraphData]
+  );
 
-  // INITIAL FETCH FOR ITERATION AND SELECTED LIST (where both concepts are present)
-  const fetchInitialGraphParams = async (exposure, outcome) => {
-    try {
-    if (exposure.type !== "predefined" && outcome.type !== "predefined") {
-      await fetchGraphData(0, exposure, outcome, []);
-      setInitialFetchDone(true);
-      return;
-    }
-
-      const requestData = {
-        exposure: exposure,
-        outcome: outcome
-      };
-
-      const response = await axios.post(
-        "http://localhost:3001/api/initial-graph-query",
-        requestData
-      );
-      const result = response.data;
-
-      if (result.success) {
-
-        const { iteration, initSelectedNodes} = result.data[0];
-
-        setGranularity(iteration);
-        setSelectedNodes(initSelectedNodes);
-
-        await fetchGraphData(iteration, exposure, outcome, initSelectedNodes);
-        setInitialFetchDone(true);
-
-      } else {
-        console.error("Failed to fetch initial graph data:", result.error);
-      }
-    } catch (error) {
-      console.error("Error fetching initial graph data:", error);
-    }
-  };
-
+  // --------------------------
+  // 4) useEffects
+  // --------------------------
+  // On mount, fetch initial iteration
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     fetchInitialGraphParams(exposure, outcome);
-  }, []);
-  
+  }, [exposure, outcome, fetchInitialGraphParams]);
+
+  // Whenever granularity changes, if we have done the initial fetch, re-fetch
   useEffect(() => {
     if (initialFetchDone) {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
       fetchGraphData(granularity, exposure, outcome, []);
     }
-  }, [granularity]);
+  }, [granularity, initialFetchDone, exposure, outcome, fetchGraphData]);
 
-
+  // --------------------------
+  // 5) Expansion Logic
+  // --------------------------
   const handleNodeClick = (node) => {
     if (!node.isLeaf) {
       console.log(`Expanding node: ${node.name} with iteration level ${granularity}`);
@@ -191,8 +220,14 @@ const GraphPage = () => {
     fetchGraphData(granularity, exposure, outcome, newSelectedNodes);
   };
 
+  // --------------------------
+  // 6) Render
+  // --------------------------
   return (
-    <div className="flex flex-col items-center p-6 bg-gray-100 w-full" style={{ height: "calc(100vh - 130px)" }}>
+    <div
+      className="flex flex-col items-center p-6 bg-gray-100 w-full"
+      style={{ height: "calc(100vh - 130px)" }}
+    >
       {/* Fixed Header */}
       <header className="w-full bg-white p-4 rounded-lg shadow-md sticky top-0 z-50">
         <div className="flex">
@@ -201,11 +236,11 @@ const GraphPage = () => {
             <p className="text-sm text-center text-gray-600">
               Exposure:{" "}
               <span className="text-red-500 font-semibold">
-                {exposure && exposure.type !== "none" ? exposure.value : "Not set"}
+                {exposure?.type !== "none" ? exposure.value : "Not set"}
               </span>
               , Outcome:{" "}
               <span className="text-red-500 font-semibold">
-                {outcome && outcome.type !== "none" ? outcome.value : "Not set"}
+                {outcome?.type !== "none" ? outcome.value : "Not set"}
               </span>
             </p>
             <div className="mt-2">
@@ -276,7 +311,12 @@ const GraphPage = () => {
               className="p-2 rounded-full text-center font-semibold shadow-md cursor-pointer"
               onClick={() => handleNodeClick(node)}
               style={{
-                backgroundColor: node.isExposure || node.isOutcome ? "#EF4444" : node.isLeaf ? "#D1D5DB" : "#A7F3D0",
+                backgroundColor:
+                  node.isExposure || node.isOutcome
+                    ? "#EF4444"
+                    : node.isLeaf
+                    ? "#D1D5DB"
+                    : "#A7F3D0",
                 color: node.isExposure || node.isOutcome ? "white" : "black",
                 border: node.isExposure || node.isOutcome ? "2px solid black" : "none",
                 height: "140px",
