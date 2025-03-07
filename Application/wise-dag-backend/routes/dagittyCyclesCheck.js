@@ -90,59 +90,74 @@ router.post('/cycles', async (req, res) => {
       allNodes.push(outcome.value);
     }
 
+    const scaleFactor = 1; // adjust if needed
+
     let dagittyGraph = "dag {\n";
 
-    for (let t = 1; t <= timepoints; t++) {
-      allNodes.forEach(node => {
-        const settings = nodeSettings && nodeSettings[node];
-        const isFixed = settings && settings.isFixed;
-        const observationAttr = settings && settings.observation && settings.observation.trim() !== ""
-          ? settings.observation.trim()
-          : "";
+    // First, process the fixed nodes (they are output only once)
+    const fixedNodes = allNodes.filter(node => nodeSettings[node] && nodeSettings[node].isFixed);
+    fixedNodes.forEach((node, index) => {
+      // Evenly space fixed nodes in y, plus a little random jitter
+      const y = ((index + 1) / (fixedNodes.length + 1)) + (Math.random() - 0.5) * 0.05;
+      const x = 0; // fixed nodes are on the very left
+      const pos = `pos="${(x * scaleFactor).toFixed(3)},${y.toFixed(3)}"`;
 
-        if (isFixed) {
-          // For fixed nodes, output a single node without a time suffix.
-          let attributes = [];
-          // For fixed nodes, if it matches the exposure or outcome, add those attributes.
-          if (node === exposure.value) {
-            attributes.push("exposure");
-          }
-          if (node === outcome.value) {
-            attributes.push("outcome");
-          }
-          if (observationAttr !== "") {
-            attributes.push(observationAttr);
-          }
-          if (attributes.length > 0) {
-            dagittyGraph += `  "${node}" [${attributes.join(", ")}];\n`;
-          } else {
-            dagittyGraph += `  "${node}";\n`;
-          }
-        } else {
-          // For non-fixed nodes, create a node for each timepoint.
-          for (let t = 1; t <= timepoints; t++) {
-            const nodeName = `${node}_T${t}`;
-            let attributes = [];
-            // Apply exposure/outcome only at the proper timepoints.
-            if (t === 1 && node === exposure.value) {
-              attributes.push("exposure");
-            }
-            if (t === timepoints && node === outcome.value) {
-              attributes.push("outcome");
-            }
-            if (nodeOrder[node] !== undefined) {
-              attributes.push(`order=${nodeOrder[node]}`);
-            }
-            if (observationAttr !== "") {
-              attributes.push(observationAttr);
-            }
-            if (attributes.length > 0) {
-              dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
-            } else {
-              dagittyGraph += `  "${nodeName}";\n`;
-            }
-          }
-        }
+      let attributes = [];
+      // If the fixed node is the exposure or outcome, add the attributes.
+      if (node === exposure.value) attributes.push("exposure");
+      if (node === outcome.value) attributes.push("outcome");
+
+      // Check if there is an observation attribute
+      const observationAttr =
+        nodeSettings[node].observation && nodeSettings[node].observation.trim() !== ""
+          ? nodeSettings[node].observation.trim()
+          : "";
+      if (observationAttr !== "") attributes.push(observationAttr);
+
+      // Always include the pos attribute.
+      attributes.push(pos);
+
+      dagittyGraph += attributes.length > 0
+        ? `  "${node}" [${attributes.join(", ")}];\n`
+        : `  "${node}";\n`;
+    });
+
+    // For non-fixed nodes, we want to normalize their order value first.
+    // Get all non-fixed nodes that have an order defined.
+    const nonFixedNodes = allNodes.filter(node => !(nodeSettings[node] && nodeSettings[node].isFixed));
+
+    // For each timepoint, output a node instance for each non-fixed node.
+    for (let t = 1; t <= timepoints; t++) {
+      // For vertical spacing per timepoint, we group the nodes (here, simply the whole non-fixed list)
+      nonFixedNodes.forEach((node, index, arr) => {
+
+        // x position dependent on timepoint
+        const x = (t) * scaleFactor;
+        const y = 1
+        const pos = `pos="${x.toFixed(3)},${y.toFixed(3)}"`;
+
+        // Name the node with its time suffix.
+        const nodeName = `${node}_T${t}`;
+
+        let attributes = [];
+        // Always include the computed position.
+        attributes.push(pos);
+
+        // Add exposure/outcome attributes only at the appropriate timepoint.
+        if (t === 1 && node === exposure.value) attributes.push("exposure");
+        if (t === timepoints && node === outcome.value) attributes.push("outcome");
+
+        // Optionally add the original order as an attribute.
+        if (nodeOrder[node] !== undefined) attributes.push(`order=${nodeOrder[node]}`);
+
+        // Add any observation attribute.
+        const observationAttr =
+          nodeSettings[node].observation && nodeSettings[node].observation.trim() !== ""
+            ? nodeSettings[node].observation.trim()
+            : "";
+        if (observationAttr !== "") attributes.push(observationAttr);
+
+        dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
       });
     }
 
