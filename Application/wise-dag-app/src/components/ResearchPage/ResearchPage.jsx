@@ -3,10 +3,12 @@ import { useNavigate } from "react-router-dom";
 import DropdownWithSearch from "../DropdownwithSearch";
 import logo from "../../assets/logo.png";
 
+const API_URL = "https://wise-17jg.onrender.com"; // Replace with your actual backend URL
+
 const fetchConcepts = async (searchTerm) => {
   try {
     const response = await fetch(
-      `http://localhost:3001/api/concepts?searchTerm=${encodeURIComponent(searchTerm)}`
+      `${API_URL}/api/concepts?searchTerm=${encodeURIComponent(searchTerm)}`
     );
     const data = await response.json();
     if (data.success) {
