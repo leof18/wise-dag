@@ -18,3 +18,6 @@ if (isAcyclic(dag)) {
 } else {
   cat(findCycle(dag))
 }
+
+flush.console()
+quit(save = "no", status = 0)

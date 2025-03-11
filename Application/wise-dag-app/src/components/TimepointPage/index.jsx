@@ -32,7 +32,7 @@ const TimepointPage = () => {
     const initializedData = nodes.map((node) => ({
       ...node,
       isFixed: false,
-      order: { name: node.name, value: node.order?.value ?? 0 },
+      order: { name: node.name, value: Number(node.order?.value) || 0 },
       observation: "unobserved", // default unobserved
     }));
     setNodeOrder(initializedData);
@@ -123,10 +123,11 @@ const TimepointPage = () => {
 
 
   const handleNodeOrderValueChange = (nodeName, value) => {
+    const numericValue = parseInt(value, 10);
     setNodeOrder((prevData) =>
       prevData.map((node) =>
         node.name === nodeName
-          ? { ...node, order: { ...node.order, value } }
+          ? { ...node, order: { ...node.order, value: numericValue } }
           : node
       )
     );
