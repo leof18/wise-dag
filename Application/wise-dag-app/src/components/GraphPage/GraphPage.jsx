@@ -140,6 +140,9 @@ const GraphPage = () => {
   // 3) fetchInitialGraphParams
   // --------------------------
   // Also use useCallback, referencing fetchGraphData
+
+  const API_URL = process.env.REACT_APP_API_URL || "https://wise-17jg.onrender.com"; // Use .env or default to Render URL
+
   const fetchInitialGraphParams = useCallback(
     async (exposureParam, outcomeParam) => {
       try {
@@ -152,23 +155,24 @@ const GraphPage = () => {
           setInitialFetchDone(true);
           return;
         }
-
+  
         const requestData = {
           exposure: exposureParam,
           outcome: outcomeParam,
         };
-
+  
         const response = await axios.post(
-          "http://localhost:3001/api/initial-graph-query",
+          `${API_URL}/api/initial-graph-query`,  // Use dynamic API URL
           requestData
         );
+  
         const result = response.data;
-
+  
         if (result.success) {
           const { iteration, initSelectedNodes } = result.data[0];
           setGranularity(iteration);
           setSelectedNodes(initSelectedNodes);
-
+  
           await fetchGraphData(iteration, exposureParam, outcomeParam, initSelectedNodes);
           setInitialFetchDone(true);
         } else {
