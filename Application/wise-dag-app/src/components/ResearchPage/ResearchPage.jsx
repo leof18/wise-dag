@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import DropdownWithSearch from "../DropdownwithSearch";
 import logo from "../../assets/logo.png";
 
-const API_URL = "https://wise-17jg.onrender.com"; // Replace with your actual backend URL
+const API_URL = process.env.Web_API_URL || "https://wise-17jg.onrender.com";; // Replace with your actual backend URL
 
 const fetchConcepts = async (searchTerm) => {
   try {

@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 
+const API_URL = process.env.Web_API_URL || "https://wise-17jg.onrender.com";
+
 const GraphPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -142,7 +144,7 @@ const GraphPage = () => {
   // --------------------------
   // Also use useCallback, referencing fetchGraphData
 
-  const API_URL = process.env.REACT_APP_API_URL || "https://wise-17jg.onrender.com"; // Use .env or default to Render URL
+  const API_URL = process.env.Web_API_URL || "https://wise-17jg.onrender.com"; // Use .env or default to Render URL
 
   const fetchInitialGraphParams = useCallback(
     async (exposureParam, outcomeParam) => {
