@@ -61,7 +61,7 @@ const TimepointPage = () => {
   const handleConfirmNodeSettings = () => {
     setCurrentStep(3);
   };
-  /*
+  
   // Fetch cycles using API
   useEffect(() => {
     if (nodeOrder && nodeOrder.length > 0) {
@@ -122,7 +122,7 @@ const TimepointPage = () => {
       });
     }
   }, [rOutput]);
-  */
+  
   const handleNodeOrderValueChange = (nodeName, value) => {
     setNodeOrder((prevData) =>
       prevData.map((node) =>
