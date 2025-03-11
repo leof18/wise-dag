@@ -50,20 +50,22 @@ const GraphPage = () => {
   const fetchGraphData = useCallback(
     async (iteration, exposureParam, outcomeParam, selectedNodesList = []) => {
       try {
-        // Only include exposure/outcome if they are predefined.
+        // Request payload
         const requestData = {
           selectedIteration: { id: iteration },
           selectedNodes: selectedNodesList,
         };
-
+  
+        // API Call to backend
         const response = await axios.post(
-          "http://localhost:3001/api/granularity-query",
+          `${API_URL}/api/granularity-query`,  // Use dynamic API URL
           requestData
         );
+  
         const data = response.data;
-
+  
         if (data.success) {
-          // Map returned data into nodes
+          // Transform API response into nodes
           const extractedNodes = data.data.flat(Infinity).map((node) => ({
             id: node.identity.low,
             name: node.properties.name,
@@ -76,10 +78,9 @@ const GraphPage = () => {
             isLeaf: node.properties.is_leaf_node,
             textLength: node.properties.name.length,
           }));
-
-          // Start building the final array
+  
           let finalNodes = [...extractedNodes];
-
+  
           // Add custom exposure node if needed
           if (exposureParam?.type === "custom") {
             const exposureExists = extractedNodes.some(
@@ -96,7 +97,7 @@ const GraphPage = () => {
               });
             }
           }
-
+  
           // Add custom outcome node if needed
           if (outcomeParam?.type === "custom") {
             const outcomeExists = extractedNodes.some(
@@ -113,14 +114,14 @@ const GraphPage = () => {
               });
             }
           }
-
-          // 2a) Sort nodes by name
+  
+          // Sort nodes alphabetically
           finalNodes.sort((a, b) => a.name.localeCompare(b.name));
-
-          // 2b) Update state
+  
+          // Update React state
           setNodes(finalNodes);
-
-          // 2c) Optionally center the view if transformRef is used
+  
+          // Optionally center the view
           if (transformRef.current) {
             setTimeout(() => {
               transformRef.current.centerView?.(0.5, 200);
