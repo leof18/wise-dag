@@ -49,3 +49,5 @@ npm start
 ## We retired account functionality in the current version
 username: testuser
 password: password123
+
+git remote add origin https://github.com/SealCai/WISE.git
