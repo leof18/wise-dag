@@ -1,15 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import HomePage from './components/HomePage';
+import HomePage from './pages/HomePage';
 import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
 import ForgotPassword from './components/Auth/ForgotPassword';
-import ResearchPage from './components/ResearchPage/ResearchPage';
-import GraphPage from './components/GraphPage/GraphPage';
-import TimepointPage from './components/TimepointPage';
-import DagittyPage from './components/DagittyPage';
-import AboutUs from './components/AboutUs';
+import ResearchPage from './pages/ResearchPage';
+import GraphPage from './pages/GraphPage';
+import TimepointPage from './pages/TimepointPage';
+import DagittyPage from './pages/DagittyPage';
+import AboutUs from './pages/AboutUsPage';
 
 const App = () => {
   return (

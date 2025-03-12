@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define CSS Variables for Colors & Fonts */
+:root {
+  --primary-color: #0077cc;
+  --secondary-color: #0055aa;
+  --accent-color: #ffcccb;
+  --bg-color: #f7fafc;
+  --text-color: #333;
+  --header-bg: #f7fafc;
+  --header-text: #666;
+  --font-base: 'Inter', sans-serif;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 /* Global body styles */
 body {
-  @apply bg-gray-100 text-gray-800 font-sans;
+  @apply bg-gray-100 text-gray-800;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-base);
   margin: 0;
 }
 
@@ -13,14 +31,16 @@ body {
   @apply flex flex-col min-h-screen;
 }
 
-/* Main content area (flexible height) */
+/* Main content area */
 .main-content {
   @apply flex-1 flex flex-col;
 }
 
 /* Header Styling */
 header {
-  @apply bg-gray-100 text-gray-600 sticky top-0 z-50 shadow-md;
+  @apply sticky top-0 z-50 shadow-md;
+  background-color: var(--header-bg);
+  color: var(--header-text);
 }
 
 header .header-container {
@@ -30,7 +50,7 @@ header .header-container {
 /* Footer Styling */
 footer {
   @apply bg-gray-800 text-white text-center py-4;
-  margin-top: auto; /* Ensures footer stays at the bottom */
+  margin-top: auto;
 }
 
 /* Links */
@@ -47,12 +67,13 @@ a:hover {
   display: none;
 }
 
+/* About Us Section */
 .about-us {
-  max-width: 800px;  /* Limit width for better readability */
+  max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: var(--font-base);
+  color: var(--text-color);
   line-height: 1.6;
   text-align: center;
 }
@@ -61,13 +82,13 @@ a:hover {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #004466;  /* Dark blue for emphasis */
+  color: var(--secondary-color);
 }
 
 .about-us p {
   font-size: 1.1rem;
   margin-bottom: 15px;
-  text-align: justify; /* Improves text readability */
+  text-align: justify;
 }
 
 .diagram-container {
@@ -84,7 +105,7 @@ a:hover {
 }
 
 .wise-dag-image:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 .diagram-caption {
@@ -97,17 +118,16 @@ a:hover {
   display: inline-block;
   margin-top: 20px;
   font-size: 1rem;
-  color: #0077cc;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .about-us a:hover {
-  color: #0055aa;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
-
 
 /* Main Graph Page */
 .graph-page-container {
@@ -158,7 +178,6 @@ a:hover {
   overflow: hidden;
 }
 
-
 /* Graph Container */
 .graph-container {
   @apply relative flex flex-wrap justify-center items-center;
@@ -176,13 +195,31 @@ a:hover {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #ffcccb;
-  color: #333;
+  background-color: var(--accent-color);
+  color: var(--text-color);
   font-weight: bold;
   cursor: pointer;
   transform: translate(-50%, -50%);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .node:hover {
-  @apply bg-blue-500 text-white;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tree/Folders */
+.container {
+  font-family: var(--font-base);
+  padding: 20px;
+}
+
+.tree-node {
+  margin-bottom: 8px;
+}
+
+.folder:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
