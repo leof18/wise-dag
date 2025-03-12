@@ -186,3 +186,19 @@ a:hover {
 .node:hover {
   @apply bg-blue-500 text-white;
 }
+
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.tree-node {
+  margin-bottom: 8px;
+}
+
+.folder:hover {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
