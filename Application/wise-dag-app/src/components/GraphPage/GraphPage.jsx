@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = process.env.Web_API_URL || "https://wise-17jg.onrender.com";
+const API_URL = process.env.Web_API_URL || "https://wise-r.onrender.com";
 
 const GraphPage = () => {
   const location = useLocation();

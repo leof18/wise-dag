@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 // Use the environment variable or default to Render backend URL
-const API_URL = process.env.Web_API_URL || "https://wise-17jg.onrender.com";
+const API_URL = process.env.Web_API_URL || "https://wise-r.onrender.com";
 
 const TimepointPage = () => {
   const location = useLocation();
