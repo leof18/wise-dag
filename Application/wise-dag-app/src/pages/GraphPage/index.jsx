@@ -4,6 +4,8 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import "tailwindcss/tailwind.css";
 
+const API_URL = process.env.REACT_APP_WEB_API_URL || "https://wise-r.onrender.com";
+
 // External helper function to recursively sort the hierarchy alphabetically.
 function sortHierarchy(nodes) {
   return nodes
@@ -53,7 +55,7 @@ const GraphPage = () => {
           selectedNodes: selectedNodesList,
         };
 
-        const response = await axios.post("http://localhost:3001/api/granularity-query", requestData);
+        const response = await axios.post(`${API_URL}/api/granularity-query`, requestData);
         const data = response.data;
         if (data.success) {
           const extractedNodes = data.data.flat(Infinity).map((node) => ({
@@ -115,7 +117,7 @@ const GraphPage = () => {
           return;
         }
         const requestData = { exposure: exposureParam, outcome: outcomeParam };
-        const response = await axios.post("http://localhost:3001/api/initial-graph-query", requestData);
+        const response = await axios.post(`${API_URL}/api/initial-graph-query`, requestData);
         const result = response.data;
         if (result.success) {
           const { iteration, initSelectedNodes } = result.data[0];
@@ -146,7 +148,7 @@ const GraphPage = () => {
   // ---------- Folder Structure Code (UI) ----------
   // Fetch hierarchy and sort it alphabetically using the external sortHierarchy function.
   useEffect(() => {
-    axios.get("http://localhost:3001/api/hierarchyQuery")
+    axios.get(`${API_URL}/api/hierarchyQuery`)
       .then(response => {
         if (response.data.success) {
           setHierarchy(sortHierarchy(response.data.hierarchy));
