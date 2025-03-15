@@ -49,3 +49,39 @@ npm start
 ## We retired account functionality in the current version
 username: testuser
 password: password123
+
+# How to run Docker
+## Create a Dockerfile with instruction to build a docker image for the backend
+cd Application/wise-dag-backend
+## In a shell, type below code to create an image. t means tage. "." means everything in the current work directory
+### docker build -t wise-r .
+docker build -t name_of_image .
+## To run a container from a built image, type below code
+### Your server is running on http://0.0.0.0:3000, which means it is listening on port 3000 inside the container. You need to correctly map the internal port (3000) to an external port (3001) on your host machine.
+
+### e.g., docker run --name con-wise-r -p 3001:3000 wise-r
+docker run --name name_of_container -p 3001:3000 name_of_image
+
+# API to be changed for production in Graphpage, ResearchPage, and Timepointpage
+
+const API_URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3001" // Change this to your local backend URL
+    : process.env.REACT_APP_WEB_API_URL || "https://wise-r.onrender.com";
+
+## in .env
+REACT_APP_WEB_API_URL = http://localhost:3001
+
+# To check if required R packages are correctly installed in the docker container
+## This opens an interactive R session inside the Docker container.
+## docker exec -it con-wise-r R
+docker exec -it name_of_container R
+## Once inside R, run:
+installed.packages()
+
+## or check for a specific package:
+if ("curl" %in% installed.packages()) {
+  print("curl is installed!")
+} else {
+  print("curl is missing!")
+}

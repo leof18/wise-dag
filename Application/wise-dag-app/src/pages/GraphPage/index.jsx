@@ -4,7 +4,10 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import "tailwindcss/tailwind.css";
 
-const API_URL = process.env.REACT_APP_WEB_API_URL || "https://wise-r.onrender.com";
+const API_URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3001" // Change this to your local backend URL
+    : process.env.REACT_APP_WEB_API_URL;
 
 // External helper function to recursively sort the hierarchy alphabetically.
 function sortHierarchy(nodes) {

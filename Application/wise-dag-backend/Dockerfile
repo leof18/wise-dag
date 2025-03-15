@@ -1,11 +1,17 @@
 # Use Rocker R base image with Node.js installed
 FROM rocker/r-ver:latest
 
-# Install Node.js
-RUN apt-get update && apt-get install -y nodejs npm
+# Install Node.js and system dependencies
+RUN apt-get update && apt-get install -y \
+    nodejs npm \
+    libcurl4-openssl-dev \
+    libv8-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Install R packages globally
-RUN Rscript -e "install.packages(c('Rcpp', 'curl', 'dplyr', 'V8', 'dagitty'), repos='http://cran.r-project.org')"
+RUN Rscript -e "install.packages(c('Rcpp', 'curl', 'dplyr', 'V8', 'dagitty'), repos='http://cran.us.r-project.org'); \
+                 cat('✅ R packages installed successfully! 🎉\n')"
 
 
 # Set working directory inside the container

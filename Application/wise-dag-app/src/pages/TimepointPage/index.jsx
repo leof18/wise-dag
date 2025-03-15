@@ -3,7 +3,10 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 // Use the environment variable or default to Render backend URL
-const API_URL = process.env.REACT_APP_WEB_API_URL || "https://wise-r.onrender.com";
+const API_URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3001" // Change this to your local backend URL
+    : process.env.REACT_APP_WEB_API_URL;
 
 const TimepointPage = () => {
   const location = useLocation();
