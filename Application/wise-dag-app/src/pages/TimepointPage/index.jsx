@@ -44,13 +44,8 @@ const TimepointPage = () => {
     const initializedData = nodes.map((node) => ({
       ...node,
       isFixed: false,
-<<<<<<< HEAD:Application/wise-dag-app/src/components/TimepointPage/index.jsx
-      order: { name: node.name, value: node.order?.value ?? 0 },
-      observation: "unobserved",
-=======
       order: { name: node.name, value: Number(node.order?.value) || 0 },
       observation: "unobserved", // default unobserved
->>>>>>> upstream/main:Application/wise-dag-app/src/pages/TimepointPage/index.jsx
     }));
   
     setNodeOrder(initializedData);

@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-<<<<<<< HEAD:Application/wise-dag-app/src/components/ResearchPage/ResearchPage.jsx
-import DropdownWithSearch from "../DropdownwithSearch";
-=======
 import DropdownWithSearch from "../../components/DropdownWithSearch";
->>>>>>> upstream/main:Application/wise-dag-app/src/pages/ResearchPage/index.jsx
 import logo from "../../assets/logo.png";
 
 const API_URL = process.env.Web_API_URL || "https://wise-r.onrender.com";; // Replace with your actual backend URL

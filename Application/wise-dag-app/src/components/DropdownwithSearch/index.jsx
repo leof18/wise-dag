@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
+const DropdownwithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
   const [options, setOptions] = useState([]);      // Dropdown options
   const [searchTerm, setSearchTerm] = useState("");  // Current search term
   const [loading, setLoading] = useState(false);     // Loading indicator
@@ -86,4 +86,4 @@ const DropdownWithSearch = ({ placeholder, fetchOptions, value, onChange }) => {
   );
 };
 
-export default DropdownWithSearch;
+export default DropdownwithSearch;
