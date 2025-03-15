@@ -93,7 +93,7 @@ const TimepointPage = () => {
         nodeSettings: nodeSettingsPayload,
         resetCache: shouldResetCache
       };
-      /*
+      
       const fetchCycles = async () => {
         try {
           const response = await axios.post(`${API_URL}/api/cycles`, requestCycles);
@@ -105,7 +105,7 @@ const TimepointPage = () => {
         }
       };
       fetchCycles();
-      */
+      
     }
   }, [timepoints, nodeOrder, granularity, selectedNodes, exposure, outcome]);
 
