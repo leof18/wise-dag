@@ -26,20 +26,30 @@ const TimepointPage = () => {
 
   const handleConfirmTimepoints = () => {
     const numTimepoints = parseInt(timepointsInput, 10);
+  
     if (isNaN(numTimepoints) || numTimepoints <= 0) {
       alert("Please enter a valid number greater than 0.");
       return;
     }
+  
+    // ✅ Ensure `nodes` is defined before using `map()`
+    if (!nodes || nodes.length === 0) {
+      console.error("❌ Error: nodes is undefined or empty.");
+      alert("Nodes data is missing. Please reload the page.");
+      return;
+    }
+  
     setTimepoints(numTimepoints);
-
+  
     const initializedData = nodes.map((node) => ({
       ...node,
       isFixed: false,
       order: { name: node.name, value: node.order?.value ?? 0 },
       observation: "unobserved",
     }));
+  
     setNodeOrder(initializedData);
-    setCurrentStep(2);
+    setCurrentStep(2); // ✅ Ensure this state change happens safely
   };
 
   const handleToggleConstant = (nodeName) => {
