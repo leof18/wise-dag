@@ -52,7 +52,6 @@ async function getGraphData(parameters) {
           allNodes,
           [edge IN rawEdges WHERE edge IS NOT NULL] AS causalEdges;
     `;
-
     const result = await session.run(query, parameters);
     const allNodes = result.records[0].get("allNodes");
     const causalEdges = result.records[0].get("causalEdges");
@@ -64,9 +63,185 @@ async function getGraphData(parameters) {
   }
 }
 
+/**
+ * Compute a topological order for a list of nodes (base names) given a set of edges.
+ * Each edge is an object { from, to } (both base names).
+ */
+function computeNodeOrder(nodes, edges) {
+  let inDegree = {};
+  nodes.forEach(n => { inDegree[n] = 0; });
+  edges.forEach(e => {
+    if (inDegree.hasOwnProperty(e.to)) {
+      inDegree[e.to]++;
+    }
+  });
+  let queue = nodes.filter(n => inDegree[n] === 0);
+  let order = {};
+  let currentOrder = 0;
+  while (queue.length > 0) {
+    let n = queue.shift();
+    order[n] = currentOrder++;
+    edges.forEach(e => {
+      if (e.from === n) {
+        inDegree[e.to]--;
+        if (inDegree[e.to] === 0) {
+          queue.push(e.to);
+        }
+      }
+    });
+  }
+  // For any nodes that weren't reached (due to cycles), assign order arbitrarily.
+  nodes.forEach(n => {
+    if (order[n] === undefined) {
+      order[n] = currentOrder++;
+    }
+  });
+  return order;
+}
+
+/**
+ * After cycles are resolved, read dagitty_input.txt, parse nodes and edges,
+ * compute ordering based on the (acyclic) edges, update positions, and write back the file.
+ *
+ * The algorithm:
+ * 1. For each node definition, remove the timepoint suffix (if any) to get its base name.
+ * 2. Build base edges (also stripping _T suffix) from the edge definitions.
+ * 3. Compute a topological order for the base nodes.
+ * 4. For fixed nodes (which do not have _T suffix), assign x = 0.
+ * 5. For non-fixed nodes, group by timepoint and then assign x = (timepoint-1 + normalizedOrder) * scaleFactor,
+ *    and y based on the sorted order within that timepoint.
+ */
+function updateDagittyPositions(filePath, scaleFactor = 1) {
+  let fileContent = fs.readFileSync(filePath, 'utf8');
+  const lines = fileContent.split('\n');
+  let insideDag = false;
+  let nodeDefs = {};  // { label: attributeString }
+  let edgeDefs = [];  // array of { from, to }
+
+  lines.forEach(line => {
+    line = line.trim();
+    if (line.startsWith('dag {')) { insideDag = true; return; }
+    if (line.startsWith('}')) { insideDag = false; return; }
+    if (insideDag) {
+      if (line.includes('->')) {
+        // Edge definition, e.g. "A_T1" -> "B_T1";
+        const edgeMatch = line.match(/"([^"]+)"\s*->\s*"([^"]+)"/);
+        if (edgeMatch) {
+          edgeDefs.push({ from: edgeMatch[1], to: edgeMatch[2] });
+        }
+      } else if (line.includes('[')) {
+        // Node definition, e.g. "A_T1" [attr1, attr2];
+        const nodeMatch = line.match(/^"([^"]+)"\s*\[(.+)\];$/);
+        if (nodeMatch) {
+          const label = nodeMatch[1];
+          const attrStr = nodeMatch[2];
+          nodeDefs[label] = attrStr;
+        }
+      }
+    }
+  });
+
+  // Build set of base nodes (remove any _T suffix from non-fixed nodes)
+  const baseNodesSet = new Set();
+  Object.keys(nodeDefs).forEach(label => {
+    const base = label.replace(/_T\d+$/, '');
+    baseNodesSet.add(base);
+  });
+  const baseNodes = Array.from(baseNodesSet);
+
+  // Build base edges by stripping any timepoint suffix.
+  let baseEdges = [];
+  edgeDefs.forEach(e => {
+    const fromBase = e.from.replace(/_T\d+$/, '');
+    const toBase = e.to.replace(/_T\d+$/, '');
+    if (fromBase !== toBase) {
+      baseEdges.push({ from: fromBase, to: toBase });
+    }
+  });
+
+  // Compute topological order based on base nodes and baseEdges.
+  const computedOrder = computeNodeOrder(baseNodes, baseEdges);
+
+  // Prepare updated node definitions.
+  let updatedNodeLines = [];
+  // Fixed nodes: we assume these do not have a _T suffix.
+  const fixedLabels = Object.keys(nodeDefs).filter(label => !label.match(/_T\d+$/));
+  fixedLabels.sort();
+  fixedLabels.forEach((label, index) => {
+    const y = ((index + 1) / (fixedLabels.length + 1)) + (Math.random() - 0.5) * 0.05;
+    const x = 0;
+    const newPos = `pos="${(x * scaleFactor).toFixed(3)},${y.toFixed(3)}"`;
+    let attrStr = nodeDefs[label];
+    if (attrStr.match(/pos="[^"]*"/)) {
+      attrStr = attrStr.replace(/pos="[^"]*"/, newPos);
+    } else {
+      attrStr += `, ${newPos}`;
+    }
+    updatedNodeLines.push(`  "${label}" [${attrStr}];`);
+  });
+
+  // Non-fixed nodes: those with _T suffix. Group them by timepoint.
+  const nonFixedLabels = Object.keys(nodeDefs).filter(label => label.match(/_T\d+$/));
+  let groups = {}; // key: timepoint, value: array of labels
+  nonFixedLabels.forEach(label => {
+    const tMatch = label.match(/_T(\d+)$/);
+    const t = tMatch ? parseInt(tMatch[1], 10) : 1;
+    if (!groups[t]) groups[t] = [];
+    groups[t].push(label);
+  });
+
+  // For each timepoint group, sort by computed order (using base node order)
+  Object.keys(groups).forEach(tStr => {
+    groups[tStr].sort((a, b) => {
+      const baseA = a.replace(/_T\d+$/, '');
+      const baseB = b.replace(/_T\d+$/, '');
+      return computedOrder[baseA] - computedOrder[baseB];
+    });
+  });
+
+  // Now update positions for non-fixed nodes.
+  Object.keys(groups).forEach(tStr => {
+    const t = parseInt(tStr, 10);
+    const group = groups[t];
+    // For normalization, get computed orders for this group.
+    const orders = group.map(label => computedOrder[label.replace(/_T\d+$/, '')]);
+    const minOrder = Math.min(...orders);
+    const maxOrder = Math.max(...orders);
+    group.forEach((label, index, arr) => {
+      const base = label.replace(/_T\d+$/, '');
+      const orderVal = computedOrder[base];
+      let normalized = 0.5;
+      if (maxOrder > minOrder) {
+        normalized = (orderVal - minOrder) / (maxOrder - minOrder);
+      }
+      // x: (t + normalizedOrder)*scaleFactor; y: vertical spacing within the group.
+      const x = (t + normalized) * scaleFactor;
+      const y = ((index + 1) / (arr.length + 1)) + (Math.random() - 0.5) * 0.05;
+      const newPos = `pos="${x.toFixed(3)},${y.toFixed(3)}"`;
+      let attrStr = nodeDefs[label];
+      if (attrStr.match(/pos="[^"]*"/)) {
+        attrStr = attrStr.replace(/pos="[^"]*"/, newPos);
+      } else {
+        attrStr += `, ${newPos}`;
+      }
+      updatedNodeLines.push(`  "${label}" [${attrStr}];`);
+    });
+  });
+
+  // Rebuild edge definitions.
+  let edgeLines = [];
+  edgeDefs.forEach(e => {
+    edgeLines.push(`  "${e.from}" -> "${e.to}";`);
+  });
+
+  const newContent = "dag {\n" + updatedNodeLines.join("\n") + "\n" + edgeLines.join("\n") + "\n}";
+  fs.writeFileSync(filePath, newContent, 'utf8');
+  console.log("Updated positions in", filePath);
+}
+
+// Main route handler.
 router.post('/cycles', async (req, res) => {
-  console.log("Received payload:", req.body);
-  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings, resetCache} = req.body;
+  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings, resetCache } = req.body;
 
   // Reset the cache if the flag is set.
   if (resetCache) {
@@ -82,7 +257,7 @@ router.post('/cycles', async (req, res) => {
 
     const { allNodes, causalEdges } = await getGraphData(parameters);
 
-    // Add custom exposure and outcome
+    // Add custom exposure and outcome if needed.
     if (exposure.type === "custom" && !allNodes.includes(exposure.value)) {
       allNodes.push(exposure.value);
     }
@@ -90,78 +265,66 @@ router.post('/cycles', async (req, res) => {
       allNodes.push(outcome.value);
     }
 
+    const scaleFactor = 1; // adjust if needed
     let dagittyGraph = "dag {\n";
 
-    for (let t = 1; t <= timepoints; t++) {
-      allNodes.forEach(node => {
-        const settings = nodeSettings && nodeSettings[node];
-        const isFixed = settings && settings.isFixed;
-        const observationAttr = settings && settings.observation && settings.observation.trim() !== ""
-          ? settings.observation.trim()
-          : "";
+    // Process fixed nodes (output once, without suffix)
+    const fixedNodes = allNodes.filter(node => nodeSettings[node] && nodeSettings[node].isFixed);
+    fixedNodes.forEach((node, index) => {
+      const y = ((index + 1) / (fixedNodes.length + 1)) + (Math.random() - 0.5) * 0.05;
+      const x = 0; // fixed nodes are on the very left
+      const pos = `pos="${(x * scaleFactor).toFixed(3)},${y.toFixed(3)}"`;
+      let attributes = [];
+      if (node === exposure.value) attributes.push("exposure");
+      if (node === outcome.value) attributes.push("outcome");
+      const observationAttr = nodeSettings[node].observation && nodeSettings[node].observation.trim() !== ""
+        ? nodeSettings[node].observation.trim()
+        : "";
+      if (observationAttr !== "") attributes.push(observationAttr);
+      attributes.push(pos);
+      dagittyGraph += attributes.length > 0
+        ? `  "${node}" [${attributes.join(", ")}];\n`
+        : `  "${node}";\n`;
+    });
 
-        if (isFixed) {
-          // For fixed nodes, output a single node without a time suffix.
-          let attributes = [];
-          // For fixed nodes, if it matches the exposure or outcome, add those attributes.
-          if (node === exposure.value) {
-            attributes.push("exposure");
-          }
-          if (node === outcome.value) {
-            attributes.push("outcome");
-          }
-          if (observationAttr !== "") {
-            attributes.push(observationAttr);
-          }
-          if (attributes.length > 0) {
-            dagittyGraph += `  "${node}" [${attributes.join(", ")}];\n`;
-          } else {
-            dagittyGraph += `  "${node}";\n`;
-          }
-        } else {
-          // For non-fixed nodes, create a node for each timepoint.
-          for (let t = 1; t <= timepoints; t++) {
-            const nodeName = `${node}_T${t}`;
-            let attributes = [];
-            // Apply exposure/outcome only at the proper timepoints.
-            if (t === 1 && node === exposure.value) {
-              attributes.push("exposure");
-            }
-            if (t === timepoints && node === outcome.value) {
-              attributes.push("outcome");
-            }
-            if (nodeOrder[node] !== undefined) {
-              attributes.push(`order=${nodeOrder[node]}`);
-            }
-            if (observationAttr !== "") {
-              attributes.push(observationAttr);
-            }
-            if (attributes.length > 0) {
-              dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
-            } else {
-              dagittyGraph += `  "${nodeName}";\n`;
-            }
-          }
-        }
+    // Process non-fixed nodes (will initially get a default pos based on timepoint)
+    const nonFixedNodes = allNodes.filter(node => !(nodeSettings[node] && nodeSettings[node].isFixed));
+    for (let t = 1; t <= timepoints; t++) {
+      nonFixedNodes.forEach((node, index, arr) => {
+        const x = (t) * scaleFactor;
+        const y = 1;
+        const pos = `pos="${x.toFixed(3)},${y.toFixed(3)}"`;
+        const nodeName = `${node}_T${t}`;
+        let attributes = [];
+        attributes.push(pos);
+        if (t === 1 && node === exposure.value) attributes.push("exposure");
+        if (t === timepoints && node === outcome.value) attributes.push("outcome");
+        const observationAttr = nodeSettings[node].observation && nodeSettings[node].observation.trim() !== ""
+          ? nodeSettings[node].observation.trim()
+          : "";
+        if (observationAttr !== "") attributes.push(observationAttr);
+        dagittyGraph += `  "${nodeName}" [${attributes.join(", ")}];\n`;
       });
     }
 
-    // Helper function to get the appropriate node label based on fixed status.
+    // Helper: Get node label (fixed nodes remain the same; non-fixed get _T suffix)
     function getNodeLabel(node, t) {
       const settings = nodeSettings && nodeSettings[node];
       const isFixed = settings && settings.isFixed;
       return isFixed ? node : `${node}_T${t}`;
     }
 
-    // EDGES
+    // Build EDGES.
     const allEdges = new Set();
-    // 2. Intra–timestep causal edges
+    // Intra–timestep causal edges.
     for (let t = 1; t <= timepoints; t++) {
       causalEdges.forEach(edge => {
         if (edge.from && edge.to) {
+          // If the target node is fixed, skip adding the arrow since no node should be abe to affect the node that is fixed in time within the timeframe.
+          if (nodeSettings[edge.to] && nodeSettings[edge.to].isFixed) return;
+
           const sourceLabel = getNodeLabel(edge.from, t);
           const targetLabel = getNodeLabel(edge.to, t);
-          // If both nodes are non-fixed, you can enforce the ordering (if desired)
           const fromFixed = nodeSettings && nodeSettings[edge.from] && nodeSettings[edge.from].isFixed;
           const toFixed = nodeSettings && nodeSettings[edge.to] && nodeSettings[edge.to].isFixed;
           if (!fromFixed && !toFixed && nodeOrder[edge.from] !== undefined && nodeOrder[edge.to] !== undefined) {
@@ -170,18 +333,16 @@ router.post('/cycles', async (req, res) => {
               allEdges.add(edgeString);
             }
           } else {
-            // If one (or both) are fixed, simply add the edge.
             const edgeString = `"${sourceLabel}" -> "${targetLabel}"`;
             allEdges.add(edgeString);
           }
         }
       });
     }
-
-// 3. Cross–timestep edges
+    // Cross–timestep edges.
     for (let i = 1; i < timepoints; i++) {
       for (let j = i + 1; j <= timepoints; j++) {
-        // a) Self–progression edges for non-fixed nodes only.
+        // Self–progression for non-fixed nodes.
         allNodes.forEach(node => {
           const settings = nodeSettings && nodeSettings[node];
           const isFixed = settings && settings.isFixed;
@@ -192,25 +353,25 @@ router.post('/cycles', async (req, res) => {
             allEdges.add(edgeString);
           }
         });
-        // b) Cross–timestep causal edges.
+        // Cross–timestep causal edges.
         causalEdges.forEach(edge => {
+          // Skip edges if the target node is fixed.
+          if (nodeSettings[edge.to] && nodeSettings[edge.to].isFixed) return;
           const source = getNodeLabel(edge.from, i);
           const target = getNodeLabel(edge.to, j);
-          // Build the edge string.
           const edgeString = `"${source}" -> "${target}"`;
           allEdges.add(edgeString);
         });
       }
     }
-    // Append unique cross–timestep edges.
     allEdges.forEach(edgeStr => {
       dagittyGraph += `  ${edgeStr};\n`;
     });
-
     dagittyGraph += "}\n";
     fs.writeFileSync("dagitty_input.txt", dagittyGraph, { encoding: "utf8" });
 
-    exec(CHECK_LOOPS_COMMAND, (error, stdout, stderr) => {
+    // Run the R script to check for cycles.
+    exec(CHECK_LOOPS_COMMAND, { maxBuffer: 1024 * 1024, timeout: 30000 }, (error, stdout, stderr) => {
       if (error) {
         console.error(`Error running R script: ${error.message}`);
         return res.status(500).json({ error: error.message });
@@ -219,8 +380,11 @@ router.post('/cycles', async (req, res) => {
         console.error(`R Script Error: ${stderr}`);
       }
       console.log(stdout);
-      if (stdout === "No more cycles!") {
-        return res.json({ rOutput: stdout });
+      if (stdout.trim() === "No more cycles!") {
+        // Once cycles are resolved, update positions using the cycle-resolved file.[]
+        console.log("Updating positions...")
+        updateDagittyPositions("dagitty_input.txt", scaleFactor);
+        return res.json({ rOutput: "No more cycles!" });
       } else {
         const regex = /(.+?)_T\d+(?=\s|$)/g;
         const matches = [...stdout.matchAll(regex)];
