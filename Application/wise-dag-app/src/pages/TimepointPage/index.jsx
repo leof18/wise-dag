@@ -111,10 +111,12 @@ const TimepointPage = () => {
         try {
           const response = await axios.post(`${API_URL}/api/cycles`, requestCycles);
           const data = response.data;
+          console.log("✅ API Response:", data);  // Log full API response
+          console.log("✅ Setting rOutput:", data.rOutput);  // Ensure rOutput is present
           setROutput(data.rOutput);
           setShouldResetCache(false);
         } catch (error) {
-          console.error("Error fetching cycles:", error);
+          console.error("❌ Error fetching cycles:", error);
         }
       };
       fetchCycles();
