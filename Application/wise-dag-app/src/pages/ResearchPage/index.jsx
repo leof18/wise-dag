@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DropdownWithSearch from "../../components/DropdownWithSearch";
+import DropdownWithSearch from "../../components/Searchlist";
 import logo from "../../assets/logo.png";
 
 const API_URL =
