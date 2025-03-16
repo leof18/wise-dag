@@ -115,6 +115,7 @@ const TimepointPage = () => {
           console.log("✅ Setting rOutput:", data.rOutput);  // Ensure rOutput is present
           setROutput(data.rOutput);
           setShouldResetCache(false);
+          setCurrentStep(3);  // Ensure UI updates
         } catch (error) {
           console.error("❌ Error fetching cycles:", error);
         }
