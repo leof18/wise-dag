@@ -10,7 +10,17 @@ const dagittyInputRoute = require("./routes/dagittyInput");
 const hierarchyQuery = require("./routes/hierarchyQuery");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+
+// Check if running in development mode
+// To start the development mode, type "node server.js --local"
+const isLocal = process.argv.includes("--local") || process.env.NODE_ENV === "development";
+
+// Set the correct HOST and PORT
+const HOST = isLocal ? "localhost" : "0.0.0.0";
+const PORT = isLocal ? 3001 : process.env.PORT || 3000;
+
+
+
 
 app.get("/", (req, res) => {
   res.send("Hello from Render!");
@@ -34,7 +44,7 @@ process.on('SIGINT', async () => {
   process.exit(0);
 });
 
-// Start Server
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Server running on http://0.0.0.0:${PORT}`);
+// Start the server with the correct host
+app.listen(PORT, HOST, () => {
+  console.log(`Server running on http://${HOST}:${PORT}`);
 });
