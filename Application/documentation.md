@@ -14,6 +14,7 @@ npm install
 
 # run the server on a command panel
 ## This file (server.js) is in the main branch now
+## To start the development mode, type "node server.js --local"
 node server.js
 ## If you clone the repository from the Github, there could be dependency issue. Node.js might not be able to find modules
 ## Reinstall npm is the only solution. Reseting path doesn't work.
