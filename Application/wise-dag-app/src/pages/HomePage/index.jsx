@@ -7,7 +7,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Hero Section */}
       <section
-        className="bg-cover bg-center py-16 text-center"
+        className="bg-cover bg-center py-16 text-center relative"
         style={{
           backgroundImage: "url('https://source.unsplash.com/1600x900/?research,science')",
         }}
@@ -27,19 +27,19 @@ const HomePage = () => {
             Explore our intuitive platform for building, analyzing, and
             understanding causal relationships.
           </p>
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8 flex justify-center gap-4 relative z-10">
             <Link
               to="/research"
-              className="px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700"
+              className="px-8 py-3 bg-green-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-700 cursor-pointer"
             >
               Get Started
             </Link>
-            <a
+            <Link
               to="/about"
-              className="px-8 py-3 bg-gray-200 text-gray-800 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-300"
+              className="px-8 py-3 bg-gray-200 text-gray-800 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-300 cursor-pointer relative z-10"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -48,3 +48,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
