@@ -74,13 +74,45 @@ router.post('/cycles', async (req, res) => {
     console.log("Cache has been reset due to resetCache flag.");
   }
 
+  const session = driver.session();
+
   try {
+      // Validation 1: Check granularity exists
+      const granularityCheck = await session.run(
+          'MATCH (i:Iteration {id: $id}) RETURN i',
+          { id: granularity }
+      );
+      if (granularityCheck.records.length === 0) {
+          return res.status(400).json({ error: `Invalid granularity ID: ${granularity}` });
+      }
+
+      // Validation 2: Check all selectedNodes, exposure, outcome exist
+      const allNodesToCheck = selectedNodes.concat([exposure.value, outcome.value]);
+      const nodeCheck = await session.run(
+          'MATCH (c:Concept) WHERE c.name IN $names RETURN c.name',
+          { names: allNodesToCheck }
+      );
+      const foundNodes = nodeCheck.records.map(record => record.get('c.name'));
+      const missingNodes = allNodesToCheck.filter(name => !foundNodes.includes(name));
+      if (missingNodes.length > 0) {
+          return res.status(400).json({
+              error: `The following nodes were not found: ${missingNodes.join(', ')}`,
+              missingNodes
+          });
+      }
+
+  
     const parameters = {
       selectedIteration: granularity,
       selectedNodes: selectedNodes
     };
 
     const { allNodes, causalEdges } = await getGraphData(parameters);
+
+    // Validation 3: Check graph is not empty
+    if (allNodes.length === 0) {
+      return res.status(400).json({ error: 'No valid graph data found for the given parameters' });
+  }
 
     // Add custom exposure and outcome
     if (exposure.type === "custom" && !allNodes.includes(exposure.value)) {
