@@ -4,16 +4,16 @@
 https://nodejs.org/en
 
 # go to the project directory
-## e.g., cd wise-dag\Application\wise-dag-backend
 cd path/to/your/project
 
-# npm is a package manager for Node.js
-## It will install required dependencies (modules)
+# install npm, a package manager for Node.js
+## Please confirm if this step is necessary
+## npm should have been installed together with node.js by default 
 
 npm install
 
 # run the server on a command panel
-## This file (server.js) is in the main branch now
+## This file is in the application branch (currently not in the main branch)
 node server.js
 ## If you clone the repository from the Github, there could be dependency issue. Node.js might not be able to find modules
 ## Reinstall npm is the only solution. Reseting path doesn't work.
@@ -46,6 +46,5 @@ npm install
 npm start
 
 # Test account
-## We retired account functionality in the current version
 username: testuser
 password: password123
