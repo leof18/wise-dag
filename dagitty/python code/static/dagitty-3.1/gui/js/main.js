@@ -696,42 +696,240 @@ function newModel3(ename,oname){
 }
 
 function supportsSVG() {
-	return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ||
-	document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.0");
-};
-
-function exportPDF(){
-	if( supportsSVG() ){
-		document.getElementById("exportformsvg").value = document.getElementById("canvas").innerHTML;
-		document.getElementById("exportform").action = "http://www.dagitty.net/pdf/batik-pdf.php";
-		document.getElementById("exportform").submit();
-	}
+    return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1") ||
+    document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.0");
 }
 
-function exportJPEG(){
-	if( supportsSVG() ){
-		document.getElementById("exportformsvg").value = document.getElementById("canvas").innerHTML;
-		document.getElementById("exportform").action = "http://www.dagitty.net/pdf/batik-jpeg.php";
-		document.getElementById("exportform").submit();
-	}
+function exportSVG() {
+    if (supportsSVG()) {
+        // Get the SVG element directly
+        const svgElement = document.getElementById("canvas").querySelector("svg");
+
+        // Clone the SVG to keep the original intact
+        const svgClone = svgElement.cloneNode(true);
+
+        // Make sure all attributes are properly set for standalone SVG
+        svgClone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+        svgClone.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+
+        // Add white background rectangle as the first element
+        const bgRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        bgRect.setAttribute("width", "100%");
+        bgRect.setAttribute("height", "100%");
+        bgRect.setAttribute("fill", "white");
+
+        // Insert the background as the first child
+        svgClone.insertBefore(bgRect, svgClone.firstChild);
+
+        // Convert to string with XML declaration
+        const serializer = new XMLSerializer();
+        const svgString = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' +
+                          serializer.serializeToString(svgClone);
+
+        // Create blob with proper MIME type
+        const blob = new Blob([svgString], {type: 'image/svg+xml'});
+        const url = URL.createObjectURL(blob);
+
+        downloadURL(url, 'diagram.svg');
+    }
 }
 
-function exportPNG(){
-	if( supportsSVG() ){
-		document.getElementById("exportformsvg").value = document.getElementById("canvas").innerHTML;
-		document.getElementById("exportform").action = "http://www.dagitty.net/pdf/batik-png.php";
-		document.getElementById("exportform").submit();
-	}
+function exportPNG() {
+    if (supportsSVG()) {
+        const svgElement = document.getElementById("canvas").querySelector("svg");
+        const serializer = new XMLSerializer();
+
+        // Clone SVG and add white background
+        const svgClone = svgElement.cloneNode(true);
+        const bgRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        bgRect.setAttribute("width", "100%");
+        bgRect.setAttribute("height", "100%");
+        bgRect.setAttribute("fill", "white");
+        svgClone.insertBefore(bgRect, svgClone.firstChild);
+
+        const svgString = serializer.serializeToString(svgClone);
+
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        // Get SVG dimensions
+        const rect = svgElement.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+
+        // Fill with white background first (as a fallback)
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0);
+
+            const pngURL = canvas.toDataURL("image/png");
+            downloadURL(pngURL, 'diagram.png');
+        };
+
+        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+    }
 }
 
-function exportSVG(){
-	if( supportsSVG() ){
-		document.getElementById("exportformsvg").value = document.getElementById("canvas").innerHTML;
-		document.getElementById("exportform").action = "http://www.dagitty.net/pdf/svg.php";
-		document.getElementById("exportform").submit();
-	}
+function exportJPEG() {
+    if (supportsSVG()) {
+        const svgElement = document.getElementById("canvas").querySelector("svg");
+        const serializer = new XMLSerializer();
+
+        // Clone SVG and add white background
+        const svgClone = svgElement.cloneNode(true);
+        const bgRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        bgRect.setAttribute("width", "100%");
+        bgRect.setAttribute("height", "100%");
+        bgRect.setAttribute("fill", "white");
+        svgClone.insertBefore(bgRect, svgClone.firstChild);
+
+        const svgString = serializer.serializeToString(svgClone);
+
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        // Get SVG dimensions
+        const rect = svgElement.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+
+        // Fill with white background first (as a fallback)
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0);
+
+            const jpegURL = canvas.toDataURL("image/jpeg", 0.9);
+            downloadURL(jpegURL, 'diagram.jpg');
+        };
+
+        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+    }
 }
 
+function exportPDF() {
+    if (!supportsSVG()) return;
+
+    // Load jsPDF dynamically if not already loaded
+    if (typeof window.jspdf === 'undefined' && typeof window.jsPDF === 'undefined') {
+        loadScript('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js', function() {
+            // Continue with PDF export after library is loaded
+            generatePDF();
+        });
+    } else {
+        // Library already loaded
+        generatePDF();
+    }
+
+    function generatePDF() {
+        const svgElement = document.getElementById("canvas").querySelector("svg");
+        const serializer = new XMLSerializer();
+
+        // Clone SVG and add white background
+        const svgClone = svgElement.cloneNode(true);
+        const bgRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        bgRect.setAttribute("width", "100%");
+        bgRect.setAttribute("height", "100%");
+        bgRect.setAttribute("fill", "white");
+        svgClone.insertBefore(bgRect, svgClone.firstChild);
+
+        const svgString = serializer.serializeToString(svgClone);
+
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+
+        // Get SVG dimensions
+        const rect = svgElement.getBoundingClientRect();
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+
+        // Fill with white background first (as a fallback)
+        ctx.fillStyle = "white";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        const img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0);
+
+            // Create PDF with proper orientation based on dimensions
+            const orientation = canvas.width > canvas.height ? 'l' : 'p';
+            const pdf = new window.jspdf.jsPDF(orientation, 'pt', [canvas.width, canvas.height]);
+
+            const imgData = canvas.toDataURL('image/jpeg', 1.0);
+            pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width, canvas.height);
+            pdf.save('diagram.pdf');
+        };
+
+        img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgString)));
+    }
+}
+
+// Helper function to load scripts dynamically
+function loadScript(url, callback) {
+    const script = document.createElement('script');
+    script.onload = callback;
+    script.src = url;
+    document.head.appendChild(script);
+}
+
+// Helper function to trigger download
+function downloadURL(url, filename) {
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }, 100);
+}
+function exportModelDataAsTxt() {
+	var adjMatrixText = document.getElementById('adj_matrix').value;
+
+    // Check if there's any content in the textarea
+    if (adjMatrixText.trim() === '') {
+        alert('Textarea is empty! Please enter some text.');
+        return; // Exit the function if empty
+    }
+
+    // Log the text to the console (just for testing)
+    console.log(adjMatrixText);
+
+    try {
+        // Create a Blob object with the text content and set the MIME type to 'text/plain'
+        var blob = new Blob([adjMatrixText], { type: 'text/plain' });
+
+        // Create a link element
+        const link = document.createElement("a");
+
+        // Create a download URL for the Blob object
+        link.href = URL.createObjectURL(blob);
+
+        // Specify the file name for the downloaded file
+        link.download = 'daggity_code.txt';
+
+        // Append the link to the document (it needs to be in the DOM to be clickable)
+        document.body.appendChild(link);
+
+        // Programmatically trigger a click on the link to start the download
+        link.click();
+
+        // Remove the link after the download is triggered
+        document.body.removeChild(link);
+
+        // Log to confirm the download was triggered
+        console.log('Download triggered');
+    } catch (error) {
+        console.error('Error triggering download:', error);
+    }
+}
 function hostName(){
 	switch( window.location.hostname ){
 		case "dagitty.net":
