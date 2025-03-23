@@ -144,19 +144,13 @@
       <li><a href="javascript:void(0)" id="menu_model_title">Model</a>
          <ul id="menu_model" style="z-Index:15">
             <li><a href="#" onclick="newModel();displayHide('menu_model')">New model</a></li>
-            <li><a href="#" onclick="loadOnlineForm();displayHide('menu_model')">Load from dagitty.net</a></li>
             <script>
-            	if( document.location.protocol == "http:" || document.location.protocol == "https:" ){
-	            	document.write('<li><a href="#" onclick="saveOnlineForm();displayHide(\'menu_model\')">Publish on dagitty.net</a></li>');
-	            	document.write('<li><a href="#" onclick="updateOnlineForm();displayHide(\'menu_model\')">Update on dagitty.net</a></li>');
-	            	document.write('<li><a href="#" onclick="deleteOnlineForm();displayHide(\'menu_model\')">Delete on dagitty.net</a></li>');
-	        }
 
                if( supportsSVG() ){
 					document.write( '<li><a href="#" onclick="exportPDF();displayHide(\'menu_model\')">Export as PDF</a></li>' );
 					document.write( '<li><a href="#" onclick="exportPNG();displayHide(\'menu_model\')">Export as PNG</a></li>' );
 					document.write( '<li><a href="#" onclick="exportJPEG();displayHide(\'menu_model\')">Export as JPEG</a></li>' );
-					document.write( '<li><a href="#" onclick="exportSVG();displayHide(\'menu_model\')">Export as SVG</a></li>' );
+					document.write( '<li><a href="#" onclick="exportModelDataAsTxt();displayHide(\'menu_model\')">Export Model Data as Text</a></li>' );
                }
             </script>
         <li><a href="#" onclick="exportTikzCode();displayHide('menu_model')">Export LaTeX code</a></li>
@@ -193,7 +187,6 @@
       </li>
       <li style="border-right:none"><a href="javascript:void(0)" id="menu_help_title">Help</a>
          <ul id="menu_help" style="z-Index:11">
-            <li><a href="manual-3.x.pdf" target="_blank" onclick="displayHide('menu_help')">Manual</a></li>
             <li><a href="http://dagitty.net/learn/" target="_blank" onclick="displayHide('menu_help')">Other Resources</a></li>
          </ul>
       </li>
@@ -201,6 +194,7 @@
    </ul>
 
    <div id="canvas" class="dagitty" data-mutable="true">
+       <div class="dagitty-code">
 dag {
 bb="-11.43,-11.78,12.0,11.64"
 "Immune system finding" [pos="-9.39,-0.7"]
@@ -295,7 +289,7 @@ bb="-11.43,-11.78,12.0,11.64"
 "Urinary incontinence" -> "Functionally dependent"
 "Urinary incontinence" -> "Falls"
 }
-
+</div>
    </div>
 </main>
 
