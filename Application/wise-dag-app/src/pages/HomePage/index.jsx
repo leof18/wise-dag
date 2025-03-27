@@ -22,8 +22,7 @@ const HomePage = () => {
             Wisdom of Stroke Experts Translated into Directed Acyclic Graphs
           </h2>
           <p className="text-lg text-gray-800 mt-4 max-w-3xl mx-auto">
-            WISE-DAG is a study to aggregate the expert causal knowledge of
-            clinicians and researchers about stroke-related processes. 
+            WISE-DAG is a study to  aggregate knowledge of causal relationships from clinicians and researchers for stroke research. 
             Explore our intuitive platform for building, analyzing, and
             understanding causal relationships.
           </p>
@@ -43,7 +42,41 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <footer className="bg-gray-200 text-center py-4 text-sm text-gray-600">
+        {/* Policy Buttons */}
+        <div className="mt-2 flex justify-center gap-4">
+          <a
+            href="/privacy.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-1 text-sm bg-gray-300 text-gray-800 rounded hover:bg-gray-400 transition"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="/terms.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-1 text-sm bg-gray-300 text-gray-800 rounded hover:bg-gray-400 transition"
+          >
+            Terms & Conditions
+          </a>
+        </div>
+        <div className="mt-2 flex justify-center gap-4">
+          This application uses{" "}
+          <a
+            href="https://www.dagitty.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            DAGitty
+          </a>
+          , developed by Johannes Textor.
+        </div>
+      </footer>
     </div>
+
   );
 };
 
