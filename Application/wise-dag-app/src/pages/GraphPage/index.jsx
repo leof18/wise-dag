@@ -61,6 +61,8 @@ const [expandedNodes, setExpandedNodes] = useState(new Set());
 const [nodes, setNodes] = useState([]);
 const [granularity, setGranularity] = useState(0);
 const [selectedNodes, setSelectedNodes] = useState([]);
+// const [chosenNodes, setChosenNodes] = useState([]);
+
 const [initialFetchDone, setInitialFetchDone] = useState(false);
 
 // Prevent auto-expansion from re-triggering unnecessarily.
