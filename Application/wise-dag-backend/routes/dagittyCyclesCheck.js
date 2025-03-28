@@ -42,6 +42,12 @@ async function getGraphData(parameters) {
       WHERE expanded.name IN $selectedNodes AND NOT child.name IN $selectedNodes
       WITH COLLECT(DISTINCT concept) + COLLECT(DISTINCT child) AS Nodes
       UNWIND Nodes AS Node
+      WITH COLLECT(DISTINCT Node) as Nodes
+      UNWIND Nodes as Node
+      WITH Node
+          WHERE Node.name IN $chosenNodes
+      WITH COLLECT(Node) as Nodes
+      UNWIND Nodes as Node
       OPTIONAL MATCH (Node)-[causal:CAUSES]->(otherNode)
       WHERE otherNode IN Nodes
       WITH COLLECT(DISTINCT Node.name) AS allNodes,
@@ -56,7 +62,7 @@ async function getGraphData(parameters) {
     const allNodes = result.records[0].get("allNodes");
     const causalEdges = result.records[0].get("causalEdges");
 
-    cachedGraphData = { allNodes, causalEdges };
+    cachedGraphData = { allNodes, causalEdges};
     return cachedGraphData;
   } finally {
     await session.close();
@@ -241,7 +247,7 @@ function updateDagittyPositions(filePath, scaleFactor = 1) {
 
 // Main route handler.
 router.post('/cycles', async (req, res) => {
-  const { granularity, selectedNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings, resetCache } = req.body;
+  const { granularity, selectedNodes, chosenNodes, exposure, outcome, timepoints, nodeOrder, nodeSettings, resetCache } = req.body;
 
   // Reset the cache if the flag is set.
   if (resetCache) {
@@ -252,7 +258,8 @@ router.post('/cycles', async (req, res) => {
   try {
     const parameters = {
       selectedIteration: granularity,
-      selectedNodes: selectedNodes
+      selectedNodes: selectedNodes,
+      chosenNodes: chosenNodes
     };
 
     const { allNodes, causalEdges } = await getGraphData(parameters);
