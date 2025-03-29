@@ -387,10 +387,10 @@ router.post('/cycles', async (req, res) => {
         console.error(`R Script Error: ${stderr}`);
       }
       console.log(stdout);
+      console.log("Updating positions...")
+      updateDagittyPositions("dagitty_input.txt", scaleFactor);
       if (stdout.trim() === "No more cycles!") {
-        // Once cycles are resolved, update positions using the cycle-resolved file.[]
-        console.log("Updating positions...")
-        updateDagittyPositions("dagitty_input.txt", scaleFactor);
+        
         return res.json({ rOutput: "No more cycles!" });
       } else {
         const regex = /(.+?)_T\d+(?=\s|$)/g;
