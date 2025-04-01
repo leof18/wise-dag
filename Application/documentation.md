@@ -4,11 +4,11 @@
 https://nodejs.org/en
 
 # go to the project directory
+## e.g., cd wise-dag\Application\wise-dag-backend
 cd path/to/your/project
 
-# install npm, a package manager for Node.js
-## Please confirm if this step is necessary
-## npm should have been installed together with node.js by default 
+# npm is a package manager for Node.js
+## It will install required dependencies (modules)
 
 npm install
 
@@ -49,6 +49,13 @@ npm start
 # Test account
 username: testuser
 password: password123
+
+
+
+
+
+
+
 
 # How to run Docker
 ## Create a Dockerfile with instruction to build a docker image for the backend
