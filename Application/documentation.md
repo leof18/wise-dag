@@ -4,7 +4,7 @@
 https://nodejs.org/en
 
 # go to the project directory
-## e.g., cd wise-dag\Application\wise-dag-backend
+## e.g., cd Application\wise-dag-backend
 cd path/to/your/project
 
 # npm is a package manager for Node.js
@@ -37,7 +37,7 @@ node server.js
 # Step to run the frontend on another command panel
 
 # go to the project directory (wise-dag-app)
-## e.g., cd wise-dag\Application\wise-dag-app
+## e.g., cd Application\wise-dag-app
 cd path/to/your/project
 
 # install required dependencies (modules) in the frontend directory

@@ -9,6 +9,7 @@ const API_URL =
     : process.env.REACT_APP_WEB_API_URL;
 
 const TimepointPage = () => {
+  const [showTooltip, setShowTooltip] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { granularity, selectedNodes, exposure, outcome, nodes, resetCache: initialResetCache, chosenNodes} = location.state || {};
@@ -167,8 +168,30 @@ const TimepointPage = () => {
   return (
     <div className="flex flex-col items-center bg-gray-100 w-full" style={{ height: "calc(100vh - 130px)" }}>
       <header className="w-full flex justify-center items-center bg-white p-4 rounded-lg shadow-md mb-4 sticky top-0 z-50">
-        <h1 className="text-2xl font-bold">Set Timepoints And Order</h1>
+        <div className="flex items-center space-x-2">
+          <h1 className="text-2xl font-bold">Set Timepoints And Order</h1>
+          <div
+            className="relative"
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+          >
+            <button
+              className="text-blue-500 hover:text-blue-700 text-sm font-bold bg-white border border-blue-300 rounded-full w-6 h-6 flex items-center justify-center shadow"
+              title="Help"
+            >
+              ?
+            </button>
+            {showTooltip && (
+              <div className="absolute top-8 left-0 w-64 bg-white border border-blue-300 rounded-md shadow-lg text-sm text-gray-700 p-3 z-20">
+                <strong>Timepoints Info</strong><br />
+                Timepoints define how many times variables are measured. 
+                If a study collects information from a participant twice — for example, once at the start and once after 3 months — then it has 2 timepoints.
+              </div>
+            )}
+          </div>
+        </div>
       </header>
+
 
       {currentStep === 1 && (
         <div className="flex flex-col items-center">
