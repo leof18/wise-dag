@@ -11,7 +11,7 @@ const API_URL =
 const TimepointPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { granularity, selectedNodes, exposure, outcome, nodes, resetCache: initialResetCache } = location.state || {};
+  const { granularity, selectedNodes, exposure, outcome, nodes, resetCache: initialResetCache, chosenNodes} = location.state || {};
   const [shouldResetCache, setShouldResetCache] = useState(initialResetCache || false);
 
   const [currentStep, setCurrentStep] = useState(1);
@@ -90,6 +90,7 @@ const TimepointPage = () => {
       const requestCycles = {
         granularity,
         selectedNodes,
+        chosenNodes,
         exposure,
         outcome,
         timepoints,
