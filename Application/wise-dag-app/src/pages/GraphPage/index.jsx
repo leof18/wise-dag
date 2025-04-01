@@ -191,7 +191,7 @@ const GraphPage = () => {
     if (nodes.length > 0) {
       const allowedNodesString = nodes.map(n => n.name).join(",");
       axios
-        .get("http://localhost:3001/api/hierarchyQuery", {
+        .get(`${API_URL}/api/hierarchyQuery`, {
           params: { allowedNodes: allowedNodesString }
         })
         .then((response) => {
