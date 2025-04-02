@@ -1,8 +1,8 @@
 from neo4j import GraphDatabase
 from tqdm import tqdm
-uri = "neo4j+s://2801843c.databases.neo4j.io"
+uri = "neo4j+s://b6ce9fc7.databases.neo4j.io"
 username = "neo4j"
-password = "e16qCtDNDN9YFk3ihqOyRsaf_bklHJr8cEPMTq5fnQk"
+password = "TKv0DRm0Rd51xgmMx9RnI-Kt9r5jS3Wbkw8MzWxGYgE"
 
 def run_queries(uri, user, password, cypher_file):
     driver = GraphDatabase.driver(uri, auth=(user, password))
