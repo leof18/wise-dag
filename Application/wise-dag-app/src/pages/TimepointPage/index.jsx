@@ -33,7 +33,7 @@ const TimepointPage = () => {
       ...node,
       isFixed: false,
       order: { name: node.name, value: Number(node.order?.value) || 0 },
-      observation: "unobserved", // default unobserved
+      observation: "observed", // default observed
     }));
     setNodeOrder(initializedData);
     setCurrentStep(2)
@@ -217,8 +217,8 @@ const TimepointPage = () => {
                     onChange={(e) => handleObservationChange(node.name, e.target.value)}
                     className="border p-1 rounded"
                   >
-                    <option value="unobserved">Unobserved</option>
                     <option value="">Observed</option>
+                    <option value="unobserved">Unobserved</option>
                     <option value="adjusted">Adjusted</option>
                   </select>
                 )}
