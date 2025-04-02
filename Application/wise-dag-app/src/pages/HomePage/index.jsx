@@ -62,6 +62,7 @@ const HomePage = () => {
             Terms & Conditions
           </a>
         </div>
+        <div className="mt-2">This research was partially supported by private donations to the Center for Stroke Research Berlin.</div>
         <div className="mt-2 flex justify-center gap-4">
           This application uses{" "}
           <a
