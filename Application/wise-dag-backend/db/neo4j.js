@@ -2,8 +2,8 @@ const neo4j = require('neo4j-driver');
 
 // Initialize the Neo4j driver
 const driver = neo4j.driver(
-  'neo4j+s://2801843c.databases.neo4j.io',
-  neo4j.auth.basic('neo4j', 'e16qCtDNDN9YFk3ihqOyRsaf_bklHJr8cEPMTq5fnQk')
+  'neo4j+s://b6ce9fc7.databases.neo4j.io',
+  neo4j.auth.basic('neo4j', 'TKv0DRm0Rd51xgmMx9RnI-Kt9r5jS3Wbkw8MzWxGYgE')
 );
 
 // Verify the connection
