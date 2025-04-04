@@ -238,7 +238,7 @@ const TimepointPage = () => {
       {currentStep === 3 && rOutput && (
                     <div className="w-full max-w-3xl bg-white p-4 rounded-lg shadow-md mb-4">
                       <h2 className="text-xl font-semibold">Cycle to solve:</h2>
-                      <pre>{rOutput}</pre>
+                      <text style={{fontFamily: "monospace", fontSize:14}}>{rOutput}</text>
                     </div>
                   )}
 
