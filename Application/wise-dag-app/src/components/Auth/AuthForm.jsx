@@ -1,4 +1,3 @@
-// src/components/Auth/AuthForm.jsx
 import React, { useState } from 'react';
 
 const AuthForm = ({ onSubmit, isLogin }) => {
