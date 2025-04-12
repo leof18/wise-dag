@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 
+/* This page loads the dagitty source code in an iframe */
+
 const DagittyPage = () => {
   useEffect(() => {
     const scripts = ["dagitty.js", "base64.js", "example-dags.js", "main.js"];
@@ -34,7 +36,7 @@ const DagittyPage = () => {
           }
         }, 500);
       })
-      .catch((err) => console.error("❌ Script loading error:", err));
+      .catch((err) => console.error("Script loading error:", err));
 
     return () => {
       // Cleanup scripts on unmount

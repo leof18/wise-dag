@@ -1,6 +1,5 @@
 import React from "react";
-import logo from '../../assets/logo.png';
-import wiseDagDiagram from '../../assets/wiseDagDiagram.png'; // Add your DAG visualization image
+import wiseDagDiagram from '../../assets/wiseDagDiagram.png';
 
 const AboutUs = () => {
   return (
@@ -25,7 +24,6 @@ const AboutUs = () => {
         decision pathways.
       </p>
 
-      {/* Visual Representation */}
       <div className="diagram-container">
         <h2>Visual Representation of WISE-DAG</h2>
         <img src={wiseDagDiagram} alt="WISE-DAG Diagram" className="wise-dag-image" />

@@ -5,7 +5,6 @@ import logo from '../../assets/logo.png';
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      {/* Hero Section */}
       <section
         className="bg-cover bg-center py-16 text-center"
         style={{
