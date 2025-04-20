@@ -13,7 +13,7 @@ const getRScriptPath = () => {
   } else if (platform === 'darwin') {
     return '/usr/local/bin/Rscript'; // macOS default R path
   } else if (platform === 'linux') {
-    return '/usr/local/bin/Rscript'; // Linux default R path
+    return '/usr/bin/Rscript'; // Linux default R path
   } else {
     throw new Error('Unsupported OS for R script execution.');
   }
