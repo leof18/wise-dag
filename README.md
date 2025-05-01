@@ -26,36 +26,36 @@ bash
 git clone https://github.com/leof18/wise-dag.git
 
 ### 2️⃣ Setup the backend
-cd wise-dag/Application/wise-dag-backend
-npm install # for the first time setup
+cd wise-dag/Application/wise-dag-backend  
+npm install # for the first time setup  
 node server.js
 
 ### 3️⃣ Setup the frontend
-cd ../wise-dag-app
-npm install # for the first time setup
-npm start   # for development
+cd ../wise-dag-app  
+npm install # for the first time setup  
+npm start   # for development  
 
 #### Environment Variables
-Create a .env file in the frontend:
+Create a .env file in the frontend:  
 REACT_APP_WEB_API_URL=http://172.18.132.31:3000
 
 ### Deployment
 Use screen or tmux to keep the app running on a VM.
 
 #### For backend server
-cd WISE/Application/wise-dag-backend
-node server.js --local
+cd WISE/Application/wise-dag-backend  
+node server.js --local  
 screen -S WISE
 
-press control + a + d # detach the screen
-screen -r WISE # reattach the screen
+press control + a + d # detach the screen  
+screen -r WISE # reattach the screen  
 #### For frontend server
-cd WISE/Application/wise-dag-app
-npm start
+cd WISE/Application/wise-dag-app  
+npm start  
 screen -S WISE-FRONT
 
-press control + a + d # detach the screen
-screen -r WISE-FRONT # reattach the screen
+press control + a + d # detach the screen  
+screen -r WISE-FRONT # reattach the screen  
 
 Now the web app is running in the background
 
