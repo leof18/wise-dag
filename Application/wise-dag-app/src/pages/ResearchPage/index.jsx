@@ -3,10 +3,7 @@ import { useNavigate } from "react-router-dom";
 import DropdownWithSearch from "../../components/Searchlist";
 import logo from "../../assets/logo.png";
 
-const API_URL =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:3001"
-    : process.env.REACT_APP_WEB_API_URL;
+const API_URL = process.env.REACT_APP_WEB_API_URL;
 
 console.log("API_URL:", API_URL);
 

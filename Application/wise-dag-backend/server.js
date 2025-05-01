@@ -11,9 +11,8 @@ const hierarchyQuery = require("./routes/hierarchyQuery");
 
 const app = express();
 
-// Check if running in development mode
 // To start the development mode, type "node server.js --local"
-const isLocal = process.argv.includes("--local") || process.env.NODE_ENV === "development";
+const isLocal = process.argv.includes("--local");
 
 // Set the correct HOST and PORT
 const HOST = isLocal ? "localhost" : "0.0.0.0";

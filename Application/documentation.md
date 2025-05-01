@@ -1,31 +1,31 @@
 # Steps to run the server on your local computor
 
-# download and install node.js
+## download and install node.js
 https://nodejs.org/en
 
-# go to the project directory
-## e.g., cd Application\wise-dag-backend
+## go to the project directory
+### e.g., cd Application\wise-dag-backend
 cd path/to/your/project
 cd WISE/Application/wise-dag-backend
 
-# npm is a package manager for Node.js
-## It will install required dependencies (modules)
+## npm is a package manager for Node.js
+### It will install required dependencies (modules)
 
 npm install
 
-# run the server on a command panel
-## This file (server.js) is in the main branch now
-## To start the development mode, type "node server.js --local"
+## run the server on a command panel
+### This file (server.js) is in the main branch now
+### To start the development mode, type "node server.js --local"
 node server.js
-## If you clone the repository from the Github, there could be dependency issue. Node.js might not be able to find modules
-## Reinstall npm is the only solution. Reseting path doesn't work.
-## Go the the upper directory by
+### If you clone the repository from the Github, there could be dependency issue. Node.js might not be able to find modules
+### Reinstall npm is the only solution. Reseting path doesn't work.
+### Go the the upper directory by
 cd..
-## remove npm
+### remove npm
 rm -rf node_modules package-lock.json
-## reinstall npm
+### reinstall npm
 npm install
-## go to the wise-dag-backend directory and run the server again
+### go to the wise-dag-backend directory and run the server again
 node server.js
 
 
@@ -37,19 +37,17 @@ node server.js
 
 # Step to run the frontend on another command panel
 
-# go to the project directory (wise-dag-app)
-## e.g., cd Application\wise-dag-app
+## go to the project directory (wise-dag-app)
+### e.g., cd Application\wise-dag-app
 cd path/to/your/project
 cd WISE/Application/wise-dag-app
-# install required dependencies (modules) in the frontend directory
+## install required dependencies (modules) in the frontend directory
 npm install
 
-# To access the server
+## To access the server
 npm start
 
-# Test account
-username: testuser
-password: password123
+
 
 
 
@@ -84,14 +82,11 @@ docker rmi image_name
 docker images
 
 # API to be changed for production in Graphpage, ResearchPage, and Timepointpage
-
-const API_URL =
-  process.env.NODE_ENV === "development"
-    ? "http://localhost:3001" // Change this to your local backend URL
-    : process.env.REACT_APP_WEB_API_URL || "https://wise-r.onrender.com";
-
-## in .env
-REACT_APP_WEB_API_URL = http://localhost:3001
+## Check the .env file in the frontend and change the URL accordingly:
+REACT_APP_WEB_API_URL =
+http://localhost:3001 # for local development
+https://wise-r.onrender.com # for Render deployment
+http://172.18.132.31:3000 # for production 
 
 # To check if required R packages are correctly installed in the docker container
 ## This opens an interactive R session inside the Docker container.
@@ -99,7 +94,6 @@ REACT_APP_WEB_API_URL = http://localhost:3001
 docker exec -it name_of_container R
 ## Once inside R, run:
 installed.packages()
-
 ## or check for a specific package:
 if ("curl" %in% installed.packages()) {
   print("curl is installed!")
@@ -109,15 +103,15 @@ if ("curl" %in% installed.packages()) {
 
 
 # HPI Server
-Our web app address: http://172.18.132.31:80
+Our web app address: http://172.18.132.31:3000
 
 # Steps to access our web app on VM
 ## Step 1 start the backend
 ### Go to the backend directory
 cd WISE/Application/wise-dag-backend
 ### Start the backend server
-node server.js --local
-
+node server.js --local # for local development
+node server.js # for production
 ## Step 2 start the frontend
 ### Go to the frontend directory
 cd WISE/Application/wise-dag-app
